@@ -1,0 +1,25 @@
+-- Run after import. Geometry uses WGS84 (EPSG:4326); lengths require geography or suitable projected CRS.
+SELECT 'cs_gb_2024.collision' AS dataset, count(*) AS actual_rows, 100927 AS expected_rows FROM "cs_gb_2024"."collision";
+SELECT 'cs_gb_2024.collision' AS dataset, count(*) FILTER (WHERE geom IS NULL) AS null_geometry, count(*) FILTER (WHERE geom IS NOT NULL AND NOT ST_IsValid(geom)) AS invalid_geometry FROM "cs_gb_2024"."collision";
+SELECT 'cs_gb_2024.vehicle' AS dataset, count(*) AS actual_rows, 183514 AS expected_rows FROM "cs_gb_2024"."vehicle";
+SELECT 'cs_gb_2024.casualty' AS dataset, count(*) AS actual_rows, 128272 AS expected_rows FROM "cs_gb_2024"."casualty";
+SELECT 'cs_england_wales_static.logistics_sites' AS dataset, count(*) AS actual_rows, 47683 AS expected_rows FROM "cs_england_wales_static"."logistics_sites";
+SELECT 'cs_england_wales_static.logistics_sites' AS dataset, count(*) FILTER (WHERE geom IS NULL) AS null_geometry, count(*) FILTER (WHERE geom IS NOT NULL AND NOT ST_IsValid(geom)) AS invalid_geometry FROM "cs_england_wales_static"."logistics_sites";
+SELECT 'cs_brazil_olist.olist_customers_dataset' AS dataset, count(*) AS actual_rows, 99441 AS expected_rows FROM "cs_brazil_olist"."olist_customers_dataset";
+SELECT 'cs_brazil_olist.olist_products_dataset' AS dataset, count(*) AS actual_rows, 32951 AS expected_rows FROM "cs_brazil_olist"."olist_products_dataset";
+SELECT 'cs_brazil_olist.olist_sellers_dataset' AS dataset, count(*) AS actual_rows, 3095 AS expected_rows FROM "cs_brazil_olist"."olist_sellers_dataset";
+SELECT 'cs_brazil_olist.olist_orders_dataset' AS dataset, count(*) AS actual_rows, 99441 AS expected_rows FROM "cs_brazil_olist"."olist_orders_dataset";
+SELECT 'cs_brazil_olist.delivery_outcomes' AS dataset, count(*) AS actual_rows, 99441 AS expected_rows FROM "cs_brazil_olist"."delivery_outcomes";
+SELECT 'cs_brazil_olist.olist_geolocation_dataset' AS dataset, count(*) AS actual_rows, 1000163 AS expected_rows FROM "cs_brazil_olist"."olist_geolocation_dataset";
+SELECT 'cs_brazil_olist.olist_geolocation_dataset' AS dataset, count(*) FILTER (WHERE geom IS NULL) AS null_geometry, count(*) FILTER (WHERE geom IS NOT NULL AND NOT ST_IsValid(geom)) AS invalid_geometry FROM "cs_brazil_olist"."olist_geolocation_dataset";
+SELECT 'cs_brazil_olist.olist_order_items_dataset' AS dataset, count(*) AS actual_rows, 112650 AS expected_rows FROM "cs_brazil_olist"."olist_order_items_dataset";
+SELECT 'cs_brazil_olist.olist_order_payments_dataset' AS dataset, count(*) AS actual_rows, 103886 AS expected_rows FROM "cs_brazil_olist"."olist_order_payments_dataset";
+SELECT 'cs_brazil_olist.olist_order_reviews_dataset' AS dataset, count(*) AS actual_rows, 99224 AS expected_rows FROM "cs_brazil_olist"."olist_order_reviews_dataset";
+SELECT 'cs_brazil_olist.product_category_name_translation' AS dataset, count(*) AS actual_rows, 71 AS expected_rows FROM "cs_brazil_olist"."product_category_name_translation";
+SELECT 'cs_birmingham_2024.osm_nodes' AS dataset, count(*) AS actual_rows, 128744 AS expected_rows FROM "cs_birmingham_2024"."osm_nodes";
+SELECT 'cs_birmingham_2024.osm_nodes' AS dataset, count(*) FILTER (WHERE geom IS NULL) AS null_geometry, count(*) FILTER (WHERE geom IS NOT NULL AND NOT ST_IsValid(geom)) AS invalid_geometry FROM "cs_birmingham_2024"."osm_nodes";
+SELECT 'cs_birmingham_2024.osm_ways' AS dataset, count(*) AS actual_rows, 29202 AS expected_rows FROM "cs_birmingham_2024"."osm_ways";
+SELECT 'cs_birmingham_2024.osm_segments' AS dataset, count(*) AS actual_rows, 136639 AS expected_rows FROM "cs_birmingham_2024"."osm_segments";
+SELECT 'cs_birmingham_2024.osm_segments' AS dataset, count(*) FILTER (WHERE geom IS NULL) AS null_geometry, count(*) FILTER (WHERE geom IS NOT NULL AND NOT ST_IsValid(geom)) AS invalid_geometry FROM "cs_birmingham_2024"."osm_segments";
+SELECT 'cs_birmingham_2024.weather_hourly' AS dataset, count(*) AS actual_rows, 8784 AS expected_rows FROM "cs_birmingham_2024"."weather_hourly";
+SELECT 'cs_birmingham_2024.weather_hourly' AS dataset, count(*) FILTER (WHERE geom IS NULL) AS null_geometry, count(*) FILTER (WHERE geom IS NOT NULL AND NOT ST_IsValid(geom)) AS invalid_geometry FROM "cs_birmingham_2024"."weather_hourly";

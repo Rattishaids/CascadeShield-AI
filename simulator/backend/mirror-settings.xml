@@ -1,0 +1,3 @@
+<settings xmlns="http://maven.apache.org/SETTINGS/1.2.0">
+  <mirrors><mirror><id>local-official-central-relay</id><mirrorOf>central</mirrorOf><url>${env.MAVEN_MIRROR_URL}</url></mirror></mirrors>
+</settings>

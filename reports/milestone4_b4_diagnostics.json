@@ -1,0 +1,263 @@
+{
+  "schemaVersion": "cascadeshield.m3-diagnostics/1.0",
+  "historicalFilesSha256": {
+    "17fac423-bea7-46a0-9027-8ee76eaa78e4.json": "bef0137ea29225b8d999e62be3c8c4050182812a8349ace0ca67a154bc05b17b",
+    "67312a37-3ada-4e4e-9073-b92bcaf5ea70.json": "43b5314bd48401850d2e486becd86f1392b5432079298be5d859b75ae4e93b42",
+    "84bb3e25-f4fb-480c-9854-e63c80f3d7ea.json": "1fec5fbc48391adc02a6c84b8ab00122287513d8542128266950f04c33dd9733",
+    "89272c40-1971-4216-8e64-115b8947d2bf.json": "7f8e9b05a0499cd2b3ee932d4d16fc1f692f7361f2a61748d906f918a8a13beb",
+    "b0d9235f-e1b9-4b3b-9627-6af76a47e988.json": "2eadd8b6e2518ef52fb2c3498166fbff3409d6ae529bf4bf7c6b7e07fa0997e6",
+    "d417cd3e-d5d4-453b-9797-d686fc1634ba.json": "c6736b433a28341babb339b32680c6b9827bc9e3aa20785f36a1955a4cfb97ec",
+    "f6fd77d7-268f-4f22-bf4a-7ba3b937be7e.json": "32f7579600cefb1e0ab46774024272764a903142f43f20346c690961f0bb4bc6",
+    "fe3420a1-49b9-4e4b-87f5-db8462ffb761.json": "dc03f408bf52b369ae063d5766e4f0a24c811a62d14564a9c36d1308c22e76a9"
+  },
+  "summaries": [
+    {
+      "mode": "EQUAL_ACTIONS",
+      "policy": "B0",
+      "cases": 20,
+      "meanSlaViolationRate": 0.7291666666666666,
+      "meanDecisionMs": 0.0,
+      "decisionCount": 0,
+      "runsAtDecisionLimit": 0,
+      "selectedActions": {},
+      "censoredForecastDecisionLocations": {},
+      "executedForecastAlternatives": 0,
+      "duplicateForecastMetricVectors": 0,
+      "forecastSlaLatenessRankInversions": 0
+    },
+    {
+      "mode": "EQUAL_ACTIONS",
+      "policy": "B1",
+      "cases": 20,
+      "meanSlaViolationRate": 0.4125,
+      "meanDecisionMs": 1510.1657118,
+      "decisionCount": 65,
+      "runsAtDecisionLimit": 5,
+      "selectedActions": {
+        "GLOBAL_REROUTE": 49,
+        "NONE": 16
+      },
+      "censoredForecastDecisionLocations": {},
+      "executedForecastAlternatives": 0,
+      "duplicateForecastMetricVectors": 0,
+      "forecastSlaLatenessRankInversions": 0
+    },
+    {
+      "mode": "EQUAL_ACTIONS",
+      "policy": "B2",
+      "cases": 20,
+      "meanSlaViolationRate": 0.7375,
+      "meanDecisionMs": 1188.8078698499999,
+      "decisionCount": 69,
+      "runsAtDecisionLimit": 5,
+      "selectedActions": {
+        "NONE": 54,
+        "LOCAL_REROUTE": 15
+      },
+      "censoredForecastDecisionLocations": {},
+      "executedForecastAlternatives": 0,
+      "duplicateForecastMetricVectors": 0,
+      "forecastSlaLatenessRankInversions": 0
+    },
+    {
+      "mode": "EQUAL_ACTIONS",
+      "policy": "B3",
+      "cases": 20,
+      "meanSlaViolationRate": 0.4125,
+      "meanDecisionMs": 1396.0133062,
+      "decisionCount": 65,
+      "runsAtDecisionLimit": 5,
+      "selectedActions": {
+        "GLOBAL_REROUTE": 49,
+        "NONE": 16
+      },
+      "censoredForecastDecisionLocations": {},
+      "executedForecastAlternatives": 0,
+      "duplicateForecastMetricVectors": 0,
+      "forecastSlaLatenessRankInversions": 0
+    },
+    {
+      "mode": "EQUAL_ACTIONS",
+      "policy": "B4",
+      "cases": 20,
+      "meanSlaViolationRate": 0.4125,
+      "meanDecisionMs": 9249.3991179,
+      "decisionCount": 95,
+      "runsAtDecisionLimit": 15,
+      "selectedActions": {
+        "GLOBAL_REROUTE": 36,
+        "LOCAL_REROUTE": 3,
+        "NONE": 53,
+        "WAIT": 3
+      },
+      "censoredForecastDecisionLocations": {
+        "driver-availability@0.0": 10,
+        "driver-availability@10.0": 11
+      },
+      "executedForecastAlternatives": 319,
+      "duplicateForecastMetricVectors": 95,
+      "forecastSlaLatenessRankInversions": 0
+    },
+    {
+      "mode": "FULL",
+      "policy": "B0",
+      "cases": 20,
+      "meanSlaViolationRate": 0.7291666666666666,
+      "meanDecisionMs": 0.0,
+      "decisionCount": 0,
+      "runsAtDecisionLimit": 0,
+      "selectedActions": {},
+      "censoredForecastDecisionLocations": {},
+      "executedForecastAlternatives": 0,
+      "duplicateForecastMetricVectors": 0,
+      "forecastSlaLatenessRankInversions": 0
+    },
+    {
+      "mode": "FULL",
+      "policy": "B1",
+      "cases": 20,
+      "meanSlaViolationRate": 0.4125,
+      "meanDecisionMs": 952.2699870000001,
+      "decisionCount": 65,
+      "runsAtDecisionLimit": 5,
+      "selectedActions": {
+        "GLOBAL_REROUTE": 49,
+        "NONE": 16
+      },
+      "censoredForecastDecisionLocations": {},
+      "executedForecastAlternatives": 0,
+      "duplicateForecastMetricVectors": 0,
+      "forecastSlaLatenessRankInversions": 0
+    },
+    {
+      "mode": "FULL",
+      "policy": "B2",
+      "cases": 20,
+      "meanSlaViolationRate": 0.7375,
+      "meanDecisionMs": 852.1124741,
+      "decisionCount": 69,
+      "runsAtDecisionLimit": 5,
+      "selectedActions": {
+        "NONE": 54,
+        "LOCAL_REROUTE": 15
+      },
+      "censoredForecastDecisionLocations": {},
+      "executedForecastAlternatives": 0,
+      "duplicateForecastMetricVectors": 0,
+      "forecastSlaLatenessRankInversions": 0
+    },
+    {
+      "mode": "FULL",
+      "policy": "B3",
+      "cases": 20,
+      "meanSlaViolationRate": 0.4125,
+      "meanDecisionMs": 1069.0566239,
+      "decisionCount": 65,
+      "runsAtDecisionLimit": 5,
+      "selectedActions": {
+        "GLOBAL_REROUTE": 49,
+        "CONTINUE": 16
+      },
+      "censoredForecastDecisionLocations": {},
+      "executedForecastAlternatives": 0,
+      "duplicateForecastMetricVectors": 0,
+      "forecastSlaLatenessRankInversions": 0
+    },
+    {
+      "mode": "FULL",
+      "policy": "B4",
+      "cases": 20,
+      "meanSlaViolationRate": 0.25,
+      "meanDecisionMs": 13119.13783035,
+      "decisionCount": 83,
+      "runsAtDecisionLimit": 9,
+      "selectedActions": {
+        "GLOBAL_REROUTE": 31,
+        "ADJUST_DOCK_RESERVATION": 12,
+        "WAIT": 10,
+        "NONE": 28,
+        "LOCAL_REROUTE": 2
+      },
+      "censoredForecastDecisionLocations": {
+        "driver-availability@0.0": 10,
+        "driver-availability@10.0": 11
+      },
+      "executedForecastAlternatives": 412,
+      "duplicateForecastMetricVectors": 90,
+      "forecastSlaLatenessRankInversions": 0
+    },
+    {
+      "mode": "FULL",
+      "policy": "B4_NO_ADAPTIVE",
+      "cases": 20,
+      "meanSlaViolationRate": 0.25,
+      "meanDecisionMs": 12615.54218435,
+      "decisionCount": 78,
+      "runsAtDecisionLimit": 9,
+      "selectedActions": {
+        "GLOBAL_REROUTE": 31,
+        "ADJUST_DOCK_RESERVATION": 12,
+        "WAIT": 10,
+        "NONE": 23,
+        "LOCAL_REROUTE": 2
+      },
+      "censoredForecastDecisionLocations": {
+        "driver-availability@0.0": 10,
+        "driver-availability@10.0": 11
+      },
+      "executedForecastAlternatives": 392,
+      "duplicateForecastMetricVectors": 80,
+      "forecastSlaLatenessRankInversions": 0
+    },
+    {
+      "mode": "FULL",
+      "policy": "B4_NO_COUNTERFACTUAL",
+      "cases": 20,
+      "meanSlaViolationRate": 0.2375,
+      "meanDecisionMs": 2009.70327675,
+      "decisionCount": 92,
+      "runsAtDecisionLimit": 13,
+      "selectedActions": {
+        "GLOBAL_REROUTE": 49,
+        "ADJUST_DOCK_RESERVATION": 11,
+        "NONE": 32
+      },
+      "censoredForecastDecisionLocations": {},
+      "executedForecastAlternatives": 0,
+      "duplicateForecastMetricVectors": 0,
+      "forecastSlaLatenessRankInversions": 0
+    },
+    {
+      "mode": "FULL",
+      "policy": "B4_NO_TEMPORAL",
+      "cases": 20,
+      "meanSlaViolationRate": 0.275,
+      "meanDecisionMs": 13078.0334059,
+      "decisionCount": 76,
+      "runsAtDecisionLimit": 7,
+      "selectedActions": {
+        "GLOBAL_REROUTE": 31,
+        "ADJUST_DOCK_RESERVATION": 11,
+        "WAIT": 10,
+        "NONE": 22,
+        "LOCAL_REROUTE": 2
+      },
+      "censoredForecastDecisionLocations": {
+        "driver-availability@0.0": 10,
+        "driver-availability@10.0": 11
+      },
+      "executedForecastAlternatives": 385,
+      "duplicateForecastMetricVectors": 77,
+      "forecastSlaLatenessRankInversions": 0
+    }
+  ],
+  "forecastRankInversionExamples": [],
+  "interpretation": [
+    "Full-vs-equal results confound dock-action access and indirect-resource eligibility with planning method.",
+    "NONE/CONTINUE/WAIT consume the original six-decision budget; this is measured behavior, not proof that removing them improves outcomes.",
+    "Censored alternatives in original B4 occur only with unavailable drivers before their unannounced restoration. Increasing the rollout duration does not make hidden restoration known.",
+    "No within-forecast SLA/lateness ranking inversion was found in original B4 decisions; weight retuning is not supported as a demonstrated fix by this trace audit.",
+    "Duplicate forecast metric vectors identify repeated hypothetical outcomes; no claim of identical full states or candidate incompleteness follows.",
+    "The original B0-B4 implementations and outcomes remain unchanged. New B5 identifiers must isolate learned predictions from action, eligibility, budget and horizon effects."
+  ]
+}

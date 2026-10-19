@@ -1,0 +1,9 @@
+{
+  "checked_at_utc": "2026-10-08T17:58:04.946764+00:00",
+  "executed": false,
+  "reason": "No DATABASE_URL configured, no psql/postgres binary, and installed Docker client cannot reach the Docker Desktop Linux engine. No database server was started or database import attempted.",
+  "sql_prepared": true,
+  "docker_probe_exit_code": 1,
+  "docker_probe_failure": "Docker engine named pipe not found",
+  "execution_claim": "Generated SQL and grammar checks only; database behavior requires a real PostgreSQL/PostGIS instance."
+}

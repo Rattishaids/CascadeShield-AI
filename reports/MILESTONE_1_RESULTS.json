@@ -1,0 +1,39 @@
+{
+  "completed_at_utc": "2026-10-09T06:34:12.290306+00:00",
+  "milestone": 1,
+  "status": "COMPLETE",
+  "api_health": {
+    "directedEdges": 23907,
+    "operationsProvenance": "SIMULATED",
+    "persistenceError": "",
+    "database": true,
+    "riskSource": "RULE_BASED",
+    "networkId": "chennai-central-osm-v1",
+    "status": "UP",
+    "roadNodes": 12386
+  },
+  "research_tables": 18,
+  "research_rows": 2414128,
+  "quarantined_imports": [],
+  "checks": {
+    "python": 16,
+    "java": 24,
+    "frontend": 21,
+    "api": 15,
+    "restart": 1,
+    "browser": 7
+  },
+  "current_demonstration": {
+    "status": "PAUSED",
+    "clock_sec": 140.0,
+    "trucks": 20,
+    "active_incidents": 1,
+    "operations_provenance": "SIMULATED"
+  },
+  "ml_trained": false,
+  "cascade_engine_implemented": false,
+  "screenshots": [
+    "reports/screenshots/milestone-1-dashboard.png",
+    "reports/screenshots/milestone-1-intervention.png"
+  ]
+}

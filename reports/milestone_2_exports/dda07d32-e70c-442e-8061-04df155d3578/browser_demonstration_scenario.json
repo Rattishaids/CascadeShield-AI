@@ -1,0 +1,166 @@
+{
+  "name": "M2 browser verified cascade 20261013T150511Z",
+  "configuration": {
+    "seed": 0,
+    "trucks": [
+      {
+        "id": "BROW-A",
+        "name": "Delivery 1",
+        "start": {
+          "latitude": 13.05193002304965,
+          "longitude": 80.25015295386038
+        },
+        "loadKg": 1200.0,
+        "priority": "NORMAL",
+        "waypoints": [],
+        "capacityKg": 3500.0,
+        "driverName": "Simulated driver 1",
+        "deadlineSec": 3600.0,
+        "destination": {
+          "latitude": 13.079060762462447,
+          "longitude": 80.27486190655884
+        },
+        "maxSpeedKph": 40.0,
+        "departureSec": 0.0
+      },
+      {
+        "id": "BROW-B",
+        "name": "Delivery 1",
+        "start": {
+          "latitude": 13.0518861,
+          "longitude": 80.2502518
+        },
+        "loadKg": 1200.0,
+        "priority": "NORMAL",
+        "waypoints": [],
+        "capacityKg": 3500.0,
+        "driverName": "Simulated driver 1",
+        "deadlineSec": 3600.0,
+        "destination": {
+          "latitude": 13.079060762462447,
+          "longitude": 80.27486190655884
+        },
+        "maxSpeedKph": 40.0,
+        "departureSec": 200.0
+      }
+    ],
+    "version": 2,
+    "commands": [
+      {
+        "kind": "INCIDENT_ADD",
+        "payload": {
+          "type": "CLOSURE",
+          "severity": 1.0,
+          "startSec": 0.0,
+          "physicalId": "1055336210:2",
+          "durationSec": 90.0
+        },
+        "clockSec": 0.0,
+        "sequence": 32
+      },
+      {
+        "kind": "DRIVER_AVAILABILITY",
+        "payload": {
+          "id": "BROW-DRB",
+          "available": false
+        },
+        "clockSec": 1.0,
+        "sequence": 36
+      },
+      {
+        "kind": "DRIVER_AVAILABILITY",
+        "payload": {
+          "id": "BROW-DRB",
+          "available": true
+        },
+        "clockSec": 220.0,
+        "sequence": 43
+      }
+    ],
+    "networkId": "chennai-central-osm-v1",
+    "operations": {
+      "docks": [
+        {
+          "id": "BROW-D",
+          "name": "Browser simulated shared dock",
+          "serviceSec": 300.0,
+          "openFromSec": 0.0,
+          "warehouseId": "BROW-W",
+          "openUntilSec": 10000.0
+        }
+      ],
+      "drivers": [
+        {
+          "id": "BROW-DRA",
+          "name": "Browser simulated driver A",
+          "available": true,
+          "shiftEndSec": 10000.0,
+          "shiftStartSec": 0.0
+        },
+        {
+          "id": "BROW-DRB",
+          "name": "Browser simulated driver B",
+          "available": true,
+          "shiftEndSec": 10000.0,
+          "shiftStartSec": 0.0
+        }
+      ],
+      "deliveries": [
+        {
+          "id": "BROW-LA",
+          "name": "Browser simulated delivery A",
+          "loadKg": 200.0,
+          "priority": "NORMAL",
+          "deadlineSec": 1262.6,
+          "warehouseId": "BROW-W"
+        },
+        {
+          "id": "BROW-LB",
+          "name": "Browser simulated delivery B",
+          "loadKg": 200.0,
+          "priority": "NORMAL",
+          "deadlineSec": 1292.6,
+          "warehouseId": "BROW-W"
+        }
+      ],
+      "warehouses": [
+        {
+          "id": "BROW-W",
+          "name": "Browser simulated receiving warehouse",
+          "location": {
+            "latitude": 13.0789961,
+            "longitude": 80.2749303
+          },
+          "dockCapacity": 1
+        }
+      ],
+      "assignments": [
+        {
+          "dockId": "BROW-D",
+          "truckId": "BROW-A",
+          "driverId": "BROW-DRA",
+          "deliveryIds": [
+            "BROW-LA"
+          ],
+          "reservationEndSec": 962.6,
+          "reservationStartSec": 662.6
+        },
+        {
+          "dockId": "BROW-D",
+          "truckId": "BROW-B",
+          "driverId": "BROW-DRB",
+          "deliveryIds": [
+            "BROW-LB"
+          ],
+          "reservationEndSec": 1262.6,
+          "reservationStartSec": 962.6
+        }
+      ]
+    },
+    "durationSec": 1000.0,
+    "initialClockIso": "2026-10-09T09:00:00+05:30",
+    "operationsProvenance": "SIMULATED"
+  },
+  "networkId": "chennai-central-osm-v1",
+  "id": "0964c8fe-cc1a-4bac-ace3-50b55670c38f"
+}

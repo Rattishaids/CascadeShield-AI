@@ -1,0 +1,379 @@
+{
+  "schemaVersion": "cascadeshield.milestone4-protocol/1.0",
+  "declaredDate": "2026-10-16",
+  "provenance": "SIMULATED_RESEARCH_EXPERIMENT",
+  "splits": {
+    "train": [
+      1001,
+      1002,
+      1003,
+      1004,
+      1005,
+      1006,
+      1007,
+      1008
+    ],
+    "validation": [
+      2001,
+      2002,
+      2003
+    ],
+    "calibration": [
+      3001,
+      3002,
+      3003
+    ],
+    "final": [
+      4001,
+      4002,
+      4003,
+      4004
+    ]
+  },
+  "historicallyExposedSeeds": [
+    11,
+    22,
+    33,
+    44,
+    55
+  ],
+  "families": [
+    {
+      "id": "single-closure",
+      "baseProfile": "closure-contention",
+      "parameters": {
+        "truckCount": 4,
+        "warehouseCount": 1,
+        "docksPerWarehouse": 2,
+        "serviceSec": 120,
+        "deadlineSlackSec": 90,
+        "departureGapSec": 75,
+        "closureCount": 1,
+        "rainSlowdownCount": 0,
+        "severity": 1,
+        "incidentDurationSec": 240,
+        "contention": 0.5,
+        "horizonSec": 3600
+      },
+      "finalOnly": false
+    },
+    {
+      "id": "overlapping-disruptions",
+      "baseProfile": "rain-multiple",
+      "parameters": {
+        "truckCount": 6,
+        "warehouseCount": 2,
+        "docksPerWarehouse": 2,
+        "serviceSec": 150,
+        "deadlineSlackSec": 90,
+        "departureGapSec": 60,
+        "closureCount": 2,
+        "rainSlowdownCount": 1,
+        "severity": 0.8,
+        "incidentDurationSec": 360,
+        "simultaneousIncidents": false,
+        "contention": 0.75,
+        "horizonSec": 4200
+      },
+      "finalOnly": false
+    },
+    {
+      "id": "weather-slowdown",
+      "baseProfile": "rain-multiple",
+      "parameters": {
+        "truckCount": 4,
+        "warehouseCount": 2,
+        "docksPerWarehouse": 2,
+        "serviceSec": 120,
+        "deadlineSlackSec": 60,
+        "departureGapSec": 60,
+        "closureCount": 0,
+        "rainSlowdownCount": 2,
+        "severity": 0.65,
+        "incidentDurationSec": 420,
+        "contention": 0.5,
+        "horizonSec": 3600
+      },
+      "finalOnly": false
+    },
+    {
+      "id": "shared-dock-contention",
+      "baseProfile": "closure-contention",
+      "parameters": {
+        "truckCount": 6,
+        "warehouseCount": 1,
+        "docksPerWarehouse": 2,
+        "serviceSec": 240,
+        "deadlineSlackSec": 45,
+        "departureGapSec": 30,
+        "closureCount": 1,
+        "rainSlowdownCount": 0,
+        "severity": 1,
+        "incidentDurationSec": 240,
+        "contention": 1,
+        "horizonSec": 4200
+      },
+      "finalOnly": false
+    },
+    {
+      "id": "driver-unavailability",
+      "baseProfile": "driver-availability",
+      "parameters": {
+        "truckCount": 4,
+        "warehouseCount": 2,
+        "docksPerWarehouse": 2,
+        "serviceSec": 150,
+        "deadlineSlackSec": 60,
+        "departureGapSec": 75,
+        "driverUnavailableFraction": 0.5,
+        "driverRestoreSec": 420,
+        "closureCount": 1,
+        "rainSlowdownCount": 0,
+        "severity": 0.8,
+        "incidentDurationSec": 300,
+        "contention": 0.5,
+        "horizonSec": 4200
+      },
+      "finalOnly": false
+    },
+    {
+      "id": "tight-deadlines",
+      "baseProfile": "closure-contention",
+      "parameters": {
+        "truckCount": 4,
+        "warehouseCount": 2,
+        "docksPerWarehouse": 2,
+        "serviceSec": 120,
+        "deadlineSlackSec": -60,
+        "departureGapSec": 60,
+        "closureCount": 1,
+        "rainSlowdownCount": 0,
+        "severity": 1,
+        "incidentDurationSec": 300,
+        "contention": 0.5,
+        "horizonSec": 3600
+      },
+      "finalOnly": false
+    },
+    {
+      "id": "low-contention-control",
+      "baseProfile": "low-contention",
+      "parameters": {
+        "truckCount": 4,
+        "warehouseCount": 2,
+        "docksPerWarehouse": 2,
+        "serviceSec": 60,
+        "deadlineSlackSec": 360,
+        "departureGapSec": 120,
+        "closureCount": 1,
+        "rainSlowdownCount": 0,
+        "severity": 0.2,
+        "incidentDurationSec": 120,
+        "contention": 0,
+        "horizonSec": 3600
+      },
+      "finalOnly": false
+    },
+    {
+      "id": "mixed-resources",
+      "baseProfile": "driver-availability",
+      "parameters": {
+        "truckCount": 6,
+        "warehouseCount": 2,
+        "docksPerWarehouse": 2,
+        "serviceSec": 180,
+        "deadlineSlackSec": 30,
+        "departureGapSec": 60,
+        "driverUnavailableFraction": 0.35,
+        "driverRestoreSec": 360,
+        "closureCount": 1,
+        "rainSlowdownCount": 2,
+        "severity": 0.65,
+        "incidentDurationSec": 300,
+        "simultaneousIncidents": false,
+        "contention": 0.8,
+        "horizonSec": 4200
+      },
+      "finalOnly": false
+    },
+    {
+      "id": "unseen-large-combination",
+      "baseProfile": "rain-multiple",
+      "parameters": {
+        "truckCount": 8,
+        "warehouseCount": 3,
+        "docksPerWarehouse": 2,
+        "serviceSec": 210,
+        "deadlineSlackSec": 20,
+        "departureGapSec": 45,
+        "driverUnavailableFraction": 0.4,
+        "driverRestoreSec": 540,
+        "closureCount": 2,
+        "rainSlowdownCount": 2,
+        "severity": 0.85,
+        "incidentDurationSec": 480,
+        "simultaneousIncidents": false,
+        "contention": 0.9,
+        "horizonSec": 5400
+      },
+      "finalOnly": true
+    },
+    {
+      "id": "unseen-largest-contention",
+      "baseProfile": "driver-availability",
+      "parameters": {
+        "truckCount": 12,
+        "warehouseCount": 3,
+        "docksPerWarehouse": 3,
+        "serviceSec": 240,
+        "deadlineSlackSec": -30,
+        "departureGapSec": 30,
+        "driverUnavailableFraction": 0.5,
+        "driverRestoreSec": 600,
+        "closureCount": 3,
+        "rainSlowdownCount": 2,
+        "severity": 0.9,
+        "incidentDurationSec": 540,
+        "simultaneousIncidents": false,
+        "contention": 1,
+        "horizonSec": 6000
+      },
+      "finalOnly": true
+    }
+  ],
+  "snapshotClocksSec": [
+    0,
+    10,
+    30,
+    60,
+    120,
+    240,
+    360,
+    600,
+    900,
+    1200,
+    1800
+  ],
+  "impactHorizonSec": 300,
+  "adverseImpactCodes": [
+    "DOCK_QUEUE",
+    "DOCK_CLOSED",
+    "DELIVERY_LATE",
+    "DRIVER_BUSY",
+    "DRIVER_UNAVAILABLE",
+    "SHIFT_EXHAUSTED"
+  ],
+  "jitter": {
+    "serviceMultiplier": [
+      0.85,
+      1.15
+    ],
+    "departureGapMultiplier": [
+      0.85,
+      1.15
+    ],
+    "incidentDurationMultiplier": [
+      0.75,
+      1.25
+    ],
+    "incidentStartSec": [
+      10,
+      60
+    ],
+    "severityOffset": [
+      -0.1,
+      0.1
+    ],
+    "driverRestoreOffsetSec": [
+      -60,
+      60
+    ],
+    "roundingSec": 0.1,
+    "seedRule": "java.util.Random(seed*104729+familyIndex*1009+17) in declaration order"
+  },
+  "policyBudget": {
+    "decisionIntervalSec": 30,
+    "rolloutHorizonSec": 1800,
+    "maxDecisions": 6,
+    "observationCadenceSec": 10
+  },
+  "comparisonActions": [
+    "NONE",
+    "CONTINUE",
+    "WAIT",
+    "LOCAL_REROUTE",
+    "GLOBAL_REROUTE"
+  ],
+  "finalPolicyIds": [
+    "B0",
+    "B1",
+    "B2",
+    "B3",
+    "B4",
+    "B5_RULE_V1",
+    "B5_XGB_V1",
+    "B5_XGB_NO_GRAPH_V1",
+    "B5_GNN_STATIC_V1",
+    "B5_GNN_TEMPORAL_V1",
+    "B5_XGB_CF_V1"
+  ],
+  "b5Score": {
+    "slaProbability": 0.6,
+    "latenessRatio": 0.25,
+    "futureImpactProbability": 0.1,
+    "extraDistanceRatio": 0.05,
+    "normalization": "fixed 1800-second lateness and initial remaining-distance denominators; clipped [0,1]; no per-candidate minmax"
+  },
+  "selectionRule": "Choose eligible trained model variants on development/validation only; calibration held separate. Freeze model artifacts and policy specification before generating final outcomes. All declared trained variants retained including adverse results. No combined model unless predeclared before final.",
+  "uncertainty": {
+    "pairedBootstrapReplicates": 2000,
+    "cluster": "seed across all families",
+    "bootstrapSeed": 4016,
+    "confidenceLevel": 0.95,
+    "multiplicityCorrection": "none; descriptive only"
+  },
+  "realWorldClaim": "No observed Chennai freight labels, traffic-speed calibration, dock/driver/deadline calibration or operational effectiveness claim.",
+  "b5CounterfactualVariant": {
+    "score": "0.5*directMlScore + 0.5*fixedExecutedOutcomeScore + 2*unfinishedDeliveries",
+    "fixedExecutedOutcomeScore": ".60*SLA rate + .25*min(1,totalLateness/(deliveryCount*1800)) + .10*min(1,downstreamAffectedResources/resourceCount) + .05*min(1,positiveAdditionalDistance/initialRemainingDistance)",
+    "knowledge": "ML features extracted immediately after candidate mutation and before trial advancement; realized trial outcome never becomes live inference feature",
+    "rolloutBudget": "Same candidates and1800-second maximum perdecision as B4; no model-assisted pruning"
+  },
+  "developmentDiagnostics": {
+    "splits": [
+      "validation"
+    ],
+    "seeds": [
+      2001,
+      2002
+    ],
+    "families": [
+      "shared-dock-contention",
+      "driver-unavailability"
+    ],
+    "variants": [
+      {
+        "id": "B4_M4_DIAG_REFERENCE",
+        "maxDecisions": 6,
+        "rolloutHorizonSec": 1800
+      },
+      {
+        "id": "B4_M4_DIAG_BUDGET12",
+        "maxDecisions": 12,
+        "rolloutHorizonSec": 1800
+      },
+      {
+        "id": "B4_M4_DIAG_HORIZON900",
+        "maxDecisions": 6,
+        "rolloutHorizonSec": 900
+      },
+      {
+        "id": "B4_M4_DIAG_HORIZON3600",
+        "maxDecisions": 6,
+        "rolloutHorizonSec": 3600
+      }
+    ],
+    "actions": "same five road actions; historical B4 selection; new diagnostic identifiers only",
+    "tuningRule": "Diagnostic outcomes retained, never used to silently retune historical B4 or frozen B5. Not independent final evidence."
+  }
+}

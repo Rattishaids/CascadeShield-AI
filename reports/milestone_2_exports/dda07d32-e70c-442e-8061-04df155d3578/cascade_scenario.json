@@ -1,0 +1,175 @@
+{
+  "name": "M2 completed deterministic cascade engineering test",
+  "configuration": {
+    "seed": 0,
+    "trucks": [
+      {
+        "id": "OPS-A",
+        "name": "OPS-A simulated freight",
+        "start": {
+          "latitude": 13.0518861,
+          "longitude": 80.2502518
+        },
+        "loadKg": 500.0,
+        "priority": "NORMAL",
+        "waypoints": [],
+        "capacityKg": 1000.0,
+        "driverName": "Simulated",
+        "deadlineSec": 4000.0,
+        "destination": {
+          "latitude": 13.0789961,
+          "longitude": 80.2749303
+        },
+        "maxSpeedKph": 40.0,
+        "departureSec": 0.0
+      },
+      {
+        "id": "OPS-B",
+        "name": "OPS-B simulated freight",
+        "start": {
+          "latitude": 13.0518861,
+          "longitude": 80.2502518
+        },
+        "loadKg": 500.0,
+        "priority": "NORMAL",
+        "waypoints": [],
+        "capacityKg": 1000.0,
+        "driverName": "Simulated",
+        "deadlineSec": 4000.0,
+        "destination": {
+          "latitude": 13.0789961,
+          "longitude": 80.2749303
+        },
+        "maxSpeedKph": 40.0,
+        "departureSec": 200.0
+      }
+    ],
+    "version": 2,
+    "commands": [
+      {
+        "kind": "INCIDENT_ADD",
+        "payload": {
+          "type": "CLOSURE",
+          "severity": 1.0,
+          "startSec": 0.0,
+          "physicalId": "1055336210:2",
+          "durationSec": 90.0
+        },
+        "clockSec": 0.0,
+        "sequence": 21
+      },
+      {
+        "kind": "DECISION",
+        "payload": {
+          "action": "CONTINUE",
+          "truckId": "OPS-A"
+        },
+        "clockSec": 0.0,
+        "sequence": 24
+      },
+      {
+        "kind": "DRIVER_AVAILABILITY",
+        "payload": {
+          "id": "OPS-DRB",
+          "available": false
+        },
+        "clockSec": 0.1,
+        "sequence": 26
+      },
+      {
+        "kind": "DRIVER_AVAILABILITY",
+        "payload": {
+          "id": "OPS-DRB",
+          "available": true
+        },
+        "clockSec": 0.1,
+        "sequence": 29
+      }
+    ],
+    "networkId": "chennai-central-osm-v1",
+    "operations": {
+      "docks": [
+        {
+          "id": "OPS-D",
+          "name": "Simulated shared dock",
+          "serviceSec": 300.0,
+          "openFromSec": 0.0,
+          "warehouseId": "OPS-W",
+          "openUntilSec": 10000.0
+        }
+      ],
+      "drivers": [
+        {
+          "id": "OPS-DRA",
+          "name": "Simulated driver A",
+          "available": true,
+          "shiftEndSec": 10000.0,
+          "shiftStartSec": 0.0
+        },
+        {
+          "id": "OPS-DRB",
+          "name": "Simulated driver B",
+          "available": true,
+          "shiftEndSec": 10000.0,
+          "shiftStartSec": 0.0
+        }
+      ],
+      "deliveries": [
+        {
+          "id": "OPS-LA",
+          "name": "Simulated delivery A",
+          "loadKg": 200.0,
+          "priority": "NORMAL",
+          "deadlineSec": 1262.6,
+          "warehouseId": "OPS-W"
+        },
+        {
+          "id": "OPS-LB",
+          "name": "Simulated delivery B",
+          "loadKg": 200.0,
+          "priority": "HIGH",
+          "deadlineSec": 1292.6,
+          "warehouseId": "OPS-W"
+        }
+      ],
+      "warehouses": [
+        {
+          "id": "OPS-W",
+          "name": "Simulated receiving facility",
+          "location": {
+            "latitude": 13.0789961,
+            "longitude": 80.2749303
+          },
+          "dockCapacity": 1
+        }
+      ],
+      "assignments": [
+        {
+          "dockId": "OPS-D",
+          "truckId": "OPS-A",
+          "driverId": "OPS-DRA",
+          "deliveryIds": [
+            "OPS-LA"
+          ],
+          "reservationEndSec": 962.6,
+          "reservationStartSec": 662.6
+        },
+        {
+          "dockId": "OPS-D",
+          "truckId": "OPS-B",
+          "driverId": "OPS-DRB",
+          "deliveryIds": [
+            "OPS-LB"
+          ],
+          "reservationEndSec": 1262.6,
+          "reservationStartSec": 962.6
+        }
+      ]
+    },
+    "durationSec": 1352.6,
+    "initialClockIso": "2026-10-09T09:00:00+05:30",
+    "operationsProvenance": "SIMULATED"
+  },
+  "networkId": "chennai-central-osm-v1",
+  "id": "bbc803dd-423e-42cc-970e-f979be47fb7b"
+}

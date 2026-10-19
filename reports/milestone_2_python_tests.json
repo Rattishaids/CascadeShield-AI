@@ -1,0 +1,10 @@
+{
+  "started_at_utc": "2026-10-13T14:57:56.124923+00:00",
+  "completed_at_utc": "2026-10-13T14:58:03.008063+00:00",
+  "data_class": "AUTOMATED_TEST_EVIDENCE",
+  "tests_run": 28,
+  "passed": true,
+  "failures": [],
+  "errors": [],
+  "skipped": []
+}

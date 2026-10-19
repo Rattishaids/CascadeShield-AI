@@ -1,0 +1,42 @@
+{
+  "selectionManifestSha256" : "a225deef5bfe31676129cefa595ef8fb39511486b06e9d0a1d31de40733a3a39",
+  "provenance" : "ENGINEERING_TEST_EVIDENCE",
+  "passed" : true,
+  "stateMutated" : false,
+  "passedChecks" : 4,
+  "checks" : [ {
+    "scenarioId" : "single-closure-s4001-a4f96acbb8b9",
+    "policyId" : "B3",
+    "realizedMetricsEqualExceptComputation" : true,
+    "candidateScoresAndActionsEqual" : true,
+    "finalStateFingerprintEqual" : true,
+    "failedInferenceRequests" : 0,
+    "passed" : true
+  }, {
+    "scenarioId" : "single-closure-s4001-a4f96acbb8b9",
+    "policyId" : "B5_XGB_V1",
+    "realizedMetricsEqualExceptComputation" : true,
+    "candidateScoresAndActionsEqual" : true,
+    "finalStateFingerprintEqual" : true,
+    "failedInferenceRequests" : 0,
+    "passed" : true
+  }, {
+    "scenarioId" : "driver-unavailability-s4001-0fe504a8bc37",
+    "policyId" : "B3",
+    "realizedMetricsEqualExceptComputation" : true,
+    "candidateScoresAndActionsEqual" : true,
+    "finalStateFingerprintEqual" : true,
+    "failedInferenceRequests" : 0,
+    "passed" : true
+  }, {
+    "scenarioId" : "driver-unavailability-s4001-0fe504a8bc37",
+    "policyId" : "B5_XGB_V1",
+    "realizedMetricsEqualExceptComputation" : true,
+    "candidateScoresAndActionsEqual" : true,
+    "finalStateFingerprintEqual" : true,
+    "failedInferenceRequests" : 0,
+    "passed" : true
+  } ],
+  "schemaVersion" : "cascadeshield.milestone4-replay/1.0",
+  "timingExcluded" : true
+}

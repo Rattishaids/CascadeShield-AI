@@ -1,0 +1,114 @@
+{
+  "recordedAtUtc": "2026-10-13T16:28:10.426273+00:00",
+  "success": true,
+  "exitCode": 0,
+  "command": "docker run --rm --mount type=bind,source=<project>,target=/workspace --mount type=volume,source=cascadeshield_maven_cache,target=/root/.m2 -e MAVEN_MIRROR_URL=http://host.docker.internal:18090/maven2 -e SIMULATOR_GRAPH_PATH=/workspace/data/processed/chennai_osm/road_graph.json -w /workspace/simulator/backend maven:3.9-eclipse-temurin-21 mvn -B -q -s mirror-settings.xml test",
+  "graphSha256": "c943bac278192042b22342d8e1be898cc68512fb936e314633645bc3e0304e60",
+  "totals": {
+    "tests": 124,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "seconds": 28.716
+  },
+  "classes": [
+    {
+      "class": "io.cascadeshield.sim.AiArchitectureTest",
+      "tests": 11,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "seconds": 4.136
+    },
+    {
+      "class": "io.cascadeshield.sim.BenchmarkChennaiScenarioTest",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "seconds": 8.078
+    },
+    {
+      "class": "io.cascadeshield.sim.BenchmarkPolicyRunnerTest",
+      "tests": 11,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "seconds": 4.198
+    },
+    {
+      "class": "io.cascadeshield.sim.CounterfactualExperimentEngineTest",
+      "tests": 27,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "seconds": 0.735
+    },
+    {
+      "class": "io.cascadeshield.sim.GraphRiskBaselineTest",
+      "tests": 10,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "seconds": 0.048
+    },
+    {
+      "class": "io.cascadeshield.sim.OperationalDependencyGraphTest",
+      "tests": 12,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "seconds": 0.06
+    },
+    {
+      "class": "io.cascadeshield.sim.OperationalRuntimeTest",
+      "tests": 21,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "seconds": 2.126
+    },
+    {
+      "class": "io.cascadeshield.sim.OperatorApprovalGuardTest",
+      "tests": 4,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "seconds": 0.077
+    },
+    {
+      "class": "io.cascadeshield.sim.RoadGraphTest",
+      "tests": 9,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "seconds": 2.062
+    },
+    {
+      "class": "io.cascadeshield.sim.SimulationApprovalTransactionTest",
+      "tests": 3,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "seconds": 6.899
+    },
+    {
+      "class": "io.cascadeshield.sim.SimulationEngineRegressionTest",
+      "tests": 5,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "seconds": 0.134
+    },
+    {
+      "class": "io.cascadeshield.sim.SimulationEngineTest",
+      "tests": 10,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "seconds": 0.163
+    }
+  ],
+  "preservedMilestone1And2Tests": 85,
+  "newMilestone3Tests": 39
+}

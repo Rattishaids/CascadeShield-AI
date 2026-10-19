@@ -1,0 +1,52 @@
+{
+  "featureSchemaHash": "bfb419c7a4fde46112e53aa83a8131e2f1e33526d4d85dda51374de1a828c4d4",
+  "graphSha256": "c943bac278192042b22342d8e1be898cc68512fb936e314633645bc3e0304e60",
+  "sourceCorpusSha256": {
+    "train": "b44b2e222a289a0934287342545bc8defd3c17bf6624ff7374e03163633b2109",
+    "validation": "83f8f9e977316b01c2b66dca45855ca2e06ff7f6995a2c124c2b4f1f48233274",
+    "calibration": "3d9a0ec03a512e3ca6d5b57adab45e920c6b53dc9a4e4a46f04127107e4d459a"
+  },
+  "protocolSha256": "46ec8bfae7a6790e8b24b7fe8c8b7cd4a3005e4dea8b76a61e0ecd8434676f66",
+  "randomSeed": 4001,
+  "xgbGrid": [
+    {
+      "max_depth": 3,
+      "n_estimators": 80,
+      "learning_rate": 0.08
+    },
+    {
+      "max_depth": 4,
+      "n_estimators": 160,
+      "learning_rate": 0.05
+    }
+  ],
+  "gnnConfig": {
+    "hidden": 24,
+    "maximumEpochs": 24,
+    "patience": 5,
+    "learningRate": 0.003,
+    "historyFrames": 3,
+    "gradientClip": 2.0,
+    "etaScaleSec": 600.0,
+    "framesPerBackward": 4,
+    "gradientAccumulation": "ALL_FRAMES_IN_ONE_SCENARIO",
+    "mixedPrecision": false,
+    "lossWeights": {
+      "eta": 1.0,
+      "sla": 1.0,
+      "nodeImpact": 0.5
+    }
+  },
+  "learningSourceSha256": {
+    "ml/__init__.py": "04ad884d4f7dc68a10147bad9c50836c3ade52859ef0d508e59ebecec2aaa827",
+    "ml/data.py": "80ae12394c57c147f1ef711855b7f4481b41b4aac8f309ab978be3b54ecc6a1d",
+    "ml/evaluation.py": "9b5eaaef4f08d7f81c259161ee5f6ab93e616f75bb53a97af0ca9e5d6244e075",
+    "ml/features.py": "94f3495cfeafa88f36c691560e4653f8c860bd70f19f9c51365f3bbaeaa40a65",
+    "ml/gnn.py": "432a585a0ba58115b38aed4e76be6de268b6eafefe639daa48f6a287aebe648a",
+    "ml/inference.py": "6746508db0919ebe2699a67cb3c9ecad874942404e5a49285fe49cd1d02c4993",
+    "ml/metrics.py": "d343326ff9ca86b6aa0324602974c29cf2bfa5aeee07f387ffb1163831b0deda",
+    "ml/service.py": "2838b8c275b6faa2421e06f62d883a1a1e4871a7868973b4d46d669d7967c95a",
+    "ml/training.py": "fd40211142b377d73c71bd23a887329be0c80e49f579d544aff8264e2625ef9f",
+    "scripts/train_milestone4.py": "0b0a38d4808bc0f59593b08f50744edbd27ec0fa9b65eed849edaf957f183201"
+  }
+}

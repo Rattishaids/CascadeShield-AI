@@ -1,0 +1,31 @@
+{
+  "research_scope": "Separate real-data cohorts; no cross-country or cross-period operational joins. GB 2024 is a bounded context pilot, not a validated cascading-disruption benchmark.",
+  "dft_year": 2024,
+  "max_file_bytes": 1610612736,
+  "max_total_raw_bytes": 3758096384,
+  "minimum_free_bytes": 2147483648,
+  "osm_bbox_south_west_north_east": [52.42, -1.99, 52.55, -1.78],
+  "osm_snapshot_utc": "2024-01-01T00:00:00Z",
+  "overpass_endpoint": "https://overpass-api.de/api/interpreter",
+  "weather": {
+    "latitude": 52.4862,
+    "longitude": -1.8904,
+    "start_date": "2024-01-01",
+    "end_date": "2024-12-31",
+    "timezone": "UTC",
+    "models": "era5",
+    "hourly": "temperature_2m,relative_humidity_2m,precipitation,rain,snowfall,wind_speed_10m,weather_code",
+    "wind_speed_unit": "ms"
+  },
+  "sources": [
+    {"id":"dft","url":"https://www.gov.uk/government/statistical-data-sets/road-safety-open-data","region":"Great Britain (not Northern Ireland)","license":"Open Government Licence v3.0","license_url":"https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/","role":"Police-reported injury collisions, vehicles and casualties; not all disruptions or road closures"},
+    {"id":"porto","url":"https://www.kaggle.com/datasets/crailtap/taxi-trajectory","region":"Porto, Portugal","license":"Verify from live Kaggle metadata; Unknown must remain unresolved","license_url":"https://www.kaggle.com/datasets/crailtap/taxi-trajectory","role":"Taxi mobility proxy, not freight operations; separate cohort"},
+    {"id":"nyc","url":"https://github.com/walterwzhang/NYC-Taxi-2013-Data","region":"New York City, United States","license":"No repository LICENSE identified; reuse permission unresolved","license_url":"https://github.com/walterwzhang/NYC-Taxi-2013-Data","role":"2013 taxi driver samples/mapping and processing code; linked balanced-panel host must be checked"},
+    {"id":"cambridge","url":"https://www.repository.cam.ac.uk/items/3d0eb1ad-d077-4e4e-84cb-79af35f0b163","region":"England and Wales","license":"CC BY 4.0","license_url":"https://creativecommons.org/licenses/by/4.0/","role":"Static logistics-site locations, floor areas and author-modelled loading bays; no shipments or measured capacities"},
+    {"id":"olist","url":"https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce","region":"Brazil","license":"CC BY-NC-SA 4.0","license_url":"https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce","role":"E-commerce orders, items, sellers and delivery dates; independent Brazil cohort with no road-incident or cascade links"},
+    {"id":"overpass","url":"https://overpass-turbo.eu/","region":"Query-defined Birmingham pilot bbox, England","license":"OSM data: ODbL 1.0; Turbo is a query interface, not an independent dataset","license_url":"https://www.openstreetmap.org/copyright","role":"Read-only Overpass API extracts OSM historical road geometry and tags"},
+    {"id":"osm","url":"https://www.openstreetmap.org/","region":"Global source; bounded Birmingham pilot acquired through Overpass","license":"ODbL 1.0; attribution to OpenStreetMap contributors","license_url":"https://www.openstreetmap.org/copyright","role":"Same dataset as Overpass extract; count once, not as independent evidence"},
+    {"id":"traccar","url":"https://www.traccar.org/","region":"User-owned server and devices; none supplied","license":"Apache-2.0 software does not license any fleet records","license_url":"https://raw.githubusercontent.com/traccar/traccar/master/LICENSE.txt","role":"Authenticated /api/positions and /api/reports/route; no public evaluation fleet data identified"},
+    {"id":"weather","url":"https://open-meteo.com/","region":"Requested Birmingham point and returned ERA5 grid cell only","license":"CC BY 4.0 data; free hosted API is for non-commercial use subject to terms/rate limits","license_url":"https://open-meteo.com/en/licence","role":"2024 hourly ERA5 reanalysis; provider-modelled weather, not direct station observations or as-issued forecasts"}
+  ]
+}

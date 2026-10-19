@@ -1,0 +1,3409 @@
+{
+  "captured_at_utc": "2026-10-13T15:08:39.193606+00:00",
+  "health": {
+    "riskSource": "RULE_BASED",
+    "networkId": "chennai-central-osm-v1",
+    "directedEdges": 23907,
+    "operationsProvenance": "SIMULATED",
+    "status": "UP",
+    "database": true,
+    "apiVersion": "cascadeshield.ai/1.0",
+    "roadNodes": 12386,
+    "persistenceError": ""
+  },
+  "state": {
+    "status": "PAUSED",
+    "networkId": "chennai-central-osm-v1",
+    "scenarioName": "M2 browser verified cascade 20261013T150511Z",
+    "initialClockIso": "2026-10-09T09:00:00+05:30",
+    "runId": "a0dc2938-e839-4df7-ae63-415df61503bc",
+    "scenarioId": "0964c8fe-cc1a-4bac-ace3-50b55670c38f",
+    "randomSeed": 0,
+    "operations": {
+      "warehouses": [
+        {
+          "id": "BROW-W",
+          "name": "Browser simulated receiving warehouse",
+          "provenance": "SIMULATED",
+          "location": {
+            "longitude": 80.2749303,
+            "latitude": 13.0789961
+          },
+          "nodeId": 2241833897,
+          "dockCapacity": 1
+        }
+      ],
+      "docks": [
+        {
+          "id": "BROW-D",
+          "name": "Browser simulated shared dock",
+          "warehouseId": "BROW-W",
+          "status": "OCCUPIED",
+          "provenance": "SIMULATED",
+          "serviceSec": 300.0,
+          "openFromSec": 0.0,
+          "openUntilSec": 10000.0,
+          "occupiedBy": "BROW-A"
+        }
+      ],
+      "drivers": [
+        {
+          "id": "BROW-DRA",
+          "name": "Browser simulated driver A",
+          "status": "IDLE",
+          "provenance": "SIMULATED",
+          "available": true,
+          "shiftStartSec": 0.0,
+          "shiftEndSec": 10000.0,
+          "dutySec": 662.5,
+          "occupiedBy": null
+        },
+        {
+          "id": "BROW-DRB",
+          "name": "Browser simulated driver B",
+          "status": "IDLE",
+          "provenance": "SIMULATED",
+          "available": true,
+          "shiftStartSec": 0.0,
+          "shiftEndSec": 10000.0,
+          "dutySec": 662.5,
+          "occupiedBy": null
+        }
+      ],
+      "deliveries": [
+        {
+          "id": "BROW-LA",
+          "name": "Browser simulated delivery A",
+          "warehouseId": "BROW-W",
+          "priority": "NORMAL",
+          "status": "UNLOADING",
+          "provenance": "SIMULATED",
+          "loadKg": 200.0,
+          "deadlineSec": 1262.6,
+          "deliveredAtSec": -1.0,
+          "lateSec": 0.0,
+          "truckId": "BROW-A"
+        },
+        {
+          "id": "BROW-LB",
+          "name": "Browser simulated delivery B",
+          "warehouseId": "BROW-W",
+          "priority": "NORMAL",
+          "status": "ASSIGNED",
+          "provenance": "SIMULATED",
+          "loadKg": 200.0,
+          "deadlineSec": 1292.6,
+          "deliveredAtSec": -1.0,
+          "lateSec": 0.0,
+          "truckId": "BROW-B"
+        }
+      ],
+      "assignments": [
+        {
+          "truckId": "BROW-A",
+          "driverId": "BROW-DRA",
+          "dockId": "BROW-D",
+          "status": "UNLOADING",
+          "provenance": "SIMULATED",
+          "deliveryIds": [
+            "BROW-LA"
+          ],
+          "reservationStartSec": 662.6,
+          "reservationEndSec": 962.6,
+          "predictedDockStartSec": 752.6,
+          "predictedDockEndSec": 1052.6,
+          "actualDockStartSec": 752.6,
+          "actualDockEndSec": 1052.6,
+          "queueSec": 0.10000000000002274
+        },
+        {
+          "truckId": "BROW-B",
+          "driverId": "BROW-DRB",
+          "dockId": "BROW-D",
+          "status": "QUEUED",
+          "provenance": "SIMULATED",
+          "deliveryIds": [
+            "BROW-LB"
+          ],
+          "reservationStartSec": 962.6,
+          "reservationEndSec": 1262.6,
+          "predictedDockStartSec": 1052.6,
+          "predictedDockEndSec": 1352.6,
+          "actualDockStartSec": -1.0,
+          "actualDockEndSec": -1.0,
+          "queueSec": 117.5
+        }
+      ],
+      "predictedImpacts": [
+        {
+          "id": "DELIVERY_DEADLINE:DELIVERY:BROW-LB:BROW-B",
+          "code": "DELIVERY_DEADLINE",
+          "resourceIds": [
+            "DELIVERY:BROW-LB"
+          ],
+          "truckIds": [
+            "BROW-B"
+          ],
+          "startSec": 1292.6,
+          "endSec": 1352.6,
+          "delaySec": 60.0,
+          "predicted": true,
+          "message": "BROW-LB projected dock completion misses its deadline by 60 s.",
+          "provenance": "SIMULATED_PREDICTION"
+        },
+        {
+          "id": "DOCK_OVERLAP:DOCK:BROW-D,TRUCK:BROW-A:BROW-B",
+          "code": "DOCK_OVERLAP",
+          "resourceIds": [
+            "DOCK:BROW-D",
+            "TRUCK:BROW-A"
+          ],
+          "truckIds": [
+            "BROW-B"
+          ],
+          "startSec": 1000.0,
+          "endSec": 1052.6,
+          "delaySec": 52.59999999999991,
+          "predicted": true,
+          "message": "BROW-A occupies BROW-D beyond BROW-B ready time; projected additional dock wait 53 s.",
+          "provenance": "SIMULATED_PREDICTION"
+        }
+      ],
+      "realizedImpacts": [
+        {
+          "id": "DRIVER_UNAVAILABLE:DRIVER:BROW-DRB:BROW-B",
+          "code": "DRIVER_UNAVAILABLE",
+          "resourceIds": [
+            "DRIVER:BROW-DRB"
+          ],
+          "truckIds": [
+            "BROW-B"
+          ],
+          "startSec": 200.1,
+          "endSec": 200.1,
+          "delaySec": 0.0,
+          "predicted": false,
+          "message": "BROW-B held at a real graph node: DRIVER_UNAVAILABLE",
+          "provenance": "SIMULATED_OUTCOME"
+        },
+        {
+          "id": "DOCK_QUEUE:DOCK:BROW-D,TRUCK:BROW-A:BROW-B",
+          "code": "DOCK_QUEUE",
+          "resourceIds": [
+            "DOCK:BROW-D",
+            "TRUCK:BROW-A"
+          ],
+          "truckIds": [
+            "BROW-B"
+          ],
+          "startSec": 962.6,
+          "endSec": 962.6,
+          "delaySec": 80.10000000000002,
+          "predicted": false,
+          "message": "BROW-B is physically queued at BROW-D behind BROW-A",
+          "provenance": "SIMULATED_OUTCOME"
+        }
+      ],
+      "activeRealizedKeys": [
+        "DRIVER_UNAVAILABLE:DRIVER:BROW-DRB:BROW-B",
+        "DOCK_QUEUE:DOCK:BROW-D,TRUCK:BROW-A:BROW-B"
+      ],
+      "activePredictedKeys": [
+        "DELIVERY_DEADLINE:DELIVERY:BROW-LB:BROW-B",
+        "DOCK_OVERLAP:DOCK:BROW-D,TRUCK:BROW-A:BROW-B"
+      ],
+      "graph": {
+        "schemaVersion": "cascadeshield.operational-graph/1.0",
+        "clockSec": 1000.0,
+        "networkId": "chennai-central-osm-v1",
+        "nodes": [
+          {
+            "id": "DELIVERY:BROW-LA",
+            "type": "DELIVERY",
+            "resourceId": "BROW-LA",
+            "features": {
+              "deadlineSec": 1262.6,
+              "deliveredAtSec": -1.0,
+              "lateSec": 0.0,
+              "loadKg": 200.0,
+              "name": "Browser simulated delivery A",
+              "priority": "NORMAL",
+              "status": "UNLOADING",
+              "truckId": "BROW-A",
+              "warehouseId": "BROW-W"
+            },
+            "provenance": "SIMULATED"
+          },
+          {
+            "id": "DELIVERY:BROW-LB",
+            "type": "DELIVERY",
+            "resourceId": "BROW-LB",
+            "features": {
+              "deadlineSec": 1292.6,
+              "deliveredAtSec": -1.0,
+              "lateSec": 0.0,
+              "loadKg": 200.0,
+              "name": "Browser simulated delivery B",
+              "priority": "NORMAL",
+              "status": "ASSIGNED",
+              "truckId": "BROW-B",
+              "warehouseId": "BROW-W"
+            },
+            "provenance": "SIMULATED"
+          },
+          {
+            "id": "DOCK:BROW-D",
+            "type": "DOCK",
+            "resourceId": "BROW-D",
+            "features": {
+              "name": "Browser simulated shared dock",
+              "occupiedBy": "BROW-A",
+              "openFromSec": 0.0,
+              "openUntilSec": 10000.0,
+              "serviceSec": 300.0,
+              "status": "OCCUPIED",
+              "warehouseId": "BROW-W"
+            },
+            "provenance": "SIMULATED"
+          },
+          {
+            "id": "DRIVER:BROW-DRA",
+            "type": "DRIVER",
+            "resourceId": "BROW-DRA",
+            "features": {
+              "available": true,
+              "dutySec": 662.5,
+              "name": "Browser simulated driver A",
+              "shiftEndSec": 10000.0,
+              "shiftStartSec": 0.0,
+              "status": "IDLE"
+            },
+            "provenance": "SIMULATED"
+          },
+          {
+            "id": "DRIVER:BROW-DRB",
+            "type": "DRIVER",
+            "resourceId": "BROW-DRB",
+            "features": {
+              "available": true,
+              "dutySec": 662.5,
+              "name": "Browser simulated driver B",
+              "shiftEndSec": 10000.0,
+              "shiftStartSec": 0.0,
+              "status": "IDLE"
+            },
+            "provenance": "SIMULATED"
+          },
+          {
+            "id": "TRUCK:BROW-A",
+            "type": "TRUCK",
+            "resourceId": "BROW-A",
+            "features": {
+              "arrivalSec": 752.5,
+              "capacityKg": 3500.0,
+              "deadlineSec": 3600.0,
+              "departureSec": 0.0,
+              "directTravelRisk": 0.0,
+              "etaKnown": true,
+              "etaSec": 752.5,
+              "loadKg": 1200.0,
+              "name": "Delivery 1",
+              "remainingDistanceM": 0.0,
+              "status": "ARRIVED"
+            },
+            "provenance": "SIMULATED"
+          },
+          {
+            "id": "TRUCK:BROW-B",
+            "type": "TRUCK",
+            "resourceId": "BROW-B",
+            "features": {
+              "arrivalSec": 882.5,
+              "capacityKg": 3500.0,
+              "deadlineSec": 3600.0,
+              "departureSec": 200.0,
+              "directTravelRisk": 0.0,
+              "etaKnown": true,
+              "etaSec": 882.5,
+              "loadKg": 1200.0,
+              "name": "Delivery 1",
+              "remainingDistanceM": 0.0,
+              "status": "ARRIVED"
+            },
+            "provenance": "SIMULATED"
+          },
+          {
+            "id": "WAREHOUSE:BROW-W",
+            "type": "WAREHOUSE",
+            "resourceId": "BROW-W",
+            "features": {
+              "dockCapacity": 1,
+              "latitude": 13.0789961,
+              "longitude": 80.2749303,
+              "name": "Browser simulated receiving warehouse",
+              "roadNodeId": 2241833897
+            },
+            "provenance": "SIMULATED"
+          }
+        ],
+        "edges": [
+          {
+            "id": "DELIVERY:BROW-LA->WAREHOUSE:BROW-W|DELIVERY_TO_WAREHOUSE|BROW-LA",
+            "source": "DELIVERY:BROW-LA",
+            "target": "WAREHOUSE:BROW-W",
+            "type": "DELIVERY_TO_WAREHOUSE",
+            "validFromSec": 0.0,
+            "validUntilSec": 172800.0,
+            "weight": 0.7,
+            "features": {
+              "meaning": "delivery lateness affects its configured destination warehouse",
+              "weightSource": "DOCUMENTED_RULE_BASELINE"
+            },
+            "provenance": "SIMULATED"
+          },
+          {
+            "id": "DELIVERY:BROW-LB->TRUCK:BROW-B|DELIVERY_DEADLINE|DELIVERY_DEADLINE:DELIVERY:BROW-LB:BROW-B",
+            "source": "DELIVERY:BROW-LB",
+            "target": "TRUCK:BROW-B",
+            "type": "DELIVERY_DEADLINE",
+            "validFromSec": 1292.6,
+            "validUntilSec": 1352.6,
+            "weight": 0.55,
+            "features": {
+              "delaySec": 60.0,
+              "impactId": "DELIVERY_DEADLINE:DELIVERY:BROW-LB:BROW-B",
+              "meaning": "BROW-LB projected dock completion misses its deadline by 60 s.",
+              "predicted": true,
+              "resourceIds": [
+                "DELIVERY:BROW-LB"
+              ],
+              "weightSource": "DOCUMENTED_RULE_BASELINE"
+            },
+            "provenance": "SIMULATED"
+          },
+          {
+            "id": "DELIVERY:BROW-LB->WAREHOUSE:BROW-W|DELIVERY_TO_WAREHOUSE|BROW-LB",
+            "source": "DELIVERY:BROW-LB",
+            "target": "WAREHOUSE:BROW-W",
+            "type": "DELIVERY_TO_WAREHOUSE",
+            "validFromSec": 0.0,
+            "validUntilSec": 172800.0,
+            "weight": 0.7,
+            "features": {
+              "meaning": "delivery lateness affects its configured destination warehouse",
+              "weightSource": "DOCUMENTED_RULE_BASELINE"
+            },
+            "provenance": "SIMULATED"
+          },
+          {
+            "id": "DOCK:BROW-D->TRUCK:BROW-B|DOCK_OVERLAP|DOCK_OVERLAP:DOCK:BROW-D,TRUCK:BROW-A:BROW-B",
+            "source": "DOCK:BROW-D",
+            "target": "TRUCK:BROW-B",
+            "type": "DOCK_OVERLAP",
+            "validFromSec": 1000.0,
+            "validUntilSec": 1052.6,
+            "weight": 0.5438333333333333,
+            "features": {
+              "delaySec": 52.59999999999991,
+              "impactId": "DOCK_OVERLAP:DOCK:BROW-D,TRUCK:BROW-A:BROW-B",
+              "meaning": "BROW-A occupies BROW-D beyond BROW-B ready time; projected additional dock wait 53 s.",
+              "predicted": true,
+              "resourceIds": [
+                "DOCK:BROW-D",
+                "TRUCK:BROW-A"
+              ],
+              "weightSource": "DOCUMENTED_RULE_BASELINE"
+            },
+            "provenance": "SIMULATED"
+          },
+          {
+            "id": "DOCK:BROW-D->TRUCK:BROW-B|SHARED_DOCK_CONFLICT|BROW-A/BROW-B",
+            "source": "DOCK:BROW-D",
+            "target": "TRUCK:BROW-B",
+            "type": "SHARED_DOCK_CONFLICT",
+            "validFromSec": 1000.0,
+            "validUntilSec": 1052.6,
+            "weight": 0.5438333333333333,
+            "features": {
+              "blockerTruckId": "BROW-A",
+              "delaySec": 52.59999999999991,
+              "meaning": "preceding explicit dock interval overlaps dependent reservation",
+              "predicted": true,
+              "weightSource": "DOCUMENTED_RULE_BASELINE"
+            },
+            "provenance": "SIMULATED"
+          },
+          {
+            "id": "DOCK:BROW-D->WAREHOUSE:BROW-W|DOCK_AT_WAREHOUSE|BROW-D",
+            "source": "DOCK:BROW-D",
+            "target": "WAREHOUSE:BROW-W",
+            "type": "DOCK_AT_WAREHOUSE",
+            "validFromSec": 0.0,
+            "validUntilSec": 10000.0,
+            "weight": 0.75,
+            "features": {
+              "meaning": "dock service exposure contributes to its configured warehouse",
+              "weightSource": "DOCUMENTED_RULE_BASELINE"
+            },
+            "provenance": "SIMULATED"
+          },
+          {
+            "id": "TRUCK:BROW-A->DELIVERY:BROW-LA|CARRIES_DELIVERY|BROW-A",
+            "source": "TRUCK:BROW-A",
+            "target": "DELIVERY:BROW-LA",
+            "type": "CARRIES_DELIVERY",
+            "validFromSec": 0.0,
+            "validUntilSec": 1052.6,
+            "weight": 0.95,
+            "features": {
+              "assignmentStatus": "UNLOADING",
+              "meaning": "delay of truck can affect its assigned resource",
+              "predictedDockEndSec": 1052.6,
+              "predictedDockStartSec": 752.6,
+              "reservationEndSec": 962.6,
+              "reservationStartSec": 662.6,
+              "weightSource": "DOCUMENTED_RULE_BASELINE"
+            },
+            "provenance": "SIMULATED"
+          },
+          {
+            "id": "TRUCK:BROW-A->DOCK:BROW-D|RESERVED_DOCK|BROW-A",
+            "source": "TRUCK:BROW-A",
+            "target": "DOCK:BROW-D",
+            "type": "RESERVED_DOCK",
+            "validFromSec": 0.0,
+            "validUntilSec": 1052.6,
+            "weight": 0.9,
+            "features": {
+              "assignmentStatus": "UNLOADING",
+              "meaning": "delay of truck can affect its assigned resource",
+              "predictedDockEndSec": 1052.6,
+              "predictedDockStartSec": 752.6,
+              "reservationEndSec": 962.6,
+              "reservationStartSec": 662.6,
+              "weightSource": "DOCUMENTED_RULE_BASELINE"
+            },
+            "provenance": "SIMULATED"
+          },
+          {
+            "id": "TRUCK:BROW-A->DRIVER:BROW-DRA|ASSIGNED_DRIVER|BROW-A",
+            "source": "TRUCK:BROW-A",
+            "target": "DRIVER:BROW-DRA",
+            "type": "ASSIGNED_DRIVER",
+            "validFromSec": 0.0,
+            "validUntilSec": 752.5,
+            "weight": 0.8,
+            "features": {
+              "assignmentStatus": "UNLOADING",
+              "meaning": "delay of truck can affect its assigned resource",
+              "predictedDockEndSec": 1052.6,
+              "predictedDockStartSec": 752.6,
+              "reservationEndSec": 962.6,
+              "reservationStartSec": 662.6,
+              "weightSource": "DOCUMENTED_RULE_BASELINE"
+            },
+            "provenance": "SIMULATED"
+          },
+          {
+            "id": "TRUCK:BROW-B->DELIVERY:BROW-LB|CARRIES_DELIVERY|BROW-B",
+            "source": "TRUCK:BROW-B",
+            "target": "DELIVERY:BROW-LB",
+            "type": "CARRIES_DELIVERY",
+            "validFromSec": 200.0,
+            "validUntilSec": 1352.6,
+            "weight": 0.95,
+            "features": {
+              "assignmentStatus": "QUEUED",
+              "meaning": "delay of truck can affect its assigned resource",
+              "predictedDockEndSec": 1352.6,
+              "predictedDockStartSec": 1052.6,
+              "reservationEndSec": 1262.6,
+              "reservationStartSec": 962.6,
+              "weightSource": "DOCUMENTED_RULE_BASELINE"
+            },
+            "provenance": "SIMULATED"
+          },
+          {
+            "id": "TRUCK:BROW-B->DOCK:BROW-D|RESERVED_DOCK|BROW-B",
+            "source": "TRUCK:BROW-B",
+            "target": "DOCK:BROW-D",
+            "type": "RESERVED_DOCK",
+            "validFromSec": 200.0,
+            "validUntilSec": 1352.6,
+            "weight": 0.9,
+            "features": {
+              "assignmentStatus": "QUEUED",
+              "meaning": "delay of truck can affect its assigned resource",
+              "predictedDockEndSec": 1352.6,
+              "predictedDockStartSec": 1052.6,
+              "reservationEndSec": 1262.6,
+              "reservationStartSec": 962.6,
+              "weightSource": "DOCUMENTED_RULE_BASELINE"
+            },
+            "provenance": "SIMULATED"
+          },
+          {
+            "id": "TRUCK:BROW-B->DRIVER:BROW-DRB|ASSIGNED_DRIVER|BROW-B",
+            "source": "TRUCK:BROW-B",
+            "target": "DRIVER:BROW-DRB",
+            "type": "ASSIGNED_DRIVER",
+            "validFromSec": 200.0,
+            "validUntilSec": 882.5,
+            "weight": 0.8,
+            "features": {
+              "assignmentStatus": "QUEUED",
+              "meaning": "delay of truck can affect its assigned resource",
+              "predictedDockEndSec": 1352.6,
+              "predictedDockStartSec": 1052.6,
+              "reservationEndSec": 1262.6,
+              "reservationStartSec": 962.6,
+              "weightSource": "DOCUMENTED_RULE_BASELINE"
+            },
+            "provenance": "SIMULATED"
+          }
+        ],
+        "provenance": "SIMULATED"
+      },
+      "cascade": {
+        "provider": "RULE_BASED_GRAPH_BASELINE",
+        "threshold": 0.15,
+        "iterations": 3,
+        "nodeRisks": [
+          {
+            "nodeId": "DELIVERY:BROW-LA",
+            "score": 0.0,
+            "direct": false,
+            "causeIds": []
+          },
+          {
+            "nodeId": "DELIVERY:BROW-LB",
+            "score": 0.3804847375999999,
+            "direct": true,
+            "causeIds": [
+              "INCIDENT:I001",
+              "OPERATIONS:DELIVERY_DEADLINE:DELIVERY:BROW-LB:BROW-B"
+            ]
+          },
+          {
+            "nodeId": "DOCK:BROW-D",
+            "score": 0.45405973333333327,
+            "direct": true,
+            "causeIds": [
+              "INCIDENT:I001",
+              "OPERATIONS:DELIVERY_DEADLINE:DELIVERY:BROW-LB:BROW-B"
+            ]
+          },
+          {
+            "nodeId": "DRIVER:BROW-DRA",
+            "score": 0.0,
+            "direct": false,
+            "causeIds": []
+          },
+          {
+            "nodeId": "DRIVER:BROW-DRB",
+            "score": 0.0,
+            "direct": false,
+            "causeIds": []
+          },
+          {
+            "nodeId": "TRUCK:BROW-A",
+            "score": 0.0,
+            "direct": false,
+            "causeIds": []
+          },
+          {
+            "nodeId": "TRUCK:BROW-B",
+            "score": 0.38577340799999993,
+            "direct": true,
+            "causeIds": [
+              "INCIDENT:I001",
+              "OPERATIONS:DELIVERY_DEADLINE:DELIVERY:BROW-LB:BROW-B"
+            ]
+          },
+          {
+            "nodeId": "WAREHOUSE:BROW-W",
+            "score": 0.35889039999999983,
+            "direct": false,
+            "causeIds": [
+              "INCIDENT:I001",
+              "OPERATIONS:DELIVERY_DEADLINE:DELIVERY:BROW-LB:BROW-B"
+            ]
+          }
+        ],
+        "affectedNodeIds": [
+          "DELIVERY:BROW-LB",
+          "DOCK:BROW-D",
+          "TRUCK:BROW-B",
+          "WAREHOUSE:BROW-W"
+        ],
+        "affectedEdgeIds": [
+          "DELIVERY:BROW-LB->TRUCK:BROW-B|DELIVERY_DEADLINE|DELIVERY_DEADLINE:DELIVERY:BROW-LB:BROW-B",
+          "DELIVERY:BROW-LB->WAREHOUSE:BROW-W|DELIVERY_TO_WAREHOUSE|BROW-LB",
+          "DOCK:BROW-D->TRUCK:BROW-B|DOCK_OVERLAP|DOCK_OVERLAP:DOCK:BROW-D,TRUCK:BROW-A:BROW-B",
+          "DOCK:BROW-D->TRUCK:BROW-B|SHARED_DOCK_CONFLICT|BROW-A/BROW-B",
+          "DOCK:BROW-D->WAREHOUSE:BROW-W|DOCK_AT_WAREHOUSE|BROW-D",
+          "TRUCK:BROW-B->DELIVERY:BROW-LB|CARRIES_DELIVERY|BROW-B",
+          "TRUCK:BROW-B->DOCK:BROW-D|RESERVED_DOCK|BROW-B"
+        ],
+        "provenance": "SIMULATED_PREDICTION"
+      },
+      "kpis": {
+        "deliveries": 2,
+        "delivered": 0,
+        "lateDeliveries": 0,
+        "queuedTrucks": 1,
+        "unloadingTrucks": 1,
+        "constrainedDrivers": 0,
+        "deliveryDelaySec": 0.0
+      }
+    },
+    "initialOperations": {
+      "warehouses": [
+        {
+          "id": "BROW-W",
+          "name": "Browser simulated receiving warehouse",
+          "location": {
+            "longitude": 80.2749303,
+            "latitude": 13.0789961
+          },
+          "dockCapacity": 1
+        }
+      ],
+      "docks": [
+        {
+          "id": "BROW-D",
+          "name": "Browser simulated shared dock",
+          "warehouseId": "BROW-W",
+          "serviceSec": 300.0,
+          "openFromSec": 0.0,
+          "openUntilSec": 10000.0
+        }
+      ],
+      "drivers": [
+        {
+          "id": "BROW-DRA",
+          "name": "Browser simulated driver A",
+          "available": true,
+          "shiftStartSec": 0.0,
+          "shiftEndSec": 10000.0
+        },
+        {
+          "id": "BROW-DRB",
+          "name": "Browser simulated driver B",
+          "available": true,
+          "shiftStartSec": 0.0,
+          "shiftEndSec": 10000.0
+        }
+      ],
+      "deliveries": [
+        {
+          "id": "BROW-LA",
+          "name": "Browser simulated delivery A",
+          "warehouseId": "BROW-W",
+          "loadKg": 200.0,
+          "deadlineSec": 1262.6,
+          "priority": "NORMAL"
+        },
+        {
+          "id": "BROW-LB",
+          "name": "Browser simulated delivery B",
+          "warehouseId": "BROW-W",
+          "loadKg": 200.0,
+          "deadlineSec": 1292.6,
+          "priority": "NORMAL"
+        }
+      ],
+      "assignments": [
+        {
+          "truckId": "BROW-A",
+          "driverId": "BROW-DRA",
+          "dockId": "BROW-D",
+          "deliveryIds": [
+            "BROW-LA"
+          ],
+          "reservationStartSec": 662.6,
+          "reservationEndSec": 962.6
+        },
+        {
+          "truckId": "BROW-B",
+          "driverId": "BROW-DRB",
+          "dockId": "BROW-D",
+          "deliveryIds": [
+            "BROW-LB"
+          ],
+          "reservationStartSec": 962.6,
+          "reservationEndSec": 1262.6
+        }
+      ]
+    },
+    "clockSec": 1000.0,
+    "speed": 1.0,
+    "nextSequence": 20,
+    "nextIncidentId": 2,
+    "trucks": [
+      {
+        "id": "BROW-A",
+        "name": "Delivery 1",
+        "driverName": "Browser simulated driver A",
+        "priority": "NORMAL",
+        "status": "ARRIVED",
+        "start": {
+          "longitude": 80.2502518,
+          "latitude": 13.0518861
+        },
+        "destination": {
+          "longitude": 80.2749303,
+          "latitude": 13.0789961
+        },
+        "waypoints": [],
+        "capacityKg": 3500.0,
+        "loadKg": 1200.0,
+        "maxSpeedKph": 40.0,
+        "deadlineSec": 3600.0,
+        "departureSec": 0.0,
+        "startNode": 247685517,
+        "destinationNode": 2241833897,
+        "incomingWay": 441388418,
+        "route": {
+          "edgeIds": [
+            "1055336210:2:f",
+            "1055336210:3:f",
+            "1055336210:4:f",
+            "155927239:0:f",
+            "155927239:1:f",
+            "22977024:0:f",
+            "22977024:1:f",
+            "22977024:2:f",
+            "22977024:3:f",
+            "22977024:4:f",
+            "22977024:5:f",
+            "22977024:6:f",
+            "22977024:7:f",
+            "22977024:8:f",
+            "22977106:0:f",
+            "22977106:1:f",
+            "22977106:2:f",
+            "22977106:3:f",
+            "22977106:4:f",
+            "22977106:5:f",
+            "22977106:6:f",
+            "22977106:7:f",
+            "22977106:8:f",
+            "22977106:9:f",
+            "22977106:10:f",
+            "22977106:11:f",
+            "22977106:12:f",
+            "22977106:13:f",
+            "22977106:14:f",
+            "22977106:15:f",
+            "22977106:16:f",
+            "1189292659:0:f",
+            "28138954:9:f",
+            "1081040290:0:f",
+            "1081040290:1:f",
+            "154030367:0:f",
+            "154030367:1:f",
+            "154030367:2:f",
+            "154030367:3:f",
+            "240461923:0:f",
+            "240461923:1:f",
+            "240461923:2:f",
+            "240461923:3:f",
+            "240461923:4:f",
+            "1313221971:0:f",
+            "23955548:0:r",
+            "28076640:0:f",
+            "1313221972:0:f",
+            "1313221973:0:f",
+            "240461922:0:f",
+            "1521202255:0:f",
+            "1521202255:1:f",
+            "1521202255:2:f",
+            "1521202255:3:f",
+            "1521202255:4:f",
+            "1521202255:5:f",
+            "23955543:0:f",
+            "23955543:1:f",
+            "23955543:2:f",
+            "23955543:3:f",
+            "23955543:4:f",
+            "23955543:5:f",
+            "23955543:6:f",
+            "23955543:7:f",
+            "211669399:0:f",
+            "211669399:1:f",
+            "211669399:2:f",
+            "211669399:3:f",
+            "211669399:4:f",
+            "211669399:5:f",
+            "211669399:6:f",
+            "1081040291:0:f",
+            "1081040291:1:f",
+            "1081040291:2:f",
+            "1081040291:3:f",
+            "1053206423:0:f",
+            "1053206423:1:f",
+            "1053206424:0:f",
+            "1053206424:1:f",
+            "1053206424:2:f",
+            "1053206424:3:f",
+            "1053206424:4:f",
+            "1053206424:5:f",
+            "1053206424:6:f",
+            "1053206424:7:f",
+            "1053206424:8:f",
+            "1053206424:9:f",
+            "1053206424:10:f",
+            "1053206424:11:f",
+            "1053206424:12:f",
+            "1053206424:13:f",
+            "1053206424:14:f",
+            "1053206424:15:f",
+            "1053206424:16:f",
+            "1053206424:17:f",
+            "1053206424:18:f",
+            "1053206424:19:f",
+            "1053206424:20:f",
+            "1053206424:21:f",
+            "1053206424:22:f",
+            "1053206424:23:f",
+            "1053206424:24:f",
+            "1053206424:25:f",
+            "1053206424:26:f",
+            "1053206424:27:f",
+            "1053206424:28:f",
+            "1053206424:29:f",
+            "1053206424:30:f",
+            "1053206424:31:f",
+            "1053206424:32:f",
+            "1053206424:33:f",
+            "1053206424:34:f",
+            "1053206424:35:f",
+            "1053206424:36:f",
+            "1053206424:37:f",
+            "1053206424:38:f",
+            "1053206424:39:f",
+            "1053206424:40:f",
+            "1053206424:41:f",
+            "1053206424:42:f",
+            "744524364:0:f",
+            "744524364:1:f",
+            "1289111743:0:f",
+            "1289111743:1:f",
+            "1289111743:2:f",
+            "1289111743:3:f",
+            "1289111743:4:f",
+            "1289111743:5:f",
+            "1289111743:6:f",
+            "1363512418:0:r",
+            "567205827:0:f",
+            "567205827:1:f",
+            "567205827:2:f",
+            "567205827:3:f",
+            "567205827:4:f",
+            "1289111742:0:f",
+            "1308993345:0:f",
+            "154030364:0:f",
+            "154030364:1:f",
+            "154030364:2:f",
+            "1209024459:0:f",
+            "1209024459:1:f",
+            "1209024459:2:f",
+            "1209024459:3:f",
+            "1181048848:0:f",
+            "1181048848:1:f",
+            "1181048848:2:f",
+            "1181048848:3:f",
+            "1288008566:0:f",
+            "28150546:2:f",
+            "28150546:3:f",
+            "28150546:4:f",
+            "28150546:5:f",
+            "28150546:6:f",
+            "1039298145:0:f",
+            "1039298145:1:f",
+            "1149834135:0:f",
+            "1149834135:1:f",
+            "1149834136:0:f",
+            "275459525:0:f",
+            "275459525:1:f",
+            "275459525:2:f",
+            "275459525:3:f",
+            "275459525:4:f",
+            "275459525:5:f",
+            "275459525:6:f",
+            "275459525:7:f",
+            "275459525:8:f",
+            "275459525:9:f",
+            "1080757461:0:f",
+            "1080757461:1:f",
+            "28138953:0:f",
+            "28138955:0:f",
+            "28138955:1:f",
+            "1287344228:0:f",
+            "83075005:1:f",
+            "83075009:0:f",
+            "83075009:1:f",
+            "83075009:2:f",
+            "83075009:3:f",
+            "83075009:4:f",
+            "83075009:5:f",
+            "83075009:6:f",
+            "83075009:7:f",
+            "1201917078:0:r",
+            "111721013:17:r",
+            "111721013:16:r",
+            "111721013:15:r",
+            "111721013:14:r",
+            "111721013:13:r",
+            "111721013:12:r",
+            "111721013:11:r",
+            "111721013:10:r",
+            "111721013:9:r",
+            "111721013:8:r",
+            "111721013:7:r",
+            "111721013:6:r",
+            "111721013:5:r",
+            "111721013:4:r",
+            "111721013:3:r",
+            "111721013:2:r",
+            "111721013:1:r",
+            "441388418:2:r",
+            "441388418:1:r",
+            "441388418:0:r"
+          ],
+          "geometry": [
+            [
+              80.2502518,
+              13.0518861
+            ],
+            [
+              80.2505433,
+              13.0521448
+            ],
+            [
+              80.2506844,
+              13.0522799
+            ],
+            [
+              80.2507557,
+              13.052391
+            ],
+            [
+              80.250859,
+              13.0525227
+            ],
+            [
+              80.2509799,
+              13.0525591
+            ],
+            [
+              80.2510878,
+              13.052587
+            ],
+            [
+              80.2511552,
+              13.0526044
+            ],
+            [
+              80.2512177,
+              13.0526474
+            ],
+            [
+              80.2516648,
+              13.0529549
+            ],
+            [
+              80.2516975,
+              13.0529775
+            ],
+            [
+              80.2517206,
+              13.0529933
+            ],
+            [
+              80.2519414,
+              13.0531452
+            ],
+            [
+              80.2523511,
+              13.0534442
+            ],
+            [
+              80.2524552,
+              13.0534712
+            ],
+            [
+              80.2527752,
+              13.0536998
+            ],
+            [
+              80.2529292,
+              13.0538183
+            ],
+            [
+              80.2532575,
+              13.0540709
+            ],
+            [
+              80.2533533,
+              13.0541466
+            ],
+            [
+              80.2535291,
+              13.0542714
+            ],
+            [
+              80.2537746,
+              13.0544589
+            ],
+            [
+              80.2539219,
+              13.0545667
+            ],
+            [
+              80.2540698,
+              13.0546709
+            ],
+            [
+              80.2543033,
+              13.05483
+            ],
+            [
+              80.2543586,
+              13.0548713
+            ],
+            [
+              80.2551701,
+              13.0554772
+            ],
+            [
+              80.2555182,
+              13.0557372
+            ],
+            [
+              80.2555623,
+              13.0557701
+            ],
+            [
+              80.2561086,
+              13.0561693
+            ],
+            [
+              80.2564103,
+              13.0564248
+            ],
+            [
+              80.2564615,
+              13.0564709
+            ],
+            [
+              80.2566721,
+              13.0566976
+            ],
+            [
+              80.2567746,
+              13.0566062
+            ],
+            [
+              80.2566978,
+              13.0565215
+            ],
+            [
+              80.2565665,
+              13.0564011
+            ],
+            [
+              80.2565204,
+              13.0563615
+            ],
+            [
+              80.2564362,
+              13.056299
+            ],
+            [
+              80.2561309,
+              13.0560664
+            ],
+            [
+              80.2547748,
+              13.0550519
+            ],
+            [
+              80.2546112,
+              13.0549227
+            ],
+            [
+              80.2546106,
+              13.0548635
+            ],
+            [
+              80.2546395,
+              13.0548177
+            ],
+            [
+              80.2546912,
+              13.0547734
+            ],
+            [
+              80.2551702,
+              13.0547234
+            ],
+            [
+              80.2556651,
+              13.0546718
+            ],
+            [
+              80.2557266,
+              13.0546229
+            ],
+            [
+              80.2557807,
+              13.0546203
+            ],
+            [
+              80.2601986,
+              13.0542299
+            ],
+            [
+              80.2602798,
+              13.0542232
+            ],
+            [
+              80.2603221,
+              13.054263
+            ],
+            [
+              80.2604331,
+              13.0542582
+            ],
+            [
+              80.2606061,
+              13.0542429
+            ],
+            [
+              80.2606416,
+              13.0542397
+            ],
+            [
+              80.2608156,
+              13.0542261
+            ],
+            [
+              80.2610669,
+              13.0542055
+            ],
+            [
+              80.2614294,
+              13.0541608
+            ],
+            [
+              80.2615778,
+              13.054152
+            ],
+            [
+              80.2616338,
+              13.0541622
+            ],
+            [
+              80.262006,
+              13.0541325
+            ],
+            [
+              80.2622871,
+              13.0541093
+            ],
+            [
+              80.2625966,
+              13.0540812
+            ],
+            [
+              80.2626968,
+              13.05407
+            ],
+            [
+              80.2633399,
+              13.0539984
+            ],
+            [
+              80.2634679,
+              13.0539805
+            ],
+            [
+              80.2641252,
+              13.0539228
+            ],
+            [
+              80.2643484,
+              13.0546702
+            ],
+            [
+              80.2643575,
+              13.054739
+            ],
+            [
+              80.2644442,
+              13.0553944
+            ],
+            [
+              80.2644525,
+              13.055457
+            ],
+            [
+              80.2644924,
+              13.0559429
+            ],
+            [
+              80.2645588,
+              13.0564755
+            ],
+            [
+              80.2646346,
+              13.0568118
+            ],
+            [
+              80.2646488,
+              13.056875
+            ],
+            [
+              80.2647242,
+              13.0570496
+            ],
+            [
+              80.2650666,
+              13.0576406
+            ],
+            [
+              80.2651238,
+              13.057802
+            ],
+            [
+              80.2652284,
+              13.0580139
+            ],
+            [
+              80.2654066,
+              13.0583
+            ],
+            [
+              80.2654632,
+              13.0588276
+            ],
+            [
+              80.2654941,
+              13.0590521
+            ],
+            [
+              80.2655161,
+              13.0592345
+            ],
+            [
+              80.2655686,
+              13.0596571
+            ],
+            [
+              80.265597,
+              13.0600223
+            ],
+            [
+              80.2655621,
+              13.0601484
+            ],
+            [
+              80.2655454,
+              13.0601919
+            ],
+            [
+              80.2655228,
+              13.0602442
+            ],
+            [
+              80.2654665,
+              13.0603749
+            ],
+            [
+              80.2653527,
+              13.060609
+            ],
+            [
+              80.2653179,
+              13.0606791
+            ],
+            [
+              80.2652835,
+              13.0607423
+            ],
+            [
+              80.2652382,
+              13.0608273
+            ],
+            [
+              80.2652174,
+              13.0608709
+            ],
+            [
+              80.2652045,
+              13.0609106
+            ],
+            [
+              80.2651989,
+              13.0609372
+            ],
+            [
+              80.2651943,
+              13.0609702
+            ],
+            [
+              80.2651945,
+              13.0609937
+            ],
+            [
+              80.265193,
+              13.0610176
+            ],
+            [
+              80.2651974,
+              13.0610485
+            ],
+            [
+              80.2651925,
+              13.0611264
+            ],
+            [
+              80.2652165,
+              13.0612003
+            ],
+            [
+              80.2654442,
+              13.0613978
+            ],
+            [
+              80.2656177,
+              13.0615484
+            ],
+            [
+              80.2657837,
+              13.0616924
+            ],
+            [
+              80.2659527,
+              13.061821
+            ],
+            [
+              80.266148,
+              13.0619696
+            ],
+            [
+              80.2662885,
+              13.0620765
+            ],
+            [
+              80.2667824,
+              13.0624524
+            ],
+            [
+              80.267121,
+              13.0627373
+            ],
+            [
+              80.267207,
+              13.0629733
+            ],
+            [
+              80.267273,
+              13.0632314
+            ],
+            [
+              80.2673802,
+              13.0638804
+            ],
+            [
+              80.2673843,
+              13.0639054
+            ],
+            [
+              80.2674031,
+              13.0640105
+            ],
+            [
+              80.2674235,
+              13.0641387
+            ],
+            [
+              80.2674425,
+              13.0642574
+            ],
+            [
+              80.2674522,
+              13.064307
+            ],
+            [
+              80.2675552,
+              13.0649102
+            ],
+            [
+              80.2676142,
+              13.0653229
+            ],
+            [
+              80.2676172,
+              13.0653557
+            ],
+            [
+              80.2676197,
+              13.0653877
+            ],
+            [
+              80.2676323,
+              13.0654903
+            ],
+            [
+              80.2676017,
+              13.0655768
+            ],
+            [
+              80.2675441,
+              13.0656647
+            ],
+            [
+              80.267458,
+              13.0656026
+            ],
+            [
+              80.2671231,
+              13.0653658
+            ],
+            [
+              80.2667624,
+              13.0650575
+            ],
+            [
+              80.2664245,
+              13.0647819
+            ],
+            [
+              80.2662471,
+              13.0646397
+            ],
+            [
+              80.2661579,
+              13.0645682
+            ],
+            [
+              80.2658662,
+              13.0643256
+            ],
+            [
+              80.2657723,
+              13.0644254
+            ],
+            [
+              80.2659569,
+              13.0645932
+            ],
+            [
+              80.2663945,
+              13.0649378
+            ],
+            [
+              80.2667263,
+              13.065202
+            ],
+            [
+              80.2667782,
+              13.0652434
+            ],
+            [
+              80.2673868,
+              13.0657047
+            ],
+            [
+              80.2674642,
+              13.065758
+            ],
+            [
+              80.2675625,
+              13.0658332
+            ],
+            [
+              80.2679716,
+              13.0661693
+            ],
+            [
+              80.2681917,
+              13.0663438
+            ],
+            [
+              80.268369,
+              13.0664255
+            ],
+            [
+              80.2683508,
+              13.0665462
+            ],
+            [
+              80.2683694,
+              13.0666466
+            ],
+            [
+              80.2684186,
+              13.0667518
+            ],
+            [
+              80.2684683,
+              13.0668783
+            ],
+            [
+              80.2692032,
+              13.0679407
+            ],
+            [
+              80.26934,
+              13.0681523
+            ],
+            [
+              80.2693839,
+              13.0682582
+            ],
+            [
+              80.269388,
+              13.0682704
+            ],
+            [
+              80.2694551,
+              13.0682902
+            ],
+            [
+              80.2696852,
+              13.0682596
+            ],
+            [
+              80.2699001,
+              13.0682358
+            ],
+            [
+              80.2699981,
+              13.0682263
+            ],
+            [
+              80.2703532,
+              13.0681894
+            ],
+            [
+              80.270889,
+              13.0681523
+            ],
+            [
+              80.2709934,
+              13.0681476
+            ],
+            [
+              80.2712749,
+              13.0681313
+            ],
+            [
+              80.2716223,
+              13.0683488
+            ],
+            [
+              80.2717094,
+              13.068432
+            ],
+            [
+              80.2717904,
+              13.0685129
+            ],
+            [
+              80.271856,
+              13.0686017
+            ],
+            [
+              80.2719365,
+              13.0687753
+            ],
+            [
+              80.2721446,
+              13.069146
+            ],
+            [
+              80.2724275,
+              13.0695043
+            ],
+            [
+              80.2728892,
+              13.0699358
+            ],
+            [
+              80.273658,
+              13.070547
+            ],
+            [
+              80.2738958,
+              13.070777
+            ],
+            [
+              80.2739279,
+              13.0708107
+            ],
+            [
+              80.2739549,
+              13.0708696
+            ],
+            [
+              80.2743139,
+              13.0716541
+            ],
+            [
+              80.2743746,
+              13.0717936
+            ],
+            [
+              80.274623,
+              13.0720436
+            ],
+            [
+              80.2754947,
+              13.0728487
+            ],
+            [
+              80.2755199,
+              13.072874
+            ],
+            [
+              80.276218,
+              13.0735117
+            ],
+            [
+              80.2764266,
+              13.0737086
+            ],
+            [
+              80.27636,
+              13.0739188
+            ],
+            [
+              80.2763563,
+              13.0739684
+            ],
+            [
+              80.2763374,
+              13.074222
+            ],
+            [
+              80.276308,
+              13.0751468
+            ],
+            [
+              80.2762695,
+              13.0759372
+            ],
+            [
+              80.2762663,
+              13.0759948
+            ],
+            [
+              80.2762422,
+              13.0765859
+            ],
+            [
+              80.2762219,
+              13.0769783
+            ],
+            [
+              80.2762158,
+              13.0770718
+            ],
+            [
+              80.276291,
+              13.0770794
+            ],
+            [
+              80.2763494,
+              13.0771722
+            ],
+            [
+              80.276343,
+              13.0774946
+            ],
+            [
+              80.2763261,
+              13.07792
+            ],
+            [
+              80.2763136,
+              13.0780463
+            ],
+            [
+              80.2762919,
+              13.0781152
+            ],
+            [
+              80.2762651,
+              13.0781766
+            ],
+            [
+              80.2761506,
+              13.0782512
+            ],
+            [
+              80.2759597,
+              13.0783261
+            ],
+            [
+              80.2756414,
+              13.0784077
+            ],
+            [
+              80.2754913,
+              13.0784801
+            ],
+            [
+              80.2754353,
+              13.0785282
+            ],
+            [
+              80.2753865,
+              13.0785763
+            ],
+            [
+              80.2753572,
+              13.078619
+            ],
+            [
+              80.2753278,
+              13.0786644
+            ],
+            [
+              80.2753037,
+              13.0787273
+            ],
+            [
+              80.2752931,
+              13.0787755
+            ],
+            [
+              80.2752902,
+              13.0788153
+            ],
+            [
+              80.2750541,
+              13.0788106
+            ],
+            [
+              80.2750031,
+              13.0788264
+            ],
+            [
+              80.2749303,
+              13.0789961
+            ]
+          ],
+          "distanceM": 6291.399894999997,
+          "baseTravelSec": 662.5466702700005,
+          "snappedStart": {
+            "longitude": 80.2502518,
+            "latitude": 13.0518861
+          },
+          "snappedDestination": {
+            "longitude": 80.2749303,
+            "latitude": 13.0789961
+          }
+        },
+        "position": [
+          80.2749303,
+          13.0789961
+        ],
+        "edgeIndex": 205,
+        "offsetM": 0.0,
+        "speedKph": 0.0,
+        "distanceTravelledM": 6291.399895000344,
+        "remainingDistanceM": 0.0,
+        "etaSec": 752.5,
+        "baselineArrivalSec": 662.5466702700005,
+        "arrivalSec": 752.5,
+        "waitUntilSec": 0.0,
+        "reroutes": 0,
+        "etaKnown": true,
+        "risk": {
+          "score": 0.0,
+          "level": "LOW",
+          "source": "RULE_BASED"
+        },
+        "affectedIncidentIds": [],
+        "encounteredIncidentIds": [
+          "I001"
+        ],
+        "approvedWaitIncidentIds": [],
+        "initialAssignment": {
+          "id": "BROW-A",
+          "name": "Delivery 1",
+          "start": {
+            "longitude": 80.25015295386038,
+            "latitude": 13.05193002304965
+          },
+          "destination": {
+            "longitude": 80.27486190655884,
+            "latitude": 13.079060762462447
+          },
+          "waypoints": [],
+          "maxSpeedKph": 40.0,
+          "capacityKg": 3500.0,
+          "loadKg": 1200.0,
+          "driverName": "Simulated driver 1",
+          "priority": "NORMAL",
+          "departureSec": 0.0,
+          "deadlineSec": 3600.0
+        },
+        "remainingStops": []
+      },
+      {
+        "id": "BROW-B",
+        "name": "Delivery 1",
+        "driverName": "Browser simulated driver B",
+        "priority": "NORMAL",
+        "status": "ARRIVED",
+        "start": {
+          "longitude": 80.2502518,
+          "latitude": 13.0518861
+        },
+        "destination": {
+          "longitude": 80.2749303,
+          "latitude": 13.0789961
+        },
+        "waypoints": [],
+        "capacityKg": 3500.0,
+        "loadKg": 1200.0,
+        "maxSpeedKph": 40.0,
+        "deadlineSec": 3600.0,
+        "departureSec": 200.0,
+        "startNode": 247685517,
+        "destinationNode": 2241833897,
+        "incomingWay": 441388418,
+        "route": {
+          "edgeIds": [
+            "1055336210:2:f",
+            "1055336210:3:f",
+            "1055336210:4:f",
+            "155927239:0:f",
+            "155927239:1:f",
+            "22977024:0:f",
+            "22977024:1:f",
+            "22977024:2:f",
+            "22977024:3:f",
+            "22977024:4:f",
+            "22977024:5:f",
+            "22977024:6:f",
+            "22977024:7:f",
+            "22977024:8:f",
+            "22977106:0:f",
+            "22977106:1:f",
+            "22977106:2:f",
+            "22977106:3:f",
+            "22977106:4:f",
+            "22977106:5:f",
+            "22977106:6:f",
+            "22977106:7:f",
+            "22977106:8:f",
+            "22977106:9:f",
+            "22977106:10:f",
+            "22977106:11:f",
+            "22977106:12:f",
+            "22977106:13:f",
+            "22977106:14:f",
+            "22977106:15:f",
+            "22977106:16:f",
+            "1189292659:0:f",
+            "28138954:9:f",
+            "1081040290:0:f",
+            "1081040290:1:f",
+            "154030367:0:f",
+            "154030367:1:f",
+            "154030367:2:f",
+            "154030367:3:f",
+            "240461923:0:f",
+            "240461923:1:f",
+            "240461923:2:f",
+            "240461923:3:f",
+            "240461923:4:f",
+            "1313221971:0:f",
+            "23955548:0:r",
+            "28076640:0:f",
+            "1313221972:0:f",
+            "1313221973:0:f",
+            "240461922:0:f",
+            "1521202255:0:f",
+            "1521202255:1:f",
+            "1521202255:2:f",
+            "1521202255:3:f",
+            "1521202255:4:f",
+            "1521202255:5:f",
+            "23955543:0:f",
+            "23955543:1:f",
+            "23955543:2:f",
+            "23955543:3:f",
+            "23955543:4:f",
+            "23955543:5:f",
+            "23955543:6:f",
+            "23955543:7:f",
+            "211669399:0:f",
+            "211669399:1:f",
+            "211669399:2:f",
+            "211669399:3:f",
+            "211669399:4:f",
+            "211669399:5:f",
+            "211669399:6:f",
+            "1081040291:0:f",
+            "1081040291:1:f",
+            "1081040291:2:f",
+            "1081040291:3:f",
+            "1053206423:0:f",
+            "1053206423:1:f",
+            "1053206424:0:f",
+            "1053206424:1:f",
+            "1053206424:2:f",
+            "1053206424:3:f",
+            "1053206424:4:f",
+            "1053206424:5:f",
+            "1053206424:6:f",
+            "1053206424:7:f",
+            "1053206424:8:f",
+            "1053206424:9:f",
+            "1053206424:10:f",
+            "1053206424:11:f",
+            "1053206424:12:f",
+            "1053206424:13:f",
+            "1053206424:14:f",
+            "1053206424:15:f",
+            "1053206424:16:f",
+            "1053206424:17:f",
+            "1053206424:18:f",
+            "1053206424:19:f",
+            "1053206424:20:f",
+            "1053206424:21:f",
+            "1053206424:22:f",
+            "1053206424:23:f",
+            "1053206424:24:f",
+            "1053206424:25:f",
+            "1053206424:26:f",
+            "1053206424:27:f",
+            "1053206424:28:f",
+            "1053206424:29:f",
+            "1053206424:30:f",
+            "1053206424:31:f",
+            "1053206424:32:f",
+            "1053206424:33:f",
+            "1053206424:34:f",
+            "1053206424:35:f",
+            "1053206424:36:f",
+            "1053206424:37:f",
+            "1053206424:38:f",
+            "1053206424:39:f",
+            "1053206424:40:f",
+            "1053206424:41:f",
+            "1053206424:42:f",
+            "744524364:0:f",
+            "744524364:1:f",
+            "1289111743:0:f",
+            "1289111743:1:f",
+            "1289111743:2:f",
+            "1289111743:3:f",
+            "1289111743:4:f",
+            "1289111743:5:f",
+            "1289111743:6:f",
+            "1363512418:0:r",
+            "567205827:0:f",
+            "567205827:1:f",
+            "567205827:2:f",
+            "567205827:3:f",
+            "567205827:4:f",
+            "1289111742:0:f",
+            "1308993345:0:f",
+            "154030364:0:f",
+            "154030364:1:f",
+            "154030364:2:f",
+            "1209024459:0:f",
+            "1209024459:1:f",
+            "1209024459:2:f",
+            "1209024459:3:f",
+            "1181048848:0:f",
+            "1181048848:1:f",
+            "1181048848:2:f",
+            "1181048848:3:f",
+            "1288008566:0:f",
+            "28150546:2:f",
+            "28150546:3:f",
+            "28150546:4:f",
+            "28150546:5:f",
+            "28150546:6:f",
+            "1039298145:0:f",
+            "1039298145:1:f",
+            "1149834135:0:f",
+            "1149834135:1:f",
+            "1149834136:0:f",
+            "275459525:0:f",
+            "275459525:1:f",
+            "275459525:2:f",
+            "275459525:3:f",
+            "275459525:4:f",
+            "275459525:5:f",
+            "275459525:6:f",
+            "275459525:7:f",
+            "275459525:8:f",
+            "275459525:9:f",
+            "1080757461:0:f",
+            "1080757461:1:f",
+            "28138953:0:f",
+            "28138955:0:f",
+            "28138955:1:f",
+            "1287344228:0:f",
+            "83075005:1:f",
+            "83075009:0:f",
+            "83075009:1:f",
+            "83075009:2:f",
+            "83075009:3:f",
+            "83075009:4:f",
+            "83075009:5:f",
+            "83075009:6:f",
+            "83075009:7:f",
+            "1201917078:0:r",
+            "111721013:17:r",
+            "111721013:16:r",
+            "111721013:15:r",
+            "111721013:14:r",
+            "111721013:13:r",
+            "111721013:12:r",
+            "111721013:11:r",
+            "111721013:10:r",
+            "111721013:9:r",
+            "111721013:8:r",
+            "111721013:7:r",
+            "111721013:6:r",
+            "111721013:5:r",
+            "111721013:4:r",
+            "111721013:3:r",
+            "111721013:2:r",
+            "111721013:1:r",
+            "441388418:2:r",
+            "441388418:1:r",
+            "441388418:0:r"
+          ],
+          "geometry": [
+            [
+              80.2502518,
+              13.0518861
+            ],
+            [
+              80.2505433,
+              13.0521448
+            ],
+            [
+              80.2506844,
+              13.0522799
+            ],
+            [
+              80.2507557,
+              13.052391
+            ],
+            [
+              80.250859,
+              13.0525227
+            ],
+            [
+              80.2509799,
+              13.0525591
+            ],
+            [
+              80.2510878,
+              13.052587
+            ],
+            [
+              80.2511552,
+              13.0526044
+            ],
+            [
+              80.2512177,
+              13.0526474
+            ],
+            [
+              80.2516648,
+              13.0529549
+            ],
+            [
+              80.2516975,
+              13.0529775
+            ],
+            [
+              80.2517206,
+              13.0529933
+            ],
+            [
+              80.2519414,
+              13.0531452
+            ],
+            [
+              80.2523511,
+              13.0534442
+            ],
+            [
+              80.2524552,
+              13.0534712
+            ],
+            [
+              80.2527752,
+              13.0536998
+            ],
+            [
+              80.2529292,
+              13.0538183
+            ],
+            [
+              80.2532575,
+              13.0540709
+            ],
+            [
+              80.2533533,
+              13.0541466
+            ],
+            [
+              80.2535291,
+              13.0542714
+            ],
+            [
+              80.2537746,
+              13.0544589
+            ],
+            [
+              80.2539219,
+              13.0545667
+            ],
+            [
+              80.2540698,
+              13.0546709
+            ],
+            [
+              80.2543033,
+              13.05483
+            ],
+            [
+              80.2543586,
+              13.0548713
+            ],
+            [
+              80.2551701,
+              13.0554772
+            ],
+            [
+              80.2555182,
+              13.0557372
+            ],
+            [
+              80.2555623,
+              13.0557701
+            ],
+            [
+              80.2561086,
+              13.0561693
+            ],
+            [
+              80.2564103,
+              13.0564248
+            ],
+            [
+              80.2564615,
+              13.0564709
+            ],
+            [
+              80.2566721,
+              13.0566976
+            ],
+            [
+              80.2567746,
+              13.0566062
+            ],
+            [
+              80.2566978,
+              13.0565215
+            ],
+            [
+              80.2565665,
+              13.0564011
+            ],
+            [
+              80.2565204,
+              13.0563615
+            ],
+            [
+              80.2564362,
+              13.056299
+            ],
+            [
+              80.2561309,
+              13.0560664
+            ],
+            [
+              80.2547748,
+              13.0550519
+            ],
+            [
+              80.2546112,
+              13.0549227
+            ],
+            [
+              80.2546106,
+              13.0548635
+            ],
+            [
+              80.2546395,
+              13.0548177
+            ],
+            [
+              80.2546912,
+              13.0547734
+            ],
+            [
+              80.2551702,
+              13.0547234
+            ],
+            [
+              80.2556651,
+              13.0546718
+            ],
+            [
+              80.2557266,
+              13.0546229
+            ],
+            [
+              80.2557807,
+              13.0546203
+            ],
+            [
+              80.2601986,
+              13.0542299
+            ],
+            [
+              80.2602798,
+              13.0542232
+            ],
+            [
+              80.2603221,
+              13.054263
+            ],
+            [
+              80.2604331,
+              13.0542582
+            ],
+            [
+              80.2606061,
+              13.0542429
+            ],
+            [
+              80.2606416,
+              13.0542397
+            ],
+            [
+              80.2608156,
+              13.0542261
+            ],
+            [
+              80.2610669,
+              13.0542055
+            ],
+            [
+              80.2614294,
+              13.0541608
+            ],
+            [
+              80.2615778,
+              13.054152
+            ],
+            [
+              80.2616338,
+              13.0541622
+            ],
+            [
+              80.262006,
+              13.0541325
+            ],
+            [
+              80.2622871,
+              13.0541093
+            ],
+            [
+              80.2625966,
+              13.0540812
+            ],
+            [
+              80.2626968,
+              13.05407
+            ],
+            [
+              80.2633399,
+              13.0539984
+            ],
+            [
+              80.2634679,
+              13.0539805
+            ],
+            [
+              80.2641252,
+              13.0539228
+            ],
+            [
+              80.2643484,
+              13.0546702
+            ],
+            [
+              80.2643575,
+              13.054739
+            ],
+            [
+              80.2644442,
+              13.0553944
+            ],
+            [
+              80.2644525,
+              13.055457
+            ],
+            [
+              80.2644924,
+              13.0559429
+            ],
+            [
+              80.2645588,
+              13.0564755
+            ],
+            [
+              80.2646346,
+              13.0568118
+            ],
+            [
+              80.2646488,
+              13.056875
+            ],
+            [
+              80.2647242,
+              13.0570496
+            ],
+            [
+              80.2650666,
+              13.0576406
+            ],
+            [
+              80.2651238,
+              13.057802
+            ],
+            [
+              80.2652284,
+              13.0580139
+            ],
+            [
+              80.2654066,
+              13.0583
+            ],
+            [
+              80.2654632,
+              13.0588276
+            ],
+            [
+              80.2654941,
+              13.0590521
+            ],
+            [
+              80.2655161,
+              13.0592345
+            ],
+            [
+              80.2655686,
+              13.0596571
+            ],
+            [
+              80.265597,
+              13.0600223
+            ],
+            [
+              80.2655621,
+              13.0601484
+            ],
+            [
+              80.2655454,
+              13.0601919
+            ],
+            [
+              80.2655228,
+              13.0602442
+            ],
+            [
+              80.2654665,
+              13.0603749
+            ],
+            [
+              80.2653527,
+              13.060609
+            ],
+            [
+              80.2653179,
+              13.0606791
+            ],
+            [
+              80.2652835,
+              13.0607423
+            ],
+            [
+              80.2652382,
+              13.0608273
+            ],
+            [
+              80.2652174,
+              13.0608709
+            ],
+            [
+              80.2652045,
+              13.0609106
+            ],
+            [
+              80.2651989,
+              13.0609372
+            ],
+            [
+              80.2651943,
+              13.0609702
+            ],
+            [
+              80.2651945,
+              13.0609937
+            ],
+            [
+              80.265193,
+              13.0610176
+            ],
+            [
+              80.2651974,
+              13.0610485
+            ],
+            [
+              80.2651925,
+              13.0611264
+            ],
+            [
+              80.2652165,
+              13.0612003
+            ],
+            [
+              80.2654442,
+              13.0613978
+            ],
+            [
+              80.2656177,
+              13.0615484
+            ],
+            [
+              80.2657837,
+              13.0616924
+            ],
+            [
+              80.2659527,
+              13.061821
+            ],
+            [
+              80.266148,
+              13.0619696
+            ],
+            [
+              80.2662885,
+              13.0620765
+            ],
+            [
+              80.2667824,
+              13.0624524
+            ],
+            [
+              80.267121,
+              13.0627373
+            ],
+            [
+              80.267207,
+              13.0629733
+            ],
+            [
+              80.267273,
+              13.0632314
+            ],
+            [
+              80.2673802,
+              13.0638804
+            ],
+            [
+              80.2673843,
+              13.0639054
+            ],
+            [
+              80.2674031,
+              13.0640105
+            ],
+            [
+              80.2674235,
+              13.0641387
+            ],
+            [
+              80.2674425,
+              13.0642574
+            ],
+            [
+              80.2674522,
+              13.064307
+            ],
+            [
+              80.2675552,
+              13.0649102
+            ],
+            [
+              80.2676142,
+              13.0653229
+            ],
+            [
+              80.2676172,
+              13.0653557
+            ],
+            [
+              80.2676197,
+              13.0653877
+            ],
+            [
+              80.2676323,
+              13.0654903
+            ],
+            [
+              80.2676017,
+              13.0655768
+            ],
+            [
+              80.2675441,
+              13.0656647
+            ],
+            [
+              80.267458,
+              13.0656026
+            ],
+            [
+              80.2671231,
+              13.0653658
+            ],
+            [
+              80.2667624,
+              13.0650575
+            ],
+            [
+              80.2664245,
+              13.0647819
+            ],
+            [
+              80.2662471,
+              13.0646397
+            ],
+            [
+              80.2661579,
+              13.0645682
+            ],
+            [
+              80.2658662,
+              13.0643256
+            ],
+            [
+              80.2657723,
+              13.0644254
+            ],
+            [
+              80.2659569,
+              13.0645932
+            ],
+            [
+              80.2663945,
+              13.0649378
+            ],
+            [
+              80.2667263,
+              13.065202
+            ],
+            [
+              80.2667782,
+              13.0652434
+            ],
+            [
+              80.2673868,
+              13.0657047
+            ],
+            [
+              80.2674642,
+              13.065758
+            ],
+            [
+              80.2675625,
+              13.0658332
+            ],
+            [
+              80.2679716,
+              13.0661693
+            ],
+            [
+              80.2681917,
+              13.0663438
+            ],
+            [
+              80.268369,
+              13.0664255
+            ],
+            [
+              80.2683508,
+              13.0665462
+            ],
+            [
+              80.2683694,
+              13.0666466
+            ],
+            [
+              80.2684186,
+              13.0667518
+            ],
+            [
+              80.2684683,
+              13.0668783
+            ],
+            [
+              80.2692032,
+              13.0679407
+            ],
+            [
+              80.26934,
+              13.0681523
+            ],
+            [
+              80.2693839,
+              13.0682582
+            ],
+            [
+              80.269388,
+              13.0682704
+            ],
+            [
+              80.2694551,
+              13.0682902
+            ],
+            [
+              80.2696852,
+              13.0682596
+            ],
+            [
+              80.2699001,
+              13.0682358
+            ],
+            [
+              80.2699981,
+              13.0682263
+            ],
+            [
+              80.2703532,
+              13.0681894
+            ],
+            [
+              80.270889,
+              13.0681523
+            ],
+            [
+              80.2709934,
+              13.0681476
+            ],
+            [
+              80.2712749,
+              13.0681313
+            ],
+            [
+              80.2716223,
+              13.0683488
+            ],
+            [
+              80.2717094,
+              13.068432
+            ],
+            [
+              80.2717904,
+              13.0685129
+            ],
+            [
+              80.271856,
+              13.0686017
+            ],
+            [
+              80.2719365,
+              13.0687753
+            ],
+            [
+              80.2721446,
+              13.069146
+            ],
+            [
+              80.2724275,
+              13.0695043
+            ],
+            [
+              80.2728892,
+              13.0699358
+            ],
+            [
+              80.273658,
+              13.070547
+            ],
+            [
+              80.2738958,
+              13.070777
+            ],
+            [
+              80.2739279,
+              13.0708107
+            ],
+            [
+              80.2739549,
+              13.0708696
+            ],
+            [
+              80.2743139,
+              13.0716541
+            ],
+            [
+              80.2743746,
+              13.0717936
+            ],
+            [
+              80.274623,
+              13.0720436
+            ],
+            [
+              80.2754947,
+              13.0728487
+            ],
+            [
+              80.2755199,
+              13.072874
+            ],
+            [
+              80.276218,
+              13.0735117
+            ],
+            [
+              80.2764266,
+              13.0737086
+            ],
+            [
+              80.27636,
+              13.0739188
+            ],
+            [
+              80.2763563,
+              13.0739684
+            ],
+            [
+              80.2763374,
+              13.074222
+            ],
+            [
+              80.276308,
+              13.0751468
+            ],
+            [
+              80.2762695,
+              13.0759372
+            ],
+            [
+              80.2762663,
+              13.0759948
+            ],
+            [
+              80.2762422,
+              13.0765859
+            ],
+            [
+              80.2762219,
+              13.0769783
+            ],
+            [
+              80.2762158,
+              13.0770718
+            ],
+            [
+              80.276291,
+              13.0770794
+            ],
+            [
+              80.2763494,
+              13.0771722
+            ],
+            [
+              80.276343,
+              13.0774946
+            ],
+            [
+              80.2763261,
+              13.07792
+            ],
+            [
+              80.2763136,
+              13.0780463
+            ],
+            [
+              80.2762919,
+              13.0781152
+            ],
+            [
+              80.2762651,
+              13.0781766
+            ],
+            [
+              80.2761506,
+              13.0782512
+            ],
+            [
+              80.2759597,
+              13.0783261
+            ],
+            [
+              80.2756414,
+              13.0784077
+            ],
+            [
+              80.2754913,
+              13.0784801
+            ],
+            [
+              80.2754353,
+              13.0785282
+            ],
+            [
+              80.2753865,
+              13.0785763
+            ],
+            [
+              80.2753572,
+              13.078619
+            ],
+            [
+              80.2753278,
+              13.0786644
+            ],
+            [
+              80.2753037,
+              13.0787273
+            ],
+            [
+              80.2752931,
+              13.0787755
+            ],
+            [
+              80.2752902,
+              13.0788153
+            ],
+            [
+              80.2750541,
+              13.0788106
+            ],
+            [
+              80.2750031,
+              13.0788264
+            ],
+            [
+              80.2749303,
+              13.0789961
+            ]
+          ],
+          "distanceM": 6291.399894999997,
+          "baseTravelSec": 662.5466702700005,
+          "snappedStart": {
+            "longitude": 80.2502518,
+            "latitude": 13.0518861
+          },
+          "snappedDestination": {
+            "longitude": 80.2749303,
+            "latitude": 13.0789961
+          }
+        },
+        "position": [
+          80.2749303,
+          13.0789961
+        ],
+        "edgeIndex": 205,
+        "offsetM": 0.0,
+        "speedKph": 0.0,
+        "distanceTravelledM": 6291.399895000347,
+        "remainingDistanceM": 0.0,
+        "etaSec": 882.5,
+        "baselineArrivalSec": 862.5466702700005,
+        "arrivalSec": 882.5,
+        "waitUntilSec": 0.0,
+        "reroutes": 0,
+        "etaKnown": true,
+        "risk": {
+          "score": 0.0,
+          "level": "LOW",
+          "source": "RULE_BASED"
+        },
+        "affectedIncidentIds": [],
+        "encounteredIncidentIds": [],
+        "approvedWaitIncidentIds": [],
+        "initialAssignment": {
+          "id": "BROW-B",
+          "name": "Delivery 1",
+          "start": {
+            "longitude": 80.2502518,
+            "latitude": 13.0518861
+          },
+          "destination": {
+            "longitude": 80.27486190655884,
+            "latitude": 13.079060762462447
+          },
+          "waypoints": [],
+          "maxSpeedKph": 40.0,
+          "capacityKg": 3500.0,
+          "loadKg": 1200.0,
+          "driverName": "Simulated driver 1",
+          "priority": "NORMAL",
+          "departureSec": 200.0,
+          "deadlineSec": 3600.0
+        },
+        "remainingStops": []
+      }
+    ],
+    "incidents": [
+      {
+        "id": "I001",
+        "type": "CLOSURE",
+        "physicalId": "1055336210:2",
+        "status": "EXPIRED",
+        "severity": 1.0,
+        "startSec": 0.0,
+        "endSec": 90.0,
+        "position": [
+          80.25039755,
+          13.05201545
+        ]
+      }
+    ],
+    "recommendations": [],
+    "events": [
+      {
+        "id": 1,
+        "clockSec": 0.0,
+        "type": "REPLAY_LOADED",
+        "message": "Loaded identical SIMULATED assignments and operator command schedule; paused at clock zero",
+        "truckId": null,
+        "details": {
+          "seed": 0
+        }
+      },
+      {
+        "id": 2,
+        "clockSec": 0.0,
+        "type": "INCIDENT_CREATED",
+        "message": "Injected SIMULATED CLOSURE on ",
+        "truckId": null,
+        "details": {
+          "provenance": "SIMULATED",
+          "incidentId": "I001",
+          "physicalId": "1055336210:2"
+        }
+      },
+      {
+        "id": 3,
+        "clockSec": 0.0,
+        "type": "OPERATIONAL_PREDICTION",
+        "message": "BROW-LB projected dock completion misses its deadline by 60 s.",
+        "truckId": "BROW-B",
+        "details": {
+          "impact": {
+            "id": "DELIVERY_DEADLINE:DELIVERY:BROW-LB:BROW-B",
+            "code": "DELIVERY_DEADLINE",
+            "resourceIds": [
+              "DELIVERY:BROW-LB"
+            ],
+            "truckIds": [
+              "BROW-B"
+            ],
+            "startSec": 1292.6,
+            "endSec": 1352.6,
+            "delaySec": 60.0,
+            "predicted": true,
+            "message": "BROW-LB projected dock completion misses its deadline by 60 s.",
+            "provenance": "SIMULATED_PREDICTION"
+          },
+          "provenance": "SIMULATED_PREDICTION"
+        }
+      },
+      {
+        "id": 4,
+        "clockSec": 0.0,
+        "type": "OPERATIONAL_PREDICTION",
+        "message": "BROW-A occupies BROW-D beyond BROW-B ready time; projected additional dock wait 90 s.",
+        "truckId": "BROW-B",
+        "details": {
+          "impact": {
+            "id": "DOCK_OVERLAP:DOCK:BROW-D,TRUCK:BROW-A:BROW-B",
+            "code": "DOCK_OVERLAP",
+            "resourceIds": [
+              "DOCK:BROW-D",
+              "TRUCK:BROW-A"
+            ],
+            "truckIds": [
+              "BROW-B"
+            ],
+            "startSec": 962.6,
+            "endSec": 1052.6,
+            "delaySec": 89.99999999999989,
+            "predicted": true,
+            "message": "BROW-A occupies BROW-D beyond BROW-B ready time; projected additional dock wait 90 s.",
+            "provenance": "SIMULATED_PREDICTION"
+          },
+          "provenance": "SIMULATED_PREDICTION"
+        }
+      },
+      {
+        "id": 5,
+        "clockSec": 0.0,
+        "type": "TRUCK_BLOCKED",
+        "message": "BROW-A SCHEDULED \u2192 BLOCKED",
+        "truckId": "BROW-A",
+        "details": {
+          "atSec": 0.0
+        }
+      },
+      {
+        "id": 6,
+        "clockSec": 1.0,
+        "type": "DRIVER_AVAILABILITY",
+        "message": "BROW-DRB availability changed to false",
+        "truckId": null,
+        "details": {
+          "available": false,
+          "provenance": "SIMULATED",
+          "driverId": "BROW-DRB"
+        }
+      },
+      {
+        "id": 7,
+        "clockSec": 1.0,
+        "type": "OPERATIONAL_PREDICTION",
+        "message": "BROW-B delivery completion is unknown while a driver constraint prevents the trip.",
+        "truckId": "BROW-B",
+        "details": {
+          "impact": {
+            "id": "DELIVERY_ETA_UNKNOWN:DELIVERY:BROW-LB:BROW-B",
+            "code": "DELIVERY_ETA_UNKNOWN",
+            "resourceIds": [
+              "DELIVERY:BROW-LB"
+            ],
+            "truckIds": [
+              "BROW-B"
+            ],
+            "startSec": 1.0,
+            "endSec": 1.0,
+            "delaySec": 0.0,
+            "predicted": true,
+            "message": "BROW-B delivery completion is unknown while a driver constraint prevents the trip.",
+            "provenance": "SIMULATED_PREDICTION"
+          },
+          "provenance": "SIMULATED_PREDICTION"
+        }
+      },
+      {
+        "id": 8,
+        "clockSec": 1.0,
+        "type": "OPERATIONAL_PREDICTION",
+        "message": "BROW-DRB is unavailable; BROW-B cannot enter another road edge. Dispatch ETA is unknown.",
+        "truckId": "BROW-B",
+        "details": {
+          "impact": {
+            "id": "DRIVER_UNAVAILABLE:DRIVER:BROW-DRB:BROW-B",
+            "code": "DRIVER_UNAVAILABLE",
+            "resourceIds": [
+              "DRIVER:BROW-DRB"
+            ],
+            "truckIds": [
+              "BROW-B"
+            ],
+            "startSec": 1.0,
+            "endSec": 10000.0,
+            "delaySec": 0.0,
+            "predicted": true,
+            "message": "BROW-DRB is unavailable; BROW-B cannot enter another road edge. Dispatch ETA is unknown.",
+            "provenance": "SIMULATED_PREDICTION"
+          },
+          "provenance": "SIMULATED_PREDICTION"
+        }
+      },
+      {
+        "id": 9,
+        "clockSec": 90.0,
+        "type": "INCIDENT_EXPIRED",
+        "message": "Incident I001 became EXPIRED",
+        "truckId": null,
+        "details": {
+          "incidentId": "I001"
+        }
+      },
+      {
+        "id": 10,
+        "clockSec": 90.1,
+        "type": "TRUCK_MOVING",
+        "message": "BROW-A BLOCKED \u2192 MOVING",
+        "truckId": "BROW-A",
+        "details": {
+          "atSec": 90.1
+        }
+      },
+      {
+        "id": 11,
+        "clockSec": 200.0,
+        "type": "TRUCK_DRIVER_UNAVAILABLE",
+        "message": "BROW-B SCHEDULED \u2192 DRIVER_UNAVAILABLE",
+        "truckId": "BROW-B",
+        "details": {
+          "atSec": 200.0
+        }
+      },
+      {
+        "id": 12,
+        "clockSec": 200.1,
+        "type": "OPERATIONAL_OUTCOME",
+        "message": "BROW-B held at a real graph node: DRIVER_UNAVAILABLE",
+        "truckId": "BROW-B",
+        "details": {
+          "impact": {
+            "id": "DRIVER_UNAVAILABLE:DRIVER:BROW-DRB:BROW-B",
+            "code": "DRIVER_UNAVAILABLE",
+            "resourceIds": [
+              "DRIVER:BROW-DRB"
+            ],
+            "truckIds": [
+              "BROW-B"
+            ],
+            "startSec": 200.1,
+            "endSec": 200.1,
+            "delaySec": 0.0,
+            "predicted": false,
+            "message": "BROW-B held at a real graph node: DRIVER_UNAVAILABLE",
+            "provenance": "SIMULATED_OUTCOME"
+          },
+          "provenance": "SIMULATED_OUTCOME"
+        }
+      },
+      {
+        "id": 13,
+        "clockSec": 220.0,
+        "type": "DRIVER_AVAILABILITY",
+        "message": "BROW-DRB availability changed to true",
+        "truckId": null,
+        "details": {
+          "available": true,
+          "provenance": "SIMULATED",
+          "driverId": "BROW-DRB"
+        }
+      },
+      {
+        "id": 14,
+        "clockSec": 220.0,
+        "type": "OPERATIONAL_PREDICTION",
+        "message": "BROW-LB projected dock completion misses its deadline by 60 s.",
+        "truckId": "BROW-B",
+        "details": {
+          "impact": {
+            "id": "DELIVERY_DEADLINE:DELIVERY:BROW-LB:BROW-B",
+            "code": "DELIVERY_DEADLINE",
+            "resourceIds": [
+              "DELIVERY:BROW-LB"
+            ],
+            "truckIds": [
+              "BROW-B"
+            ],
+            "startSec": 1292.6,
+            "endSec": 1352.6,
+            "delaySec": 60.0,
+            "predicted": true,
+            "message": "BROW-LB projected dock completion misses its deadline by 60 s.",
+            "provenance": "SIMULATED_PREDICTION"
+          },
+          "provenance": "SIMULATED_PREDICTION"
+        }
+      },
+      {
+        "id": 15,
+        "clockSec": 220.0,
+        "type": "OPERATIONAL_PREDICTION",
+        "message": "BROW-A occupies BROW-D beyond BROW-B ready time; projected additional dock wait 90 s.",
+        "truckId": "BROW-B",
+        "details": {
+          "impact": {
+            "id": "DOCK_OVERLAP:DOCK:BROW-D,TRUCK:BROW-A:BROW-B",
+            "code": "DOCK_OVERLAP",
+            "resourceIds": [
+              "DOCK:BROW-D",
+              "TRUCK:BROW-A"
+            ],
+            "truckIds": [
+              "BROW-B"
+            ],
+            "startSec": 962.6,
+            "endSec": 1052.6,
+            "delaySec": 89.99999999999989,
+            "predicted": true,
+            "message": "BROW-A occupies BROW-D beyond BROW-B ready time; projected additional dock wait 90 s.",
+            "provenance": "SIMULATED_PREDICTION"
+          },
+          "provenance": "SIMULATED_PREDICTION"
+        }
+      },
+      {
+        "id": 16,
+        "clockSec": 220.1,
+        "type": "TRUCK_MOVING",
+        "message": "BROW-B DRIVER_UNAVAILABLE \u2192 MOVING",
+        "truckId": "BROW-B",
+        "details": {
+          "atSec": 220.1
+        }
+      },
+      {
+        "id": 17,
+        "clockSec": 752.5,
+        "type": "TRUCK_ARRIVED",
+        "message": "BROW-A MOVING \u2192 ARRIVED",
+        "truckId": "BROW-A",
+        "details": {
+          "atSec": 752.5
+        }
+      },
+      {
+        "id": 18,
+        "clockSec": 752.6,
+        "type": "DOCK_SERVICE_STARTED",
+        "message": "BROW-A entered BROW-D; service completes at 1052.6 s",
+        "truckId": "BROW-A",
+        "details": {
+          "dockId": "BROW-D",
+          "provenance": "SIMULATED_OUTCOME"
+        }
+      },
+      {
+        "id": 19,
+        "clockSec": 882.5,
+        "type": "TRUCK_ARRIVED",
+        "message": "BROW-B MOVING \u2192 ARRIVED",
+        "truckId": "BROW-B",
+        "details": {
+          "atSec": 882.5
+        }
+      },
+      {
+        "id": 20,
+        "clockSec": 962.6,
+        "type": "OPERATIONAL_OUTCOME",
+        "message": "BROW-B is physically queued at BROW-D behind BROW-A",
+        "truckId": "BROW-B",
+        "details": {
+          "impact": {
+            "id": "DOCK_QUEUE:DOCK:BROW-D,TRUCK:BROW-A:BROW-B",
+            "code": "DOCK_QUEUE",
+            "resourceIds": [
+              "DOCK:BROW-D",
+              "TRUCK:BROW-A"
+            ],
+            "truckIds": [
+              "BROW-B"
+            ],
+            "startSec": 962.6,
+            "endSec": 962.6,
+            "delaySec": 80.10000000000002,
+            "predicted": false,
+            "message": "BROW-B is physically queued at BROW-D behind BROW-A",
+            "provenance": "SIMULATED_OUTCOME"
+          },
+          "provenance": "SIMULATED_OUTCOME"
+        }
+      }
+    ],
+    "commandHistory": [
+      {
+        "clockSec": 0.0,
+        "sequence": 32,
+        "kind": "INCIDENT_ADD",
+        "payload": {
+          "type": "CLOSURE",
+          "severity": 1.0,
+          "startSec": 0.0,
+          "physicalId": "1055336210:2",
+          "durationSec": 90.0
+        }
+      },
+      {
+        "clockSec": 1.0,
+        "sequence": 36,
+        "kind": "DRIVER_AVAILABILITY",
+        "payload": {
+          "id": "BROW-DRB",
+          "available": false
+        }
+      },
+      {
+        "clockSec": 220.0,
+        "sequence": 43,
+        "kind": "DRIVER_AVAILABILITY",
+        "payload": {
+          "id": "BROW-DRB",
+          "available": true
+        }
+      }
+    ],
+    "replaySchedule": [
+      {
+        "clockSec": 0.0,
+        "sequence": 32,
+        "kind": "INCIDENT_ADD",
+        "payload": {
+          "type": "CLOSURE",
+          "severity": 1.0,
+          "startSec": 0.0,
+          "physicalId": "1055336210:2",
+          "durationSec": 90.0
+        }
+      },
+      {
+        "clockSec": 1.0,
+        "sequence": 36,
+        "kind": "DRIVER_AVAILABILITY",
+        "payload": {
+          "id": "BROW-DRB",
+          "available": false
+        }
+      },
+      {
+        "clockSec": 220.0,
+        "sequence": 43,
+        "kind": "DRIVER_AVAILABILITY",
+        "payload": {
+          "id": "BROW-DRB",
+          "available": true
+        }
+      }
+    ],
+    "replayCursor": 3,
+    "replaying": true,
+    "kpis": {
+      "totalTrucks": 2,
+      "arrived": 2,
+      "lateDeliveries": 0,
+      "totalDelaySec": 109.90665945999899,
+      "distanceTravelledM": 12582.799790000692,
+      "reroutes": 0,
+      "waitingTrucks": 0,
+      "activeIncidents": 0,
+      "completedTrips": 2
+    },
+    "operationsProvenance": "SIMULATED",
+    "riskSource": "RULE_BASED \u2014 uncalibrated direct-travel estimate"
+  }
+}

@@ -1,0 +1,351 @@
+{
+  "schemaVersion": "cascadeshield.milestone4-leakage-audit/1.0",
+  "auditLocalDate": "2026-10-18",
+  "checkedAtUtc": "2026-10-18T06:35:06.425587+00:00",
+  "reviewMethod": "Independent read-only source review and input-only coarse identity measurement before model fitting/final outcome generation. No model effectiveness results are claimed.",
+  "status": "INPUT_GROUP_AND_DEVELOPMENT_TARGETS_PASS",
+  "trainingAuthorizedAfterAudit": true,
+  "findings": [
+    {
+      "id": "L1",
+      "severity": "HIGH",
+      "status": "CORRECTED_CURRENT_INPUTS_INDEPENDENTLY_VERIFIED",
+      "problem": "Exact seeded configuration/schedule hashes plus small continuous jitter permit near-identical operation templates across splits.",
+      "executedInitialEvidence": {
+        "manifest": "data/processed/milestone4/corpus/generation_manifest.json",
+        "caseCount": 152,
+        "coarseGroupCount": 86,
+        "crossSplitCoarseGroupCount": 28,
+        "casesInCrossSplitGroups": 84,
+        "coarseIdentity": "OD multiset/resources/unavailable count; floor service60s,gap30s,duration120s,slack60s,severity0.25,start60s,restore120s,contention0.25; eventkind/type counts and simultaneous flag. Seed/load/speed/exact edge jitter excluded.",
+        "examples": [
+          [
+            {
+              "split": "train",
+              "family": "overlapping-disruptions",
+              "seed": 1001
+            },
+            {
+              "split": "validation",
+              "family": "overlapping-disruptions",
+              "seed": 2001
+            },
+            {
+              "split": "validation",
+              "family": "overlapping-disruptions",
+              "seed": 2002
+            }
+          ],
+          [
+            {
+              "split": "train",
+              "family": "shared-dock-contention",
+              "seed": 1001
+            },
+            {
+              "split": "final",
+              "family": "shared-dock-contention",
+              "seed": 4002
+            }
+          ],
+          [
+            {
+              "split": "train",
+              "family": "driver-unavailability",
+              "seed": 1001
+            },
+            {
+              "split": "train",
+              "family": "driver-unavailability",
+              "seed": 1003
+            },
+            {
+              "split": "train",
+              "family": "driver-unavailability",
+              "seed": 1007
+            },
+            {
+              "split": "final",
+              "family": "driver-unavailability",
+              "seed": 4001
+            }
+          ],
+          [
+            {
+              "split": "train",
+              "family": "tight-deadlines",
+              "seed": 1001
+            },
+            {
+              "split": "final",
+              "family": "tight-deadlines",
+              "seed": 4003
+            }
+          ],
+          [
+            {
+              "split": "train",
+              "family": "low-contention-control",
+              "seed": 1001
+            },
+            {
+              "split": "train",
+              "family": "low-contention-control",
+              "seed": 1005
+            },
+            {
+              "split": "train",
+              "family": "low-contention-control",
+              "seed": 1008
+            },
+            {
+              "split": "validation",
+              "family": "low-contention-control",
+              "seed": 2003
+            },
+            {
+              "split": "final",
+              "family": "low-contention-control",
+              "seed": 4001
+            },
+            {
+              "split": "final",
+              "family": "low-contention-control",
+              "seed": 4003
+            }
+          ],
+          [
+            {
+              "split": "train",
+              "family": "single-closure",
+              "seed": 1002
+            },
+            {
+              "split": "train",
+              "family": "single-closure",
+              "seed": 1003
+            },
+            {
+              "split": "train",
+              "family": "single-closure",
+              "seed": 1008
+            },
+            {
+              "split": "final",
+              "family": "single-closure",
+              "seed": 4001
+            },
+            {
+              "split": "final",
+              "family": "single-closure",
+              "seed": 4003
+            }
+          ]
+        ],
+        "continuousCrossSplitNearPairCount": 679,
+        "continuousNearRule": "SameODmultiset/resourcecounts/unavailablecount/eventtypecounts/simultaneousflag and absdifferences < service60,gap30,duration120,slack60,severity.25,start60,restore120(onlyifdriversunavailable),contention.25. Input-only, avoids quantization boundary artifact."
+      },
+      "requiredCorrection": "Freeze v2 input-only group-aware deterministic resampling/partition in a new protocol/output path before labels/training; coarse key plus neighbor-boundary exclusion; independently audit all cases."
+    },
+    {
+      "id": "L2",
+      "severity": "HIGH",
+      "status": "CORRECTED_ALL_DEVELOPMENT_TARGETS_INDEPENDENTLY_RECONSTRUCTED",
+      "problem": "Python future_impact originally labeled truncated unresolved windows as negative even while Java stored null. examples ignored null mismatches.",
+      "requiredCorrection": "Return null for incomplete300s windows unless absorbing completed; mask all XGB/GNN training/evaluation targets, strictly verify stored-null parity; execute positive/negativecensor tests.",
+      "correctionEvidence": "future_impact returnsnull for unresolved partialwindows; XGBfiltersnull; GNNmasknonfinite; nodeevaluationskipnull; strictstorednullparity."
+    },
+    {
+      "id": "L3",
+      "severity": "MEDIUM",
+      "status": "CORRECTED_CURRENT_INPUTS_INDEPENDENTLY_VERIFIED",
+      "problem": "Original configurationFingerprint removed randomSeed while configuration actually contains seed; seeded duplicate configs would evade duplicate identity guard.",
+      "requiredCorrection": "Build explicit physical input identity removing seed/name and other administrative/noise fields."
+    }
+  ],
+  "sourceChecks": [
+    {
+      "name": "As-of feature allowlist",
+      "result": "REVIEWED_PASS",
+      "evidence": "MlFeatureExtractor uses observedClone, fixed32 feature vocabulary, excludes graph.realizedLabels and private exogenousSchedule."
+    },
+    {
+      "name": "Future ETA/SLA targets",
+      "result": "REVIEWED_PASS",
+      "evidence": "Java pairs prearrival/predelivery frames with later authoritative terminal outcomes; unresolved target staysnull."
+    },
+    {
+      "name": "New impact onset semantics",
+      "result": "REVIEWED_PASS_JAVA",
+      "evidence": "Six actual adverse codes, strictstart>cutoff and<=cutoff+300, completed/fullWindow coverage; no causality claim."
+    },
+    {
+      "name": "Fit/preprocessing split",
+      "result": "REVIEWED_PASS",
+      "evidence": "XGB.fit onlytrain matrices; hyperparam/epoch selectionvalidation only; GNNnormalizers fittrain only; Platt/residualinterval calibration uses separatecalibration split."
+    },
+    {
+      "name": "Past-only graph history",
+      "result": "REVIEWED_PASS",
+      "evidence": "GNN training slices histories endingatcurrent frame; inference chronology/scenario/run checks; no counterfactual outcome feature."
+    },
+    {
+      "name": "Final generation gate",
+      "result": "REVIEWED_PARTIAL",
+      "evidence": "Training refuses final.jsonl; final generation requires frozen selection manifest; v2 must also bind protocol/source hashes, not just frozen boolean."
+    },
+    {
+      "name": "Observed data provenance",
+      "result": "VERIFIED_PASS",
+      "evidence": "Historical18tables2,414,128rows preserved; no observedChennaifreightlabels/permissions bypass; simulator labels remain explicit."
+    }
+  ],
+  "originalReviewedSourceSha256": {
+    "simulator/backend/src/main/java/io/cascadeshield/sim/MlFeatureExtractor.java": "476d1b9d1052b9b78d9dc352e49c193de2d0fe20710bda31862bfb11503077d2",
+    "simulator/backend/src/main/java/io/cascadeshield/sim/MlCorpusCli.java": "b416c78b784da9570cfb8f866518c82c2aaa4276f5342ee44937c987d5a7e8da",
+    "simulator/backend/src/main/java/io/cascadeshield/sim/MlExperimentProtocol.java": "bd455d9256ad0a1655f0519aad887077180b248ca4e46c65d4e55d611ab977a3",
+    "config/milestone4_protocol.json": "72254833665352bc0dc7ff7d376b508970adbbea0980bb0a62d4a8d40b747891",
+    "ml/data.py": "9f9cddadcb41797a0caac9c1236891dffb4747482809dacf98b7fa42d6d26870",
+    "ml/features.py": "94f3495cfeafa88f36c691560e4653f8c860bd70f19f9c51365f3bbaeaa40a65",
+    "ml/training.py": "3b7b86961e98eeee62a8683539b3233453046cabc07cfec57e83e663efd4ca1f",
+    "ml/gnn.py": "432a585a0ba58115b38aed4e76be6de268b6eafefe639daa48f6a287aebe648a",
+    "ml/evaluation.py": "6b955e4a0977445907d0fb60e3cd34795c06ad9edf40a50d9825b8e10ae5d503",
+    "ml/inference.py": "b21daf043d75d3fcb74991c7e456a7a78a5ca6671ea82549db3e55c1db614471"
+  },
+  "limitations": [
+    "All scenarios share one bounded ChennaiOSMnetwork and threeprepared ODpairs; split independence doesnotmeangeographicoperatortransfer.",
+    "Coarse fingerprint depends on declared scientificallymeaningful quantization; exact/quantized uniquenessalone isnot a universal proof of statistical independence.",
+    "Repeated snapshots/nodes withinseed remain correlated; inferentialresampling mustclusterwhole seed."
+  ],
+  "executedMlUnitChecks": {
+    "command": ".venv-ml/Scripts/python.exe -m unittest discover -s tests -p 'test_ml*.py' -v",
+    "passed": 21,
+    "failures": 0,
+    "errors": 0,
+    "testRuntimeSec": 0.29,
+    "initialNoncanonicalInvocation": {
+      "command": ".venv-ml/Scripts/python.exe -m unittest tests.test_ml_pipeline tests.test_ml_graph_metrics -v",
+      "error": "test_ml_graph_metrics imports sibling test_ml_pipeline by unqualified name; use discover -s tests.",
+      "countedAsPass": false
+    }
+  },
+  "protocolSha256": "46ec8bfae7a6790e8b24b7fe8c8b7cd4a3005e4dea8b76a61e0ecd8434676f66",
+  "generationManifestSha256": "d3ee5732684b296f47c1842fa7e6dee71b0f57b8cb820ba3e4bbf02c4b571432",
+  "graphSha256": "c943bac278192042b22342d8e1be898cc68512fb936e314633645bc3e0304e60",
+  "featureSchemaHash": "bfb419c7a4fde46112e53aa83a8131e2f1e33526d4d85dda51374de1a828c4d4",
+  "featureSchemaFileSha256": "c5a36c2ee1c74af6d387ca982c6c6003b3262b4b1e0071e48d4a8c4fac20d9a5",
+  "auditImplementationSha256": "e120262f436a645d8908427ba5e22acf0d4f726cf33e0a8f963aeb00cd55c52b",
+  "reviewedSourceSha256": {
+    "simulator/backend/src/main/java/io/cascadeshield/sim/MlFeatureExtractor.java": "476d1b9d1052b9b78d9dc352e49c193de2d0fe20710bda31862bfb11503077d2",
+    "simulator/backend/src/main/java/io/cascadeshield/sim/MlCorpusCli.java": "c1cad3fa58f5fa120ef61d298a073888506c15fee050f3092c0d8bb6da2c60c5",
+    "simulator/backend/src/main/java/io/cascadeshield/sim/MlExperimentProtocol.java": "ec99da8a7c8eed0abeca5cee988fecbc7e82070708b544e4a140437e659d8aaa",
+    "ml/data.py": "80ae12394c57c147f1ef711855b7f4481b41b4aac8f309ab978be3b54ecc6a1d",
+    "ml/features.py": "94f3495cfeafa88f36c691560e4653f8c860bd70f19f9c51365f3bbaeaa40a65"
+  },
+  "inputOnlyAudit": {
+    "caseCount": 152,
+    "scenariosBySplit": {
+      "train": 64,
+      "validation": 24,
+      "calibration": 24,
+      "final": 40
+    },
+    "expectedBySplit": {
+      "train": 64,
+      "validation": 24,
+      "calibration": 24,
+      "final": 40
+    },
+    "actualFleetSizesBySplit": {
+      "train": [
+        4,
+        8
+      ],
+      "validation": [
+        5,
+        9
+      ],
+      "calibration": [
+        6,
+        10
+      ],
+      "final": [
+        7,
+        11,
+        12
+      ]
+    },
+    "freshSeedGroups": 18,
+    "checks": {
+      "inputFingerprint": {
+        "crossSplitGroups": 0,
+        "examples": []
+      },
+      "configurationWithoutAdministrativeSeed": {
+        "crossSplitGroups": 0,
+        "examples": []
+      },
+      "nonemptyActualSchedule": {
+        "crossSplitGroups": 0,
+        "examples": []
+      },
+      "declaredPrimaryCoarse": {
+        "crossSplitGroups": 0,
+        "examples": []
+      },
+      "declaredAbstractCoarse": {
+        "crossSplitGroups": 0,
+        "examples": []
+      },
+      "independentConservativeCoarse": {
+        "crossSplitGroups": 0,
+        "examples": []
+      },
+      "independentContinuousBoundaryGuard": {
+        "crossSplitNearPairs": 0,
+        "examples": [],
+        "absoluteThresholds": {
+          "serviceSec": 60.0,
+          "departureGapSec": 30.0,
+          "deadlineSlackSec": 60.0,
+          "contention": 0.25,
+          "incidentDurationSec": 120.0,
+          "severity": 0.25,
+          "incidentStartSec": 60.0,
+          "driverRestoreSec": 120.0
+        },
+        "rule": "Equal actual OD multisets/resources/availability/event types, all active physical parameter differences strictly below threshold. Inactive event/restoration parameters ignored."
+      }
+    },
+    "errors": [],
+    "passed": true
+  },
+  "developmentAudit": {
+    "passed": true,
+    "errors": [],
+    "sourceCorpusSha256": {
+      "train": "b44b2e222a289a0934287342545bc8defd3c17bf6624ff7374e03163633b2109",
+      "validation": "83f8f9e977316b01c2b66dca45855ca2e06ff7f6995a2c124c2b4f1f48233274",
+      "calibration": "3d9a0ec03a512e3ca6d5b57adab45e920c6b53dc9a4e4a46f04127107e4d459a"
+    },
+    "scenarioCount": 112,
+    "frameCount": 1107,
+    "truckExamples": 6908,
+    "strictAuthoritativeTargetParity": true,
+    "truckEligibilityAndCensorFlagsVerified": true,
+    "asOfInferenceProjectionValidated": true,
+    "finalOutcomesOpened": false
+  },
+  "finalOutcomesOpenedDuringAudit": false,
+  "reproduceCommand": ".venv-ml/Scripts/python.exe scripts/audit_milestone4_leakage.py --development",
+  "interpretation": "Disjoint actual fleet-size domains on one fixed network/template library; a held-out fleet-size transfer experiment, not field or independent-operator generalization. All same-seed families and snapshots remain grouped.",
+  "authorizationScope": "MODEL_FITTING_FROM_BOUND_DEVELOPMENT_CORPUS",
+  "modelFittingAuthorized": true,
+  "independentAuditUnitChecks": {
+    "passed": 8,
+    "failures": 0,
+    "errors": 0,
+    "command": "python -m unittest discover -s tests -p 'test_milestone4*.py' -v",
+    "scope": "Six physical-equivalence counterexamples and two paired-seed-bootstrap/missing-pair checks; fixtures never enter research data."
+  }
+}

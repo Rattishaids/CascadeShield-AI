@@ -1,0 +1,73 @@
+{
+  "checkedAtUtc": "2026-10-18T06:50:50.823764+00:00",
+  "provenance": "BROWSER_ENGINEERING_TEST_EVIDENCE",
+  "checks": [
+    {
+      "name": "backend_and_real_road_map_connected",
+      "passed": true
+    },
+    {
+      "name": "rule-v1_actual_provider_displayed",
+      "passed": true
+    },
+    {
+      "name": "xgb-v1_actual_provider_displayed",
+      "passed": true
+    },
+    {
+      "name": "xgb-no-graph-v1_actual_provider_displayed",
+      "passed": true
+    },
+    {
+      "name": "gnn-static-v1_actual_provider_displayed",
+      "passed": true
+    },
+    {
+      "name": "gnn-temporal-v1_actual_provider_displayed",
+      "passed": true
+    },
+    {
+      "name": "completed_live_run_cannot_silently_execute_an_ml_action",
+      "passed": true
+    },
+    {
+      "name": "live_state_preserved_without_approval_or_control_requests",
+      "passed": true,
+      "runId": "fbbc97c5-89df-4431-9be6-962af41ec101",
+      "clockSec": 854.9,
+      "trucks": 13
+    }
+  ],
+  "pageErrors": [],
+  "consoleErrors": [],
+  "stateChangingRequests": [],
+  "inferenceRequests": [
+    {
+      "url": "http://127.0.0.1:5173/api/ml/predict",
+      "method": "POST"
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/ml/predict",
+      "method": "POST"
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/ml/predict",
+      "method": "POST"
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/ml/predict",
+      "method": "POST"
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/ml/predict",
+      "method": "POST"
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/ml/recommendations/TEST-T01",
+      "method": "POST"
+    }
+  ],
+  "apiErrors": [],
+  "passed": true,
+  "passedChecks": 8
+}

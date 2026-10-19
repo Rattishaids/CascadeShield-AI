@@ -1,0 +1,33 @@
+{
+  "completed_at_utc": "2026-10-13T15:08:39.036070+00:00",
+  "passed": true,
+  "data_class": "SIMULATED_SNAPSHOT_CONVERSION_EVIDENCE",
+  "torch_installed": false,
+  "pyg_installed": false,
+  "actual_heterodata_serialization_executed": false,
+  "model_training_executed": false,
+  "outputs": [
+    {
+      "source": "reports/milestone_2_exports/dda07d32-e70c-442e-8061-04df155d3578/queue_snapshot.json",
+      "output": "reports/milestone_2_exports/dda07d32-e70c-442e-8061-04df155d3578/queue_tensor_pack.json",
+      "source_file_sha256": "1d8a418845a9982d0f8b29f529e63a41152c892a5bd5270dbb61b40e73655f79",
+      "output_sha256": "349f5dc454d09f0efe0dd18d689b3ef11768c4813794ba514860d4d18e8beb76",
+      "nodes": 8,
+      "edges": 12,
+      "realized_labels": 5,
+      "canonical_source_sha256": "ba271d756cfd6dd6f75a25600354a2a8365dea532b40ba0b6829a8138f1eee8a",
+      "passed": true
+    },
+    {
+      "source": "reports/milestone_2_exports/dda07d32-e70c-442e-8061-04df155d3578/completed_snapshot.json",
+      "output": "reports/milestone_2_exports/dda07d32-e70c-442e-8061-04df155d3578/completed_tensor_pack.json",
+      "source_file_sha256": "0c43a893a0c569027443c9a07d0862a03c563fdcb95c9ef819ca31bf8382c17a",
+      "output_sha256": "42dc15c0d5d3cff225167dc5f3d9142acb9919e684c1546ae91e4e9186f64717",
+      "nodes": 8,
+      "edges": 9,
+      "realized_labels": 12,
+      "canonical_source_sha256": "2667cbc85bcb83b06f76673b884a56bd6979e1824191caabc7922c19bb842332",
+      "passed": true
+    }
+  ]
+}

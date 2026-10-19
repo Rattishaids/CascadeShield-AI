@@ -1,0 +1,700 @@
+{
+  "schemaVersion": "cascadeshield.milestone4-preservation-check/1.0",
+  "checkedAtUtc": "2026-10-19T00:36:44.467626+00:00",
+  "projectRoot": "D:\\CascadeShield-AI",
+  "fileCount": 86,
+  "passedCount": 86,
+  "passed": true,
+  "files": [
+    {
+      "path": "config/benchmark_protocol.json",
+      "exists": true,
+      "expectedSha256": "989fba83cec961191289e605a201c426838b68188a6e74f51da90d0f43be5a01",
+      "actualSha256": "989fba83cec961191289e605a201c426838b68188a6e74f51da90d0f43be5a01",
+      "bytes": 2590,
+      "passed": true
+    },
+    {
+      "path": "data/metadata/chennai_network_provenance.json",
+      "exists": true,
+      "expectedSha256": "59b59d809eb47fc08338920c896a4989d98e069fe7193bffad132189f6d6e6c4",
+      "actualSha256": "59b59d809eb47fc08338920c896a4989d98e069fe7193bffad132189f6d6e6c4",
+      "bytes": 966,
+      "passed": true
+    },
+    {
+      "path": "data/metadata/manifest.json",
+      "exists": true,
+      "expectedSha256": "ffc861bc6e4f1f6aa34ab1dff34904759642e461042dc5292b9a347d4325ec69",
+      "actualSha256": "ffc861bc6e4f1f6aa34ab1dff34904759642e461042dc5292b9a347d4325ec69",
+      "bytes": 53647,
+      "passed": true
+    },
+    {
+      "path": "data/metadata/processed_manifest.json",
+      "exists": true,
+      "expectedSha256": "64817819f9d7de13cf8b4334cf582427a696dc18d49f6b283636514c27b2b131",
+      "actualSha256": "64817819f9d7de13cf8b4334cf582427a696dc18d49f6b283636514c27b2b131",
+      "bytes": 25020,
+      "passed": true
+    },
+    {
+      "path": "data/metadata/source_inventory.json",
+      "exists": true,
+      "expectedSha256": "df4973abb69265fc8201cf3834d2af410ac881d5425435fce68a830a1caf656d",
+      "actualSha256": "df4973abb69265fc8201cf3834d2af410ac881d5425435fce68a830a1caf656d",
+      "bytes": 10547,
+      "passed": true
+    },
+    {
+      "path": "data/processed/chennai_osm/road_graph.json",
+      "exists": true,
+      "expectedSha256": "c943bac278192042b22342d8e1be898cc68512fb936e314633645bc3e0304e60",
+      "actualSha256": "c943bac278192042b22342d8e1be898cc68512fb936e314633645bc3e0304e60",
+      "bytes": 9160346,
+      "passed": true
+    },
+    {
+      "path": "data/processed/chennai_osm/roads.geojson",
+      "exists": true,
+      "expectedSha256": "d714bab06c2eeb022eab54dac8a8224ca6c5330579579fa66938e35c6497f478",
+      "actualSha256": "d714bab06c2eeb022eab54dac8a8224ca6c5330579579fa66938e35c6497f478",
+      "bytes": 4712750,
+      "passed": true
+    },
+    {
+      "path": "data/raw/chennai_osm/central_chennai.json",
+      "exists": true,
+      "expectedSha256": "38ab5bdea18ca7859daea5a3801f1a5d138d320e29a841aa8d67f00c1c87e80d",
+      "actualSha256": "38ab5bdea18ca7859daea5a3801f1a5d138d320e29a841aa8d67f00c1c87e80d",
+      "bytes": 7984665,
+      "passed": true
+    },
+    {
+      "path": "reports/benchmark_raw/17fac423-bea7-46a0-9027-8ee76eaa78e4.csv",
+      "exists": true,
+      "expectedSha256": "2fd04001093a4d4372c6a1962f6f94ae8c4ea94b39cd5eda575f6ec1c4d59b74",
+      "actualSha256": "2fd04001093a4d4372c6a1962f6f94ae8c4ea94b39cd5eda575f6ec1c4d59b74",
+      "bytes": 9790,
+      "passed": true
+    },
+    {
+      "path": "reports/benchmark_raw/17fac423-bea7-46a0-9027-8ee76eaa78e4.json",
+      "exists": true,
+      "expectedSha256": "bef0137ea29225b8d999e62be3c8c4050182812a8349ace0ca67a154bc05b17b",
+      "actualSha256": "bef0137ea29225b8d999e62be3c8c4050182812a8349ace0ca67a154bc05b17b",
+      "bytes": 921379,
+      "passed": true
+    },
+    {
+      "path": "reports/benchmark_raw/67312a37-3ada-4e4e-9073-b92bcaf5ea70.csv",
+      "exists": true,
+      "expectedSha256": "dca76fab037034120e90889c18977ff555eca81cf4f419d2df3c0e05c0f19011",
+      "actualSha256": "dca76fab037034120e90889c18977ff555eca81cf4f419d2df3c0e05c0f19011",
+      "bytes": 9949,
+      "passed": true
+    },
+    {
+      "path": "reports/benchmark_raw/67312a37-3ada-4e4e-9073-b92bcaf5ea70.json",
+      "exists": true,
+      "expectedSha256": "43b5314bd48401850d2e486becd86f1392b5432079298be5d859b75ae4e93b42",
+      "actualSha256": "43b5314bd48401850d2e486becd86f1392b5432079298be5d859b75ae4e93b42",
+      "bytes": 3523259,
+      "passed": true
+    },
+    {
+      "path": "reports/benchmark_raw/6fa70409-a1e2-4152-a8fc-9f2da27c6191_failed.json",
+      "exists": true,
+      "expectedSha256": "64f02f62cba1c35056600517a9bff2644528d605345af94ca8a9dd83dc2a99a7",
+      "actualSha256": "64f02f62cba1c35056600517a9bff2644528d605345af94ca8a9dd83dc2a99a7",
+      "bytes": 1490,
+      "passed": true
+    },
+    {
+      "path": "reports/benchmark_raw/84bb3e25-f4fb-480c-9854-e63c80f3d7ea.csv",
+      "exists": true,
+      "expectedSha256": "3909cfc531b490085891390907fd0a247a9be515fb6b2bdad1ae8199ac83fb3d",
+      "actualSha256": "3909cfc531b490085891390907fd0a247a9be515fb6b2bdad1ae8199ac83fb3d",
+      "bytes": 15232,
+      "passed": true
+    },
+    {
+      "path": "reports/benchmark_raw/84bb3e25-f4fb-480c-9854-e63c80f3d7ea.json",
+      "exists": true,
+      "expectedSha256": "1fec5fbc48391adc02a6c84b8ab00122287513d8542128266950f04c33dd9733",
+      "actualSha256": "1fec5fbc48391adc02a6c84b8ab00122287513d8542128266950f04c33dd9733",
+      "bytes": 1487046,
+      "passed": true
+    },
+    {
+      "path": "reports/benchmark_raw/89272c40-1971-4216-8e64-115b8947d2bf.csv",
+      "exists": true,
+      "expectedSha256": "58b126b6202e6a7e6697faa7ad1a5c1cbaccd3c507c12db9fffef48000e293f2",
+      "actualSha256": "58b126b6202e6a7e6697faa7ad1a5c1cbaccd3c507c12db9fffef48000e293f2",
+      "bytes": 16122,
+      "passed": true
+    },
+    {
+      "path": "reports/benchmark_raw/89272c40-1971-4216-8e64-115b8947d2bf.json",
+      "exists": true,
+      "expectedSha256": "7f8e9b05a0499cd2b3ee932d4d16fc1f692f7361f2a61748d906f918a8a13beb",
+      "actualSha256": "7f8e9b05a0499cd2b3ee932d4d16fc1f692f7361f2a61748d906f918a8a13beb",
+      "bytes": 3478082,
+      "passed": true
+    },
+    {
+      "path": "reports/benchmark_raw/b0d9235f-e1b9-4b3b-9627-6af76a47e988.csv",
+      "exists": true,
+      "expectedSha256": "1304ab4e3278bb9d8129457e7129df473751a651c358d4333a1e7e7a8bd868ac",
+      "actualSha256": "1304ab4e3278bb9d8129457e7129df473751a651c358d4333a1e7e7a8bd868ac",
+      "bytes": 10293,
+      "passed": true
+    },
+    {
+      "path": "reports/benchmark_raw/b0d9235f-e1b9-4b3b-9627-6af76a47e988.json",
+      "exists": true,
+      "expectedSha256": "2eadd8b6e2518ef52fb2c3498166fbff3409d6ae529bf4bf7c6b7e07fa0997e6",
+      "actualSha256": "2eadd8b6e2518ef52fb2c3498166fbff3409d6ae529bf4bf7c6b7e07fa0997e6",
+      "bytes": 2086410,
+      "passed": true
+    },
+    {
+      "path": "reports/benchmark_raw/d417cd3e-d5d4-453b-9797-d686fc1634ba.csv",
+      "exists": true,
+      "expectedSha256": "7858ad37e6803cdec83d2797fd6ed29313121613cb63e1417133fb3123572d25",
+      "actualSha256": "7858ad37e6803cdec83d2797fd6ed29313121613cb63e1417133fb3123572d25",
+      "bytes": 16114,
+      "passed": true
+    },
+    {
+      "path": "reports/benchmark_raw/d417cd3e-d5d4-453b-9797-d686fc1634ba.json",
+      "exists": true,
+      "expectedSha256": "c6736b433a28341babb339b32680c6b9827bc9e3aa20785f36a1955a4cfb97ec",
+      "actualSha256": "c6736b433a28341babb339b32680c6b9827bc9e3aa20785f36a1955a4cfb97ec",
+      "bytes": 2976265,
+      "passed": true
+    },
+    {
+      "path": "reports/benchmark_raw/f6fd77d7-268f-4f22-bf4a-7ba3b937be7e.csv",
+      "exists": true,
+      "expectedSha256": "e4cbfdc56eac7bb7280bcbf5523b2ec120e9b4479ed5b7f4692fba5ac34dbdb1",
+      "actualSha256": "e4cbfdc56eac7bb7280bcbf5523b2ec120e9b4479ed5b7f4692fba5ac34dbdb1",
+      "bytes": 10321,
+      "passed": true
+    },
+    {
+      "path": "reports/benchmark_raw/f6fd77d7-268f-4f22-bf4a-7ba3b937be7e.json",
+      "exists": true,
+      "expectedSha256": "32f7579600cefb1e0ab46774024272764a903142f43f20346c690961f0bb4bc6",
+      "actualSha256": "32f7579600cefb1e0ab46774024272764a903142f43f20346c690961f0bb4bc6",
+      "bytes": 1768832,
+      "passed": true
+    },
+    {
+      "path": "reports/benchmark_raw/fe3420a1-49b9-4e4b-87f5-db8462ffb761.csv",
+      "exists": true,
+      "expectedSha256": "20f2124eb4ed4e212bcf1d57b933a40e5affb02fc3beba4d5217bbbcfa1e8c06",
+      "actualSha256": "20f2124eb4ed4e212bcf1d57b933a40e5affb02fc3beba4d5217bbbcfa1e8c06",
+      "bytes": 15479,
+      "passed": true
+    },
+    {
+      "path": "reports/benchmark_raw/fe3420a1-49b9-4e4b-87f5-db8462ffb761.json",
+      "exists": true,
+      "expectedSha256": "dc03f408bf52b369ae063d5766e4f0a24c811a62d14564a9c36d1308c22e76a9",
+      "actualSha256": "dc03f408bf52b369ae063d5766e4f0a24c811a62d14564a9c36d1308c22e76a9",
+      "bytes": 5831111,
+      "passed": true
+    },
+    {
+      "path": "reports/BENCHMARK_RESULTS.csv",
+      "exists": true,
+      "expectedSha256": "e775ed01da89fdec6a5c145917042a18c75ab7c8c78ba59f9249c23ad0337171",
+      "actualSha256": "e775ed01da89fdec6a5c145917042a18c75ab7c8c78ba59f9249c23ad0337171",
+      "bytes": 93762,
+      "passed": true
+    },
+    {
+      "path": "reports/BENCHMARK_RESULTS.json",
+      "exists": true,
+      "expectedSha256": "2f6fa2d54ecaf3540d59d2dbc6909a6864e433e8a1ac0177db955bd9b9b63ec6",
+      "actualSha256": "2f6fa2d54ecaf3540d59d2dbc6909a6864e433e8a1ac0177db955bd9b9b63ec6",
+      "bytes": 815443,
+      "passed": true
+    },
+    {
+      "path": "reports/milestone3_browser_tests.json",
+      "exists": true,
+      "expectedSha256": "e21018f8e7719b1470e032fb7afcdfee83287ea63a49649feda40c43c91c8f8f",
+      "actualSha256": "e21018f8e7719b1470e032fb7afcdfee83287ea63a49649feda40c43c91c8f8f",
+      "bytes": 1638,
+      "passed": true
+    },
+    {
+      "path": "reports/milestone3_frontend_tests.json",
+      "exists": true,
+      "expectedSha256": "4b3b3538040aebad3e947327292b6ec565f73cd8c5eddf4ef40af5a4755f4b21",
+      "actualSha256": "4b3b3538040aebad3e947327292b6ec565f73cd8c5eddf4ef40af5a4755f4b21",
+      "bytes": 79692,
+      "passed": true
+    },
+    {
+      "path": "reports/milestone3_integration_initial_failure.json",
+      "exists": true,
+      "expectedSha256": "31f795fd8b028be673dad120eeb831f8e8e3ab7d1a7437d3902353b2f60343a9",
+      "actualSha256": "31f795fd8b028be673dad120eeb831f8e8e3ab7d1a7437d3902353b2f60343a9",
+      "bytes": 1942,
+      "passed": true
+    },
+    {
+      "path": "reports/milestone3_integration_tests.json",
+      "exists": true,
+      "expectedSha256": "cab56655959d94e22a7005efcc46f42d9f5f228cad6dfc4a9584e42125445128",
+      "actualSha256": "cab56655959d94e22a7005efcc46f42d9f5f228cad6dfc4a9584e42125445128",
+      "bytes": 5639,
+      "passed": true
+    },
+    {
+      "path": "reports/milestone3_java_tests.json",
+      "exists": true,
+      "expectedSha256": "81fec52a38e5bdf4d0a144c956ae9bbed5b8dd6f7c5071546c78732c49b97352",
+      "actualSha256": "81fec52a38e5bdf4d0a144c956ae9bbed5b8dd6f7c5071546c78732c49b97352",
+      "bytes": 3037,
+      "passed": true
+    },
+    {
+      "path": "reports/milestone3_python_tests.json",
+      "exists": true,
+      "expectedSha256": "244a1e34ee36102c0a0c57343febf81a3da22919c3eb05479b5d18953c7dccd3",
+      "actualSha256": "244a1e34ee36102c0a0c57343febf81a3da22919c3eb05479b5d18953c7dccd3",
+      "bytes": 468,
+      "passed": true
+    },
+    {
+      "path": "reports/milestone3_restart_tests.json",
+      "exists": true,
+      "expectedSha256": "f1d8b4c5eee5ad9ec22b716535a7822a8c08df754acd3453a83108d126f15246",
+      "actualSha256": "f1d8b4c5eee5ad9ec22b716535a7822a8c08df754acd3453a83108d126f15246",
+      "bytes": 2689,
+      "passed": true
+    },
+    {
+      "path": "reports/milestone3_result_validation.json",
+      "exists": true,
+      "expectedSha256": "e3d923379cd45af46835da4c3da220e3d247ecb9abe44313d90af6b1cedd07e5",
+      "actualSha256": "e3d923379cd45af46835da4c3da220e3d247ecb9abe44313d90af6b1cedd07e5",
+      "bytes": 28753,
+      "passed": true
+    },
+    {
+      "path": "reports/MILESTONE_1_PLAN.md",
+      "exists": true,
+      "expectedSha256": "ba27b499561d9ce7d12d4e73501216a69de46959416fc8c86fee3c78afa29d9c",
+      "actualSha256": "ba27b499561d9ce7d12d4e73501216a69de46959416fc8c86fee3c78afa29d9c",
+      "bytes": 3154,
+      "passed": true
+    },
+    {
+      "path": "reports/MILESTONE_1_RESULTS.json",
+      "exists": true,
+      "expectedSha256": "acc2898582d15f4352382a32d96ba002851fd6056c430c88477c57b99532d52c",
+      "actualSha256": "acc2898582d15f4352382a32d96ba002851fd6056c430c88477c57b99532d52c",
+      "bytes": 969,
+      "passed": true
+    },
+    {
+      "path": "reports/MILESTONE_1_RESULTS.md",
+      "exists": true,
+      "expectedSha256": "f048f02601b44590133dd5b9e03070583053558e603974080fd3142d575f6772",
+      "actualSha256": "f048f02601b44590133dd5b9e03070583053558e603974080fd3142d575f6772",
+      "bytes": 8595,
+      "passed": true
+    },
+    {
+      "path": "reports/milestone_2_browser_initial_failure.json",
+      "exists": true,
+      "expectedSha256": "6320c72a640ecb43b21af654fc96451dba3d63dccf4f5d1d5ff41411ef55e4c0",
+      "actualSha256": "6320c72a640ecb43b21af654fc96451dba3d63dccf4f5d1d5ff41411ef55e4c0",
+      "bytes": 426,
+      "passed": true
+    },
+    {
+      "path": "reports/milestone_2_browser_selector_failure.json",
+      "exists": true,
+      "expectedSha256": "59a4449615684dcf2f8e5c6faab9d2f9e060bd5e84fc8aa20695f06eb13ccb59",
+      "actualSha256": "59a4449615684dcf2f8e5c6faab9d2f9e060bd5e84fc8aa20695f06eb13ccb59",
+      "bytes": 1270,
+      "passed": true
+    },
+    {
+      "path": "reports/milestone_2_browser_tests.json",
+      "exists": true,
+      "expectedSha256": "d57b96a28d6aeb36afeea8241d5acd3df5b17f744f17c2af8a31eb1197711300",
+      "actualSha256": "d57b96a28d6aeb36afeea8241d5acd3df5b17f744f17c2af8a31eb1197711300",
+      "bytes": 2014,
+      "passed": true
+    },
+    {
+      "path": "reports/milestone_2_demonstration_state.json",
+      "exists": true,
+      "expectedSha256": "32bd2d282f9bf6b765b8f9a81728b63a68da357403aef708809eee82bb53dd45",
+      "actualSha256": "32bd2d282f9bf6b765b8f9a81728b63a68da357403aef708809eee82bb53dd45",
+      "bytes": 89479,
+      "passed": true
+    },
+    {
+      "path": "reports/milestone_2_frontend_tests.json",
+      "exists": true,
+      "expectedSha256": "47b32ae4684c9c895e9c48d7cbb938c6598bdfb5ece8b1958dfe8ddea1a905f4",
+      "actualSha256": "47b32ae4684c9c895e9c48d7cbb938c6598bdfb5ece8b1958dfe8ddea1a905f4",
+      "bytes": 14347,
+      "passed": true
+    },
+    {
+      "path": "reports/milestone_2_integration_initial_failure.json",
+      "exists": true,
+      "expectedSha256": "c24bccc87bf109d786c2aeec3e7c55a77f30dff8f4811e535baaf939e4dbd594",
+      "actualSha256": "c24bccc87bf109d786c2aeec3e7c55a77f30dff8f4811e535baaf939e4dbd594",
+      "bytes": 5623,
+      "passed": true
+    },
+    {
+      "path": "reports/milestone_2_integration_tests.json",
+      "exists": true,
+      "expectedSha256": "e482a7ccb54b8095436639a3624bd7ace2fc1b0e68790a435e5ffa4d162bc2f7",
+      "actualSha256": "e482a7ccb54b8095436639a3624bd7ace2fc1b0e68790a435e5ffa4d162bc2f7",
+      "bytes": 6444,
+      "passed": true
+    },
+    {
+      "path": "reports/milestone_2_java_tests.json",
+      "exists": true,
+      "expectedSha256": "dbbcf09e3b4d9cb8991a5d8b1e7d31626761c44e40768f04652a9f72382017a9",
+      "actualSha256": "dbbcf09e3b4d9cb8991a5d8b1e7d31626761c44e40768f04652a9f72382017a9",
+      "bytes": 3851,
+      "passed": true
+    },
+    {
+      "path": "reports/milestone_2_legacy_browser.json",
+      "exists": true,
+      "expectedSha256": "2f34c44b200d00025ca09e32597619a2337fa968b92ee628ddac4f0673f35173",
+      "actualSha256": "2f34c44b200d00025ca09e32597619a2337fa968b92ee628ddac4f0673f35173",
+      "bytes": 1335,
+      "passed": true
+    },
+    {
+      "path": "reports/milestone_2_legacy_integration.json",
+      "exists": true,
+      "expectedSha256": "a5709e69bf119d982b61978f9c087e8235f77cd5cecac6b28a9a8ad57c6bc303",
+      "actualSha256": "a5709e69bf119d982b61978f9c087e8235f77cd5cecac6b28a9a8ad57c6bc303",
+      "bytes": 4843,
+      "passed": true
+    },
+    {
+      "path": "reports/MILESTONE_2_PLAN.md",
+      "exists": true,
+      "expectedSha256": "d1d14fd3667ae5e7f2483f5642146d5b78171e098901633f3d5fbdc651bb029d",
+      "actualSha256": "d1d14fd3667ae5e7f2483f5642146d5b78171e098901633f3d5fbdc651bb029d",
+      "bytes": 1743,
+      "passed": true
+    },
+    {
+      "path": "reports/milestone_2_python_tests.json",
+      "exists": true,
+      "expectedSha256": "268e0348b283ec2853685b2250bcd8bdf74a58dbbca0fe5107c8e3d6cc2583d3",
+      "actualSha256": "268e0348b283ec2853685b2250bcd8bdf74a58dbbca0fe5107c8e3d6cc2583d3",
+      "bytes": 258,
+      "passed": true
+    },
+    {
+      "path": "reports/MILESTONE_2_RESULTS.json",
+      "exists": true,
+      "expectedSha256": "14138769cc49f0d38030a7273ee1c8809d27787ffd60664e0bc5738b4c8ccd3c",
+      "actualSha256": "14138769cc49f0d38030a7273ee1c8809d27787ffd60664e0bc5738b4c8ccd3c",
+      "bytes": 3178,
+      "passed": true
+    },
+    {
+      "path": "reports/MILESTONE_2_RESULTS.md",
+      "exists": true,
+      "expectedSha256": "d407628359b3a08c4a4c6103520922a662aa6f214cfc8e266c3790729818eb0a",
+      "actualSha256": "d407628359b3a08c4a4c6103520922a662aa6f214cfc8e266c3790729818eb0a",
+      "bytes": 12831,
+      "passed": true
+    },
+    {
+      "path": "reports/milestone_2_snapshot_conversion.json",
+      "exists": true,
+      "expectedSha256": "49c56e03cc1d5f0187378f37592fbd4f30f62c83e4c4032ec9c2a040364faf04",
+      "actualSha256": "49c56e03cc1d5f0187378f37592fbd4f30f62c83e4c4032ec9c2a040364faf04",
+      "bytes": 1536,
+      "passed": true
+    },
+    {
+      "path": "reports/milestone_3_frontend_tests.json",
+      "exists": true,
+      "expectedSha256": "4cbb5717323685994a65048ddf54ae6f5c82ee055be6969413fcb6b767b0e70c",
+      "actualSha256": "4cbb5717323685994a65048ddf54ae6f5c82ee055be6969413fcb6b767b0e70c",
+      "bytes": 19890,
+      "passed": true
+    },
+    {
+      "path": "reports/MILESTONE_3_RESULTS.json",
+      "exists": true,
+      "expectedSha256": "3e00a08abcdb54fea872366fb248bf082eb95e0552e245aafbd5c916a0882ed6",
+      "actualSha256": "3e00a08abcdb54fea872366fb248bf082eb95e0552e245aafbd5c916a0882ed6",
+      "bytes": 13364,
+      "passed": true
+    },
+    {
+      "path": "reports/MILESTONE_3_RESULTS.md",
+      "exists": true,
+      "expectedSha256": "9f91373e3f7a9b8d04946c99cf005bb05d1554d9a22b73e3d01de386b562ebaa",
+      "actualSha256": "9f91373e3f7a9b8d04946c99cf005bb05d1554d9a22b73e3d01de386b562ebaa",
+      "bytes": 14538,
+      "passed": true
+    },
+    {
+      "path": "simulator/backend/src/main/java/io/cascadeshield/sim/AiArchitecture.java",
+      "exists": true,
+      "expectedSha256": "afb055adeb7a8fdfe01e8fb415f0ad96b87033e4cc8e061e78ae25219f73e3a0",
+      "actualSha256": "afb055adeb7a8fdfe01e8fb415f0ad96b87033e4cc8e061e78ae25219f73e3a0",
+      "bytes": 1043,
+      "passed": true
+    },
+    {
+      "path": "simulator/backend/src/main/java/io/cascadeshield/sim/AiFallbackPipeline.java",
+      "exists": true,
+      "expectedSha256": "a9f39149cabdbdaefd7dc81432ebb9664cd358525aeb7aeba1fecd8b23f5c210",
+      "actualSha256": "a9f39149cabdbdaefd7dc81432ebb9664cd358525aeb7aeba1fecd8b23f5c210",
+      "bytes": 11803,
+      "passed": true
+    },
+    {
+      "path": "simulator/backend/src/main/java/io/cascadeshield/sim/AiModels.java",
+      "exists": true,
+      "expectedSha256": "c9bcbfa73eff9a7352cb277c296f5f56327a23ffde8caf9c0f9d72b4abe74591",
+      "actualSha256": "c9bcbfa73eff9a7352cb277c296f5f56327a23ffde8caf9c0f9d72b4abe74591",
+      "bytes": 2395,
+      "passed": true
+    },
+    {
+      "path": "simulator/backend/src/main/java/io/cascadeshield/sim/ApiException.java",
+      "exists": true,
+      "expectedSha256": "24c68273e4a336bf46acc7b3ef96c404502e30ffe640a7bf174988c2ee1a6de0",
+      "actualSha256": "24c68273e4a336bf46acc7b3ef96c404502e30ffe640a7bf174988c2ee1a6de0",
+      "bytes": 391,
+      "passed": true
+    },
+    {
+      "path": "simulator/backend/src/main/java/io/cascadeshield/sim/BenchmarkController.java",
+      "exists": true,
+      "expectedSha256": "95fb7c7502f848de2779578ee3cfa163a5107e37221191ca2147c732a9e744bd",
+      "actualSha256": "95fb7c7502f848de2779578ee3cfa163a5107e37221191ca2147c732a9e744bd",
+      "bytes": 1224,
+      "passed": true
+    },
+    {
+      "path": "simulator/backend/src/main/java/io/cascadeshield/sim/BenchmarkModels.java",
+      "exists": true,
+      "expectedSha256": "2b94a674e83b28db516c7bb1f5b9cfaa8231d2f350f316c2e5d257c37f443621",
+      "actualSha256": "2b94a674e83b28db516c7bb1f5b9cfaa8231d2f350f316c2e5d257c37f443621",
+      "bytes": 2785,
+      "passed": true
+    },
+    {
+      "path": "simulator/backend/src/main/java/io/cascadeshield/sim/BenchmarkPolicyRunner.java",
+      "exists": true,
+      "expectedSha256": "a1087dad954a093d1a8360c920077deacd9650751d73e504c7c65dc5a2dea435",
+      "actualSha256": "a1087dad954a093d1a8360c920077deacd9650751d73e504c7c65dc5a2dea435",
+      "bytes": 19731,
+      "passed": true
+    },
+    {
+      "path": "simulator/backend/src/main/java/io/cascadeshield/sim/BenchmarkRepository.java",
+      "exists": true,
+      "expectedSha256": "a364c177877993f2b70bfcfdd9825f7e369144f71cfde86a2d6df9fa19d93a99",
+      "actualSha256": "a364c177877993f2b70bfcfdd9825f7e369144f71cfde86a2d6df9fa19d93a99",
+      "bytes": 3035,
+      "passed": true
+    },
+    {
+      "path": "simulator/backend/src/main/java/io/cascadeshield/sim/BenchmarkScenarioGenerator.java",
+      "exists": true,
+      "expectedSha256": "7ce6c7c3fc3963c5fc370a85efbc5a51e19a12304a062b38f560fafa268d1d3b",
+      "actualSha256": "7ce6c7c3fc3963c5fc370a85efbc5a51e19a12304a062b38f560fafa268d1d3b",
+      "bytes": 14325,
+      "passed": true
+    },
+    {
+      "path": "simulator/backend/src/main/java/io/cascadeshield/sim/BenchmarkService.java",
+      "exists": true,
+      "expectedSha256": "1855efd10fdc3978b734ea43863f05bb90ed9d3c5cebccf7c612046a40b4610f",
+      "actualSha256": "1855efd10fdc3978b734ea43863f05bb90ed9d3c5cebccf7c612046a40b4610f",
+      "bytes": 11053,
+      "passed": true
+    },
+    {
+      "path": "simulator/backend/src/main/java/io/cascadeshield/sim/CounterfactualExperimentEngine.java",
+      "exists": true,
+      "expectedSha256": "a607d795b09941d15d43625865c2a33d05cc66b23117e653b652f237d673fccc",
+      "actualSha256": "a607d795b09941d15d43625865c2a33d05cc66b23117e653b652f237d673fccc",
+      "bytes": 7450,
+      "passed": true
+    },
+    {
+      "path": "simulator/backend/src/main/java/io/cascadeshield/sim/ExperimentActions.java",
+      "exists": true,
+      "expectedSha256": "9dfc95cbfab5767b7ebd089604393743d7238c56a717f4e2e30664db97cc5dcd",
+      "actualSha256": "9dfc95cbfab5767b7ebd089604393743d7238c56a717f4e2e30664db97cc5dcd",
+      "bytes": 21439,
+      "passed": true
+    },
+    {
+      "path": "simulator/backend/src/main/java/io/cascadeshield/sim/ExperimentMetrics.java",
+      "exists": true,
+      "expectedSha256": "fa495f84ace251b13e0181dc609612e8fae933bf1efa3ae4ae9d3c69bd37236e",
+      "actualSha256": "fa495f84ace251b13e0181dc609612e8fae933bf1efa3ae4ae9d3c69bd37236e",
+      "bytes": 3962,
+      "passed": true
+    },
+    {
+      "path": "simulator/backend/src/main/java/io/cascadeshield/sim/GraphRiskBaseline.java",
+      "exists": true,
+      "expectedSha256": "b759038c7b43e775eff795b2349893cb2154bf950eb41677fb115c717dd13ef4",
+      "actualSha256": "b759038c7b43e775eff795b2349893cb2154bf950eb41677fb115c717dd13ef4",
+      "bytes": 7265,
+      "passed": true
+    },
+    {
+      "path": "simulator/backend/src/main/java/io/cascadeshield/sim/GraphSnapshotExporter.java",
+      "exists": true,
+      "expectedSha256": "67c61753d4d4cf891c623a3ee7d808c9472180587d0010c6ba536b082bede141",
+      "actualSha256": "67c61753d4d4cf891c623a3ee7d808c9472180587d0010c6ba536b082bede141",
+      "bytes": 10619,
+      "passed": true
+    },
+    {
+      "path": "simulator/backend/src/main/java/io/cascadeshield/sim/Models.java",
+      "exists": true,
+      "expectedSha256": "b75024c8b93099921ce2b1ce0dabf7d3260f0e0dafba1855ff3f290590ab6a5e",
+      "actualSha256": "b75024c8b93099921ce2b1ce0dabf7d3260f0e0dafba1855ff3f290590ab6a5e",
+      "bytes": 5429,
+      "passed": true
+    },
+    {
+      "path": "simulator/backend/src/main/java/io/cascadeshield/sim/OperationalDependencyGraph.java",
+      "exists": true,
+      "expectedSha256": "38d0ec30b71163e691369daf0b19e169c9421e560b320fcdd881c3b1739292ac",
+      "actualSha256": "38d0ec30b71163e691369daf0b19e169c9421e560b320fcdd881c3b1739292ac",
+      "bytes": 14347,
+      "passed": true
+    },
+    {
+      "path": "simulator/backend/src/main/java/io/cascadeshield/sim/OperationalRuntime.java",
+      "exists": true,
+      "expectedSha256": "1026eb7d9e730e0325c5eeb120915edb2ab8bf68bc5bfdc2a68d036f35b652ec",
+      "actualSha256": "1026eb7d9e730e0325c5eeb120915edb2ab8bf68bc5bfdc2a68d036f35b652ec",
+      "bytes": 24612,
+      "passed": true
+    },
+    {
+      "path": "simulator/backend/src/main/java/io/cascadeshield/sim/OperatorApprovalGuard.java",
+      "exists": true,
+      "expectedSha256": "d14d1f56ddb97652e8b6cf8df63e69f3e7e49365c3f49f26065aff24c901b2b0",
+      "actualSha256": "d14d1f56ddb97652e8b6cf8df63e69f3e7e49365c3f49f26065aff24c901b2b0",
+      "bytes": 1906,
+      "passed": true
+    },
+    {
+      "path": "simulator/backend/src/main/java/io/cascadeshield/sim/OpsModels.java",
+      "exists": true,
+      "expectedSha256": "1f17899840a951f14db04adbc0ad3c1b098ef06b09886b61d7a5d64dc7929216",
+      "actualSha256": "1f17899840a951f14db04adbc0ad3c1b098ef06b09886b61d7a5d64dc7929216",
+      "bytes": 4032,
+      "passed": true
+    },
+    {
+      "path": "simulator/backend/src/main/java/io/cascadeshield/sim/PredictionService.java",
+      "exists": true,
+      "expectedSha256": "60f54a63e3ca036843011e183c317095cb28dbdf551a0cdef23f41d6a1398ea2",
+      "actualSha256": "60f54a63e3ca036843011e183c317095cb28dbdf551a0cdef23f41d6a1398ea2",
+      "bytes": 464,
+      "passed": true
+    },
+    {
+      "path": "simulator/backend/src/main/java/io/cascadeshield/sim/PreventionService.java",
+      "exists": true,
+      "expectedSha256": "da069d41b4c1d7f65c07a766331ac2c2982b33bdd9836c8239e23e3159942e30",
+      "actualSha256": "da069d41b4c1d7f65c07a766331ac2c2982b33bdd9836c8239e23e3159942e30",
+      "bytes": 274,
+      "passed": true
+    },
+    {
+      "path": "simulator/backend/src/main/java/io/cascadeshield/sim/RoadGraph.java",
+      "exists": true,
+      "expectedSha256": "840d1db02bae92092663001d6f8d2824f480057248d5f84d5ef9ef832239ebf7",
+      "actualSha256": "840d1db02bae92092663001d6f8d2824f480057248d5f84d5ef9ef832239ebf7",
+      "bytes": 10471,
+      "passed": true
+    },
+    {
+      "path": "simulator/backend/src/main/java/io/cascadeshield/sim/RuleBasedPredictionService.java",
+      "exists": true,
+      "expectedSha256": "aaa13e5ac5437306555c3087d895c0a5084220914bcc7c7083141f2ba905e90c",
+      "actualSha256": "aaa13e5ac5437306555c3087d895c0a5084220914bcc7c7083141f2ba905e90c",
+      "bytes": 2606,
+      "passed": true
+    },
+    {
+      "path": "simulator/backend/src/main/java/io/cascadeshield/sim/RuleBasedPreventionService.java",
+      "exists": true,
+      "expectedSha256": "134865d7180f6d1cdcf2dc1e99ce7509ecf5d7d3a65ccda90651df9803bf368e",
+      "actualSha256": "134865d7180f6d1cdcf2dc1e99ce7509ecf5d7d3a65ccda90651df9803bf368e",
+      "bytes": 6278,
+      "passed": true
+    },
+    {
+      "path": "simulator/backend/src/main/java/io/cascadeshield/sim/SimulationEngine.java",
+      "exists": true,
+      "expectedSha256": "b1412f24ccaa2cc2e7ef20e289a83852ef91450ca80023cdc40eb2ccd971150a",
+      "actualSha256": "b1412f24ccaa2cc2e7ef20e289a83852ef91450ca80023cdc40eb2ccd971150a",
+      "bytes": 26750,
+      "passed": true
+    },
+    {
+      "path": "simulator/backend/src/main/java/io/cascadeshield/sim/SimulationRepository.java",
+      "exists": true,
+      "expectedSha256": "a7ba719da32cbb787ee5f5c272b681e053f330a3328a0c4a33d1a38d91956798",
+      "actualSha256": "a7ba719da32cbb787ee5f5c272b681e053f330a3328a0c4a33d1a38d91956798",
+      "bytes": 8754,
+      "passed": true
+    },
+    {
+      "path": "simulator/backend/src/main/java/io/cascadeshield/sim/SimulationService.java",
+      "exists": true,
+      "expectedSha256": "5d6c4e3a3db4f1f4cd017dc86f0f337e6fef77efc33ed56266ec8bebf315319a",
+      "actualSha256": "5d6c4e3a3db4f1f4cd017dc86f0f337e6fef77efc33ed56266ec8bebf315319a",
+      "bytes": 10973,
+      "passed": true
+    },
+    {
+      "path": "simulator/backend/src/main/java/io/cascadeshield/sim/SimulatorApplication.java",
+      "exists": true,
+      "expectedSha256": "eed80cf9cd8f36ac9fe28aa64b5e96be46a3ba0617a18f77cd7c39232d872e5c",
+      "actualSha256": "eed80cf9cd8f36ac9fe28aa64b5e96be46a3ba0617a18f77cd7c39232d872e5c",
+      "bytes": 401,
+      "passed": true
+    },
+    {
+      "path": "simulator/backend/src/main/java/io/cascadeshield/sim/SimulatorController.java",
+      "exists": true,
+      "expectedSha256": "79295d91a4d65711c513db20b1f010597025ce7ee6e1175fd8671fc47c0e9c21",
+      "actualSha256": "79295d91a4d65711c513db20b1f010597025ce7ee6e1175fd8671fc47c0e9c21",
+      "bytes": 7430,
+      "passed": true
+    }
+  ],
+  "scope": "Only files recorded in the immutable pre-M4 preservation manifest; this does not re-count database rows or claim every unrecorded file was checked.",
+  "manifestSha256": "d6d2d13e6ffbc3ed7c1679531dcfe37ba73bc2068a5abe189291a4e45a4b8150"
+}

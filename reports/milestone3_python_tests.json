@@ -1,0 +1,12 @@
+{
+  "recordedAtUtc": "2026-10-13T16:20:04.482687+00:00",
+  "startedAtUtc": "2026-10-13T16:19:59.948028+00:00",
+  "command": ".venv/Scripts/python.exe -m unittest discover -s tests -v",
+  "success": true,
+  "tests": 33,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "scope": "Existing acquisition, real Chennai, graph conversion and new paired benchmark statistics",
+  "graphSha256": "c943bac278192042b22342d8e1be898cc68512fb936e314633645bc3e0304e60"
+}

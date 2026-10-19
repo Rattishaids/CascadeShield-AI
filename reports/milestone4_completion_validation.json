@@ -1,0 +1,3932 @@
+{
+  "checkedAtUtc": "2026-10-19T00:37:38.018308+00:00",
+  "provenance": "ENGINEERING_ARTIFACT_VALIDATION",
+  "checks": [
+    {
+      "name": "published_model_selection_is_frozen_simulation_only",
+      "passed": true,
+      "evidence": "a225deef5bfe31676129cefa595ef8fb39511486b06e9d0a1d31de40733a3a39"
+    },
+    {
+      "name": "frozen_implementation:ml/__init__.py",
+      "passed": true,
+      "evidence": "04ad884d4f7dc68a10147bad9c50836c3ade52859ef0d508e59ebecec2aaa827"
+    },
+    {
+      "name": "frozen_implementation:ml/data.py",
+      "passed": true,
+      "evidence": "80ae12394c57c147f1ef711855b7f4481b41b4aac8f309ab978be3b54ecc6a1d"
+    },
+    {
+      "name": "frozen_implementation:ml/evaluation.py",
+      "passed": true,
+      "evidence": "9b5eaaef4f08d7f81c259161ee5f6ab93e616f75bb53a97af0ca9e5d6244e075"
+    },
+    {
+      "name": "frozen_implementation:ml/features.py",
+      "passed": true,
+      "evidence": "94f3495cfeafa88f36c691560e4653f8c860bd70f19f9c51365f3bbaeaa40a65"
+    },
+    {
+      "name": "frozen_implementation:ml/gnn.py",
+      "passed": true,
+      "evidence": "432a585a0ba58115b38aed4e76be6de268b6eafefe639daa48f6a287aebe648a"
+    },
+    {
+      "name": "frozen_implementation:ml/inference.py",
+      "passed": true,
+      "evidence": "6746508db0919ebe2699a67cb3c9ecad874942404e5a49285fe49cd1d02c4993"
+    },
+    {
+      "name": "frozen_implementation:ml/metrics.py",
+      "passed": true,
+      "evidence": "d343326ff9ca86b6aa0324602974c29cf2bfa5aeee07f387ffb1163831b0deda"
+    },
+    {
+      "name": "frozen_implementation:ml/service.py",
+      "passed": true,
+      "evidence": "2838b8c275b6faa2421e06f62d883a1a1e4871a7868973b4d46d669d7967c95a"
+    },
+    {
+      "name": "frozen_implementation:ml/training.py",
+      "passed": true,
+      "evidence": "fd40211142b377d73c71bd23a887329be0c80e49f579d544aff8264e2625ef9f"
+    },
+    {
+      "name": "frozen_implementation:scripts/train_milestone4.py",
+      "passed": true,
+      "evidence": "0b0a38d4808bc0f59593b08f50744edbd27ec0fa9b65eed849edaf957f183201"
+    },
+    {
+      "name": "frozen_implementation:scripts/run_milestone4_experiments.py",
+      "passed": true,
+      "evidence": "09596fbb8a74b6f291fe52c12267fb37a60e9baf2f96e387b3c4c443369677a7"
+    },
+    {
+      "name": "frozen_implementation:scripts/run_milestone4_java.sh",
+      "passed": true,
+      "evidence": "711a564d35def9204d1eb88c551215d83963c8082e90717e8234d3fb8c162224"
+    },
+    {
+      "name": "frozen_implementation:simulator/backend/src/main/java/io/cascadeshield/sim/MlController.java",
+      "passed": true,
+      "evidence": "f877bda670a1b9f78ef7d4ff405914de68bc63418af22b98909a6e52f2f42313"
+    },
+    {
+      "name": "frozen_implementation:simulator/backend/src/main/java/io/cascadeshield/sim/MlCorpusCli.java",
+      "passed": true,
+      "evidence": "c1cad3fa58f5fa120ef61d298a073888506c15fee050f3092c0d8bb6da2c60c5"
+    },
+    {
+      "name": "frozen_implementation:simulator/backend/src/main/java/io/cascadeshield/sim/MlExperimentProtocol.java",
+      "passed": true,
+      "evidence": "ec99da8a7c8eed0abeca5cee988fecbc7e82070708b544e4a140437e659d8aaa"
+    },
+    {
+      "name": "frozen_implementation:simulator/backend/src/main/java/io/cascadeshield/sim/MlFeatureExtractor.java",
+      "passed": true,
+      "evidence": "476d1b9d1052b9b78d9dc352e49c193de2d0fe20710bda31862bfb11503077d2"
+    },
+    {
+      "name": "frozen_implementation:simulator/backend/src/main/java/io/cascadeshield/sim/MlInferenceClient.java",
+      "passed": true,
+      "evidence": "ca97683ce20292d7d4271f97b082c4acbaaeaddd70353abec416b5d62ae2396d"
+    },
+    {
+      "name": "frozen_implementation:simulator/backend/src/main/java/io/cascadeshield/sim/MlModels.java",
+      "passed": true,
+      "evidence": "6da25a9d6c5a80ee2e5ea7253d1af5e473e6ae6be4eb5841c3f873e46f8416ce"
+    },
+    {
+      "name": "frozen_implementation:simulator/backend/src/main/java/io/cascadeshield/sim/MlOperatorAdvisor.java",
+      "passed": true,
+      "evidence": "93117a265b12c94f2382d464790f99890d5bbd4d13e827456b64745519771325"
+    },
+    {
+      "name": "frozen_implementation:simulator/backend/src/main/java/io/cascadeshield/sim/MlPolicyCli.java",
+      "passed": true,
+      "evidence": "2839154340f9bb698312e83859586db15250c011af09f8b20c339fbf3323a6cf"
+    },
+    {
+      "name": "frozen_implementation:simulator/backend/src/main/java/io/cascadeshield/sim/MlPolicyRunner.java",
+      "passed": true,
+      "evidence": "841b076588644e172ab4c06f4e4a05406061cf6d877ee9d0803d5ecd7f795966"
+    },
+    {
+      "name": "model_artifact:pretraining_audit.json",
+      "passed": true,
+      "evidence": "5a1873754b10878330f98c27937e89f4e77d633740c6d757a6a981f0227a3d70"
+    },
+    {
+      "name": "model_artifact:selection_inputs.json",
+      "passed": true,
+      "evidence": "3b2a233e69342e160dad9b781da31a4ce3dcae0ec08db56dbc399a025f12df75"
+    },
+    {
+      "name": "model_artifact:gnn-static-v1/checkpoint.pt",
+      "passed": true,
+      "evidence": "6bba6ae4d1b22ab5f86c722a802d64b2672397036b26cb491181ecee1f10b885"
+    },
+    {
+      "name": "model_artifact:gnn-static-v1/weights.pt",
+      "passed": true,
+      "evidence": "30b5a0bcc219c4e96cdcff78e123b53f18b6bbd41a88a8f5c834ce12952bdf81"
+    },
+    {
+      "name": "model_artifact:gnn-temporal-v1/checkpoint.pt",
+      "passed": true,
+      "evidence": "1e62bf8e8e396fb3d103d480254c47c6d16e13188e8fe4c5204cefdb2514babf"
+    },
+    {
+      "name": "model_artifact:gnn-temporal-v1/weights.pt",
+      "passed": true,
+      "evidence": "f3bea60e7080b789382322b8c4f3739545cd65cab24a6c6dc0a7bc9ffab6c2c5"
+    },
+    {
+      "name": "model_artifact:xgb-no-graph-v1/eta.json",
+      "passed": true,
+      "evidence": "683e7443d879c6131ca3ce6d2b4a4d173e99c0b4c8b264e716e9de676dec7c90"
+    },
+    {
+      "name": "model_artifact:xgb-no-graph-v1/impact.json",
+      "passed": true,
+      "evidence": "2bf1961cda6a7a4a430d66fc3b3aed7b3d8fa4cb6412177bb6a935ac8b3b3665"
+    },
+    {
+      "name": "model_artifact:xgb-no-graph-v1/sla.json",
+      "passed": true,
+      "evidence": "3e6226ec6669119669ff4caffd53d20da2936015001ef84ca260506f95f214bd"
+    },
+    {
+      "name": "model_artifact:xgb-v1/eta.json",
+      "passed": true,
+      "evidence": "e7b62b5abea7724c4796845f316092b6fa6f7cb51d00c22886d7203aba8c7305"
+    },
+    {
+      "name": "model_artifact:xgb-v1/impact.json",
+      "passed": true,
+      "evidence": "c8d3cd5e01b8cb233bc23fbcb141365cfe40f2226ea4f4be0bde1c8af9efbb8f"
+    },
+    {
+      "name": "model_artifact:xgb-v1/sla.json",
+      "passed": true,
+      "evidence": "f05682671b90fc2437685b46a0ec0e51a1fb00235bf5dea7306ee4cf5d498593"
+    },
+    {
+      "name": "current_protocol_matches_selection",
+      "passed": true,
+      "evidence": "46ec8bfae7a6790e8b24b7fe8c8b7cd4a3005e4dea8b76a61e0ecd8434676f66"
+    },
+    {
+      "name": "scenario_declaration_matches_selection",
+      "passed": true,
+      "evidence": "d3ee5732684b296f47c1842fa7e6dee71b0f57b8cb820ba3e4bbf02c4b571432"
+    },
+    {
+      "name": "train_corpus_unchanged",
+      "passed": true,
+      "evidence": "b44b2e222a289a0934287342545bc8defd3c17bf6624ff7374e03163633b2109"
+    },
+    {
+      "name": "validation_corpus_unchanged",
+      "passed": true,
+      "evidence": "83f8f9e977316b01c2b66dca45855ca2e06ff7f6995a2c124c2b4f1f48233274"
+    },
+    {
+      "name": "calibration_corpus_unchanged",
+      "passed": true,
+      "evidence": "3d9a0ec03a512e3ca6d5b57adab45e920c6b53dc9a4e4a46f04127107e4d459a"
+    },
+    {
+      "name": "shared_selection_for_prediction_policy",
+      "passed": true,
+      "evidence": "a225deef5bfe31676129cefa595ef8fb39511486b06e9d0a1d31de40733a3a39"
+    },
+    {
+      "name": "final_prediction_examples_and_cases",
+      "passed": true,
+      "evidence": {
+        "cases": 40,
+        "truckSnapshots": 3837
+      }
+    },
+    {
+      "name": "all_440_paired_policy_outcomes",
+      "passed": true,
+      "evidence": {
+        "cases": 40,
+        "policies": 11,
+        "rows": 440
+      }
+    },
+    {
+      "name": "four_whole_seed_final_clusters",
+      "passed": true,
+      "evidence": {
+        "pairedBootstrapReplicates": 2000,
+        "cluster": "seed across all families",
+        "bootstrapSeed": 4016,
+        "confidenceLevel": 0.95,
+        "multiplicityCorrection": "none; descriptive only"
+      }
+    },
+    {
+      "name": "raw_policy_outcome:driver-unavailability-s4001-0fe504a8bc37__B0.json",
+      "passed": true,
+      "evidence": "a934bdbc38eef8b68cbedc4d818579646f342a19749edaed72c33f8844c4e77a"
+    },
+    {
+      "name": "raw_policy_outcome:driver-unavailability-s4001-0fe504a8bc37__B1.json",
+      "passed": true,
+      "evidence": "3760e29d56c215989fde0647af52e41e821c75b1ea0c31ebad2078f5b9c46bfb"
+    },
+    {
+      "name": "raw_policy_outcome:driver-unavailability-s4001-0fe504a8bc37__B2.json",
+      "passed": true,
+      "evidence": "3f760e3c6ad405fb43f5aa8b184ed61c6a00bd25c66da82a1b4500d4dac068c8"
+    },
+    {
+      "name": "raw_policy_outcome:driver-unavailability-s4001-0fe504a8bc37__B3.json",
+      "passed": true,
+      "evidence": "283725c29a5d880b69e1f7840825d1d3206761772db041e56c3c8cbbd13d05de"
+    },
+    {
+      "name": "raw_policy_outcome:driver-unavailability-s4001-0fe504a8bc37__B4.json",
+      "passed": true,
+      "evidence": "2fe6072a37946df561bf2a310c2b8fc375e7c4db838e7efa1d1b9224e1fe5afb"
+    },
+    {
+      "name": "raw_policy_outcome:driver-unavailability-s4001-0fe504a8bc37__B5_GNN_STATIC_V1.json",
+      "passed": true,
+      "evidence": "7349da9cb7e19791826c6567a49f0900ee2ae871372173405d0466327cf4d454"
+    },
+    {
+      "name": "raw_policy_outcome:driver-unavailability-s4001-0fe504a8bc37__B5_GNN_TEMPORAL_V1.json",
+      "passed": true,
+      "evidence": "869f31413bef9fdbd2104bd4f0c0ccbea0d785bc027b81ee423be11dcaff7e86"
+    },
+    {
+      "name": "raw_policy_outcome:driver-unavailability-s4001-0fe504a8bc37__B5_RULE_V1.json",
+      "passed": true,
+      "evidence": "ac92abb214e043bbff6b846f699d619cd4ae195c9f4ff72a2bae0f45023da02a"
+    },
+    {
+      "name": "raw_policy_outcome:driver-unavailability-s4001-0fe504a8bc37__B5_XGB_CF_V1.json",
+      "passed": true,
+      "evidence": "9c5f18ba2e7e0002944a4aa603b0cd346aba6192ba3c047f75075d9807e788fc"
+    },
+    {
+      "name": "raw_policy_outcome:driver-unavailability-s4001-0fe504a8bc37__B5_XGB_NO_GRAPH_V1.json",
+      "passed": true,
+      "evidence": "69a8b8eb3a05f839099d0caa4b02d7fb9afdacc81f09177a15458ac17efb39f7"
+    },
+    {
+      "name": "raw_policy_outcome:driver-unavailability-s4001-0fe504a8bc37__B5_XGB_V1.json",
+      "passed": true,
+      "evidence": "f470498b0f10f5379e2f244457fc86790a80a177ed7c06c29cfadc2fab6bd069"
+    },
+    {
+      "name": "raw_policy_outcome:driver-unavailability-s4002-dff40fb78eef__B0.json",
+      "passed": true,
+      "evidence": "b4f7715dbf41dabe13e76b1a2b2c83f9aa761c1fbad52815955ecab453d75f18"
+    },
+    {
+      "name": "raw_policy_outcome:driver-unavailability-s4002-dff40fb78eef__B1.json",
+      "passed": true,
+      "evidence": "50b33b5858a4396dfe003f8f027746100520cca5e15f4be2266e3e29478f3c24"
+    },
+    {
+      "name": "raw_policy_outcome:driver-unavailability-s4002-dff40fb78eef__B2.json",
+      "passed": true,
+      "evidence": "ab646aa483d03d95c737ca497df34a766356de08df4f9400189d8f7c6642652e"
+    },
+    {
+      "name": "raw_policy_outcome:driver-unavailability-s4002-dff40fb78eef__B3.json",
+      "passed": true,
+      "evidence": "3a509b81818b121ff220f0b2a8a7f4b56c020b366e241f11c293d65528ad8f11"
+    },
+    {
+      "name": "raw_policy_outcome:driver-unavailability-s4002-dff40fb78eef__B4.json",
+      "passed": true,
+      "evidence": "810ef598d1ba29223e4787fff96ab7371c7e7f63c3401f9385b1a9734c60e121"
+    },
+    {
+      "name": "raw_policy_outcome:driver-unavailability-s4002-dff40fb78eef__B5_GNN_STATIC_V1.json",
+      "passed": true,
+      "evidence": "7cebec6fb97c047a442a10629326774eef5f59438bad159014a8c84e540fb132"
+    },
+    {
+      "name": "raw_policy_outcome:driver-unavailability-s4002-dff40fb78eef__B5_GNN_TEMPORAL_V1.json",
+      "passed": true,
+      "evidence": "ed21b335c60f1dfab3c2cb3d93d1fee0c76cb6c8df5f98a050db4dadbd22b0ef"
+    },
+    {
+      "name": "raw_policy_outcome:driver-unavailability-s4002-dff40fb78eef__B5_RULE_V1.json",
+      "passed": true,
+      "evidence": "53b04537af61364ec52a116e1142cb71ef7682ae8b56edbc6514b4ea131959af"
+    },
+    {
+      "name": "raw_policy_outcome:driver-unavailability-s4002-dff40fb78eef__B5_XGB_CF_V1.json",
+      "passed": true,
+      "evidence": "ab0587cee64a65bc5d04e518a57d786cd4ecc177480e9e905428a26ba11c6fed"
+    },
+    {
+      "name": "raw_policy_outcome:driver-unavailability-s4002-dff40fb78eef__B5_XGB_NO_GRAPH_V1.json",
+      "passed": true,
+      "evidence": "a113e59f9fe7524a9bc47a3d98637513a1f12bd2923cc7ba5a6349182f3ee008"
+    },
+    {
+      "name": "raw_policy_outcome:driver-unavailability-s4002-dff40fb78eef__B5_XGB_V1.json",
+      "passed": true,
+      "evidence": "60d042a2364d2587dee5135d8c5e3822e34c6d57b67b983a72fddae620d38126"
+    },
+    {
+      "name": "raw_policy_outcome:driver-unavailability-s4003-9b511f85771d__B0.json",
+      "passed": true,
+      "evidence": "552df9497725d70e67edd9cc56232f1561d92b20216259255b8217c04e8b929f"
+    },
+    {
+      "name": "raw_policy_outcome:driver-unavailability-s4003-9b511f85771d__B1.json",
+      "passed": true,
+      "evidence": "c0f83b1d28ff551a99c619d6df62cb77da19460c347a2dbed636a21091a1d7c2"
+    },
+    {
+      "name": "raw_policy_outcome:driver-unavailability-s4003-9b511f85771d__B2.json",
+      "passed": true,
+      "evidence": "e7a4998f5c0f557060933dfdf0174704424cb2d09414ae180e6400d3df78243a"
+    },
+    {
+      "name": "raw_policy_outcome:driver-unavailability-s4003-9b511f85771d__B3.json",
+      "passed": true,
+      "evidence": "8f46b215db6a162d184e7ccb6e0ca5f8ff9336462b26f0a0d528d393601532e6"
+    },
+    {
+      "name": "raw_policy_outcome:driver-unavailability-s4003-9b511f85771d__B4.json",
+      "passed": true,
+      "evidence": "c972a1c7af056f7c41bf6e3123f8e4d7648e3d5634e143810a238cec5acc703b"
+    },
+    {
+      "name": "raw_policy_outcome:driver-unavailability-s4003-9b511f85771d__B5_GNN_STATIC_V1.json",
+      "passed": true,
+      "evidence": "e1aa9e6c4c5533b9f37b2e4c272ae36e5e04412a86018400536a43d63db02eff"
+    },
+    {
+      "name": "raw_policy_outcome:driver-unavailability-s4003-9b511f85771d__B5_GNN_TEMPORAL_V1.json",
+      "passed": true,
+      "evidence": "5b1d2bdd052b115e2d0930dc33cdb868cacc529f4529cd2b486b5d5af8426f62"
+    },
+    {
+      "name": "raw_policy_outcome:driver-unavailability-s4003-9b511f85771d__B5_RULE_V1.json",
+      "passed": true,
+      "evidence": "d2760da4af9b609a6df92f9cb98597ce6aeab9ff857e469bc21d4f48bbb432fd"
+    },
+    {
+      "name": "raw_policy_outcome:driver-unavailability-s4003-9b511f85771d__B5_XGB_CF_V1.json",
+      "passed": true,
+      "evidence": "6fa61de1039bd43448d1bd2f2a50614929a772e83084e631db2e6bbd50bda2ff"
+    },
+    {
+      "name": "raw_policy_outcome:driver-unavailability-s4003-9b511f85771d__B5_XGB_NO_GRAPH_V1.json",
+      "passed": true,
+      "evidence": "e2a7ccc63bed3aebaedd2499f5e3a9312d0bbe72a006a2042afedd9093495179"
+    },
+    {
+      "name": "raw_policy_outcome:driver-unavailability-s4003-9b511f85771d__B5_XGB_V1.json",
+      "passed": true,
+      "evidence": "37ea8fe23ea4d19c206d3a96257530fce35d1449192111b299137999c14adc98"
+    },
+    {
+      "name": "raw_policy_outcome:driver-unavailability-s4004-3532c2d04910__B0.json",
+      "passed": true,
+      "evidence": "374380301209a72226ba6434714e1a47cae09f1a5a0fb1404f48f51b7c3e160d"
+    },
+    {
+      "name": "raw_policy_outcome:driver-unavailability-s4004-3532c2d04910__B1.json",
+      "passed": true,
+      "evidence": "36468ab892f8c5d5613af5e350eb2a0307c85aa71e44b7b13675130cbe9f9537"
+    },
+    {
+      "name": "raw_policy_outcome:driver-unavailability-s4004-3532c2d04910__B2.json",
+      "passed": true,
+      "evidence": "90daf4cfcb08d33e71e6be177515c4cf6e33dfdf458672872bc410f47a331586"
+    },
+    {
+      "name": "raw_policy_outcome:driver-unavailability-s4004-3532c2d04910__B3.json",
+      "passed": true,
+      "evidence": "0e0a5892bba9e7a5c487dce66d6029f5de2bfcace73a4cf6ec565926cf6c4637"
+    },
+    {
+      "name": "raw_policy_outcome:driver-unavailability-s4004-3532c2d04910__B4.json",
+      "passed": true,
+      "evidence": "2316696b0eb97524793d7f34d79056884fb8fab3c02099802b3aec2a90d9c78a"
+    },
+    {
+      "name": "raw_policy_outcome:driver-unavailability-s4004-3532c2d04910__B5_GNN_STATIC_V1.json",
+      "passed": true,
+      "evidence": "b6659b982c7f76adda0a4da01c938a74bc128eee08652750ff5faca72e7e203d"
+    },
+    {
+      "name": "raw_policy_outcome:driver-unavailability-s4004-3532c2d04910__B5_GNN_TEMPORAL_V1.json",
+      "passed": true,
+      "evidence": "2c704c2ba20418436d575985bb6903576d875ba05842bdbc9d77a2d9f5e830ee"
+    },
+    {
+      "name": "raw_policy_outcome:driver-unavailability-s4004-3532c2d04910__B5_RULE_V1.json",
+      "passed": true,
+      "evidence": "183483e52c5d27055cfbdbd8c6aa5c22427caf4fb9abc973759b7d10754a6709"
+    },
+    {
+      "name": "raw_policy_outcome:driver-unavailability-s4004-3532c2d04910__B5_XGB_CF_V1.json",
+      "passed": true,
+      "evidence": "c76991743b8b2c8de446af5cf5b8eecd1d3f11973c0ea79f3612a0059d1fc3e4"
+    },
+    {
+      "name": "raw_policy_outcome:driver-unavailability-s4004-3532c2d04910__B5_XGB_NO_GRAPH_V1.json",
+      "passed": true,
+      "evidence": "732440593ec25c3a23f3580d6dbe082eced863b25de02c8fc499ed240afba515"
+    },
+    {
+      "name": "raw_policy_outcome:driver-unavailability-s4004-3532c2d04910__B5_XGB_V1.json",
+      "passed": true,
+      "evidence": "060e249db1ddc30d0fc224e54bd38e1443e189c0ce55bf1ff9c4a82c12f19bb9"
+    },
+    {
+      "name": "raw_policy_outcome:low-contention-control-s4001-be9858697850__B0.json",
+      "passed": true,
+      "evidence": "298e16395f50a9524245a0f1f02c307d2562ed43ecc79da613129b665b7b1390"
+    },
+    {
+      "name": "raw_policy_outcome:low-contention-control-s4001-be9858697850__B1.json",
+      "passed": true,
+      "evidence": "6a9859913403d37d925aa2b960fd4790dcb347195f539a79b6325021d4428120"
+    },
+    {
+      "name": "raw_policy_outcome:low-contention-control-s4001-be9858697850__B2.json",
+      "passed": true,
+      "evidence": "4f334be3b390c4372cfb2fc3d9cca0b7ab7f87047e3885ef1a40e71cc4849af9"
+    },
+    {
+      "name": "raw_policy_outcome:low-contention-control-s4001-be9858697850__B3.json",
+      "passed": true,
+      "evidence": "f7597793e25f254a4f77582a793489c87e2edd1a6ed52ba448c79fc95151e4b6"
+    },
+    {
+      "name": "raw_policy_outcome:low-contention-control-s4001-be9858697850__B4.json",
+      "passed": true,
+      "evidence": "9f990317b6d62e4d7603eff176a599fcb28ef970f0ddd6004b43be8663932d6c"
+    },
+    {
+      "name": "raw_policy_outcome:low-contention-control-s4001-be9858697850__B5_GNN_STATIC_V1.json",
+      "passed": true,
+      "evidence": "c13a9e9385205ae88bf8035949dc0035261d5a389b72b7ffcda7eeddc162560e"
+    },
+    {
+      "name": "raw_policy_outcome:low-contention-control-s4001-be9858697850__B5_GNN_TEMPORAL_V1.json",
+      "passed": true,
+      "evidence": "31c4d4e562c42cfcbff95a1996735ccb018f31e1dea920d965cf4b6a902309c1"
+    },
+    {
+      "name": "raw_policy_outcome:low-contention-control-s4001-be9858697850__B5_RULE_V1.json",
+      "passed": true,
+      "evidence": "084674f78af9d8a7c1efd6c9cf74c1eb8333b408ee91eb9e476414b08a56602e"
+    },
+    {
+      "name": "raw_policy_outcome:low-contention-control-s4001-be9858697850__B5_XGB_CF_V1.json",
+      "passed": true,
+      "evidence": "5699e5e266f35f1eff5ec0defc4d123e7548f844aff19aa344bb585b356447f4"
+    },
+    {
+      "name": "raw_policy_outcome:low-contention-control-s4001-be9858697850__B5_XGB_NO_GRAPH_V1.json",
+      "passed": true,
+      "evidence": "eb90ecd8cbab3adfea5839bfef24724a7980772ff234e12d10831dc5cff170c9"
+    },
+    {
+      "name": "raw_policy_outcome:low-contention-control-s4001-be9858697850__B5_XGB_V1.json",
+      "passed": true,
+      "evidence": "96fed7185b0423266dfe500a1e50483eaecdf90fbca8ceb29be47bc2b412a512"
+    },
+    {
+      "name": "raw_policy_outcome:low-contention-control-s4002-d99bba3de2b2__B0.json",
+      "passed": true,
+      "evidence": "80deb9c1542c1899cc1de7f71c6858075f80351e6431ba5d08d9450ac990d1fc"
+    },
+    {
+      "name": "raw_policy_outcome:low-contention-control-s4002-d99bba3de2b2__B1.json",
+      "passed": true,
+      "evidence": "0fce355ae40a1f1b4d574ec8c69c750c0d5f490727662250ed04d6ea1436103d"
+    },
+    {
+      "name": "raw_policy_outcome:low-contention-control-s4002-d99bba3de2b2__B2.json",
+      "passed": true,
+      "evidence": "01b3363137eeb82d8b2940527b9d02bf67bb4b05f0ddff85f1b58c1d89400fad"
+    },
+    {
+      "name": "raw_policy_outcome:low-contention-control-s4002-d99bba3de2b2__B3.json",
+      "passed": true,
+      "evidence": "642a47b653777439acd90e815ecb74a5ccbeaffe24efe4c7bfdb48eefb7bad12"
+    },
+    {
+      "name": "raw_policy_outcome:low-contention-control-s4002-d99bba3de2b2__B4.json",
+      "passed": true,
+      "evidence": "73f38aee3cb1a0f9504951289d852763764b96367b4608a4de986875f4f31f9a"
+    },
+    {
+      "name": "raw_policy_outcome:low-contention-control-s4002-d99bba3de2b2__B5_GNN_STATIC_V1.json",
+      "passed": true,
+      "evidence": "fe0c60c7f6602b6b34603de21cec961d9da402ca96db9004906b546245efc375"
+    },
+    {
+      "name": "raw_policy_outcome:low-contention-control-s4002-d99bba3de2b2__B5_GNN_TEMPORAL_V1.json",
+      "passed": true,
+      "evidence": "20e990d1820377f41a16153c7ffb59f0e184941d764ab3dab820911071081635"
+    },
+    {
+      "name": "raw_policy_outcome:low-contention-control-s4002-d99bba3de2b2__B5_RULE_V1.json",
+      "passed": true,
+      "evidence": "9877a6b6cc575c430d70c13d56ba07af54000dcfd07cf7eceef02391a243a82c"
+    },
+    {
+      "name": "raw_policy_outcome:low-contention-control-s4002-d99bba3de2b2__B5_XGB_CF_V1.json",
+      "passed": true,
+      "evidence": "73080cb4b6bde2114d6e5b8667de57caa91ce5bab5dcab1eceecb77596632afd"
+    },
+    {
+      "name": "raw_policy_outcome:low-contention-control-s4002-d99bba3de2b2__B5_XGB_NO_GRAPH_V1.json",
+      "passed": true,
+      "evidence": "559c16d4147944ae69a4cdc1ce3911bf54f188893f2624aadb7d7373e003cafb"
+    },
+    {
+      "name": "raw_policy_outcome:low-contention-control-s4002-d99bba3de2b2__B5_XGB_V1.json",
+      "passed": true,
+      "evidence": "931c113945470b55eabf5d2eef72fb8d70a2d818d494f14da2dfaaff54782969"
+    },
+    {
+      "name": "raw_policy_outcome:low-contention-control-s4003-765c907e7b6b__B0.json",
+      "passed": true,
+      "evidence": "72703a76cbdd20c9c7171da60c369aae916fd3b2ebd7a396f1bf1f46844cd5c4"
+    },
+    {
+      "name": "raw_policy_outcome:low-contention-control-s4003-765c907e7b6b__B1.json",
+      "passed": true,
+      "evidence": "51b9e36d467bb99367180e081bff6d421278b58c36db0ebe1e4e350f24c3d59e"
+    },
+    {
+      "name": "raw_policy_outcome:low-contention-control-s4003-765c907e7b6b__B2.json",
+      "passed": true,
+      "evidence": "cd6b6b91ad10718cd9ecbcf4cb0a01f31f772b0d6fcc653f511d69dd37d101a5"
+    },
+    {
+      "name": "raw_policy_outcome:low-contention-control-s4003-765c907e7b6b__B3.json",
+      "passed": true,
+      "evidence": "d43868f6d56f7f9c70f8d4ff116d678daedf5c4cb71c54e87d29a74a54660a0c"
+    },
+    {
+      "name": "raw_policy_outcome:low-contention-control-s4003-765c907e7b6b__B4.json",
+      "passed": true,
+      "evidence": "eb38b2b2ce4b26c3617fe0521dd095a4459d79b9d00cb7f8863dca4b9a2254af"
+    },
+    {
+      "name": "raw_policy_outcome:low-contention-control-s4003-765c907e7b6b__B5_GNN_STATIC_V1.json",
+      "passed": true,
+      "evidence": "13a712212c25591049f05abdca5da2c8cf1c04a2f9fa4a7f8bbd70823cc34d73"
+    },
+    {
+      "name": "raw_policy_outcome:low-contention-control-s4003-765c907e7b6b__B5_GNN_TEMPORAL_V1.json",
+      "passed": true,
+      "evidence": "90e5302cd582766117c79b5e015fa712201cf6d959c974d96c144c9544b1250a"
+    },
+    {
+      "name": "raw_policy_outcome:low-contention-control-s4003-765c907e7b6b__B5_RULE_V1.json",
+      "passed": true,
+      "evidence": "1e98af25eb0ea3cfd9b9a28f37116f87b8206010b501f3420bdb1af2ec35a9e8"
+    },
+    {
+      "name": "raw_policy_outcome:low-contention-control-s4003-765c907e7b6b__B5_XGB_CF_V1.json",
+      "passed": true,
+      "evidence": "8908279d47994cbe77e01ddc3caf51d308bc37725d392d703009230c37d3df7b"
+    },
+    {
+      "name": "raw_policy_outcome:low-contention-control-s4003-765c907e7b6b__B5_XGB_NO_GRAPH_V1.json",
+      "passed": true,
+      "evidence": "da18b1474b7cede14bde77fd2d62a69ffd387ce41b86b7631bca0451d19a2960"
+    },
+    {
+      "name": "raw_policy_outcome:low-contention-control-s4003-765c907e7b6b__B5_XGB_V1.json",
+      "passed": true,
+      "evidence": "a8c0bb96d27d7521a462c5283a8860cb7bf0db8711df4f512f389a5a1a37ec73"
+    },
+    {
+      "name": "raw_policy_outcome:low-contention-control-s4004-1b42c63ab44d__B0.json",
+      "passed": true,
+      "evidence": "7173812bc352012391f734f1411014d4bacd05cddaf56f36031b41dac1c636e5"
+    },
+    {
+      "name": "raw_policy_outcome:low-contention-control-s4004-1b42c63ab44d__B1.json",
+      "passed": true,
+      "evidence": "f3f513c7dea4b8a24b1d72c77916fbca7a43d12a3e29509adbbeab20d0f66d4a"
+    },
+    {
+      "name": "raw_policy_outcome:low-contention-control-s4004-1b42c63ab44d__B2.json",
+      "passed": true,
+      "evidence": "ad585ec5de21272d934ceee520b60366452838233b9dcf3fee11b1f709ca7cdb"
+    },
+    {
+      "name": "raw_policy_outcome:low-contention-control-s4004-1b42c63ab44d__B3.json",
+      "passed": true,
+      "evidence": "fc4d7cb09bebb8f756961fd8fc6394c1f9313c87cd2b2278681298bdacebf469"
+    },
+    {
+      "name": "raw_policy_outcome:low-contention-control-s4004-1b42c63ab44d__B4.json",
+      "passed": true,
+      "evidence": "02c12b77ee8fab52ec4b71e0d8ef6065c6d3a10e39516e70f71a341606c70f66"
+    },
+    {
+      "name": "raw_policy_outcome:low-contention-control-s4004-1b42c63ab44d__B5_GNN_STATIC_V1.json",
+      "passed": true,
+      "evidence": "77d1d74d58c4ba669d7ef1520e82f7ea131cbdeb8686d09ce78f6e8ff255add2"
+    },
+    {
+      "name": "raw_policy_outcome:low-contention-control-s4004-1b42c63ab44d__B5_GNN_TEMPORAL_V1.json",
+      "passed": true,
+      "evidence": "a3f21fc82e113b47ffbbc0425aa111b98bc8ecd7c0ab9eec4124cfcb73ac601b"
+    },
+    {
+      "name": "raw_policy_outcome:low-contention-control-s4004-1b42c63ab44d__B5_RULE_V1.json",
+      "passed": true,
+      "evidence": "02e6e7abe2e38f61e32ae8f20d49e0cac00c861ed7d2576d57f6b010019b300b"
+    },
+    {
+      "name": "raw_policy_outcome:low-contention-control-s4004-1b42c63ab44d__B5_XGB_CF_V1.json",
+      "passed": true,
+      "evidence": "827e727762f6262296f2f918eefe16ea55ce79fedf2575ff6e047db69b61efaf"
+    },
+    {
+      "name": "raw_policy_outcome:low-contention-control-s4004-1b42c63ab44d__B5_XGB_NO_GRAPH_V1.json",
+      "passed": true,
+      "evidence": "9501e997fe022809468e29bfee4af23b15d20ee363beed55e64d192ad551c0d8"
+    },
+    {
+      "name": "raw_policy_outcome:low-contention-control-s4004-1b42c63ab44d__B5_XGB_V1.json",
+      "passed": true,
+      "evidence": "54891775674097029bda7a3d670ce8949cad0da84a85c6399f42c7884c98d512"
+    },
+    {
+      "name": "raw_policy_outcome:mixed-resources-s4001-6dbd59f4fa2d__B0.json",
+      "passed": true,
+      "evidence": "e2694655237d5149116620102cc76d98ff0a1b52927c5514646b8e2784bdecab"
+    },
+    {
+      "name": "raw_policy_outcome:mixed-resources-s4001-6dbd59f4fa2d__B1.json",
+      "passed": true,
+      "evidence": "2431da7cd592b0c6d123d47b547a81763fd9d306bae219d90757e6efbba236d0"
+    },
+    {
+      "name": "raw_policy_outcome:mixed-resources-s4001-6dbd59f4fa2d__B2.json",
+      "passed": true,
+      "evidence": "5d7285bc5756f68b3c8d4527075f00753778cf56d9cd31494cedf896ad0221b9"
+    },
+    {
+      "name": "raw_policy_outcome:mixed-resources-s4001-6dbd59f4fa2d__B3.json",
+      "passed": true,
+      "evidence": "e3e4a46ba78895c7f37200d3641e7641c5c2e7dda56ec441fd562fae3e4c66bb"
+    },
+    {
+      "name": "raw_policy_outcome:mixed-resources-s4001-6dbd59f4fa2d__B4.json",
+      "passed": true,
+      "evidence": "48c955dc15152bb8a365f43d15b84bb53f6d2669c35160573ea19fb39d104cc1"
+    },
+    {
+      "name": "raw_policy_outcome:mixed-resources-s4001-6dbd59f4fa2d__B5_GNN_STATIC_V1.json",
+      "passed": true,
+      "evidence": "3c75fece9396324aa7b404961517f5eab04cae220bb7e314143fb5293c3abec3"
+    },
+    {
+      "name": "raw_policy_outcome:mixed-resources-s4001-6dbd59f4fa2d__B5_GNN_TEMPORAL_V1.json",
+      "passed": true,
+      "evidence": "1f774b2cfe22d77091d8620b625f8e158a9dbfac1dddcb84abd19ef9179b2e74"
+    },
+    {
+      "name": "raw_policy_outcome:mixed-resources-s4001-6dbd59f4fa2d__B5_RULE_V1.json",
+      "passed": true,
+      "evidence": "3a6c3f3ca58caaf71dd73c1978a93c52b067b4b807dc007f73ce1b510a5c3e75"
+    },
+    {
+      "name": "raw_policy_outcome:mixed-resources-s4001-6dbd59f4fa2d__B5_XGB_CF_V1.json",
+      "passed": true,
+      "evidence": "f32419bd56a02183e10e007e346adc0240dd6ea24a0d21718f40190177cb8467"
+    },
+    {
+      "name": "raw_policy_outcome:mixed-resources-s4001-6dbd59f4fa2d__B5_XGB_NO_GRAPH_V1.json",
+      "passed": true,
+      "evidence": "d7bc41722ee9f8e3f5dcce4a801ae2c9f00c0daf81a0b255d80a4a0762e0f5d7"
+    },
+    {
+      "name": "raw_policy_outcome:mixed-resources-s4001-6dbd59f4fa2d__B5_XGB_V1.json",
+      "passed": true,
+      "evidence": "e7be5a023a4d9ff46d95c1da389a3150920ba968f70bbffe4b66fbc1b9bc078f"
+    },
+    {
+      "name": "raw_policy_outcome:mixed-resources-s4002-3a9b63a304fa__B0.json",
+      "passed": true,
+      "evidence": "31608ffa677eaa2629a75ef86f41d5ef1f3ce2c7a4ef80dcf24ea39eb5f92101"
+    },
+    {
+      "name": "raw_policy_outcome:mixed-resources-s4002-3a9b63a304fa__B1.json",
+      "passed": true,
+      "evidence": "2ace876870666e63f78b01bd928ebefea4fa6928e347262ac3efff74ff3a1882"
+    },
+    {
+      "name": "raw_policy_outcome:mixed-resources-s4002-3a9b63a304fa__B2.json",
+      "passed": true,
+      "evidence": "0bc726863384a4d9749914940ac6256b6d79600727c2aa582aa65394789bbad0"
+    },
+    {
+      "name": "raw_policy_outcome:mixed-resources-s4002-3a9b63a304fa__B3.json",
+      "passed": true,
+      "evidence": "fee107568042e5103e323b04094b0e2c73dbfd4210e928bd4c8147c56ccb3087"
+    },
+    {
+      "name": "raw_policy_outcome:mixed-resources-s4002-3a9b63a304fa__B4.json",
+      "passed": true,
+      "evidence": "9be0704487447534d1745fc434a6ea9f6e342c5f21402b8d728af42835957803"
+    },
+    {
+      "name": "raw_policy_outcome:mixed-resources-s4002-3a9b63a304fa__B5_GNN_STATIC_V1.json",
+      "passed": true,
+      "evidence": "015c624535c7cf41c811180fa8a94b3904f7bf43f60496ed032e7b7d7123819e"
+    },
+    {
+      "name": "raw_policy_outcome:mixed-resources-s4002-3a9b63a304fa__B5_GNN_TEMPORAL_V1.json",
+      "passed": true,
+      "evidence": "d21598df03278cc600c26ba4dc5665c782530166f5c95cddd24c550d10627307"
+    },
+    {
+      "name": "raw_policy_outcome:mixed-resources-s4002-3a9b63a304fa__B5_RULE_V1.json",
+      "passed": true,
+      "evidence": "4152e9675152a9de9a1626f5dbc747ec5cb194327ddcde412e21df9c6a9489ef"
+    },
+    {
+      "name": "raw_policy_outcome:mixed-resources-s4002-3a9b63a304fa__B5_XGB_CF_V1.json",
+      "passed": true,
+      "evidence": "63e15b2a73fbd548a1e712a29ee99a5fdef87292bb3bc679c935ddf97755ebe9"
+    },
+    {
+      "name": "raw_policy_outcome:mixed-resources-s4002-3a9b63a304fa__B5_XGB_NO_GRAPH_V1.json",
+      "passed": true,
+      "evidence": "649e52b2d931406a7dbabc249b1d85079edf7a140bdc79f6354b8e6822095a83"
+    },
+    {
+      "name": "raw_policy_outcome:mixed-resources-s4002-3a9b63a304fa__B5_XGB_V1.json",
+      "passed": true,
+      "evidence": "efd0bdb745d02c5fc5aa869179deed039ce0ec436fbdeaae6a19b265023fa5b0"
+    },
+    {
+      "name": "raw_policy_outcome:mixed-resources-s4003-cda03cc2a8a2__B0.json",
+      "passed": true,
+      "evidence": "4f260d1a18eb97d073876ddaac6e0ba51a08cb5563f3b764f538f51b2db69822"
+    },
+    {
+      "name": "raw_policy_outcome:mixed-resources-s4003-cda03cc2a8a2__B1.json",
+      "passed": true,
+      "evidence": "5e055425a36b9734471846bf13704c9ba18243efd308eedb30cecd0eff367148"
+    },
+    {
+      "name": "raw_policy_outcome:mixed-resources-s4003-cda03cc2a8a2__B2.json",
+      "passed": true,
+      "evidence": "af81b9d08855f3e0a8a87758ccded85d1efbc905120b792b25c22e09ce8e6f78"
+    },
+    {
+      "name": "raw_policy_outcome:mixed-resources-s4003-cda03cc2a8a2__B3.json",
+      "passed": true,
+      "evidence": "0d0a7045881046b85188ae9b2f77cce2722779de91b730902d858516b71e199f"
+    },
+    {
+      "name": "raw_policy_outcome:mixed-resources-s4003-cda03cc2a8a2__B4.json",
+      "passed": true,
+      "evidence": "7a0f3c9c4ac7bd65e5886e5141a43201b87eb22b811e1a324e69b2cbb869fd00"
+    },
+    {
+      "name": "raw_policy_outcome:mixed-resources-s4003-cda03cc2a8a2__B5_GNN_STATIC_V1.json",
+      "passed": true,
+      "evidence": "913ad1a3fac222f3bf7493fbee125f90a6248ffd5d51b5672f499d6706b6312e"
+    },
+    {
+      "name": "raw_policy_outcome:mixed-resources-s4003-cda03cc2a8a2__B5_GNN_TEMPORAL_V1.json",
+      "passed": true,
+      "evidence": "492fe09eb9ec65a5fb3deff138d936f2f3374462e09d7579157eef0b3b6c6699"
+    },
+    {
+      "name": "raw_policy_outcome:mixed-resources-s4003-cda03cc2a8a2__B5_RULE_V1.json",
+      "passed": true,
+      "evidence": "06be525d51f0a46a3c5f3d81bab6e254febfec1f0b8cf248b82d0e932b8a436b"
+    },
+    {
+      "name": "raw_policy_outcome:mixed-resources-s4003-cda03cc2a8a2__B5_XGB_CF_V1.json",
+      "passed": true,
+      "evidence": "7a0333a0d385f533071e72c77fc86ae0f7f44aecb47e07649089ce403b5fcf9c"
+    },
+    {
+      "name": "raw_policy_outcome:mixed-resources-s4003-cda03cc2a8a2__B5_XGB_NO_GRAPH_V1.json",
+      "passed": true,
+      "evidence": "9ca50ebf6b5b76b36b0d7d589aabb7e34d30b8e4de90024f534e85fadf18a820"
+    },
+    {
+      "name": "raw_policy_outcome:mixed-resources-s4003-cda03cc2a8a2__B5_XGB_V1.json",
+      "passed": true,
+      "evidence": "8d3ff6a2669fd1a62f514157c51e5c5d7edc6e3095e3ea9fe4dfdb946134ca68"
+    },
+    {
+      "name": "raw_policy_outcome:mixed-resources-s4004-b38c6e16c855__B0.json",
+      "passed": true,
+      "evidence": "8ee60f3e8d7fa265ff5f9bb93afc0e029f63d8611e75d89bb2fdeecd6545b46e"
+    },
+    {
+      "name": "raw_policy_outcome:mixed-resources-s4004-b38c6e16c855__B1.json",
+      "passed": true,
+      "evidence": "7a2911f1a353923ac155a7782af68809e50439253eeff9d64053f4cd5d992f38"
+    },
+    {
+      "name": "raw_policy_outcome:mixed-resources-s4004-b38c6e16c855__B2.json",
+      "passed": true,
+      "evidence": "421fb9572dc7cf2f4674ce8e53d35d666e00f779b51f24c6e98534f9e69c1cd4"
+    },
+    {
+      "name": "raw_policy_outcome:mixed-resources-s4004-b38c6e16c855__B3.json",
+      "passed": true,
+      "evidence": "60e9b2cd3b2c5caf8a32fa058d626d32f048e8b23a66e80596fe5552830ebba0"
+    },
+    {
+      "name": "raw_policy_outcome:mixed-resources-s4004-b38c6e16c855__B4.json",
+      "passed": true,
+      "evidence": "89b21d926420894f2c0f48dff6fe4df10899a5178c8c8457e5436703549a6851"
+    },
+    {
+      "name": "raw_policy_outcome:mixed-resources-s4004-b38c6e16c855__B5_GNN_STATIC_V1.json",
+      "passed": true,
+      "evidence": "5686a2117fc850a1dfff0c61f45732d20bbc8d6de38483af45f8bcbc162dd8e5"
+    },
+    {
+      "name": "raw_policy_outcome:mixed-resources-s4004-b38c6e16c855__B5_GNN_TEMPORAL_V1.json",
+      "passed": true,
+      "evidence": "320e7ac9269a7cf998cf42b24a06e115bdadcfa02d7dd0224d24e42344c5d3b6"
+    },
+    {
+      "name": "raw_policy_outcome:mixed-resources-s4004-b38c6e16c855__B5_RULE_V1.json",
+      "passed": true,
+      "evidence": "78b718971a9a0ff44e83356c356ce8cf64ddba0755f1166bc1b3904ef3a54da2"
+    },
+    {
+      "name": "raw_policy_outcome:mixed-resources-s4004-b38c6e16c855__B5_XGB_CF_V1.json",
+      "passed": true,
+      "evidence": "b023df913634e7a8472b8a1a00447f00f5aab8ba6658788a735c34b479c98731"
+    },
+    {
+      "name": "raw_policy_outcome:mixed-resources-s4004-b38c6e16c855__B5_XGB_NO_GRAPH_V1.json",
+      "passed": true,
+      "evidence": "9bec780c18299c75f0d6c35ad4c61cb383a45446a6feb45786b336c873a19527"
+    },
+    {
+      "name": "raw_policy_outcome:mixed-resources-s4004-b38c6e16c855__B5_XGB_V1.json",
+      "passed": true,
+      "evidence": "c49eb702890ee75c3e4d9b0b9dde7d63867367abecb596145fdf8dbee62d6905"
+    },
+    {
+      "name": "raw_policy_outcome:overlapping-disruptions-s4001-6d4e344ae62b__B0.json",
+      "passed": true,
+      "evidence": "08de09932897946d4aa44646649e5d18764e34f795c3dc4887f30754174d10d2"
+    },
+    {
+      "name": "raw_policy_outcome:overlapping-disruptions-s4001-6d4e344ae62b__B1.json",
+      "passed": true,
+      "evidence": "0626af97f5a9ca42e1699ab70bfe8dda4a9b426dd07b6ff23ecd5689cad36d8b"
+    },
+    {
+      "name": "raw_policy_outcome:overlapping-disruptions-s4001-6d4e344ae62b__B2.json",
+      "passed": true,
+      "evidence": "25d5d21d589c815bf3ee8cc908dbd5a362fae685d9f751e45cbaf28e6ee93a92"
+    },
+    {
+      "name": "raw_policy_outcome:overlapping-disruptions-s4001-6d4e344ae62b__B3.json",
+      "passed": true,
+      "evidence": "70374b6bb7f26358d9be946d0cd9e441522217807b9b27cd3053bab0d0381366"
+    },
+    {
+      "name": "raw_policy_outcome:overlapping-disruptions-s4001-6d4e344ae62b__B4.json",
+      "passed": true,
+      "evidence": "f54daaab5c581858552225b56ea5a44fcd793148d1dd766e4eefda63da1357d8"
+    },
+    {
+      "name": "raw_policy_outcome:overlapping-disruptions-s4001-6d4e344ae62b__B5_GNN_STATIC_V1.json",
+      "passed": true,
+      "evidence": "363f6502176cdabe8ae5988d4e11198f1f67db034bf157d6d20e20c8e2b25438"
+    },
+    {
+      "name": "raw_policy_outcome:overlapping-disruptions-s4001-6d4e344ae62b__B5_GNN_TEMPORAL_V1.json",
+      "passed": true,
+      "evidence": "d76d4f265ce554c5f1c9f9f903bc2fff009da38ad6323b14278e6f9bb3ad7a6d"
+    },
+    {
+      "name": "raw_policy_outcome:overlapping-disruptions-s4001-6d4e344ae62b__B5_RULE_V1.json",
+      "passed": true,
+      "evidence": "8d3559d35bfa1ba65023e99315d49017894dd37343629aa39616a29d698c8173"
+    },
+    {
+      "name": "raw_policy_outcome:overlapping-disruptions-s4001-6d4e344ae62b__B5_XGB_CF_V1.json",
+      "passed": true,
+      "evidence": "d8c85d56100db5fd10888ae5781f40f11525c10f2c26c86a06f2e5774bc39398"
+    },
+    {
+      "name": "raw_policy_outcome:overlapping-disruptions-s4001-6d4e344ae62b__B5_XGB_NO_GRAPH_V1.json",
+      "passed": true,
+      "evidence": "894250bb48f51e707bb5192dda8042f4502ec5b322fc55a9e2e294432029e60c"
+    },
+    {
+      "name": "raw_policy_outcome:overlapping-disruptions-s4001-6d4e344ae62b__B5_XGB_V1.json",
+      "passed": true,
+      "evidence": "839b1cea192cd8f21a1489ded55ffea6f15d083434637c73ed9f805dba989447"
+    },
+    {
+      "name": "raw_policy_outcome:overlapping-disruptions-s4002-54a91236071b__B0.json",
+      "passed": true,
+      "evidence": "035e035bb92505e7637986719e20647ae936045bec21eda11a48f6d3175711c8"
+    },
+    {
+      "name": "raw_policy_outcome:overlapping-disruptions-s4002-54a91236071b__B1.json",
+      "passed": true,
+      "evidence": "c2deef2d66c76b9242aeb6654d6f35223fe6e31e631a125a68c9ccc5a3d00adc"
+    },
+    {
+      "name": "raw_policy_outcome:overlapping-disruptions-s4002-54a91236071b__B2.json",
+      "passed": true,
+      "evidence": "8da024ec19eb708a1b72a222e8232260a323c8c247049b94338bc817348fb1e8"
+    },
+    {
+      "name": "raw_policy_outcome:overlapping-disruptions-s4002-54a91236071b__B3.json",
+      "passed": true,
+      "evidence": "cec8e33444bc30684e9a3d4dd257014b35c4e3449d48f490407131945254c715"
+    },
+    {
+      "name": "raw_policy_outcome:overlapping-disruptions-s4002-54a91236071b__B4.json",
+      "passed": true,
+      "evidence": "6657b507214294c38b02a4f5233d5ff22b79ca10bfa987bbe65ad34932ff8451"
+    },
+    {
+      "name": "raw_policy_outcome:overlapping-disruptions-s4002-54a91236071b__B5_GNN_STATIC_V1.json",
+      "passed": true,
+      "evidence": "e39d52f8cb490a6a2b0ef7f29341d5843a1c8c8a7e5d8b99fc43e3e88fa04c5f"
+    },
+    {
+      "name": "raw_policy_outcome:overlapping-disruptions-s4002-54a91236071b__B5_GNN_TEMPORAL_V1.json",
+      "passed": true,
+      "evidence": "0e5f8889e5482c59d4cb82a0d6392f60ecb61e6d8f99fe4bd19e080d8be066f7"
+    },
+    {
+      "name": "raw_policy_outcome:overlapping-disruptions-s4002-54a91236071b__B5_RULE_V1.json",
+      "passed": true,
+      "evidence": "ab8117c5e39f8ed0b60eaba421943bd286658b29c4fd14d7fdcefe532046625a"
+    },
+    {
+      "name": "raw_policy_outcome:overlapping-disruptions-s4002-54a91236071b__B5_XGB_CF_V1.json",
+      "passed": true,
+      "evidence": "7de3d6e59aa416ea40120c0deed6a5a54cece051b3cfb71de254a0529113c90f"
+    },
+    {
+      "name": "raw_policy_outcome:overlapping-disruptions-s4002-54a91236071b__B5_XGB_NO_GRAPH_V1.json",
+      "passed": true,
+      "evidence": "6b9a9fec9b074641b32861a3ee9afcbea7b56093975c3dee2c139919a7dde10c"
+    },
+    {
+      "name": "raw_policy_outcome:overlapping-disruptions-s4002-54a91236071b__B5_XGB_V1.json",
+      "passed": true,
+      "evidence": "09369a82ca7a1c794f3a99c6fe1a1df71dad16da5dfe3a160ddd3e42d813776e"
+    },
+    {
+      "name": "raw_policy_outcome:overlapping-disruptions-s4003-5401bf2b7ac2__B0.json",
+      "passed": true,
+      "evidence": "8159284857e63b432f03ea407cf277f9a6218a62433c7a5ffdb3f488ce880325"
+    },
+    {
+      "name": "raw_policy_outcome:overlapping-disruptions-s4003-5401bf2b7ac2__B1.json",
+      "passed": true,
+      "evidence": "10cc0a2fd5ebf3378fac603713b7dc4b78e780196e07e083469ec968fa903ea6"
+    },
+    {
+      "name": "raw_policy_outcome:overlapping-disruptions-s4003-5401bf2b7ac2__B2.json",
+      "passed": true,
+      "evidence": "0c97c618270499c3c62cf6d514511e83b71e999fd9b18f2a73549afc24b97c93"
+    },
+    {
+      "name": "raw_policy_outcome:overlapping-disruptions-s4003-5401bf2b7ac2__B3.json",
+      "passed": true,
+      "evidence": "f7940b23796b245f2f576bbbd343a08261376d6a5a79d9f2425b8f3b8b0ff5cc"
+    },
+    {
+      "name": "raw_policy_outcome:overlapping-disruptions-s4003-5401bf2b7ac2__B4.json",
+      "passed": true,
+      "evidence": "9930ee9d07050882b9df6756af384b25be07013e113c84e428eacd999e357da4"
+    },
+    {
+      "name": "raw_policy_outcome:overlapping-disruptions-s4003-5401bf2b7ac2__B5_GNN_STATIC_V1.json",
+      "passed": true,
+      "evidence": "da7e2f38fc2b10b929a48b84cdd5c402160b71087b01615383b66dc0fe0adfc0"
+    },
+    {
+      "name": "raw_policy_outcome:overlapping-disruptions-s4003-5401bf2b7ac2__B5_GNN_TEMPORAL_V1.json",
+      "passed": true,
+      "evidence": "7c9cc9d912bf8b8ff25e59e1b0a82d59809b13d1f1567088e85f82a48f80ffb2"
+    },
+    {
+      "name": "raw_policy_outcome:overlapping-disruptions-s4003-5401bf2b7ac2__B5_RULE_V1.json",
+      "passed": true,
+      "evidence": "d9e14ad4fa31fa2d3182baab689642a1feb2d1f12b49a7e78fa84ee3585d713f"
+    },
+    {
+      "name": "raw_policy_outcome:overlapping-disruptions-s4003-5401bf2b7ac2__B5_XGB_CF_V1.json",
+      "passed": true,
+      "evidence": "32f43762007033650818e7deb58e265ddff940e900040f0e7e30c8d20a84ebad"
+    },
+    {
+      "name": "raw_policy_outcome:overlapping-disruptions-s4003-5401bf2b7ac2__B5_XGB_NO_GRAPH_V1.json",
+      "passed": true,
+      "evidence": "b4d64e301709ab67b39945411d376e5b64c135c51bc42259b88ef3e71475cd58"
+    },
+    {
+      "name": "raw_policy_outcome:overlapping-disruptions-s4003-5401bf2b7ac2__B5_XGB_V1.json",
+      "passed": true,
+      "evidence": "2ad1fb7b72c3fe5190ed97fc277b5b3577b38e4fc2044efa2d0ce1597bf3f1a2"
+    },
+    {
+      "name": "raw_policy_outcome:overlapping-disruptions-s4004-68dc095b91e1__B0.json",
+      "passed": true,
+      "evidence": "75c2aafbe9c7f2892b773f0de53af582c1463f8a6b84227f4738de4a52eba3c1"
+    },
+    {
+      "name": "raw_policy_outcome:overlapping-disruptions-s4004-68dc095b91e1__B1.json",
+      "passed": true,
+      "evidence": "249338cf44ab4a15b6bbd593c278fbb5978cdc22803281adf6b91d8b1571b60b"
+    },
+    {
+      "name": "raw_policy_outcome:overlapping-disruptions-s4004-68dc095b91e1__B2.json",
+      "passed": true,
+      "evidence": "a2a6218e167d9daa2adfa2925892cc0d1bf684be6166ab13e542050b402f752c"
+    },
+    {
+      "name": "raw_policy_outcome:overlapping-disruptions-s4004-68dc095b91e1__B3.json",
+      "passed": true,
+      "evidence": "1efa44a93fb68c952f9d3c458202b1262f9a27beac4bb26bf73c3373cf3e481b"
+    },
+    {
+      "name": "raw_policy_outcome:overlapping-disruptions-s4004-68dc095b91e1__B4.json",
+      "passed": true,
+      "evidence": "08ad0f35ee2947acd048114f471712826278009f81cacd96b2f53385df8e3479"
+    },
+    {
+      "name": "raw_policy_outcome:overlapping-disruptions-s4004-68dc095b91e1__B5_GNN_STATIC_V1.json",
+      "passed": true,
+      "evidence": "e2d47bad59c93a27718fe025f8dd89897e8c5788190c2e843e6cbf3c4077e163"
+    },
+    {
+      "name": "raw_policy_outcome:overlapping-disruptions-s4004-68dc095b91e1__B5_GNN_TEMPORAL_V1.json",
+      "passed": true,
+      "evidence": "cf716e5feeef90bde2ed8507129db550e12f53b37ab0164fbe98722c3e5dffd0"
+    },
+    {
+      "name": "raw_policy_outcome:overlapping-disruptions-s4004-68dc095b91e1__B5_RULE_V1.json",
+      "passed": true,
+      "evidence": "2aac481109d1762d86bca9be85103549ff6631a85fe16e983ff45143cde5cd35"
+    },
+    {
+      "name": "raw_policy_outcome:overlapping-disruptions-s4004-68dc095b91e1__B5_XGB_CF_V1.json",
+      "passed": true,
+      "evidence": "5bc47bb9f40c8eb6b591e3b0e525632db3a73ddfa5167daab4b7bf4764a34904"
+    },
+    {
+      "name": "raw_policy_outcome:overlapping-disruptions-s4004-68dc095b91e1__B5_XGB_NO_GRAPH_V1.json",
+      "passed": true,
+      "evidence": "6bb4828bc2fff232d03ac61350948a87238a8509d5d023b6424d030ec62898d4"
+    },
+    {
+      "name": "raw_policy_outcome:overlapping-disruptions-s4004-68dc095b91e1__B5_XGB_V1.json",
+      "passed": true,
+      "evidence": "a91fee779f3ad85b52536e62c880e1641562b428eb6640dac6dbe14757f3c2dd"
+    },
+    {
+      "name": "raw_policy_outcome:shared-dock-contention-s4001-0330aaca8e52__B0.json",
+      "passed": true,
+      "evidence": "5739f3efc0ffa1c74a0b567ca71e283d626c5974b09bf4b8d49bc633c2fa9188"
+    },
+    {
+      "name": "raw_policy_outcome:shared-dock-contention-s4001-0330aaca8e52__B1.json",
+      "passed": true,
+      "evidence": "a70e43f989d2f98c4bb53e6fbb7ce18a211617adbcaa22533a12f0196bdbb04a"
+    },
+    {
+      "name": "raw_policy_outcome:shared-dock-contention-s4001-0330aaca8e52__B2.json",
+      "passed": true,
+      "evidence": "e3771f0fea707a0355944cdaf694867b7e37585817f5168c8286c28ffc19c327"
+    },
+    {
+      "name": "raw_policy_outcome:shared-dock-contention-s4001-0330aaca8e52__B3.json",
+      "passed": true,
+      "evidence": "ecd9059e1ad5b4853110edbcfcab35b11b5bea2aa67a1cdf8f0ff7021a7785f6"
+    },
+    {
+      "name": "raw_policy_outcome:shared-dock-contention-s4001-0330aaca8e52__B4.json",
+      "passed": true,
+      "evidence": "2520162fe8edecc4a5c24afcc8c9f07abb278e9103e4d8c639b9333cfc512227"
+    },
+    {
+      "name": "raw_policy_outcome:shared-dock-contention-s4001-0330aaca8e52__B5_GNN_STATIC_V1.json",
+      "passed": true,
+      "evidence": "e9889b9f17a4505c516f8d6d8d8d488820533038b4785a677c246c0b0247dd28"
+    },
+    {
+      "name": "raw_policy_outcome:shared-dock-contention-s4001-0330aaca8e52__B5_GNN_TEMPORAL_V1.json",
+      "passed": true,
+      "evidence": "763f3d5c73fa6207e15c6752a2b0c154816df1b0dd9ca90dd88667e9ffe9b658"
+    },
+    {
+      "name": "raw_policy_outcome:shared-dock-contention-s4001-0330aaca8e52__B5_RULE_V1.json",
+      "passed": true,
+      "evidence": "d5241a27bffdc8de457f2947d664c390512d60e0c4150bc11e89172e14a11aea"
+    },
+    {
+      "name": "raw_policy_outcome:shared-dock-contention-s4001-0330aaca8e52__B5_XGB_CF_V1.json",
+      "passed": true,
+      "evidence": "969c64f8e795ba91797ddbc483fe70b0d557dc382cadf478406d3e3b75ab482a"
+    },
+    {
+      "name": "raw_policy_outcome:shared-dock-contention-s4001-0330aaca8e52__B5_XGB_NO_GRAPH_V1.json",
+      "passed": true,
+      "evidence": "473034ede4b5ed8ee1af1a9956815373759421356a8daba63b3503d878c599e2"
+    },
+    {
+      "name": "raw_policy_outcome:shared-dock-contention-s4001-0330aaca8e52__B5_XGB_V1.json",
+      "passed": true,
+      "evidence": "409a762f91072d830e8480fb3a4e0dbe6b97be1ddbc91567e8b655dbc3b9469e"
+    },
+    {
+      "name": "raw_policy_outcome:shared-dock-contention-s4002-14f5766b4331__B0.json",
+      "passed": true,
+      "evidence": "f3bd272b0bcba35b656575d3e3f0ba5c144fade31416658ec080849609f06cca"
+    },
+    {
+      "name": "raw_policy_outcome:shared-dock-contention-s4002-14f5766b4331__B1.json",
+      "passed": true,
+      "evidence": "a68bd0dbfd498758254e5c59dc75319162404a02b11ea84f1832419dba65418a"
+    },
+    {
+      "name": "raw_policy_outcome:shared-dock-contention-s4002-14f5766b4331__B2.json",
+      "passed": true,
+      "evidence": "da9547627fa85eaeb0daf4b5e531a1f40ba9ce4f6aa159ce6af26ac9c2944fea"
+    },
+    {
+      "name": "raw_policy_outcome:shared-dock-contention-s4002-14f5766b4331__B3.json",
+      "passed": true,
+      "evidence": "e006383e569d6915f089c8d01b1c90f208421b4d44b0d1fe944b530d217618aa"
+    },
+    {
+      "name": "raw_policy_outcome:shared-dock-contention-s4002-14f5766b4331__B4.json",
+      "passed": true,
+      "evidence": "b6e0fe7a95c66b2bac3a11094258c2cc346bc6461594b8caa8d60c1c1f00f7ad"
+    },
+    {
+      "name": "raw_policy_outcome:shared-dock-contention-s4002-14f5766b4331__B5_GNN_STATIC_V1.json",
+      "passed": true,
+      "evidence": "206ec4caeeeb58545cbdca4c2d6116701f3835e012b3f3134af97752af8a1105"
+    },
+    {
+      "name": "raw_policy_outcome:shared-dock-contention-s4002-14f5766b4331__B5_GNN_TEMPORAL_V1.json",
+      "passed": true,
+      "evidence": "5336e5e3031a411d679d6965bb98258faa5f4783ffbb603df69a6ed7d2c52bdb"
+    },
+    {
+      "name": "raw_policy_outcome:shared-dock-contention-s4002-14f5766b4331__B5_RULE_V1.json",
+      "passed": true,
+      "evidence": "f6fe76065855c4cb9f2211cfa33ba48d1b58b2c2c340f7671ec2dc0441a7768b"
+    },
+    {
+      "name": "raw_policy_outcome:shared-dock-contention-s4002-14f5766b4331__B5_XGB_CF_V1.json",
+      "passed": true,
+      "evidence": "5a1460cf884947639f86366bdfa5a32a99245c5cbd446fa540f86bf0f6b5c4ed"
+    },
+    {
+      "name": "raw_policy_outcome:shared-dock-contention-s4002-14f5766b4331__B5_XGB_NO_GRAPH_V1.json",
+      "passed": true,
+      "evidence": "cb1ccc858f5c1c2712fd0fe90161a9cdb6ffcc23a10f70e276e948c1283b7480"
+    },
+    {
+      "name": "raw_policy_outcome:shared-dock-contention-s4002-14f5766b4331__B5_XGB_V1.json",
+      "passed": true,
+      "evidence": "7e796849e96de0c624189aeab9a94828e3aee35fb3cc0bea1f5a8514a1a7db24"
+    },
+    {
+      "name": "raw_policy_outcome:shared-dock-contention-s4003-596322dd091a__B0.json",
+      "passed": true,
+      "evidence": "8641d413a675a46dacbb9d2f9b1cf7baeb270a18e6d8e6d4317879f17bb0ce05"
+    },
+    {
+      "name": "raw_policy_outcome:shared-dock-contention-s4003-596322dd091a__B1.json",
+      "passed": true,
+      "evidence": "e2b8b102ee9c4c3fbdb915432f2512d2aeade321c6388cddc5d77f0674473089"
+    },
+    {
+      "name": "raw_policy_outcome:shared-dock-contention-s4003-596322dd091a__B2.json",
+      "passed": true,
+      "evidence": "32e58bb764182eeb256042d55b20248582d83a07bd04f11a2639ebee343018a9"
+    },
+    {
+      "name": "raw_policy_outcome:shared-dock-contention-s4003-596322dd091a__B3.json",
+      "passed": true,
+      "evidence": "9adaa9b8e8772dbe91d3d6e9fa3f0c1977e418728736ad631257a93f5f1a48d7"
+    },
+    {
+      "name": "raw_policy_outcome:shared-dock-contention-s4003-596322dd091a__B4.json",
+      "passed": true,
+      "evidence": "ab72b92df59672f4b8e463edfda66db20bae73a9d2a6af06da8378bcccfbe84e"
+    },
+    {
+      "name": "raw_policy_outcome:shared-dock-contention-s4003-596322dd091a__B5_GNN_STATIC_V1.json",
+      "passed": true,
+      "evidence": "fd47952d666108249bd60e1803da532c88ec3993bbb4db3a480802cf8b4394e3"
+    },
+    {
+      "name": "raw_policy_outcome:shared-dock-contention-s4003-596322dd091a__B5_GNN_TEMPORAL_V1.json",
+      "passed": true,
+      "evidence": "07d6c7258d95856e9c194b31168e09107622ab18e64cae656ec5e9f48152e25f"
+    },
+    {
+      "name": "raw_policy_outcome:shared-dock-contention-s4003-596322dd091a__B5_RULE_V1.json",
+      "passed": true,
+      "evidence": "f6524c373d066c33448dc3e2aa65d4014d878102d8a54eb38891f7a860f5c062"
+    },
+    {
+      "name": "raw_policy_outcome:shared-dock-contention-s4003-596322dd091a__B5_XGB_CF_V1.json",
+      "passed": true,
+      "evidence": "775b85e900f6330c70c2025a725cc7b188d3a57a9032296014500b99384756da"
+    },
+    {
+      "name": "raw_policy_outcome:shared-dock-contention-s4003-596322dd091a__B5_XGB_NO_GRAPH_V1.json",
+      "passed": true,
+      "evidence": "cfe237590f610422b114ef62168c62914c4b30cee5a32e9e5c5a8b8b42f5fb61"
+    },
+    {
+      "name": "raw_policy_outcome:shared-dock-contention-s4003-596322dd091a__B5_XGB_V1.json",
+      "passed": true,
+      "evidence": "20c593434a9602a254c8fa134620132045fc3c14825aaa337a3c7c807828399e"
+    },
+    {
+      "name": "raw_policy_outcome:shared-dock-contention-s4004-03a80a3e8c31__B0.json",
+      "passed": true,
+      "evidence": "3d686d774ce8510dc97a882a546a3d60fe7d6d9cf4cd9030dfa329d53fafa965"
+    },
+    {
+      "name": "raw_policy_outcome:shared-dock-contention-s4004-03a80a3e8c31__B1.json",
+      "passed": true,
+      "evidence": "435a16d330d9057104d0064ff6e6c045d3ca019231f0ac5688fd12120fbbb763"
+    },
+    {
+      "name": "raw_policy_outcome:shared-dock-contention-s4004-03a80a3e8c31__B2.json",
+      "passed": true,
+      "evidence": "3b076feda364bd097d6f604690cb60b81d82d91bacb65055d347287e74e7d9d8"
+    },
+    {
+      "name": "raw_policy_outcome:shared-dock-contention-s4004-03a80a3e8c31__B3.json",
+      "passed": true,
+      "evidence": "b03039284133549abb6e55e2b554dc27b723703a08ac0c8ee2bc9fdd3f174b8c"
+    },
+    {
+      "name": "raw_policy_outcome:shared-dock-contention-s4004-03a80a3e8c31__B4.json",
+      "passed": true,
+      "evidence": "84a21b7cb0ad4cfad42493825e185ebc25093f25cfa0b22a36738d4279f3711a"
+    },
+    {
+      "name": "raw_policy_outcome:shared-dock-contention-s4004-03a80a3e8c31__B5_GNN_STATIC_V1.json",
+      "passed": true,
+      "evidence": "fe2d813e59a36760ec1958c28363b793903430e3adab0cfa48a38e802d95d030"
+    },
+    {
+      "name": "raw_policy_outcome:shared-dock-contention-s4004-03a80a3e8c31__B5_GNN_TEMPORAL_V1.json",
+      "passed": true,
+      "evidence": "9064dbd12266e7992eb8c0807f65aed37f951c210f6a0cfc22836a518c53f911"
+    },
+    {
+      "name": "raw_policy_outcome:shared-dock-contention-s4004-03a80a3e8c31__B5_RULE_V1.json",
+      "passed": true,
+      "evidence": "c4a6f82fa4c4eb4e50a86eafa97393387fbbf19f3ff422ecd82f3bb747870745"
+    },
+    {
+      "name": "raw_policy_outcome:shared-dock-contention-s4004-03a80a3e8c31__B5_XGB_CF_V1.json",
+      "passed": true,
+      "evidence": "1fdfd3584f4eddfc58431bde078eed81e9647e2f465f0eb895242f996a572fda"
+    },
+    {
+      "name": "raw_policy_outcome:shared-dock-contention-s4004-03a80a3e8c31__B5_XGB_NO_GRAPH_V1.json",
+      "passed": true,
+      "evidence": "5cc771bcecafd7005b53a2a14338eda82f9cf0a4bba2eadc85ae5182074e58d8"
+    },
+    {
+      "name": "raw_policy_outcome:shared-dock-contention-s4004-03a80a3e8c31__B5_XGB_V1.json",
+      "passed": true,
+      "evidence": "09a38e6f8229b3fda20a5910ced0807d3f75d31f6fd6f689f8244c046c9ae292"
+    },
+    {
+      "name": "raw_policy_outcome:single-closure-s4001-a4f96acbb8b9__B0.json",
+      "passed": true,
+      "evidence": "92ee0e308d12f05c64180397236f2ff327b5c8ca833d1fc004a3786635ae54e6"
+    },
+    {
+      "name": "raw_policy_outcome:single-closure-s4001-a4f96acbb8b9__B1.json",
+      "passed": true,
+      "evidence": "f88826abd51ee3e9b8108f59ba6c35e40d5033886d889606bdb8b9d6dbc47c36"
+    },
+    {
+      "name": "raw_policy_outcome:single-closure-s4001-a4f96acbb8b9__B2.json",
+      "passed": true,
+      "evidence": "1a36c369da87ff0d4e03d576f86bd8ba33dc4f675cc8c094c6a2ed6b51ab3064"
+    },
+    {
+      "name": "raw_policy_outcome:single-closure-s4001-a4f96acbb8b9__B3.json",
+      "passed": true,
+      "evidence": "f8e4ef9ade6082d49059e969bb2d47a7e361c9ed3efab8ffb118df1b3259d50f"
+    },
+    {
+      "name": "raw_policy_outcome:single-closure-s4001-a4f96acbb8b9__B4.json",
+      "passed": true,
+      "evidence": "5396daea044986eed62fa2d83395fa5cc1763908255a0403553da336f40afbe6"
+    },
+    {
+      "name": "raw_policy_outcome:single-closure-s4001-a4f96acbb8b9__B5_GNN_STATIC_V1.json",
+      "passed": true,
+      "evidence": "ac0b549537b296e3c097aa577220c84498cec47310fcd99cd7503d0f317ebfec"
+    },
+    {
+      "name": "raw_policy_outcome:single-closure-s4001-a4f96acbb8b9__B5_GNN_TEMPORAL_V1.json",
+      "passed": true,
+      "evidence": "e2d72f1dc93299366499d4e28dc3b9e45bd4e1d77b52452e1846f49d647d6e67"
+    },
+    {
+      "name": "raw_policy_outcome:single-closure-s4001-a4f96acbb8b9__B5_RULE_V1.json",
+      "passed": true,
+      "evidence": "5bfb8669c10e99933e46c6593f0d64f43303af692f1ade1b2637c10197f6bc65"
+    },
+    {
+      "name": "raw_policy_outcome:single-closure-s4001-a4f96acbb8b9__B5_XGB_CF_V1.json",
+      "passed": true,
+      "evidence": "f0f0e40d55d85511b87ab8c20c9be72876dc1f46a43969deea1990b94ddb3ac0"
+    },
+    {
+      "name": "raw_policy_outcome:single-closure-s4001-a4f96acbb8b9__B5_XGB_NO_GRAPH_V1.json",
+      "passed": true,
+      "evidence": "816005ddbe6bae0c6afd2e57c915910df14a9ef6d238ecb465239163c99135c4"
+    },
+    {
+      "name": "raw_policy_outcome:single-closure-s4001-a4f96acbb8b9__B5_XGB_V1.json",
+      "passed": true,
+      "evidence": "6f0c94f8707f972ed18372d5f88045ec276a9f82689d04af59fbfbad222100b2"
+    },
+    {
+      "name": "raw_policy_outcome:single-closure-s4002-4bd5320a7c59__B0.json",
+      "passed": true,
+      "evidence": "ff9e7492c113eb1bc3e26a6d61442f8391167157859f5ad045bd173a1a546f77"
+    },
+    {
+      "name": "raw_policy_outcome:single-closure-s4002-4bd5320a7c59__B1.json",
+      "passed": true,
+      "evidence": "26178c4f0fb986ede4ba1b1d704899866f734c54e108a9624d63222f3da071b1"
+    },
+    {
+      "name": "raw_policy_outcome:single-closure-s4002-4bd5320a7c59__B2.json",
+      "passed": true,
+      "evidence": "99090eb960bda141730e36b14c08d9362054691b1ffce7ca78d3b6a3a0525457"
+    },
+    {
+      "name": "raw_policy_outcome:single-closure-s4002-4bd5320a7c59__B3.json",
+      "passed": true,
+      "evidence": "0aefe2f540f3ac41b6e839feee25edc128c2611096f4c622fae0e2ab023c2ebb"
+    },
+    {
+      "name": "raw_policy_outcome:single-closure-s4002-4bd5320a7c59__B4.json",
+      "passed": true,
+      "evidence": "30def6b853a68cf536738fb7f68e7b5067b39d3eefd6d910c58b369765cffae7"
+    },
+    {
+      "name": "raw_policy_outcome:single-closure-s4002-4bd5320a7c59__B5_GNN_STATIC_V1.json",
+      "passed": true,
+      "evidence": "7611fe23ce2ecac5171679917618499a9c29a219635d09d150abae3444e55b1b"
+    },
+    {
+      "name": "raw_policy_outcome:single-closure-s4002-4bd5320a7c59__B5_GNN_TEMPORAL_V1.json",
+      "passed": true,
+      "evidence": "237ca4ea2c8ca7915dbcccfaeae716f15d8496d9ddcb443e087603c0ec4f1e27"
+    },
+    {
+      "name": "raw_policy_outcome:single-closure-s4002-4bd5320a7c59__B5_RULE_V1.json",
+      "passed": true,
+      "evidence": "51bae02351eb6d2392f1a427bf30d9c1f186a8147ee731c7d15cd02d55038f49"
+    },
+    {
+      "name": "raw_policy_outcome:single-closure-s4002-4bd5320a7c59__B5_XGB_CF_V1.json",
+      "passed": true,
+      "evidence": "0bc5b259b6f2ddae34c7fe8c56dc9950444d18eaba369f0f89d11e12a9308bc1"
+    },
+    {
+      "name": "raw_policy_outcome:single-closure-s4002-4bd5320a7c59__B5_XGB_NO_GRAPH_V1.json",
+      "passed": true,
+      "evidence": "7cd824261064d53a8f57efd3ff6396fcdaf0ad3ab8fb1511573e5dcaa72bff54"
+    },
+    {
+      "name": "raw_policy_outcome:single-closure-s4002-4bd5320a7c59__B5_XGB_V1.json",
+      "passed": true,
+      "evidence": "ec51caea4b9150365553a0c5f0009bbdfff759d4df1d5aa714002d298dda6d9f"
+    },
+    {
+      "name": "raw_policy_outcome:single-closure-s4003-039f916a48b8__B0.json",
+      "passed": true,
+      "evidence": "c574f220b5e38826f923e70d6cfaa73b4500b8b0fb8523a743a3a471b08e3d7f"
+    },
+    {
+      "name": "raw_policy_outcome:single-closure-s4003-039f916a48b8__B1.json",
+      "passed": true,
+      "evidence": "100c3abdb92b1461f700dc1cb981adcc1a8337d55a02c4401859258b069a389b"
+    },
+    {
+      "name": "raw_policy_outcome:single-closure-s4003-039f916a48b8__B2.json",
+      "passed": true,
+      "evidence": "7edd84d68f455dd283f43cee8b3a765b7ae056d71795a0f08a65f280563d9dd4"
+    },
+    {
+      "name": "raw_policy_outcome:single-closure-s4003-039f916a48b8__B3.json",
+      "passed": true,
+      "evidence": "5514d495111e920a2edba1ae30d41ebd47a8c6f92ab33ff51c3e7930af192568"
+    },
+    {
+      "name": "raw_policy_outcome:single-closure-s4003-039f916a48b8__B4.json",
+      "passed": true,
+      "evidence": "14a39179f62b77dba2b9175e6c4fceb23276ed54d8da42ec2d0e398e1d4743b8"
+    },
+    {
+      "name": "raw_policy_outcome:single-closure-s4003-039f916a48b8__B5_GNN_STATIC_V1.json",
+      "passed": true,
+      "evidence": "1e5c2c130d1a4d8c5eac9f6cafb4cadbedce28a77139b9277b8f5a1ccad28b58"
+    },
+    {
+      "name": "raw_policy_outcome:single-closure-s4003-039f916a48b8__B5_GNN_TEMPORAL_V1.json",
+      "passed": true,
+      "evidence": "c7ad67bf8884d9d95b611a70848478cca55561b4bc053dbd3151d7f96d0e4bf7"
+    },
+    {
+      "name": "raw_policy_outcome:single-closure-s4003-039f916a48b8__B5_RULE_V1.json",
+      "passed": true,
+      "evidence": "8123efb9a4d9b2bac6547b7b00d4aa43ca4a23cb2f827905a574081748cb0342"
+    },
+    {
+      "name": "raw_policy_outcome:single-closure-s4003-039f916a48b8__B5_XGB_CF_V1.json",
+      "passed": true,
+      "evidence": "63f176fed47dbd075928e7ccf4cbaf716df93d046cba668c3a37d007e8544f60"
+    },
+    {
+      "name": "raw_policy_outcome:single-closure-s4003-039f916a48b8__B5_XGB_NO_GRAPH_V1.json",
+      "passed": true,
+      "evidence": "5d412c6c6d9846824695c363dbc8dd671bd10c3c136f33c37bf2578e1b4f3603"
+    },
+    {
+      "name": "raw_policy_outcome:single-closure-s4003-039f916a48b8__B5_XGB_V1.json",
+      "passed": true,
+      "evidence": "b0e2e05eb60fe50e8309bdc9e71ad8a9cb8d349158e3e4e3131d09d1f2332b17"
+    },
+    {
+      "name": "raw_policy_outcome:single-closure-s4004-1ba7a28f3693__B0.json",
+      "passed": true,
+      "evidence": "aa4b9cc4f9db039e57d72b48de043ae7b3879f1f2c4f485ddb0d048532d08b20"
+    },
+    {
+      "name": "raw_policy_outcome:single-closure-s4004-1ba7a28f3693__B1.json",
+      "passed": true,
+      "evidence": "eb3d7cdf60afd36fb9f079528f93ea94e92542bb14ac917b1d890907844854f4"
+    },
+    {
+      "name": "raw_policy_outcome:single-closure-s4004-1ba7a28f3693__B2.json",
+      "passed": true,
+      "evidence": "2142fde7a4e883f4fe5cff4fb3740031ae42792e10917062c89dbdfd1a958376"
+    },
+    {
+      "name": "raw_policy_outcome:single-closure-s4004-1ba7a28f3693__B3.json",
+      "passed": true,
+      "evidence": "399754696430f1143100dc883ac55a2a6a57486e13e834d7f600302b61423db8"
+    },
+    {
+      "name": "raw_policy_outcome:single-closure-s4004-1ba7a28f3693__B4.json",
+      "passed": true,
+      "evidence": "9dbff6f3e1d1d0bf831f4c773bb513dd701388c2c6960ae5266fe30d93dc6ba6"
+    },
+    {
+      "name": "raw_policy_outcome:single-closure-s4004-1ba7a28f3693__B5_GNN_STATIC_V1.json",
+      "passed": true,
+      "evidence": "1ac40cbbb2e8de9c8a53e457b689d51bb6976f7ad5f4be9ce9ff97d3495f89da"
+    },
+    {
+      "name": "raw_policy_outcome:single-closure-s4004-1ba7a28f3693__B5_GNN_TEMPORAL_V1.json",
+      "passed": true,
+      "evidence": "7daafc510e863dbeaa3e28f5b9b51621375817e750a178d38143dc044a2cea8c"
+    },
+    {
+      "name": "raw_policy_outcome:single-closure-s4004-1ba7a28f3693__B5_RULE_V1.json",
+      "passed": true,
+      "evidence": "8d18591a77d2ed99e3260678bcf4fb6bf72b57fce851d83d0069e457e4f28749"
+    },
+    {
+      "name": "raw_policy_outcome:single-closure-s4004-1ba7a28f3693__B5_XGB_CF_V1.json",
+      "passed": true,
+      "evidence": "d1d5fab6b7378e9edf92d576f20c4673784f9bd043b43fcb0656a86bb942444a"
+    },
+    {
+      "name": "raw_policy_outcome:single-closure-s4004-1ba7a28f3693__B5_XGB_NO_GRAPH_V1.json",
+      "passed": true,
+      "evidence": "d7c4c253ab1f55148b80ab94bb4621cb61f9f12871fc0e955216a7b62161a10d"
+    },
+    {
+      "name": "raw_policy_outcome:single-closure-s4004-1ba7a28f3693__B5_XGB_V1.json",
+      "passed": true,
+      "evidence": "618971226e1a844d68e06891b71dd6edaabfaf619d4938679952da8a85351bbd"
+    },
+    {
+      "name": "raw_policy_outcome:tight-deadlines-s4001-b2cd665f5520__B0.json",
+      "passed": true,
+      "evidence": "459f0f58f7175a0d11a7a01d6ac4ce626818e7080fff464f0055d951855a464a"
+    },
+    {
+      "name": "raw_policy_outcome:tight-deadlines-s4001-b2cd665f5520__B1.json",
+      "passed": true,
+      "evidence": "1b4790f294525bedbebd9a86f0452f5b3799828160af8120fcc54a2739dbdbdf"
+    },
+    {
+      "name": "raw_policy_outcome:tight-deadlines-s4001-b2cd665f5520__B2.json",
+      "passed": true,
+      "evidence": "4ce9a626ee524b4e2637dbe99123345b9c799df0ade721b90687736a40a297db"
+    },
+    {
+      "name": "raw_policy_outcome:tight-deadlines-s4001-b2cd665f5520__B3.json",
+      "passed": true,
+      "evidence": "cffe85ab1e292ea657b7648c0bf50c8ec579c46e892da54c896e6027cd552461"
+    },
+    {
+      "name": "raw_policy_outcome:tight-deadlines-s4001-b2cd665f5520__B4.json",
+      "passed": true,
+      "evidence": "33361a814f98531085a4b58e003eea8940e4c3d9c2059964b0612a7697e33eb0"
+    },
+    {
+      "name": "raw_policy_outcome:tight-deadlines-s4001-b2cd665f5520__B5_GNN_STATIC_V1.json",
+      "passed": true,
+      "evidence": "72ad1887216f5d44f12f1ee7a9f78529984698910cd3d183cccc80cc11e8aa43"
+    },
+    {
+      "name": "raw_policy_outcome:tight-deadlines-s4001-b2cd665f5520__B5_GNN_TEMPORAL_V1.json",
+      "passed": true,
+      "evidence": "5cafc12064389da680c2ce08804382634385355d4cd7778a2d4d90fb904d8586"
+    },
+    {
+      "name": "raw_policy_outcome:tight-deadlines-s4001-b2cd665f5520__B5_RULE_V1.json",
+      "passed": true,
+      "evidence": "b497ad583af57aaa16a7bf05f1ac079cb9ad5fb31c6b12956add46835cb8a442"
+    },
+    {
+      "name": "raw_policy_outcome:tight-deadlines-s4001-b2cd665f5520__B5_XGB_CF_V1.json",
+      "passed": true,
+      "evidence": "2af7fbabdbbe5dd515f8e7a968c336af51135b374aa98c1c2a52463ef15f06c6"
+    },
+    {
+      "name": "raw_policy_outcome:tight-deadlines-s4001-b2cd665f5520__B5_XGB_NO_GRAPH_V1.json",
+      "passed": true,
+      "evidence": "1235c02f25547f1ec926646756a3be8e7f2b7406cd0d4ca7668eecacd8709403"
+    },
+    {
+      "name": "raw_policy_outcome:tight-deadlines-s4001-b2cd665f5520__B5_XGB_V1.json",
+      "passed": true,
+      "evidence": "c7c1b038479136f4655a550f1b73d0fbb8a3471caf00da3a1dfdb21278d77e36"
+    },
+    {
+      "name": "raw_policy_outcome:tight-deadlines-s4002-98619a331776__B0.json",
+      "passed": true,
+      "evidence": "e7a593f0ff9ca4d73cda71f93dbb7a49cdc050ee05f0c795846242cc88f7c91e"
+    },
+    {
+      "name": "raw_policy_outcome:tight-deadlines-s4002-98619a331776__B1.json",
+      "passed": true,
+      "evidence": "e920f5090c8fbb7b447e971595f4ee58cc300f7b51e8d328b139d3198782bb8f"
+    },
+    {
+      "name": "raw_policy_outcome:tight-deadlines-s4002-98619a331776__B2.json",
+      "passed": true,
+      "evidence": "a0a5ecfaaef4e2f0627d5e638aa4f635ce4526192f51cbd59eb83e300fbd9ed2"
+    },
+    {
+      "name": "raw_policy_outcome:tight-deadlines-s4002-98619a331776__B3.json",
+      "passed": true,
+      "evidence": "8ad2564cf8ff76080720079a9acab4007d1032429789958529644eba9ff41efa"
+    },
+    {
+      "name": "raw_policy_outcome:tight-deadlines-s4002-98619a331776__B4.json",
+      "passed": true,
+      "evidence": "3d5306dcc5ea27e8d7c54939d9297af34e1b85d78c1f7b8a1403d1f992c71bae"
+    },
+    {
+      "name": "raw_policy_outcome:tight-deadlines-s4002-98619a331776__B5_GNN_STATIC_V1.json",
+      "passed": true,
+      "evidence": "7fe318b550ad7ea1c2442c74bb7b3a076a3014f961b8408913e68df6ba7c5bde"
+    },
+    {
+      "name": "raw_policy_outcome:tight-deadlines-s4002-98619a331776__B5_GNN_TEMPORAL_V1.json",
+      "passed": true,
+      "evidence": "d0067e35faf68320aac9714a954c4f8392dd3e9419a3e9e5cc3e8126cb9de256"
+    },
+    {
+      "name": "raw_policy_outcome:tight-deadlines-s4002-98619a331776__B5_RULE_V1.json",
+      "passed": true,
+      "evidence": "a7a4ce397474586c9116afc181c88c7ef5d78f24ce4a41ccff08700d6e8f70ba"
+    },
+    {
+      "name": "raw_policy_outcome:tight-deadlines-s4002-98619a331776__B5_XGB_CF_V1.json",
+      "passed": true,
+      "evidence": "4219a4e3c5af37142489174ff22d023e233f8092bbc1392da9d44c790b6aa059"
+    },
+    {
+      "name": "raw_policy_outcome:tight-deadlines-s4002-98619a331776__B5_XGB_NO_GRAPH_V1.json",
+      "passed": true,
+      "evidence": "2a10d59cb277754dde7ab8870a3b7694e245ec8392379003643fd216488ab3bc"
+    },
+    {
+      "name": "raw_policy_outcome:tight-deadlines-s4002-98619a331776__B5_XGB_V1.json",
+      "passed": true,
+      "evidence": "3cc6d4efb38117d4cdd392b00f40322f7445c893024e8f007a7653d960ca7ceb"
+    },
+    {
+      "name": "raw_policy_outcome:tight-deadlines-s4003-84a5658209e3__B0.json",
+      "passed": true,
+      "evidence": "6de8e51eb7631c12339b351b54861c3fd801685c91f519bebdd7df49b88c0932"
+    },
+    {
+      "name": "raw_policy_outcome:tight-deadlines-s4003-84a5658209e3__B1.json",
+      "passed": true,
+      "evidence": "0aeca65afdf721db420ecb9256a92e4bfc6568ace02635ca4349cb75679408cf"
+    },
+    {
+      "name": "raw_policy_outcome:tight-deadlines-s4003-84a5658209e3__B2.json",
+      "passed": true,
+      "evidence": "615f5da4c6a1534036189d1cc259e71509a0fdbc3563c6a3f9ccabd62ddc1c36"
+    },
+    {
+      "name": "raw_policy_outcome:tight-deadlines-s4003-84a5658209e3__B3.json",
+      "passed": true,
+      "evidence": "a3fbbd45e79a1c5fd2f3fa3ccc198d3aa1bc4de6b54cdc2d552e87ca86e18941"
+    },
+    {
+      "name": "raw_policy_outcome:tight-deadlines-s4003-84a5658209e3__B4.json",
+      "passed": true,
+      "evidence": "dc5b846f26919bd0d7750034bc6f17834a96d4726ac3c7ef902975b42fb061de"
+    },
+    {
+      "name": "raw_policy_outcome:tight-deadlines-s4003-84a5658209e3__B5_GNN_STATIC_V1.json",
+      "passed": true,
+      "evidence": "5d25027ed9a7089eace8b744068afe1ccb13320bfc41a35c80bfbd4900c94ef6"
+    },
+    {
+      "name": "raw_policy_outcome:tight-deadlines-s4003-84a5658209e3__B5_GNN_TEMPORAL_V1.json",
+      "passed": true,
+      "evidence": "b0e04d228a1172d3f192ef887ff13e62576ecd76a765065258812dffdc6039d7"
+    },
+    {
+      "name": "raw_policy_outcome:tight-deadlines-s4003-84a5658209e3__B5_RULE_V1.json",
+      "passed": true,
+      "evidence": "deec886aeee92dfc186acfd6937ab9e8e42803cb46c1e8fdae92e5fda01cfc22"
+    },
+    {
+      "name": "raw_policy_outcome:tight-deadlines-s4003-84a5658209e3__B5_XGB_CF_V1.json",
+      "passed": true,
+      "evidence": "de20aa9480b3cac17cea62a012253915669dcfb691c9ac9bea4a32026a65854a"
+    },
+    {
+      "name": "raw_policy_outcome:tight-deadlines-s4003-84a5658209e3__B5_XGB_NO_GRAPH_V1.json",
+      "passed": true,
+      "evidence": "32afb65f65288fcb1713921dbe5ede40c90660a3b437876f0a8f409d846dd9e6"
+    },
+    {
+      "name": "raw_policy_outcome:tight-deadlines-s4003-84a5658209e3__B5_XGB_V1.json",
+      "passed": true,
+      "evidence": "83cb3560bd9007354c57aedc270a0536495fb02cea93e2101c7ffbf8b40941b3"
+    },
+    {
+      "name": "raw_policy_outcome:tight-deadlines-s4004-95144186255b__B0.json",
+      "passed": true,
+      "evidence": "8817d0e7e6d1c2873b16cf79015b12eae15f7e663506bdac6fe569188ddf2df6"
+    },
+    {
+      "name": "raw_policy_outcome:tight-deadlines-s4004-95144186255b__B1.json",
+      "passed": true,
+      "evidence": "34b2c32ea52e21a07c21d5ef53bf0ea33ef6cfc219c06f82b674d3a3908e61e7"
+    },
+    {
+      "name": "raw_policy_outcome:tight-deadlines-s4004-95144186255b__B2.json",
+      "passed": true,
+      "evidence": "ff236d607c13a2c1f24c55afe80b47672e37ecd00d08b1a3fb10ac29c1f51862"
+    },
+    {
+      "name": "raw_policy_outcome:tight-deadlines-s4004-95144186255b__B3.json",
+      "passed": true,
+      "evidence": "8807f1882d5d379df41136b01a01ef9b57b5d1476318ffc5254590c6c9b8658c"
+    },
+    {
+      "name": "raw_policy_outcome:tight-deadlines-s4004-95144186255b__B4.json",
+      "passed": true,
+      "evidence": "025b3f46f1d2aa73e3fdbd222106f7686a550e4eeb63170d55864d9284124983"
+    },
+    {
+      "name": "raw_policy_outcome:tight-deadlines-s4004-95144186255b__B5_GNN_STATIC_V1.json",
+      "passed": true,
+      "evidence": "975c010bccf7c4f88730f274653ad8223bf59bf103d93c44a3c91e43c8279065"
+    },
+    {
+      "name": "raw_policy_outcome:tight-deadlines-s4004-95144186255b__B5_GNN_TEMPORAL_V1.json",
+      "passed": true,
+      "evidence": "4159d1dfc256c465d05a04d848ee96556580fbd189729715cbe5a7398860c57c"
+    },
+    {
+      "name": "raw_policy_outcome:tight-deadlines-s4004-95144186255b__B5_RULE_V1.json",
+      "passed": true,
+      "evidence": "de49697bee15becd30c8c43d05bad123dd7dbe04474a258a5260e51d4a5ac504"
+    },
+    {
+      "name": "raw_policy_outcome:tight-deadlines-s4004-95144186255b__B5_XGB_CF_V1.json",
+      "passed": true,
+      "evidence": "9f55425b32af5ef7618325c36315b7c26e1924f35c282da84237ca120690d7e5"
+    },
+    {
+      "name": "raw_policy_outcome:tight-deadlines-s4004-95144186255b__B5_XGB_NO_GRAPH_V1.json",
+      "passed": true,
+      "evidence": "d976709a55eae25eefa449e13d5208f50bf65321372b69dae7aa53d08a9722f2"
+    },
+    {
+      "name": "raw_policy_outcome:tight-deadlines-s4004-95144186255b__B5_XGB_V1.json",
+      "passed": true,
+      "evidence": "423c2de6587fe4443932359a0f54f6f8a6a09c1b23ca1fde92a7ff02c1930843"
+    },
+    {
+      "name": "raw_policy_outcome:unseen-large-combination-s4001-fe9616d0a0df__B0.json",
+      "passed": true,
+      "evidence": "4d791d6f3150b965a1d4242ee9cc571c2b40f7c3c0ad7a5f13618aaa83508cda"
+    },
+    {
+      "name": "raw_policy_outcome:unseen-large-combination-s4001-fe9616d0a0df__B1.json",
+      "passed": true,
+      "evidence": "e9f620970db88c97b10b20265f10ebb935b1e88a3b2e54b1fbb820280b554c29"
+    },
+    {
+      "name": "raw_policy_outcome:unseen-large-combination-s4001-fe9616d0a0df__B2.json",
+      "passed": true,
+      "evidence": "53b2d8484e26197e956755c51fc1a3dd5d8824bd9162a566e29e15df3ad05e5d"
+    },
+    {
+      "name": "raw_policy_outcome:unseen-large-combination-s4001-fe9616d0a0df__B3.json",
+      "passed": true,
+      "evidence": "138f54e52f41db62dd98f10d105583054845fe0bc7aec8160c7433ac9d96e141"
+    },
+    {
+      "name": "raw_policy_outcome:unseen-large-combination-s4001-fe9616d0a0df__B4.json",
+      "passed": true,
+      "evidence": "37f3b4775811937455fd26bcf397ab69f3ba03f678a6793436483c0b3be9eb32"
+    },
+    {
+      "name": "raw_policy_outcome:unseen-large-combination-s4001-fe9616d0a0df__B5_GNN_STATIC_V1.json",
+      "passed": true,
+      "evidence": "5fa476d3f1ed5c37b132614b0279ab138d26e6c65b147173b7ddce2d212929f1"
+    },
+    {
+      "name": "raw_policy_outcome:unseen-large-combination-s4001-fe9616d0a0df__B5_GNN_TEMPORAL_V1.json",
+      "passed": true,
+      "evidence": "7099a5608da3915e4f6db58302598ba3f852ab5e3c0e40a97a7704f7ad53fd2a"
+    },
+    {
+      "name": "raw_policy_outcome:unseen-large-combination-s4001-fe9616d0a0df__B5_RULE_V1.json",
+      "passed": true,
+      "evidence": "4ef27569d207342cd7c5ab2d7d5501e96ce745980f8ff240dcc1dda9e572dacb"
+    },
+    {
+      "name": "raw_policy_outcome:unseen-large-combination-s4001-fe9616d0a0df__B5_XGB_CF_V1.json",
+      "passed": true,
+      "evidence": "b2e8ba0a14d2f0b6975acbc6b9be016980857fd0a65a7116a4d56340776711cd"
+    },
+    {
+      "name": "raw_policy_outcome:unseen-large-combination-s4001-fe9616d0a0df__B5_XGB_NO_GRAPH_V1.json",
+      "passed": true,
+      "evidence": "1f29937c4f36433dd8f1e09a3457f8f44cae9caa87d7b7200055c3b8d3384ed9"
+    },
+    {
+      "name": "raw_policy_outcome:unseen-large-combination-s4001-fe9616d0a0df__B5_XGB_V1.json",
+      "passed": true,
+      "evidence": "5ec6c07b90c1c4634999a93fded7f5b210f6b3821423bad54a54ab2e74a87db1"
+    },
+    {
+      "name": "raw_policy_outcome:unseen-large-combination-s4002-01723fc15114__B0.json",
+      "passed": true,
+      "evidence": "aa956c9fa45e9926faf4292e3b9d6fb6fbd204b953831acc4b0a41ec703bafa2"
+    },
+    {
+      "name": "raw_policy_outcome:unseen-large-combination-s4002-01723fc15114__B1.json",
+      "passed": true,
+      "evidence": "4e7e0e81a54da774a0bef62e4103c6cc5822a6e5793103ab3bbbab598e3759ff"
+    },
+    {
+      "name": "raw_policy_outcome:unseen-large-combination-s4002-01723fc15114__B2.json",
+      "passed": true,
+      "evidence": "7c32b10797f6fa5e6ec9d350279d2d9fd567777000158170e1b8e39c55a194cc"
+    },
+    {
+      "name": "raw_policy_outcome:unseen-large-combination-s4002-01723fc15114__B3.json",
+      "passed": true,
+      "evidence": "f61ff15a4697cf29c24471e4a253631187adcd6cfb23412bb344060c865e3687"
+    },
+    {
+      "name": "raw_policy_outcome:unseen-large-combination-s4002-01723fc15114__B4.json",
+      "passed": true,
+      "evidence": "69f2a80501298d7700424af7cec9424a1dfa8605c0d6bdbad16b3e268f2ac36e"
+    },
+    {
+      "name": "raw_policy_outcome:unseen-large-combination-s4002-01723fc15114__B5_GNN_STATIC_V1.json",
+      "passed": true,
+      "evidence": "f4a33f31a67436af989aee10dbc34d9a633db038126856860ac33f238966229f"
+    },
+    {
+      "name": "raw_policy_outcome:unseen-large-combination-s4002-01723fc15114__B5_GNN_TEMPORAL_V1.json",
+      "passed": true,
+      "evidence": "c6f73f86c7f52296ba15fb3a704d098f2851177370d64bacb66682fd01186a1b"
+    },
+    {
+      "name": "raw_policy_outcome:unseen-large-combination-s4002-01723fc15114__B5_RULE_V1.json",
+      "passed": true,
+      "evidence": "4c7ca1554abe6c02a0067076949802afbd28d4e91496fdd829761592a704d348"
+    },
+    {
+      "name": "raw_policy_outcome:unseen-large-combination-s4002-01723fc15114__B5_XGB_CF_V1.json",
+      "passed": true,
+      "evidence": "4c5b27e4395338b7b018cc044e51f954b278bea7a208a00d8d63281ea267c3c8"
+    },
+    {
+      "name": "raw_policy_outcome:unseen-large-combination-s4002-01723fc15114__B5_XGB_NO_GRAPH_V1.json",
+      "passed": true,
+      "evidence": "0864f072773b2184affacb497c1e8fad62cf74b929da5869d970c2fa674ca2be"
+    },
+    {
+      "name": "raw_policy_outcome:unseen-large-combination-s4002-01723fc15114__B5_XGB_V1.json",
+      "passed": true,
+      "evidence": "abd250acf97fc062158aa6c86fd207d6f3466d6a80c8e1ef34096f541448873c"
+    },
+    {
+      "name": "raw_policy_outcome:unseen-large-combination-s4003-51e32ae69891__B0.json",
+      "passed": true,
+      "evidence": "9a1990c4dc216b92ae9eb54fe00e1b08ed57fe764ecd6e0f848a62b43a790015"
+    },
+    {
+      "name": "raw_policy_outcome:unseen-large-combination-s4003-51e32ae69891__B1.json",
+      "passed": true,
+      "evidence": "a9de3ce7acdb36800598420f2334839cb8a568e4251b4fa0199186d766c92f36"
+    },
+    {
+      "name": "raw_policy_outcome:unseen-large-combination-s4003-51e32ae69891__B2.json",
+      "passed": true,
+      "evidence": "ac1b486110bde3d2303712d28b6d6270b52d836a3dfc25a40a09e6b03e35741c"
+    },
+    {
+      "name": "raw_policy_outcome:unseen-large-combination-s4003-51e32ae69891__B3.json",
+      "passed": true,
+      "evidence": "9571096b31b2262839944c31c9a44416ae76bc745c6d81933951fd3919ed71d1"
+    },
+    {
+      "name": "raw_policy_outcome:unseen-large-combination-s4003-51e32ae69891__B4.json",
+      "passed": true,
+      "evidence": "13d38903a5dff2b4339f2eb5b2ea7a56bad9d9715a4fb2c5108864228e66edcc"
+    },
+    {
+      "name": "raw_policy_outcome:unseen-large-combination-s4003-51e32ae69891__B5_GNN_STATIC_V1.json",
+      "passed": true,
+      "evidence": "c7462a1feddb48a9f73ed434b708b2c8ff60625a41a2ca38eaef4fd72673f58c"
+    },
+    {
+      "name": "raw_policy_outcome:unseen-large-combination-s4003-51e32ae69891__B5_GNN_TEMPORAL_V1.json",
+      "passed": true,
+      "evidence": "94c6e5232c4a30d0adb369ff923b9cee39cde8359389ee0558f6927e42393a14"
+    },
+    {
+      "name": "raw_policy_outcome:unseen-large-combination-s4003-51e32ae69891__B5_RULE_V1.json",
+      "passed": true,
+      "evidence": "89d3583b28ba7f96d806e69df41a36789ecae7258af319447440b5920d601d52"
+    },
+    {
+      "name": "raw_policy_outcome:unseen-large-combination-s4003-51e32ae69891__B5_XGB_CF_V1.json",
+      "passed": true,
+      "evidence": "4c4de29309da436e90077b8af3e6a2896e17d0382231585069ef5dcc68a9302a"
+    },
+    {
+      "name": "raw_policy_outcome:unseen-large-combination-s4003-51e32ae69891__B5_XGB_NO_GRAPH_V1.json",
+      "passed": true,
+      "evidence": "6e80e0077fbac3ffed94fdf73b6f93930246f03e11d45d7bf33a4d663701010f"
+    },
+    {
+      "name": "raw_policy_outcome:unseen-large-combination-s4003-51e32ae69891__B5_XGB_V1.json",
+      "passed": true,
+      "evidence": "98bb9d86209af4d19458f80d295b3a24f6d2c1e236c5ed45bc85a5805dea5be6"
+    },
+    {
+      "name": "raw_policy_outcome:unseen-large-combination-s4004-cea1c250b3b8__B0.json",
+      "passed": true,
+      "evidence": "dd4aa46eeddc31c27922c90d9df96923551562247f7850468eff37f7558514f8"
+    },
+    {
+      "name": "raw_policy_outcome:unseen-large-combination-s4004-cea1c250b3b8__B1.json",
+      "passed": true,
+      "evidence": "faaade954b10a97e3fc3bba7539b9690a8f77ea1f4e9ea7e8a6d7d1ea7a9f05a"
+    },
+    {
+      "name": "raw_policy_outcome:unseen-large-combination-s4004-cea1c250b3b8__B2.json",
+      "passed": true,
+      "evidence": "cf469b7437d23ae1fafe4e6f61d7eecfcc72968bf442ad17556429adcabf1567"
+    },
+    {
+      "name": "raw_policy_outcome:unseen-large-combination-s4004-cea1c250b3b8__B3.json",
+      "passed": true,
+      "evidence": "0fa8a79d70859cc306dcc78b4d1aa0795c2877c580802a505c13a88000ef0383"
+    },
+    {
+      "name": "raw_policy_outcome:unseen-large-combination-s4004-cea1c250b3b8__B4.json",
+      "passed": true,
+      "evidence": "65744dcdf56584efcb6cdff397c0b01398787da38bd0d788c260058accdceafc"
+    },
+    {
+      "name": "raw_policy_outcome:unseen-large-combination-s4004-cea1c250b3b8__B5_GNN_STATIC_V1.json",
+      "passed": true,
+      "evidence": "4baa872e137e21646411241983c00632dda146a3c4fad157bbe417af4431e213"
+    },
+    {
+      "name": "raw_policy_outcome:unseen-large-combination-s4004-cea1c250b3b8__B5_GNN_TEMPORAL_V1.json",
+      "passed": true,
+      "evidence": "0413f1020f2dea2a2df62c7a9566dc37e33234de78b937d8d79c20efdc360d56"
+    },
+    {
+      "name": "raw_policy_outcome:unseen-large-combination-s4004-cea1c250b3b8__B5_RULE_V1.json",
+      "passed": true,
+      "evidence": "5704e35902fa2d73d3fd158179d87d1169bdc1cd48f5bbe5601ef0f41697ffd4"
+    },
+    {
+      "name": "raw_policy_outcome:unseen-large-combination-s4004-cea1c250b3b8__B5_XGB_CF_V1.json",
+      "passed": true,
+      "evidence": "f1f29f95937d4664cd95775334731d6e0b8b6b153021f6cfb1758d6c92798ec5"
+    },
+    {
+      "name": "raw_policy_outcome:unseen-large-combination-s4004-cea1c250b3b8__B5_XGB_NO_GRAPH_V1.json",
+      "passed": true,
+      "evidence": "24fdf36c86f174726fbd3dc01017268797f9ff053d529119ee1bddefcacb7865"
+    },
+    {
+      "name": "raw_policy_outcome:unseen-large-combination-s4004-cea1c250b3b8__B5_XGB_V1.json",
+      "passed": true,
+      "evidence": "913f2fda9b8c5bf39b579a2e319740458d39f57d4af7b3f8c91d300304cc9eae"
+    },
+    {
+      "name": "raw_policy_outcome:unseen-largest-contention-s4001-b69d658597d4__B0.json",
+      "passed": true,
+      "evidence": "f79f7f9049af9b4bc4d695f03668da37af7160a3a5ab5de426f7b3abc9b60bfa"
+    },
+    {
+      "name": "raw_policy_outcome:unseen-largest-contention-s4001-b69d658597d4__B1.json",
+      "passed": true,
+      "evidence": "f0a1e80e884a2b53994613686057db2191caa420f38ecf0f7b736438101a83b0"
+    },
+    {
+      "name": "raw_policy_outcome:unseen-largest-contention-s4001-b69d658597d4__B2.json",
+      "passed": true,
+      "evidence": "820e75eee5062e91dddc7dbc96931203b48d1e86de865f0c1d915f3c75bc880f"
+    },
+    {
+      "name": "raw_policy_outcome:unseen-largest-contention-s4001-b69d658597d4__B3.json",
+      "passed": true,
+      "evidence": "d1354338c1f89eaf148cb8588464544625a18dbf787cab2e5e52615b634749f3"
+    },
+    {
+      "name": "raw_policy_outcome:unseen-largest-contention-s4001-b69d658597d4__B4.json",
+      "passed": true,
+      "evidence": "3ab1b8e462596da071af5c757072476e496293815b9bab99df568938e8825833"
+    },
+    {
+      "name": "raw_policy_outcome:unseen-largest-contention-s4001-b69d658597d4__B5_GNN_STATIC_V1.json",
+      "passed": true,
+      "evidence": "3ca2ec19a7e12618ccb5138017854e1a8ea4cc5cdc694c9bb2307bb6f91398a5"
+    },
+    {
+      "name": "raw_policy_outcome:unseen-largest-contention-s4001-b69d658597d4__B5_GNN_TEMPORAL_V1.json",
+      "passed": true,
+      "evidence": "9f643738fe11a161e7e3ef40d3ee1a107db522f76884a672263ad29c5cafba83"
+    },
+    {
+      "name": "raw_policy_outcome:unseen-largest-contention-s4001-b69d658597d4__B5_RULE_V1.json",
+      "passed": true,
+      "evidence": "c674519f83f94f0de3f8f523ef0fbe21b1de26bc66d7e16eaaeed50052312bcd"
+    },
+    {
+      "name": "raw_policy_outcome:unseen-largest-contention-s4001-b69d658597d4__B5_XGB_CF_V1.json",
+      "passed": true,
+      "evidence": "ec6aa789cc9a872bfaf8793a268cd5f23ba5ab599c82e282e1d8bd5eb6ac184d"
+    },
+    {
+      "name": "raw_policy_outcome:unseen-largest-contention-s4001-b69d658597d4__B5_XGB_NO_GRAPH_V1.json",
+      "passed": true,
+      "evidence": "937ed8578424d215d234a38c8c39d4ea2da5d44214fd1c723bc0f3f7a73b9506"
+    },
+    {
+      "name": "raw_policy_outcome:unseen-largest-contention-s4001-b69d658597d4__B5_XGB_V1.json",
+      "passed": true,
+      "evidence": "fc8c5b1b125fe81d5f106aa9d7c16739b4deff8784f1b920f16d2d132525a127"
+    },
+    {
+      "name": "raw_policy_outcome:unseen-largest-contention-s4002-5575543faca9__B0.json",
+      "passed": true,
+      "evidence": "e30abf25b5c5f5747cf59f1234f89da7901d624fc582fabd4f9fd25f255e36fa"
+    },
+    {
+      "name": "raw_policy_outcome:unseen-largest-contention-s4002-5575543faca9__B1.json",
+      "passed": true,
+      "evidence": "6dd74be666470836dd72d4a2dea44e3f8072b6c5f774c3ae94d24b30f0aa00cb"
+    },
+    {
+      "name": "raw_policy_outcome:unseen-largest-contention-s4002-5575543faca9__B2.json",
+      "passed": true,
+      "evidence": "6ba6349ee8d32b4cefad05738034d41b3ff24ac20933b1f043a6cc5d2bb3b09d"
+    },
+    {
+      "name": "raw_policy_outcome:unseen-largest-contention-s4002-5575543faca9__B3.json",
+      "passed": true,
+      "evidence": "90f9cca7ba573661ef5f73d4f80f05cb4e8045cb5aa8bea4a90a4bdfe86aca30"
+    },
+    {
+      "name": "raw_policy_outcome:unseen-largest-contention-s4002-5575543faca9__B4.json",
+      "passed": true,
+      "evidence": "90f9c108b8953c2a7e2a2c943d70ad63ef074516c131c44331f7f9de758619aa"
+    },
+    {
+      "name": "raw_policy_outcome:unseen-largest-contention-s4002-5575543faca9__B5_GNN_STATIC_V1.json",
+      "passed": true,
+      "evidence": "d8c04dce67c708a4100f74157fe08501185c85e335730a884356792ec947e1fe"
+    },
+    {
+      "name": "raw_policy_outcome:unseen-largest-contention-s4002-5575543faca9__B5_GNN_TEMPORAL_V1.json",
+      "passed": true,
+      "evidence": "3871bf4c6bfd570d99e4b0376e07ec262d1de19785bec38b909ddde3385f44a3"
+    },
+    {
+      "name": "raw_policy_outcome:unseen-largest-contention-s4002-5575543faca9__B5_RULE_V1.json",
+      "passed": true,
+      "evidence": "99bc2f3e6d94b2dc68348427450491a3d77600eb8964971be094bba489006637"
+    },
+    {
+      "name": "raw_policy_outcome:unseen-largest-contention-s4002-5575543faca9__B5_XGB_CF_V1.json",
+      "passed": true,
+      "evidence": "76b4c574c95ae4078fc3f8e7b913f8057d6b87f7ab12f8cf7e631e4b6ed6464a"
+    },
+    {
+      "name": "raw_policy_outcome:unseen-largest-contention-s4002-5575543faca9__B5_XGB_NO_GRAPH_V1.json",
+      "passed": true,
+      "evidence": "9ee2ae73d07daa12912f03e6895fe5a886e9a8f48854912cde6b28a189a091ef"
+    },
+    {
+      "name": "raw_policy_outcome:unseen-largest-contention-s4002-5575543faca9__B5_XGB_V1.json",
+      "passed": true,
+      "evidence": "c93ed0d0b191be03f30a8bf742c9b9f8857242dfc2e15622636a0d0a3cbde00f"
+    },
+    {
+      "name": "raw_policy_outcome:unseen-largest-contention-s4003-6c7ef1840c7b__B0.json",
+      "passed": true,
+      "evidence": "48c8f4693f37592799e14dd5f1b6d99d17feed8cf60bf6b0cf542bfbbf8ca37b"
+    },
+    {
+      "name": "raw_policy_outcome:unseen-largest-contention-s4003-6c7ef1840c7b__B1.json",
+      "passed": true,
+      "evidence": "e121704ba1170abecac75c15e69993ba873848afde1b8e3f9dab5f9702511ea4"
+    },
+    {
+      "name": "raw_policy_outcome:unseen-largest-contention-s4003-6c7ef1840c7b__B2.json",
+      "passed": true,
+      "evidence": "009f01fe6cedf69407ccc8578dbecfd1a2f0f23e32bc81d6681913da1ef54627"
+    },
+    {
+      "name": "raw_policy_outcome:unseen-largest-contention-s4003-6c7ef1840c7b__B3.json",
+      "passed": true,
+      "evidence": "73946dddaef6753cccab8a2c7919c4c9a813e84cd05a82a130d8d0c7d55a713e"
+    },
+    {
+      "name": "raw_policy_outcome:unseen-largest-contention-s4003-6c7ef1840c7b__B4.json",
+      "passed": true,
+      "evidence": "34457445bd2c8650e646f4495c4ad8eed5e9880a5b4b24ad85e5f393b7145620"
+    },
+    {
+      "name": "raw_policy_outcome:unseen-largest-contention-s4003-6c7ef1840c7b__B5_GNN_STATIC_V1.json",
+      "passed": true,
+      "evidence": "c20357f15dd471e45a3a31f9608a9d4adbcb52ea3beb96350a6de77652c99f16"
+    },
+    {
+      "name": "raw_policy_outcome:unseen-largest-contention-s4003-6c7ef1840c7b__B5_GNN_TEMPORAL_V1.json",
+      "passed": true,
+      "evidence": "0d575bf1f156a66d6e50e669a5b264361bd2bab57aeda2d4947170ad1a95690a"
+    },
+    {
+      "name": "raw_policy_outcome:unseen-largest-contention-s4003-6c7ef1840c7b__B5_RULE_V1.json",
+      "passed": true,
+      "evidence": "ad3e6a760e3767c425c3065f22ecbc349198319957c95fc8e1a6f221e9e8025d"
+    },
+    {
+      "name": "raw_policy_outcome:unseen-largest-contention-s4003-6c7ef1840c7b__B5_XGB_CF_V1.json",
+      "passed": true,
+      "evidence": "bc77aa125b67e896591b95d0165cc590a33e126ef71cb8463d914b0976827199"
+    },
+    {
+      "name": "raw_policy_outcome:unseen-largest-contention-s4003-6c7ef1840c7b__B5_XGB_NO_GRAPH_V1.json",
+      "passed": true,
+      "evidence": "075bd2573c74671f4f8dc5c7230805f5f4a9ab815936429f64676394ab857587"
+    },
+    {
+      "name": "raw_policy_outcome:unseen-largest-contention-s4003-6c7ef1840c7b__B5_XGB_V1.json",
+      "passed": true,
+      "evidence": "dfea5d10ed995eba34510db87216b1c65eaa59d3a23043e3b00e3634066bf0f2"
+    },
+    {
+      "name": "raw_policy_outcome:unseen-largest-contention-s4004-a89beee89862__B0.json",
+      "passed": true,
+      "evidence": "0d9b5d53df8f899e513c92435fb86f5d8b957125cb119ac57379164c24df320a"
+    },
+    {
+      "name": "raw_policy_outcome:unseen-largest-contention-s4004-a89beee89862__B1.json",
+      "passed": true,
+      "evidence": "ca44b2a2d40101a35eec4c572f0f3a64e7038ab4b2c6b4e5c186276e6d182aaf"
+    },
+    {
+      "name": "raw_policy_outcome:unseen-largest-contention-s4004-a89beee89862__B2.json",
+      "passed": true,
+      "evidence": "7fc3a0d66b659c85e95f4c809b97aad72921575cb1d74da6087807ce577871c6"
+    },
+    {
+      "name": "raw_policy_outcome:unseen-largest-contention-s4004-a89beee89862__B3.json",
+      "passed": true,
+      "evidence": "ba1806e69a978417ea05d1a74cccde1e72a23df45b1fe306a75abab8b0b9b2dd"
+    },
+    {
+      "name": "raw_policy_outcome:unseen-largest-contention-s4004-a89beee89862__B4.json",
+      "passed": true,
+      "evidence": "2cdcc5bc8396992e46f9dadc38c56547182d8b3359f859cd4879245382d71636"
+    },
+    {
+      "name": "raw_policy_outcome:unseen-largest-contention-s4004-a89beee89862__B5_GNN_STATIC_V1.json",
+      "passed": true,
+      "evidence": "a4ed1b6df7694cccf3d653afb79ae84a09b1b7c2039078cb608dd195e2a690f9"
+    },
+    {
+      "name": "raw_policy_outcome:unseen-largest-contention-s4004-a89beee89862__B5_GNN_TEMPORAL_V1.json",
+      "passed": true,
+      "evidence": "533725aa4980df9e13c4d18f5cd210b21cd1cbc775fcf3b8db57a78b97d76aef"
+    },
+    {
+      "name": "raw_policy_outcome:unseen-largest-contention-s4004-a89beee89862__B5_RULE_V1.json",
+      "passed": true,
+      "evidence": "738556c092844cf56db403d09f97d5ec883bc529f9ad1f20f6251a11c1fc0ab7"
+    },
+    {
+      "name": "raw_policy_outcome:unseen-largest-contention-s4004-a89beee89862__B5_XGB_CF_V1.json",
+      "passed": true,
+      "evidence": "cb4925366b05576b9b691d1d2e7c9ee134851d2d9c175bf1d2642f370e2a6a7f"
+    },
+    {
+      "name": "raw_policy_outcome:unseen-largest-contention-s4004-a89beee89862__B5_XGB_NO_GRAPH_V1.json",
+      "passed": true,
+      "evidence": "050329723af6075ec4989228c49dbcf10e5f2c63bf3cc19a31a1f9df5d6c6d0e"
+    },
+    {
+      "name": "raw_policy_outcome:unseen-largest-contention-s4004-a89beee89862__B5_XGB_V1.json",
+      "passed": true,
+      "evidence": "1ef9080f686011793e4d944bb569abd7b18c984d71392745054d5da4cb7bcf2b"
+    },
+    {
+      "name": "raw_policy_outcome:weather-slowdown-s4001-ef4cca560b7c__B0.json",
+      "passed": true,
+      "evidence": "5e77227ee672912d040dd8fc12ca6673337a126e6baca2b4fa123d7f68459e1d"
+    },
+    {
+      "name": "raw_policy_outcome:weather-slowdown-s4001-ef4cca560b7c__B1.json",
+      "passed": true,
+      "evidence": "7322bd1deac4ed5404810e9d992655edab747a4d13dcfa7b7675d749c1afe282"
+    },
+    {
+      "name": "raw_policy_outcome:weather-slowdown-s4001-ef4cca560b7c__B2.json",
+      "passed": true,
+      "evidence": "1909d8ccdf38d71dbd0e7e57a4babcfc9332e540430121f1039e239a3f210c56"
+    },
+    {
+      "name": "raw_policy_outcome:weather-slowdown-s4001-ef4cca560b7c__B3.json",
+      "passed": true,
+      "evidence": "bc5fbbd61cb5c105c287c070656121371a44b9921de69d9042773a0a219f3055"
+    },
+    {
+      "name": "raw_policy_outcome:weather-slowdown-s4001-ef4cca560b7c__B4.json",
+      "passed": true,
+      "evidence": "52d9613eb403c96ee5c10f17858454e7209d9de59015d540eff1bdab4b09c9dc"
+    },
+    {
+      "name": "raw_policy_outcome:weather-slowdown-s4001-ef4cca560b7c__B5_GNN_STATIC_V1.json",
+      "passed": true,
+      "evidence": "a8dd78383a84c4879c1677058f29fa29cf0536869bc5ae7b03738bab4c4edb21"
+    },
+    {
+      "name": "raw_policy_outcome:weather-slowdown-s4001-ef4cca560b7c__B5_GNN_TEMPORAL_V1.json",
+      "passed": true,
+      "evidence": "2ba619c13bf543f7e220a753a1fcad5a81db99ad352184521daa96491806c016"
+    },
+    {
+      "name": "raw_policy_outcome:weather-slowdown-s4001-ef4cca560b7c__B5_RULE_V1.json",
+      "passed": true,
+      "evidence": "e1795e07a69648ca1426a6680ae47039a8afda08e3e9d4d5762d3fb1f9e068c3"
+    },
+    {
+      "name": "raw_policy_outcome:weather-slowdown-s4001-ef4cca560b7c__B5_XGB_CF_V1.json",
+      "passed": true,
+      "evidence": "73f68ec0af3463f55b3cf6d3a1748e19d8c137f3679edcb78ac99db584fcc317"
+    },
+    {
+      "name": "raw_policy_outcome:weather-slowdown-s4001-ef4cca560b7c__B5_XGB_NO_GRAPH_V1.json",
+      "passed": true,
+      "evidence": "7953c8a48d14ede5581567fec9b8076fb16d071a4978119d7e914f10f78b4380"
+    },
+    {
+      "name": "raw_policy_outcome:weather-slowdown-s4001-ef4cca560b7c__B5_XGB_V1.json",
+      "passed": true,
+      "evidence": "4f583f7bad2de443a2b9f75e8985e98fbbb7e0f71e0238463eb08d65d2f36232"
+    },
+    {
+      "name": "raw_policy_outcome:weather-slowdown-s4002-d8f52cd2bbdd__B0.json",
+      "passed": true,
+      "evidence": "f1e320a40df5f9d9e5f79b4a2d5c7be73c1a87e3c05c4f112f7c3032b7595472"
+    },
+    {
+      "name": "raw_policy_outcome:weather-slowdown-s4002-d8f52cd2bbdd__B1.json",
+      "passed": true,
+      "evidence": "ef5d9d9fdf4eca443fb04c07da450eef352b84276284332d30d470fcb1f9c144"
+    },
+    {
+      "name": "raw_policy_outcome:weather-slowdown-s4002-d8f52cd2bbdd__B2.json",
+      "passed": true,
+      "evidence": "ad80bab55b534ab16fcb4355e1515c5bbcec782b88b3b23bad942cb1c32f8ec0"
+    },
+    {
+      "name": "raw_policy_outcome:weather-slowdown-s4002-d8f52cd2bbdd__B3.json",
+      "passed": true,
+      "evidence": "52a61cec27606502b0ca69e9bbf5b4885fada31a5596d095e7e51ac45e70049d"
+    },
+    {
+      "name": "raw_policy_outcome:weather-slowdown-s4002-d8f52cd2bbdd__B4.json",
+      "passed": true,
+      "evidence": "9495b5fe3380870b26e999419bca504217c143ee8a451a6bbafb4dc210c37758"
+    },
+    {
+      "name": "raw_policy_outcome:weather-slowdown-s4002-d8f52cd2bbdd__B5_GNN_STATIC_V1.json",
+      "passed": true,
+      "evidence": "d4c3daff71de68105f1fdeafc3919e78a12e7d9b3a84c1b054559f86442a295f"
+    },
+    {
+      "name": "raw_policy_outcome:weather-slowdown-s4002-d8f52cd2bbdd__B5_GNN_TEMPORAL_V1.json",
+      "passed": true,
+      "evidence": "bd94315951131ebfe8ff515984cc51f639147b22c883bf81f23d994e3f080200"
+    },
+    {
+      "name": "raw_policy_outcome:weather-slowdown-s4002-d8f52cd2bbdd__B5_RULE_V1.json",
+      "passed": true,
+      "evidence": "6335e726c3a496c8aaa784b0420ab01f9ca10025dbaff4bbc72358ca04dc4356"
+    },
+    {
+      "name": "raw_policy_outcome:weather-slowdown-s4002-d8f52cd2bbdd__B5_XGB_CF_V1.json",
+      "passed": true,
+      "evidence": "0b0c641ded8f3732789b1283694b04c8adfb99502db24659ffd31033b5185fc8"
+    },
+    {
+      "name": "raw_policy_outcome:weather-slowdown-s4002-d8f52cd2bbdd__B5_XGB_NO_GRAPH_V1.json",
+      "passed": true,
+      "evidence": "aaa3f5f9bb0cf292f97acbd2b83669d1729bddb976043272f1b70e5c12cc2a8a"
+    },
+    {
+      "name": "raw_policy_outcome:weather-slowdown-s4002-d8f52cd2bbdd__B5_XGB_V1.json",
+      "passed": true,
+      "evidence": "02955c11dd245b42340bbaab2e0fc69b7e88efe8a363bd0a99a1931c1aecc39e"
+    },
+    {
+      "name": "raw_policy_outcome:weather-slowdown-s4003-06d6229acd62__B0.json",
+      "passed": true,
+      "evidence": "373fd94363bef04e142ea9b31988fc6c8bfe85234a1d7a800b6a9330d934c7c7"
+    },
+    {
+      "name": "raw_policy_outcome:weather-slowdown-s4003-06d6229acd62__B1.json",
+      "passed": true,
+      "evidence": "746616e39bdfc080b66907f102058036e55f86e57540a9d04339cb4059c7f751"
+    },
+    {
+      "name": "raw_policy_outcome:weather-slowdown-s4003-06d6229acd62__B2.json",
+      "passed": true,
+      "evidence": "afe510510b049c4771f72c5ec6d2f6ec881355c492e85324f242edc3bc682f3f"
+    },
+    {
+      "name": "raw_policy_outcome:weather-slowdown-s4003-06d6229acd62__B3.json",
+      "passed": true,
+      "evidence": "a6bbe13279cffce51cd09c61c1e54f75580f913bc27df1f6b877e9bb8200216a"
+    },
+    {
+      "name": "raw_policy_outcome:weather-slowdown-s4003-06d6229acd62__B4.json",
+      "passed": true,
+      "evidence": "edf398c4dd98ebb0fd0e0a22c3572b448f8a5ac909103116b84fcfe4c5fcab6a"
+    },
+    {
+      "name": "raw_policy_outcome:weather-slowdown-s4003-06d6229acd62__B5_GNN_STATIC_V1.json",
+      "passed": true,
+      "evidence": "5fb4f7679d6c23736e8b4ab6f382456624c64c8f0dd392cda2e038ccaf40078b"
+    },
+    {
+      "name": "raw_policy_outcome:weather-slowdown-s4003-06d6229acd62__B5_GNN_TEMPORAL_V1.json",
+      "passed": true,
+      "evidence": "fedefa015a059e5859d4ea8466110ad8d1baeea4ed7138abcad8d596e4bce4f1"
+    },
+    {
+      "name": "raw_policy_outcome:weather-slowdown-s4003-06d6229acd62__B5_RULE_V1.json",
+      "passed": true,
+      "evidence": "28f8ad289e12e56f39917e4b17a9a5d079fccd524af9191fe3ca00d56a1d4a5e"
+    },
+    {
+      "name": "raw_policy_outcome:weather-slowdown-s4003-06d6229acd62__B5_XGB_CF_V1.json",
+      "passed": true,
+      "evidence": "6e299a033f78e9bec64461260bc150d946d5a7859b0bb93e08b90c22b87b3c3d"
+    },
+    {
+      "name": "raw_policy_outcome:weather-slowdown-s4003-06d6229acd62__B5_XGB_NO_GRAPH_V1.json",
+      "passed": true,
+      "evidence": "db163519351475eb7add4f30a4a0cb6e35b1deecb2ee3468a67439705c7704d3"
+    },
+    {
+      "name": "raw_policy_outcome:weather-slowdown-s4003-06d6229acd62__B5_XGB_V1.json",
+      "passed": true,
+      "evidence": "1e051e0167f7dbe5d7ccb3091feef59d874d025703a6746001edbc2dd52e4b0e"
+    },
+    {
+      "name": "raw_policy_outcome:weather-slowdown-s4004-d3b1e1550ea4__B0.json",
+      "passed": true,
+      "evidence": "76dbe0d3116f3429a767275cea7f36850e64450d2d97d72011eb14fb0bbb152e"
+    },
+    {
+      "name": "raw_policy_outcome:weather-slowdown-s4004-d3b1e1550ea4__B1.json",
+      "passed": true,
+      "evidence": "7e605799c4132944011ef37469794e8bd47fc90b2e55fec6af4d6daceb8c6c74"
+    },
+    {
+      "name": "raw_policy_outcome:weather-slowdown-s4004-d3b1e1550ea4__B2.json",
+      "passed": true,
+      "evidence": "9c9e8778d1174e306448f51674ab8a67d7ac71013711a518e805766141d84c4b"
+    },
+    {
+      "name": "raw_policy_outcome:weather-slowdown-s4004-d3b1e1550ea4__B3.json",
+      "passed": true,
+      "evidence": "22caa08a7f5747af30a2bf16008fbedc537bb288f6e19aab45e77fb01c7fda38"
+    },
+    {
+      "name": "raw_policy_outcome:weather-slowdown-s4004-d3b1e1550ea4__B4.json",
+      "passed": true,
+      "evidence": "46b7bc55edf17fb0d83aee22c93b3cbc384cad84ca7c0f6a7d74264d85854270"
+    },
+    {
+      "name": "raw_policy_outcome:weather-slowdown-s4004-d3b1e1550ea4__B5_GNN_STATIC_V1.json",
+      "passed": true,
+      "evidence": "01e25f1909e385511232929380f79a0751183b603d477ca6a1ef26d1796ed626"
+    },
+    {
+      "name": "raw_policy_outcome:weather-slowdown-s4004-d3b1e1550ea4__B5_GNN_TEMPORAL_V1.json",
+      "passed": true,
+      "evidence": "4e8844ad40cebb899d2b0b7370a157a448a768b20732111a0a6813d2dfdee8c5"
+    },
+    {
+      "name": "raw_policy_outcome:weather-slowdown-s4004-d3b1e1550ea4__B5_RULE_V1.json",
+      "passed": true,
+      "evidence": "7356023c5a4cf41c0a305d2a9076094ead1e59b634f795032b59f6468c5ac2a1"
+    },
+    {
+      "name": "raw_policy_outcome:weather-slowdown-s4004-d3b1e1550ea4__B5_XGB_CF_V1.json",
+      "passed": true,
+      "evidence": "de4e8790c437c27a787ab9aaec106db428466eaab68713dbe97895ed7b077460"
+    },
+    {
+      "name": "raw_policy_outcome:weather-slowdown-s4004-d3b1e1550ea4__B5_XGB_NO_GRAPH_V1.json",
+      "passed": true,
+      "evidence": "80043a7999e693f0d8f2fe4eea963d6780c0a21bafa456131ece1710f00eeadf"
+    },
+    {
+      "name": "raw_policy_outcome:weather-slowdown-s4004-d3b1e1550ea4__B5_XGB_V1.json",
+      "passed": true,
+      "evidence": "7bf0dbb42601d20909fbf35018a0b83df8d5d032ce3d2932e5de355faeef1410"
+    },
+    {
+      "name": "executed_source_or_class:ml/__init__.py",
+      "passed": true,
+      "evidence": "04ad884d4f7dc68a10147bad9c50836c3ade52859ef0d508e59ebecec2aaa827"
+    },
+    {
+      "name": "executed_source_or_class:ml/data.py",
+      "passed": true,
+      "evidence": "80ae12394c57c147f1ef711855b7f4481b41b4aac8f309ab978be3b54ecc6a1d"
+    },
+    {
+      "name": "executed_source_or_class:ml/evaluation.py",
+      "passed": true,
+      "evidence": "9b5eaaef4f08d7f81c259161ee5f6ab93e616f75bb53a97af0ca9e5d6244e075"
+    },
+    {
+      "name": "executed_source_or_class:ml/features.py",
+      "passed": true,
+      "evidence": "94f3495cfeafa88f36c691560e4653f8c860bd70f19f9c51365f3bbaeaa40a65"
+    },
+    {
+      "name": "executed_source_or_class:ml/gnn.py",
+      "passed": true,
+      "evidence": "432a585a0ba58115b38aed4e76be6de268b6eafefe639daa48f6a287aebe648a"
+    },
+    {
+      "name": "executed_source_or_class:ml/inference.py",
+      "passed": true,
+      "evidence": "6746508db0919ebe2699a67cb3c9ecad874942404e5a49285fe49cd1d02c4993"
+    },
+    {
+      "name": "executed_source_or_class:ml/metrics.py",
+      "passed": true,
+      "evidence": "d343326ff9ca86b6aa0324602974c29cf2bfa5aeee07f387ffb1163831b0deda"
+    },
+    {
+      "name": "executed_source_or_class:ml/service.py",
+      "passed": true,
+      "evidence": "2838b8c275b6faa2421e06f62d883a1a1e4871a7868973b4d46d669d7967c95a"
+    },
+    {
+      "name": "executed_source_or_class:ml/training.py",
+      "passed": true,
+      "evidence": "fd40211142b377d73c71bd23a887329be0c80e49f579d544aff8264e2625ef9f"
+    },
+    {
+      "name": "executed_source_or_class:scripts/run_frozen_milestone4_policies.py",
+      "passed": true,
+      "evidence": "7ad7434fca4e5a94b4bd9390126b36c5ce6b233e51f9f4f9768987debe73b605"
+    },
+    {
+      "name": "executed_source_or_class:scripts/run_milestone4_experiments.py",
+      "passed": true,
+      "evidence": "09596fbb8a74b6f291fe52c12267fb37a60e9baf2f96e387b3c4c443369677a7"
+    },
+    {
+      "name": "executed_source_or_class:scripts/run_milestone4_java.sh",
+      "passed": true,
+      "evidence": "711a564d35def9204d1eb88c551215d83963c8082e90717e8234d3fb8c162224"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/pom.xml",
+      "passed": true,
+      "evidence": "20d07227e5096f01133eb41b4358f0e9c098edcc59a58a12a646cd3d2935985b"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/src/main/java/io/cascadeshield/sim/AiArchitecture.java",
+      "passed": true,
+      "evidence": "afb055adeb7a8fdfe01e8fb415f0ad96b87033e4cc8e061e78ae25219f73e3a0"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/src/main/java/io/cascadeshield/sim/AiFallbackPipeline.java",
+      "passed": true,
+      "evidence": "a9f39149cabdbdaefd7dc81432ebb9664cd358525aeb7aeba1fecd8b23f5c210"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/src/main/java/io/cascadeshield/sim/AiModels.java",
+      "passed": true,
+      "evidence": "c9bcbfa73eff9a7352cb277c296f5f56327a23ffde8caf9c0f9d72b4abe74591"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/src/main/java/io/cascadeshield/sim/ApiException.java",
+      "passed": true,
+      "evidence": "24c68273e4a336bf46acc7b3ef96c404502e30ffe640a7bf174988c2ee1a6de0"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/src/main/java/io/cascadeshield/sim/BenchmarkController.java",
+      "passed": true,
+      "evidence": "95fb7c7502f848de2779578ee3cfa163a5107e37221191ca2147c732a9e744bd"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/src/main/java/io/cascadeshield/sim/BenchmarkModels.java",
+      "passed": true,
+      "evidence": "2b94a674e83b28db516c7bb1f5b9cfaa8231d2f350f316c2e5d257c37f443621"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/src/main/java/io/cascadeshield/sim/BenchmarkPolicyRunner.java",
+      "passed": true,
+      "evidence": "a1087dad954a093d1a8360c920077deacd9650751d73e504c7c65dc5a2dea435"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/src/main/java/io/cascadeshield/sim/BenchmarkRepository.java",
+      "passed": true,
+      "evidence": "a364c177877993f2b70bfcfdd9825f7e369144f71cfde86a2d6df9fa19d93a99"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/src/main/java/io/cascadeshield/sim/BenchmarkScenarioGenerator.java",
+      "passed": true,
+      "evidence": "7ce6c7c3fc3963c5fc370a85efbc5a51e19a12304a062b38f560fafa268d1d3b"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/src/main/java/io/cascadeshield/sim/BenchmarkService.java",
+      "passed": true,
+      "evidence": "1855efd10fdc3978b734ea43863f05bb90ed9d3c5cebccf7c612046a40b4610f"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/src/main/java/io/cascadeshield/sim/CounterfactualExperimentEngine.java",
+      "passed": true,
+      "evidence": "a607d795b09941d15d43625865c2a33d05cc66b23117e653b652f237d673fccc"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/src/main/java/io/cascadeshield/sim/ExperimentActions.java",
+      "passed": true,
+      "evidence": "9dfc95cbfab5767b7ebd089604393743d7238c56a717f4e2e30664db97cc5dcd"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/src/main/java/io/cascadeshield/sim/ExperimentMetrics.java",
+      "passed": true,
+      "evidence": "fa495f84ace251b13e0181dc609612e8fae933bf1efa3ae4ae9d3c69bd37236e"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/src/main/java/io/cascadeshield/sim/GraphRiskBaseline.java",
+      "passed": true,
+      "evidence": "b759038c7b43e775eff795b2349893cb2154bf950eb41677fb115c717dd13ef4"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/src/main/java/io/cascadeshield/sim/GraphSnapshotExporter.java",
+      "passed": true,
+      "evidence": "67c61753d4d4cf891c623a3ee7d808c9472180587d0010c6ba536b082bede141"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/src/main/java/io/cascadeshield/sim/MlController.java",
+      "passed": true,
+      "evidence": "f877bda670a1b9f78ef7d4ff405914de68bc63418af22b98909a6e52f2f42313"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/src/main/java/io/cascadeshield/sim/MlCorpusCli.java",
+      "passed": true,
+      "evidence": "c1cad3fa58f5fa120ef61d298a073888506c15fee050f3092c0d8bb6da2c60c5"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/src/main/java/io/cascadeshield/sim/MlExperimentProtocol.java",
+      "passed": true,
+      "evidence": "ec99da8a7c8eed0abeca5cee988fecbc7e82070708b544e4a140437e659d8aaa"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/src/main/java/io/cascadeshield/sim/MlFeatureExtractor.java",
+      "passed": true,
+      "evidence": "476d1b9d1052b9b78d9dc352e49c193de2d0fe20710bda31862bfb11503077d2"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/src/main/java/io/cascadeshield/sim/MlInferenceClient.java",
+      "passed": true,
+      "evidence": "ca97683ce20292d7d4271f97b082c4acbaaeaddd70353abec416b5d62ae2396d"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/src/main/java/io/cascadeshield/sim/MlModels.java",
+      "passed": true,
+      "evidence": "6da25a9d6c5a80ee2e5ea7253d1af5e473e6ae6be4eb5841c3f873e46f8416ce"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/src/main/java/io/cascadeshield/sim/MlOperatorAdvisor.java",
+      "passed": true,
+      "evidence": "93117a265b12c94f2382d464790f99890d5bbd4d13e827456b64745519771325"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/src/main/java/io/cascadeshield/sim/MlPolicyCli.java",
+      "passed": true,
+      "evidence": "2839154340f9bb698312e83859586db15250c011af09f8b20c339fbf3323a6cf"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/src/main/java/io/cascadeshield/sim/MlPolicyRunner.java",
+      "passed": true,
+      "evidence": "841b076588644e172ab4c06f4e4a05406061cf6d877ee9d0803d5ecd7f795966"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/src/main/java/io/cascadeshield/sim/Models.java",
+      "passed": true,
+      "evidence": "b75024c8b93099921ce2b1ce0dabf7d3260f0e0dafba1855ff3f290590ab6a5e"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/src/main/java/io/cascadeshield/sim/OperationalDependencyGraph.java",
+      "passed": true,
+      "evidence": "38d0ec30b71163e691369daf0b19e169c9421e560b320fcdd881c3b1739292ac"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/src/main/java/io/cascadeshield/sim/OperationalRuntime.java",
+      "passed": true,
+      "evidence": "1026eb7d9e730e0325c5eeb120915edb2ab8bf68bc5bfdc2a68d036f35b652ec"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/src/main/java/io/cascadeshield/sim/OperatorApprovalGuard.java",
+      "passed": true,
+      "evidence": "d14d1f56ddb97652e8b6cf8df63e69f3e7e49365c3f49f26065aff24c901b2b0"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/src/main/java/io/cascadeshield/sim/OpsModels.java",
+      "passed": true,
+      "evidence": "1f17899840a951f14db04adbc0ad3c1b098ef06b09886b61d7a5d64dc7929216"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/src/main/java/io/cascadeshield/sim/PredictionService.java",
+      "passed": true,
+      "evidence": "60f54a63e3ca036843011e183c317095cb28dbdf551a0cdef23f41d6a1398ea2"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/src/main/java/io/cascadeshield/sim/PreventionService.java",
+      "passed": true,
+      "evidence": "da069d41b4c1d7f65c07a766331ac2c2982b33bdd9836c8239e23e3159942e30"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/src/main/java/io/cascadeshield/sim/RoadGraph.java",
+      "passed": true,
+      "evidence": "840d1db02bae92092663001d6f8d2824f480057248d5f84d5ef9ef832239ebf7"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/src/main/java/io/cascadeshield/sim/RuleBasedPredictionService.java",
+      "passed": true,
+      "evidence": "aaa13e5ac5437306555c3087d895c0a5084220914bcc7c7083141f2ba905e90c"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/src/main/java/io/cascadeshield/sim/RuleBasedPreventionService.java",
+      "passed": true,
+      "evidence": "134865d7180f6d1cdcf2dc1e99ce7509ecf5d7d3a65ccda90651df9803bf368e"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/src/main/java/io/cascadeshield/sim/SimulationEngine.java",
+      "passed": true,
+      "evidence": "b1412f24ccaa2cc2e7ef20e289a83852ef91450ca80023cdc40eb2ccd971150a"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/src/main/java/io/cascadeshield/sim/SimulationRepository.java",
+      "passed": true,
+      "evidence": "a7ba719da32cbb787ee5f5c272b681e053f330a3328a0c4a33d1a38d91956798"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/src/main/java/io/cascadeshield/sim/SimulationService.java",
+      "passed": true,
+      "evidence": "5d6c4e3a3db4f1f4cd017dc86f0f337e6fef77efc33ed56266ec8bebf315319a"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/src/main/java/io/cascadeshield/sim/SimulatorApplication.java",
+      "passed": true,
+      "evidence": "eed80cf9cd8f36ac9fe28aa64b5e96be46a3ba0617a18f77cd7c39232d872e5c"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/src/main/java/io/cascadeshield/sim/SimulatorController.java",
+      "passed": true,
+      "evidence": "79295d91a4d65711c513db20b1f010597025ce7ee6e1175fd8671fc47c0e9c21"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/AiArchitecture$ActionOptimizer.class",
+      "passed": true,
+      "evidence": "986b20c693cd62fa2762f97a1bda3a6dd26eb0ae857578efd091dbd8f94ed8d3"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/AiArchitecture$CandidateActionGenerator.class",
+      "passed": true,
+      "evidence": "6e87b2285ffc268554afcf016176c0f92d7cef2278653c427957c02c9fcf6d1a"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/AiArchitecture$ConstraintValidator.class",
+      "passed": true,
+      "evidence": "ff00e1d2472c9d5f6e7433f87f105aedb8f5e785c06ab58cdfe2fdcfe348c127"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/AiArchitecture$CounterfactualEvaluator.class",
+      "passed": true,
+      "evidence": "651b829e94decaeb8155b8933f6af364c9ac9f0d37fd8a1e3771205c163425e6"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/AiArchitecture$DecisionExplainer.class",
+      "passed": true,
+      "evidence": "a24c896fc06b4f74c0e6b76f5beeda8bc1faee30a65f25f0a76721a07cc2b03b"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/AiArchitecture$GraphRiskProvider.class",
+      "passed": true,
+      "evidence": "bdda083b15d25440fbc714a22b1396c8e76e36d4c49fddfb8f7135d87e941def"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/AiArchitecture$PredictionProvider.class",
+      "passed": true,
+      "evidence": "4197c401a20b803da1f29a244ba5c18af8abb7658ad9cba89a5fc8a39b1c90ec"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/AiArchitecture.class",
+      "passed": true,
+      "evidence": "256fa53aef31601737d34a31aa75b593779890db82a1dfea06c1e605f139ef5e"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/AiFallbackPipeline$Trial.class",
+      "passed": true,
+      "evidence": "8fa043a82cc1fea76d571ae983879048ce64a705fe7f4cd0d328ca5ce487b15d"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/AiFallbackPipeline.class",
+      "passed": true,
+      "evidence": "c58052dcc324f858550fb4f33947c7d564617a38e23e90b229fb0d1f6f5df806"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/AiModels$CandidateAction.class",
+      "passed": true,
+      "evidence": "63870397ed930c369dce16a559a5d8b98d3b90afb43fa5bd87317889cc4e7e6b"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/AiModels$CandidateBatch.class",
+      "passed": true,
+      "evidence": "274b54600dafeadfe8903bff6569362f7b9cf8d8e3c1eb09e27c0a566eb8e910"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/AiModels$ConstraintViolation.class",
+      "passed": true,
+      "evidence": "83b07aefc8765235e88d495f01dad18198cd1cc731f540f7287b7ddb0d67f78f"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/AiModels$Context.class",
+      "passed": true,
+      "evidence": "5fdd68e837f2c66854a91aea0939f014ca2313648d2b1fb9e85653ef7e663f72"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/AiModels$Evaluation.class",
+      "passed": true,
+      "evidence": "09722afa6d764faa0593d17e3e895ae91489ec3feb56eb05a42574bd30654502"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/AiModels$Explanation.class",
+      "passed": true,
+      "evidence": "380cb7909a4dbf50200b9a054d52add6d4d6d34107ccdd1dd01b9b740292de25"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/AiModels$PredictionBatch.class",
+      "passed": true,
+      "evidence": "ee3656dc37d52a9399155fa804ef0df0ece349d450e11be0930779d81cf79811"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/AiModels$RecommendationResult.class",
+      "passed": true,
+      "evidence": "b0da222f16de19cd8cc32e2942286a29366fffc913a5f751759e9baad4d3c9b1"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/AiModels$Source.class",
+      "passed": true,
+      "evidence": "ade7b975afbfcba07b26f9f02b9c2e7c1094792bbeabd58137eb910e119bc1ca"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/AiModels$TruckPrediction.class",
+      "passed": true,
+      "evidence": "7856704ab5d11c79d017d00f1c0a90b472cf6f98941c87efd54c1256cad59fb1"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/AiModels$ValidationResult.class",
+      "passed": true,
+      "evidence": "8532d09451c75b607a8d2187100fd0b6cbb40cf9fc8468fee9a5421f71c02220"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/AiModels.class",
+      "passed": true,
+      "evidence": "1a9aa596082e4857d963946148d03104e7735f4ac0403445b8e2d26945f85cb3"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/ApiException.class",
+      "passed": true,
+      "evidence": "a338f58d0123b0da9e6593d288c338c5e4e07248c5f83849a9a83874d01af215"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/BenchmarkController.class",
+      "passed": true,
+      "evidence": "dee91fdf3d2c873117b32f2bb8166262c445351ac0195005618cb59f7271056f"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/BenchmarkModels$Action.class",
+      "passed": true,
+      "evidence": "24eab4ddbf088934cde00797778cdac05ed8974c8b555b4017d79f01148f02f4"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/BenchmarkModels$ActionType.class",
+      "passed": true,
+      "evidence": "71db147a179ac2637a40b175349afb8df28964cf9e754d6f47c3ebe00d915995"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/BenchmarkModels$ComparisonRequest.class",
+      "passed": true,
+      "evidence": "937cd2fa6902add339291beee46b561b308e9823118586510e2d5eaf794cce21"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/BenchmarkModels$ComparisonResult.class",
+      "passed": true,
+      "evidence": "c354cfeea9d578d195d4d3b038d8f1ba3db9db5f6039a46de6b53fa5b8cf4187"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/BenchmarkModels$DecisionTrace.class",
+      "passed": true,
+      "evidence": "bc8fa5243b3bdd57e19430e768ae50f62114e675941330e2eb28b7568115b32f"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/BenchmarkModels$Metrics.class",
+      "passed": true,
+      "evidence": "1e6cff4dcb6760b117fff56314e8fa12517c04f523acbb2130e8f3d4224457fe"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/BenchmarkModels$PolicyRun.class",
+      "passed": true,
+      "evidence": "1f369c8ced74ddcc0e2ff18c105381c56058fb73f754040ddc62c1c9ed497cd9"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/BenchmarkModels$PolicySpec.class",
+      "passed": true,
+      "evidence": "6dd6f5ee6089cb39b9917f332f3ed187e4123ab91b86fa560790ca31e2bea09f"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/BenchmarkModels$Rollout.class",
+      "passed": true,
+      "evidence": "dabd9fd55fea83abef05d65a5be1d04236ecab00d39f238a4f41cb6cc3b27955"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/BenchmarkModels$ScenarioSpec.class",
+      "passed": true,
+      "evidence": "c244bb0a9958817d1fb3ff6a641eeced72d5221a3c65b60be01fef2ba98ba29f"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/BenchmarkModels$ScoredAlternative.class",
+      "passed": true,
+      "evidence": "6e412bbd7efdf7d3641999e92e30b2bd758cd7310694f1d6e654a2e9a486362c"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/BenchmarkModels$Violation.class",
+      "passed": true,
+      "evidence": "b3702185b30926cd8e4c1f44bc7ac49eb8c6396dae10a0b9c5251f9a3ef51d5f"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/BenchmarkModels.class",
+      "passed": true,
+      "evidence": "43565ab3953d96adf8e84e82e3cd33b007cb4cb475a119288a16ac74b9b51aa2"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/BenchmarkPolicyRunner$1H.class",
+      "passed": true,
+      "evidence": "de58dde770b597af97f62c1b2b3f95a91372a5951fd7b7435af2c565317f6acf"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/BenchmarkPolicyRunner$Selection.class",
+      "passed": true,
+      "evidence": "cd193ec705b40de45349d20c8d59a9797cba5e644946f157db61e218abf415bf"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/BenchmarkPolicyRunner.class",
+      "passed": true,
+      "evidence": "010eae8a904f69ab148a4f1bcaa79833d4453b8516a2642c4f7fba65899963a5"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/BenchmarkRepository.class",
+      "passed": true,
+      "evidence": "c097c55151ae8cb7e7855c073e80c8b59f1af019cecac588f3a9ff0ad8ba69e1"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/BenchmarkScenarioGenerator$Pair.class",
+      "passed": true,
+      "evidence": "8d0d976bff99df2cac96b183554c3a8da97b476c81610785965adb3354159899"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/BenchmarkScenarioGenerator$Trip.class",
+      "passed": true,
+      "evidence": "a0f3e2ee4290264550e708b52d1000c62cfadebf23d92d153f63034922e40d3d"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/BenchmarkScenarioGenerator.class",
+      "passed": true,
+      "evidence": "413f7db2940fbc575e8999e5857f838a4d353ef3d6c5a9f3d5a5951a254cbb75"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/BenchmarkService$Request.class",
+      "passed": true,
+      "evidence": "74e8b357dbaa17620e668b38614547716434b60af9a5906f720abc84002f0b51"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/BenchmarkService.class",
+      "passed": true,
+      "evidence": "87a84592e3e6418e5a5c1c6dc90f1d2df6d4b726c6a30cab61ac56a35069b6dc"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/CounterfactualExperimentEngine.class",
+      "passed": true,
+      "evidence": "eaac680fc168919de85b97a22ce128a410309067b29f8b3471dfa2fe1e0225f6"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/ExperimentActions$1.class",
+      "passed": true,
+      "evidence": "d36362b6751afe978629fc3df318ae1ed105a68100bf702be3d7674a201dc4f6"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/ExperimentActions.class",
+      "passed": true,
+      "evidence": "43ffc610adcd1ebdd0c4c6af352bd9425e4a2b49e2065166e08b0f5c434bba81"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/ExperimentMetrics.class",
+      "passed": true,
+      "evidence": "2a18d45159c4e90e7f48daa4cd9cc3372fecc6a2ed29809b4d52450fb357a701"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/GraphRiskBaseline.class",
+      "passed": true,
+      "evidence": "2f0e4e7d2fbb9e696de10c24e1723c6e8c398fb2d96fa0fe09f7e56654e3253c"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/GraphSnapshotExporter$Feature.class",
+      "passed": true,
+      "evidence": "acf95f0c767ba3b3c0069d819656025e3aa8f8195b72fcc7df61775b056761be"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/GraphSnapshotExporter$GraphSnapshot.class",
+      "passed": true,
+      "evidence": "ad38425a594134c8e70935b2f1dd920147b6bf1572df574829f8774d98248916"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/GraphSnapshotExporter$Provenance.class",
+      "passed": true,
+      "evidence": "b0ff92ee3d7fec1b640b1297e26545066d3bd1e0d562af67a6d1646995967ae3"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/GraphSnapshotExporter$SnapshotEdge.class",
+      "passed": true,
+      "evidence": "2dce07520448db13d044027ddf2296d973e2d3094ec40198b1683492a9418ef2"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/GraphSnapshotExporter$SnapshotNode.class",
+      "passed": true,
+      "evidence": "cb22c1395468a95f449e853a5ba24418f6dfb2b1036984190dcd481e2b82c51f"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/GraphSnapshotExporter$SnapshotTime.class",
+      "passed": true,
+      "evidence": "fee32f92133e4921aa2eac5781ab1e3f8acb6ac9e62676889f4415fec1683911"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/GraphSnapshotExporter$Target.class",
+      "passed": true,
+      "evidence": "268efc0796e003e8614c0a7dd4e6bde2d97f74989ac44e6a6d8e15deaadda452"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/GraphSnapshotExporter.class",
+      "passed": true,
+      "evidence": "66e399c734ccdc04594843c51f2f03552218f6bc55f34181537f7b7b9de753b4"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/MlController$Selection.class",
+      "passed": true,
+      "evidence": "c3c96c9a6ba54e64c54f898d2cf80bd10e315ebe3e3604e5a14c5c03e455b8ac"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/MlController.class",
+      "passed": true,
+      "evidence": "1a0f852b20be06277d3e8c16b3842638df4cb92c19dee8932996922d0130b677"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/MlCorpusCli.class",
+      "passed": true,
+      "evidence": "0536212918015f0c8e6b85df71e92151af19cb739268f83b0e2c405794ec3f7d"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/MlExperimentProtocol$OwnedScenario.class",
+      "passed": true,
+      "evidence": "cdf8d752fd1dbf538640602d3f9adfbb4b77682621b453c3e9b2ea4a5d144ba4"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/MlExperimentProtocol.class",
+      "passed": true,
+      "evidence": "5ed32e99dca5e803660da62d547e63dd4d8d4feb61924f866b884db4a581d545"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/MlFeatureExtractor.class",
+      "passed": true,
+      "evidence": "fe853f97396151af417b60fbb26f492a20f2f739ff5fb9fdb0400faa8704c7da"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/MlInferenceClient.class",
+      "passed": true,
+      "evidence": "5d89abfe9672678b46aeab064d68f5c2e30cd7db8d6ecacc742e705dd793be62"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/MlModels$InferenceException.class",
+      "passed": true,
+      "evidence": "ba24fffc0a6e643ff5c719f84883ab44379dad31d18ee0416833afc50d7dc9cd"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/MlModels$Prediction.class",
+      "passed": true,
+      "evidence": "a5a2ed208eac0b000da7be79d63352368c9d9eb60f93e51d3580b3149dc27f18"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/MlModels$Request.class",
+      "passed": true,
+      "evidence": "13e2728587ca4577907f516c039130b9d8e020c8b7c1508e12c7f3e10574cc85"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/MlModels$Response.class",
+      "passed": true,
+      "evidence": "079102a5e3ef4685a4284583e62195bd30b5bbe1e171c24ab783425f7709e873"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/MlModels.class",
+      "passed": true,
+      "evidence": "97d5dae2a11e6d6c5d86253f6280324f35824e76c7c6488d05e8e24452586409"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/MlOperatorAdvisor$Advice.class",
+      "passed": true,
+      "evidence": "5575ce40c6caa114f2909dfc9e7420f5b6ae43f8adde46b80e8c62134807f941"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/MlOperatorAdvisor$Offer.class",
+      "passed": true,
+      "evidence": "7820b50312cc530564bff324a9360abad660208f1e6adcb43f52ce91356e9914"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/MlOperatorAdvisor.class",
+      "passed": true,
+      "evidence": "6726919461475b42975efa066f4bd8b2c05e0981c3b3fd262505022284a53637"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/MlPolicyCli$Run.class",
+      "passed": true,
+      "evidence": "9ec61aa8a972882f428c40e3681e170fed8fd0b73f3f2883facd9ee408cb360a"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/MlPolicyCli.class",
+      "passed": true,
+      "evidence": "55ef339dd5791a8a11601d3a65de7fdccf728e121e14eee075c7162a25ad8b30"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/MlPolicyRunner$Predictor.class",
+      "passed": true,
+      "evidence": "9fec87b2cbaac86142047dd93043dc431218c181c9417fb08a0fac60e8851b86"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/MlPolicyRunner$Variant.class",
+      "passed": true,
+      "evidence": "b8a0de60bce583a802527e6fc0d5d18b633afeb0a716979849e5d2be8254984d"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/MlPolicyRunner.class",
+      "passed": true,
+      "evidence": "6e8027515e3c657c0d4ec9631fdf1df43017d46a8476f7f3cbc598e6451b7262"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/Models$ControlRequest.class",
+      "passed": true,
+      "evidence": "359a70ed335a2cab84f4374c50a86a7c56d504849ce5486b193d8757ff19c1ad"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/Models$DecisionRequest.class",
+      "passed": true,
+      "evidence": "ada4c4049e8522365742773acf280c67149c89b951dc1f5cbf9a66f0c7f383fd"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/Models$Edge.class",
+      "passed": true,
+      "evidence": "f7ecf86c0fcf1fcc26a0e0c16f06caf5006b6ff15995489f16808acf1b13c199"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/Models$Event.class",
+      "passed": true,
+      "evidence": "97c7c57a1fc414ff6005772950aa3d465a556aef7dbffa79d7ab330793233f3a"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/Models$Incident.class",
+      "passed": true,
+      "evidence": "6c0a2337e2bc929043f209a200c274909268c081d094b851797e32d9b3eaed16"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/Models$IncidentRequest.class",
+      "passed": true,
+      "evidence": "ae0bc33a5d3999c28d307d7c93d6a2af03fa6bcb74e37af505e8659eb7c80d6b"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/Models$Kpis.class",
+      "passed": true,
+      "evidence": "21c2ab4e79b2853e2ed7d56db7454ac3c033106d881e82ab302f7a2d322f7ffc"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/Models$NetworkFile.class",
+      "passed": true,
+      "evidence": "27abdcb2df66f8b17ba568c31e41c38083921c28c6ef631931401a584b04703a"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/Models$Node.class",
+      "passed": true,
+      "evidence": "ff7744fe08c70d10b46411196a5262ef1892cd5a6da8284598b9c30fdbb0d30d"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/Models$Option.class",
+      "passed": true,
+      "evidence": "efe9c2fae90e195ec9cae040793a1137c5364e0220da77cacb625acf796e6387"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/Models$Point.class",
+      "passed": true,
+      "evidence": "8f1f9578b8b1c702eb4c8799eb1b3909b90a2f828c5feb05d69b0c499683646d"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/Models$Recommendation.class",
+      "passed": true,
+      "evidence": "b7473378eb562f70da21495d027c244df9836afa565146c32bf083fe96f46af3"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/Models$Restriction.class",
+      "passed": true,
+      "evidence": "d22e21d478099664c6455e72e57e17bbafc1f83c7485b8e35c2641d91743616b"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/Models$Risk.class",
+      "passed": true,
+      "evidence": "e66d5655909eea32d698824ea77ee41cf4b701b340ee5e053a10c4a65938c92f"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/Models$Route.class",
+      "passed": true,
+      "evidence": "af3eb683c319c7dd3bd827f84984e05838c28dd5fb45bc8d3ea61733454dd409"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/Models$RouteRequest.class",
+      "passed": true,
+      "evidence": "ca9de132118660874b08c08222e583bea7f63a1f9a3c2b92f233601d9deb1ab0"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/Models$ScenarioRequest.class",
+      "passed": true,
+      "evidence": "6ffb84fe02c72160dd026e7e7dbc0f6dd19e7078726e4dfb154f63a91f69ef7c"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/Models$ScheduledCommand.class",
+      "passed": true,
+      "evidence": "4750f88d9346b1a51db326f928e1dc40fadbbe29e34ec0b8da03ce88973e3a25"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/Models$State.class",
+      "passed": true,
+      "evidence": "dffd0c8a4ff5d53090f322ccc90659cdbe1b24395448ad306dfdbbeac323da5d"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/Models$Truck.class",
+      "passed": true,
+      "evidence": "be5737420b6dadfa80091be22921552adb3b485d3bb51871995fb8c4e59b7256"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/Models$TruckSpec.class",
+      "passed": true,
+      "evidence": "defff230f94bdbee38a957149e7dcbc5a675bac8e67a18d4fd1d905c3acede9f"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/Models.class",
+      "passed": true,
+      "evidence": "c71b73df278e3ccc04bc4647ce1f176082da2e4cd723df8892a3d9d9fb66243a"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/OperationalDependencyGraph.class",
+      "passed": true,
+      "evidence": "03daa1ada770c0c0203e3db09b4cac94de9ed9043f8c8039398a58738181051a"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/OperationalRuntime$Log.class",
+      "passed": true,
+      "evidence": "273fd0978fc3a9732eedaec21fa1d11032638dffa0eb8d521727367960e7846e"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/OperationalRuntime$Slot.class",
+      "passed": true,
+      "evidence": "86d5254db8f9aca69bdbefcb4c98fb92d38d5ac69f0e06aa360e0848ee2430dc"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/OperationalRuntime.class",
+      "passed": true,
+      "evidence": "6e69837f042b5b85262e981bc1061364b1e1eeca4351c7a2b230e00e978b5e38"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/OperatorApprovalGuard$Approval.class",
+      "passed": true,
+      "evidence": "6386d048b67821f0294da4fb907a974952f97951ddfa0ffbd237090e93a5905f"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/OperatorApprovalGuard$OperatorRequest.class",
+      "passed": true,
+      "evidence": "08a41e965bc366968468c023d1dc2494e99d9c1ad5618501c5392c2f1212d6c3"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/OperatorApprovalGuard.class",
+      "passed": true,
+      "evidence": "606a07a5eac33c31786a0569f5ba2181f8c47ce13cfdb0b7590c7f76f0e6fa5b"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/OpsModels$Assignment.class",
+      "passed": true,
+      "evidence": "13029cf68b1e8a1d4c48d648e558b1781f81da94f2b5e2b5b75ad9b783279abf"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/OpsModels$AssignmentSpec.class",
+      "passed": true,
+      "evidence": "9b8c525f7ef8381106eb1702466c5cd3d0c1200ebdb0d9ec425e98f773898697"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/OpsModels$AvailabilityRequest.class",
+      "passed": true,
+      "evidence": "b128378a7c03780e3f2af36e8243feb8f5cfe868b725ed0a1a4ae94a9ab88816"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/OpsModels$CascadeView.class",
+      "passed": true,
+      "evidence": "0b341a2f47d9da73764fc6af5c29ed81db91b9e4b3dfeb6e1ad1317cfc75c7be"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/OpsModels$Configuration.class",
+      "passed": true,
+      "evidence": "534d3e86bb574ef8a17dd346c9fa5957242df9e28034d85442c69a0d2e6e4458"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/OpsModels$Delivery.class",
+      "passed": true,
+      "evidence": "32a72adc1ceacb731b50c9ab571ae07d7f7d023768c415fbcc8b899e8d9f7ca1"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/OpsModels$DeliverySpec.class",
+      "passed": true,
+      "evidence": "af644cd746a075bfc22da094ab62a49d77ac2ff647e08caf9b2848469872e987"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/OpsModels$Dock.class",
+      "passed": true,
+      "evidence": "20d6924f7a2e9c50ca4f14f6d2ca6c93b6860556c8ac6531c3ee27784ef6cbde"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/OpsModels$DockSpec.class",
+      "passed": true,
+      "evidence": "1906cc537d6559420af32e284245bad19e85e63e0a97834c6f06bcfdbf3382ad"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/OpsModels$Driver.class",
+      "passed": true,
+      "evidence": "54cb5b1de44d765616b0f56802308e7c4a0198e46d9c9a175e77bd2ac86574ca"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/OpsModels$DriverSpec.class",
+      "passed": true,
+      "evidence": "edd831f9a308e6b996c50b22e93358875fd93a76d568a6912c3dfd6df8beeba2"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/OpsModels$GraphEdge.class",
+      "passed": true,
+      "evidence": "efeaa047336d48ddd7e314fc72047b47a7455f05eb4945e5fcda96a5ff0a72e2"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/OpsModels$GraphNode.class",
+      "passed": true,
+      "evidence": "bd4cab1c81c76a0f2c853f4acc659ca86f1ca03abc17b2ec57cfa02431422295"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/OpsModels$GraphView.class",
+      "passed": true,
+      "evidence": "34d1ab7435412db27d209b489d9f9a3c0e845ed7b0210cbcaade2a615085059a"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/OpsModels$Impact.class",
+      "passed": true,
+      "evidence": "65d40f0f48d4c76ee61e44b8deadc8dbb7e878e5f82c9bff66d77e8fb9a37cd7"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/OpsModels$NodeRisk.class",
+      "passed": true,
+      "evidence": "667a94e7ef752e1469bba5cab95e939e1e40b5f59a9fc4a043a035fbd6a21bbf"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/OpsModels$Operations.class",
+      "passed": true,
+      "evidence": "03fd8e08b7a8b711ebce561f63f469397ffe3722f247c5de4e9ff8d87a3cc761"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/OpsModels$OpsKpis.class",
+      "passed": true,
+      "evidence": "d4665d03935c4f4769f17b41651b6155f9be265926b21a4c88f02faf31637422"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/OpsModels$Warehouse.class",
+      "passed": true,
+      "evidence": "6a2f6b279419787ee79b79c0af217894cb2f4c7f14a0225c12ad508999fd77e6"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/OpsModels$WarehouseSpec.class",
+      "passed": true,
+      "evidence": "4d91c6f120e87bbd996d28a386a92f4131ba158d5900c89b76beee28c1a5d567"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/OpsModels.class",
+      "passed": true,
+      "evidence": "fe86332a2f5686c4902c81d2f790284c10ed88c01111f8615a03870af869742a"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/PredictionService$Estimate.class",
+      "passed": true,
+      "evidence": "514c74a835bca68754feb051ff3e375f49e553cbe71f5442f52c49c18ee4ef21"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/PredictionService.class",
+      "passed": true,
+      "evidence": "754f2d83e2a605bcbf7f5e85ac3a3a4ccacdd7a3e0d6fdb90fa867cdefa3d6b1"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/PreventionService.class",
+      "passed": true,
+      "evidence": "2092fb33737d145987b6fb8b5c285dae76f6d7cf8fc8f120f0a387b12270ad61"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/RoadGraph$Label.class",
+      "passed": true,
+      "evidence": "daffedb4a62b49742c47320b70fc328c5e44cb840e838237f80bfd9a3003a715"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/RoadGraph$Parent.class",
+      "passed": true,
+      "evidence": "4ec5c0460cd14287ab76c1c15733e7bbf45bc6b9c9073c31a8c97c510de12498"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/RoadGraph$SearchKey.class",
+      "passed": true,
+      "evidence": "dcd9f73e982669084f78d1b2d8f96bca6a89d16183e914c6e41b47cad31c95ad"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/RoadGraph.class",
+      "passed": true,
+      "evidence": "7c96a035cc4fdbf11941f5ef74ebb010c4679010eca8995c01f19bd230061dd6"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/RuleBasedPredictionService.class",
+      "passed": true,
+      "evidence": "3184ba208f56f39d14955849a95e066dba7d92bae4187d36f92a7e2a52ef33a2"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/RuleBasedPreventionService$ReroutePlan.class",
+      "passed": true,
+      "evidence": "df48e989989d80c832a678640ed414b722b88485c55ed01f49b0d8aea497da58"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/RuleBasedPreventionService$Weights.class",
+      "passed": true,
+      "evidence": "ee63983ec0587b66e8baa88aa19f3edc7bb65acb4946d268f0f70a1bfa74ceb7"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/RuleBasedPreventionService.class",
+      "passed": true,
+      "evidence": "1c00fb5c1ff0f3d263c0105c03ad3ee8e229677120533707cbcd4b61986cbda1"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/SimulationEngine.class",
+      "passed": true,
+      "evidence": "961936beed95ea565d1e295aa95ea86fe698798c89ac253944b0afb219111dc8"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/SimulationRepository.class",
+      "passed": true,
+      "evidence": "5b882f3eff2fd6984082abc5cf9da1ba68b0bba9f0fb5d2183a894e15bd4da26"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/SimulationService.class",
+      "passed": true,
+      "evidence": "0692140bc6bb8331c74dea7cae300a2c5f7b7c3109c21665a8b0852c78b0c81d"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/SimulatorApplication.class",
+      "passed": true,
+      "evidence": "df7c0eee5238c8a44dc7d876aa96d8cbecffb10f59347d67dcba502c031d1524"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/SimulatorController.class",
+      "passed": true,
+      "evidence": "b2e11b175c806c40ef764599289c7abfb04105dfa16168ab4f831cbbaca64d9a"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/classes/io/cascadeshield/sim/SimulatorErrors.class",
+      "passed": true,
+      "evidence": "22be3a22cb389823333134de2a8ce9b064ef29cd9904293e2a04de4a9f0b1500"
+    },
+    {
+      "name": "executed_source_or_class:simulator/backend/target/ml-classpath.txt",
+      "passed": true,
+      "evidence": "4baee3db81d40ba3c3bb3da9b2d96ec04a7c69c88c931506477c5e1e19689133"
+    },
+    {
+      "name": "historical_preservation:config/benchmark_protocol.json",
+      "passed": true,
+      "evidence": "989fba83cec961191289e605a201c426838b68188a6e74f51da90d0f43be5a01"
+    },
+    {
+      "name": "historical_preservation:data/metadata/chennai_network_provenance.json",
+      "passed": true,
+      "evidence": "59b59d809eb47fc08338920c896a4989d98e069fe7193bffad132189f6d6e6c4"
+    },
+    {
+      "name": "historical_preservation:data/metadata/manifest.json",
+      "passed": true,
+      "evidence": "ffc861bc6e4f1f6aa34ab1dff34904759642e461042dc5292b9a347d4325ec69"
+    },
+    {
+      "name": "historical_preservation:data/metadata/processed_manifest.json",
+      "passed": true,
+      "evidence": "64817819f9d7de13cf8b4334cf582427a696dc18d49f6b283636514c27b2b131"
+    },
+    {
+      "name": "historical_preservation:data/metadata/source_inventory.json",
+      "passed": true,
+      "evidence": "df4973abb69265fc8201cf3834d2af410ac881d5425435fce68a830a1caf656d"
+    },
+    {
+      "name": "historical_preservation:data/processed/chennai_osm/road_graph.json",
+      "passed": true,
+      "evidence": "c943bac278192042b22342d8e1be898cc68512fb936e314633645bc3e0304e60"
+    },
+    {
+      "name": "historical_preservation:data/processed/chennai_osm/roads.geojson",
+      "passed": true,
+      "evidence": "d714bab06c2eeb022eab54dac8a8224ca6c5330579579fa66938e35c6497f478"
+    },
+    {
+      "name": "historical_preservation:data/raw/chennai_osm/central_chennai.json",
+      "passed": true,
+      "evidence": "38ab5bdea18ca7859daea5a3801f1a5d138d320e29a841aa8d67f00c1c87e80d"
+    },
+    {
+      "name": "historical_preservation:reports/benchmark_raw/17fac423-bea7-46a0-9027-8ee76eaa78e4.csv",
+      "passed": true,
+      "evidence": "2fd04001093a4d4372c6a1962f6f94ae8c4ea94b39cd5eda575f6ec1c4d59b74"
+    },
+    {
+      "name": "historical_preservation:reports/benchmark_raw/17fac423-bea7-46a0-9027-8ee76eaa78e4.json",
+      "passed": true,
+      "evidence": "bef0137ea29225b8d999e62be3c8c4050182812a8349ace0ca67a154bc05b17b"
+    },
+    {
+      "name": "historical_preservation:reports/benchmark_raw/67312a37-3ada-4e4e-9073-b92bcaf5ea70.csv",
+      "passed": true,
+      "evidence": "dca76fab037034120e90889c18977ff555eca81cf4f419d2df3c0e05c0f19011"
+    },
+    {
+      "name": "historical_preservation:reports/benchmark_raw/67312a37-3ada-4e4e-9073-b92bcaf5ea70.json",
+      "passed": true,
+      "evidence": "43b5314bd48401850d2e486becd86f1392b5432079298be5d859b75ae4e93b42"
+    },
+    {
+      "name": "historical_preservation:reports/benchmark_raw/6fa70409-a1e2-4152-a8fc-9f2da27c6191_failed.json",
+      "passed": true,
+      "evidence": "64f02f62cba1c35056600517a9bff2644528d605345af94ca8a9dd83dc2a99a7"
+    },
+    {
+      "name": "historical_preservation:reports/benchmark_raw/84bb3e25-f4fb-480c-9854-e63c80f3d7ea.csv",
+      "passed": true,
+      "evidence": "3909cfc531b490085891390907fd0a247a9be515fb6b2bdad1ae8199ac83fb3d"
+    },
+    {
+      "name": "historical_preservation:reports/benchmark_raw/84bb3e25-f4fb-480c-9854-e63c80f3d7ea.json",
+      "passed": true,
+      "evidence": "1fec5fbc48391adc02a6c84b8ab00122287513d8542128266950f04c33dd9733"
+    },
+    {
+      "name": "historical_preservation:reports/benchmark_raw/89272c40-1971-4216-8e64-115b8947d2bf.csv",
+      "passed": true,
+      "evidence": "58b126b6202e6a7e6697faa7ad1a5c1cbaccd3c507c12db9fffef48000e293f2"
+    },
+    {
+      "name": "historical_preservation:reports/benchmark_raw/89272c40-1971-4216-8e64-115b8947d2bf.json",
+      "passed": true,
+      "evidence": "7f8e9b05a0499cd2b3ee932d4d16fc1f692f7361f2a61748d906f918a8a13beb"
+    },
+    {
+      "name": "historical_preservation:reports/benchmark_raw/b0d9235f-e1b9-4b3b-9627-6af76a47e988.csv",
+      "passed": true,
+      "evidence": "1304ab4e3278bb9d8129457e7129df473751a651c358d4333a1e7e7a8bd868ac"
+    },
+    {
+      "name": "historical_preservation:reports/benchmark_raw/b0d9235f-e1b9-4b3b-9627-6af76a47e988.json",
+      "passed": true,
+      "evidence": "2eadd8b6e2518ef52fb2c3498166fbff3409d6ae529bf4bf7c6b7e07fa0997e6"
+    },
+    {
+      "name": "historical_preservation:reports/benchmark_raw/d417cd3e-d5d4-453b-9797-d686fc1634ba.csv",
+      "passed": true,
+      "evidence": "7858ad37e6803cdec83d2797fd6ed29313121613cb63e1417133fb3123572d25"
+    },
+    {
+      "name": "historical_preservation:reports/benchmark_raw/d417cd3e-d5d4-453b-9797-d686fc1634ba.json",
+      "passed": true,
+      "evidence": "c6736b433a28341babb339b32680c6b9827bc9e3aa20785f36a1955a4cfb97ec"
+    },
+    {
+      "name": "historical_preservation:reports/benchmark_raw/f6fd77d7-268f-4f22-bf4a-7ba3b937be7e.csv",
+      "passed": true,
+      "evidence": "e4cbfdc56eac7bb7280bcbf5523b2ec120e9b4479ed5b7f4692fba5ac34dbdb1"
+    },
+    {
+      "name": "historical_preservation:reports/benchmark_raw/f6fd77d7-268f-4f22-bf4a-7ba3b937be7e.json",
+      "passed": true,
+      "evidence": "32f7579600cefb1e0ab46774024272764a903142f43f20346c690961f0bb4bc6"
+    },
+    {
+      "name": "historical_preservation:reports/benchmark_raw/fe3420a1-49b9-4e4b-87f5-db8462ffb761.csv",
+      "passed": true,
+      "evidence": "20f2124eb4ed4e212bcf1d57b933a40e5affb02fc3beba4d5217bbbcfa1e8c06"
+    },
+    {
+      "name": "historical_preservation:reports/benchmark_raw/fe3420a1-49b9-4e4b-87f5-db8462ffb761.json",
+      "passed": true,
+      "evidence": "dc03f408bf52b369ae063d5766e4f0a24c811a62d14564a9c36d1308c22e76a9"
+    },
+    {
+      "name": "historical_preservation:reports/BENCHMARK_RESULTS.csv",
+      "passed": true,
+      "evidence": "e775ed01da89fdec6a5c145917042a18c75ab7c8c78ba59f9249c23ad0337171"
+    },
+    {
+      "name": "historical_preservation:reports/BENCHMARK_RESULTS.json",
+      "passed": true,
+      "evidence": "2f6fa2d54ecaf3540d59d2dbc6909a6864e433e8a1ac0177db955bd9b9b63ec6"
+    },
+    {
+      "name": "historical_preservation:reports/milestone3_browser_tests.json",
+      "passed": true,
+      "evidence": "e21018f8e7719b1470e032fb7afcdfee83287ea63a49649feda40c43c91c8f8f"
+    },
+    {
+      "name": "historical_preservation:reports/milestone3_frontend_tests.json",
+      "passed": true,
+      "evidence": "4b3b3538040aebad3e947327292b6ec565f73cd8c5eddf4ef40af5a4755f4b21"
+    },
+    {
+      "name": "historical_preservation:reports/milestone3_integration_initial_failure.json",
+      "passed": true,
+      "evidence": "31f795fd8b028be673dad120eeb831f8e8e3ab7d1a7437d3902353b2f60343a9"
+    },
+    {
+      "name": "historical_preservation:reports/milestone3_integration_tests.json",
+      "passed": true,
+      "evidence": "cab56655959d94e22a7005efcc46f42d9f5f228cad6dfc4a9584e42125445128"
+    },
+    {
+      "name": "historical_preservation:reports/milestone3_java_tests.json",
+      "passed": true,
+      "evidence": "81fec52a38e5bdf4d0a144c956ae9bbed5b8dd6f7c5071546c78732c49b97352"
+    },
+    {
+      "name": "historical_preservation:reports/milestone3_python_tests.json",
+      "passed": true,
+      "evidence": "244a1e34ee36102c0a0c57343febf81a3da22919c3eb05479b5d18953c7dccd3"
+    },
+    {
+      "name": "historical_preservation:reports/milestone3_restart_tests.json",
+      "passed": true,
+      "evidence": "f1d8b4c5eee5ad9ec22b716535a7822a8c08df754acd3453a83108d126f15246"
+    },
+    {
+      "name": "historical_preservation:reports/milestone3_result_validation.json",
+      "passed": true,
+      "evidence": "e3d923379cd45af46835da4c3da220e3d247ecb9abe44313d90af6b1cedd07e5"
+    },
+    {
+      "name": "historical_preservation:reports/MILESTONE_1_PLAN.md",
+      "passed": true,
+      "evidence": "ba27b499561d9ce7d12d4e73501216a69de46959416fc8c86fee3c78afa29d9c"
+    },
+    {
+      "name": "historical_preservation:reports/MILESTONE_1_RESULTS.json",
+      "passed": true,
+      "evidence": "acc2898582d15f4352382a32d96ba002851fd6056c430c88477c57b99532d52c"
+    },
+    {
+      "name": "historical_preservation:reports/MILESTONE_1_RESULTS.md",
+      "passed": true,
+      "evidence": "f048f02601b44590133dd5b9e03070583053558e603974080fd3142d575f6772"
+    },
+    {
+      "name": "historical_preservation:reports/milestone_2_browser_initial_failure.json",
+      "passed": true,
+      "evidence": "6320c72a640ecb43b21af654fc96451dba3d63dccf4f5d1d5ff41411ef55e4c0"
+    },
+    {
+      "name": "historical_preservation:reports/milestone_2_browser_selector_failure.json",
+      "passed": true,
+      "evidence": "59a4449615684dcf2f8e5c6faab9d2f9e060bd5e84fc8aa20695f06eb13ccb59"
+    },
+    {
+      "name": "historical_preservation:reports/milestone_2_browser_tests.json",
+      "passed": true,
+      "evidence": "d57b96a28d6aeb36afeea8241d5acd3df5b17f744f17c2af8a31eb1197711300"
+    },
+    {
+      "name": "historical_preservation:reports/milestone_2_demonstration_state.json",
+      "passed": true,
+      "evidence": "32bd2d282f9bf6b765b8f9a81728b63a68da357403aef708809eee82bb53dd45"
+    },
+    {
+      "name": "historical_preservation:reports/milestone_2_frontend_tests.json",
+      "passed": true,
+      "evidence": "47b32ae4684c9c895e9c48d7cbb938c6598bdfb5ece8b1958dfe8ddea1a905f4"
+    },
+    {
+      "name": "historical_preservation:reports/milestone_2_integration_initial_failure.json",
+      "passed": true,
+      "evidence": "c24bccc87bf109d786c2aeec3e7c55a77f30dff8f4811e535baaf939e4dbd594"
+    },
+    {
+      "name": "historical_preservation:reports/milestone_2_integration_tests.json",
+      "passed": true,
+      "evidence": "e482a7ccb54b8095436639a3624bd7ace2fc1b0e68790a435e5ffa4d162bc2f7"
+    },
+    {
+      "name": "historical_preservation:reports/milestone_2_java_tests.json",
+      "passed": true,
+      "evidence": "dbbcf09e3b4d9cb8991a5d8b1e7d31626761c44e40768f04652a9f72382017a9"
+    },
+    {
+      "name": "historical_preservation:reports/milestone_2_legacy_browser.json",
+      "passed": true,
+      "evidence": "2f34c44b200d00025ca09e32597619a2337fa968b92ee628ddac4f0673f35173"
+    },
+    {
+      "name": "historical_preservation:reports/milestone_2_legacy_integration.json",
+      "passed": true,
+      "evidence": "a5709e69bf119d982b61978f9c087e8235f77cd5cecac6b28a9a8ad57c6bc303"
+    },
+    {
+      "name": "historical_preservation:reports/MILESTONE_2_PLAN.md",
+      "passed": true,
+      "evidence": "d1d14fd3667ae5e7f2483f5642146d5b78171e098901633f3d5fbdc651bb029d"
+    },
+    {
+      "name": "historical_preservation:reports/milestone_2_python_tests.json",
+      "passed": true,
+      "evidence": "268e0348b283ec2853685b2250bcd8bdf74a58dbbca0fe5107c8e3d6cc2583d3"
+    },
+    {
+      "name": "historical_preservation:reports/MILESTONE_2_RESULTS.json",
+      "passed": true,
+      "evidence": "14138769cc49f0d38030a7273ee1c8809d27787ffd60664e0bc5738b4c8ccd3c"
+    },
+    {
+      "name": "historical_preservation:reports/MILESTONE_2_RESULTS.md",
+      "passed": true,
+      "evidence": "d407628359b3a08c4a4c6103520922a662aa6f214cfc8e266c3790729818eb0a"
+    },
+    {
+      "name": "historical_preservation:reports/milestone_2_snapshot_conversion.json",
+      "passed": true,
+      "evidence": "49c56e03cc1d5f0187378f37592fbd4f30f62c83e4c4032ec9c2a040364faf04"
+    },
+    {
+      "name": "historical_preservation:reports/milestone_3_frontend_tests.json",
+      "passed": true,
+      "evidence": "4cbb5717323685994a65048ddf54ae6f5c82ee055be6969413fcb6b767b0e70c"
+    },
+    {
+      "name": "historical_preservation:reports/MILESTONE_3_RESULTS.json",
+      "passed": true,
+      "evidence": "3e00a08abcdb54fea872366fb248bf082eb95e0552e245aafbd5c916a0882ed6"
+    },
+    {
+      "name": "historical_preservation:reports/MILESTONE_3_RESULTS.md",
+      "passed": true,
+      "evidence": "9f91373e3f7a9b8d04946c99cf005bb05d1554d9a22b73e3d01de386b562ebaa"
+    },
+    {
+      "name": "historical_preservation:simulator/backend/src/main/java/io/cascadeshield/sim/AiArchitecture.java",
+      "passed": true,
+      "evidence": "afb055adeb7a8fdfe01e8fb415f0ad96b87033e4cc8e061e78ae25219f73e3a0"
+    },
+    {
+      "name": "historical_preservation:simulator/backend/src/main/java/io/cascadeshield/sim/AiFallbackPipeline.java",
+      "passed": true,
+      "evidence": "a9f39149cabdbdaefd7dc81432ebb9664cd358525aeb7aeba1fecd8b23f5c210"
+    },
+    {
+      "name": "historical_preservation:simulator/backend/src/main/java/io/cascadeshield/sim/AiModels.java",
+      "passed": true,
+      "evidence": "c9bcbfa73eff9a7352cb277c296f5f56327a23ffde8caf9c0f9d72b4abe74591"
+    },
+    {
+      "name": "historical_preservation:simulator/backend/src/main/java/io/cascadeshield/sim/ApiException.java",
+      "passed": true,
+      "evidence": "24c68273e4a336bf46acc7b3ef96c404502e30ffe640a7bf174988c2ee1a6de0"
+    },
+    {
+      "name": "historical_preservation:simulator/backend/src/main/java/io/cascadeshield/sim/BenchmarkController.java",
+      "passed": true,
+      "evidence": "95fb7c7502f848de2779578ee3cfa163a5107e37221191ca2147c732a9e744bd"
+    },
+    {
+      "name": "historical_preservation:simulator/backend/src/main/java/io/cascadeshield/sim/BenchmarkModels.java",
+      "passed": true,
+      "evidence": "2b94a674e83b28db516c7bb1f5b9cfaa8231d2f350f316c2e5d257c37f443621"
+    },
+    {
+      "name": "historical_preservation:simulator/backend/src/main/java/io/cascadeshield/sim/BenchmarkPolicyRunner.java",
+      "passed": true,
+      "evidence": "a1087dad954a093d1a8360c920077deacd9650751d73e504c7c65dc5a2dea435"
+    },
+    {
+      "name": "historical_preservation:simulator/backend/src/main/java/io/cascadeshield/sim/BenchmarkRepository.java",
+      "passed": true,
+      "evidence": "a364c177877993f2b70bfcfdd9825f7e369144f71cfde86a2d6df9fa19d93a99"
+    },
+    {
+      "name": "historical_preservation:simulator/backend/src/main/java/io/cascadeshield/sim/BenchmarkScenarioGenerator.java",
+      "passed": true,
+      "evidence": "7ce6c7c3fc3963c5fc370a85efbc5a51e19a12304a062b38f560fafa268d1d3b"
+    },
+    {
+      "name": "historical_preservation:simulator/backend/src/main/java/io/cascadeshield/sim/BenchmarkService.java",
+      "passed": true,
+      "evidence": "1855efd10fdc3978b734ea43863f05bb90ed9d3c5cebccf7c612046a40b4610f"
+    },
+    {
+      "name": "historical_preservation:simulator/backend/src/main/java/io/cascadeshield/sim/CounterfactualExperimentEngine.java",
+      "passed": true,
+      "evidence": "a607d795b09941d15d43625865c2a33d05cc66b23117e653b652f237d673fccc"
+    },
+    {
+      "name": "historical_preservation:simulator/backend/src/main/java/io/cascadeshield/sim/ExperimentActions.java",
+      "passed": true,
+      "evidence": "9dfc95cbfab5767b7ebd089604393743d7238c56a717f4e2e30664db97cc5dcd"
+    },
+    {
+      "name": "historical_preservation:simulator/backend/src/main/java/io/cascadeshield/sim/ExperimentMetrics.java",
+      "passed": true,
+      "evidence": "fa495f84ace251b13e0181dc609612e8fae933bf1efa3ae4ae9d3c69bd37236e"
+    },
+    {
+      "name": "historical_preservation:simulator/backend/src/main/java/io/cascadeshield/sim/GraphRiskBaseline.java",
+      "passed": true,
+      "evidence": "b759038c7b43e775eff795b2349893cb2154bf950eb41677fb115c717dd13ef4"
+    },
+    {
+      "name": "historical_preservation:simulator/backend/src/main/java/io/cascadeshield/sim/GraphSnapshotExporter.java",
+      "passed": true,
+      "evidence": "67c61753d4d4cf891c623a3ee7d808c9472180587d0010c6ba536b082bede141"
+    },
+    {
+      "name": "historical_preservation:simulator/backend/src/main/java/io/cascadeshield/sim/Models.java",
+      "passed": true,
+      "evidence": "b75024c8b93099921ce2b1ce0dabf7d3260f0e0dafba1855ff3f290590ab6a5e"
+    },
+    {
+      "name": "historical_preservation:simulator/backend/src/main/java/io/cascadeshield/sim/OperationalDependencyGraph.java",
+      "passed": true,
+      "evidence": "38d0ec30b71163e691369daf0b19e169c9421e560b320fcdd881c3b1739292ac"
+    },
+    {
+      "name": "historical_preservation:simulator/backend/src/main/java/io/cascadeshield/sim/OperationalRuntime.java",
+      "passed": true,
+      "evidence": "1026eb7d9e730e0325c5eeb120915edb2ab8bf68bc5bfdc2a68d036f35b652ec"
+    },
+    {
+      "name": "historical_preservation:simulator/backend/src/main/java/io/cascadeshield/sim/OperatorApprovalGuard.java",
+      "passed": true,
+      "evidence": "d14d1f56ddb97652e8b6cf8df63e69f3e7e49365c3f49f26065aff24c901b2b0"
+    },
+    {
+      "name": "historical_preservation:simulator/backend/src/main/java/io/cascadeshield/sim/OpsModels.java",
+      "passed": true,
+      "evidence": "1f17899840a951f14db04adbc0ad3c1b098ef06b09886b61d7a5d64dc7929216"
+    },
+    {
+      "name": "historical_preservation:simulator/backend/src/main/java/io/cascadeshield/sim/PredictionService.java",
+      "passed": true,
+      "evidence": "60f54a63e3ca036843011e183c317095cb28dbdf551a0cdef23f41d6a1398ea2"
+    },
+    {
+      "name": "historical_preservation:simulator/backend/src/main/java/io/cascadeshield/sim/PreventionService.java",
+      "passed": true,
+      "evidence": "da069d41b4c1d7f65c07a766331ac2c2982b33bdd9836c8239e23e3159942e30"
+    },
+    {
+      "name": "historical_preservation:simulator/backend/src/main/java/io/cascadeshield/sim/RoadGraph.java",
+      "passed": true,
+      "evidence": "840d1db02bae92092663001d6f8d2824f480057248d5f84d5ef9ef832239ebf7"
+    },
+    {
+      "name": "historical_preservation:simulator/backend/src/main/java/io/cascadeshield/sim/RuleBasedPredictionService.java",
+      "passed": true,
+      "evidence": "aaa13e5ac5437306555c3087d895c0a5084220914bcc7c7083141f2ba905e90c"
+    },
+    {
+      "name": "historical_preservation:simulator/backend/src/main/java/io/cascadeshield/sim/RuleBasedPreventionService.java",
+      "passed": true,
+      "evidence": "134865d7180f6d1cdcf2dc1e99ce7509ecf5d7d3a65ccda90651df9803bf368e"
+    },
+    {
+      "name": "historical_preservation:simulator/backend/src/main/java/io/cascadeshield/sim/SimulationEngine.java",
+      "passed": true,
+      "evidence": "b1412f24ccaa2cc2e7ef20e289a83852ef91450ca80023cdc40eb2ccd971150a"
+    },
+    {
+      "name": "historical_preservation:simulator/backend/src/main/java/io/cascadeshield/sim/SimulationRepository.java",
+      "passed": true,
+      "evidence": "a7ba719da32cbb787ee5f5c272b681e053f330a3328a0c4a33d1a38d91956798"
+    },
+    {
+      "name": "historical_preservation:simulator/backend/src/main/java/io/cascadeshield/sim/SimulationService.java",
+      "passed": true,
+      "evidence": "5d6c4e3a3db4f1f4cd017dc86f0f337e6fef77efc33ed56266ec8bebf315319a"
+    },
+    {
+      "name": "historical_preservation:simulator/backend/src/main/java/io/cascadeshield/sim/SimulatorApplication.java",
+      "passed": true,
+      "evidence": "eed80cf9cd8f36ac9fe28aa64b5e96be46a3ba0617a18f77cd7c39232d872e5c"
+    },
+    {
+      "name": "historical_preservation:simulator/backend/src/main/java/io/cascadeshield/sim/SimulatorController.java",
+      "passed": true,
+      "evidence": "79295d91a4d65711c513db20b1f010597025ce7ee6e1175fd8671fc47c0e9c21"
+    },
+    {
+      "name": "executed_check_report:milestone4_ml_integration.json",
+      "passed": true,
+      "evidence": "ab649c370520cfcd0d88fb163f0fe88187dbcef0f09023fc7776a6a984e47d07"
+    },
+    {
+      "name": "executed_check_report:milestone4_ml_outage.json",
+      "passed": true,
+      "evidence": "9441479e64e1216e490f1ff6ffd490d4e8bd5bcac6173827dccdf163bd24cc63"
+    },
+    {
+      "name": "executed_check_report:milestone4_ml_recovery.json",
+      "passed": true,
+      "evidence": "1a7adbea2d65129a81f726efb4574706e782c85c80414adc0172788a6023968c"
+    },
+    {
+      "name": "executed_check_report:milestone4_browser_tests.json",
+      "passed": true,
+      "evidence": "ea0be8914b59097fcc0c0788a62c432931d06aba6e995e16108f07c916fe5db7"
+    },
+    {
+      "name": "executed_check_report:milestone4_restart_tests.json",
+      "passed": true,
+      "evidence": "7e9f382752aca7f8ea05aa08dd560401e590ab4eef3b295109272623becf14ba"
+    },
+    {
+      "name": "executed_check_report:milestone4_legacy_python_tests.json",
+      "passed": true,
+      "evidence": "ab823facbf82c5297f60116571d0d642f432eddc17d8032735e02f400ce1865e"
+    },
+    {
+      "name": "executed_check_report:milestone4_ml_unit_tests.json",
+      "passed": true,
+      "evidence": "c3c93c125df5afb048291caad5757074d6037487eca4d74cda75d14f7fbe3bcd"
+    },
+    {
+      "name": "executed_check_report:milestone4_policy_replay.json",
+      "passed": true,
+      "evidence": "d60d5c80a16b79bff461e9eaf3874d2b3875949fbeec486effef836269e4648f"
+    },
+    {
+      "name": "actual_java_suite",
+      "passed": true,
+      "evidence": {
+        "passed": 155
+      }
+    },
+    {
+      "name": "actual_frontend_suite",
+      "passed": true,
+      "evidence": {
+        "passed": 59
+      }
+    },
+    {
+      "name": "figures_bind_current_completed_results",
+      "passed": true,
+      "evidence": [
+        "reports/figures/milestone4-policies.pdf",
+        "reports/figures/milestone4-policies.png",
+        "reports/figures/milestone4-policies.svg",
+        "reports/figures/milestone4-predictions.pdf",
+        "reports/figures/milestone4-predictions.png",
+        "reports/figures/milestone4-predictions.svg"
+      ]
+    },
+    {
+      "name": "completion_report_agrees",
+      "passed": true,
+      "evidence": "EXECUTED_RESEARCH_EVALUATION_COMPLETE"
+    }
+  ],
+  "passed": true,
+  "passedChecks": 780
+}

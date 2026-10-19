@@ -1,0 +1,190 @@
+{
+  "started_at_utc": "2026-10-13T16:23:11.236521+00:00",
+  "api_base_url": "http://127.0.0.1:8080/api",
+  "data_classes": [
+    "REAL_GEOGRAPHIC_DATA",
+    "SIMULATED_RESEARCH_EXPERIMENT",
+    "ENGINEERING_TEST_EVIDENCE"
+  ],
+  "trained_ml_used": false,
+  "checks": [
+    {
+      "name": "catalog_and_immutable_geographic_provenance",
+      "passed": true,
+      "details": {
+        "network_id": "chennai-central-osm-v1",
+        "graph_sha256": "c943bac278192042b22342d8e1be898cc68512fb936e314633645bc3e0304e60",
+        "policies": 5,
+        "equal_action_set": [
+          "NONE",
+          "CONTINUE",
+          "WAIT",
+          "LOCAL_REROUTE",
+          "GLOBAL_REROUTE"
+        ],
+        "live_status": "COMPLETED"
+      },
+      "duration_sec": 0.0882
+    },
+    {
+      "name": "malformed_inputs_return_http400_without_live_mutation",
+      "passed": true,
+      "details": {
+        "http_400_cases": [
+          "missing parameters",
+          "unknown policy",
+          "null policy",
+          "blank policy",
+          "null ablation",
+          "blank ablation",
+          "duplicate policy",
+          "unknown ablation",
+          "unknown comparison",
+          "duplicate seeds",
+          "fractional seed",
+          "excess trucks",
+          "short horizon",
+          "unknown profile",
+          "unknown parameter"
+        ],
+        "unknown_job_http_404": true,
+        "live_unchanged": true
+      },
+      "duration_sec": 0.2731
+    },
+    {
+      "name": "bounded_seeded_job_executes_both_policies",
+      "passed": true,
+      "details": {
+        "id": "be3cc999-63e1-42bd-923d-570d2777b83b",
+        "status": "COMPLETED",
+        "completed_policy_runs": 2
+      },
+      "duration_sec": 2.1894
+    },
+    {
+      "name": "paired_equal_action_inputs_and_hidden_schedule_boundary",
+      "passed": true,
+      "details": {
+        "scenario_id": "closure-contention-s73-d8e2f2c68388",
+        "input_fingerprint": "d8e2f2c683882835576ce196056905d3dd7f0de55f27b37ed05b24726d3565f1",
+        "seed": 73,
+        "policies": [
+          "B0",
+          "B4"
+        ]
+      },
+      "duration_sec": 0.0
+    },
+    {
+      "name": "realized_delivery_metrics_match_actual_completion_records",
+      "passed": true,
+      "details": {
+        "measured_outcomes": [
+          {
+            "policy": "B0",
+            "completed": 2,
+            "sla_violations": 2,
+            "actual_lateness_sec": 380.8000000000002
+          },
+          {
+            "policy": "B4",
+            "completed": 2,
+            "sla_violations": 2,
+            "actual_lateness_sec": 417.1999999999998
+          }
+        ]
+      },
+      "duration_sec": 0.0001
+    },
+    {
+      "name": "executed_hypothetical_predictions_separate_from_actual_outcomes",
+      "passed": true,
+      "details": {
+        "executed_hypothetical_alternatives": 8,
+        "decision_count": 2,
+        "forecast_provenance": "MODEL_ROLLOUT_FORECAST",
+        "actual_provenance": "SIMULATED_RESEARCH_EXPERIMENT"
+      },
+      "duration_sec": 0.0
+    },
+    {
+      "name": "physical_constraint_audits_separate_from_rejected_candidates",
+      "passed": true,
+      "details": {
+        "policy_runs_audited": 2,
+        "measured_violations": 0,
+        "rejections_separate": true,
+        "observation_cadence_sec": 10
+      },
+      "duration_sec": 0.0
+    },
+    {
+      "name": "actual_postgresql_job_persistence_and_history",
+      "passed": true,
+      "details": {
+        "postgresql_job_persisted": "be3cc999-63e1-42bd-923d-570d2777b83b",
+        "jsonb_matches_http": true,
+        "history_contains_completed_job": true
+      },
+      "duration_sec": 0.0326
+    },
+    {
+      "name": "csv_json_exports_match_persisted_outcomes",
+      "passed": true,
+      "details": {
+        "json_runs": 2,
+        "csv_rows": 2,
+        "sha256": {
+          "json": "58d1e2520bdff64d5debbf757640ce6972168218f50170d02b97fe79b1de47e7",
+          "csv": "e274d13e95c2e94099b76b1634074bcd88e18d8339204622e0a1d6f6fb6c5c51"
+        }
+      },
+      "duration_sec": 0.0492
+    },
+    {
+      "name": "repeated_seeded_execution_is_deterministic_except_wallclock",
+      "passed": true,
+      "details": {
+        "first_job": "be3cc999-63e1-42bd-923d-570d2777b83b",
+        "repeat_job": "0108aa03-4204-4ef0-812e-ce861c04aa06",
+        "identical_physical_outcomes": true,
+        "wallclock_fields_excluded": [
+          "computationMs",
+          "computationNanos",
+          "decisionComputationMs"
+        ]
+      },
+      "duration_sec": 2.1654
+    },
+    {
+      "name": "live_and_persisted_scenario_exactly_preserved",
+      "passed": true,
+      "details": {
+        "live_state_exactly_preserved": true,
+        "persisted_live_checkpoint_preserved": true,
+        "mutation_endpoint": "/benchmarks/runs"
+      },
+      "duration_sec": 0.0229
+    },
+    {
+      "name": "historical_research_tables_counts_and_checksums_preserved",
+      "passed": true,
+      "details": {
+        "research_tables": 18,
+        "rows": 2414128,
+        "preserved": true
+      },
+      "duration_sec": 0.3177
+    }
+  ],
+  "autonomous_llm_used": false,
+  "job_ids": [
+    "be3cc999-63e1-42bd-923d-570d2777b83b",
+    "0108aa03-4204-4ef0-812e-ce861c04aa06"
+  ],
+  "export_directory": "reports/milestone3_integration_exports/be3cc999-63e1-42bd-923d-570d2777b83b",
+  "passed": true,
+  "completed_at_utc": "2026-10-13T16:23:16.675995+00:00",
+  "passed_checks": 12
+}

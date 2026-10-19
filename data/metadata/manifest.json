@@ -1,0 +1,1310 @@
+{
+  "assets": {
+    "evidence_dft": {
+      "key": "evidence_dft",
+      "source_id": "dft",
+      "cohort": null,
+      "path": "data/metadata/evidence/dft.html",
+      "requested_url": "https://www.gov.uk/government/statistical-data-sets/road-safety-open-data",
+      "resolved_url_without_query": "https://www.gov.uk/government/statistical-data-sets/road-safety-open-data",
+      "method": "GET",
+      "request_body": null,
+      "acquired_at_utc": "2026-10-08T17:42:51.706628+00:00",
+      "bytes": 87609,
+      "sha256": "97646ca3249b62febcae3edfafc3d5af405b8c472ca62f0ab95fe700c17a6c6d",
+      "format": "document",
+      "http_status": 200,
+      "response_headers": {
+        "Content-Length": "17591",
+        "Content-Type": "text/html; charset=utf-8",
+        "Etag": "W/\"97646ca3249b62febcae3edfafc3d5af\"",
+        "Content-Encoding": "gzip"
+      },
+      "license": "Open Government Licence v3.0",
+      "license_evidence_url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+      "source_filename": "road-safety-open-data"
+    },
+    "evidence_porto": {
+      "key": "evidence_porto",
+      "source_id": "porto",
+      "cohort": null,
+      "path": "data/metadata/evidence/porto.html",
+      "requested_url": "https://www.kaggle.com/datasets/crailtap/taxi-trajectory",
+      "resolved_url_without_query": "https://www.kaggle.com/datasets/crailtap/taxi-trajectory",
+      "method": "GET",
+      "request_body": null,
+      "acquired_at_utc": "2026-10-08T17:42:52.330558+00:00",
+      "bytes": 13400,
+      "sha256": "1d8d8768f0087f0dde8bed9aaf4c89755119828569c8dc50ecdd2bf4faa8de3b",
+      "format": "document",
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "text/html; charset=utf-8",
+        "Content-Encoding": "gzip"
+      },
+      "license": "Verify from live Kaggle metadata; Unknown must remain unresolved",
+      "license_evidence_url": "https://www.kaggle.com/datasets/crailtap/taxi-trajectory",
+      "source_filename": "taxi-trajectory"
+    },
+    "evidence_nyc": {
+      "key": "evidence_nyc",
+      "source_id": "nyc",
+      "cohort": null,
+      "path": "data/metadata/evidence/nyc.html",
+      "requested_url": "https://github.com/walterwzhang/NYC-Taxi-2013-Data",
+      "resolved_url_without_query": "https://github.com/walterwzhang/NYC-Taxi-2013-Data",
+      "method": "GET",
+      "request_body": null,
+      "acquired_at_utc": "2026-10-08T17:42:53.172098+00:00",
+      "bytes": 268576,
+      "sha256": "6a8d1017ac095ce6a452d8bfb657af5d8a6f195338ba727c858f7d58ccca6955",
+      "format": "document",
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "text/html; charset=utf-8",
+        "ETag": "W/\"5458785ad58fdef18525ff2aa2afae0c\"",
+        "Content-Encoding": "gzip"
+      },
+      "license": "No repository LICENSE identified; reuse permission unresolved",
+      "license_evidence_url": "https://github.com/walterwzhang/NYC-Taxi-2013-Data",
+      "source_filename": "NYC-Taxi-2013-Data"
+    },
+    "evidence_cambridge": {
+      "key": "evidence_cambridge",
+      "source_id": "cambridge",
+      "cohort": null,
+      "path": "data/metadata/evidence/cambridge.html",
+      "requested_url": "https://www.repository.cam.ac.uk/items/3d0eb1ad-d077-4e4e-84cb-79af35f0b163",
+      "resolved_url_without_query": "https://www.repository.cam.ac.uk/items/3d0eb1ad-d077-4e4e-84cb-79af35f0b163",
+      "method": "GET",
+      "request_body": null,
+      "acquired_at_utc": "2026-10-08T17:42:55.134975+00:00",
+      "bytes": 470226,
+      "sha256": "e38c2bc417d98f2346c5981a126ee44269a4d190db9ff2d596c85971688360a1",
+      "format": "document",
+      "http_status": 200,
+      "response_headers": {
+        "content-type": "text/html; charset=utf-8",
+        "etag": "W/\"72cd2-dzHDdkU0DHA+8bBS5EwhD/UEcY4\"",
+        "content-encoding": "gzip"
+      },
+      "license": "CC BY 4.0",
+      "license_evidence_url": "https://creativecommons.org/licenses/by/4.0/",
+      "source_filename": "3d0eb1ad-d077-4e4e-84cb-79af35f0b163"
+    },
+    "evidence_overpass": {
+      "key": "evidence_overpass",
+      "source_id": "overpass",
+      "cohort": null,
+      "path": "data/metadata/evidence/overpass.html",
+      "requested_url": "https://overpass-turbo.eu/",
+      "resolved_url_without_query": "https://overpass-turbo.eu/",
+      "method": "GET",
+      "request_body": null,
+      "acquired_at_utc": "2026-10-08T17:42:55.873832+00:00",
+      "bytes": 46080,
+      "sha256": "32e88d639c3fb4e2131b940e5141a17bc576c2f200e77f4fa771963dcda9ba0d",
+      "format": "document",
+      "http_status": 200,
+      "response_headers": {
+        "Last-Modified": "Tue, 19 May 2026 21:26:36 GMT",
+        "ETag": "\"b400-652325577d447-gzip\"",
+        "Content-Encoding": "gzip",
+        "Content-Length": "6144",
+        "Content-Type": "text/html"
+      },
+      "license": "OSM data: ODbL 1.0; Turbo is a query interface, not an independent dataset",
+      "license_evidence_url": "https://www.openstreetmap.org/copyright",
+      "source_filename": ""
+    },
+    "evidence_osm": {
+      "key": "evidence_osm",
+      "source_id": "osm",
+      "cohort": null,
+      "path": "data/metadata/evidence/osm.html",
+      "requested_url": "https://www.openstreetmap.org/",
+      "resolved_url_without_query": "https://www.openstreetmap.org/",
+      "method": "GET",
+      "request_body": null,
+      "acquired_at_utc": "2026-10-08T17:42:56.579191+00:00",
+      "bytes": 32299,
+      "sha256": "f49cb56b6a4456e11dbe7a4f9db711b14e23c64c81f99668ca325bf5509890f9",
+      "format": "document",
+      "http_status": 200,
+      "response_headers": {
+        "Content-Length": "7118",
+        "etag": "W/\"f49cb56b6a4456e11dbe7a4f9db711b1-gzip\"",
+        "content-type": "text/html; charset=utf-8",
+        "content-encoding": "gzip"
+      },
+      "license": "ODbL 1.0; attribution to OpenStreetMap contributors",
+      "license_evidence_url": "https://www.openstreetmap.org/copyright",
+      "source_filename": ""
+    },
+    "evidence_traccar": {
+      "key": "evidence_traccar",
+      "source_id": "traccar",
+      "cohort": null,
+      "path": "data/metadata/evidence/traccar.html",
+      "requested_url": "https://www.traccar.org/",
+      "resolved_url_without_query": "https://www.traccar.org/",
+      "method": "GET",
+      "request_body": null,
+      "acquired_at_utc": "2026-10-08T17:42:57.648157+00:00",
+      "bytes": 14346,
+      "sha256": "2f96d507f5361eefe8130c93fba92f327dab930b11bb3aae49622d6547435227",
+      "format": "document",
+      "http_status": 200,
+      "response_headers": {
+        "Content-Length": "14346",
+        "Content-Type": "text/html; charset=utf-8",
+        "Etag": "W/\"380a-qyI2rZc/3L8NyMjuJhoE3XB63Hc\""
+      },
+      "license": "Apache-2.0 software does not license any fleet records",
+      "license_evidence_url": "https://raw.githubusercontent.com/traccar/traccar/master/LICENSE.txt",
+      "source_filename": ""
+    },
+    "evidence_weather": {
+      "key": "evidence_weather",
+      "source_id": "weather",
+      "cohort": null,
+      "path": "data/metadata/evidence/weather.html",
+      "requested_url": "https://open-meteo.com/",
+      "resolved_url_without_query": "https://open-meteo.com/",
+      "method": "GET",
+      "request_body": null,
+      "acquired_at_utc": "2026-10-08T17:42:58.407111+00:00",
+      "bytes": 50246,
+      "sha256": "a375de0f4fee97e46bae92a1c5cec0eac3b7dbb4af1f3000c35993258b82f1e4",
+      "format": "document",
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "text/html; charset=utf-8",
+        "last-modified": "Thu, 08 Oct 2026 17:42:57 GMT",
+        "Content-Encoding": "gzip"
+      },
+      "license": "CC BY 4.0 data; free hosted API is for non-commercial use subject to terms/rate limits",
+      "license_evidence_url": "https://open-meteo.com/en/licence",
+      "source_filename": ""
+    },
+    "dft_collision_2024": {
+      "key": "dft_collision_2024",
+      "source_id": "dft",
+      "cohort": "gb_2024",
+      "path": "data/raw/dft/collision_2024.csv",
+      "requested_url": "https://data.dft.gov.uk/road-accidents-safety-data/dft-road-casualty-statistics-collision-2024.csv",
+      "resolved_url_without_query": "https://data.dft.gov.uk/road-accidents-safety-data/dft-road-casualty-statistics-collision-2024.csv",
+      "method": "GET",
+      "request_body": null,
+      "acquired_at_utc": "2026-10-08T17:43:06.621332+00:00",
+      "bytes": 19208488,
+      "sha256": "32a78f4662e309160f37b1ea2b82017e85e07b62a022d680da7140e88706a17c",
+      "format": "csv",
+      "http_status": 200,
+      "response_headers": {
+        "Content-Length": "19208488",
+        "Content-Type": "text/csv"
+      },
+      "license": "Open Government Licence v3.0",
+      "license_evidence_url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+      "source_filename": "dft-road-casualty-statistics-collision-2024.csv"
+    },
+    "dft_vehicle_2024": {
+      "key": "dft_vehicle_2024",
+      "source_id": "dft",
+      "cohort": "gb_2024",
+      "path": "data/raw/dft/vehicle_2024.csv",
+      "requested_url": "https://data.dft.gov.uk/road-accidents-safety-data/dft-road-casualty-statistics-vehicle-2024.csv",
+      "resolved_url_without_query": "https://data.dft.gov.uk/road-accidents-safety-data/dft-road-casualty-statistics-vehicle-2024.csv",
+      "method": "GET",
+      "request_body": null,
+      "acquired_at_utc": "2026-10-08T17:43:20.971175+00:00",
+      "bytes": 20296911,
+      "sha256": "1a60f65f07a44454bc03c63b35d6741f41c9dfbb05a26753406aef8bff4ae6cd",
+      "format": "csv",
+      "http_status": 200,
+      "response_headers": {
+        "Content-Length": "20296911",
+        "Content-Type": "text/csv"
+      },
+      "license": "Open Government Licence v3.0",
+      "license_evidence_url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+      "source_filename": "dft-road-casualty-statistics-vehicle-2024.csv"
+    },
+    "dft_casualty_2024": {
+      "key": "dft_casualty_2024",
+      "source_id": "dft",
+      "cohort": "gb_2024",
+      "path": "data/raw/dft/casualty_2024.csv",
+      "requested_url": "https://data.dft.gov.uk/road-accidents-safety-data/dft-road-casualty-statistics-casualty-2024.csv",
+      "resolved_url_without_query": "https://data.dft.gov.uk/road-accidents-safety-data/dft-road-casualty-statistics-casualty-2024.csv",
+      "method": "GET",
+      "request_body": null,
+      "acquired_at_utc": "2026-10-08T17:43:25.613863+00:00",
+      "bytes": 10439101,
+      "sha256": "838aad605a6ac638973f09248ef3a730dbd1de30ac8fc79dfd536e7d4a47b0f8",
+      "format": "csv",
+      "http_status": 200,
+      "response_headers": {
+        "Content-Length": "10439101",
+        "Content-Type": "text/csv"
+      },
+      "license": "Open Government Licence v3.0",
+      "license_evidence_url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+      "source_filename": "dft-road-casualty-statistics-casualty-2024.csv"
+    },
+    "dft_data_guide": {
+      "key": "dft_data_guide",
+      "source_id": "dft",
+      "cohort": "documentation",
+      "path": "data/raw/dft/data_guide.xlsx",
+      "requested_url": "https://assets.publishing.service.gov.uk/media/6ab2a71d997a4b2950cced58/dft-road-casualty-statistics-road-safety-open-dataset-data-guide-2025.xlsx",
+      "resolved_url_without_query": "https://assets.publishing.service.gov.uk/media/6ab2a71d997a4b2950cced58/dft-road-casualty-statistics-road-safety-open-dataset-data-guide-2025.xlsx",
+      "method": "GET",
+      "request_body": null,
+      "acquired_at_utc": "2026-10-08T17:43:26.598095+00:00",
+      "bytes": 85112,
+      "sha256": "51b08606ef3dad1ae5d4c8726241b022fc8e4bbdc910ef0e5cc2fb92b054fc12",
+      "format": "xlsx",
+      "http_status": 200,
+      "response_headers": {
+        "Content-Length": "85112",
+        "Content-Type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+        "ETag": "\"6ab2a71d-14c78\"",
+        "Last-Modified": "Tue, 22 Sep 2026 16:04:45 GMT"
+      },
+      "license": "Open Government Licence v3.0",
+      "license_evidence_url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+      "archive_members": [
+        {
+          "name": "[Content_Types].xml",
+          "uncompressed_bytes": 2055,
+          "compressed_bytes": 451,
+          "crc32": "a9a655f3"
+        },
+        {
+          "name": "_rels/.rels",
+          "uncompressed_bytes": 881,
+          "compressed_bytes": 305,
+          "crc32": "62cf1cc2"
+        },
+        {
+          "name": "xl/workbook.xml",
+          "uncompressed_bytes": 2406,
+          "compressed_bytes": 996,
+          "crc32": "5e66cb40"
+        },
+        {
+          "name": "xl/_rels/workbook.xml.rels",
+          "uncompressed_bytes": 1265,
+          "compressed_bytes": 286,
+          "crc32": "c8390c41"
+        },
+        {
+          "name": "xl/worksheets/sheet1.xml",
+          "uncompressed_bytes": 424417,
+          "compressed_bytes": 46518,
+          "crc32": "51049db8"
+        },
+        {
+          "name": "xl/worksheets/sheet2.xml",
+          "uncompressed_bytes": 32488,
+          "compressed_bytes": 4294,
+          "crc32": "4e37034a"
+        },
+        {
+          "name": "xl/theme/theme1.xml",
+          "uncompressed_bytes": 8450,
+          "compressed_bytes": 1884,
+          "crc32": "ec0d45b1"
+        },
+        {
+          "name": "xl/styles.xml",
+          "uncompressed_bytes": 3496,
+          "compressed_bytes": 965,
+          "crc32": "c466eee4"
+        },
+        {
+          "name": "xl/sharedStrings.xml",
+          "uncompressed_bytes": 51595,
+          "compressed_bytes": 11909,
+          "crc32": "821a6c8d"
+        },
+        {
+          "name": "xl/worksheets/_rels/sheet1.xml.rels",
+          "uncompressed_bytes": 559,
+          "compressed_bytes": 290,
+          "crc32": "fe1ae247"
+        },
+        {
+          "name": "xl/printerSettings/printerSettings1.bin",
+          "uncompressed_bytes": 2700,
+          "compressed_bytes": 737,
+          "crc32": "4d89d304"
+        },
+        {
+          "name": "customXml/item1.xml",
+          "uncompressed_bytes": 1758,
+          "compressed_bytes": 510,
+          "crc32": "3c107e38"
+        },
+        {
+          "name": "customXml/itemProps1.xml",
+          "uncompressed_bytes": 547,
+          "compressed_bytes": 318,
+          "crc32": "3f16be70"
+        },
+        {
+          "name": "customXml/item2.xml",
+          "uncompressed_bytes": 219,
+          "compressed_bytes": 144,
+          "crc32": "236284bd"
+        },
+        {
+          "name": "customXml/itemProps2.xml",
+          "uncompressed_bytes": 335,
+          "compressed_bytes": 243,
+          "crc32": "e4f02145"
+        },
+        {
+          "name": "[trash]/0000.dat",
+          "uncompressed_bytes": 3259,
+          "compressed_bytes": 3259,
+          "crc32": "ffffffff"
+        },
+        {
+          "name": "customXml/itemProps3.xml",
+          "uncompressed_bytes": 1149,
+          "compressed_bytes": 442,
+          "crc32": "7b937b3b"
+        },
+        {
+          "name": "docMetadata/LabelInfo.xml",
+          "uncompressed_bytes": 309,
+          "compressed_bytes": 235,
+          "crc32": "b9cb6fa4"
+        },
+        {
+          "name": "docProps/core.xml",
+          "uncompressed_bytes": 804,
+          "compressed_bytes": 407,
+          "crc32": "ed763062"
+        },
+        {
+          "name": "docProps/app.xml",
+          "uncompressed_bytes": 911,
+          "compressed_bytes": 447,
+          "crc32": "a63bcea2"
+        },
+        {
+          "name": "docProps/custom.xml",
+          "uncompressed_bytes": 1018,
+          "compressed_bytes": 356,
+          "crc32": "484a347d"
+        },
+        {
+          "name": "customXml/_rels/item1.xml.rels",
+          "uncompressed_bytes": 296,
+          "compressed_bytes": 194,
+          "crc32": "7a393f74"
+        },
+        {
+          "name": "customXml/_rels/item2.xml.rels",
+          "uncompressed_bytes": 296,
+          "compressed_bytes": 195,
+          "crc32": "2227965c"
+        },
+        {
+          "name": "customXml/_rels/item3.xml.rels",
+          "uncompressed_bytes": 296,
+          "compressed_bytes": 195,
+          "crc32": "a302f37b"
+        },
+        {
+          "name": "customXml/item3.xml",
+          "uncompressed_bytes": 17740,
+          "compressed_bytes": 3381,
+          "crc32": "ac19e3dc"
+        }
+      ],
+      "source_filename": "dft-road-casualty-statistics-road-safety-open-dataset-data-guide-2025.xlsx"
+    },
+    "evidence_dft_license": {
+      "key": "evidence_dft_license",
+      "source_id": "dft",
+      "cohort": null,
+      "path": "data/metadata/evidence/dft_license.html",
+      "requested_url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+      "resolved_url_without_query": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+      "method": "GET",
+      "request_body": null,
+      "acquired_at_utc": "2026-10-08T17:43:27.197470+00:00",
+      "bytes": 10450,
+      "sha256": "f5b2b9f2af63647cde889fa6c3508f5705925295b74912c68caa28dd37e64aa5",
+      "format": "document",
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "text/html",
+        "Content-Encoding": "gzip"
+      },
+      "license": "Open Government Licence v3.0",
+      "license_evidence_url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+      "source_filename": "3"
+    },
+    "cambridge_sites": {
+      "key": "cambridge_sites",
+      "source_id": "cambridge",
+      "cohort": "england_wales_static",
+      "path": "data/raw/cambridge/final_dataset.csv",
+      "requested_url": "https://www.repository.cam.ac.uk/bitstreams/57021e51-e0ee-4bd3-a2ca-fbf584268e2d/download",
+      "resolved_url_without_query": "https://api.repository.cam.ac.uk/server/api/core/bitstreams/57021e51-e0ee-4bd3-a2ca-fbf584268e2d/content",
+      "method": "GET",
+      "request_body": null,
+      "acquired_at_utc": "2026-10-08T17:43:30.418579+00:00",
+      "bytes": 1903727,
+      "sha256": "db67429d3e1b019c2d1f8d044851dd9c473f8404bbe673b9219e7ffe5037a28c",
+      "format": "csv",
+      "http_status": 200,
+      "response_headers": {
+        "Last-Modified": "Fri, 27 Oct 2023 15:21:03 GMT",
+        "ETag": "\"9101de27281c826d22552cb0aabd2b65\"",
+        "Content-Type": "text/csv;charset=UTF-8"
+      },
+      "license": "CC BY 4.0",
+      "license_evidence_url": "https://creativecommons.org/licenses/by/4.0/",
+      "source_filename": "download"
+    },
+    "porto_catalog": {
+      "key": "porto_catalog",
+      "source_id": "porto",
+      "cohort": null,
+      "path": "data/metadata/evidence/porto_catalog.json",
+      "requested_url": "https://www.kaggle.com/api/v1/datasets/list?search=taxi-trajectory",
+      "resolved_url_without_query": "https://www.kaggle.com/api/v1/datasets/list",
+      "method": "GET",
+      "request_body": null,
+      "acquired_at_utc": "2026-10-08T17:43:30.864543+00:00",
+      "bytes": 23181,
+      "sha256": "85d3c6bb801f7d60f451db6176d16318b49895a5b3a0b4d6aff3f9d739bdef4b",
+      "format": "json",
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json",
+        "Content-Encoding": "gzip"
+      },
+      "license": "Verify from live Kaggle metadata; Unknown must remain unresolved",
+      "license_evidence_url": "https://www.kaggle.com/datasets/crailtap/taxi-trajectory",
+      "source_filename": "list"
+    },
+    "porto_archive": {
+      "key": "porto_archive",
+      "source_id": "porto",
+      "cohort": "porto_taxi",
+      "path": "data/raw/porto/dataset.zip",
+      "requested_url": "https://www.kaggle.com/api/v1/datasets/download/crailtap/taxi-trajectory",
+      "resolved_url_without_query": "https://storage.googleapis.com/kaggle-data-sets/21098/27195/bundle/archive.zip",
+      "method": "GET",
+      "request_body": null,
+      "acquired_at_utc": "2026-10-08T17:48:28.181552+00:00",
+      "bytes": 540159049,
+      "sha256": "9ce0c1edc234581e51d367256576869776a2554b9b60bfd492fe01771078913a",
+      "format": "zip",
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/zip",
+        "Last-Modified": "Sun, 29 Sep 2019 10:57:44 GMT",
+        "ETag": "\"1f74b302d6a595b75e060f70769637cc\"",
+        "Content-Length": "540159049"
+      },
+      "license": "Unknown",
+      "license_evidence_url": "https://www.kaggle.com/datasets/crailtap/taxi-trajectory",
+      "archive_members": [
+        {
+          "name": "train.csv",
+          "uncompressed_bytes": 1942848724,
+          "compressed_bytes": 540158893,
+          "crc32": "4469db9f"
+        }
+      ],
+      "source_filename": "taxi-trajectory"
+    },
+    "evidence_nyc_repository": {
+      "key": "evidence_nyc_repository",
+      "source_id": "nyc",
+      "cohort": null,
+      "path": "data/metadata/evidence/nyc_repository.json",
+      "requested_url": "https://api.github.com/repos/walterwzhang/NYC-Taxi-2013-Data",
+      "resolved_url_without_query": "https://api.github.com/repos/walterwzhang/NYC-Taxi-2013-Data",
+      "method": "GET",
+      "request_body": null,
+      "acquired_at_utc": "2026-10-08T17:48:29.648870+00:00",
+      "bytes": 5880,
+      "sha256": "e50cbe0a617fd7b843cd1328ef219ddddfa4018d621a0023e1cb49cd42ac25b4",
+      "format": "json",
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "ETag": "W/\"66af44fe56ed75b9cf74a9cafe9d65054b99ef7e8f6798c46963cfd872fa30cd\"",
+        "Last-Modified": "Fri, 12 Jul 2024 18:28:23 GMT",
+        "Content-Encoding": "gzip",
+        "Content-Length": "1438"
+      },
+      "license": "No repository LICENSE identified; reuse permission unresolved",
+      "license_evidence_url": "https://github.com/walterwzhang/NYC-Taxi-2013-Data",
+      "source_filename": "NYC-Taxi-2013-Data"
+    },
+    "evidence_nyc_commit": {
+      "key": "evidence_nyc_commit",
+      "source_id": "nyc",
+      "cohort": null,
+      "path": "data/metadata/evidence/nyc_commit.json",
+      "requested_url": "https://api.github.com/repos/walterwzhang/NYC-Taxi-2013-Data/commits/master",
+      "resolved_url_without_query": "https://api.github.com/repos/walterwzhang/NYC-Taxi-2013-Data/commits/master",
+      "method": "GET",
+      "request_body": null,
+      "acquired_at_utc": "2026-10-08T17:48:30.068989+00:00",
+      "bytes": 11984,
+      "sha256": "5fc72ac393de99880781617338df77a7f257e6f2213fe4f1a1788c50c54d55d1",
+      "format": "json",
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "ETag": "W/\"0bb58d0772e133628b2d98886dfb826e25f7dcb22840f7bd7593fec901f6c912\"",
+        "Last-Modified": "Thu, 02 Apr 2020 19:48:06 GMT",
+        "Content-Encoding": "gzip"
+      },
+      "license": "No repository LICENSE identified; reuse permission unresolved",
+      "license_evidence_url": "https://github.com/walterwzhang/NYC-Taxi-2013-Data",
+      "source_filename": "master"
+    },
+    "evidence_nyc_tree": {
+      "key": "evidence_nyc_tree",
+      "source_id": "nyc",
+      "cohort": null,
+      "path": "data/metadata/evidence/nyc_tree.json",
+      "requested_url": "https://api.github.com/repos/walterwzhang/NYC-Taxi-2013-Data/git/trees/ff740c3c148edf006f05c6c4861ad73915d942ee?recursive=1",
+      "resolved_url_without_query": "https://api.github.com/repos/walterwzhang/NYC-Taxi-2013-Data/git/trees/ff740c3c148edf006f05c6c4861ad73915d942ee",
+      "method": "GET",
+      "request_body": null,
+      "acquired_at_utc": "2026-10-08T17:48:30.418080+00:00",
+      "bytes": 5222,
+      "sha256": "13db9b63a94fe7e5a97833d9f4d9315ebd8255bc7f5cd19aac1b0724b44a827d",
+      "format": "json",
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "ETag": "W/\"3e8027309a588e3f14a5a7ea7879d7848ad82a2ec464ade49dbacf657680604e\"",
+        "Last-Modified": "Fri, 12 Jul 2024 18:28:23 GMT",
+        "Content-Encoding": "gzip",
+        "Content-Length": "1189"
+      },
+      "license": "No repository LICENSE identified; reuse permission unresolved",
+      "license_evidence_url": "https://github.com/walterwzhang/NYC-Taxi-2013-Data",
+      "source_filename": "ff740c3c148edf006f05c6c4861ad73915d942ee"
+    },
+    "evidence_nyc_readme": {
+      "key": "evidence_nyc_readme",
+      "source_id": "nyc",
+      "cohort": null,
+      "path": "data/metadata/evidence/nyc_readme.md",
+      "requested_url": "https://raw.githubusercontent.com/walterwzhang/NYC-Taxi-2013-Data/ff740c3c148edf006f05c6c4861ad73915d942ee/README.md",
+      "resolved_url_without_query": "https://raw.githubusercontent.com/walterwzhang/NYC-Taxi-2013-Data/ff740c3c148edf006f05c6c4861ad73915d942ee/README.md",
+      "method": "GET",
+      "request_body": null,
+      "acquired_at_utc": "2026-10-08T17:48:30.811863+00:00",
+      "bytes": 5369,
+      "sha256": "89395d9c8edc48a03a148192612796eb528f1a76181a1b3d22c64b1dbf07e341",
+      "format": "document",
+      "http_status": 200,
+      "response_headers": {
+        "Content-Length": "1932",
+        "Content-Type": "text/plain; charset=utf-8",
+        "ETag": "W/\"65eb44e00e504dee3de4918b02b5b286edb261ffda83bf6811f14eaab5fa51bc\"",
+        "Content-Encoding": "gzip"
+      },
+      "license": "No repository LICENSE identified; reuse permission unresolved",
+      "license_evidence_url": "https://github.com/walterwzhang/NYC-Taxi-2013-Data",
+      "source_filename": "README.md"
+    },
+    "nyc_Medallion_Sample_100k": {
+      "key": "nyc_Medallion_Sample_100k",
+      "source_id": "nyc",
+      "cohort": "nyc_2013_quarantined",
+      "path": "data/raw/nyc/Medallion_Sample_100k.csv",
+      "requested_url": "https://raw.githubusercontent.com/walterwzhang/NYC-Taxi-2013-Data/ff740c3c148edf006f05c6c4861ad73915d942ee/Medallion-Samples/100k-Driver-Sample/Medallion_Sample_100k.csv",
+      "resolved_url_without_query": "https://raw.githubusercontent.com/walterwzhang/NYC-Taxi-2013-Data/ff740c3c148edf006f05c6c4861ad73915d942ee/Medallion-Samples/100k-Driver-Sample/Medallion_Sample_100k.csv",
+      "method": "GET",
+      "request_body": null,
+      "acquired_at_utc": "2026-10-08T17:48:35.470690+00:00",
+      "bytes": 7642693,
+      "sha256": "cc98d9b4893bdc67e38a5ba6f58fe2d50858f903a29f3fbfcf10d6924d32681f",
+      "format": "csv",
+      "http_status": 200,
+      "response_headers": {
+        "Content-Length": "4211775",
+        "Content-Type": "text/plain; charset=utf-8",
+        "ETag": "W/\"eeed346245824017819f96ca0714515e86f8cfdf3e11e5bca4aff2609f56793a\"",
+        "Content-Encoding": "gzip"
+      },
+      "license": "No repository LICENSE identified; reuse permission unresolved",
+      "license_evidence_url": "https://github.com/walterwzhang/NYC-Taxi-2013-Data",
+      "source_filename": "Medallion_Sample_100k.csv"
+    },
+    "nyc_Medallion_Sample_5k": {
+      "key": "nyc_Medallion_Sample_5k",
+      "source_id": "nyc",
+      "cohort": "nyc_2013_quarantined",
+      "path": "data/raw/nyc/Medallion_Sample_5k.csv",
+      "requested_url": "https://raw.githubusercontent.com/walterwzhang/NYC-Taxi-2013-Data/ff740c3c148edf006f05c6c4861ad73915d942ee/Medallion-Samples/5k-Driver-Sample/Medallion_Sample_5k.csv",
+      "resolved_url_without_query": "https://raw.githubusercontent.com/walterwzhang/NYC-Taxi-2013-Data/ff740c3c148edf006f05c6c4861ad73915d942ee/Medallion-Samples/5k-Driver-Sample/Medallion_Sample_5k.csv",
+      "method": "GET",
+      "request_body": null,
+      "acquired_at_utc": "2026-10-08T17:48:35.898685+00:00",
+      "bytes": 382228,
+      "sha256": "9f7feac559f727425b176f17b2a66e08b779b568ec0e2c10b70964b4c7e868de",
+      "format": "csv",
+      "http_status": 200,
+      "response_headers": {
+        "Content-Length": "210966",
+        "Content-Type": "text/plain; charset=utf-8",
+        "ETag": "W/\"28af68a4a5ac3917db2fcdc1fb4f870170d0ff8d07e99c296da0ed0216accf0a\"",
+        "Content-Encoding": "gzip"
+      },
+      "license": "No repository LICENSE identified; reuse permission unresolved",
+      "license_evidence_url": "https://github.com/walterwzhang/NYC-Taxi-2013-Data",
+      "source_filename": "Medallion_Sample_5k.csv"
+    },
+    "nyc_medallion_mapping_key": {
+      "key": "nyc_medallion_mapping_key",
+      "source_id": "nyc",
+      "cohort": "nyc_2013_quarantined",
+      "path": "data/raw/nyc/medallion_mapping_key.csv",
+      "requested_url": "https://raw.githubusercontent.com/walterwzhang/NYC-Taxi-2013-Data/ff740c3c148edf006f05c6c4861ad73915d942ee/Medallion-Samples/medallion_mapping_key.csv",
+      "resolved_url_without_query": "https://raw.githubusercontent.com/walterwzhang/NYC-Taxi-2013-Data/ff740c3c148edf006f05c6c4861ad73915d942ee/Medallion-Samples/medallion_mapping_key.csv",
+      "method": "GET",
+      "request_body": null,
+      "acquired_at_utc": "2026-10-08T17:48:45.380094+00:00",
+      "bytes": 45405342,
+      "sha256": "6ba0652ff2affba41d663061318b4cca535e7e9254d01b20fad525db4124dc72",
+      "format": "csv",
+      "http_status": 200,
+      "response_headers": {
+        "Content-Length": "14335694",
+        "Content-Type": "text/plain; charset=utf-8",
+        "ETag": "W/\"a435ba1e300e6124ae7be7a3bb17844dcf4c9f85a317d058a87d5cf38fb40570\"",
+        "Content-Encoding": "gzip"
+      },
+      "license": "No repository LICENSE identified; reuse permission unresolved",
+      "license_evidence_url": "https://github.com/walterwzhang/NYC-Taxi-2013-Data",
+      "source_filename": "medallion_mapping_key.csv"
+    },
+    "evidence_osm_license": {
+      "key": "evidence_osm_license",
+      "source_id": "osm",
+      "cohort": null,
+      "path": "data/metadata/evidence/osm_license.html",
+      "requested_url": "https://www.openstreetmap.org/copyright",
+      "resolved_url_without_query": "https://www.openstreetmap.org/copyright",
+      "method": "GET",
+      "request_body": null,
+      "acquired_at_utc": "2026-10-08T17:48:55.512363+00:00",
+      "bytes": 21447,
+      "sha256": "f9b6815cd4e899496c249a3ce62636ec51f3dc18c4324c6ed4293a3df4a3108d",
+      "format": "document",
+      "http_status": 200,
+      "response_headers": {
+        "Content-Length": "7109",
+        "content-encoding": "gzip",
+        "content-type": "text/html; charset=utf-8",
+        "etag": "W/\"f9b6815cd4e899496c249a3ce62636ec-gzip\""
+      },
+      "license": "ODbL 1.0; attribution to OpenStreetMap contributors",
+      "license_evidence_url": "https://www.openstreetmap.org/copyright",
+      "source_filename": "copyright"
+    },
+    "weather_birmingham_2024": {
+      "key": "weather_birmingham_2024",
+      "source_id": "weather",
+      "cohort": "birmingham_2024",
+      "path": "data/raw/weather/birmingham_era5_2024.json",
+      "requested_url": "https://archive-api.open-meteo.com/v1/archive?latitude=52.4862&longitude=-1.8904&start_date=2024-01-01&end_date=2024-12-31&timezone=UTC&models=era5&hourly=temperature_2m%2Crelative_humidity_2m%2Cprecipitation%2Crain%2Csnowfall%2Cwind_speed_10m%2Cweather_code&wind_speed_unit=ms",
+      "resolved_url_without_query": "https://archive-api.open-meteo.com/v1/archive",
+      "method": "GET",
+      "request_body": null,
+      "acquired_at_utc": "2026-10-08T17:48:56.621254+00:00",
+      "bytes": 429534,
+      "sha256": "7423378362835e3c5d622b2fccaee6d382c27d1b8dbb3fa774e66c672ec41813",
+      "format": "json",
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Content-Encoding": "deflate"
+      },
+      "license": "CC BY 4.0 data; free hosted API is for non-commercial use subject to terms/rate limits",
+      "license_evidence_url": "https://open-meteo.com/en/licence",
+      "source_filename": "archive"
+    },
+    "evidence_weather_archive_docs": {
+      "key": "evidence_weather_archive_docs",
+      "source_id": "weather",
+      "cohort": null,
+      "path": "data/metadata/evidence/weather_archive_docs.html",
+      "requested_url": "https://open-meteo.com/en/docs/historical-weather-api",
+      "resolved_url_without_query": "https://open-meteo.com/en/docs/historical-weather-api",
+      "method": "GET",
+      "request_body": null,
+      "acquired_at_utc": "2026-10-08T17:48:57.336725+00:00",
+      "bytes": 356742,
+      "sha256": "44ec3b519619fbb57821f991f64aca8183ee2b75fb8b127b0f773201eadd65db",
+      "format": "document",
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "text/html; charset=utf-8",
+        "last-modified": "Thu, 08 Oct 2026 17:48:55 GMT",
+        "Content-Encoding": "gzip"
+      },
+      "license": "CC BY 4.0 data; free hosted API is for non-commercial use subject to terms/rate limits",
+      "license_evidence_url": "https://open-meteo.com/en/licence",
+      "source_filename": "historical-weather-api"
+    },
+    "evidence_weather_license": {
+      "key": "evidence_weather_license",
+      "source_id": "weather",
+      "cohort": null,
+      "path": "data/metadata/evidence/weather_license.html",
+      "requested_url": "https://open-meteo.com/en/licence",
+      "resolved_url_without_query": "https://open-meteo.com/en/licence",
+      "method": "GET",
+      "request_body": null,
+      "acquired_at_utc": "2026-10-08T17:48:57.536272+00:00",
+      "bytes": 39583,
+      "sha256": "fa5a8ed855a84679acded81224c6c183e7ceb376198aed70ec112f0de650a925",
+      "format": "document",
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "text/html; charset=utf-8",
+        "last-modified": "Thu, 08 Oct 2026 17:48:56 GMT",
+        "Content-Encoding": "gzip"
+      },
+      "license": "CC BY 4.0 data; free hosted API is for non-commercial use subject to terms/rate limits",
+      "license_evidence_url": "https://open-meteo.com/en/licence",
+      "source_filename": "licence"
+    },
+    "evidence_weather_terms": {
+      "key": "evidence_weather_terms",
+      "source_id": "weather",
+      "cohort": null,
+      "path": "data/metadata/evidence/weather_terms.html",
+      "requested_url": "https://open-meteo.com/en/terms",
+      "resolved_url_without_query": "https://open-meteo.com/en/terms",
+      "method": "GET",
+      "request_body": null,
+      "acquired_at_utc": "2026-10-08T17:48:57.729541+00:00",
+      "bytes": 37377,
+      "sha256": "398a2ffce438b675897306988864a8eefeaf10a55bc86905b539451bfe396089",
+      "format": "document",
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "text/html; charset=utf-8",
+        "last-modified": "Thu, 08 Oct 2026 17:48:56 GMT",
+        "Content-Encoding": "gzip"
+      },
+      "license": "CC BY 4.0 data; free hosted API is for non-commercial use subject to terms/rate limits",
+      "license_evidence_url": "https://open-meteo.com/en/licence",
+      "source_filename": "terms"
+    },
+    "evidence_traccar_api": {
+      "key": "evidence_traccar_api",
+      "source_id": "traccar",
+      "cohort": null,
+      "path": "data/metadata/evidence/traccar_api.html",
+      "requested_url": "https://www.traccar.org/api-reference/",
+      "resolved_url_without_query": "https://www.traccar.org/api-reference/",
+      "method": "GET",
+      "request_body": null,
+      "acquired_at_utc": "2026-10-08T17:48:58.554345+00:00",
+      "bytes": 1241,
+      "sha256": "8d23e9b32de1698587771f2de2deb4758592374649f18a4dafc122524f5e342a",
+      "format": "document",
+      "http_status": 200,
+      "response_headers": {
+        "Content-Length": "1241",
+        "Content-Type": "text/html; charset=utf-8",
+        "Etag": "W/\"4d9-gazk7Fs9cISAVeWfjokoRryb0JQ\""
+      },
+      "license": "Apache-2.0 software does not license any fleet records",
+      "license_evidence_url": "https://raw.githubusercontent.com/traccar/traccar/master/LICENSE.txt",
+      "source_filename": "api-reference"
+    },
+    "evidence_traccar_openapi": {
+      "key": "evidence_traccar_openapi",
+      "source_id": "traccar",
+      "cohort": null,
+      "path": "data/metadata/evidence/traccar_openapi.yaml",
+      "requested_url": "https://raw.githubusercontent.com/traccar/traccar/master/openapi.yaml",
+      "resolved_url_without_query": "https://raw.githubusercontent.com/traccar/traccar/master/openapi.yaml",
+      "method": "GET",
+      "request_body": null,
+      "acquired_at_utc": "2026-10-08T17:48:58.899127+00:00",
+      "bytes": 126133,
+      "sha256": "b1178b2c7f214914ae4830d4c6417d312577f90b7aa386b5a60d5fb7dd93af4f",
+      "format": "document",
+      "http_status": 200,
+      "response_headers": {
+        "Content-Length": "11552",
+        "Content-Type": "text/plain; charset=utf-8",
+        "ETag": "W/\"9f6bc6c25a8da01caa31b9b096904fe70f17a61d71bd0ed9ed1f2040f5e5c9a3\"",
+        "Content-Encoding": "gzip"
+      },
+      "license": "Apache-2.0 software does not license any fleet records",
+      "license_evidence_url": "https://raw.githubusercontent.com/traccar/traccar/master/LICENSE.txt",
+      "source_filename": "openapi.yaml"
+    },
+    "evidence_traccar_software_license": {
+      "key": "evidence_traccar_software_license",
+      "source_id": "traccar",
+      "cohort": null,
+      "path": "data/metadata/evidence/traccar_software_license.txt",
+      "requested_url": "https://raw.githubusercontent.com/traccar/traccar/master/LICENSE.txt",
+      "resolved_url_without_query": "https://raw.githubusercontent.com/traccar/traccar/master/LICENSE.txt",
+      "method": "GET",
+      "request_body": null,
+      "acquired_at_utc": "2026-10-08T17:48:59.206852+00:00",
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "format": "document",
+      "http_status": 200,
+      "response_headers": {
+        "Content-Length": "3967",
+        "Content-Type": "text/plain; charset=utf-8",
+        "ETag": "W/\"f97a24404798d2ef3f44bbec632627ea3d0eaff5195f01a2783ed3738e44233b\"",
+        "Content-Encoding": "gzip"
+      },
+      "license": "Apache-2.0 software does not license any fleet records",
+      "license_evidence_url": "https://raw.githubusercontent.com/traccar/traccar/master/LICENSE.txt",
+      "source_filename": "LICENSE.txt"
+    },
+    "evidence_olist": {
+      "key": "evidence_olist",
+      "source_id": "olist",
+      "cohort": null,
+      "path": "data/metadata/evidence/olist.html",
+      "requested_url": "https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce",
+      "resolved_url_without_query": "https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce",
+      "method": "GET",
+      "request_body": null,
+      "acquired_at_utc": "2026-10-08T17:50:10.205542+00:00",
+      "bytes": 13519,
+      "sha256": "f0e1c6692b95e64cb2923ff5f930e23fd25974161908dd6ae8364291526518a7",
+      "format": "document",
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "text/html; charset=utf-8",
+        "Content-Encoding": "gzip"
+      },
+      "license": "CC BY-NC-SA 4.0 (verify live catalog)",
+      "license_evidence_url": "https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce",
+      "source_filename": "brazilian-ecommerce"
+    },
+    "olist_archive": {
+      "key": "olist_archive",
+      "source_id": "olist",
+      "cohort": "brazil_olist",
+      "path": "data/raw/olist/dataset.zip",
+      "requested_url": "https://www.kaggle.com/api/v1/datasets/download/olistbr/brazilian-ecommerce",
+      "resolved_url_without_query": "https://storage.googleapis.com/kaggle-data-sets/55151/2669146/bundle/archive.zip",
+      "method": "GET",
+      "request_body": null,
+      "acquired_at_utc": "2026-10-08T17:50:28.274652+00:00",
+      "bytes": 44717580,
+      "sha256": "967e41e04fc306fe604e2a693f488995a8b41e5047418f8a5c8e4abd6deca784",
+      "format": "zip",
+      "http_status": 200,
+      "response_headers": {
+        "Content-Type": "application/zip",
+        "Last-Modified": "Fri, 01 Oct 2021 19:08:57 GMT",
+        "ETag": "\"f2f3704ec08d55ef94fc2887bdc96472\"",
+        "Content-Length": "44717580"
+      },
+      "license": "CC BY-NC-SA 4.0",
+      "license_evidence_url": "https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce",
+      "archive_members": [
+        {
+          "name": "olist_customers_dataset.csv",
+          "uncompressed_bytes": 9033957,
+          "compressed_bytes": 4814502,
+          "crc32": "02a8adf5"
+        },
+        {
+          "name": "olist_geolocation_dataset.csv",
+          "uncompressed_bytes": 61273883,
+          "compressed_bytes": 15651360,
+          "crc32": "e25e7a77"
+        },
+        {
+          "name": "olist_order_items_dataset.csv",
+          "uncompressed_bytes": 15438671,
+          "compressed_bytes": 6674655,
+          "crc32": "f71109b9"
+        },
+        {
+          "name": "olist_order_payments_dataset.csv",
+          "uncompressed_bytes": 5777138,
+          "compressed_bytes": 2609224,
+          "crc32": "a7330f56"
+        },
+        {
+          "name": "olist_order_reviews_dataset.csv",
+          "uncompressed_bytes": 14451670,
+          "compressed_bytes": 6733713,
+          "crc32": "1b1dfe58"
+        },
+        {
+          "name": "olist_orders_dataset.csv",
+          "uncompressed_bytes": 17654914,
+          "compressed_bytes": 7080178,
+          "crc32": "73de4099"
+        },
+        {
+          "name": "olist_products_dataset.csv",
+          "uncompressed_bytes": 2379446,
+          "compressed_bytes": 1066585,
+          "crc32": "c80b861b"
+        },
+        {
+          "name": "olist_sellers_dataset.csv",
+          "uncompressed_bytes": 174703,
+          "compressed_bytes": 84690,
+          "crc32": "a2e1765a"
+        },
+        {
+          "name": "product_category_name_translation.csv",
+          "uncompressed_bytes": 2613,
+          "compressed_bytes": 1087,
+          "crc32": "7ddfba34"
+        }
+      ],
+      "source_filename": "brazilian-ecommerce"
+    },
+    "osm_birmingham_2024": {
+      "key": "osm_birmingham_2024",
+      "source_id": "osm",
+      "cohort": "birmingham_2024",
+      "path": "data/raw/osm/birmingham_2024-01-01.json",
+      "requested_url": "https://overpass-api.de/api/interpreter",
+      "resolved_url_without_query": "https://overpass-api.de/api/interpreter",
+      "method": "POST",
+      "request_body": {
+        "data": "[out:json][timeout:150][date:\"2024-01-01T00:00:00Z\"];way[\"highway\"~\"^(motorway|trunk|primary|secondary|tertiary|unclassified|residential|service|living_street|motorway_link|trunk_link|primary_link|secondary_link|tertiary_link)$\"](52.42,-1.99,52.55,-1.78);(._;>;);out meta;"
+      },
+      "acquired_at_utc": "2026-10-08T17:50:42.656348+00:00",
+      "bytes": 39418344,
+      "sha256": "d055612e77a38dbaeb65a81a4c7731c5151dedcced46beea33c016367c1f76a1",
+      "format": "json",
+      "http_status": 200,
+      "response_headers": {
+        "Content-Encoding": "gzip",
+        "Content-Type": "application/json"
+      },
+      "license": "ODbL 1.0; attribution to OpenStreetMap contributors",
+      "license_evidence_url": "https://www.openstreetmap.org/copyright",
+      "source_filename": "interpreter"
+    },
+    "olist_catalog": {
+      "key": "olist_catalog",
+      "source_id": "olist",
+      "cohort": null,
+      "path": "data/metadata/evidence/olist_catalog.json",
+      "requested_url": "https://www.kaggle.com/api/v1/datasets/list?search=brazilian-ecommerce",
+      "resolved_url_without_query": "https://www.kaggle.com/api/v1/datasets/list",
+      "method": "GET",
+      "request_body": null,
+      "acquired_at_utc": "2026-10-08T17:51:39.116127+00:00",
+      "bytes": 41618,
+      "sha256": "60a5c29144ce2844998e46840626af95cef3f489730de5cf9352cfdb857428c1",
+      "format": "json",
+      "http_status": 200,
+      "source_filename": "list",
+      "response_headers": {
+        "Content-Type": "application/json",
+        "Content-Encoding": "gzip"
+      },
+      "license": "CC BY-NC-SA 4.0 (verify live catalog)",
+      "license_evidence_url": "https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce"
+    },
+    "olist_catalog_first_attempt_evidence": {
+      "key": "olist_catalog_first_attempt_evidence",
+      "source_id": "olist",
+      "cohort": "documentation",
+      "path": "data/metadata/evidence/olist_catalog_untracked_first_attempt.json",
+      "requested_url": "https://www.kaggle.com/api/v1/datasets/list?search=brazilian-ecommerce",
+      "format": "json",
+      "bytes": 41618,
+      "sha256": "60a5c29144ce2844998e46840626af95cef3f489730de5cf9352cfdb857428c1",
+      "acquired_at_utc": null,
+      "provenance_note": "Downloaded by the first acquisition attempt; configuration failure prevented initial manifest registration. Original bytes retained; acquisition timestamp not recoverable. Independently re-fetched catalog is olist_catalog.",
+      "license": "Kaggle catalog metadata; underlying Olist data CC BY-NC-SA 4.0",
+      "license_evidence_url": "https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce",
+      "source_filename": "list"
+    }
+  },
+  "attempts": [
+    {
+      "key": "evidence_dft",
+      "source_id": "dft",
+      "status": "downloaded",
+      "at_utc": "2026-10-08T17:42:51.707620+00:00"
+    },
+    {
+      "key": "evidence_porto",
+      "source_id": "porto",
+      "status": "downloaded",
+      "at_utc": "2026-10-08T17:42:52.331197+00:00"
+    },
+    {
+      "key": "evidence_nyc",
+      "source_id": "nyc",
+      "status": "downloaded",
+      "at_utc": "2026-10-08T17:42:53.278516+00:00"
+    },
+    {
+      "key": "evidence_cambridge",
+      "source_id": "cambridge",
+      "status": "downloaded",
+      "at_utc": "2026-10-08T17:42:55.136174+00:00"
+    },
+    {
+      "key": "evidence_overpass",
+      "source_id": "overpass",
+      "status": "downloaded",
+      "at_utc": "2026-10-08T17:42:55.874588+00:00"
+    },
+    {
+      "key": "evidence_osm",
+      "source_id": "osm",
+      "status": "downloaded",
+      "at_utc": "2026-10-08T17:42:56.579899+00:00"
+    },
+    {
+      "key": "evidence_traccar",
+      "source_id": "traccar",
+      "status": "downloaded",
+      "at_utc": "2026-10-08T17:42:57.649146+00:00"
+    },
+    {
+      "key": "evidence_weather",
+      "source_id": "weather",
+      "status": "downloaded",
+      "at_utc": "2026-10-08T17:42:58.408310+00:00"
+    },
+    {
+      "key": "dft_collision_2024",
+      "source_id": "dft",
+      "status": "downloaded",
+      "at_utc": "2026-10-08T17:43:06.646652+00:00"
+    },
+    {
+      "key": "dft_vehicle_2024",
+      "source_id": "dft",
+      "status": "downloaded",
+      "at_utc": "2026-10-08T17:43:20.996118+00:00"
+    },
+    {
+      "key": "dft_casualty_2024",
+      "source_id": "dft",
+      "status": "downloaded",
+      "at_utc": "2026-10-08T17:43:25.625925+00:00"
+    },
+    {
+      "key": "dft_data_guide",
+      "source_id": "dft",
+      "status": "downloaded",
+      "at_utc": "2026-10-08T17:43:26.598825+00:00"
+    },
+    {
+      "key": "evidence_dft_license",
+      "source_id": "dft",
+      "status": "downloaded",
+      "at_utc": "2026-10-08T17:43:27.198133+00:00"
+    },
+    {
+      "key": "cambridge_sites",
+      "source_id": "cambridge",
+      "status": "downloaded",
+      "at_utc": "2026-10-08T17:43:30.421066+00:00"
+    },
+    {
+      "key": "porto_catalog",
+      "source_id": "porto",
+      "status": "downloaded",
+      "at_utc": "2026-10-08T17:43:30.865232+00:00"
+    },
+    {
+      "key": "porto_archive",
+      "source_id": "porto",
+      "status": "downloaded",
+      "at_utc": "2026-10-08T17:48:28.771977+00:00"
+    },
+    {
+      "key": "olist_discovery",
+      "source_id": "olist",
+      "status": "failed_or_restricted",
+      "at_utc": "2026-10-08T17:48:29.169997+00:00",
+      "detail": "'olist'",
+      "requested_url": null,
+      "http_status": null,
+      "resolution": "Corrected missing Olist source configuration; public archive subsequently downloaded and catalog license verified. Original error detail retained."
+    },
+    {
+      "key": "evidence_nyc_repository",
+      "source_id": "nyc",
+      "status": "downloaded",
+      "at_utc": "2026-10-08T17:48:29.649598+00:00"
+    },
+    {
+      "key": "evidence_nyc_commit",
+      "source_id": "nyc",
+      "status": "downloaded",
+      "at_utc": "2026-10-08T17:48:30.069588+00:00"
+    },
+    {
+      "key": "evidence_nyc_tree",
+      "source_id": "nyc",
+      "status": "downloaded",
+      "at_utc": "2026-10-08T17:48:30.418848+00:00"
+    },
+    {
+      "key": "evidence_nyc_readme",
+      "source_id": "nyc",
+      "status": "downloaded",
+      "at_utc": "2026-10-08T17:48:30.812601+00:00"
+    },
+    {
+      "key": "nyc_Medallion_Sample_100k",
+      "source_id": "nyc",
+      "status": "downloaded",
+      "at_utc": "2026-10-08T17:48:35.479214+00:00"
+    },
+    {
+      "key": "nyc_Medallion_Sample_5k",
+      "source_id": "nyc",
+      "status": "downloaded",
+      "at_utc": "2026-10-08T17:48:35.899574+00:00"
+    },
+    {
+      "key": "nyc_medallion_mapping_key",
+      "source_id": "nyc",
+      "status": "downloaded",
+      "at_utc": "2026-10-08T17:48:45.427788+00:00"
+    },
+    {
+      "key": "evidence_nyc_balanced_panel_host",
+      "source_id": "nyc",
+      "status": "failed_or_restricted",
+      "at_utc": "2026-10-08T17:48:45.477894+00:00",
+      "detail": "ConnectionError",
+      "requested_url": "https://public-data.chicagobooth.edu/oeystein-daljord/NYC-2013-Taxi-Data-Balanced/",
+      "http_status": null
+    },
+    {
+      "key": "osm_birmingham_2024",
+      "source_id": "osm",
+      "status": "failed_or_restricted",
+      "at_utc": "2026-10-08T17:48:53.851891+00:00",
+      "detail": "HTTP 504",
+      "requested_url": "https://overpass-api.de/api/interpreter",
+      "http_status": 504
+    },
+    {
+      "key": "evidence_osm_license",
+      "source_id": "osm",
+      "status": "downloaded",
+      "at_utc": "2026-10-08T17:48:55.513069+00:00"
+    },
+    {
+      "key": "weather_birmingham_2024",
+      "source_id": "weather",
+      "status": "downloaded",
+      "at_utc": "2026-10-08T17:48:56.622273+00:00"
+    },
+    {
+      "key": "evidence_weather_archive_docs",
+      "source_id": "weather",
+      "status": "downloaded",
+      "at_utc": "2026-10-08T17:48:57.337677+00:00"
+    },
+    {
+      "key": "evidence_weather_license",
+      "source_id": "weather",
+      "status": "downloaded",
+      "at_utc": "2026-10-08T17:48:57.536923+00:00"
+    },
+    {
+      "key": "evidence_weather_terms",
+      "source_id": "weather",
+      "status": "downloaded",
+      "at_utc": "2026-10-08T17:48:57.730351+00:00"
+    },
+    {
+      "key": "evidence_traccar_api",
+      "source_id": "traccar",
+      "status": "downloaded",
+      "at_utc": "2026-10-08T17:48:58.554911+00:00"
+    },
+    {
+      "key": "evidence_traccar_openapi",
+      "source_id": "traccar",
+      "status": "downloaded",
+      "at_utc": "2026-10-08T17:48:58.899784+00:00"
+    },
+    {
+      "key": "evidence_traccar_software_license",
+      "source_id": "traccar",
+      "status": "downloaded",
+      "at_utc": "2026-10-08T17:48:59.207471+00:00"
+    },
+    {
+      "key": "evidence_olist",
+      "source_id": "olist",
+      "status": "downloaded",
+      "at_utc": "2026-10-08T17:50:10.206016+00:00"
+    },
+    {
+      "key": "olist_catalog",
+      "source_id": "olist",
+      "status": "failed_or_restricted",
+      "at_utc": "2026-10-08T17:50:10.698413+00:00",
+      "detail": "existing_file_checksum_missing_or_changed",
+      "requested_url": "https://www.kaggle.com/api/v1/datasets/list?search=brazilian-ecommerce",
+      "http_status": null,
+      "resolution": "Preserved first-attempt catalog bytes as olist_catalog_first_attempt_evidence; independently re-fetched official catalog under tracked path. No original bytes overwritten."
+    },
+    {
+      "key": "olist_archive",
+      "source_id": "olist",
+      "status": "downloaded",
+      "at_utc": "2026-10-08T17:50:28.311161+00:00"
+    },
+    {
+      "key": "evidence_nyc_balanced_panel_host",
+      "source_id": "nyc",
+      "status": "failed_or_restricted",
+      "at_utc": "2026-10-08T17:50:28.695710+00:00",
+      "detail": "ConnectionError",
+      "requested_url": "https://public-data.chicagobooth.edu/oeystein-daljord/NYC-2013-Taxi-Data-Balanced/",
+      "http_status": null
+    },
+    {
+      "key": "osm_birmingham_2024",
+      "source_id": "osm",
+      "status": "downloaded",
+      "at_utc": "2026-10-08T17:50:42.686261+00:00"
+    },
+    {
+      "key": "olist_catalog",
+      "source_id": "olist",
+      "status": "downloaded",
+      "at_utc": "2026-10-08T17:51:39.116595+00:00"
+    }
+  ]
+}

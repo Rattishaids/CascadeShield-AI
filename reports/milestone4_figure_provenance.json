@@ -1,0 +1,21 @@
+{
+  "schemaVersion": "cascadeshield.research-figures/1.0",
+  "provenance": "PLOTS_OF_EXECUTED_SIMULATED_EXPERIMENTS",
+  "sourceSha256": {
+    "MILESTONE_4_PREDICTION_METRICS.json": "2edd83952c46bef58df3463fe560ddb676fd74554a899a90b96e6c273944279f",
+    "MILESTONE_4_POLICY_BENCHMARK.json": "148a84a4924192227a80addea247d9919bffc7587b61b4b2d3eab6318a407ad7"
+  },
+  "files": [
+    "reports/figures/milestone4-policies.pdf",
+    "reports/figures/milestone4-policies.png",
+    "reports/figures/milestone4-policies.svg",
+    "reports/figures/milestone4-predictions.pdf",
+    "reports/figures/milestone4-predictions.png",
+    "reports/figures/milestone4-predictions.svg"
+  ],
+  "limitations": [
+    "Correlated snapshots do not equal independent trials.",
+    "Policy means summarize 40 cases grouped in four seeds; see JSON paired intervals.",
+    "No observed freight or field-effectiveness result."
+  ]
+}

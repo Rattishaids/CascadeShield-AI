@@ -1,0 +1,807 @@
+{
+  "schemaVersion": "cascadeshield.graph-snapshot/1.0",
+  "simulationTime": {
+    "clockSec": 1000.0,
+    "initialClockIso": "2026-10-09T09:00:00+05:30",
+    "simulationTimestamp": "2026-10-09T09:16:40+05:30"
+  },
+  "networkId": "chennai-central-osm-v1",
+  "runId": "a0dc2938-e839-4df7-ae63-415df61503bc",
+  "scenarioId": "0964c8fe-cc1a-4bac-ace3-50b55670c38f",
+  "randomSeed": 0,
+  "featureSchemas": {
+    "DELIVERY": [
+      {
+        "name": "load_kg",
+        "dtype": "float64",
+        "unit": "kg",
+        "provenance": "SIMULATED_INPUT"
+      },
+      {
+        "name": "deadline_sec",
+        "dtype": "float64",
+        "unit": "s",
+        "provenance": "SIMULATED_INPUT"
+      },
+      {
+        "name": "priority",
+        "dtype": "float64",
+        "unit": "ordinal",
+        "provenance": "SIMULATED_INPUT"
+      }
+    ],
+    "DOCK": [
+      {
+        "name": "service_sec",
+        "dtype": "float64",
+        "unit": "s",
+        "provenance": "SIMULATED_INPUT"
+      },
+      {
+        "name": "open_from_sec",
+        "dtype": "float64",
+        "unit": "s",
+        "provenance": "SIMULATED_INPUT"
+      },
+      {
+        "name": "open_until_sec",
+        "dtype": "float64",
+        "unit": "s",
+        "provenance": "SIMULATED_INPUT"
+      }
+    ],
+    "DRIVER": [
+      {
+        "name": "available",
+        "dtype": "float64",
+        "unit": "boolean",
+        "provenance": "SIMULATED_INPUT"
+      },
+      {
+        "name": "shift_start_sec",
+        "dtype": "float64",
+        "unit": "s",
+        "provenance": "SIMULATED_INPUT"
+      },
+      {
+        "name": "shift_end_sec",
+        "dtype": "float64",
+        "unit": "s",
+        "provenance": "SIMULATED_INPUT"
+      },
+      {
+        "name": "duty_sec",
+        "dtype": "float64",
+        "unit": "s",
+        "provenance": "SIMULATED_INPUT"
+      }
+    ],
+    "TRUCK": [
+      {
+        "name": "max_speed_kph",
+        "dtype": "float64",
+        "unit": "km/h",
+        "provenance": "SIMULATED_INPUT"
+      },
+      {
+        "name": "capacity_kg",
+        "dtype": "float64",
+        "unit": "kg",
+        "provenance": "SIMULATED_INPUT"
+      },
+      {
+        "name": "load_kg",
+        "dtype": "float64",
+        "unit": "kg",
+        "provenance": "SIMULATED_INPUT"
+      },
+      {
+        "name": "current_speed_kph",
+        "dtype": "float64",
+        "unit": "km/h",
+        "provenance": "SIMULATED_INPUT"
+      },
+      {
+        "name": "distance_travelled_m",
+        "dtype": "float64",
+        "unit": "m",
+        "provenance": "SIMULATED_INPUT"
+      },
+      {
+        "name": "remaining_distance_m",
+        "dtype": "float64",
+        "unit": "m",
+        "provenance": "SIMULATED_INPUT"
+      },
+      {
+        "name": "edge_offset_m",
+        "dtype": "float64",
+        "unit": "m",
+        "provenance": "SIMULATED_INPUT"
+      },
+      {
+        "name": "departure_sec",
+        "dtype": "float64",
+        "unit": "s",
+        "provenance": "SIMULATED_INPUT"
+      },
+      {
+        "name": "deadline_sec",
+        "dtype": "float64",
+        "unit": "s",
+        "provenance": "SIMULATED_INPUT"
+      },
+      {
+        "name": "wait_until_sec",
+        "dtype": "float64",
+        "unit": "s",
+        "provenance": "SIMULATED_INPUT"
+      }
+    ],
+    "WAREHOUSE": [
+      {
+        "name": "dock_capacity",
+        "dtype": "float64",
+        "unit": "count",
+        "provenance": "SIMULATED_INPUT"
+      },
+      {
+        "name": "longitude",
+        "dtype": "float64",
+        "unit": "degrees",
+        "provenance": "SIMULATED_INPUT"
+      },
+      {
+        "name": "latitude",
+        "dtype": "float64",
+        "unit": "degrees",
+        "provenance": "SIMULATED_INPUT"
+      }
+    ]
+  },
+  "nodes": [
+    {
+      "id": "DELIVERY:BROW-LA",
+      "type": "DELIVERY",
+      "resourceId": "BROW-LA",
+      "features": {
+        "load_kg": 200.0,
+        "deadline_sec": 1262.6,
+        "priority": 1.0
+      },
+      "availableMask": {
+        "load_kg": true,
+        "deadline_sec": true,
+        "priority": true
+      },
+      "provenance": "SIMULATED"
+    },
+    {
+      "id": "DELIVERY:BROW-LB",
+      "type": "DELIVERY",
+      "resourceId": "BROW-LB",
+      "features": {
+        "load_kg": 200.0,
+        "deadline_sec": 1292.6,
+        "priority": 1.0
+      },
+      "availableMask": {
+        "load_kg": true,
+        "deadline_sec": true,
+        "priority": true
+      },
+      "provenance": "SIMULATED"
+    },
+    {
+      "id": "DOCK:BROW-D",
+      "type": "DOCK",
+      "resourceId": "BROW-D",
+      "features": {
+        "service_sec": 300.0,
+        "open_from_sec": 0.0,
+        "open_until_sec": 10000.0
+      },
+      "availableMask": {
+        "service_sec": true,
+        "open_from_sec": true,
+        "open_until_sec": true
+      },
+      "provenance": "SIMULATED"
+    },
+    {
+      "id": "DRIVER:BROW-DRA",
+      "type": "DRIVER",
+      "resourceId": "BROW-DRA",
+      "features": {
+        "available": 1.0,
+        "shift_start_sec": 0.0,
+        "shift_end_sec": 10000.0,
+        "duty_sec": 662.5
+      },
+      "availableMask": {
+        "available": true,
+        "shift_start_sec": true,
+        "shift_end_sec": true,
+        "duty_sec": true
+      },
+      "provenance": "SIMULATED"
+    },
+    {
+      "id": "DRIVER:BROW-DRB",
+      "type": "DRIVER",
+      "resourceId": "BROW-DRB",
+      "features": {
+        "available": 1.0,
+        "shift_start_sec": 0.0,
+        "shift_end_sec": 10000.0,
+        "duty_sec": 662.5
+      },
+      "availableMask": {
+        "available": true,
+        "shift_start_sec": true,
+        "shift_end_sec": true,
+        "duty_sec": true
+      },
+      "provenance": "SIMULATED"
+    },
+    {
+      "id": "TRUCK:BROW-A",
+      "type": "TRUCK",
+      "resourceId": "BROW-A",
+      "features": {
+        "max_speed_kph": 40.0,
+        "capacity_kg": 3500.0,
+        "load_kg": 1200.0,
+        "current_speed_kph": 0.0,
+        "distance_travelled_m": 6291.399895000344,
+        "remaining_distance_m": 0.0,
+        "edge_offset_m": 0.0,
+        "departure_sec": 0.0,
+        "deadline_sec": 3600.0,
+        "wait_until_sec": 0.0
+      },
+      "availableMask": {
+        "max_speed_kph": true,
+        "capacity_kg": true,
+        "load_kg": true,
+        "current_speed_kph": true,
+        "distance_travelled_m": true,
+        "remaining_distance_m": true,
+        "edge_offset_m": true,
+        "departure_sec": true,
+        "deadline_sec": true,
+        "wait_until_sec": true
+      },
+      "provenance": "SIMULATED"
+    },
+    {
+      "id": "TRUCK:BROW-B",
+      "type": "TRUCK",
+      "resourceId": "BROW-B",
+      "features": {
+        "max_speed_kph": 40.0,
+        "capacity_kg": 3500.0,
+        "load_kg": 1200.0,
+        "current_speed_kph": 0.0,
+        "distance_travelled_m": 6291.399895000347,
+        "remaining_distance_m": 0.0,
+        "edge_offset_m": 0.0,
+        "departure_sec": 200.0,
+        "deadline_sec": 3600.0,
+        "wait_until_sec": 0.0
+      },
+      "availableMask": {
+        "max_speed_kph": true,
+        "capacity_kg": true,
+        "load_kg": true,
+        "current_speed_kph": true,
+        "distance_travelled_m": true,
+        "remaining_distance_m": true,
+        "edge_offset_m": true,
+        "departure_sec": true,
+        "deadline_sec": true,
+        "wait_until_sec": true
+      },
+      "provenance": "SIMULATED"
+    },
+    {
+      "id": "WAREHOUSE:BROW-W",
+      "type": "WAREHOUSE",
+      "resourceId": "BROW-W",
+      "features": {
+        "dock_capacity": 1.0,
+        "longitude": 80.2749303,
+        "latitude": 13.0789961
+      },
+      "availableMask": {
+        "dock_capacity": true,
+        "longitude": true,
+        "latitude": true
+      },
+      "provenance": "SIMULATED"
+    }
+  ],
+  "edges": [
+    {
+      "id": "DELIVERY:BROW-LA->WAREHOUSE:BROW-W|DELIVERY_TO_WAREHOUSE|BROW-LA",
+      "source": "DELIVERY:BROW-LA",
+      "target": "WAREHOUSE:BROW-W",
+      "type": "DELIVERY_TO_WAREHOUSE",
+      "weight": 0.7,
+      "validFromSec": 0.0,
+      "validUntilSec": 172800.0,
+      "features": {},
+      "provenance": "SIMULATED"
+    },
+    {
+      "id": "DELIVERY:BROW-LB->TRUCK:BROW-B|DELIVERY_DEADLINE|DELIVERY_DEADLINE:DELIVERY:BROW-LB:BROW-B",
+      "source": "DELIVERY:BROW-LB",
+      "target": "TRUCK:BROW-B",
+      "type": "DELIVERY_DEADLINE",
+      "weight": 0.55,
+      "validFromSec": 1292.6,
+      "validUntilSec": 1352.6,
+      "features": {},
+      "provenance": "SIMULATED"
+    },
+    {
+      "id": "DELIVERY:BROW-LB->WAREHOUSE:BROW-W|DELIVERY_TO_WAREHOUSE|BROW-LB",
+      "source": "DELIVERY:BROW-LB",
+      "target": "WAREHOUSE:BROW-W",
+      "type": "DELIVERY_TO_WAREHOUSE",
+      "weight": 0.7,
+      "validFromSec": 0.0,
+      "validUntilSec": 172800.0,
+      "features": {},
+      "provenance": "SIMULATED"
+    },
+    {
+      "id": "DOCK:BROW-D->TRUCK:BROW-B|DOCK_OVERLAP|DOCK_OVERLAP:DOCK:BROW-D,TRUCK:BROW-A:BROW-B",
+      "source": "DOCK:BROW-D",
+      "target": "TRUCK:BROW-B",
+      "type": "DOCK_OVERLAP",
+      "weight": 0.5438333333333333,
+      "validFromSec": 1000.0,
+      "validUntilSec": 1052.6,
+      "features": {},
+      "provenance": "SIMULATED"
+    },
+    {
+      "id": "DOCK:BROW-D->TRUCK:BROW-B|SHARED_DOCK_CONFLICT|BROW-A/BROW-B",
+      "source": "DOCK:BROW-D",
+      "target": "TRUCK:BROW-B",
+      "type": "SHARED_DOCK_CONFLICT",
+      "weight": 0.5438333333333333,
+      "validFromSec": 1000.0,
+      "validUntilSec": 1052.6,
+      "features": {},
+      "provenance": "SIMULATED"
+    },
+    {
+      "id": "DOCK:BROW-D->WAREHOUSE:BROW-W|DOCK_AT_WAREHOUSE|BROW-D",
+      "source": "DOCK:BROW-D",
+      "target": "WAREHOUSE:BROW-W",
+      "type": "DOCK_AT_WAREHOUSE",
+      "weight": 0.75,
+      "validFromSec": 0.0,
+      "validUntilSec": 10000.0,
+      "features": {},
+      "provenance": "SIMULATED"
+    },
+    {
+      "id": "TRUCK:BROW-A->DELIVERY:BROW-LA|CARRIES_DELIVERY|BROW-A",
+      "source": "TRUCK:BROW-A",
+      "target": "DELIVERY:BROW-LA",
+      "type": "CARRIES_DELIVERY",
+      "weight": 0.95,
+      "validFromSec": 0.0,
+      "validUntilSec": 1052.6,
+      "features": {
+        "reservationEndSec": 962.6,
+        "reservationStartSec": 662.6
+      },
+      "provenance": "SIMULATED"
+    },
+    {
+      "id": "TRUCK:BROW-A->DOCK:BROW-D|RESERVED_DOCK|BROW-A",
+      "source": "TRUCK:BROW-A",
+      "target": "DOCK:BROW-D",
+      "type": "RESERVED_DOCK",
+      "weight": 0.9,
+      "validFromSec": 0.0,
+      "validUntilSec": 1052.6,
+      "features": {
+        "reservationEndSec": 962.6,
+        "reservationStartSec": 662.6
+      },
+      "provenance": "SIMULATED"
+    },
+    {
+      "id": "TRUCK:BROW-A->DRIVER:BROW-DRA|ASSIGNED_DRIVER|BROW-A",
+      "source": "TRUCK:BROW-A",
+      "target": "DRIVER:BROW-DRA",
+      "type": "ASSIGNED_DRIVER",
+      "weight": 0.8,
+      "validFromSec": 0.0,
+      "validUntilSec": 752.5,
+      "features": {
+        "reservationEndSec": 962.6,
+        "reservationStartSec": 662.6
+      },
+      "provenance": "SIMULATED"
+    },
+    {
+      "id": "TRUCK:BROW-B->DELIVERY:BROW-LB|CARRIES_DELIVERY|BROW-B",
+      "source": "TRUCK:BROW-B",
+      "target": "DELIVERY:BROW-LB",
+      "type": "CARRIES_DELIVERY",
+      "weight": 0.95,
+      "validFromSec": 200.0,
+      "validUntilSec": 1352.6,
+      "features": {
+        "reservationEndSec": 1262.6,
+        "reservationStartSec": 962.6
+      },
+      "provenance": "SIMULATED"
+    },
+    {
+      "id": "TRUCK:BROW-B->DOCK:BROW-D|RESERVED_DOCK|BROW-B",
+      "source": "TRUCK:BROW-B",
+      "target": "DOCK:BROW-D",
+      "type": "RESERVED_DOCK",
+      "weight": 0.9,
+      "validFromSec": 200.0,
+      "validUntilSec": 1352.6,
+      "features": {
+        "reservationEndSec": 1262.6,
+        "reservationStartSec": 962.6
+      },
+      "provenance": "SIMULATED"
+    },
+    {
+      "id": "TRUCK:BROW-B->DRIVER:BROW-DRB|ASSIGNED_DRIVER|BROW-B",
+      "source": "TRUCK:BROW-B",
+      "target": "DRIVER:BROW-DRB",
+      "type": "ASSIGNED_DRIVER",
+      "weight": 0.8,
+      "validFromSec": 200.0,
+      "validUntilSec": 882.5,
+      "features": {
+        "reservationEndSec": 1262.6,
+        "reservationStartSec": 962.6
+      },
+      "provenance": "SIMULATED"
+    }
+  ],
+  "predictions": [
+    {
+      "nodeId": "DELIVERY:BROW-LA",
+      "target": "cascade_risk_score",
+      "value": 0.0,
+      "atClockSec": 1000.0,
+      "provenance": "SIMULATED_PREDICTION",
+      "source": "RULE_BASED_GRAPH_BASELINE"
+    },
+    {
+      "nodeId": "DELIVERY:BROW-LB",
+      "target": "cascade_risk_score",
+      "value": 0.3804847375999999,
+      "atClockSec": 1000.0,
+      "provenance": "SIMULATED_PREDICTION",
+      "source": "RULE_BASED_GRAPH_BASELINE"
+    },
+    {
+      "nodeId": "DOCK:BROW-D",
+      "target": "cascade_risk_score",
+      "value": 0.45405973333333327,
+      "atClockSec": 1000.0,
+      "provenance": "SIMULATED_PREDICTION",
+      "source": "RULE_BASED_GRAPH_BASELINE"
+    },
+    {
+      "nodeId": "DRIVER:BROW-DRA",
+      "target": "cascade_risk_score",
+      "value": 0.0,
+      "atClockSec": 1000.0,
+      "provenance": "SIMULATED_PREDICTION",
+      "source": "RULE_BASED_GRAPH_BASELINE"
+    },
+    {
+      "nodeId": "DRIVER:BROW-DRB",
+      "target": "cascade_risk_score",
+      "value": 0.0,
+      "atClockSec": 1000.0,
+      "provenance": "SIMULATED_PREDICTION",
+      "source": "RULE_BASED_GRAPH_BASELINE"
+    },
+    {
+      "nodeId": "TRUCK:BROW-A",
+      "target": "cascade_risk_score",
+      "value": 0.0,
+      "atClockSec": 1000.0,
+      "provenance": "SIMULATED_PREDICTION",
+      "source": "RULE_BASED_GRAPH_BASELINE"
+    },
+    {
+      "nodeId": "TRUCK:BROW-A",
+      "target": "conditional_road_arrival_sec",
+      "value": 752.5,
+      "atClockSec": 1000.0,
+      "provenance": "SIMULATED_PREDICTION",
+      "source": "RULE_BASED_DIRECT_TRAVEL_CONDITIONAL_ON_DRIVER"
+    },
+    {
+      "nodeId": "TRUCK:BROW-A",
+      "target": "direct_risk_score",
+      "value": 0.0,
+      "atClockSec": 1000.0,
+      "provenance": "SIMULATED_PREDICTION",
+      "source": "RULE_BASED_DIRECT_TRAVEL"
+    },
+    {
+      "nodeId": "TRUCK:BROW-A",
+      "target": "estimated_arrival_sec",
+      "value": 752.5,
+      "atClockSec": 1000.0,
+      "provenance": "SIMULATED_PREDICTION",
+      "source": "RULE_BASED_DIRECT_TRAVEL"
+    },
+    {
+      "nodeId": "TRUCK:BROW-A",
+      "target": "estimated_dock_end_sec",
+      "value": 1052.6,
+      "atClockSec": 1000.0,
+      "provenance": "SIMULATED_PREDICTION",
+      "source": "RULE_BASED_OPERATIONAL_SCHEDULE"
+    },
+    {
+      "nodeId": "TRUCK:BROW-A",
+      "target": "estimated_dock_start_sec",
+      "value": 752.6,
+      "atClockSec": 1000.0,
+      "provenance": "SIMULATED_PREDICTION",
+      "source": "RULE_BASED_OPERATIONAL_SCHEDULE"
+    },
+    {
+      "nodeId": "TRUCK:BROW-B",
+      "target": "cascade_risk_score",
+      "value": 0.38577340799999993,
+      "atClockSec": 1000.0,
+      "provenance": "SIMULATED_PREDICTION",
+      "source": "RULE_BASED_GRAPH_BASELINE"
+    },
+    {
+      "nodeId": "TRUCK:BROW-B",
+      "target": "conditional_road_arrival_sec",
+      "value": 882.5,
+      "atClockSec": 1000.0,
+      "provenance": "SIMULATED_PREDICTION",
+      "source": "RULE_BASED_DIRECT_TRAVEL_CONDITIONAL_ON_DRIVER"
+    },
+    {
+      "nodeId": "TRUCK:BROW-B",
+      "target": "direct_risk_score",
+      "value": 0.0,
+      "atClockSec": 1000.0,
+      "provenance": "SIMULATED_PREDICTION",
+      "source": "RULE_BASED_DIRECT_TRAVEL"
+    },
+    {
+      "nodeId": "TRUCK:BROW-B",
+      "target": "estimated_arrival_sec",
+      "value": 882.5,
+      "atClockSec": 1000.0,
+      "provenance": "SIMULATED_PREDICTION",
+      "source": "RULE_BASED_DIRECT_TRAVEL"
+    },
+    {
+      "nodeId": "TRUCK:BROW-B",
+      "target": "estimated_dock_end_sec",
+      "value": 1352.6,
+      "atClockSec": 1000.0,
+      "provenance": "SIMULATED_PREDICTION",
+      "source": "RULE_BASED_OPERATIONAL_SCHEDULE"
+    },
+    {
+      "nodeId": "TRUCK:BROW-B",
+      "target": "estimated_dock_start_sec",
+      "value": 1052.6,
+      "atClockSec": 1000.0,
+      "provenance": "SIMULATED_PREDICTION",
+      "source": "RULE_BASED_OPERATIONAL_SCHEDULE"
+    },
+    {
+      "nodeId": "WAREHOUSE:BROW-W",
+      "target": "cascade_risk_score",
+      "value": 0.35889039999999983,
+      "atClockSec": 1000.0,
+      "provenance": "SIMULATED_PREDICTION",
+      "source": "RULE_BASED_GRAPH_BASELINE"
+    }
+  ],
+  "realizedLabels": [
+    {
+      "nodeId": "TRUCK:BROW-A",
+      "target": "actual_dock_start_sec",
+      "value": 752.6,
+      "atClockSec": 1000.0,
+      "provenance": "SIMULATED_OUTCOME",
+      "source": "AUTHORITATIVE_SIMULATION_ENGINE"
+    },
+    {
+      "nodeId": "TRUCK:BROW-A",
+      "target": "arrival_delay_sec",
+      "value": 89.9533297299995,
+      "atClockSec": 1000.0,
+      "provenance": "SIMULATED_OUTCOME",
+      "source": "AUTHORITATIVE_SIMULATION_ENGINE"
+    },
+    {
+      "nodeId": "TRUCK:BROW-A",
+      "target": "arrival_sec",
+      "value": 752.5,
+      "atClockSec": 1000.0,
+      "provenance": "SIMULATED_OUTCOME",
+      "source": "AUTHORITATIVE_SIMULATION_ENGINE"
+    },
+    {
+      "nodeId": "TRUCK:BROW-B",
+      "target": "arrival_delay_sec",
+      "value": 19.953329729999496,
+      "atClockSec": 1000.0,
+      "provenance": "SIMULATED_OUTCOME",
+      "source": "AUTHORITATIVE_SIMULATION_ENGINE"
+    },
+    {
+      "nodeId": "TRUCK:BROW-B",
+      "target": "arrival_sec",
+      "value": 882.5,
+      "atClockSec": 1000.0,
+      "provenance": "SIMULATED_OUTCOME",
+      "source": "AUTHORITATIVE_SIMULATION_ENGINE"
+    }
+  ],
+  "provenance": {
+    "geography": "REAL_GEOGRAPHIC",
+    "operations": "SIMULATED",
+    "predictions": "SIMULATED_PREDICTION",
+    "outcomeLabels": "SIMULATED_OUTCOME",
+    "trainingStatus": "NO_TRAINED_MODEL",
+    "networkSource": {
+      "source": "OpenStreetMap via public Overpass API",
+      "endpoint": "https://overpass-api.de/api/interpreter",
+      "finalUrl": "https://overpass-api.de/api/interpreter",
+      "method": "POST",
+      "query": "[out:json][timeout:180];\nway[\"highway\"](13.04,80.24,13.095,80.29)->.roads;\nrelation(bw.roads)[\"type\"~\"^restriction\"]->.restrictions;\n(.roads;.restrictions;);(._;>;);out meta;\n",
+      "acquiredAtUtc": "2026-10-09T05:35:20.868549+00:00",
+      "headers": {
+        "Date": "Fri, 09 Oct 2026 05:35:07 GMT",
+        "Content-Type": "application/json"
+      },
+      "sourcePath": "data/raw/chennai_osm/central_chennai.json",
+      "sourceBytes": 7984665,
+      "sourceSha256": "38ab5bdea18ca7859daea5a3801f1a5d138d320e29a841aa8d67f00c1c87e80d",
+      "osmBaseTimestamp": "2026-10-09T05:33:21Z",
+      "bbox": [
+        13.04,
+        80.24,
+        13.095,
+        80.29
+      ],
+      "license": "ODbL-1.0",
+      "licenseUrl": "https://opendatacommons.org/licenses/odbl/1-0/",
+      "attribution": "\u00a9 OpenStreetMap contributors",
+      "attributionUrl": "https://www.openstreetmap.org/copyright",
+      "dataClass": "REAL_GEOGRAPHIC_DATA",
+      "simulationScope": "Real geographic demonstration only. Trucks, cargo, disruptions, speed impacts and decisions are SIMULATED. This is not a validated freight or legal routing dataset. No joins to overseas historical operational cohorts.",
+      "speedAssumptions": {
+        "motorway": 60,
+        "motorway_link": 30,
+        "trunk": 50,
+        "trunk_link": 30,
+        "primary": 40,
+        "primary_link": 25,
+        "secondary": 35,
+        "secondary_link": 25,
+        "tertiary": 30,
+        "tertiary_link": 20,
+        "unclassified": 25,
+        "residential": 20,
+        "service": 15,
+        "living_street": 10
+      },
+      "speedAssumptionProvenance": "SIMULATION_ASSUMPTION: scenario baseline speeds, not observed speeds or asserted legal limits",
+      "topology": "Real OSM shared node IDs only; no invented intersections or coordinate-based merging",
+      "restrictionPolicy": "Node-via restrictions retained; unsupported conditional/via-way restrictions exclude all participating ways",
+      "profile": "Conservative simulated freight; private/restricted roads, unknown barriers and unmodelled weight/dimension limits excluded",
+      "boundaryPolicy": "Only consecutive-node segments whose two real endpoints lie inside the requested bbox",
+      "componentPolicy": "Largest strongly connected directed road component; turn restrictions also checked by route engine",
+      "demoPairs": [
+        {
+          "id": "demo-1",
+          "startNodeId": 247685517,
+          "destinationNodeId": 2241833897,
+          "start": [
+            80.2502518,
+            13.0518861
+          ],
+          "destination": [
+            80.2749303,
+            13.0789961
+          ],
+          "baseDistanceM": 6291.4,
+          "baseTravelSeconds": 662.547,
+          "baseEdgeCount": 205,
+          "closurePhysicalId": "567205827:4",
+          "closureEdgeId": "567205827:4:f",
+          "closureWayName": "Anna Salai (Mount Road)",
+          "closureMidpoint": [
+            80.2670825,
+            13.065474049999999
+          ],
+          "detourDistanceM": 6379.227,
+          "detourTravelSeconds": 691.888,
+          "detourEdgeCount": 185,
+          "returnRouteFeasible": true,
+          "dataClass": "SIMULATED_SELECTION_OF_REAL_GEOGRAPHIC_NODES"
+        },
+        {
+          "id": "demo-2",
+          "startNodeId": 2269952774,
+          "destinationNodeId": 262666325,
+          "start": [
+            80.2523898,
+            13.0831839
+          ],
+          "destination": [
+            80.2761514,
+            13.0489726
+          ],
+          "baseDistanceM": 6561.023,
+          "baseTravelSeconds": 754.181,
+          "baseEdgeCount": 214,
+          "closurePhysicalId": "240472111:0",
+          "closureEdgeId": "240472111:0:f",
+          "closureWayName": "",
+          "closureMidpoint": [
+            80.25959165,
+            13.064139350000001
+          ],
+          "detourDistanceM": 6899.271,
+          "detourTravelSeconds": 759.922,
+          "detourEdgeCount": 220,
+          "returnRouteFeasible": true,
+          "dataClass": "SIMULATED_SELECTION_OF_REAL_GEOGRAPHIC_NODES"
+        },
+        {
+          "id": "demo-3",
+          "startNodeId": 13313036398,
+          "destinationNodeId": 333218903,
+          "start": [
+            80.2824174,
+            13.059665
+          ],
+          "destination": [
+            80.2600466,
+            13.0868729
+          ],
+          "baseDistanceM": 5057.786,
+          "baseTravelSeconds": 537.554,
+          "baseEdgeCount": 160,
+          "closurePhysicalId": "28152147:1",
+          "closureEdgeId": "28152147:1:r",
+          "closureWayName": "Arunachalam Street",
+          "closureMidpoint": [
+            80.26866050000001,
+            13.075649349999999
+          ],
+          "detourDistanceM": 4971.817,
+          "detourTravelSeconds": 551.927,
+          "detourEdgeCount": 167,
+          "returnRouteFeasible": true,
+          "dataClass": "SIMULATED_SELECTION_OF_REAL_GEOGRAPHIC_NODES"
+        }
+      ]
+    }
+  }
+}

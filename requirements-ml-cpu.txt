@@ -1,0 +1,7 @@
+# Keep the existing data/test environment intact; install into Python 3.11 .venv-ml.
+numpy==2.2.6
+scikit-learn==1.7.2
+xgboost-cpu==3.1.3
+torch-geometric==2.7.0
+psutil==7.2.2
+# Install torch==2.7.1+cpu separately from https://download.pytorch.org/whl/cpu.

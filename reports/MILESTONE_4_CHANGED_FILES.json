@@ -1,0 +1,1553 @@
+{
+  "schemaVersion": "cascadeshield.milestone4-file-inventory/1.0",
+  "recordedAtUtc": "2026-10-19T00:37:44.113735+00:00",
+  "projectRoot": "D:\\CascadeShield-AI",
+  "gitStatus": "NOT_A_GIT_REPOSITORY",
+  "scope": "Reviewed M4 implementation paths and point-in-time evidence hashes. There is no full pre-M4 file tree or Git index; addition/modification labels describe reviewed work, not an independently reconstructed exhaustive Git diff. Only the 86 recorded pre-M4 paths support byte-level preservation claims.",
+  "selfHashRule": "These two inventory files are excluded from their own hashes to avoid circular checksums.",
+  "reviewedImplementationFileCount": 73,
+  "reviewedImplementationFiles": [
+    {
+      "path": ".gitignore",
+      "category": "Existing documentation/launch/frontend integration",
+      "reviewedStatus": "M4_MODIFICATION",
+      "bytes": 198,
+      "sha256": "564d0fb1e8baee65afa9fa8e79e2dd6dc5067ff48e06749d8294a74517bdb95d",
+      "baselineRecorded": false
+    },
+    {
+      "path": "README.md",
+      "category": "Existing documentation/launch/frontend integration",
+      "reviewedStatus": "M4_MODIFICATION",
+      "bytes": 8718,
+      "sha256": "e8c6e56e971ff33b949af85c33c4451ea49d19a87a232ce3d3ba4633f0565ccc",
+      "baselineRecorded": false
+    },
+    {
+      "path": "config/milestone4_protocol.json",
+      "category": "Experiment declarations",
+      "reviewedStatus": "M4_ADDITION",
+      "bytes": 10139,
+      "sha256": "72254833665352bc0dc7ff7d376b508970adbbea0980bb0a62d4a8d40b747891",
+      "baselineRecorded": false
+    },
+    {
+      "path": "config/milestone4_protocol_v2.json",
+      "category": "Experiment declarations",
+      "reviewedStatus": "M4_ADDITION",
+      "bytes": 14015,
+      "sha256": "46ec8bfae7a6790e8b24b7fe8c8b7cd4a3005e4dea8b76a61e0ecd8434676f66",
+      "baselineRecorded": false
+    },
+    {
+      "path": "data/metadata/milestone_4_data_audit.json",
+      "category": "Data/target metadata",
+      "reviewedStatus": "M4_ADDITION",
+      "bytes": 55124,
+      "sha256": "f7361a579a1ed086c92c77cf66c7cf4f5db00d0af1c694311650b056563ac771",
+      "baselineRecorded": false
+    },
+    {
+      "path": "data/metadata/milestone_4_label_definitions.json",
+      "category": "Data/target metadata",
+      "reviewedStatus": "M4_ADDITION",
+      "bytes": 3903,
+      "sha256": "2bebc4ad8c425bbae892eba8f595376512b5fe2c3e6091d2f45bd386cac60329",
+      "baselineRecorded": false
+    },
+    {
+      "path": "docs/GNN_ARCHITECTURE.md",
+      "category": "M4 documentation",
+      "reviewedStatus": "M4_ADDITION",
+      "bytes": 6617,
+      "sha256": "e336e8d093086ba14766ccea27d87c55a38187d0964ba3152eff216b189925e6",
+      "baselineRecorded": false
+    },
+    {
+      "path": "docs/MILESTONE_4_BENCHMARK_PROTOCOL.md",
+      "category": "M4 documentation",
+      "reviewedStatus": "M4_ADDITION",
+      "bytes": 12969,
+      "sha256": "f91c27ed84c539a3b4aca1d1b0c5fbe0c9936d3ea547c864572467cf996014b4",
+      "baselineRecorded": false
+    },
+    {
+      "path": "docs/MILESTONE_4_REPRODUCE.md",
+      "category": "M4 documentation",
+      "reviewedStatus": "M4_ADDITION",
+      "bytes": 16152,
+      "sha256": "db2fb4baaa10e2a749a6690fe8358f97d69b1b06c307ec6ba2d28c0bda5e2254",
+      "baselineRecorded": false
+    },
+    {
+      "path": "docs/ML_INFERENCE_API.md",
+      "category": "M4 documentation",
+      "reviewedStatus": "M4_ADDITION",
+      "bytes": 4742,
+      "sha256": "6b5250693a464efc8d2e31938f3436623117ab6b49f73f8ff60dc0a254b87dc4",
+      "baselineRecorded": false
+    },
+    {
+      "path": "docs/ML_TRAINING_PIPELINE.md",
+      "category": "M4 documentation",
+      "reviewedStatus": "M4_ADDITION",
+      "bytes": 14034,
+      "sha256": "dda4637d77c4406d580808e1b5675751931bd863229e0d220f089f2a357f2238",
+      "baselineRecorded": false
+    },
+    {
+      "path": "ml/__init__.py",
+      "category": "Python model/data/service package",
+      "reviewedStatus": "M4_ADDITION",
+      "bytes": 85,
+      "sha256": "04ad884d4f7dc68a10147bad9c50836c3ade52859ef0d508e59ebecec2aaa827",
+      "baselineRecorded": false
+    },
+    {
+      "path": "ml/data.py",
+      "category": "Python model/data/service package",
+      "reviewedStatus": "M4_ADDITION",
+      "bytes": 11687,
+      "sha256": "80ae12394c57c147f1ef711855b7f4481b41b4aac8f309ab978be3b54ecc6a1d",
+      "baselineRecorded": false
+    },
+    {
+      "path": "ml/evaluation.py",
+      "category": "Python model/data/service package",
+      "reviewedStatus": "M4_ADDITION",
+      "bytes": 13854,
+      "sha256": "9b5eaaef4f08d7f81c259161ee5f6ab93e616f75bb53a97af0ca9e5d6244e075",
+      "baselineRecorded": false
+    },
+    {
+      "path": "ml/features.py",
+      "category": "Python model/data/service package",
+      "reviewedStatus": "M4_ADDITION",
+      "bytes": 3121,
+      "sha256": "94f3495cfeafa88f36c691560e4653f8c860bd70f19f9c51365f3bbaeaa40a65",
+      "baselineRecorded": false
+    },
+    {
+      "path": "ml/gnn.py",
+      "category": "Python model/data/service package",
+      "reviewedStatus": "M4_ADDITION",
+      "bytes": 7629,
+      "sha256": "432a585a0ba58115b38aed4e76be6de268b6eafefe639daa48f6a287aebe648a",
+      "baselineRecorded": false
+    },
+    {
+      "path": "ml/inference.py",
+      "category": "Python model/data/service package",
+      "reviewedStatus": "M4_ADDITION",
+      "bytes": 10514,
+      "sha256": "6746508db0919ebe2699a67cb3c9ecad874942404e5a49285fe49cd1d02c4993",
+      "baselineRecorded": false
+    },
+    {
+      "path": "ml/metrics.py",
+      "category": "Python model/data/service package",
+      "reviewedStatus": "M4_ADDITION",
+      "bytes": 5447,
+      "sha256": "d343326ff9ca86b6aa0324602974c29cf2bfa5aeee07f387ffb1163831b0deda",
+      "baselineRecorded": false
+    },
+    {
+      "path": "ml/service.py",
+      "category": "Python model/data/service package",
+      "reviewedStatus": "M4_ADDITION",
+      "bytes": 2598,
+      "sha256": "2838b8c275b6faa2421e06f62d883a1a1e4871a7868973b4d46d669d7967c95a",
+      "baselineRecorded": false
+    },
+    {
+      "path": "ml/training.py",
+      "category": "Python model/data/service package",
+      "reviewedStatus": "M4_ADDITION",
+      "bytes": 29118,
+      "sha256": "fd40211142b377d73c71bd23a887329be0c80e49f579d544aff8264e2625ef9f",
+      "baselineRecorded": false
+    },
+    {
+      "path": "requirements-ml-cpu.txt",
+      "category": "Isolated dependency specifications",
+      "reviewedStatus": "M4_ADDITION",
+      "bytes": 255,
+      "sha256": "51ee7a901bf7d9958caf676fc2a1cb89ebd33371fe7b22b5c5aa403dd75c4e7e",
+      "baselineRecorded": false
+    },
+    {
+      "path": "requirements-ml-gpu.txt",
+      "category": "Isolated dependency specifications",
+      "reviewedStatus": "M4_ADDITION",
+      "bytes": 230,
+      "sha256": "375de9082938cfb0555a7fa8edecac79bb280e7be3a797d27dc16b63119f77ad",
+      "baselineRecorded": false
+    },
+    {
+      "path": "scripts/VerifyMilestone4Replay.java",
+      "category": "Final evidence and reproducibility",
+      "reviewedStatus": "M4_ADDITION",
+      "baselineRecorded": false,
+      "bytes": 4738,
+      "sha256": "98cc4f38dd7ff4407381d6f543b7d4e6893e7045eb46944e18ce02c02accc285"
+    },
+    {
+      "path": "scripts/audit_milestone4_leakage.py",
+      "category": "M4 experiment/operation/evidence scripts",
+      "reviewedStatus": "M4_ADDITION",
+      "bytes": 16229,
+      "sha256": "e120262f436a645d8908427ba5e22acf0d4f726cf33e0a8f963aeb00cd55c52b",
+      "baselineRecorded": false
+    },
+    {
+      "path": "scripts/audit_milestone4_results.py",
+      "category": "Final evidence and reproducibility",
+      "reviewedStatus": "M4_ADDITION",
+      "baselineRecorded": false,
+      "bytes": 8425,
+      "sha256": "6998ceeee2db9efca92e60698ea8e8ab45f326d924df75f724899d166f3b9b33"
+    },
+    {
+      "path": "scripts/audit_ml_environment.py",
+      "category": "M4 experiment/operation/evidence scripts",
+      "reviewedStatus": "M4_ADDITION",
+      "bytes": 3708,
+      "sha256": "04cdd5fa5e8e95ae05db01500eb447496baa638c1810cf633276e17db3ca314b",
+      "baselineRecorded": false
+    },
+    {
+      "path": "scripts/benchmark_ml_compute.py",
+      "category": "M4 experiment/operation/evidence scripts",
+      "reviewedStatus": "M4_ADDITION",
+      "bytes": 6571,
+      "sha256": "ff02bbb4bbdae6100daaa291b5334d1eb7deb95f96be1c70335c85f6e0f291f0",
+      "baselineRecorded": false
+    },
+    {
+      "path": "scripts/check_milestone4_legacy.py",
+      "category": "M4 experiment/operation/evidence scripts",
+      "reviewedStatus": "M4_ADDITION",
+      "bytes": 1453,
+      "sha256": "d25fe064db70f92427a09dea98c886de4e0e36c024690239dd247dcded045e08",
+      "baselineRecorded": false
+    },
+    {
+      "path": "scripts/check_milestone4_ml_tests.py",
+      "category": "Final evidence and reproducibility",
+      "reviewedStatus": "M4_ADDITION",
+      "baselineRecorded": false,
+      "bytes": 1312,
+      "sha256": "4f836eeee6084c732b2a2c335c799df02fd69f67c46f4ec6e64cf24c03c78396"
+    },
+    {
+      "path": "scripts/diagnose_milestone3.py",
+      "category": "M4 experiment/operation/evidence scripts",
+      "reviewedStatus": "M4_ADDITION",
+      "bytes": 5555,
+      "sha256": "e634c1da4bd2cce321658e9115a52c5ce08b6cfb27f35194cfcb59847297ea66",
+      "baselineRecorded": false
+    },
+    {
+      "path": "scripts/diagnose_milestone4_predictions.py",
+      "category": "Final evidence and reproducibility",
+      "reviewedStatus": "M4_ADDITION",
+      "baselineRecorded": false,
+      "bytes": 3597,
+      "sha256": "6bd3841249d6fceb316a9a7bd3dffdfac717bf2f62437064ba61ae2ad57ec386"
+    },
+    {
+      "path": "scripts/finish_milestone4.py",
+      "category": "Final evidence and reproducibility",
+      "reviewedStatus": "M4_ADDITION",
+      "baselineRecorded": false,
+      "bytes": 8672,
+      "sha256": "48e586187d0412cad5fa211f878024d469e82c609f0f96b01239f5a97e02f7ac"
+    },
+    {
+      "path": "scripts/plot_milestone4_results.py",
+      "category": "Final evidence and reproducibility",
+      "reviewedStatus": "M4_ADDITION",
+      "baselineRecorded": false,
+      "bytes": 4185,
+      "sha256": "2ede30b91eabc108b243c28053023a7f1e305000b08d59cd09bfb8702019a76c"
+    },
+    {
+      "path": "scripts/report_milestone4.py",
+      "category": "Final evidence and reproducibility",
+      "reviewedStatus": "M4_ADDITION",
+      "baselineRecorded": false,
+      "bytes": 26041,
+      "sha256": "862d739b7d15568d89e8b590df87d4624d1da18fbad43efe0eaf0acd47050652"
+    },
+    {
+      "path": "scripts/run_frozen_milestone4_policies.py",
+      "category": "M4 experiment/operation/evidence scripts",
+      "reviewedStatus": "M4_ADDITION",
+      "bytes": 7992,
+      "sha256": "7ad7434fca4e5a94b4bd9390126b36c5ce6b233e51f9f4f9768987debe73b605",
+      "baselineRecorded": false
+    },
+    {
+      "path": "scripts/run_milestone4_experiments.py",
+      "category": "M4 experiment/operation/evidence scripts",
+      "reviewedStatus": "M4_ADDITION",
+      "bytes": 6115,
+      "sha256": "09596fbb8a74b6f291fe52c12267fb37a60e9baf2f96e387b3c4c443369677a7",
+      "baselineRecorded": false
+    },
+    {
+      "path": "scripts/run_milestone4_java.sh",
+      "category": "M4 experiment/operation/evidence scripts",
+      "reviewedStatus": "M4_ADDITION",
+      "bytes": 185,
+      "sha256": "711a564d35def9204d1eb88c551215d83963c8082e90717e8234d3fb8c162224",
+      "baselineRecorded": false
+    },
+    {
+      "path": "scripts/serve_ml.py",
+      "category": "M4 experiment/operation/evidence scripts",
+      "reviewedStatus": "M4_ADDITION",
+      "bytes": 240,
+      "sha256": "a93a071c985bcbacdd9aee4800324cd22fffc66d8fe764aef26555b0fc4495f9",
+      "baselineRecorded": false
+    },
+    {
+      "path": "scripts/start_ml.ps1",
+      "category": "M4 experiment/operation/evidence scripts",
+      "reviewedStatus": "M4_ADDITION",
+      "bytes": 3305,
+      "sha256": "b81a092ae3971f301e4715182ff8cf4166ba7e7b99f248acca79a0546c7b6dc9",
+      "baselineRecorded": false
+    },
+    {
+      "path": "scripts/start_simulator.ps1",
+      "category": "Existing documentation/launch/frontend integration",
+      "reviewedStatus": "M4_MODIFICATION",
+      "bytes": 3864,
+      "sha256": "4f4d3df5ace129eb210858d1639494f98428e2f1437caf9cba55c26d09a5d79f",
+      "baselineRecorded": false
+    },
+    {
+      "path": "scripts/stop_ml.ps1",
+      "category": "M4 experiment/operation/evidence scripts",
+      "reviewedStatus": "M4_ADDITION",
+      "bytes": 1076,
+      "sha256": "72e912676e293f5ffd7f2519588b42ce8712bd26fe257205243311342f96a38e",
+      "baselineRecorded": false
+    },
+    {
+      "path": "scripts/summarize_milestone4_policies.py",
+      "category": "M4 experiment/operation/evidence scripts",
+      "reviewedStatus": "M4_ADDITION",
+      "bytes": 17969,
+      "sha256": "c5b52e849b8a3d647b9b20cdd34bced60a462a4aa045855710d1626b7d739112",
+      "baselineRecorded": false
+    },
+    {
+      "path": "scripts/test_milestone4_browser.py",
+      "category": "M4 experiment/operation/evidence scripts",
+      "reviewedStatus": "M4_ADDITION",
+      "bytes": 4914,
+      "sha256": "a5f7e4725f744eacd93cef147999ea19d8d9fa862d9ee8c4682315969302a378",
+      "baselineRecorded": false
+    },
+    {
+      "path": "scripts/train_milestone4.py",
+      "category": "M4 experiment/operation/evidence scripts",
+      "reviewedStatus": "M4_ADDITION",
+      "bytes": 1901,
+      "sha256": "0b0a38d4808bc0f59593b08f50744edbd27ec0fa9b65eed849edaf957f183201",
+      "baselineRecorded": false
+    },
+    {
+      "path": "scripts/validate_milestone4_completion.py",
+      "category": "Final evidence and reproducibility",
+      "reviewedStatus": "M4_ADDITION",
+      "baselineRecorded": false,
+      "bytes": 4924,
+      "sha256": "bad338728d7271e703be956bd274bbcfabb51b6dbf2bd4c22118d00f18c6f44f"
+    },
+    {
+      "path": "scripts/verify_milestone4_inference.py",
+      "category": "M4 experiment/operation/evidence scripts",
+      "reviewedStatus": "M4_ADDITION",
+      "bytes": 6963,
+      "sha256": "d2a2bb760b7d10b7123f60fd6b67fd998d1ce68e39382ad4abff87fe7c98c176",
+      "baselineRecorded": false
+    },
+    {
+      "path": "scripts/verify_milestone4_preservation.py",
+      "category": "M4 experiment/operation/evidence scripts",
+      "reviewedStatus": "M4_ADDITION",
+      "bytes": 2311,
+      "sha256": "f62e15288f3e12c7677cfb4879bcb503f335a04c97eca4e28c873aacd1362bd7",
+      "baselineRecorded": false
+    },
+    {
+      "path": "simulator/README.md",
+      "category": "Existing documentation/launch/frontend integration",
+      "reviewedStatus": "M4_MODIFICATION",
+      "bytes": 18800,
+      "sha256": "46ce9d12bc83d03fa4627be3f224b1099ad5362fae3ca97d6cf80f2ac0b9eed3",
+      "baselineRecorded": false
+    },
+    {
+      "path": "simulator/backend/src/main/java/io/cascadeshield/sim/MlController.java",
+      "category": "Java corpus/inference/advice/B5 extensions",
+      "reviewedStatus": "M4_ADDITION",
+      "bytes": 5219,
+      "sha256": "f877bda670a1b9f78ef7d4ff405914de68bc63418af22b98909a6e52f2f42313",
+      "baselineRecorded": false
+    },
+    {
+      "path": "simulator/backend/src/main/java/io/cascadeshield/sim/MlCorpusCli.java",
+      "category": "Java corpus/inference/advice/B5 extensions",
+      "reviewedStatus": "M4_ADDITION",
+      "bytes": 12268,
+      "sha256": "c1cad3fa58f5fa120ef61d298a073888506c15fee050f3092c0d8bb6da2c60c5",
+      "baselineRecorded": false
+    },
+    {
+      "path": "simulator/backend/src/main/java/io/cascadeshield/sim/MlExperimentProtocol.java",
+      "category": "Java corpus/inference/advice/B5 extensions",
+      "reviewedStatus": "M4_ADDITION",
+      "bytes": 14550,
+      "sha256": "ec99da8a7c8eed0abeca5cee988fecbc7e82070708b544e4a140437e659d8aaa",
+      "baselineRecorded": false
+    },
+    {
+      "path": "simulator/backend/src/main/java/io/cascadeshield/sim/MlFeatureExtractor.java",
+      "category": "Java corpus/inference/advice/B5 extensions",
+      "reviewedStatus": "M4_ADDITION",
+      "bytes": 7915,
+      "sha256": "476d1b9d1052b9b78d9dc352e49c193de2d0fe20710bda31862bfb11503077d2",
+      "baselineRecorded": false
+    },
+    {
+      "path": "simulator/backend/src/main/java/io/cascadeshield/sim/MlInferenceClient.java",
+      "category": "Java corpus/inference/advice/B5 extensions",
+      "reviewedStatus": "M4_ADDITION",
+      "bytes": 7828,
+      "sha256": "ca97683ce20292d7d4271f97b082c4acbaaeaddd70353abec416b5d62ae2396d",
+      "baselineRecorded": false
+    },
+    {
+      "path": "simulator/backend/src/main/java/io/cascadeshield/sim/MlModels.java",
+      "category": "Java corpus/inference/advice/B5 extensions",
+      "reviewedStatus": "M4_ADDITION",
+      "bytes": 1567,
+      "sha256": "6da25a9d6c5a80ee2e5ea7253d1af5e473e6ae6be4eb5841c3f873e46f8416ce",
+      "baselineRecorded": false
+    },
+    {
+      "path": "simulator/backend/src/main/java/io/cascadeshield/sim/MlOperatorAdvisor.java",
+      "category": "Java corpus/inference/advice/B5 extensions",
+      "reviewedStatus": "M4_ADDITION",
+      "bytes": 5553,
+      "sha256": "93117a265b12c94f2382d464790f99890d5bbd4d13e827456b64745519771325",
+      "baselineRecorded": false
+    },
+    {
+      "path": "simulator/backend/src/main/java/io/cascadeshield/sim/MlPolicyCli.java",
+      "category": "Java corpus/inference/advice/B5 extensions",
+      "reviewedStatus": "M4_ADDITION",
+      "bytes": 7121,
+      "sha256": "2839154340f9bb698312e83859586db15250c011af09f8b20c339fbf3323a6cf",
+      "baselineRecorded": false
+    },
+    {
+      "path": "simulator/backend/src/main/java/io/cascadeshield/sim/MlPolicyRunner.java",
+      "category": "Java corpus/inference/advice/B5 extensions",
+      "reviewedStatus": "M4_ADDITION",
+      "bytes": 14456,
+      "sha256": "841b076588644e172ab4c06f4e4a05406061cf6d877ee9d0803d5ecd7f795966",
+      "baselineRecorded": false
+    },
+    {
+      "path": "simulator/backend/src/test/java/io/cascadeshield/sim/MlCorpusTest.java",
+      "category": "Java M4 contract tests",
+      "reviewedStatus": "M4_ADDITION",
+      "bytes": 12152,
+      "sha256": "b41e369be62c5fed3e1941b9739e4a26ab969cd31bbf460961954f1859c7a8cb",
+      "baselineRecorded": false
+    },
+    {
+      "path": "simulator/backend/src/test/java/io/cascadeshield/sim/MlInferenceClientTest.java",
+      "category": "Java M4 contract tests",
+      "reviewedStatus": "M4_ADDITION",
+      "bytes": 6104,
+      "sha256": "f79b70ada64ab91ab3a2b28c135cf777905a0af7926d24bca3b0a6915aa688ba",
+      "baselineRecorded": false
+    },
+    {
+      "path": "simulator/backend/src/test/java/io/cascadeshield/sim/MlOperatorAdvisorTest.java",
+      "category": "Java M4 contract tests",
+      "reviewedStatus": "M4_ADDITION",
+      "bytes": 4440,
+      "sha256": "202c2dc39112d6c5fa0e22aefba5f31004b2643886cb7497d9ff2d1716e9e516",
+      "baselineRecorded": false
+    },
+    {
+      "path": "simulator/backend/src/test/java/io/cascadeshield/sim/MlPolicyRunnerTest.java",
+      "category": "Java M4 contract tests",
+      "reviewedStatus": "M4_ADDITION",
+      "bytes": 3088,
+      "sha256": "e6c7d684b4bcb2ac65372938e7b75626f85e78e486c65f15b964ca8e1c2d0210",
+      "baselineRecorded": false
+    },
+    {
+      "path": "simulator/frontend/src/App.tsx",
+      "category": "Existing documentation/launch/frontend integration",
+      "reviewedStatus": "M4_MODIFICATION",
+      "bytes": 23788,
+      "sha256": "98c8d23cffa56b24e7847af0fc032f83e070bfe39bb0bbc78ee058ee4eb00427",
+      "baselineRecorded": false
+    },
+    {
+      "path": "simulator/frontend/src/MlAdvicePanel.tsx",
+      "category": "M4 frontend prediction/operator panels",
+      "reviewedStatus": "M4_ADDITION",
+      "bytes": 5333,
+      "sha256": "016df1b41ab1a7fe3d650594effcc0254e92ba751cb9a098244e5299d657bd53",
+      "baselineRecorded": false
+    },
+    {
+      "path": "simulator/frontend/src/MlPredictionPanel.tsx",
+      "category": "M4 frontend prediction/operator panels",
+      "reviewedStatus": "M4_ADDITION",
+      "bytes": 4744,
+      "sha256": "0620191a64916f0d978034759c9dada1797a031c13971fa7134745050a38b7af",
+      "baselineRecorded": false
+    },
+    {
+      "path": "simulator/frontend/src/ml.css",
+      "category": "M4 frontend prediction/operator panels",
+      "reviewedStatus": "M4_ADDITION",
+      "bytes": 1803,
+      "sha256": "02edb2a930084c4be88981f1311620246b43005716419302c2e0f8b43f5d3b8d",
+      "baselineRecorded": false
+    },
+    {
+      "path": "simulator/frontend/src/ml.test.ts",
+      "category": "M4 frontend prediction/operator panels",
+      "reviewedStatus": "M4_ADDITION",
+      "bytes": 3676,
+      "sha256": "f68dd0562c5732d740ee6f045463e65c5433c1f261325b34c157c7e24968521d",
+      "baselineRecorded": false
+    },
+    {
+      "path": "simulator/frontend/src/ml.ts",
+      "category": "M4 frontend prediction/operator panels",
+      "reviewedStatus": "M4_ADDITION",
+      "bytes": 3572,
+      "sha256": "8cb54999b44d4b90665027158246951fd909ee5d4b0026c9ada3c072e955fd61",
+      "baselineRecorded": false
+    },
+    {
+      "path": "simulator/frontend/src/types.ts",
+      "category": "Existing documentation/launch/frontend integration",
+      "reviewedStatus": "M4_MODIFICATION",
+      "bytes": 2731,
+      "sha256": "0a9e826b37847a75eae1bb9dd1d0305275513dd9ca0385e91355fe9a801478c6",
+      "baselineRecorded": false
+    },
+    {
+      "path": "tests/test_milestone4_leakage_audit.py",
+      "category": "Python audit/policy tests",
+      "reviewedStatus": "M4_ADDITION",
+      "bytes": 2769,
+      "sha256": "c1c800de872d288870063b8d04fce2dd865047ad4285d07f4872d06a50aaeafb",
+      "baselineRecorded": false
+    },
+    {
+      "path": "tests/test_milestone4_policy_freeze.py",
+      "category": "Python audit/policy tests",
+      "reviewedStatus": "M4_ADDITION",
+      "bytes": 4443,
+      "sha256": "5a9f7b0fd444cc36c83ef13e4e6f4aa59b2714b9aad234a69aa329bf18b2aae6",
+      "baselineRecorded": false
+    },
+    {
+      "path": "tests/test_milestone4_policy_summary.py",
+      "category": "Python audit/policy tests",
+      "reviewedStatus": "M4_ADDITION",
+      "bytes": 1676,
+      "sha256": "cfae3c037d5f64f1b2f63d2bd53d1f3b2ca75c3766d6d316f3fd536fb555ab0e",
+      "baselineRecorded": false
+    },
+    {
+      "path": "tests/test_ml_graph_metrics.py",
+      "category": "Python learning tests",
+      "reviewedStatus": "M4_ADDITION",
+      "bytes": 6929,
+      "sha256": "2019224fe36d99d9ee66624d444c4b8e3a71a57d7cb676a359cfa785c99f4ba8",
+      "baselineRecorded": false
+    },
+    {
+      "path": "tests/test_ml_pipeline.py",
+      "category": "Python learning tests",
+      "reviewedStatus": "M4_ADDITION",
+      "bytes": 10649,
+      "sha256": "9b37a80079b19a6e63bf148ad85318e19b82a6fc9efc03d7b7fba65d8c69c7e1",
+      "baselineRecorded": false
+    }
+  ],
+  "preservation": {
+    "manifest": "reports/milestone4_preservation_manifest.json",
+    "manifestSha256": "d6d2d13e6ffbc3ed7c1679531dcfe37ba73bc2068a5abe189291a4e45a4b8150",
+    "fileCount": 86,
+    "passedCount": 86,
+    "passed": true,
+    "checks": [
+      {
+        "path": "config/benchmark_protocol.json",
+        "expectedSha256": "989fba83cec961191289e605a201c426838b68188a6e74f51da90d0f43be5a01",
+        "actualSha256": "989fba83cec961191289e605a201c426838b68188a6e74f51da90d0f43be5a01",
+        "passed": true
+      },
+      {
+        "path": "data/metadata/chennai_network_provenance.json",
+        "expectedSha256": "59b59d809eb47fc08338920c896a4989d98e069fe7193bffad132189f6d6e6c4",
+        "actualSha256": "59b59d809eb47fc08338920c896a4989d98e069fe7193bffad132189f6d6e6c4",
+        "passed": true
+      },
+      {
+        "path": "data/metadata/manifest.json",
+        "expectedSha256": "ffc861bc6e4f1f6aa34ab1dff34904759642e461042dc5292b9a347d4325ec69",
+        "actualSha256": "ffc861bc6e4f1f6aa34ab1dff34904759642e461042dc5292b9a347d4325ec69",
+        "passed": true
+      },
+      {
+        "path": "data/metadata/processed_manifest.json",
+        "expectedSha256": "64817819f9d7de13cf8b4334cf582427a696dc18d49f6b283636514c27b2b131",
+        "actualSha256": "64817819f9d7de13cf8b4334cf582427a696dc18d49f6b283636514c27b2b131",
+        "passed": true
+      },
+      {
+        "path": "data/metadata/source_inventory.json",
+        "expectedSha256": "df4973abb69265fc8201cf3834d2af410ac881d5425435fce68a830a1caf656d",
+        "actualSha256": "df4973abb69265fc8201cf3834d2af410ac881d5425435fce68a830a1caf656d",
+        "passed": true
+      },
+      {
+        "path": "data/processed/chennai_osm/road_graph.json",
+        "expectedSha256": "c943bac278192042b22342d8e1be898cc68512fb936e314633645bc3e0304e60",
+        "actualSha256": "c943bac278192042b22342d8e1be898cc68512fb936e314633645bc3e0304e60",
+        "passed": true
+      },
+      {
+        "path": "data/processed/chennai_osm/roads.geojson",
+        "expectedSha256": "d714bab06c2eeb022eab54dac8a8224ca6c5330579579fa66938e35c6497f478",
+        "actualSha256": "d714bab06c2eeb022eab54dac8a8224ca6c5330579579fa66938e35c6497f478",
+        "passed": true
+      },
+      {
+        "path": "data/raw/chennai_osm/central_chennai.json",
+        "expectedSha256": "38ab5bdea18ca7859daea5a3801f1a5d138d320e29a841aa8d67f00c1c87e80d",
+        "actualSha256": "38ab5bdea18ca7859daea5a3801f1a5d138d320e29a841aa8d67f00c1c87e80d",
+        "passed": true
+      },
+      {
+        "path": "reports/benchmark_raw/17fac423-bea7-46a0-9027-8ee76eaa78e4.csv",
+        "expectedSha256": "2fd04001093a4d4372c6a1962f6f94ae8c4ea94b39cd5eda575f6ec1c4d59b74",
+        "actualSha256": "2fd04001093a4d4372c6a1962f6f94ae8c4ea94b39cd5eda575f6ec1c4d59b74",
+        "passed": true
+      },
+      {
+        "path": "reports/benchmark_raw/17fac423-bea7-46a0-9027-8ee76eaa78e4.json",
+        "expectedSha256": "bef0137ea29225b8d999e62be3c8c4050182812a8349ace0ca67a154bc05b17b",
+        "actualSha256": "bef0137ea29225b8d999e62be3c8c4050182812a8349ace0ca67a154bc05b17b",
+        "passed": true
+      },
+      {
+        "path": "reports/benchmark_raw/67312a37-3ada-4e4e-9073-b92bcaf5ea70.csv",
+        "expectedSha256": "dca76fab037034120e90889c18977ff555eca81cf4f419d2df3c0e05c0f19011",
+        "actualSha256": "dca76fab037034120e90889c18977ff555eca81cf4f419d2df3c0e05c0f19011",
+        "passed": true
+      },
+      {
+        "path": "reports/benchmark_raw/67312a37-3ada-4e4e-9073-b92bcaf5ea70.json",
+        "expectedSha256": "43b5314bd48401850d2e486becd86f1392b5432079298be5d859b75ae4e93b42",
+        "actualSha256": "43b5314bd48401850d2e486becd86f1392b5432079298be5d859b75ae4e93b42",
+        "passed": true
+      },
+      {
+        "path": "reports/benchmark_raw/6fa70409-a1e2-4152-a8fc-9f2da27c6191_failed.json",
+        "expectedSha256": "64f02f62cba1c35056600517a9bff2644528d605345af94ca8a9dd83dc2a99a7",
+        "actualSha256": "64f02f62cba1c35056600517a9bff2644528d605345af94ca8a9dd83dc2a99a7",
+        "passed": true
+      },
+      {
+        "path": "reports/benchmark_raw/84bb3e25-f4fb-480c-9854-e63c80f3d7ea.csv",
+        "expectedSha256": "3909cfc531b490085891390907fd0a247a9be515fb6b2bdad1ae8199ac83fb3d",
+        "actualSha256": "3909cfc531b490085891390907fd0a247a9be515fb6b2bdad1ae8199ac83fb3d",
+        "passed": true
+      },
+      {
+        "path": "reports/benchmark_raw/84bb3e25-f4fb-480c-9854-e63c80f3d7ea.json",
+        "expectedSha256": "1fec5fbc48391adc02a6c84b8ab00122287513d8542128266950f04c33dd9733",
+        "actualSha256": "1fec5fbc48391adc02a6c84b8ab00122287513d8542128266950f04c33dd9733",
+        "passed": true
+      },
+      {
+        "path": "reports/benchmark_raw/89272c40-1971-4216-8e64-115b8947d2bf.csv",
+        "expectedSha256": "58b126b6202e6a7e6697faa7ad1a5c1cbaccd3c507c12db9fffef48000e293f2",
+        "actualSha256": "58b126b6202e6a7e6697faa7ad1a5c1cbaccd3c507c12db9fffef48000e293f2",
+        "passed": true
+      },
+      {
+        "path": "reports/benchmark_raw/89272c40-1971-4216-8e64-115b8947d2bf.json",
+        "expectedSha256": "7f8e9b05a0499cd2b3ee932d4d16fc1f692f7361f2a61748d906f918a8a13beb",
+        "actualSha256": "7f8e9b05a0499cd2b3ee932d4d16fc1f692f7361f2a61748d906f918a8a13beb",
+        "passed": true
+      },
+      {
+        "path": "reports/benchmark_raw/b0d9235f-e1b9-4b3b-9627-6af76a47e988.csv",
+        "expectedSha256": "1304ab4e3278bb9d8129457e7129df473751a651c358d4333a1e7e7a8bd868ac",
+        "actualSha256": "1304ab4e3278bb9d8129457e7129df473751a651c358d4333a1e7e7a8bd868ac",
+        "passed": true
+      },
+      {
+        "path": "reports/benchmark_raw/b0d9235f-e1b9-4b3b-9627-6af76a47e988.json",
+        "expectedSha256": "2eadd8b6e2518ef52fb2c3498166fbff3409d6ae529bf4bf7c6b7e07fa0997e6",
+        "actualSha256": "2eadd8b6e2518ef52fb2c3498166fbff3409d6ae529bf4bf7c6b7e07fa0997e6",
+        "passed": true
+      },
+      {
+        "path": "reports/benchmark_raw/d417cd3e-d5d4-453b-9797-d686fc1634ba.csv",
+        "expectedSha256": "7858ad37e6803cdec83d2797fd6ed29313121613cb63e1417133fb3123572d25",
+        "actualSha256": "7858ad37e6803cdec83d2797fd6ed29313121613cb63e1417133fb3123572d25",
+        "passed": true
+      },
+      {
+        "path": "reports/benchmark_raw/d417cd3e-d5d4-453b-9797-d686fc1634ba.json",
+        "expectedSha256": "c6736b433a28341babb339b32680c6b9827bc9e3aa20785f36a1955a4cfb97ec",
+        "actualSha256": "c6736b433a28341babb339b32680c6b9827bc9e3aa20785f36a1955a4cfb97ec",
+        "passed": true
+      },
+      {
+        "path": "reports/benchmark_raw/f6fd77d7-268f-4f22-bf4a-7ba3b937be7e.csv",
+        "expectedSha256": "e4cbfdc56eac7bb7280bcbf5523b2ec120e9b4479ed5b7f4692fba5ac34dbdb1",
+        "actualSha256": "e4cbfdc56eac7bb7280bcbf5523b2ec120e9b4479ed5b7f4692fba5ac34dbdb1",
+        "passed": true
+      },
+      {
+        "path": "reports/benchmark_raw/f6fd77d7-268f-4f22-bf4a-7ba3b937be7e.json",
+        "expectedSha256": "32f7579600cefb1e0ab46774024272764a903142f43f20346c690961f0bb4bc6",
+        "actualSha256": "32f7579600cefb1e0ab46774024272764a903142f43f20346c690961f0bb4bc6",
+        "passed": true
+      },
+      {
+        "path": "reports/benchmark_raw/fe3420a1-49b9-4e4b-87f5-db8462ffb761.csv",
+        "expectedSha256": "20f2124eb4ed4e212bcf1d57b933a40e5affb02fc3beba4d5217bbbcfa1e8c06",
+        "actualSha256": "20f2124eb4ed4e212bcf1d57b933a40e5affb02fc3beba4d5217bbbcfa1e8c06",
+        "passed": true
+      },
+      {
+        "path": "reports/benchmark_raw/fe3420a1-49b9-4e4b-87f5-db8462ffb761.json",
+        "expectedSha256": "dc03f408bf52b369ae063d5766e4f0a24c811a62d14564a9c36d1308c22e76a9",
+        "actualSha256": "dc03f408bf52b369ae063d5766e4f0a24c811a62d14564a9c36d1308c22e76a9",
+        "passed": true
+      },
+      {
+        "path": "reports/BENCHMARK_RESULTS.csv",
+        "expectedSha256": "e775ed01da89fdec6a5c145917042a18c75ab7c8c78ba59f9249c23ad0337171",
+        "actualSha256": "e775ed01da89fdec6a5c145917042a18c75ab7c8c78ba59f9249c23ad0337171",
+        "passed": true
+      },
+      {
+        "path": "reports/BENCHMARK_RESULTS.json",
+        "expectedSha256": "2f6fa2d54ecaf3540d59d2dbc6909a6864e433e8a1ac0177db955bd9b9b63ec6",
+        "actualSha256": "2f6fa2d54ecaf3540d59d2dbc6909a6864e433e8a1ac0177db955bd9b9b63ec6",
+        "passed": true
+      },
+      {
+        "path": "reports/milestone3_browser_tests.json",
+        "expectedSha256": "e21018f8e7719b1470e032fb7afcdfee83287ea63a49649feda40c43c91c8f8f",
+        "actualSha256": "e21018f8e7719b1470e032fb7afcdfee83287ea63a49649feda40c43c91c8f8f",
+        "passed": true
+      },
+      {
+        "path": "reports/milestone3_frontend_tests.json",
+        "expectedSha256": "4b3b3538040aebad3e947327292b6ec565f73cd8c5eddf4ef40af5a4755f4b21",
+        "actualSha256": "4b3b3538040aebad3e947327292b6ec565f73cd8c5eddf4ef40af5a4755f4b21",
+        "passed": true
+      },
+      {
+        "path": "reports/milestone3_integration_initial_failure.json",
+        "expectedSha256": "31f795fd8b028be673dad120eeb831f8e8e3ab7d1a7437d3902353b2f60343a9",
+        "actualSha256": "31f795fd8b028be673dad120eeb831f8e8e3ab7d1a7437d3902353b2f60343a9",
+        "passed": true
+      },
+      {
+        "path": "reports/milestone3_integration_tests.json",
+        "expectedSha256": "cab56655959d94e22a7005efcc46f42d9f5f228cad6dfc4a9584e42125445128",
+        "actualSha256": "cab56655959d94e22a7005efcc46f42d9f5f228cad6dfc4a9584e42125445128",
+        "passed": true
+      },
+      {
+        "path": "reports/milestone3_java_tests.json",
+        "expectedSha256": "81fec52a38e5bdf4d0a144c956ae9bbed5b8dd6f7c5071546c78732c49b97352",
+        "actualSha256": "81fec52a38e5bdf4d0a144c956ae9bbed5b8dd6f7c5071546c78732c49b97352",
+        "passed": true
+      },
+      {
+        "path": "reports/milestone3_python_tests.json",
+        "expectedSha256": "244a1e34ee36102c0a0c57343febf81a3da22919c3eb05479b5d18953c7dccd3",
+        "actualSha256": "244a1e34ee36102c0a0c57343febf81a3da22919c3eb05479b5d18953c7dccd3",
+        "passed": true
+      },
+      {
+        "path": "reports/milestone3_restart_tests.json",
+        "expectedSha256": "f1d8b4c5eee5ad9ec22b716535a7822a8c08df754acd3453a83108d126f15246",
+        "actualSha256": "f1d8b4c5eee5ad9ec22b716535a7822a8c08df754acd3453a83108d126f15246",
+        "passed": true
+      },
+      {
+        "path": "reports/milestone3_result_validation.json",
+        "expectedSha256": "e3d923379cd45af46835da4c3da220e3d247ecb9abe44313d90af6b1cedd07e5",
+        "actualSha256": "e3d923379cd45af46835da4c3da220e3d247ecb9abe44313d90af6b1cedd07e5",
+        "passed": true
+      },
+      {
+        "path": "reports/MILESTONE_1_PLAN.md",
+        "expectedSha256": "ba27b499561d9ce7d12d4e73501216a69de46959416fc8c86fee3c78afa29d9c",
+        "actualSha256": "ba27b499561d9ce7d12d4e73501216a69de46959416fc8c86fee3c78afa29d9c",
+        "passed": true
+      },
+      {
+        "path": "reports/MILESTONE_1_RESULTS.json",
+        "expectedSha256": "acc2898582d15f4352382a32d96ba002851fd6056c430c88477c57b99532d52c",
+        "actualSha256": "acc2898582d15f4352382a32d96ba002851fd6056c430c88477c57b99532d52c",
+        "passed": true
+      },
+      {
+        "path": "reports/MILESTONE_1_RESULTS.md",
+        "expectedSha256": "f048f02601b44590133dd5b9e03070583053558e603974080fd3142d575f6772",
+        "actualSha256": "f048f02601b44590133dd5b9e03070583053558e603974080fd3142d575f6772",
+        "passed": true
+      },
+      {
+        "path": "reports/milestone_2_browser_initial_failure.json",
+        "expectedSha256": "6320c72a640ecb43b21af654fc96451dba3d63dccf4f5d1d5ff41411ef55e4c0",
+        "actualSha256": "6320c72a640ecb43b21af654fc96451dba3d63dccf4f5d1d5ff41411ef55e4c0",
+        "passed": true
+      },
+      {
+        "path": "reports/milestone_2_browser_selector_failure.json",
+        "expectedSha256": "59a4449615684dcf2f8e5c6faab9d2f9e060bd5e84fc8aa20695f06eb13ccb59",
+        "actualSha256": "59a4449615684dcf2f8e5c6faab9d2f9e060bd5e84fc8aa20695f06eb13ccb59",
+        "passed": true
+      },
+      {
+        "path": "reports/milestone_2_browser_tests.json",
+        "expectedSha256": "d57b96a28d6aeb36afeea8241d5acd3df5b17f744f17c2af8a31eb1197711300",
+        "actualSha256": "d57b96a28d6aeb36afeea8241d5acd3df5b17f744f17c2af8a31eb1197711300",
+        "passed": true
+      },
+      {
+        "path": "reports/milestone_2_demonstration_state.json",
+        "expectedSha256": "32bd2d282f9bf6b765b8f9a81728b63a68da357403aef708809eee82bb53dd45",
+        "actualSha256": "32bd2d282f9bf6b765b8f9a81728b63a68da357403aef708809eee82bb53dd45",
+        "passed": true
+      },
+      {
+        "path": "reports/milestone_2_frontend_tests.json",
+        "expectedSha256": "47b32ae4684c9c895e9c48d7cbb938c6598bdfb5ece8b1958dfe8ddea1a905f4",
+        "actualSha256": "47b32ae4684c9c895e9c48d7cbb938c6598bdfb5ece8b1958dfe8ddea1a905f4",
+        "passed": true
+      },
+      {
+        "path": "reports/milestone_2_integration_initial_failure.json",
+        "expectedSha256": "c24bccc87bf109d786c2aeec3e7c55a77f30dff8f4811e535baaf939e4dbd594",
+        "actualSha256": "c24bccc87bf109d786c2aeec3e7c55a77f30dff8f4811e535baaf939e4dbd594",
+        "passed": true
+      },
+      {
+        "path": "reports/milestone_2_integration_tests.json",
+        "expectedSha256": "e482a7ccb54b8095436639a3624bd7ace2fc1b0e68790a435e5ffa4d162bc2f7",
+        "actualSha256": "e482a7ccb54b8095436639a3624bd7ace2fc1b0e68790a435e5ffa4d162bc2f7",
+        "passed": true
+      },
+      {
+        "path": "reports/milestone_2_java_tests.json",
+        "expectedSha256": "dbbcf09e3b4d9cb8991a5d8b1e7d31626761c44e40768f04652a9f72382017a9",
+        "actualSha256": "dbbcf09e3b4d9cb8991a5d8b1e7d31626761c44e40768f04652a9f72382017a9",
+        "passed": true
+      },
+      {
+        "path": "reports/milestone_2_legacy_browser.json",
+        "expectedSha256": "2f34c44b200d00025ca09e32597619a2337fa968b92ee628ddac4f0673f35173",
+        "actualSha256": "2f34c44b200d00025ca09e32597619a2337fa968b92ee628ddac4f0673f35173",
+        "passed": true
+      },
+      {
+        "path": "reports/milestone_2_legacy_integration.json",
+        "expectedSha256": "a5709e69bf119d982b61978f9c087e8235f77cd5cecac6b28a9a8ad57c6bc303",
+        "actualSha256": "a5709e69bf119d982b61978f9c087e8235f77cd5cecac6b28a9a8ad57c6bc303",
+        "passed": true
+      },
+      {
+        "path": "reports/MILESTONE_2_PLAN.md",
+        "expectedSha256": "d1d14fd3667ae5e7f2483f5642146d5b78171e098901633f3d5fbdc651bb029d",
+        "actualSha256": "d1d14fd3667ae5e7f2483f5642146d5b78171e098901633f3d5fbdc651bb029d",
+        "passed": true
+      },
+      {
+        "path": "reports/milestone_2_python_tests.json",
+        "expectedSha256": "268e0348b283ec2853685b2250bcd8bdf74a58dbbca0fe5107c8e3d6cc2583d3",
+        "actualSha256": "268e0348b283ec2853685b2250bcd8bdf74a58dbbca0fe5107c8e3d6cc2583d3",
+        "passed": true
+      },
+      {
+        "path": "reports/MILESTONE_2_RESULTS.json",
+        "expectedSha256": "14138769cc49f0d38030a7273ee1c8809d27787ffd60664e0bc5738b4c8ccd3c",
+        "actualSha256": "14138769cc49f0d38030a7273ee1c8809d27787ffd60664e0bc5738b4c8ccd3c",
+        "passed": true
+      },
+      {
+        "path": "reports/MILESTONE_2_RESULTS.md",
+        "expectedSha256": "d407628359b3a08c4a4c6103520922a662aa6f214cfc8e266c3790729818eb0a",
+        "actualSha256": "d407628359b3a08c4a4c6103520922a662aa6f214cfc8e266c3790729818eb0a",
+        "passed": true
+      },
+      {
+        "path": "reports/milestone_2_snapshot_conversion.json",
+        "expectedSha256": "49c56e03cc1d5f0187378f37592fbd4f30f62c83e4c4032ec9c2a040364faf04",
+        "actualSha256": "49c56e03cc1d5f0187378f37592fbd4f30f62c83e4c4032ec9c2a040364faf04",
+        "passed": true
+      },
+      {
+        "path": "reports/milestone_3_frontend_tests.json",
+        "expectedSha256": "4cbb5717323685994a65048ddf54ae6f5c82ee055be6969413fcb6b767b0e70c",
+        "actualSha256": "4cbb5717323685994a65048ddf54ae6f5c82ee055be6969413fcb6b767b0e70c",
+        "passed": true
+      },
+      {
+        "path": "reports/MILESTONE_3_RESULTS.json",
+        "expectedSha256": "3e00a08abcdb54fea872366fb248bf082eb95e0552e245aafbd5c916a0882ed6",
+        "actualSha256": "3e00a08abcdb54fea872366fb248bf082eb95e0552e245aafbd5c916a0882ed6",
+        "passed": true
+      },
+      {
+        "path": "reports/MILESTONE_3_RESULTS.md",
+        "expectedSha256": "9f91373e3f7a9b8d04946c99cf005bb05d1554d9a22b73e3d01de386b562ebaa",
+        "actualSha256": "9f91373e3f7a9b8d04946c99cf005bb05d1554d9a22b73e3d01de386b562ebaa",
+        "passed": true
+      },
+      {
+        "path": "simulator/backend/src/main/java/io/cascadeshield/sim/AiArchitecture.java",
+        "expectedSha256": "afb055adeb7a8fdfe01e8fb415f0ad96b87033e4cc8e061e78ae25219f73e3a0",
+        "actualSha256": "afb055adeb7a8fdfe01e8fb415f0ad96b87033e4cc8e061e78ae25219f73e3a0",
+        "passed": true
+      },
+      {
+        "path": "simulator/backend/src/main/java/io/cascadeshield/sim/AiFallbackPipeline.java",
+        "expectedSha256": "a9f39149cabdbdaefd7dc81432ebb9664cd358525aeb7aeba1fecd8b23f5c210",
+        "actualSha256": "a9f39149cabdbdaefd7dc81432ebb9664cd358525aeb7aeba1fecd8b23f5c210",
+        "passed": true
+      },
+      {
+        "path": "simulator/backend/src/main/java/io/cascadeshield/sim/AiModels.java",
+        "expectedSha256": "c9bcbfa73eff9a7352cb277c296f5f56327a23ffde8caf9c0f9d72b4abe74591",
+        "actualSha256": "c9bcbfa73eff9a7352cb277c296f5f56327a23ffde8caf9c0f9d72b4abe74591",
+        "passed": true
+      },
+      {
+        "path": "simulator/backend/src/main/java/io/cascadeshield/sim/ApiException.java",
+        "expectedSha256": "24c68273e4a336bf46acc7b3ef96c404502e30ffe640a7bf174988c2ee1a6de0",
+        "actualSha256": "24c68273e4a336bf46acc7b3ef96c404502e30ffe640a7bf174988c2ee1a6de0",
+        "passed": true
+      },
+      {
+        "path": "simulator/backend/src/main/java/io/cascadeshield/sim/BenchmarkController.java",
+        "expectedSha256": "95fb7c7502f848de2779578ee3cfa163a5107e37221191ca2147c732a9e744bd",
+        "actualSha256": "95fb7c7502f848de2779578ee3cfa163a5107e37221191ca2147c732a9e744bd",
+        "passed": true
+      },
+      {
+        "path": "simulator/backend/src/main/java/io/cascadeshield/sim/BenchmarkModels.java",
+        "expectedSha256": "2b94a674e83b28db516c7bb1f5b9cfaa8231d2f350f316c2e5d257c37f443621",
+        "actualSha256": "2b94a674e83b28db516c7bb1f5b9cfaa8231d2f350f316c2e5d257c37f443621",
+        "passed": true
+      },
+      {
+        "path": "simulator/backend/src/main/java/io/cascadeshield/sim/BenchmarkPolicyRunner.java",
+        "expectedSha256": "a1087dad954a093d1a8360c920077deacd9650751d73e504c7c65dc5a2dea435",
+        "actualSha256": "a1087dad954a093d1a8360c920077deacd9650751d73e504c7c65dc5a2dea435",
+        "passed": true
+      },
+      {
+        "path": "simulator/backend/src/main/java/io/cascadeshield/sim/BenchmarkRepository.java",
+        "expectedSha256": "a364c177877993f2b70bfcfdd9825f7e369144f71cfde86a2d6df9fa19d93a99",
+        "actualSha256": "a364c177877993f2b70bfcfdd9825f7e369144f71cfde86a2d6df9fa19d93a99",
+        "passed": true
+      },
+      {
+        "path": "simulator/backend/src/main/java/io/cascadeshield/sim/BenchmarkScenarioGenerator.java",
+        "expectedSha256": "7ce6c7c3fc3963c5fc370a85efbc5a51e19a12304a062b38f560fafa268d1d3b",
+        "actualSha256": "7ce6c7c3fc3963c5fc370a85efbc5a51e19a12304a062b38f560fafa268d1d3b",
+        "passed": true
+      },
+      {
+        "path": "simulator/backend/src/main/java/io/cascadeshield/sim/BenchmarkService.java",
+        "expectedSha256": "1855efd10fdc3978b734ea43863f05bb90ed9d3c5cebccf7c612046a40b4610f",
+        "actualSha256": "1855efd10fdc3978b734ea43863f05bb90ed9d3c5cebccf7c612046a40b4610f",
+        "passed": true
+      },
+      {
+        "path": "simulator/backend/src/main/java/io/cascadeshield/sim/CounterfactualExperimentEngine.java",
+        "expectedSha256": "a607d795b09941d15d43625865c2a33d05cc66b23117e653b652f237d673fccc",
+        "actualSha256": "a607d795b09941d15d43625865c2a33d05cc66b23117e653b652f237d673fccc",
+        "passed": true
+      },
+      {
+        "path": "simulator/backend/src/main/java/io/cascadeshield/sim/ExperimentActions.java",
+        "expectedSha256": "9dfc95cbfab5767b7ebd089604393743d7238c56a717f4e2e30664db97cc5dcd",
+        "actualSha256": "9dfc95cbfab5767b7ebd089604393743d7238c56a717f4e2e30664db97cc5dcd",
+        "passed": true
+      },
+      {
+        "path": "simulator/backend/src/main/java/io/cascadeshield/sim/ExperimentMetrics.java",
+        "expectedSha256": "fa495f84ace251b13e0181dc609612e8fae933bf1efa3ae4ae9d3c69bd37236e",
+        "actualSha256": "fa495f84ace251b13e0181dc609612e8fae933bf1efa3ae4ae9d3c69bd37236e",
+        "passed": true
+      },
+      {
+        "path": "simulator/backend/src/main/java/io/cascadeshield/sim/GraphRiskBaseline.java",
+        "expectedSha256": "b759038c7b43e775eff795b2349893cb2154bf950eb41677fb115c717dd13ef4",
+        "actualSha256": "b759038c7b43e775eff795b2349893cb2154bf950eb41677fb115c717dd13ef4",
+        "passed": true
+      },
+      {
+        "path": "simulator/backend/src/main/java/io/cascadeshield/sim/GraphSnapshotExporter.java",
+        "expectedSha256": "67c61753d4d4cf891c623a3ee7d808c9472180587d0010c6ba536b082bede141",
+        "actualSha256": "67c61753d4d4cf891c623a3ee7d808c9472180587d0010c6ba536b082bede141",
+        "passed": true
+      },
+      {
+        "path": "simulator/backend/src/main/java/io/cascadeshield/sim/Models.java",
+        "expectedSha256": "b75024c8b93099921ce2b1ce0dabf7d3260f0e0dafba1855ff3f290590ab6a5e",
+        "actualSha256": "b75024c8b93099921ce2b1ce0dabf7d3260f0e0dafba1855ff3f290590ab6a5e",
+        "passed": true
+      },
+      {
+        "path": "simulator/backend/src/main/java/io/cascadeshield/sim/OperationalDependencyGraph.java",
+        "expectedSha256": "38d0ec30b71163e691369daf0b19e169c9421e560b320fcdd881c3b1739292ac",
+        "actualSha256": "38d0ec30b71163e691369daf0b19e169c9421e560b320fcdd881c3b1739292ac",
+        "passed": true
+      },
+      {
+        "path": "simulator/backend/src/main/java/io/cascadeshield/sim/OperationalRuntime.java",
+        "expectedSha256": "1026eb7d9e730e0325c5eeb120915edb2ab8bf68bc5bfdc2a68d036f35b652ec",
+        "actualSha256": "1026eb7d9e730e0325c5eeb120915edb2ab8bf68bc5bfdc2a68d036f35b652ec",
+        "passed": true
+      },
+      {
+        "path": "simulator/backend/src/main/java/io/cascadeshield/sim/OperatorApprovalGuard.java",
+        "expectedSha256": "d14d1f56ddb97652e8b6cf8df63e69f3e7e49365c3f49f26065aff24c901b2b0",
+        "actualSha256": "d14d1f56ddb97652e8b6cf8df63e69f3e7e49365c3f49f26065aff24c901b2b0",
+        "passed": true
+      },
+      {
+        "path": "simulator/backend/src/main/java/io/cascadeshield/sim/OpsModels.java",
+        "expectedSha256": "1f17899840a951f14db04adbc0ad3c1b098ef06b09886b61d7a5d64dc7929216",
+        "actualSha256": "1f17899840a951f14db04adbc0ad3c1b098ef06b09886b61d7a5d64dc7929216",
+        "passed": true
+      },
+      {
+        "path": "simulator/backend/src/main/java/io/cascadeshield/sim/PredictionService.java",
+        "expectedSha256": "60f54a63e3ca036843011e183c317095cb28dbdf551a0cdef23f41d6a1398ea2",
+        "actualSha256": "60f54a63e3ca036843011e183c317095cb28dbdf551a0cdef23f41d6a1398ea2",
+        "passed": true
+      },
+      {
+        "path": "simulator/backend/src/main/java/io/cascadeshield/sim/PreventionService.java",
+        "expectedSha256": "da069d41b4c1d7f65c07a766331ac2c2982b33bdd9836c8239e23e3159942e30",
+        "actualSha256": "da069d41b4c1d7f65c07a766331ac2c2982b33bdd9836c8239e23e3159942e30",
+        "passed": true
+      },
+      {
+        "path": "simulator/backend/src/main/java/io/cascadeshield/sim/RoadGraph.java",
+        "expectedSha256": "840d1db02bae92092663001d6f8d2824f480057248d5f84d5ef9ef832239ebf7",
+        "actualSha256": "840d1db02bae92092663001d6f8d2824f480057248d5f84d5ef9ef832239ebf7",
+        "passed": true
+      },
+      {
+        "path": "simulator/backend/src/main/java/io/cascadeshield/sim/RuleBasedPredictionService.java",
+        "expectedSha256": "aaa13e5ac5437306555c3087d895c0a5084220914bcc7c7083141f2ba905e90c",
+        "actualSha256": "aaa13e5ac5437306555c3087d895c0a5084220914bcc7c7083141f2ba905e90c",
+        "passed": true
+      },
+      {
+        "path": "simulator/backend/src/main/java/io/cascadeshield/sim/RuleBasedPreventionService.java",
+        "expectedSha256": "134865d7180f6d1cdcf2dc1e99ce7509ecf5d7d3a65ccda90651df9803bf368e",
+        "actualSha256": "134865d7180f6d1cdcf2dc1e99ce7509ecf5d7d3a65ccda90651df9803bf368e",
+        "passed": true
+      },
+      {
+        "path": "simulator/backend/src/main/java/io/cascadeshield/sim/SimulationEngine.java",
+        "expectedSha256": "b1412f24ccaa2cc2e7ef20e289a83852ef91450ca80023cdc40eb2ccd971150a",
+        "actualSha256": "b1412f24ccaa2cc2e7ef20e289a83852ef91450ca80023cdc40eb2ccd971150a",
+        "passed": true
+      },
+      {
+        "path": "simulator/backend/src/main/java/io/cascadeshield/sim/SimulationRepository.java",
+        "expectedSha256": "a7ba719da32cbb787ee5f5c272b681e053f330a3328a0c4a33d1a38d91956798",
+        "actualSha256": "a7ba719da32cbb787ee5f5c272b681e053f330a3328a0c4a33d1a38d91956798",
+        "passed": true
+      },
+      {
+        "path": "simulator/backend/src/main/java/io/cascadeshield/sim/SimulationService.java",
+        "expectedSha256": "5d6c4e3a3db4f1f4cd017dc86f0f337e6fef77efc33ed56266ec8bebf315319a",
+        "actualSha256": "5d6c4e3a3db4f1f4cd017dc86f0f337e6fef77efc33ed56266ec8bebf315319a",
+        "passed": true
+      },
+      {
+        "path": "simulator/backend/src/main/java/io/cascadeshield/sim/SimulatorApplication.java",
+        "expectedSha256": "eed80cf9cd8f36ac9fe28aa64b5e96be46a3ba0617a18f77cd7c39232d872e5c",
+        "actualSha256": "eed80cf9cd8f36ac9fe28aa64b5e96be46a3ba0617a18f77cd7c39232d872e5c",
+        "passed": true
+      },
+      {
+        "path": "simulator/backend/src/main/java/io/cascadeshield/sim/SimulatorController.java",
+        "expectedSha256": "79295d91a4d65711c513db20b1f010597025ce7ee6e1175fd8671fc47c0e9c21",
+        "actualSha256": "79295d91a4d65711c513db20b1f010597025ce7ee6e1175fd8671fc47c0e9c21",
+        "passed": true
+      }
+    ]
+  },
+  "generatedArtifacts": [
+    {
+      "path": "data/processed/milestone4/corpus/feature_schema.json",
+      "bytes": 1221,
+      "sha256": "5f865ee26f2e5d620f6549694cd3006f2ac14131e15085c8fa32849ba2f71c30",
+      "kind": "GENERATED_EVIDENCE_OR_DECLARATION"
+    },
+    {
+      "path": "data/processed/milestone4/corpus/generation_manifest.json",
+      "bytes": 1498281,
+      "sha256": "54d7314ede70020983f67310a96c801344ae568d2a7013ad430351a6ca2af024",
+      "kind": "GENERATED_EVIDENCE_OR_DECLARATION"
+    },
+    {
+      "path": "data/processed/milestone4/corpus_v2/calibration.jsonl",
+      "bytes": 12049248,
+      "sha256": "3d9a0ec03a512e3ca6d5b57adab45e920c6b53dc9a4e4a46f04127107e4d459a",
+      "kind": "GENERATED_EVIDENCE_OR_DECLARATION"
+    },
+    {
+      "path": "data/processed/milestone4/corpus_v2/feature_schema.json",
+      "bytes": 1221,
+      "sha256": "c5a36c2ee1c74af6d387ca982c6c6003b3262b4b1e0071e48d4a8c4fac20d9a5",
+      "kind": "GENERATED_EVIDENCE_OR_DECLARATION"
+    },
+    {
+      "path": "data/processed/milestone4/corpus_v2/final.jsonl",
+      "bytes": 24571141,
+      "sha256": "6ba5fd68b507ad85aa151bbf0400640247abfc9c87273f38b016e5c4d11b5705",
+      "kind": "GENERATED_EVIDENCE_OR_DECLARATION"
+    },
+    {
+      "path": "data/processed/milestone4/corpus_v2/final_unlock.json",
+      "bytes": 177,
+      "sha256": "c2328ecfbde9c0a9187f02ee7fa9b2ed10e5ed746fcd3f52d315d5e663ab5854",
+      "kind": "GENERATED_EVIDENCE_OR_DECLARATION"
+    },
+    {
+      "path": "data/processed/milestone4/corpus_v2/generation_manifest.json",
+      "bytes": 1909152,
+      "sha256": "d3ee5732684b296f47c1842fa7e6dee71b0f57b8cb820ba3e4bbf02c4b571432",
+      "kind": "GENERATED_EVIDENCE_OR_DECLARATION"
+    },
+    {
+      "path": "data/processed/milestone4/corpus_v2/train.jsonl",
+      "bytes": 24730523,
+      "sha256": "b44b2e222a289a0934287342545bc8defd3c17bf6624ff7374e03163633b2109",
+      "kind": "GENERATED_EVIDENCE_OR_DECLARATION"
+    },
+    {
+      "path": "data/processed/milestone4/corpus_v2/validation.jsonl",
+      "bytes": 10781414,
+      "sha256": "83f8f9e977316b01c2b66dca45855ca2e06ff7f6995a2c124c2b4f1f48233274",
+      "kind": "GENERATED_EVIDENCE_OR_DECLARATION"
+    },
+    {
+      "path": "models/milestone4/v1/feature_schema.json",
+      "bytes": 1061,
+      "sha256": "d508f2443a8acd51570dcbf8b7af989149329c7515ba33c2103ab906be1c78ae"
+    },
+    {
+      "path": "models/milestone4/v1/gnn-static-v1/checkpoint.pt",
+      "bytes": 359907,
+      "sha256": "6bba6ae4d1b22ab5f86c722a802d64b2672397036b26cb491181ecee1f10b885"
+    },
+    {
+      "path": "models/milestone4/v1/gnn-static-v1/weights.pt",
+      "bytes": 130631,
+      "sha256": "30b5a0bcc219c4e96cdcff78e123b53f18b6bbd41a88a8f5c834ce12952bdf81"
+    },
+    {
+      "path": "models/milestone4/v1/gnn-temporal-v1/checkpoint.pt",
+      "bytes": 600995,
+      "sha256": "1e62bf8e8e396fb3d103d480254c47c6d16e13188e8fe4c5204cefdb2514babf"
+    },
+    {
+      "path": "models/milestone4/v1/gnn-temporal-v1/weights.pt",
+      "bytes": 209499,
+      "sha256": "f3bea60e7080b789382322b8c4f3739545cd65cab24a6c6dc0a7bc9ffab6c2c5"
+    },
+    {
+      "path": "models/milestone4/v1/manifest.json",
+      "bytes": 158304,
+      "sha256": "a225deef5bfe31676129cefa595ef8fb39511486b06e9d0a1d31de40733a3a39"
+    },
+    {
+      "path": "models/milestone4/v1/pretraining_audit.json",
+      "bytes": 14762,
+      "sha256": "5a1873754b10878330f98c27937e89f4e77d633740c6d757a6a981f0227a3d70"
+    },
+    {
+      "path": "models/milestone4/v1/selection_inputs.json",
+      "bytes": 2148,
+      "sha256": "3b2a233e69342e160dad9b781da31a4ce3dcae0ec08db56dbc399a025f12df75"
+    },
+    {
+      "path": "models/milestone4/v1/xgb-no-graph-v1/eta.json",
+      "bytes": 311472,
+      "sha256": "683e7443d879c6131ca3ce6d2b4a4d173e99c0b4c8b264e716e9de676dec7c90"
+    },
+    {
+      "path": "models/milestone4/v1/xgb-no-graph-v1/impact.json",
+      "bytes": 227894,
+      "sha256": "2bf1961cda6a7a4a430d66fc3b3aed7b3d8fa4cb6412177bb6a935ac8b3b3665"
+    },
+    {
+      "path": "models/milestone4/v1/xgb-no-graph-v1/sla.json",
+      "bytes": 234323,
+      "sha256": "3e6226ec6669119669ff4caffd53d20da2936015001ef84ca260506f95f214bd"
+    },
+    {
+      "path": "models/milestone4/v1/xgb-v1/eta.json",
+      "bytes": 312942,
+      "sha256": "e7b62b5abea7724c4796845f316092b6fa6f7cb51d00c22886d7203aba8c7305"
+    },
+    {
+      "path": "models/milestone4/v1/xgb-v1/impact.json",
+      "bytes": 211786,
+      "sha256": "c8d3cd5e01b8cb233bc23fbcb141365cfe40f2226ea4f4be0bde1c8af9efbb8f"
+    },
+    {
+      "path": "models/milestone4/v1/xgb-v1/sla.json",
+      "bytes": 86291,
+      "sha256": "f05682671b90fc2437685b46a0ec0e51a1fb00235bf5dea7306ee4cf5d498593"
+    },
+    {
+      "path": "reports/MILESTONE_4_DATA_AUDIT.md",
+      "bytes": 14521,
+      "sha256": "4f321878dc4e3b0de55e95340a8a7cf6437fa3a89e8a18dd8449c73d3f4a5a7f"
+    },
+    {
+      "path": "reports/MILESTONE_4_LABEL_DEFINITIONS.md",
+      "bytes": 8304,
+      "sha256": "817fd346509c4082893947ce880727fe9cb32f846f0ee72abcfcd81beeb2e403"
+    },
+    {
+      "path": "reports/MILESTONE_4_POLICY_BENCHMARK.csv",
+      "bytes": 171379,
+      "sha256": "3bcc60aca2d16baafa18021019449b4cf32a08f401d3b563015bd468528869d3"
+    },
+    {
+      "path": "reports/MILESTONE_4_POLICY_BENCHMARK.json",
+      "bytes": 255391,
+      "sha256": "148a84a4924192227a80addea247d9919bffc7587b61b4b2d3eab6318a407ad7"
+    },
+    {
+      "path": "reports/MILESTONE_4_PREDICTION_METRICS.csv",
+      "bytes": 35671,
+      "sha256": "28e088503656252378ae533b0041f3434a55864faa62591b299ae4152973124f"
+    },
+    {
+      "path": "reports/MILESTONE_4_PREDICTION_METRICS.json",
+      "bytes": 362420,
+      "sha256": "2edd83952c46bef58df3463fe560ddb676fd74554a899a90b96e6c273944279f"
+    },
+    {
+      "path": "reports/MILESTONE_4_PREDICTION_METRICS_rows.csv",
+      "bytes": 14395892,
+      "sha256": "dc7480e30828377f59bdb2c30c13dabe26decd4f6ea07ab37ee848a8cfe3a531"
+    },
+    {
+      "path": "reports/MILESTONE_4_READINESS.md",
+      "bytes": 10081,
+      "sha256": "1f380f9c446904680171a229f1c11177ae50ae117104aea5fb10692fea562a4f"
+    },
+    {
+      "path": "reports/MILESTONE_4_RESULTS.json",
+      "bytes": 357072,
+      "sha256": "b4be93ee60871fe7ec65ee687abfbafa347300d5de4ca94573f03877adfa2020"
+    },
+    {
+      "path": "reports/MILESTONE_4_RESULTS.md",
+      "bytes": 17748,
+      "sha256": "3fc7d03ccbabf488c65d43c491d69d52404fb4eb5d15f69f3f360c62f3616548"
+    },
+    {
+      "path": "reports/figures/milestone4-policies.pdf",
+      "bytes": 22960,
+      "sha256": "052ba2a57aba8c418992baf716180ca5a21f7de9557d548e91ca3433600e0cc5"
+    },
+    {
+      "path": "reports/figures/milestone4-policies.png",
+      "bytes": 119747,
+      "sha256": "f93fa50551cd1acffbe0ed6831df8548ee3d776ae3bd408d34085650aa6e7b0a"
+    },
+    {
+      "path": "reports/figures/milestone4-policies.svg",
+      "bytes": 42726,
+      "sha256": "9ab00c39fb6de3a546fdbfeba7b89044259bb51f24b089964a1ef51874434eec"
+    },
+    {
+      "path": "reports/figures/milestone4-predictions.pdf",
+      "bytes": 20574,
+      "sha256": "c63b0c9593896317686f013189a68058d753bc1173d9d5868d1239636a0cc961"
+    },
+    {
+      "path": "reports/figures/milestone4-predictions.png",
+      "bytes": 131761,
+      "sha256": "a6dd9a099a58f31ee8ccdaa44dca76c52612c4ba264965c17b4e60461b60f955"
+    },
+    {
+      "path": "reports/figures/milestone4-predictions.svg",
+      "bytes": 40217,
+      "sha256": "b9d044df4239d6d720696b20d515f61aece40ae1fa5b6267a3c6d5eb350572ae"
+    },
+    {
+      "path": "reports/milestone4_b4_diagnostics.json",
+      "bytes": 9152,
+      "sha256": "dd3f2bb55fc9cb0a54f21bc1d315509f0c57eb6e67982a3a4d8a3d0d183dbd39"
+    },
+    {
+      "path": "reports/milestone4_browser_tests.json",
+      "bytes": 1762,
+      "sha256": "ea0be8914b59097fcc0c0788a62c432931d06aba6e995e16108f07c916fe5db7"
+    },
+    {
+      "path": "reports/milestone4_completion_validation.json",
+      "bytes": 173820,
+      "sha256": "acda30903f511429b8abd29cc9e36abf5bed68367c89c179d41f32632e3d2bd4"
+    },
+    {
+      "path": "reports/milestone4_compute_comparison.json",
+      "bytes": 4635,
+      "sha256": "a0c09cc6947ea54193dbe7c7a2af571782f9ea3c24754c558e358ed115b9d7d8"
+    },
+    {
+      "path": "reports/milestone4_d_drive_database_verification.json",
+      "bytes": 3146,
+      "sha256": "d9c0959c9071957e00786ad826b8252ba301d35470b985a7f0fc0122e7972d88"
+    },
+    {
+      "path": "reports/milestone4_d_drive_preservation.json",
+      "bytes": 29876,
+      "sha256": "3c5c4044c8b4d4ff017ceac5e3c5793b19c37ea1bd922ebea31209d1e71d211d"
+    },
+    {
+      "path": "reports/milestone4_environment_d_drive_20261018.json",
+      "bytes": 5234,
+      "sha256": "f414c48b01bcf94e8a61df56ae20b13ebca6f78c3429a04a96e55ffd11310932"
+    },
+    {
+      "path": "reports/milestone4_figure_provenance.json",
+      "bytes": 923,
+      "sha256": "6831bb5c243fba0b9bac59176dc7b22708c6841820f58a669176d8e08813827f"
+    },
+    {
+      "path": "reports/milestone4_final_app_health.json",
+      "bytes": 796,
+      "sha256": "d5f4cabecbdae8c03e5068ee62c66114c18d1b00d6462bc0411bd8747bdf709f"
+    },
+    {
+      "path": "reports/milestone4_final_frozen_byte_audit.json",
+      "bytes": 83755,
+      "sha256": "e2a5a5e2a6de60eabeb177188677718711712af0d4355744c006e08c5b1f87f3"
+    },
+    {
+      "path": "reports/milestone4_final_prediction_failure_cases.json",
+      "bytes": 25509,
+      "sha256": "788dc9ee2cc6e10989e5a1fc3466725746600842d2251a206a90d1723b25b7ec"
+    },
+    {
+      "path": "reports/milestone4_final_preservation.json",
+      "bytes": 29876,
+      "sha256": "4b35310ee9ebce68498d58b8aaaecb1d6a0c32171aaad6c6c7bc130458463a6e"
+    },
+    {
+      "path": "reports/milestone4_frontend_tests.json",
+      "bytes": 23237,
+      "sha256": "1baea4781c35a8501c8b2104218476b9cc125616c2d6497a67fc7131ade28802"
+    },
+    {
+      "path": "reports/milestone4_gpu_environment.json",
+      "bytes": 1455,
+      "sha256": "4630c29b9e7725fa84c5236542d9b9ef35db6929e4eb27d3dd4d2a6bb18cff64"
+    },
+    {
+      "path": "reports/milestone4_gpu_environment_20261018.json",
+      "bytes": 5449,
+      "sha256": "b2755e3bd3890628d915ae51bc38aef1bf14be4f2f15b0484099b661e2683285"
+    },
+    {
+      "path": "reports/milestone4_historical_database_verification.json",
+      "bytes": 5993,
+      "sha256": "b6905ec32f4a1c60859a63d86c8baeb433e29c4b0287546b1811fe401317671c"
+    },
+    {
+      "path": "reports/milestone4_independent_results_audit.json",
+      "bytes": 45904,
+      "sha256": "5384423b3fe037b96afdb809addf06f73ee89a46480b2030eaa65b0939ec28ff"
+    },
+    {
+      "path": "reports/milestone4_java_tests.json",
+      "bytes": 5456,
+      "sha256": "0f29a0e5c9f413f43260fc1ccf1600d97201f114b8d7fa42cd1c6b3a3673dab6"
+    },
+    {
+      "path": "reports/milestone4_leakage_audit.json",
+      "bytes": 14762,
+      "sha256": "5a1873754b10878330f98c27937e89f4e77d633740c6d757a6a981f0227a3d70"
+    },
+    {
+      "path": "reports/milestone4_legacy_python_tests.json",
+      "bytes": 6976,
+      "sha256": "ab823facbf82c5297f60116571d0d642f432eddc17d8032735e02f400ce1865e"
+    },
+    {
+      "path": "reports/milestone4_ml_integration.json",
+      "bytes": 10885,
+      "sha256": "ab649c370520cfcd0d88fb163f0fe88187dbcef0f09023fc7776a6a984e47d07"
+    },
+    {
+      "path": "reports/milestone4_ml_outage.json",
+      "bytes": 616,
+      "sha256": "9441479e64e1216e490f1ff6ffd490d4e8bd5bcac6173827dccdf163bd24cc63"
+    },
+    {
+      "path": "reports/milestone4_ml_recovery.json",
+      "bytes": 10893,
+      "sha256": "1a7adbea2d65129a81f726efb4574706e782c85c80414adc0172788a6023968c"
+    },
+    {
+      "path": "reports/milestone4_ml_unit_tests.json",
+      "bytes": 7414,
+      "sha256": "c3c93c125df5afb048291caad5757074d6037487eca4d74cda75d14f7fbe3bcd"
+    },
+    {
+      "path": "reports/milestone4_model_selection.json",
+      "bytes": 158304,
+      "sha256": "a225deef5bfe31676129cefa595ef8fb39511486b06e9d0a1d31de40733a3a39"
+    },
+    {
+      "path": "reports/milestone4_operator_advice_review.json",
+      "bytes": 3235,
+      "sha256": "93ba7edf740126b5b190120076267d75bb3481e88cb2a2ca5325588efd38fa26"
+    },
+    {
+      "path": "reports/milestone4_policy_replay.json",
+      "bytes": 1461,
+      "sha256": "d60d5c80a16b79bff461e9eaf3874d2b3875949fbeec486effef836269e4648f"
+    },
+    {
+      "path": "reports/milestone4_policy_runtime_environment.json",
+      "bytes": 1376,
+      "sha256": "e2be1cfbe9b769e3d58d705444d106f62f2b30c6bd4e80ebfbe4bc974a22cd47"
+    },
+    {
+      "path": "reports/milestone4_preservation_manifest.json",
+      "bytes": 15844,
+      "sha256": "d6d2d13e6ffbc3ed7c1679531dcfe37ba73bc2068a5abe189291a4e45a4b8150"
+    },
+    {
+      "path": "reports/milestone4_pretraining_execution_events.json",
+      "bytes": 1954,
+      "sha256": "15d588d356c3d9c47a8684e064ea8ac0f38c4fa450467c5ab05517f70a6ce8ab"
+    },
+    {
+      "path": "reports/milestone4_restart_tests.json",
+      "bytes": 2689,
+      "sha256": "7e9f382752aca7f8ea05aa08dd560401e590ab4eef3b295109272623becf14ba"
+    },
+    {
+      "path": "reports/milestone4_resume_app_health_20261019.json",
+      "bytes": 518,
+      "sha256": "c7d1f87886a01e95794e23fd67c0e33ebfd02148940e92a7a4ad415f7699c55e"
+    },
+    {
+      "path": "reports/milestone4_resume_integration_20261019.json",
+      "bytes": 10889,
+      "sha256": "50d391a0db304fbed6b622ca5cb8971d646fa898800f6067a047fd1586d829ad"
+    },
+    {
+      "path": "reports/milestone4_resume_preservation_20261019.json",
+      "bytes": 29876,
+      "sha256": "945aaabf4f7a5c054f73739254a3f8a637c71e64e29ad74fb7e8e3bedbd8694b"
+    },
+    {
+      "path": "reports/milestone4_resume_state_comparison_20261019.json",
+      "bytes": 5817,
+      "sha256": "31029a1ed7a05d8180497c7bee38156dfe31d49ce0a642530ce5dd8d0a187a84"
+    },
+    {
+      "path": "reports/milestone4_resume_verified_app_health_20261019.json",
+      "bytes": 970,
+      "sha256": "5184b6754472a2a546f23d1b14bc9faf224ff0c60cc053468d2ab8a2dc1dc8c5"
+    },
+    {
+      "path": "reports/milestone4_trained_prediction_diagnostics.json",
+      "bytes": 143059,
+      "sha256": "58ac69a882eaca81ee89f8d0c193bded63f77c69980118b67ef0daff90477f42"
+    },
+    {
+      "path": "reports/milestone4_validation_failure_cases.json",
+      "bytes": 25699,
+      "sha256": "0808ced00b49da6c40abd4c91ef28b7e2a1b1c93435a92e4d15d115f18da9df8"
+    },
+    {
+      "path": "reports/milestone4_validation_prediction_metrics.csv",
+      "bytes": 31214,
+      "sha256": "7aaa2f3816ee0f10ad9c500414fc7afa7b5c322a82da528be3bdcb2f5195d3b8",
+      "kind": "GENERATED_EVIDENCE_OR_DECLARATION"
+    },
+    {
+      "path": "reports/milestone4_validation_prediction_metrics.json",
+      "bytes": 307051,
+      "sha256": "dcd17f48b8f8874073481a137ceb88925ea5111173c5fb191322881e08748217"
+    },
+    {
+      "path": "reports/milestone4_validation_prediction_metrics_rows.csv",
+      "bytes": 5896803,
+      "sha256": "f087480d0e25fb6770a0b638602ad40df3ab32a3cec5fcaf52e851373e4a0d38",
+      "kind": "GENERATED_EVIDENCE_OR_DECLARATION"
+    }
+  ],
+  "inProgressArtifacts": {
+    "status": "FINAL_ASSESSMENT_COMPLETE",
+    "policyRuns": 440,
+    "rawPolicyHashes": "reports/MILESTONE_4_POLICY_BENCHMARK.json",
+    "corpusHashes": "models/milestone4/v1/manifest.json"
+  },
+  "excluded": [
+    ".venv and .venv-ml/.venv-ml-gpu dependencies",
+    "node_modules, target, dist and Python caches",
+    ".runtime process logs and temporary probes",
+    "actively written policy rows and execution logs",
+    "unchanged historical sources/files outside the recorded baseline",
+    "individual generated corpus case files (declared membership and fingerprints are in generation_manifest.json)"
+  ],
+  "artifactAuthority": [
+    "models/milestone4/v1/manifest.json",
+    "data/processed/milestone4/corpus_v2/generation_manifest.json",
+    "reports/milestone4_policy_raw/policies_implementation_freeze.json",
+    "reports/milestone4_preservation_manifest.json"
+  ]
+}

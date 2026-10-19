@@ -1,0 +1,15 @@
+.venv/
+.venv-ml/
+.venv-ml-gpu/
+__pycache__/
+.pytest_cache/
+.env
+kaggle.json
+data/raw/
+data/processed/
+data/metadata/evidence/
+data/metadata/*.part
+*.part
+.cache/
+.runtime/
+simulator/backend/target/

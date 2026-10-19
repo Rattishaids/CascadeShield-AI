@@ -1,0 +1,999 @@
+{
+  "generated_at_utc": "2026-10-08T18:00:27.743576+00:00",
+  "dft_codebook_semantic_codes": {
+    "collision": [
+      {
+        "field": "carriageway_hazards",
+        "code": "-1",
+        "count": 421,
+        "label": "Data missing or out of range",
+        "classification": "missing_unknown_or_unreported"
+      },
+      {
+        "field": "carriageway_hazards",
+        "code": "99",
+        "count": 2662,
+        "label": "unknown (self reported)",
+        "classification": "missing_unknown_or_unreported"
+      },
+      {
+        "field": "carriageway_hazards_historic",
+        "code": "-1",
+        "count": 59300,
+        "label": "Data missing or out of range",
+        "classification": "missing_unknown_or_unreported"
+      },
+      {
+        "field": "carriageway_hazards_historic",
+        "code": "9",
+        "count": 2397,
+        "label": "unknown (self reported)",
+        "classification": "missing_unknown_or_unreported"
+      },
+      {
+        "field": "junction_control",
+        "code": "-1",
+        "count": 42581,
+        "label": "Data missing or out of range",
+        "classification": "missing_unknown_or_unreported"
+      },
+      {
+        "field": "junction_control",
+        "code": "9",
+        "count": 1908,
+        "label": "unknown (self reported)",
+        "classification": "missing_unknown_or_unreported"
+      },
+      {
+        "field": "junction_detail",
+        "code": "-1",
+        "count": 7005,
+        "label": "Data missing or out of range",
+        "classification": "missing_unknown_or_unreported"
+      },
+      {
+        "field": "junction_detail",
+        "code": "99",
+        "count": 2,
+        "label": "unknown (self reported)",
+        "classification": "missing_unknown_or_unreported"
+      },
+      {
+        "field": "junction_detail_historic",
+        "code": "-1",
+        "count": 59602,
+        "label": "Data missing or out of range",
+        "classification": "missing_unknown_or_unreported"
+      },
+      {
+        "field": "junction_detail_historic",
+        "code": "99",
+        "count": 1950,
+        "label": "unknown (self reported)",
+        "classification": "missing_unknown_or_unreported"
+      },
+      {
+        "field": "light_conditions",
+        "code": "-1",
+        "count": 6,
+        "label": "Data missing or out of range",
+        "classification": "missing_unknown_or_unreported"
+      },
+      {
+        "field": "light_conditions",
+        "code": "7",
+        "count": 1679,
+        "label": "Darkness - lighting unknown",
+        "classification": "missing_unknown_or_unreported"
+      },
+      {
+        "field": "pedestrian_crossing",
+        "code": "-1",
+        "count": 1034,
+        "label": "Data missing or out of range",
+        "classification": "missing_unknown_or_unreported"
+      },
+      {
+        "field": "pedestrian_crossing",
+        "code": "99",
+        "count": 3012,
+        "label": "unknown (self reported)",
+        "classification": "missing_unknown_or_unreported"
+      },
+      {
+        "field": "pedestrian_crossing_human_control_historic",
+        "code": "-1",
+        "count": 59298,
+        "label": "Data missing or out of range",
+        "classification": "missing_unknown_or_unreported"
+      },
+      {
+        "field": "pedestrian_crossing_human_control_historic",
+        "code": "9",
+        "count": 4186,
+        "label": "unknown (self reported)",
+        "classification": "missing_unknown_or_unreported"
+      },
+      {
+        "field": "pedestrian_crossing_physical_facilities_historic",
+        "code": "-1",
+        "count": 59305,
+        "label": "Data missing or out of range",
+        "classification": "missing_unknown_or_unreported"
+      },
+      {
+        "field": "pedestrian_crossing_physical_facilities_historic",
+        "code": "9",
+        "count": 3521,
+        "label": "unknown (self reported)",
+        "classification": "missing_unknown_or_unreported"
+      },
+      {
+        "field": "road_surface_conditions",
+        "code": "-1",
+        "count": 704,
+        "label": "Data missing or out of range",
+        "classification": "missing_unknown_or_unreported"
+      },
+      {
+        "field": "road_surface_conditions",
+        "code": "9",
+        "count": 1670,
+        "label": "unknown (self reported)",
+        "classification": "missing_unknown_or_unreported"
+      },
+      {
+        "field": "road_type",
+        "code": "9",
+        "count": 2568,
+        "label": "Unknown",
+        "classification": "missing_unknown_or_unreported"
+      },
+      {
+        "field": "second_road_class",
+        "code": "-1",
+        "count": 11167,
+        "label": "Data missing or out of range",
+        "classification": "missing_unknown_or_unreported"
+      },
+      {
+        "field": "second_road_number",
+        "code": "-1",
+        "count": 24015,
+        "label": "Unknown",
+        "classification": "missing_unknown_or_unreported"
+      },
+      {
+        "field": "special_conditions_at_site",
+        "code": "-1",
+        "count": 59299,
+        "label": "Data missing or out of range",
+        "classification": "missing_unknown_or_unreported"
+      },
+      {
+        "field": "special_conditions_at_site",
+        "code": "9",
+        "count": 2672,
+        "label": "unknown (self reported)",
+        "classification": "missing_unknown_or_unreported"
+      },
+      {
+        "field": "speed_limit",
+        "code": "-1",
+        "count": 3,
+        "label": "Data missing or out of range",
+        "classification": "missing_unknown_or_unreported"
+      },
+      {
+        "field": "trunk_road_flag",
+        "code": "-1",
+        "count": 7080,
+        "label": "Data missing or out of range",
+        "classification": "missing_unknown_or_unreported"
+      },
+      {
+        "field": "weather_conditions",
+        "code": "9",
+        "count": 3145,
+        "label": "Unknown",
+        "classification": "missing_unknown_or_unreported"
+      }
+    ],
+    "vehicle": [
+      {
+        "field": "age_band_of_driver",
+        "code": "-1",
+        "count": 28622,
+        "label": "Data missing or out of range",
+        "classification": "missing_unknown_or_unreported"
+      },
+      {
+        "field": "age_of_driver",
+        "code": "-1",
+        "count": 28622,
+        "label": "Data missing or out of range",
+        "classification": "missing_unknown_or_unreported"
+      },
+      {
+        "field": "driver_imd_decile",
+        "code": "-1",
+        "count": 40516,
+        "label": "Data missing or out of range",
+        "classification": "missing_unknown_or_unreported"
+      },
+      {
+        "field": "engine_capacity_cc",
+        "code": "-1",
+        "count": 54397,
+        "label": "Data missing or out of range",
+        "classification": "missing_unknown_or_unreported"
+      },
+      {
+        "field": "first_point_of_impact",
+        "code": "-1",
+        "count": 3399,
+        "label": "Data missing or out of range",
+        "classification": "missing_unknown_or_unreported"
+      },
+      {
+        "field": "first_point_of_impact",
+        "code": "9",
+        "count": 8319,
+        "label": "unknown (self reported)",
+        "classification": "missing_unknown_or_unreported"
+      },
+      {
+        "field": "generic_make_model",
+        "code": "-1",
+        "count": 49193,
+        "label": "Data missing or out of range",
+        "classification": "missing_unknown_or_unreported"
+      },
+      {
+        "field": "hit_object_in_carriageway",
+        "code": "-1",
+        "count": 3129,
+        "label": "Data missing or out of range",
+        "classification": "missing_unknown_or_unreported"
+      },
+      {
+        "field": "hit_object_in_carriageway",
+        "code": "99",
+        "count": 15044,
+        "label": "unknown (self reported)",
+        "classification": "missing_unknown_or_unreported"
+      },
+      {
+        "field": "hit_object_off_carriageway",
+        "code": "-1",
+        "count": 447,
+        "label": "Data missing or out of range",
+        "classification": "missing_unknown_or_unreported"
+      },
+      {
+        "field": "hit_object_off_carriageway",
+        "code": "99",
+        "count": 14645,
+        "label": "unknown (self reported)",
+        "classification": "missing_unknown_or_unreported"
+      },
+      {
+        "field": "journey_purpose_of_driver",
+        "code": "-1",
+        "count": 1639,
+        "label": "Data missing or out of range",
+        "classification": "missing_unknown_or_unreported"
+      },
+      {
+        "field": "journey_purpose_of_driver",
+        "code": "6",
+        "count": 103638,
+        "label": "Not known or not requested",
+        "classification": "missing_unknown_or_unreported"
+      },
+      {
+        "field": "journey_purpose_of_driver_historic",
+        "code": "-1",
+        "count": 109726,
+        "label": "Data missing or out of range",
+        "classification": "missing_unknown_or_unreported"
+      },
+      {
+        "field": "journey_purpose_of_driver_historic",
+        "code": "6",
+        "count": 54526,
+        "label": "Not known",
+        "classification": "missing_unknown_or_unreported"
+      },
+      {
+        "field": "junction_location",
+        "code": "-1",
+        "count": 1334,
+        "label": "Data missing or out of range",
+        "classification": "missing_unknown_or_unreported"
+      },
+      {
+        "field": "junction_location",
+        "code": "9",
+        "count": 12105,
+        "label": "unknown (self reported)",
+        "classification": "missing_unknown_or_unreported"
+      },
+      {
+        "field": "sex_of_driver",
+        "code": "-1",
+        "count": 3536,
+        "label": "Data missing or out of range",
+        "classification": "missing_unknown_or_unreported"
+      },
+      {
+        "field": "sex_of_driver",
+        "code": "3",
+        "count": 21739,
+        "label": "Not known",
+        "classification": "missing_unknown_or_unreported"
+      },
+      {
+        "field": "skidding_and_overturning",
+        "code": "-1",
+        "count": 3148,
+        "label": "Data missing or out of range",
+        "classification": "missing_unknown_or_unreported"
+      },
+      {
+        "field": "skidding_and_overturning",
+        "code": "9",
+        "count": 15018,
+        "label": "unknown (self reported)",
+        "classification": "missing_unknown_or_unreported"
+      },
+      {
+        "field": "towing_and_articulation",
+        "code": "-1",
+        "count": 2376,
+        "label": "Data missing or out of range",
+        "classification": "missing_unknown_or_unreported"
+      },
+      {
+        "field": "towing_and_articulation",
+        "code": "9",
+        "count": 4871,
+        "label": "unknown (self reported)",
+        "classification": "missing_unknown_or_unreported"
+      },
+      {
+        "field": "vehicle_direction_from",
+        "code": "-1",
+        "count": 5497,
+        "label": "Data missing or out of range",
+        "classification": "missing_unknown_or_unreported"
+      },
+      {
+        "field": "vehicle_direction_from",
+        "code": "9",
+        "count": 15019,
+        "label": "unknown (self reported)",
+        "classification": "missing_unknown_or_unreported"
+      },
+      {
+        "field": "vehicle_direction_to",
+        "code": "-1",
+        "count": 5535,
+        "label": "Data missing or out of range",
+        "classification": "missing_unknown_or_unreported"
+      },
+      {
+        "field": "vehicle_direction_to",
+        "code": "9",
+        "count": 15019,
+        "label": "unknown (self reported)",
+        "classification": "missing_unknown_or_unreported"
+      },
+      {
+        "field": "vehicle_leaving_carriageway",
+        "code": "-1",
+        "count": 3152,
+        "label": "Data missing or out of range",
+        "classification": "missing_unknown_or_unreported"
+      },
+      {
+        "field": "vehicle_leaving_carriageway",
+        "code": "9",
+        "count": 14750,
+        "label": "unknown (self reported)",
+        "classification": "missing_unknown_or_unreported"
+      },
+      {
+        "field": "vehicle_left_hand_drive",
+        "code": "-1",
+        "count": 53,
+        "label": "Data missing or out of range",
+        "classification": "missing_unknown_or_unreported"
+      },
+      {
+        "field": "vehicle_left_hand_drive",
+        "code": "9",
+        "count": 24789,
+        "label": "Unknown",
+        "classification": "missing_unknown_or_unreported"
+      },
+      {
+        "field": "vehicle_location_restricted_lane",
+        "code": "-1",
+        "count": 3224,
+        "label": "Data missing or out of range",
+        "classification": "missing_unknown_or_unreported"
+      },
+      {
+        "field": "vehicle_location_restricted_lane",
+        "code": "99",
+        "count": 14740,
+        "label": "unknown (self reported)",
+        "classification": "missing_unknown_or_unreported"
+      },
+      {
+        "field": "vehicle_location_restricted_lane_historic",
+        "code": "-1",
+        "count": 108255,
+        "label": "Data missing or out of range",
+        "classification": "missing_unknown_or_unreported"
+      },
+      {
+        "field": "vehicle_location_restricted_lane_historic",
+        "code": "99",
+        "count": 14357,
+        "label": "unknown (self reported)",
+        "classification": "missing_unknown_or_unreported"
+      },
+      {
+        "field": "vehicle_manoeuvre",
+        "code": "-1",
+        "count": 5582,
+        "label": "Data missing or out of range",
+        "classification": "missing_unknown_or_unreported"
+      },
+      {
+        "field": "vehicle_manoeuvre",
+        "code": "99",
+        "count": 14210,
+        "label": "unknown (self reported)",
+        "classification": "missing_unknown_or_unreported"
+      },
+      {
+        "field": "vehicle_manoeuvre_historic",
+        "code": "-1",
+        "count": 110561,
+        "label": "Data missing or out of range",
+        "classification": "missing_unknown_or_unreported"
+      },
+      {
+        "field": "vehicle_manoeuvre_historic",
+        "code": "99",
+        "count": 13936,
+        "label": "unknown (self reported)",
+        "classification": "missing_unknown_or_unreported"
+      },
+      {
+        "field": "vehicle_type",
+        "code": "-1",
+        "count": 6,
+        "label": "Data missing or out of range",
+        "classification": "missing_unknown_or_unreported"
+      },
+      {
+        "field": "vehicle_type",
+        "code": "97",
+        "count": 627,
+        "label": "Motorcycle - unknown cc",
+        "classification": "missing_unknown_or_unreported"
+      },
+      {
+        "field": "vehicle_type",
+        "code": "98",
+        "count": 724,
+        "label": "Goods vehicle - unknown weight",
+        "classification": "missing_unknown_or_unreported"
+      },
+      {
+        "field": "vehicle_type",
+        "code": "99",
+        "count": 276,
+        "label": "Unknown vehicle type (self rep only)",
+        "classification": "missing_unknown_or_unreported"
+      }
+    ],
+    "casualty": [
+      {
+        "field": "age_band_of_casualty",
+        "code": "-1",
+        "count": 2552,
+        "label": "Data missing or out of range",
+        "classification": "missing_unknown_or_unreported"
+      },
+      {
+        "field": "age_of_casualty",
+        "code": "-1",
+        "count": 2552,
+        "label": "Data missing or out of range",
+        "classification": "missing_unknown_or_unreported"
+      },
+      {
+        "field": "bus_or_coach_passenger",
+        "code": "-1",
+        "count": 51,
+        "label": "Data missing or out of range",
+        "classification": "missing_unknown_or_unreported"
+      },
+      {
+        "field": "bus_or_coach_passenger",
+        "code": "9",
+        "count": 21,
+        "label": "unknown (self reported)",
+        "classification": "missing_unknown_or_unreported"
+      },
+      {
+        "field": "car_passenger",
+        "code": "-1",
+        "count": 190,
+        "label": "Data missing or out of range",
+        "classification": "missing_unknown_or_unreported"
+      },
+      {
+        "field": "car_passenger",
+        "code": "9",
+        "count": 110,
+        "label": "unknown (self reported)",
+        "classification": "missing_unknown_or_unreported"
+      },
+      {
+        "field": "casualty_distance_banding",
+        "code": "-1",
+        "count": 17275,
+        "label": "Data missing or out of range",
+        "classification": "missing_unknown_or_unreported"
+      },
+      {
+        "field": "casualty_imd_decile",
+        "code": "-1",
+        "count": 17275,
+        "label": "Data missing or out of range",
+        "classification": "missing_unknown_or_unreported"
+      },
+      {
+        "field": "casualty_type",
+        "code": "-1",
+        "count": 1,
+        "label": "Data missing or out of range",
+        "classification": "missing_unknown_or_unreported"
+      },
+      {
+        "field": "casualty_type",
+        "code": "97",
+        "count": 336,
+        "label": "Motorcycle - unknown cc rider or passenger",
+        "classification": "missing_unknown_or_unreported"
+      },
+      {
+        "field": "casualty_type",
+        "code": "98",
+        "count": 96,
+        "label": "Goods vehicle (unknown weight) occupant",
+        "classification": "missing_unknown_or_unreported"
+      },
+      {
+        "field": "casualty_type",
+        "code": "99",
+        "count": 15,
+        "label": "Unknown vehicle type (self rep only)",
+        "classification": "missing_unknown_or_unreported"
+      },
+      {
+        "field": "enhanced_casualty_severity",
+        "code": "-1",
+        "count": 26789,
+        "label": "Data missing or out of range",
+        "classification": "missing_unknown_or_unreported"
+      },
+      {
+        "field": "pedestrian_location",
+        "code": "-1",
+        "count": 6,
+        "label": "Data missing or out of range",
+        "classification": "missing_unknown_or_unreported"
+      },
+      {
+        "field": "pedestrian_location",
+        "code": "10",
+        "count": 1772,
+        "label": "Unknown or other",
+        "classification": "missing_unknown_or_unreported"
+      },
+      {
+        "field": "pedestrian_movement",
+        "code": "-1",
+        "count": 7,
+        "label": "Data missing or out of range",
+        "classification": "missing_unknown_or_unreported"
+      },
+      {
+        "field": "pedestrian_movement",
+        "code": "9",
+        "count": 5495,
+        "label": "Unknown or other",
+        "classification": "missing_unknown_or_unreported"
+      },
+      {
+        "field": "pedestrian_road_maintenance_worker",
+        "code": "-1",
+        "count": 11233,
+        "label": "Data missing or out of range",
+        "classification": "missing_unknown_or_unreported"
+      },
+      {
+        "field": "pedestrian_road_maintenance_worker",
+        "code": "0",
+        "count": 117021,
+        "label": "No / Not applicable",
+        "classification": "not_applicable"
+      },
+      {
+        "field": "pedestrian_road_maintenance_worker",
+        "code": "2",
+        "count": 3,
+        "label": "Not Known",
+        "classification": "missing_unknown_or_unreported"
+      },
+      {
+        "field": "sex_of_casualty",
+        "code": "-1",
+        "count": 1412,
+        "label": "Data missing or out of range",
+        "classification": "missing_unknown_or_unreported"
+      },
+      {
+        "field": "sex_of_casualty",
+        "code": "9",
+        "count": 48,
+        "label": "unknown (self reported)",
+        "classification": "missing_unknown_or_unreported"
+      }
+    ]
+  },
+  "osm_historical_snapshot": {
+    "requested_snapshot_utc": "2024-01-01T00:00:00Z",
+    "elements_with_last_edit_after_snapshot": 0,
+    "elements_without_timestamp": 0,
+    "element_last_edit_min": "2005-10-05T12:11:49Z",
+    "element_last_edit_max": "2023-12-31T20:57:47Z",
+    "highway_class_counts": {
+      "residential": 10280,
+      "tertiary": 1649,
+      "service": 11257,
+      "secondary": 1222,
+      "primary": 1043,
+      "trunk": 1323,
+      "unclassified": 1768,
+      "motorway_link": 73,
+      "motorway": 94,
+      "tertiary_link": 31,
+      "trunk_link": 256,
+      "secondary_link": 78,
+      "primary_link": 115,
+      "living_street": 13
+    },
+    "ways_with_tag_counts": {
+      "highway": 29202,
+      "name": 16605,
+      "postal_code": 10291,
+      "bikenorthbirmingham": 75,
+      "gritting": 6611,
+      "maintenance": 6627,
+      "maxspeed": 7805,
+      "lcn": 236,
+      "source": 10491,
+      "surface": 9464,
+      "abutters": 3705,
+      "cycleway:both": 961,
+      "lanes": 5294,
+      "ref": 3306,
+      "DfT_AADF": 59,
+      "DfT_AADF_Year": 40,
+      "DfT_AADF_bus": 59,
+      "DfT_AADF_car": 59,
+      "DfT_AADF_hgv": 59,
+      "DfT_AADF_lgv": 59,
+      "lit": 9077,
+      "oneway": 5760,
+      "sensor:lanes": 158,
+      "sensor_ref:lanes": 587,
+      "sidewalk": 2027,
+      "traffic:scoot_link:ref": 189,
+      "traffic:scoot_region:ref": 142,
+      "sensor_node:lanes": 437,
+      "junction": 788,
+      "source:maxspeed": 3339,
+      "lanes:backward": 230,
+      "lanes:forward": 248,
+      "width": 123,
+      "cycleway:left": 642,
+      "traffic_calming": 6,
+      "DfT_traffic_counter_ref": 48,
+      "turn:lanes": 233,
+      "created_by": 922,
+      "incline": 38,
+      "restriction": 367,
+      "restriction_designation": 361,
+      "bicycle": 330,
+      "foot": 392,
+      "goods": 47,
+      "hgv": 57,
+      "horse": 126,
+      "motor_vehicle": 245,
+      "motorcar": 55,
+      "motorcycle": 51,
+      "phone": 1,
+      "tourism": 1,
+      "website": 1,
+      "access": 3223,
+      "service": 2504,
+      "parking:condition:both": 5,
+      "parking:lane:both": 16,
+      "bridge": 440,
+      "carriageway_ref": 123,
+      "layer": 655,
+      "maxspeed:advisory": 7,
+      "maxspeed:type": 195,
+      "national_highways:area": 149,
+      "operator": 209,
+      "operator:wikidata": 149,
+      "parking:both": 104,
+      "parking:both:restriction": 98,
+      "bridge:name": 35,
+      "int_ref": 36,
+      "maxspeed:variable": 45,
+      "not:name": 276,
+      "wikidata": 52,
+      "wikipedia": 51,
+      "cutting": 9,
+      "note": 256,
+      "active_traffic_management": 22,
+      "maxheight": 124,
+      "alt_name": 13,
+      "gritting_operator": 831,
+      "gritting_route_ref": 852,
+      "core": 50,
+      "traffic:sensor:ref": 135,
+      "traffic:sensor:ref_1": 48,
+      "source:name": 310,
+      "buslane": 2,
+      "lanes:psv": 218,
+      "destination": 5,
+      "cycleway": 130,
+      "agricultural": 1,
+      "psv": 140,
+      "sidewalk:left": 4,
+      "sidewalk:right": 4,
+      "lanes:psv:forward": 41,
+      "designation": 153,
+      "prow_ref": 102,
+      "source:prow_ref": 101,
+      "cycleway:right": 106,
+      "lanes:psv:backward": 41,
+      "lanes:psv:backward:conditional": 3,
+      "maxspeed:enforcement": 78,
+      "lanes:psv:conditional": 10,
+      "psv:lanes": 73,
+      "alt_prow_ref": 1,
+      "lane_markings": 459,
+      "embedded_rails": 22,
+      "cycleway:right:lane": 6,
+      "cycleway:right:oneway": 13,
+      "oneway:bicycle": 73,
+      "fixme": 15,
+      "shoulder": 145,
+      "tunnel": 209,
+      "maxweight:signed": 79,
+      "bus": 63,
+      "loc_name": 12,
+      "psv:conditional": 32,
+      "turn:lanes:forward": 28,
+      "smoothness": 61,
+      "maxweight": 23,
+      "cyclestreets_id": 1,
+      "delivery": 5,
+      "emergency": 73,
+      "source:ref": 19,
+      "cycleway:both:lane": 12,
+      "ncn_ref": 4,
+      "except": 37,
+      "motor_vehicle:conditional": 38,
+      "ref:car_free_school_street": 5,
+      "bcc20mphproject": 246,
+      "check_date:surface": 1,
+      "cycleway:left:segregated": 2,
+      "tracktype": 5,
+      "lanes:psv:forward:conditional": 1,
+      "length": 4,
+      "heritage": 6,
+      "heritage:operator": 6,
+      "listed_status": 6,
+      "psv:lanes:backward": 11,
+      "psv:lanes:backward:conditional": 4,
+      "etymology:wikidata": 24,
+      "taxi": 74,
+      "old_name": 4,
+      "source:width": 25,
+      "bridge_ref": 39,
+      "maxheight:imperial": 5,
+      "source:cyclelane": 29,
+      "segregated": 6,
+      "fixme:width": 1,
+      "suspected:designation": 2,
+      "goods:conditional": 1,
+      "sidewalk:left:surface": 11,
+      "destination:ref": 2,
+      "sidewalk:right:surface": 5,
+      "vehicle": 32,
+      "parking:both:orientation": 6,
+      "abandoned:railway": 1,
+      "source:classification": 13,
+      "cycleway:left:lane": 11,
+      "parking:lane:both:parallel": 2,
+      "noexit": 53,
+      "psv:lanes:forward": 1,
+      "private": 26,
+      "house_numbers": 13,
+      "description:covid19": 4,
+      "name:source": 2,
+      "turn:lanes:backward": 27,
+      "cycleway:left:oneway": 11,
+      "not:ref": 5,
+      "sidewalk:both:surface": 18,
+      "maxspeed:conditional": 4,
+      "construction": 7,
+      "expressway": 16,
+      "car": 8,
+      "cycleway:right:segregated": 1,
+      "maxspeed:backward": 2,
+      "moped": 31,
+      "tourist_bus": 22,
+      "start_date": 12,
+      "parking:lane:left": 4,
+      "parking:lane:right": 4,
+      "parking:lane:right:parallel": 3,
+      "parking:lane:left:parallel": 1,
+      "bus_lane": 8,
+      "source:oneway": 2,
+      "named_for": 1,
+      "named_for:wikipedia": 1,
+      "traffic:sensor:ref_2": 7,
+      "traffic:sensor:ref_3": 6,
+      "tunnel:name": 2,
+      "tunnel:ref": 2,
+      "canal:bridge:ref": 2,
+      "railway:bridge:ref": 2,
+      "source:access": 1,
+      "covered": 42,
+      "school_street:ref": 3,
+      "disused": 7,
+      "red_route": 2,
+      "Fixme": 8,
+      "unadopted": 5,
+      "material": 2,
+      "abandoned": 2,
+      "leisure": 2,
+      "previous_name": 8,
+      "area": 20,
+      "noname": 1,
+      "roundabout": 3,
+      "sidewalk:left:bicycle": 2,
+      "opening_date": 19,
+      "tree_lined": 1,
+      "addr:housenumber": 2,
+      "wheelchair": 13,
+      "level": 26,
+      "note:name": 1,
+      "FIXME:nsl": 1,
+      "description": 8,
+      "oneway:psv": 9,
+      "bridge:ref": 8,
+      "vehicle:lanes": 5,
+      "priority": 1,
+      "undefined": 1,
+      "junction_ref": 22,
+      "traffic:scoot_node:ref": 5,
+      "route": 5,
+      "embankment": 49,
+      "psv:lanes:forward:conditional": 1,
+      "destination:lanes": 13,
+      "maxweightrating": 1,
+      "verge": 2,
+      "psv:backward": 3,
+      "DfT_AADF_year": 19,
+      "maxwidth": 1,
+      "amenity": 1,
+      "golf": 2,
+      "golf_cart": 2,
+      "ramp": 2,
+      "cycleway:lane": 2,
+      "cycleway:left:est_width": 2,
+      "traffic:sensor:red": 3,
+      "bus:lanes": 4,
+      "ncn": 3,
+      "crossing": 3,
+      "lanes:left": 1,
+      "ref:fgkz": 5,
+      "gritting_route": 21,
+      "hov": 2,
+      "construction:active_traffic_management": 1,
+      "addr:city": 1,
+      "check_date": 2,
+      "traffic:sensor_region:ref": 2,
+      "name:bridge": 1,
+      "name:etymology:wikidata": 1,
+      "source:name:etymology": 1,
+      "enforcement:maxspeed": 13,
+      "traffic:scoot_link:lanes": 2,
+      "traffic:scoot_link": 1,
+      "traffic:scoot_node": 1,
+      "lanes:scoot_link": 3,
+      "sensor:ref_lanes": 1,
+      "psv:lanes:conditional": 2,
+      "lanes:bus": 4,
+      "turn": 1,
+      "maxheight:signed": 1,
+      "source:maxheight": 1,
+      "bridge:structure": 1,
+      "structure": 1,
+      "removed:highway": 1,
+      "sideway": 1,
+      "destination:symbol": 1
+    },
+    "turn_restriction_relations_requested": false,
+    "note": "Last-edit timestamps are not traffic/closure measurements. Absence of an HGV/access/height/weight/maxspeed tag is not evidence of unrestricted freight access or a known speed."
+  },
+  "olist_outcomes": {
+    "order_rows": 99441,
+    "status:delivered": 96478,
+    "observed_delivered_outcomes": 96470,
+    "late_by_calendar_date": 6534,
+    "status:invoiced": 314,
+    "outcome_missing_or_not_delivered": 2971,
+    "status:shipped": 1107,
+    "status:processing": 301,
+    "status:unavailable": 609,
+    "status:canceled": 625,
+    "status:created": 5,
+    "status:approved": 2
+  },
+  "dft_codebook_classification_note": "Counts use the downloaded 2024_code_list labels. The classification is a transparent label-pattern audit, not an exhaustive clinical/semantic interpretation. Source codes remain unchanged; not-applicable is separated from missing/unknown. Read exact labels before analysis.",
+  "olist_outcome_note": "Counts summarize observed source orders only. Late means actual delivery calendar date is after the estimated date, and only status delivered is included. This is a data audit, not a model experiment.",
+  "olist_additional_checks": {
+    "rule_violations": {
+      "order_delivered_carrier_date_before_purchase": 166
+    },
+    "observed_order_timestamp_ranges": {
+      "order_purchase_timestamp": {
+        "min": "2016-09-04T21:15:19",
+        "max": "2018-10-17T17:30:18"
+      },
+      "order_approved_at": {
+        "min": "2016-09-15T12:16:38",
+        "max": "2018-09-03T17:40:06"
+      },
+      "order_delivered_carrier_date": {
+        "min": "2016-10-08T10:34:01",
+        "max": "2018-09-11T19:48:28"
+      },
+      "order_delivered_customer_date": {
+        "min": "2016-10-11T13:46:32",
+        "max": "2018-10-17T13:22:46"
+      },
+      "order_estimated_delivery_date": {
+        "min": "2016-09-30T00:00:00",
+        "max": "2018-11-12T00:00:00"
+      }
+    },
+    "note": "All acquired order timestamps, including order_approved_at, validated as local/unspecified wall time. Item price/freight values checked for finite nonnegative numeric values. Source records preserved, including sequence anomalies."
+  }
+}

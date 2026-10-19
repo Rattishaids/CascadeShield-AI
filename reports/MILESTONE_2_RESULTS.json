@@ -1,0 +1,103 @@
+{
+  "schema_version": "cascadeshield.milestone-results/2.0",
+  "status": "COMPLETE",
+  "completed_on_local_date": "2026-10-13",
+  "recorded_at_utc": "2026-10-13T15:14:24.710792+00:00",
+  "mode": "REAL_GEOGRAPHIC_DATA + SIMULATED_OPERATIONS + RULE_BASED_ESTIMATES",
+  "tests": {
+    "java": 85,
+    "frontend": 36,
+    "python": 28,
+    "legacy_api": 15,
+    "operational_api": 10,
+    "legacy_browser": 7,
+    "operational_browser": 9
+  },
+  "all_final_checks_passed": true,
+  "total_executed_final_checks": 190,
+  "demonstration": {
+    "frontend_url": "http://127.0.0.1:5173",
+    "health_url": "http://127.0.0.1:8080/api/health",
+    "status": "PAUSED",
+    "clock_sec": 1000.0,
+    "speed": 1.0,
+    "scenario_id": "0964c8fe-cc1a-4bac-ace3-50b55670c38f",
+    "run_id": "a0dc2938-e839-4df7-ae63-415df61503bc",
+    "replaying": true,
+    "trucks": 2,
+    "resources": 6,
+    "graph_nodes": 8,
+    "graph_edges": 12,
+    "operational_kpis": {
+      "deliveries": 2,
+      "delivered": 0,
+      "lateDeliveries": 0,
+      "queuedTrucks": 1,
+      "unloadingTrucks": 1,
+      "constrainedDrivers": 0,
+      "deliveryDelaySec": 0.0
+    }
+  },
+  "example_cascade": {
+    "scenario_id": "bbc803dd-423e-42cc-970e-f979be47fb7b",
+    "actual_clock_sec": 1352.6,
+    "deliveries": [
+      {
+        "id": "OPS-LA",
+        "name": "Simulated delivery A",
+        "warehouseId": "OPS-W",
+        "priority": "NORMAL",
+        "status": "DELIVERED",
+        "provenance": "SIMULATED",
+        "loadKg": 200.0,
+        "deadlineSec": 1262.6,
+        "deliveredAtSec": 1052.6,
+        "lateSec": 0.0,
+        "truckId": "OPS-A"
+      },
+      {
+        "id": "OPS-LB",
+        "name": "Simulated delivery B",
+        "warehouseId": "OPS-W",
+        "priority": "HIGH",
+        "status": "DELIVERED",
+        "provenance": "SIMULATED",
+        "loadKg": 200.0,
+        "deadlineSec": 1292.6,
+        "deliveredAtSec": 1352.6,
+        "lateSec": 60.0,
+        "truckId": "OPS-B"
+      }
+    ],
+    "operational_kpis": {
+      "deliveries": 2,
+      "delivered": 2,
+      "lateDeliveries": 1,
+      "queuedTrucks": 0,
+      "unloadingTrucks": 0,
+      "constrainedDrivers": 0,
+      "deliveryDelaySec": 60.0
+    },
+    "exact_operational_replay": true
+  },
+  "research_imports": {
+    "research_tables": 18,
+    "rows": 2414128,
+    "preserved": true
+  },
+  "snapshot_conversion_report": "reports/milestone_2_snapshot_conversion.json",
+  "provenance_manifest": "data/metadata/milestone_2_operational_provenance.json",
+  "export_directory": "reports/milestone_2_exports/dda07d32-e70c-442e-8061-04df155d3578",
+  "limitations": {
+    "observed_linked_chennai_freight_corpus_available": false,
+    "trained_gnn": false,
+    "autonomous_llm": false,
+    "torch_installed": false,
+    "pyg_installed": false,
+    "actual_heterodata_serialization_executed": false,
+    "calibrated_risk": false,
+    "production_operator_authentication": false,
+    "field_effectiveness_claim": false
+  },
+  "stop_boundary": "Milestone 2 complete; no GNN/deep-learning training or autonomous LLM implementation."
+}

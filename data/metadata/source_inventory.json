@@ -1,0 +1,256 @@
+[
+  {
+    "id": "dft",
+    "url": "https://www.gov.uk/government/statistical-data-sets/road-safety-open-data",
+    "region": "Great Britain (not Northern Ireland)",
+    "license": "Open Government Licence v3.0",
+    "license_url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "role": "Police-reported injury collisions, vehicles and casualties; not all disruptions or road closures",
+    "checked_at_utc": "2026-10-08T17:50:09.626245+00:00",
+    "landing_page_status": "retrieved",
+    "selected_period": "2024",
+    "scope_note": "Complete selected annual tables. Full 1979-latest and overlapping multi-year extracts are inventoried on the source page but not downloaded; bounded disk budget."
+  },
+  {
+    "id": "porto",
+    "url": "https://www.kaggle.com/datasets/crailtap/taxi-trajectory",
+    "region": "Porto, Portugal",
+    "license": "Unknown",
+    "license_url": "https://www.kaggle.com/datasets/crailtap/taxi-trajectory",
+    "role": "Taxi mobility proxy, not freight operations; separate cohort",
+    "checked_at_utc": "2026-10-08T17:50:09.626263+00:00",
+    "landing_page_status": "retrieved",
+    "catalog_metadata": {
+      "ref": "crailtap/taxi-trajectory",
+      "title": "Taxi Trajectory Data",
+      "totalBytes": 540159049,
+      "lastUpdated": "2018-04-12T11:41:23.04Z",
+      "licenseName": "Unknown"
+    },
+    "reuse_gate": "QUARANTINED until an explicit data license/permission is verified; Kaggle Unknown is not a license.",
+    "download_status": "downloaded",
+    "credential_configured": false
+  },
+  {
+    "id": "nyc",
+    "url": "https://github.com/walterwzhang/NYC-Taxi-2013-Data",
+    "region": "New York City, United States",
+    "license": "No repository LICENSE identified; reuse permission unresolved",
+    "license_url": "https://github.com/walterwzhang/NYC-Taxi-2013-Data",
+    "role": "2013 taxi driver samples/mapping and processing code; linked balanced-panel host must be checked",
+    "checked_at_utc": "2026-10-08T17:50:09.626265+00:00",
+    "landing_page_status": "retrieved",
+    "repository_license_metadata": null,
+    "repository_commit": "ff740c3c148edf006f05c6c4861ad73915d942ee",
+    "repository_assets": [
+      {
+        "path": ".gitignore",
+        "bytes": 570
+      },
+      {
+        "path": "Code/1-Data-Construction/Hourly-Data-Constructor.R",
+        "bytes": 11278
+      },
+      {
+        "path": "Code/1-Data-Construction/Model-Specifier-Generator.py",
+        "bytes": 2399
+      },
+      {
+        "path": "Code/1-Data-Construction/README.md",
+        "bytes": 684
+      },
+      {
+        "path": "Code/2-Data-Processing/1-Data-Processor.R",
+        "bytes": 13365
+      },
+      {
+        "path": "Code/2-Data-Processing/2-Data-Aggregator.R",
+        "bytes": 6066
+      },
+      {
+        "path": "Code/2-Data-Processing/README.md",
+        "bytes": 436
+      },
+      {
+        "path": "Code/README.md",
+        "bytes": 726
+      },
+      {
+        "path": "Documentation/NYC taxi data 2013 notes.pdf",
+        "bytes": 128937
+      },
+      {
+        "path": "Medallion-Samples/100k-Driver-Sample/Medallion_Sample_100k.csv",
+        "bytes": 7642693
+      },
+      {
+        "path": "Medallion-Samples/5k-Driver-Sample/Medallion_Sample_5k.csv",
+        "bytes": 382228
+      },
+      {
+        "path": "Medallion-Samples/medallion_mapping_key.csv",
+        "bytes": 45405342
+      },
+      {
+        "path": "README.md",
+        "bytes": 5369
+      }
+    ],
+    "reuse_gate": "QUARANTINED: no explicit repository data reuse license identified. Public accessibility does not establish permission.",
+    "temporal_note": "Repository describes 2013; supplied mapping and sample ID CSVs may have no timestamps and are not the balanced-panel operational records."
+  },
+  {
+    "id": "cambridge",
+    "url": "https://www.repository.cam.ac.uk/items/3d0eb1ad-d077-4e4e-84cb-79af35f0b163",
+    "region": "England and Wales",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "role": "Static logistics-site locations, floor areas and author-modelled loading bays; no shipments or measured capacities",
+    "checked_at_utc": "2026-10-08T17:50:09.626267+00:00",
+    "landing_page_status": "retrieved",
+    "citation_metadata": [
+      [
+        "citation_title",
+        "Research data supporting &quot;Logistics sites in England and Wales: Location, size, type and loading bays&quot;"
+      ],
+      [
+        "citation_author",
+        "De Saxe, Christopher"
+      ],
+      [
+        "citation_author",
+        "Ainalis, Daniel"
+      ],
+      [
+        "citation_author",
+        "Cebon, David"
+      ],
+      [
+        "citation_publication_date",
+        "2023-11-01T10:28:34Z"
+      ],
+      [
+        "citation_keywords",
+        "electrification; factories; freight; heavy goods vehicles; retail; transport; warehouses"
+      ],
+      [
+        "citation_abstract_html_url",
+        "https://www.repository.cam.ac.uk/handle/1810/358738"
+      ],
+      [
+        "citation_doi",
+        "https://doi.org/10.17863/CAM.102176"
+      ],
+      [
+        "citation_pdf_url",
+        "https://www.repository.cam.ac.uk/bitstreams/57021e51-e0ee-4bd3-a2ca-fbf584268e2d/download"
+      ]
+    ],
+    "temporal_note": "Static published research inventory; per-site observation/effective dates are not supplied. Publication date is not a measurement date."
+  },
+  {
+    "id": "olist",
+    "url": "https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce",
+    "region": "Brazil",
+    "license": "CC BY-NC-SA 4.0",
+    "license_url": "https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce",
+    "role": "E-commerce orders, items, sellers and delivery dates; independent Brazil cohort with no road-incident or cascade links",
+    "checked_at_utc": "2026-10-08T17:50:09.626268+00:00",
+    "landing_page_status": "retrieved",
+    "download_status": "downloaded",
+    "credential_configured": false,
+    "catalog_metadata": {
+      "ref": "olistbr/brazilian-ecommerce",
+      "title": "Brazilian E-Commerce Public Dataset by Olist",
+      "totalBytes": 44717580,
+      "lastUpdated": "2021-10-01T19:08:27.97Z",
+      "licenseName": "CC BY-NC-SA 4.0"
+    }
+  },
+  {
+    "id": "overpass",
+    "url": "https://overpass-turbo.eu/",
+    "region": "Query-defined Birmingham pilot bbox, England",
+    "license": "OSM data: ODbL 1.0; Turbo is a query interface, not an independent dataset",
+    "license_url": "https://www.openstreetmap.org/copyright",
+    "role": "Read-only Overpass API extracts OSM historical road geometry and tags",
+    "checked_at_utc": "2026-10-08T17:50:09.626269+00:00",
+    "landing_page_status": "retrieved",
+    "actual_data_asset": "osm_birmingham_2024",
+    "requested_snapshot_utc": "2024-01-01T00:00:00Z",
+    "bbox_south_west_north_east": [
+      52.42,
+      -1.99,
+      52.55,
+      -1.78
+    ],
+    "limitations": "Road geometry only. HGV restrictions, turn restrictions, road speeds and completeness require validation. Ways intersecting bbox can extend beyond it."
+  },
+  {
+    "id": "osm",
+    "url": "https://www.openstreetmap.org/",
+    "region": "Global source; bounded Birmingham pilot acquired through Overpass",
+    "license": "ODbL 1.0; attribution to OpenStreetMap contributors",
+    "license_url": "https://www.openstreetmap.org/copyright",
+    "role": "Same dataset as Overpass extract; count once, not as independent evidence",
+    "checked_at_utc": "2026-10-08T17:50:09.626270+00:00",
+    "landing_page_status": "retrieved",
+    "actual_data_asset": "osm_birmingham_2024",
+    "requested_snapshot_utc": "2024-01-01T00:00:00Z",
+    "bbox_south_west_north_east": [
+      52.42,
+      -1.99,
+      52.55,
+      -1.78
+    ],
+    "limitations": "Road geometry only. HGV restrictions, turn restrictions, road speeds and completeness require validation. Ways intersecting bbox can extend beyond it."
+  },
+  {
+    "id": "traccar",
+    "url": "https://www.traccar.org/",
+    "region": "User-owned server and devices; none supplied",
+    "license": "Apache-2.0 software does not license any fleet records",
+    "license_url": "https://raw.githubusercontent.com/traccar/traccar/master/LICENSE.txt",
+    "role": "Authenticated /api/positions and /api/reports/route; no public evaluation fleet data identified",
+    "checked_at_utc": "2026-10-08T17:50:09.626271+00:00",
+    "landing_page_status": "retrieved",
+    "download_status": "no_public_fleet_dataset",
+    "missing_requirements": "Authorized server URL, account/token, permitted device IDs, time range and fleet-data consent/license. Demo records are excluded from research data.",
+    "api_contract": {
+      "server_url": "User-supplied authorized server; none supplied",
+      "api_version_in_downloaded_contract": "6.16.0",
+      "endpoints": [
+        "GET /api/positions",
+        "GET /api/reports/route?deviceId=...&from=...&to=..."
+      ],
+      "authentication": [
+        "HTTP Basic",
+        "Bearer API key"
+      ],
+      "route_report_schema": "array of Position objects; schema is not acquired fleet records",
+      "speed_unit": "knots (per Position schema)",
+      "data_size_and_period": "Unavailable until authorized server/devices/time window are provided"
+    }
+  },
+  {
+    "id": "weather",
+    "url": "https://open-meteo.com/",
+    "region": "Requested Birmingham point and returned ERA5 grid cell only",
+    "license": "CC BY 4.0 data; free hosted API is for non-commercial use subject to terms/rate limits",
+    "license_url": "https://open-meteo.com/en/licence",
+    "role": "2024 hourly ERA5 reanalysis; provider-modelled weather, not direct station observations or as-issued forecasts",
+    "checked_at_utc": "2026-10-08T17:50:09.626273+00:00",
+    "landing_page_status": "retrieved",
+    "request_parameters": {
+      "latitude": 52.4862,
+      "longitude": -1.8904,
+      "start_date": "2024-01-01",
+      "end_date": "2024-12-31",
+      "timezone": "UTC",
+      "models": "era5",
+      "hourly": "temperature_2m,relative_humidity_2m,precipitation,rain,snowfall,wind_speed_10m,weather_code",
+      "wind_speed_unit": "ms"
+    },
+    "limitations": "One requested point, not GB-wide weather. Reanalysis can contain information unavailable at prediction time; not a forecast feature without availability-time controls."
+  }
+]

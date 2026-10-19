@@ -1,0 +1,7 @@
+# .venv-ml-gpu uses --system-site-packages to reuse existing host torch==2.7.1+cu118.
+# No system packages, CUDA toolkit or driver are modified.
+numpy==2.2.6
+scikit-learn==1.7.2
+xgboost==3.1.3
+torch-geometric==2.7.0
+psutil==7.2.2

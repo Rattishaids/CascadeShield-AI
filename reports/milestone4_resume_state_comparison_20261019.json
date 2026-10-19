@@ -1,0 +1,178 @@
+{
+  "checkedAtUtc": "2026-10-19T00:37:17.046333+00:00",
+  "provenance": "READ_ONLY_SAVED_STATE_COMPARISON",
+  "literalSnapshotEqual": false,
+  "operationalStatePreserved": true,
+  "differenceCount": 28,
+  "comparisonMethod": "Every differing string must exactly match after strict Latin-1 encode then UTF-8 decode of the saved PowerShell snapshot. All keys, list lengths, numeric values and other fields must match. Original snapshot and backend remain unchanged.",
+  "differences": [
+    {
+      "path": "/events/3/message",
+      "before": "TEST-T01 SCHEDULED \u00e2\u0086\u0092 MOVING",
+      "after": "TEST-T01 SCHEDULED \u2192 MOVING",
+      "encodingOnly": true
+    },
+    {
+      "path": "/events/4/message",
+      "before": "TEST-T02 SCHEDULED \u00e2\u0086\u0092 MOVING",
+      "after": "TEST-T02 SCHEDULED \u2192 MOVING",
+      "encodingOnly": true
+    },
+    {
+      "path": "/events/5/message",
+      "before": "TEST-T03 SCHEDULED \u00e2\u0086\u0092 MOVING",
+      "after": "TEST-T03 SCHEDULED \u2192 MOVING",
+      "encodingOnly": true
+    },
+    {
+      "path": "/events/6/message",
+      "before": "D01 SCHEDULED \u00e2\u0086\u0092 MOVING",
+      "after": "D01 SCHEDULED \u2192 MOVING",
+      "encodingOnly": true
+    },
+    {
+      "path": "/events/7/message",
+      "before": "D02 SCHEDULED \u00e2\u0086\u0092 MOVING",
+      "after": "D02 SCHEDULED \u2192 MOVING",
+      "encodingOnly": true
+    },
+    {
+      "path": "/events/8/message",
+      "before": "D03 SCHEDULED \u00e2\u0086\u0092 MOVING",
+      "after": "D03 SCHEDULED \u2192 MOVING",
+      "encodingOnly": true
+    },
+    {
+      "path": "/events/9/message",
+      "before": "D04 SCHEDULED \u00e2\u0086\u0092 MOVING",
+      "after": "D04 SCHEDULED \u2192 MOVING",
+      "encodingOnly": true
+    },
+    {
+      "path": "/events/10/message",
+      "before": "D05 SCHEDULED \u00e2\u0086\u0092 MOVING",
+      "after": "D05 SCHEDULED \u2192 MOVING",
+      "encodingOnly": true
+    },
+    {
+      "path": "/events/11/message",
+      "before": "D06 SCHEDULED \u00e2\u0086\u0092 MOVING",
+      "after": "D06 SCHEDULED \u2192 MOVING",
+      "encodingOnly": true
+    },
+    {
+      "path": "/events/12/message",
+      "before": "D07 SCHEDULED \u00e2\u0086\u0092 MOVING",
+      "after": "D07 SCHEDULED \u2192 MOVING",
+      "encodingOnly": true
+    },
+    {
+      "path": "/events/13/message",
+      "before": "D08 SCHEDULED \u00e2\u0086\u0092 MOVING",
+      "after": "D08 SCHEDULED \u2192 MOVING",
+      "encodingOnly": true
+    },
+    {
+      "path": "/events/14/message",
+      "before": "D09 SCHEDULED \u00e2\u0086\u0092 MOVING",
+      "after": "D09 SCHEDULED \u2192 MOVING",
+      "encodingOnly": true
+    },
+    {
+      "path": "/events/15/message",
+      "before": "D10 SCHEDULED \u00e2\u0086\u0092 MOVING",
+      "after": "D10 SCHEDULED \u2192 MOVING",
+      "encodingOnly": true
+    },
+    {
+      "path": "/events/21/message",
+      "before": "TEST-T03 MOVING \u00e2\u0086\u0092 ARRIVED",
+      "after": "TEST-T03 MOVING \u2192 ARRIVED",
+      "encodingOnly": true
+    },
+    {
+      "path": "/events/22/message",
+      "before": "D03 MOVING \u00e2\u0086\u0092 ARRIVED",
+      "after": "D03 MOVING \u2192 ARRIVED",
+      "encodingOnly": true
+    },
+    {
+      "path": "/events/23/message",
+      "before": "D09 MOVING \u00e2\u0086\u0092 ARRIVED",
+      "after": "D09 MOVING \u2192 ARRIVED",
+      "encodingOnly": true
+    },
+    {
+      "path": "/events/25/message",
+      "before": "D06 MOVING \u00e2\u0086\u0092 ARRIVED",
+      "after": "D06 MOVING \u2192 ARRIVED",
+      "encodingOnly": true
+    },
+    {
+      "path": "/events/26/message",
+      "before": "D01 MOVING \u00e2\u0086\u0092 ARRIVED",
+      "after": "D01 MOVING \u2192 ARRIVED",
+      "encodingOnly": true
+    },
+    {
+      "path": "/events/27/message",
+      "before": "TEST-T01 MOVING \u00e2\u0086\u0092 ARRIVED",
+      "after": "TEST-T01 MOVING \u2192 ARRIVED",
+      "encodingOnly": true
+    },
+    {
+      "path": "/events/28/message",
+      "before": "TEST-T02 MOVING \u00e2\u0086\u0092 ARRIVED",
+      "after": "TEST-T02 MOVING \u2192 ARRIVED",
+      "encodingOnly": true
+    },
+    {
+      "path": "/events/30/message",
+      "before": "D07 MOVING \u00e2\u0086\u0092 ARRIVED",
+      "after": "D07 MOVING \u2192 ARRIVED",
+      "encodingOnly": true
+    },
+    {
+      "path": "/events/31/message",
+      "before": "D02 MOVING \u00e2\u0086\u0092 ARRIVED",
+      "after": "D02 MOVING \u2192 ARRIVED",
+      "encodingOnly": true
+    },
+    {
+      "path": "/events/32/message",
+      "before": "D04 MOVING \u00e2\u0086\u0092 ARRIVED",
+      "after": "D04 MOVING \u2192 ARRIVED",
+      "encodingOnly": true
+    },
+    {
+      "path": "/events/33/message",
+      "before": "D08 MOVING \u00e2\u0086\u0092 ARRIVED",
+      "after": "D08 MOVING \u2192 ARRIVED",
+      "encodingOnly": true
+    },
+    {
+      "path": "/events/34/message",
+      "before": "D10 MOVING \u00e2\u0086\u0092 ARRIVED",
+      "after": "D10 MOVING \u2192 ARRIVED",
+      "encodingOnly": true
+    },
+    {
+      "path": "/events/35/message",
+      "before": "D05 MOVING \u00e2\u0086\u0092 ARRIVED",
+      "after": "D05 MOVING \u2192 ARRIVED",
+      "encodingOnly": true
+    },
+    {
+      "path": "/riskSource",
+      "before": "RULE_BASED \u00e2\u0080\u0094 uncalibrated direct-travel estimate",
+      "after": "RULE_BASED \u2014 uncalibrated direct-travel estimate",
+      "encodingOnly": true
+    },
+    {
+      "path": "/scenarioName",
+      "before": "HTTP integration \u00e2\u0080\u0094 simulated Chennai roads",
+      "after": "HTTP integration \u2014 simulated Chennai roads",
+      "encodingOnly": true
+    }
+  ]
+}

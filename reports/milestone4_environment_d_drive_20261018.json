@@ -1,0 +1,58 @@
+{
+  "schemaVersion": "cascadeshield.ml-environment/1.0",
+  "recordedAtUtc": "2026-10-18T06:27:21.450535+00:00",
+  "pythonExecutable": "D:\\CascadeShield-AI\\.venv-ml-gpu\\Scripts\\python.exe",
+  "pythonVersion": "3.11.6 (tags/v3.11.6:8b6ee5b, Oct  2 2023, 14:57:12) [MSC v.1935 64 bit (AMD64)]",
+  "prefix": "D:\\CascadeShield-AI\\.venv-ml-gpu",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "packages": {
+    "numpy": "2.2.6",
+    "scikit-learn": "1.7.2",
+    "torch": "2.7.1+cu118",
+    "torch-geometric": "2.7.0",
+    "psutil": "7.2.2",
+    "xgboost": "3.1.3"
+  },
+  "torchModulePath": "C:\\Users\\NIKHISHA SREE\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\torch\\__init__.py",
+  "xgboostModulePath": "D:\\CascadeShield-AI\\.venv-ml-gpu\\Lib\\site-packages\\xgboost\\__init__.py",
+  "cudaBuild": "11.8",
+  "cudaAvailable": true,
+  "provenance": "ENGINEERING_CAPABILITY_CHECK_NOT_RESEARCH_DATA",
+  "host": {
+    "logicalCpuCount": 12,
+    "physicalCpuCount": 6,
+    "ramTotalBytes": 16357158912,
+    "ramAvailableBytes": 929185792,
+    "diskTotalBytes": 161060220928,
+    "diskFreeBytes": 143094992896,
+    "workspace": "D:\\CascadeShield-AI"
+  },
+  "nvidiaSmi": {
+    "query": [
+      "--query-gpu=name,driver_version,memory.total,memory.free,memory.used",
+      "--format=csv,noheader,nounits"
+    ],
+    "output": "NVIDIA GeForce RTX 4050 Laptop GPU, 610.74, 6141, 5440, 481",
+    "banner": "Sun Oct 18 11:57:21 2026       \n+-----------------------------------------------------------------------------------------+\n| NVIDIA-SMI 610.74                 KMD Version: 610.74        CUDA UMD Version: 13.3     |\n+-----------------------------------------+------------------------+----------------------+\n| GPU  Name                  Driver-Model | Bus-Id          Disp.A | Volatile Uncorr. ECC |\n| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |\n|                                         |                        |               MIG M. |\n|=========================================+========================+======================|\n|   0  NVIDIA GeForce RTX 4050 ...  WDDM  |   00000000:01:00.0 Off |                  N/A |\n| N/A   59C    P3              7W /   50W |     481MiB /   6141MiB |      6%      Default |\n|                                         |                        |                  N/A |\n+-----------------------------------------+------------------------+----------------------+\n\n+-----------------------------------------------------------------------------------------+\n| Processes:                                                                              |\n|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |\n|        ID   ID                                                               Usage      |\n|=========================================================================================|\n|    0   N/A  N/A            4888    C+G   ...2txyewy\\CrossDeviceResume.exe      N/A      |\n|    0   N/A  N/A            6056    C+G   ....0.4283.45\\msedgewebview2.exe      N/A      |\n|    0   N/A  N/A            7160    C+G   ...5n1h2txyewy\\TextInputHost.exe      N/A      |\n|    0   N/A  N/A           15504    C+G   ...Chrome\\Application\\chrome.exe      N/A      |\n|    0   N/A  N/A           19448    C+G   ....0.4283.45\\msedgewebview2.exe      N/A      |\n|    0   N/A  N/A           21588    C+G   ...ui\\LightStudio-background.exe      N/A      |\n|    0   N/A  N/A           24856    C+G   ...mon\\Client\\v1.6.0\\rsAppUI.exe      N/A      |\n|    0   N/A  N/A           28020    C+G   ...1g1gvanyjgm\\WhatsApp.Root.exe      N/A      |\n|    0   N/A  N/A           31496    C+G   ...Chrome\\Application\\chrome.exe      N/A      |\n|    0   N/A  N/A           31540    C+G   ..._cw5n1h2txyewy\\SearchHost.exe      N/A      |\n|    0   N/A  N/A           32024    C+G   ...App_cw5n1h2txyewy\\LockApp.exe      N/A      |\n|    0   N/A  N/A           32220    C+G   ...y\\StartMenuExperienceHost.exe      N/A      |\n|    0   N/A  N/A           33624    C+G   ...lot\\Application\\mscopilot.exe      N/A      |\n|    0   N/A  N/A           35464    C+G   ....0.4283.60\\msedgewebview2.exe      N/A      |\n|    0   N/A  N/A           36612    C+G   ....0.4283.60\\msedgewebview2.exe      N/A      |\n|    0   N/A  N/A           37576    C+G   ...8wekyb3d8bbwe\\M365Copilot.exe      N/A      |\n|    0   N/A  N/A           37604    C+G   ...ms\\Microsoft VS Code\\Code.exe      N/A      |\n|    0   N/A  N/A           38600    C+G   ...r\\frontend\\Docker Desktop.exe      N/A      |\n+-----------------------------------------------------------------------------------------+"
+  },
+  "gpu": {
+    "name": "NVIDIA GeForce RTX 4050 Laptop GPU",
+    "totalMemoryBytes": 6438780928,
+    "computeCapability": [
+      8,
+      9
+    ],
+    "freeMemoryBytes": 5326766080
+  },
+  "cudaMatmulProbe": {
+    "finite": true,
+    "outputDevice": "cuda:0",
+    "elapsedMs": 197.16999999945983,
+    "testFixtureOnly": true
+  },
+  "xgbGpuProbe": {
+    "device": "cuda:0",
+    "updater": "grow_gpu_hist",
+    "testFixtureOnly": true
+  }
+}

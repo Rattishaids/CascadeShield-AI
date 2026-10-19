@@ -1,0 +1,39 @@
+{
+  "started_at_utc": "2026-10-09T10:55:50.673508+00:00",
+  "data_class": "BROWSER_ENGINEERING_TEST_EVIDENCE",
+  "checks": [
+    {
+      "name": "two trucks manually routed on actual Chennai map",
+      "passed": true,
+      "baseline_sec": 662.6
+    },
+    {
+      "name": "warehouse dock drivers deliveries and assignments created through UI",
+      "passed": true,
+      "simulated_resources": 6,
+      "directed_dependencies": 9
+    },
+    {
+      "name": "computed indirect graph risk and predicted consequence timeline rendered",
+      "passed": true,
+      "closure_physical_id": "1055336210:2"
+    },
+    {
+      "name": "driver availability toggle constrains backend movement and unknown ETA",
+      "passed": true,
+      "held_clock_sec": 220
+    },
+    {
+      "name": "actual dock queue and realized consequence timeline rendered",
+      "passed": true,
+      "clock_sec": 1000.0,
+      "queue_sec_so_far": 117.5
+    }
+  ],
+  "console_errors": [],
+  "page_errors": [],
+  "trained_model": false,
+  "passed": false,
+  "error": "Locator.click: Timeout 30000ms exceeded.\nCall log:\n  - waiting for get_by_role(\"button\", name=\"Close scenarios\", exact=True)\n",
+  "finished_at_utc": "2026-10-09T10:56:46.581879+00:00"
+}

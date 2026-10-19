@@ -1,0 +1,2 @@
+# Browser verification only; the application runs with Docker and Node.
+playwright>=1.58,<2

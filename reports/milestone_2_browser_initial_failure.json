@@ -1,0 +1,11 @@
+{
+  "started_at_utc": "2026-10-09T10:52:46.548508+00:00",
+  "data_class": "BROWSER_ENGINEERING_TEST_EVIDENCE",
+  "checks": [],
+  "console_errors": [],
+  "page_errors": [],
+  "trained_model": false,
+  "passed": false,
+  "error": "Locator.click: Timeout 30000ms exceeded.\nCall log:\n  - waiting for get_by_role(\"button\", name=\"Calculate road route\")\n",
+  "finished_at_utc": "2026-10-09T10:53:24.718673+00:00"
+}

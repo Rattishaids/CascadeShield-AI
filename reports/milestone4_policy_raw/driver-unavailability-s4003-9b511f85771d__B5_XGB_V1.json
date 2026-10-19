@@ -1,0 +1,3887 @@
+{
+  "protocolSha256" : "46ec8bfae7a6790e8b24b7fe8c8b7cd4a3005e4dea8b76a61e0ecd8434676f66",
+  "graphSha256" : "c943bac278192042b22342d8e1be898cc68512fb936e314633645bc3e0304e60",
+  "selectionManifestSha256" : "a225deef5bfe31676129cefa595ef8fb39511486b06e9d0a1d31de40733a3a39",
+  "scenarioId" : "driver-unavailability-s4003-9b511f85771d",
+  "family" : "driver-unavailability",
+  "seed" : 4003,
+  "inputFingerprint" : "9b511f85771d0874839a7f826db79a0221586f6d0218a652d39fb27281403076",
+  "parameters" : {
+    "truckCount" : 7,
+    "warehouseCount" : 2,
+    "docksPerWarehouse" : 2,
+    "serviceSec" : 165.5,
+    "deadlineSlackSec" : 60.0,
+    "departureGapSec" : 69.5,
+    "driverUnavailableFraction" : 0.5,
+    "driverRestoreSec" : 414.3,
+    "closureCount" : 1,
+    "rainSlowdownCount" : 0,
+    "severity" : 0.8,
+    "incidentDurationSec" : 272.3,
+    "incidentStartSec" : 11.0,
+    "simultaneousIncidents" : true,
+    "horizonSec" : 4200.0,
+    "contention" : 0.5,
+    "decisionIntervalSec" : 30.0,
+    "rolloutHorizonSec" : 1800.0,
+    "maxDecisions" : 6
+  },
+  "policyId" : "B5_XGB_V1",
+  "run" : {
+    "scenarioId" : "driver-unavailability-s4003-9b511f85771d",
+    "seed" : 4003,
+    "policyId" : "B5_XGB_V1",
+    "inputFingerprint" : "9b511f85771d0874839a7f826db79a0221586f6d0218a652d39fb27281403076",
+    "metrics" : {
+      "deliveryCount" : 7,
+      "completedDeliveries" : 7,
+      "unfinishedDeliveries" : 0,
+      "slaViolations" : 5,
+      "slaViolationRate" : 0.7142857142857143,
+      "totalDeliveryLatenessSec" : 1433.0,
+      "downstreamAffectedResources" : 9,
+      "totalReroutes" : 1,
+      "travelDistanceM" : 44435.90226900287,
+      "signedAdditionalDistanceM" : 69.44321200287231,
+      "positiveAdditionalDistanceM" : 69.44321200287686,
+      "modeledOperationalCost" : 161.31490226900289,
+      "recoveryTimeSec" : 1489.8,
+      "recoveryCensored" : false,
+      "finalClockSec" : 1500.8,
+      "constraintViolations" : 0,
+      "decisionComputationMs" : 1324.2639359999998,
+      "provenance" : "SIMULATED_RESEARCH_EXPERIMENT"
+    },
+    "decisions" : [ {
+      "clockSec" : 0.0,
+      "truckId" : "T1",
+      "trigger" : "DRIVER_UNAVAILABLE:DRIVER:DR1:T1|OPERATIONS:DRIVER_UNAVAILABLE:DRIVER:DR1:T1",
+      "observedIncidentIds" : [ ],
+      "alternatives" : [ {
+        "action" : {
+          "id" : "47b8ce39-f1f8-3162-8e64-a6a20a6fb23b",
+          "type" : "NONE",
+          "truckId" : "T1",
+          "waitSec" : 0.0,
+          "dockId" : null,
+          "reservationStartSec" : 0.0,
+          "reservationEndSec" : 0.0,
+          "routeEdgeIds" : [ ],
+          "description" : "Keep the current plan and execute actual constraints."
+        },
+        "feasible" : true,
+        "score" : 0.7303708711059144,
+        "metrics" : null,
+        "violations" : [ ]
+      }, {
+        "action" : {
+          "id" : "eace9d3a-a313-39c6-b7b5-81ec31a7cfe4",
+          "type" : "CONTINUE",
+          "truckId" : "T1",
+          "waitSec" : 0.0,
+          "dockId" : null,
+          "reservationStartSec" : 0.0,
+          "reservationEndSec" : 0.0,
+          "routeEdgeIds" : [ ],
+          "description" : "Clear an approved wait and continue the current connected road plan."
+        },
+        "feasible" : true,
+        "score" : 0.7303708711059144,
+        "metrics" : null,
+        "violations" : [ ]
+      } ],
+      "selectedActionId" : "47b8ce39-f1f8-3162-8e64-a6a20a6fb23b",
+      "explanation" : "Validated xgb-v1 prediction-time fixed score; no executed rollout. Same five road actions and six decision slots as controlled B4; no private schedule inputs.",
+      "computationMs" : 37.121169,
+      "knowledgeFingerprint" : "657ba58423c40959d0d63247230271c0266c89ecfd7a5709a0260fd687813938"
+    }, {
+      "clockSec" : 0.0,
+      "truckId" : "T2",
+      "trigger" : "DRIVER_UNAVAILABLE:DRIVER:DR2:T2|OPERATIONS:DRIVER_UNAVAILABLE:DRIVER:DR2:T2",
+      "observedIncidentIds" : [ ],
+      "alternatives" : [ {
+        "action" : {
+          "id" : "704ff048-ac5c-3aae-8b29-4ec2981cf5ec",
+          "type" : "NONE",
+          "truckId" : "T2",
+          "waitSec" : 0.0,
+          "dockId" : null,
+          "reservationStartSec" : 0.0,
+          "reservationEndSec" : 0.0,
+          "routeEdgeIds" : [ ],
+          "description" : "Keep the current plan and execute actual constraints."
+        },
+        "feasible" : true,
+        "score" : 0.7303708711059144,
+        "metrics" : null,
+        "violations" : [ ]
+      }, {
+        "action" : {
+          "id" : "f9f559f8-5959-3ef1-a822-b75032dc8002",
+          "type" : "CONTINUE",
+          "truckId" : "T2",
+          "waitSec" : 0.0,
+          "dockId" : null,
+          "reservationStartSec" : 0.0,
+          "reservationEndSec" : 0.0,
+          "routeEdgeIds" : [ ],
+          "description" : "Clear an approved wait and continue the current connected road plan."
+        },
+        "feasible" : true,
+        "score" : 0.7303708711059144,
+        "metrics" : null,
+        "violations" : [ ]
+      } ],
+      "selectedActionId" : "704ff048-ac5c-3aae-8b29-4ec2981cf5ec",
+      "explanation" : "Validated xgb-v1 prediction-time fixed score; no executed rollout. Same five road actions and six decision slots as controlled B4; no private schedule inputs.",
+      "computationMs" : 38.194029,
+      "knowledgeFingerprint" : "657ba58423c40959d0d63247230271c0266c89ecfd7a5709a0260fd687813938"
+    }, {
+      "clockSec" : 0.0,
+      "truckId" : "T4",
+      "trigger" : "DRIVER_UNAVAILABLE:DRIVER:DR4:T4|OPERATIONS:DRIVER_UNAVAILABLE:DRIVER:DR4:T4",
+      "observedIncidentIds" : [ ],
+      "alternatives" : [ {
+        "action" : {
+          "id" : "f94ffaa4-136b-367e-bec2-db1829850e50",
+          "type" : "NONE",
+          "truckId" : "T4",
+          "waitSec" : 0.0,
+          "dockId" : null,
+          "reservationStartSec" : 0.0,
+          "reservationEndSec" : 0.0,
+          "routeEdgeIds" : [ ],
+          "description" : "Keep the current plan and execute actual constraints."
+        },
+        "feasible" : true,
+        "score" : 0.7303708711059144,
+        "metrics" : null,
+        "violations" : [ ]
+      }, {
+        "action" : {
+          "id" : "b9c0744b-7a46-3328-86e9-9e9e32e9f3a4",
+          "type" : "CONTINUE",
+          "truckId" : "T4",
+          "waitSec" : 0.0,
+          "dockId" : null,
+          "reservationStartSec" : 0.0,
+          "reservationEndSec" : 0.0,
+          "routeEdgeIds" : [ ],
+          "description" : "Clear an approved wait and continue the current connected road plan."
+        },
+        "feasible" : true,
+        "score" : 0.7303708711059144,
+        "metrics" : null,
+        "violations" : [ ]
+      } ],
+      "selectedActionId" : "f94ffaa4-136b-367e-bec2-db1829850e50",
+      "explanation" : "Validated xgb-v1 prediction-time fixed score; no executed rollout. Same five road actions and six decision slots as controlled B4; no private schedule inputs.",
+      "computationMs" : 41.967236,
+      "knowledgeFingerprint" : "657ba58423c40959d0d63247230271c0266c89ecfd7a5709a0260fd687813938"
+    }, {
+      "clockSec" : 0.0,
+      "truckId" : "T6",
+      "trigger" : "DRIVER_UNAVAILABLE:DRIVER:DR6:T6|OPERATIONS:DRIVER_UNAVAILABLE:DRIVER:DR6:T6",
+      "observedIncidentIds" : [ ],
+      "alternatives" : [ {
+        "action" : {
+          "id" : "7a8b5111-ea63-3b7b-849a-703a5b7341d4",
+          "type" : "NONE",
+          "truckId" : "T6",
+          "waitSec" : 0.0,
+          "dockId" : null,
+          "reservationStartSec" : 0.0,
+          "reservationEndSec" : 0.0,
+          "routeEdgeIds" : [ ],
+          "description" : "Keep the current plan and execute actual constraints."
+        },
+        "feasible" : true,
+        "score" : 0.7303708711059144,
+        "metrics" : null,
+        "violations" : [ ]
+      }, {
+        "action" : {
+          "id" : "4a4e3afd-a2bb-385d-8fed-2508692cf4cb",
+          "type" : "CONTINUE",
+          "truckId" : "T6",
+          "waitSec" : 0.0,
+          "dockId" : null,
+          "reservationStartSec" : 0.0,
+          "reservationEndSec" : 0.0,
+          "routeEdgeIds" : [ ],
+          "description" : "Clear an approved wait and continue the current connected road plan."
+        },
+        "feasible" : true,
+        "score" : 0.7303708711059144,
+        "metrics" : null,
+        "violations" : [ ]
+      } ],
+      "selectedActionId" : "7a8b5111-ea63-3b7b-849a-703a5b7341d4",
+      "explanation" : "Validated xgb-v1 prediction-time fixed score; no executed rollout. Same five road actions and six decision slots as controlled B4; no private schedule inputs.",
+      "computationMs" : 39.209584,
+      "knowledgeFingerprint" : "657ba58423c40959d0d63247230271c0266c89ecfd7a5709a0260fd687813938"
+    }, {
+      "clockSec" : 11.0,
+      "truckId" : "T1",
+      "trigger" : "DRIVER_UNAVAILABLE:DRIVER:DR1:T1|I001|INCIDENT:I001|OPERATIONS:DRIVER_UNAVAILABLE:DRIVER:DR1:T1",
+      "observedIncidentIds" : [ "I001" ],
+      "alternatives" : [ {
+        "action" : {
+          "id" : "47b8ce39-f1f8-3162-8e64-a6a20a6fb23b",
+          "type" : "NONE",
+          "truckId" : "T1",
+          "waitSec" : 0.0,
+          "dockId" : null,
+          "reservationStartSec" : 0.0,
+          "reservationEndSec" : 0.0,
+          "routeEdgeIds" : [ ],
+          "description" : "Keep the current plan and execute actual constraints."
+        },
+        "feasible" : true,
+        "score" : 0.7207628909217805,
+        "metrics" : null,
+        "violations" : [ ]
+      }, {
+        "action" : {
+          "id" : "eace9d3a-a313-39c6-b7b5-81ec31a7cfe4",
+          "type" : "CONTINUE",
+          "truckId" : "T1",
+          "waitSec" : 0.0,
+          "dockId" : null,
+          "reservationStartSec" : 0.0,
+          "reservationEndSec" : 0.0,
+          "routeEdgeIds" : [ ],
+          "description" : "Clear an approved wait and continue the current connected road plan."
+        },
+        "feasible" : true,
+        "score" : 0.7207628909217805,
+        "metrics" : null,
+        "violations" : [ ]
+      } ],
+      "selectedActionId" : "47b8ce39-f1f8-3162-8e64-a6a20a6fb23b",
+      "explanation" : "Validated xgb-v1 prediction-time fixed score; no executed rollout. Same five road actions and six decision slots as controlled B4; no private schedule inputs.",
+      "computationMs" : 428.255645,
+      "knowledgeFingerprint" : "1ed19081d519a98addc8e4a925ade38c90ccf889812d01f65adbb94d9127852f"
+    }, {
+      "clockSec" : 11.0,
+      "truckId" : "T3",
+      "trigger" : "DELIVERY_DEADLINE:DELIVERY:L3:T3|I001|INCIDENT:I001",
+      "observedIncidentIds" : [ "I001" ],
+      "alternatives" : [ {
+        "action" : {
+          "id" : "fa9d357d-1681-31d0-8b49-7189dfa7c5ed",
+          "type" : "NONE",
+          "truckId" : "T3",
+          "waitSec" : 0.0,
+          "dockId" : null,
+          "reservationStartSec" : 0.0,
+          "reservationEndSec" : 0.0,
+          "routeEdgeIds" : [ ],
+          "description" : "Keep the current plan and execute actual constraints."
+        },
+        "feasible" : true,
+        "score" : 0.7207628909217805,
+        "metrics" : null,
+        "violations" : [ ]
+      }, {
+        "action" : {
+          "id" : "d6d7ad18-e7d7-351e-818e-348a0bbe4e66",
+          "type" : "CONTINUE",
+          "truckId" : "T3",
+          "waitSec" : 0.0,
+          "dockId" : null,
+          "reservationStartSec" : 0.0,
+          "reservationEndSec" : 0.0,
+          "routeEdgeIds" : [ ],
+          "description" : "Clear an approved wait and continue the current connected road plan."
+        },
+        "feasible" : true,
+        "score" : 0.7207628909217805,
+        "metrics" : null,
+        "violations" : [ ]
+      }, {
+        "action" : {
+          "id" : "8d537736-0735-34f8-b490-58c7920d97ad",
+          "type" : "WAIT",
+          "truckId" : "T3",
+          "waitSec" : 272.3,
+          "dockId" : null,
+          "reservationStartSec" : 0.0,
+          "reservationEndSec" : 0.0,
+          "routeEdgeIds" : [ ],
+          "description" : "Wait at the next safe road node until the observed incident duration expires."
+        },
+        "feasible" : true,
+        "score" : 0.6819327072402768,
+        "metrics" : null,
+        "violations" : [ {
+          "code" : "SLA_DEADLINE",
+          "message" : "L3 projected dock completion misses its deadline by 292 s.",
+          "resourceIds" : [ "DELIVERY:L3" ],
+          "hard" : false
+        } ]
+      }, {
+        "action" : {
+          "id" : "70433c30-e6c8-31e8-bc35-427f7612fe54",
+          "type" : "GLOBAL_REROUTE",
+          "truckId" : "T3",
+          "waitSec" : 0.0,
+          "dockId" : null,
+          "reservationStartSec" : 0.0,
+          "reservationEndSec" : 0.0,
+          "routeEdgeIds" : [ "1055336210:2:f", "1055336210:3:f", "1055336210:4:f", "155927239:0:f", "155927239:1:f", "22977024:0:f", "1081351983:1:f", "1081351983:2:f", "1081351983:3:f", "1081351983:4:f", "1081351983:5:f", "22977044:0:f", "22977044:1:f", "22977044:2:f", "22977044:3:f", "22977044:4:f", "22977044:5:f", "1321929233:0:r", "1321929234:1:f", "1321929234:2:f", "1321929234:3:f", "1321929234:4:f", "1321929234:5:f", "1321929234:6:f", "1321929230:12:r", "1321929230:11:r", "1321929230:10:r", "1321929230:9:r", "1321929230:8:r", "1321929230:7:r", "1321929230:6:r", "1321929230:5:r", "1321929230:4:r", "1321929230:3:r", "1321929230:2:r", "1321929230:1:r", "1321929230:0:r", "28151246:2:f", "28151246:3:f", "28151246:4:f", "28151246:5:f", "28151246:6:f", "28151246:7:f", "28151246:8:f", "28151246:9:f", "28151246:10:f", "28151246:11:f", "28151246:12:f", "28151246:13:f", "28151246:14:f", "28151246:15:f", "28151246:16:f", "1031552402:0:f", "1031552402:1:f", "1031552402:2:f", "1031552402:3:f", "1031552402:4:f", "1031552402:5:f", "1031552402:6:f", "1031552402:7:f", "1031552402:8:f", "1031552402:9:f", "1031552402:10:f", "1031552402:11:f", "1031552402:12:f", "22688495:0:f", "22688495:1:f", "22688495:2:f", "22688495:3:f", "22688495:4:f", "22688495:5:f", "22688495:6:f", "22688495:7:f", "22688495:8:f", "22688495:9:f", "22688495:10:f", "22688495:11:f", "22688495:12:f", "22688495:13:f", "1031127127:0:f", "1031127127:1:f", "1031127127:2:f", "1031127127:3:f", "1031127127:4:f", "1031127127:5:f", "1031127127:6:f", "211669399:0:f", "211669399:1:f", "211669399:2:f", "211669399:3:f", "211669399:4:f", "211669399:5:f", "211669399:6:f", "1081040291:0:f", "1081040291:1:f", "1081040291:2:f", "1081040291:3:f", "1053206423:0:f", "1053206423:1:f", "1053206424:0:f", "1053206424:1:f", "1053206424:2:f", "1053206424:3:f", "1053206424:4:f", "1053206424:5:f", "1053206424:6:f", "1053206424:7:f", "1053206424:8:f", "1053206424:9:f", "1053206424:10:f", "1053206424:11:f", "1053206424:12:f", "1053206424:13:f", "1053206424:14:f", "1053206424:15:f", "1053206424:16:f", "1053206424:17:f", "1053206424:18:f", "1053206424:19:f", "1053206424:20:f", "1053206424:21:f", "1053206424:22:f", "1053206424:23:f", "1053206424:24:f", "1053206424:25:f", "1053206424:26:f", "1053206424:27:f", "1053206424:28:f", "1053206424:29:f", "1053206424:30:f", "1053206424:31:f", "1053206424:32:f", "1053206424:33:f", "1053206424:34:f", "1053206424:35:f", "1053206424:36:f", "1053206424:37:f", "1053206424:38:f", "1053206424:39:f", "1053206424:40:f", "1053206424:41:f", "1053206424:42:f", "744524364:0:f", "744524364:1:f", "1289111743:0:f", "1289111743:1:f", "1289111743:2:f", "1289111743:3:f", "1289111743:4:f", "1289111743:5:f", "1289111743:6:f", "1363512418:0:r", "567205827:0:f", "567205827:1:f", "567205827:2:f", "567205827:3:f", "567205827:4:f", "1289111742:0:f", "1308993345:0:f", "154030364:0:f", "154030364:1:f", "154030364:2:f", "1209024459:0:f", "1209024459:1:f", "1209024459:2:f", "1209024459:3:f", "1181048848:0:f", "1181048848:1:f", "1181048848:2:f", "1181048848:3:f", "1288008566:0:f", "28150546:2:f", "28150546:3:f", "28150546:4:f", "28150546:5:f", "28150546:6:f", "1039298145:0:f", "1039298145:1:f", "1149834135:0:f", "1149834135:1:f", "1149834136:0:f", "275459525:0:f", "275459525:1:f", "275459525:2:f", "275459525:3:f", "275459525:4:f", "275459525:5:f", "275459525:6:f", "275459525:7:f", "275459525:8:f", "275459525:9:f", "1080757461:0:f", "1080757461:1:f", "28138953:0:f", "28138955:0:f", "28138955:1:f", "1287344228:0:f", "83075005:1:f", "83075009:0:f", "83075009:1:f", "83075009:2:f", "83075009:3:f", "83075009:4:f", "83075009:5:f", "83075009:6:f", "83075009:7:f", "1201917078:0:r", "111721013:17:r", "111721013:16:r", "111721013:15:r", "111721013:14:r", "111721013:13:r", "111721013:12:r", "111721013:11:r", "111721013:10:r", "111721013:9:r", "111721013:8:r", "111721013:7:r", "111721013:6:r", "111721013:5:r", "111721013:4:r", "111721013:3:r", "111721013:2:r", "111721013:1:r", "441388418:2:r", "441388418:1:r", "441388418:0:r" ],
+          "description" : "Recalculate the whole remaining route using observed incidents and legal turns."
+        },
+        "feasible" : true,
+        "score" : 0.6502632889855374,
+        "metrics" : null,
+        "violations" : [ ]
+      } ],
+      "selectedActionId" : "70433c30-e6c8-31e8-bc35-427f7612fe54",
+      "explanation" : "Validated xgb-v1 prediction-time fixed score; no executed rollout. Same five road actions and six decision slots as controlled B4; no private schedule inputs.",
+      "computationMs" : 739.516273,
+      "knowledgeFingerprint" : "1ed19081d519a98addc8e4a925ade38c90ccf889812d01f65adbb94d9127852f"
+    } ],
+    "finalSummary" : {
+      "beforeGraph" : {
+        "schemaVersion" : "cascadeshield.operational-graph/1.0",
+        "clockSec" : 0.0,
+        "networkId" : "chennai-central-osm-v1",
+        "nodes" : [ {
+          "id" : "DELIVERY:L1",
+          "type" : "DELIVERY",
+          "resourceId" : "L1",
+          "features" : {
+            "deadlineSec" : 888.1,
+            "deliveredAtSec" : -1.0,
+            "lateSec" : 0.0,
+            "loadKg" : 318.0,
+            "name" : "Simulated delivery 1",
+            "priority" : "HIGH",
+            "status" : "ASSIGNED",
+            "truckId" : "T1",
+            "warehouseId" : "W1"
+          },
+          "provenance" : "SIMULATED"
+        }, {
+          "id" : "DELIVERY:L2",
+          "type" : "DELIVERY",
+          "resourceId" : "L2",
+          "features" : {
+            "deadlineSec" : 981.0,
+            "deliveredAtSec" : -1.0,
+            "lateSec" : 0.0,
+            "loadKg" : 499.0,
+            "name" : "Simulated delivery 2",
+            "priority" : "NORMAL",
+            "status" : "ASSIGNED",
+            "truckId" : "T2",
+            "warehouseId" : "W2"
+          },
+          "provenance" : "SIMULATED"
+        }, {
+          "id" : "DELIVERY:L3",
+          "type" : "DELIVERY",
+          "resourceId" : "L3",
+          "features" : {
+            "deadlineSec" : 983.7,
+            "deliveredAtSec" : -1.0,
+            "lateSec" : 0.0,
+            "loadKg" : 408.0,
+            "name" : "Simulated delivery 3",
+            "priority" : "NORMAL",
+            "status" : "ASSIGNED",
+            "truckId" : "T3",
+            "warehouseId" : "W1"
+          },
+          "provenance" : "SIMULATED"
+        }, {
+          "id" : "DELIVERY:L4",
+          "type" : "DELIVERY",
+          "resourceId" : "L4",
+          "features" : {
+            "deadlineSec" : 1046.1,
+            "deliveredAtSec" : -1.0,
+            "lateSec" : 0.0,
+            "loadKg" : 416.0,
+            "name" : "Simulated delivery 4",
+            "priority" : "HIGH",
+            "status" : "ASSIGNED",
+            "truckId" : "T4",
+            "warehouseId" : "W2"
+          },
+          "provenance" : "SIMULATED"
+        }, {
+          "id" : "DELIVERY:L5",
+          "type" : "DELIVERY",
+          "resourceId" : "L5",
+          "features" : {
+            "deadlineSec" : 1058.6,
+            "deliveredAtSec" : -1.0,
+            "lateSec" : 0.0,
+            "loadKg" : 328.0,
+            "name" : "Simulated delivery 5",
+            "priority" : "NORMAL",
+            "status" : "ASSIGNED",
+            "truckId" : "T5",
+            "warehouseId" : "W1"
+          },
+          "provenance" : "SIMULATED"
+        }, {
+          "id" : "DELIVERY:L6",
+          "type" : "DELIVERY",
+          "resourceId" : "L6",
+          "features" : {
+            "deadlineSec" : 1152.3,
+            "deliveredAtSec" : -1.0,
+            "lateSec" : 0.0,
+            "loadKg" : 322.0,
+            "name" : "Simulated delivery 6",
+            "priority" : "NORMAL",
+            "status" : "ASSIGNED",
+            "truckId" : "T6",
+            "warehouseId" : "W2"
+          },
+          "provenance" : "SIMULATED"
+        }, {
+          "id" : "DELIVERY:L7",
+          "type" : "DELIVERY",
+          "resourceId" : "L7",
+          "features" : {
+            "deadlineSec" : 1149.2,
+            "deliveredAtSec" : -1.0,
+            "lateSec" : 0.0,
+            "loadKg" : 348.0,
+            "name" : "Simulated delivery 7",
+            "priority" : "HIGH",
+            "status" : "ASSIGNED",
+            "truckId" : "T7",
+            "warehouseId" : "W1"
+          },
+          "provenance" : "SIMULATED"
+        }, {
+          "id" : "DOCK:D1_1",
+          "type" : "DOCK",
+          "resourceId" : "D1_1",
+          "features" : {
+            "name" : "Simulated dock 1",
+            "openFromSec" : 0.0,
+            "openUntilSec" : 14400.0,
+            "serviceSec" : 165.5,
+            "status" : "AVAILABLE",
+            "warehouseId" : "W1"
+          },
+          "provenance" : "SIMULATED"
+        }, {
+          "id" : "DOCK:D1_2",
+          "type" : "DOCK",
+          "resourceId" : "D1_2",
+          "features" : {
+            "name" : "Simulated dock 2",
+            "openFromSec" : 0.0,
+            "openUntilSec" : 14400.0,
+            "serviceSec" : 165.5,
+            "status" : "AVAILABLE",
+            "warehouseId" : "W1"
+          },
+          "provenance" : "SIMULATED"
+        }, {
+          "id" : "DOCK:D2_1",
+          "type" : "DOCK",
+          "resourceId" : "D2_1",
+          "features" : {
+            "name" : "Simulated dock 1",
+            "openFromSec" : 0.0,
+            "openUntilSec" : 14400.0,
+            "serviceSec" : 165.5,
+            "status" : "AVAILABLE",
+            "warehouseId" : "W2"
+          },
+          "provenance" : "SIMULATED"
+        }, {
+          "id" : "DOCK:D2_2",
+          "type" : "DOCK",
+          "resourceId" : "D2_2",
+          "features" : {
+            "name" : "Simulated dock 2",
+            "openFromSec" : 0.0,
+            "openUntilSec" : 14400.0,
+            "serviceSec" : 165.5,
+            "status" : "AVAILABLE",
+            "warehouseId" : "W2"
+          },
+          "provenance" : "SIMULATED"
+        }, {
+          "id" : "DRIVER:DR1",
+          "type" : "DRIVER",
+          "resourceId" : "DR1",
+          "features" : {
+            "available" : false,
+            "dutySec" : 0.0,
+            "name" : "Simulated driver 1",
+            "shiftEndSec" : 14400.0,
+            "shiftStartSec" : 0.0,
+            "status" : "IDLE"
+          },
+          "provenance" : "SIMULATED"
+        }, {
+          "id" : "DRIVER:DR2",
+          "type" : "DRIVER",
+          "resourceId" : "DR2",
+          "features" : {
+            "available" : false,
+            "dutySec" : 0.0,
+            "name" : "Simulated driver 2",
+            "shiftEndSec" : 14400.0,
+            "shiftStartSec" : 0.0,
+            "status" : "IDLE"
+          },
+          "provenance" : "SIMULATED"
+        }, {
+          "id" : "DRIVER:DR3",
+          "type" : "DRIVER",
+          "resourceId" : "DR3",
+          "features" : {
+            "available" : true,
+            "dutySec" : 0.0,
+            "name" : "Simulated driver 3",
+            "shiftEndSec" : 14400.0,
+            "shiftStartSec" : 0.0,
+            "status" : "IDLE"
+          },
+          "provenance" : "SIMULATED"
+        }, {
+          "id" : "DRIVER:DR4",
+          "type" : "DRIVER",
+          "resourceId" : "DR4",
+          "features" : {
+            "available" : false,
+            "dutySec" : 0.0,
+            "name" : "Simulated driver 4",
+            "shiftEndSec" : 14400.0,
+            "shiftStartSec" : 0.0,
+            "status" : "IDLE"
+          },
+          "provenance" : "SIMULATED"
+        }, {
+          "id" : "DRIVER:DR5",
+          "type" : "DRIVER",
+          "resourceId" : "DR5",
+          "features" : {
+            "available" : true,
+            "dutySec" : 0.0,
+            "name" : "Simulated driver 5",
+            "shiftEndSec" : 14400.0,
+            "shiftStartSec" : 0.0,
+            "status" : "IDLE"
+          },
+          "provenance" : "SIMULATED"
+        }, {
+          "id" : "DRIVER:DR6",
+          "type" : "DRIVER",
+          "resourceId" : "DR6",
+          "features" : {
+            "available" : false,
+            "dutySec" : 0.0,
+            "name" : "Simulated driver 6",
+            "shiftEndSec" : 14400.0,
+            "shiftStartSec" : 0.0,
+            "status" : "IDLE"
+          },
+          "provenance" : "SIMULATED"
+        }, {
+          "id" : "DRIVER:DR7",
+          "type" : "DRIVER",
+          "resourceId" : "DR7",
+          "features" : {
+            "available" : true,
+            "dutySec" : 0.0,
+            "name" : "Simulated driver 7",
+            "shiftEndSec" : 14400.0,
+            "shiftStartSec" : 0.0,
+            "status" : "IDLE"
+          },
+          "provenance" : "SIMULATED"
+        }, {
+          "id" : "TRUCK:T1",
+          "type" : "TRUCK",
+          "resourceId" : "T1",
+          "features" : {
+            "arrivalSec" : -1.0,
+            "capacityKg" : 1000.0,
+            "deadlineSec" : 888.1,
+            "departureSec" : -0.0,
+            "directTravelRisk" : 0.0,
+            "etaKnown" : false,
+            "etaSec" : 662.5466702700005,
+            "loadKg" : 318.0,
+            "name" : "Simulated freight 1",
+            "remainingDistanceM" : 6291.399894999997,
+            "status" : "SCHEDULED"
+          },
+          "provenance" : "SIMULATED"
+        }, {
+          "id" : "TRUCK:T2",
+          "type" : "TRUCK",
+          "resourceId" : "T2",
+          "features" : {
+            "arrivalSec" : -1.0,
+            "capacityKg" : 1000.0,
+            "deadlineSec" : 981.0,
+            "departureSec" : -0.0,
+            "directTravelRisk" : 0.0,
+            "etaKnown" : false,
+            "etaSec" : 755.4550037729325,
+            "loadKg" : 499.0,
+            "name" : "Simulated freight 2",
+            "remainingDistanceM" : 6561.022653000002,
+            "status" : "SCHEDULED"
+          },
+          "provenance" : "SIMULATED"
+        }, {
+          "id" : "TRUCK:T3",
+          "type" : "TRUCK",
+          "resourceId" : "T3",
+          "features" : {
+            "arrivalSec" : -1.0,
+            "capacityKg" : 1000.0,
+            "deadlineSec" : 983.7,
+            "departureSec" : 75.0,
+            "directTravelRisk" : 2.2737367544323206E-16,
+            "etaKnown" : true,
+            "etaSec" : 758.1767730810814,
+            "loadKg" : 408.0,
+            "name" : "Simulated freight 3",
+            "remainingDistanceM" : 6291.399894999997,
+            "status" : "SCHEDULED"
+          },
+          "provenance" : "SIMULATED"
+        }, {
+          "id" : "TRUCK:T4",
+          "type" : "TRUCK",
+          "resourceId" : "T4",
+          "features" : {
+            "arrivalSec" : -1.0,
+            "capacityKg" : 1000.0,
+            "deadlineSec" : 1046.1,
+            "departureSec" : 62.9,
+            "directTravelRisk" : 0.0,
+            "etaKnown" : false,
+            "etaSec" : 820.5386205714286,
+            "loadKg" : 416.0,
+            "name" : "Simulated freight 4",
+            "remainingDistanceM" : 6561.022653000002,
+            "status" : "SCHEDULED"
+          },
+          "provenance" : "SIMULATED"
+        }, {
+          "id" : "TRUCK:T5",
+          "type" : "TRUCK",
+          "resourceId" : "T5",
+          "features" : {
+            "arrivalSec" : -1.0,
+            "capacityKg" : 1000.0,
+            "deadlineSec" : 1058.6,
+            "departureSec" : 142.3,
+            "directTravelRisk" : 0.0,
+            "etaKnown" : true,
+            "etaSec" : 833.0138347142858,
+            "loadKg" : 328.0,
+            "name" : "Simulated freight 5",
+            "remainingDistanceM" : 6050.295653999998,
+            "status" : "SCHEDULED"
+          },
+          "provenance" : "SIMULATED"
+        }, {
+          "id" : "TRUCK:T6",
+          "type" : "TRUCK",
+          "resourceId" : "T6",
+          "features" : {
+            "arrivalSec" : -1.0,
+            "capacityKg" : 1000.0,
+            "deadlineSec" : 1152.3,
+            "departureSec" : 137.5,
+            "directTravelRisk" : 0.0,
+            "etaKnown" : false,
+            "etaSec" : 926.7079249163638,
+            "loadKg" : 322.0,
+            "name" : "Simulated freight 6",
+            "remainingDistanceM" : 6561.022653000002,
+            "status" : "SCHEDULED"
+          },
+          "provenance" : "SIMULATED"
+        }, {
+          "id" : "TRUCK:T7",
+          "type" : "TRUCK",
+          "resourceId" : "T7",
+          "features" : {
+            "arrivalSec" : -1.0,
+            "capacityKg" : 1000.0,
+            "deadlineSec" : 1149.2,
+            "departureSec" : 207.1,
+            "directTravelRisk" : 0.0,
+            "etaKnown" : true,
+            "etaSec" : 897.813834714286,
+            "loadKg" : 348.0,
+            "name" : "Simulated freight 7",
+            "remainingDistanceM" : 6050.295653999998,
+            "status" : "SCHEDULED"
+          },
+          "provenance" : "SIMULATED"
+        }, {
+          "id" : "WAREHOUSE:W1",
+          "type" : "WAREHOUSE",
+          "resourceId" : "W1",
+          "features" : {
+            "dockCapacity" : 2,
+            "latitude" : 13.0789961,
+            "longitude" : 80.2749303,
+            "name" : "Simulated benchmark warehouse 1",
+            "roadNodeId" : 2241833897
+          },
+          "provenance" : "SIMULATED"
+        }, {
+          "id" : "WAREHOUSE:W2",
+          "type" : "WAREHOUSE",
+          "resourceId" : "W2",
+          "features" : {
+            "dockCapacity" : 2,
+            "latitude" : 13.0489726,
+            "longitude" : 80.2761514,
+            "name" : "Simulated benchmark warehouse 2",
+            "roadNodeId" : 262666325
+          },
+          "provenance" : "SIMULATED"
+        } ],
+        "edges" : [ {
+          "id" : "DELIVERY:L1->WAREHOUSE:W1|DELIVERY_TO_WAREHOUSE|L1",
+          "source" : "DELIVERY:L1",
+          "target" : "WAREHOUSE:W1",
+          "type" : "DELIVERY_TO_WAREHOUSE",
+          "validFromSec" : 0.0,
+          "validUntilSec" : 172800.0,
+          "weight" : 0.7,
+          "features" : {
+            "meaning" : "delivery lateness affects its configured destination warehouse",
+            "weightSource" : "DOCUMENTED_RULE_BASELINE"
+          },
+          "provenance" : "SIMULATED"
+        }, {
+          "id" : "DELIVERY:L2->WAREHOUSE:W2|DELIVERY_TO_WAREHOUSE|L2",
+          "source" : "DELIVERY:L2",
+          "target" : "WAREHOUSE:W2",
+          "type" : "DELIVERY_TO_WAREHOUSE",
+          "validFromSec" : 0.0,
+          "validUntilSec" : 172800.0,
+          "weight" : 0.7,
+          "features" : {
+            "meaning" : "delivery lateness affects its configured destination warehouse",
+            "weightSource" : "DOCUMENTED_RULE_BASELINE"
+          },
+          "provenance" : "SIMULATED"
+        }, {
+          "id" : "DELIVERY:L3->WAREHOUSE:W1|DELIVERY_TO_WAREHOUSE|L3",
+          "source" : "DELIVERY:L3",
+          "target" : "WAREHOUSE:W1",
+          "type" : "DELIVERY_TO_WAREHOUSE",
+          "validFromSec" : 0.0,
+          "validUntilSec" : 172800.0,
+          "weight" : 0.7,
+          "features" : {
+            "meaning" : "delivery lateness affects its configured destination warehouse",
+            "weightSource" : "DOCUMENTED_RULE_BASELINE"
+          },
+          "provenance" : "SIMULATED"
+        }, {
+          "id" : "DELIVERY:L4->WAREHOUSE:W2|DELIVERY_TO_WAREHOUSE|L4",
+          "source" : "DELIVERY:L4",
+          "target" : "WAREHOUSE:W2",
+          "type" : "DELIVERY_TO_WAREHOUSE",
+          "validFromSec" : 0.0,
+          "validUntilSec" : 172800.0,
+          "weight" : 0.7,
+          "features" : {
+            "meaning" : "delivery lateness affects its configured destination warehouse",
+            "weightSource" : "DOCUMENTED_RULE_BASELINE"
+          },
+          "provenance" : "SIMULATED"
+        }, {
+          "id" : "DELIVERY:L5->WAREHOUSE:W1|DELIVERY_TO_WAREHOUSE|L5",
+          "source" : "DELIVERY:L5",
+          "target" : "WAREHOUSE:W1",
+          "type" : "DELIVERY_TO_WAREHOUSE",
+          "validFromSec" : 0.0,
+          "validUntilSec" : 172800.0,
+          "weight" : 0.7,
+          "features" : {
+            "meaning" : "delivery lateness affects its configured destination warehouse",
+            "weightSource" : "DOCUMENTED_RULE_BASELINE"
+          },
+          "provenance" : "SIMULATED"
+        }, {
+          "id" : "DELIVERY:L6->WAREHOUSE:W2|DELIVERY_TO_WAREHOUSE|L6",
+          "source" : "DELIVERY:L6",
+          "target" : "WAREHOUSE:W2",
+          "type" : "DELIVERY_TO_WAREHOUSE",
+          "validFromSec" : 0.0,
+          "validUntilSec" : 172800.0,
+          "weight" : 0.7,
+          "features" : {
+            "meaning" : "delivery lateness affects its configured destination warehouse",
+            "weightSource" : "DOCUMENTED_RULE_BASELINE"
+          },
+          "provenance" : "SIMULATED"
+        }, {
+          "id" : "DELIVERY:L7->WAREHOUSE:W1|DELIVERY_TO_WAREHOUSE|L7",
+          "source" : "DELIVERY:L7",
+          "target" : "WAREHOUSE:W1",
+          "type" : "DELIVERY_TO_WAREHOUSE",
+          "validFromSec" : 0.0,
+          "validUntilSec" : 172800.0,
+          "weight" : 0.7,
+          "features" : {
+            "meaning" : "delivery lateness affects its configured destination warehouse",
+            "weightSource" : "DOCUMENTED_RULE_BASELINE"
+          },
+          "provenance" : "SIMULATED"
+        }, {
+          "id" : "DOCK:D1_1->WAREHOUSE:W1|DOCK_AT_WAREHOUSE|D1_1",
+          "source" : "DOCK:D1_1",
+          "target" : "WAREHOUSE:W1",
+          "type" : "DOCK_AT_WAREHOUSE",
+          "validFromSec" : 0.0,
+          "validUntilSec" : 14400.0,
+          "weight" : 0.75,
+          "features" : {
+            "meaning" : "dock service exposure contributes to its configured warehouse",
+            "weightSource" : "DOCUMENTED_RULE_BASELINE"
+          },
+          "provenance" : "SIMULATED"
+        }, {
+          "id" : "DOCK:D1_2->WAREHOUSE:W1|DOCK_AT_WAREHOUSE|D1_2",
+          "source" : "DOCK:D1_2",
+          "target" : "WAREHOUSE:W1",
+          "type" : "DOCK_AT_WAREHOUSE",
+          "validFromSec" : 0.0,
+          "validUntilSec" : 14400.0,
+          "weight" : 0.75,
+          "features" : {
+            "meaning" : "dock service exposure contributes to its configured warehouse",
+            "weightSource" : "DOCUMENTED_RULE_BASELINE"
+          },
+          "provenance" : "SIMULATED"
+        }, {
+          "id" : "DOCK:D2_1->WAREHOUSE:W2|DOCK_AT_WAREHOUSE|D2_1",
+          "source" : "DOCK:D2_1",
+          "target" : "WAREHOUSE:W2",
+          "type" : "DOCK_AT_WAREHOUSE",
+          "validFromSec" : 0.0,
+          "validUntilSec" : 14400.0,
+          "weight" : 0.75,
+          "features" : {
+            "meaning" : "dock service exposure contributes to its configured warehouse",
+            "weightSource" : "DOCUMENTED_RULE_BASELINE"
+          },
+          "provenance" : "SIMULATED"
+        }, {
+          "id" : "DOCK:D2_2->WAREHOUSE:W2|DOCK_AT_WAREHOUSE|D2_2",
+          "source" : "DOCK:D2_2",
+          "target" : "WAREHOUSE:W2",
+          "type" : "DOCK_AT_WAREHOUSE",
+          "validFromSec" : 0.0,
+          "validUntilSec" : 14400.0,
+          "weight" : 0.75,
+          "features" : {
+            "meaning" : "dock service exposure contributes to its configured warehouse",
+            "weightSource" : "DOCUMENTED_RULE_BASELINE"
+          },
+          "provenance" : "SIMULATED"
+        }, {
+          "id" : "DRIVER:DR1->TRUCK:T1|DRIVER_UNAVAILABLE|DRIVER_UNAVAILABLE:DRIVER:DR1:T1",
+          "source" : "DRIVER:DR1",
+          "target" : "TRUCK:T1",
+          "type" : "DRIVER_UNAVAILABLE",
+          "validFromSec" : 0.0,
+          "validUntilSec" : 14400.0,
+          "weight" : 0.5,
+          "features" : {
+            "delaySec" : 0.0,
+            "impactId" : "DRIVER_UNAVAILABLE:DRIVER:DR1:T1",
+            "meaning" : "DR1 is unavailable; T1 cannot enter another road edge. Dispatch ETA is unknown.",
+            "predicted" : true,
+            "resourceIds" : [ "DRIVER:DR1" ],
+            "weightSource" : "DOCUMENTED_RULE_BASELINE"
+          },
+          "provenance" : "SIMULATED"
+        }, {
+          "id" : "DRIVER:DR2->TRUCK:T2|DRIVER_UNAVAILABLE|DRIVER_UNAVAILABLE:DRIVER:DR2:T2",
+          "source" : "DRIVER:DR2",
+          "target" : "TRUCK:T2",
+          "type" : "DRIVER_UNAVAILABLE",
+          "validFromSec" : 0.0,
+          "validUntilSec" : 14400.0,
+          "weight" : 0.5,
+          "features" : {
+            "delaySec" : 0.0,
+            "impactId" : "DRIVER_UNAVAILABLE:DRIVER:DR2:T2",
+            "meaning" : "DR2 is unavailable; T2 cannot enter another road edge. Dispatch ETA is unknown.",
+            "predicted" : true,
+            "resourceIds" : [ "DRIVER:DR2" ],
+            "weightSource" : "DOCUMENTED_RULE_BASELINE"
+          },
+          "provenance" : "SIMULATED"
+        }, {
+          "id" : "DRIVER:DR4->TRUCK:T4|DRIVER_UNAVAILABLE|DRIVER_UNAVAILABLE:DRIVER:DR4:T4",
+          "source" : "DRIVER:DR4",
+          "target" : "TRUCK:T4",
+          "type" : "DRIVER_UNAVAILABLE",
+          "validFromSec" : 0.0,
+          "validUntilSec" : 14400.0,
+          "weight" : 0.5,
+          "features" : {
+            "delaySec" : 0.0,
+            "impactId" : "DRIVER_UNAVAILABLE:DRIVER:DR4:T4",
+            "meaning" : "DR4 is unavailable; T4 cannot enter another road edge. Dispatch ETA is unknown.",
+            "predicted" : true,
+            "resourceIds" : [ "DRIVER:DR4" ],
+            "weightSource" : "DOCUMENTED_RULE_BASELINE"
+          },
+          "provenance" : "SIMULATED"
+        }, {
+          "id" : "DRIVER:DR6->TRUCK:T6|DRIVER_UNAVAILABLE|DRIVER_UNAVAILABLE:DRIVER:DR6:T6",
+          "source" : "DRIVER:DR6",
+          "target" : "TRUCK:T6",
+          "type" : "DRIVER_UNAVAILABLE",
+          "validFromSec" : 0.0,
+          "validUntilSec" : 14400.0,
+          "weight" : 0.5,
+          "features" : {
+            "delaySec" : 0.0,
+            "impactId" : "DRIVER_UNAVAILABLE:DRIVER:DR6:T6",
+            "meaning" : "DR6 is unavailable; T6 cannot enter another road edge. Dispatch ETA is unknown.",
+            "predicted" : true,
+            "resourceIds" : [ "DRIVER:DR6" ],
+            "weightSource" : "DOCUMENTED_RULE_BASELINE"
+          },
+          "provenance" : "SIMULATED"
+        }, {
+          "id" : "TRUCK:T1->DELIVERY:L1|CARRIES_DELIVERY|T1",
+          "source" : "TRUCK:T1",
+          "target" : "DELIVERY:L1",
+          "type" : "CARRIES_DELIVERY",
+          "validFromSec" : 0.0,
+          "validUntilSec" : 828.1,
+          "weight" : 0.95,
+          "features" : {
+            "assignmentStatus" : "PLANNED",
+            "meaning" : "delay of truck can affect its assigned resource",
+            "predictedDockEndSec" : -1.0,
+            "predictedDockStartSec" : -1.0,
+            "reservationEndSec" : 828.1,
+            "reservationStartSec" : 662.6,
+            "weightSource" : "DOCUMENTED_RULE_BASELINE"
+          },
+          "provenance" : "SIMULATED"
+        }, {
+          "id" : "TRUCK:T1->DOCK:D1_1|RESERVED_DOCK|T1",
+          "source" : "TRUCK:T1",
+          "target" : "DOCK:D1_1",
+          "type" : "RESERVED_DOCK",
+          "validFromSec" : 0.0,
+          "validUntilSec" : 828.1,
+          "weight" : 0.9,
+          "features" : {
+            "assignmentStatus" : "PLANNED",
+            "meaning" : "delay of truck can affect its assigned resource",
+            "predictedDockEndSec" : -1.0,
+            "predictedDockStartSec" : -1.0,
+            "reservationEndSec" : 828.1,
+            "reservationStartSec" : 662.6,
+            "weightSource" : "DOCUMENTED_RULE_BASELINE"
+          },
+          "provenance" : "SIMULATED"
+        }, {
+          "id" : "TRUCK:T1->DRIVER:DR1|ASSIGNED_DRIVER|T1",
+          "source" : "TRUCK:T1",
+          "target" : "DRIVER:DR1",
+          "type" : "ASSIGNED_DRIVER",
+          "validFromSec" : 0.0,
+          "validUntilSec" : 14400.0,
+          "weight" : 0.8,
+          "features" : {
+            "assignmentStatus" : "PLANNED",
+            "meaning" : "delay of truck can affect its assigned resource",
+            "predictedDockEndSec" : -1.0,
+            "predictedDockStartSec" : -1.0,
+            "reservationEndSec" : 828.1,
+            "reservationStartSec" : 662.6,
+            "weightSource" : "DOCUMENTED_RULE_BASELINE"
+          },
+          "provenance" : "SIMULATED"
+        }, {
+          "id" : "TRUCK:T2->DELIVERY:L2|CARRIES_DELIVERY|T2",
+          "source" : "TRUCK:T2",
+          "target" : "DELIVERY:L2",
+          "type" : "CARRIES_DELIVERY",
+          "validFromSec" : 0.0,
+          "validUntilSec" : 921.0,
+          "weight" : 0.95,
+          "features" : {
+            "assignmentStatus" : "PLANNED",
+            "meaning" : "delay of truck can affect its assigned resource",
+            "predictedDockEndSec" : -1.0,
+            "predictedDockStartSec" : -1.0,
+            "reservationEndSec" : 921.0,
+            "reservationStartSec" : 755.5,
+            "weightSource" : "DOCUMENTED_RULE_BASELINE"
+          },
+          "provenance" : "SIMULATED"
+        }, {
+          "id" : "TRUCK:T2->DOCK:D2_1|RESERVED_DOCK|T2",
+          "source" : "TRUCK:T2",
+          "target" : "DOCK:D2_1",
+          "type" : "RESERVED_DOCK",
+          "validFromSec" : 0.0,
+          "validUntilSec" : 921.0,
+          "weight" : 0.9,
+          "features" : {
+            "assignmentStatus" : "PLANNED",
+            "meaning" : "delay of truck can affect its assigned resource",
+            "predictedDockEndSec" : -1.0,
+            "predictedDockStartSec" : -1.0,
+            "reservationEndSec" : 921.0,
+            "reservationStartSec" : 755.5,
+            "weightSource" : "DOCUMENTED_RULE_BASELINE"
+          },
+          "provenance" : "SIMULATED"
+        }, {
+          "id" : "TRUCK:T2->DRIVER:DR2|ASSIGNED_DRIVER|T2",
+          "source" : "TRUCK:T2",
+          "target" : "DRIVER:DR2",
+          "type" : "ASSIGNED_DRIVER",
+          "validFromSec" : 0.0,
+          "validUntilSec" : 14400.0,
+          "weight" : 0.8,
+          "features" : {
+            "assignmentStatus" : "PLANNED",
+            "meaning" : "delay of truck can affect its assigned resource",
+            "predictedDockEndSec" : -1.0,
+            "predictedDockStartSec" : -1.0,
+            "reservationEndSec" : 921.0,
+            "reservationStartSec" : 755.5,
+            "weightSource" : "DOCUMENTED_RULE_BASELINE"
+          },
+          "provenance" : "SIMULATED"
+        }, {
+          "id" : "TRUCK:T3->DELIVERY:L3|CARRIES_DELIVERY|T3",
+          "source" : "TRUCK:T3",
+          "target" : "DELIVERY:L3",
+          "type" : "CARRIES_DELIVERY",
+          "validFromSec" : 75.0,
+          "validUntilSec" : 923.7,
+          "weight" : 0.95,
+          "features" : {
+            "assignmentStatus" : "PLANNED",
+            "meaning" : "delay of truck can affect its assigned resource",
+            "predictedDockEndSec" : 923.7,
+            "predictedDockStartSec" : 758.2,
+            "reservationEndSec" : 923.7,
+            "reservationStartSec" : 758.2,
+            "weightSource" : "DOCUMENTED_RULE_BASELINE"
+          },
+          "provenance" : "SIMULATED"
+        }, {
+          "id" : "TRUCK:T3->DOCK:D1_2|RESERVED_DOCK|T3",
+          "source" : "TRUCK:T3",
+          "target" : "DOCK:D1_2",
+          "type" : "RESERVED_DOCK",
+          "validFromSec" : 75.0,
+          "validUntilSec" : 923.7,
+          "weight" : 0.9,
+          "features" : {
+            "assignmentStatus" : "PLANNED",
+            "meaning" : "delay of truck can affect its assigned resource",
+            "predictedDockEndSec" : 923.7,
+            "predictedDockStartSec" : 758.2,
+            "reservationEndSec" : 923.7,
+            "reservationStartSec" : 758.2,
+            "weightSource" : "DOCUMENTED_RULE_BASELINE"
+          },
+          "provenance" : "SIMULATED"
+        }, {
+          "id" : "TRUCK:T3->DRIVER:DR3|ASSIGNED_DRIVER|T3",
+          "source" : "TRUCK:T3",
+          "target" : "DRIVER:DR3",
+          "type" : "ASSIGNED_DRIVER",
+          "validFromSec" : 75.0,
+          "validUntilSec" : 758.1767730810814,
+          "weight" : 0.8,
+          "features" : {
+            "assignmentStatus" : "PLANNED",
+            "meaning" : "delay of truck can affect its assigned resource",
+            "predictedDockEndSec" : 923.7,
+            "predictedDockStartSec" : 758.2,
+            "reservationEndSec" : 923.7,
+            "reservationStartSec" : 758.2,
+            "weightSource" : "DOCUMENTED_RULE_BASELINE"
+          },
+          "provenance" : "SIMULATED"
+        }, {
+          "id" : "TRUCK:T4->DELIVERY:L4|CARRIES_DELIVERY|T4",
+          "source" : "TRUCK:T4",
+          "target" : "DELIVERY:L4",
+          "type" : "CARRIES_DELIVERY",
+          "validFromSec" : 62.9,
+          "validUntilSec" : 986.1,
+          "weight" : 0.95,
+          "features" : {
+            "assignmentStatus" : "PLANNED",
+            "meaning" : "delay of truck can affect its assigned resource",
+            "predictedDockEndSec" : -1.0,
+            "predictedDockStartSec" : -1.0,
+            "reservationEndSec" : 986.1,
+            "reservationStartSec" : 820.6,
+            "weightSource" : "DOCUMENTED_RULE_BASELINE"
+          },
+          "provenance" : "SIMULATED"
+        }, {
+          "id" : "TRUCK:T4->DOCK:D2_2|RESERVED_DOCK|T4",
+          "source" : "TRUCK:T4",
+          "target" : "DOCK:D2_2",
+          "type" : "RESERVED_DOCK",
+          "validFromSec" : 62.9,
+          "validUntilSec" : 986.1,
+          "weight" : 0.9,
+          "features" : {
+            "assignmentStatus" : "PLANNED",
+            "meaning" : "delay of truck can affect its assigned resource",
+            "predictedDockEndSec" : -1.0,
+            "predictedDockStartSec" : -1.0,
+            "reservationEndSec" : 986.1,
+            "reservationStartSec" : 820.6,
+            "weightSource" : "DOCUMENTED_RULE_BASELINE"
+          },
+          "provenance" : "SIMULATED"
+        }, {
+          "id" : "TRUCK:T4->DRIVER:DR4|ASSIGNED_DRIVER|T4",
+          "source" : "TRUCK:T4",
+          "target" : "DRIVER:DR4",
+          "type" : "ASSIGNED_DRIVER",
+          "validFromSec" : 62.9,
+          "validUntilSec" : 14400.0,
+          "weight" : 0.8,
+          "features" : {
+            "assignmentStatus" : "PLANNED",
+            "meaning" : "delay of truck can affect its assigned resource",
+            "predictedDockEndSec" : -1.0,
+            "predictedDockStartSec" : -1.0,
+            "reservationEndSec" : 986.1,
+            "reservationStartSec" : 820.6,
+            "weightSource" : "DOCUMENTED_RULE_BASELINE"
+          },
+          "provenance" : "SIMULATED"
+        }, {
+          "id" : "TRUCK:T5->DELIVERY:L5|CARRIES_DELIVERY|T5",
+          "source" : "TRUCK:T5",
+          "target" : "DELIVERY:L5",
+          "type" : "CARRIES_DELIVERY",
+          "validFromSec" : 142.3,
+          "validUntilSec" : 998.6,
+          "weight" : 0.95,
+          "features" : {
+            "assignmentStatus" : "PLANNED",
+            "meaning" : "delay of truck can affect its assigned resource",
+            "predictedDockEndSec" : 998.6,
+            "predictedDockStartSec" : 833.1,
+            "reservationEndSec" : 998.6,
+            "reservationStartSec" : 833.1,
+            "weightSource" : "DOCUMENTED_RULE_BASELINE"
+          },
+          "provenance" : "SIMULATED"
+        }, {
+          "id" : "TRUCK:T5->DOCK:D1_1|RESERVED_DOCK|T5",
+          "source" : "TRUCK:T5",
+          "target" : "DOCK:D1_1",
+          "type" : "RESERVED_DOCK",
+          "validFromSec" : 142.3,
+          "validUntilSec" : 998.6,
+          "weight" : 0.9,
+          "features" : {
+            "assignmentStatus" : "PLANNED",
+            "meaning" : "delay of truck can affect its assigned resource",
+            "predictedDockEndSec" : 998.6,
+            "predictedDockStartSec" : 833.1,
+            "reservationEndSec" : 998.6,
+            "reservationStartSec" : 833.1,
+            "weightSource" : "DOCUMENTED_RULE_BASELINE"
+          },
+          "provenance" : "SIMULATED"
+        }, {
+          "id" : "TRUCK:T5->DRIVER:DR5|ASSIGNED_DRIVER|T5",
+          "source" : "TRUCK:T5",
+          "target" : "DRIVER:DR5",
+          "type" : "ASSIGNED_DRIVER",
+          "validFromSec" : 142.3,
+          "validUntilSec" : 833.0138347142858,
+          "weight" : 0.8,
+          "features" : {
+            "assignmentStatus" : "PLANNED",
+            "meaning" : "delay of truck can affect its assigned resource",
+            "predictedDockEndSec" : 998.6,
+            "predictedDockStartSec" : 833.1,
+            "reservationEndSec" : 998.6,
+            "reservationStartSec" : 833.1,
+            "weightSource" : "DOCUMENTED_RULE_BASELINE"
+          },
+          "provenance" : "SIMULATED"
+        }, {
+          "id" : "TRUCK:T6->DELIVERY:L6|CARRIES_DELIVERY|T6",
+          "source" : "TRUCK:T6",
+          "target" : "DELIVERY:L6",
+          "type" : "CARRIES_DELIVERY",
+          "validFromSec" : 137.5,
+          "validUntilSec" : 1092.3,
+          "weight" : 0.95,
+          "features" : {
+            "assignmentStatus" : "PLANNED",
+            "meaning" : "delay of truck can affect its assigned resource",
+            "predictedDockEndSec" : -1.0,
+            "predictedDockStartSec" : -1.0,
+            "reservationEndSec" : 1092.3,
+            "reservationStartSec" : 926.8,
+            "weightSource" : "DOCUMENTED_RULE_BASELINE"
+          },
+          "provenance" : "SIMULATED"
+        }, {
+          "id" : "TRUCK:T6->DOCK:D2_1|RESERVED_DOCK|T6",
+          "source" : "TRUCK:T6",
+          "target" : "DOCK:D2_1",
+          "type" : "RESERVED_DOCK",
+          "validFromSec" : 137.5,
+          "validUntilSec" : 1092.3,
+          "weight" : 0.9,
+          "features" : {
+            "assignmentStatus" : "PLANNED",
+            "meaning" : "delay of truck can affect its assigned resource",
+            "predictedDockEndSec" : -1.0,
+            "predictedDockStartSec" : -1.0,
+            "reservationEndSec" : 1092.3,
+            "reservationStartSec" : 926.8,
+            "weightSource" : "DOCUMENTED_RULE_BASELINE"
+          },
+          "provenance" : "SIMULATED"
+        }, {
+          "id" : "TRUCK:T6->DRIVER:DR6|ASSIGNED_DRIVER|T6",
+          "source" : "TRUCK:T6",
+          "target" : "DRIVER:DR6",
+          "type" : "ASSIGNED_DRIVER",
+          "validFromSec" : 137.5,
+          "validUntilSec" : 14400.0,
+          "weight" : 0.8,
+          "features" : {
+            "assignmentStatus" : "PLANNED",
+            "meaning" : "delay of truck can affect its assigned resource",
+            "predictedDockEndSec" : -1.0,
+            "predictedDockStartSec" : -1.0,
+            "reservationEndSec" : 1092.3,
+            "reservationStartSec" : 926.8,
+            "weightSource" : "DOCUMENTED_RULE_BASELINE"
+          },
+          "provenance" : "SIMULATED"
+        }, {
+          "id" : "TRUCK:T7->DELIVERY:L7|CARRIES_DELIVERY|T7",
+          "source" : "TRUCK:T7",
+          "target" : "DELIVERY:L7",
+          "type" : "CARRIES_DELIVERY",
+          "validFromSec" : 207.1,
+          "validUntilSec" : 1089.2,
+          "weight" : 0.95,
+          "features" : {
+            "assignmentStatus" : "PLANNED",
+            "meaning" : "delay of truck can affect its assigned resource",
+            "predictedDockEndSec" : 1089.2,
+            "predictedDockStartSec" : 923.7,
+            "reservationEndSec" : 1089.2,
+            "reservationStartSec" : 923.7,
+            "weightSource" : "DOCUMENTED_RULE_BASELINE"
+          },
+          "provenance" : "SIMULATED"
+        }, {
+          "id" : "TRUCK:T7->DOCK:D1_2|RESERVED_DOCK|T7",
+          "source" : "TRUCK:T7",
+          "target" : "DOCK:D1_2",
+          "type" : "RESERVED_DOCK",
+          "validFromSec" : 207.1,
+          "validUntilSec" : 1089.2,
+          "weight" : 0.9,
+          "features" : {
+            "assignmentStatus" : "PLANNED",
+            "meaning" : "delay of truck can affect its assigned resource",
+            "predictedDockEndSec" : 1089.2,
+            "predictedDockStartSec" : 923.7,
+            "reservationEndSec" : 1089.2,
+            "reservationStartSec" : 923.7,
+            "weightSource" : "DOCUMENTED_RULE_BASELINE"
+          },
+          "provenance" : "SIMULATED"
+        }, {
+          "id" : "TRUCK:T7->DRIVER:DR7|ASSIGNED_DRIVER|T7",
+          "source" : "TRUCK:T7",
+          "target" : "DRIVER:DR7",
+          "type" : "ASSIGNED_DRIVER",
+          "validFromSec" : 207.1,
+          "validUntilSec" : 897.813834714286,
+          "weight" : 0.8,
+          "features" : {
+            "assignmentStatus" : "PLANNED",
+            "meaning" : "delay of truck can affect its assigned resource",
+            "predictedDockEndSec" : 1089.2,
+            "predictedDockStartSec" : 923.7,
+            "reservationEndSec" : 1089.2,
+            "reservationStartSec" : 923.7,
+            "weightSource" : "DOCUMENTED_RULE_BASELINE"
+          },
+          "provenance" : "SIMULATED"
+        } ],
+        "provenance" : "SIMULATED"
+      },
+      "beforeCascade" : {
+        "provider" : "RULE_BASED_GRAPH_BASELINE",
+        "threshold" : 0.35,
+        "iterations" : 4,
+        "nodeRisks" : [ {
+          "nodeId" : "DELIVERY:L1",
+          "score" : 0.38,
+          "direct" : false,
+          "causeIds" : [ "OPERATIONS:DRIVER_UNAVAILABLE:DRIVER:DR1:T1" ]
+        }, {
+          "nodeId" : "DELIVERY:L2",
+          "score" : 0.38,
+          "direct" : false,
+          "causeIds" : [ "OPERATIONS:DRIVER_UNAVAILABLE:DRIVER:DR2:T2" ]
+        }, {
+          "nodeId" : "DELIVERY:L3",
+          "score" : 0.0,
+          "direct" : false,
+          "causeIds" : [ ]
+        }, {
+          "nodeId" : "DELIVERY:L4",
+          "score" : 0.38,
+          "direct" : false,
+          "causeIds" : [ "OPERATIONS:DRIVER_UNAVAILABLE:DRIVER:DR4:T4" ]
+        }, {
+          "nodeId" : "DELIVERY:L5",
+          "score" : 0.0,
+          "direct" : false,
+          "causeIds" : [ ]
+        }, {
+          "nodeId" : "DELIVERY:L6",
+          "score" : 0.38,
+          "direct" : false,
+          "causeIds" : [ "OPERATIONS:DRIVER_UNAVAILABLE:DRIVER:DR6:T6" ]
+        }, {
+          "nodeId" : "DELIVERY:L7",
+          "score" : 0.0,
+          "direct" : false,
+          "causeIds" : [ ]
+        }, {
+          "nodeId" : "DOCK:D1_1",
+          "score" : 0.3600000000000001,
+          "direct" : false,
+          "causeIds" : [ "OPERATIONS:DRIVER_UNAVAILABLE:DRIVER:DR1:T1" ]
+        }, {
+          "nodeId" : "DOCK:D1_2",
+          "score" : 0.0,
+          "direct" : false,
+          "causeIds" : [ ]
+        }, {
+          "nodeId" : "DOCK:D2_1",
+          "score" : 0.5904000000000001,
+          "direct" : false,
+          "causeIds" : [ "OPERATIONS:DRIVER_UNAVAILABLE:DRIVER:DR2:T2", "OPERATIONS:DRIVER_UNAVAILABLE:DRIVER:DR6:T6" ]
+        }, {
+          "nodeId" : "DOCK:D2_2",
+          "score" : 0.3600000000000001,
+          "direct" : false,
+          "causeIds" : [ "OPERATIONS:DRIVER_UNAVAILABLE:DRIVER:DR4:T4" ]
+        }, {
+          "nodeId" : "DRIVER:DR1",
+          "score" : 0.8,
+          "direct" : true,
+          "causeIds" : [ "OPERATIONS:DRIVER_UNAVAILABLE:DRIVER:DR1:T1" ]
+        }, {
+          "nodeId" : "DRIVER:DR2",
+          "score" : 0.8,
+          "direct" : true,
+          "causeIds" : [ "OPERATIONS:DRIVER_UNAVAILABLE:DRIVER:DR2:T2" ]
+        }, {
+          "nodeId" : "DRIVER:DR3",
+          "score" : 0.0,
+          "direct" : false,
+          "causeIds" : [ ]
+        }, {
+          "nodeId" : "DRIVER:DR4",
+          "score" : 0.8,
+          "direct" : true,
+          "causeIds" : [ "OPERATIONS:DRIVER_UNAVAILABLE:DRIVER:DR4:T4" ]
+        }, {
+          "nodeId" : "DRIVER:DR5",
+          "score" : 0.0,
+          "direct" : false,
+          "causeIds" : [ ]
+        }, {
+          "nodeId" : "DRIVER:DR6",
+          "score" : 0.8,
+          "direct" : true,
+          "causeIds" : [ "OPERATIONS:DRIVER_UNAVAILABLE:DRIVER:DR6:T6" ]
+        }, {
+          "nodeId" : "DRIVER:DR7",
+          "score" : 0.0,
+          "direct" : false,
+          "causeIds" : [ ]
+        }, {
+          "nodeId" : "TRUCK:T1",
+          "score" : 0.4,
+          "direct" : false,
+          "causeIds" : [ "OPERATIONS:DRIVER_UNAVAILABLE:DRIVER:DR1:T1" ]
+        }, {
+          "nodeId" : "TRUCK:T2",
+          "score" : 0.4,
+          "direct" : false,
+          "causeIds" : [ "OPERATIONS:DRIVER_UNAVAILABLE:DRIVER:DR2:T2" ]
+        }, {
+          "nodeId" : "TRUCK:T3",
+          "score" : 0.0,
+          "direct" : false,
+          "causeIds" : [ ]
+        }, {
+          "nodeId" : "TRUCK:T4",
+          "score" : 0.4,
+          "direct" : false,
+          "causeIds" : [ "OPERATIONS:DRIVER_UNAVAILABLE:DRIVER:DR4:T4" ]
+        }, {
+          "nodeId" : "TRUCK:T5",
+          "score" : 0.0,
+          "direct" : false,
+          "causeIds" : [ ]
+        }, {
+          "nodeId" : "TRUCK:T6",
+          "score" : 0.4,
+          "direct" : false,
+          "causeIds" : [ "OPERATIONS:DRIVER_UNAVAILABLE:DRIVER:DR6:T6" ]
+        }, {
+          "nodeId" : "TRUCK:T7",
+          "score" : 0.0,
+          "direct" : false,
+          "causeIds" : [ ]
+        }, {
+          "nodeId" : "WAREHOUSE:W1",
+          "score" : 0.27,
+          "direct" : false,
+          "causeIds" : [ "OPERATIONS:DRIVER_UNAVAILABLE:DRIVER:DR1:T1" ]
+        }, {
+          "nodeId" : "WAREHOUSE:W2",
+          "score" : 0.610983,
+          "direct" : false,
+          "causeIds" : [ "OPERATIONS:DRIVER_UNAVAILABLE:DRIVER:DR2:T2", "OPERATIONS:DRIVER_UNAVAILABLE:DRIVER:DR4:T4", "OPERATIONS:DRIVER_UNAVAILABLE:DRIVER:DR6:T6" ]
+        } ],
+        "affectedNodeIds" : [ "DELIVERY:L1", "DELIVERY:L2", "DELIVERY:L4", "DELIVERY:L6", "DOCK:D1_1", "DOCK:D2_1", "DOCK:D2_2", "DRIVER:DR1", "DRIVER:DR2", "DRIVER:DR4", "DRIVER:DR6", "TRUCK:T1", "TRUCK:T2", "TRUCK:T4", "TRUCK:T6", "WAREHOUSE:W2" ],
+        "affectedEdgeIds" : [ "DELIVERY:L2->WAREHOUSE:W2|DELIVERY_TO_WAREHOUSE|L2", "DELIVERY:L4->WAREHOUSE:W2|DELIVERY_TO_WAREHOUSE|L4", "DELIVERY:L6->WAREHOUSE:W2|DELIVERY_TO_WAREHOUSE|L6", "DOCK:D2_1->WAREHOUSE:W2|DOCK_AT_WAREHOUSE|D2_1", "DOCK:D2_2->WAREHOUSE:W2|DOCK_AT_WAREHOUSE|D2_2", "DRIVER:DR1->TRUCK:T1|DRIVER_UNAVAILABLE|DRIVER_UNAVAILABLE:DRIVER:DR1:T1", "DRIVER:DR2->TRUCK:T2|DRIVER_UNAVAILABLE|DRIVER_UNAVAILABLE:DRIVER:DR2:T2", "DRIVER:DR4->TRUCK:T4|DRIVER_UNAVAILABLE|DRIVER_UNAVAILABLE:DRIVER:DR4:T4", "DRIVER:DR6->TRUCK:T6|DRIVER_UNAVAILABLE|DRIVER_UNAVAILABLE:DRIVER:DR6:T6", "TRUCK:T1->DELIVERY:L1|CARRIES_DELIVERY|T1", "TRUCK:T1->DOCK:D1_1|RESERVED_DOCK|T1", "TRUCK:T1->DRIVER:DR1|ASSIGNED_DRIVER|T1", "TRUCK:T2->DELIVERY:L2|CARRIES_DELIVERY|T2", "TRUCK:T2->DOCK:D2_1|RESERVED_DOCK|T2", "TRUCK:T2->DRIVER:DR2|ASSIGNED_DRIVER|T2", "TRUCK:T4->DELIVERY:L4|CARRIES_DELIVERY|T4", "TRUCK:T4->DOCK:D2_2|RESERVED_DOCK|T4", "TRUCK:T4->DRIVER:DR4|ASSIGNED_DRIVER|T4", "TRUCK:T6->DELIVERY:L6|CARRIES_DELIVERY|T6", "TRUCK:T6->DOCK:D2_1|RESERVED_DOCK|T6", "TRUCK:T6->DRIVER:DR6|ASSIGNED_DRIVER|T6" ],
+        "provenance" : "SIMULATED_PREDICTION"
+      },
+      "afterGraph" : {
+        "schemaVersion" : "cascadeshield.operational-graph/1.0",
+        "clockSec" : 1500.8,
+        "networkId" : "chennai-central-osm-v1",
+        "nodes" : [ {
+          "id" : "DELIVERY:L1",
+          "type" : "DELIVERY",
+          "resourceId" : "L1",
+          "features" : {
+            "deadlineSec" : 888.1,
+            "deliveredAtSec" : 1275.5,
+            "lateSec" : 387.4,
+            "loadKg" : 318.0,
+            "name" : "Simulated delivery 1",
+            "priority" : "HIGH",
+            "status" : "DELIVERED",
+            "truckId" : "T1",
+            "warehouseId" : "W1"
+          },
+          "provenance" : "SIMULATED"
+        }, {
+          "id" : "DELIVERY:L2",
+          "type" : "DELIVERY",
+          "resourceId" : "L2",
+          "features" : {
+            "deadlineSec" : 981.0,
+            "deliveredAtSec" : 1335.3,
+            "lateSec" : 354.29999999999995,
+            "loadKg" : 499.0,
+            "name" : "Simulated delivery 2",
+            "priority" : "NORMAL",
+            "status" : "DELIVERED",
+            "truckId" : "T2",
+            "warehouseId" : "W2"
+          },
+          "provenance" : "SIMULATED"
+        }, {
+          "id" : "DELIVERY:L3",
+          "type" : "DELIVERY",
+          "resourceId" : "L3",
+          "features" : {
+            "deadlineSec" : 983.7,
+            "deliveredAtSec" : 976.0,
+            "lateSec" : 0.0,
+            "loadKg" : 408.0,
+            "name" : "Simulated delivery 3",
+            "priority" : "NORMAL",
+            "status" : "DELIVERED",
+            "truckId" : "T3",
+            "warehouseId" : "W1"
+          },
+          "provenance" : "SIMULATED"
+        }, {
+          "id" : "DELIVERY:L4",
+          "type" : "DELIVERY",
+          "resourceId" : "L4",
+          "features" : {
+            "deadlineSec" : 1046.1,
+            "deliveredAtSec" : 1337.5,
+            "lateSec" : 291.4000000000001,
+            "loadKg" : 416.0,
+            "name" : "Simulated delivery 4",
+            "priority" : "HIGH",
+            "status" : "DELIVERED",
+            "truckId" : "T4",
+            "warehouseId" : "W2"
+          },
+          "provenance" : "SIMULATED"
+        }, {
+          "id" : "DELIVERY:L5",
+          "type" : "DELIVERY",
+          "resourceId" : "L5",
+          "features" : {
+            "deadlineSec" : 1058.6,
+            "deliveredAtSec" : 1110.0,
+            "lateSec" : 51.40000000000009,
+            "loadKg" : 328.0,
+            "name" : "Simulated delivery 5",
+            "priority" : "NORMAL",
+            "status" : "DELIVERED",
+            "truckId" : "T5",
+            "warehouseId" : "W1"
+          },
+          "provenance" : "SIMULATED"
+        }, {
+          "id" : "DELIVERY:L6",
+          "type" : "DELIVERY",
+          "resourceId" : "L6",
+          "features" : {
+            "deadlineSec" : 1152.3,
+            "deliveredAtSec" : 1500.8,
+            "lateSec" : 348.5,
+            "loadKg" : 322.0,
+            "name" : "Simulated delivery 6",
+            "priority" : "NORMAL",
+            "status" : "DELIVERED",
+            "truckId" : "T6",
+            "warehouseId" : "W2"
+          },
+          "provenance" : "SIMULATED"
+        }, {
+          "id" : "DELIVERY:L7",
+          "type" : "DELIVERY",
+          "resourceId" : "L7",
+          "features" : {
+            "deadlineSec" : 1149.2,
+            "deliveredAtSec" : 1141.5,
+            "lateSec" : 0.0,
+            "loadKg" : 348.0,
+            "name" : "Simulated delivery 7",
+            "priority" : "HIGH",
+            "status" : "DELIVERED",
+            "truckId" : "T7",
+            "warehouseId" : "W1"
+          },
+          "provenance" : "SIMULATED"
+        }, {
+          "id" : "DOCK:D1_1",
+          "type" : "DOCK",
+          "resourceId" : "D1_1",
+          "features" : {
+            "name" : "Simulated dock 1",
+            "openFromSec" : 0.0,
+            "openUntilSec" : 14400.0,
+            "serviceSec" : 165.5,
+            "status" : "AVAILABLE",
+            "warehouseId" : "W1"
+          },
+          "provenance" : "SIMULATED"
+        }, {
+          "id" : "DOCK:D1_2",
+          "type" : "DOCK",
+          "resourceId" : "D1_2",
+          "features" : {
+            "name" : "Simulated dock 2",
+            "openFromSec" : 0.0,
+            "openUntilSec" : 14400.0,
+            "serviceSec" : 165.5,
+            "status" : "AVAILABLE",
+            "warehouseId" : "W1"
+          },
+          "provenance" : "SIMULATED"
+        }, {
+          "id" : "DOCK:D2_1",
+          "type" : "DOCK",
+          "resourceId" : "D2_1",
+          "features" : {
+            "name" : "Simulated dock 1",
+            "openFromSec" : 0.0,
+            "openUntilSec" : 14400.0,
+            "serviceSec" : 165.5,
+            "status" : "AVAILABLE",
+            "warehouseId" : "W2"
+          },
+          "provenance" : "SIMULATED"
+        }, {
+          "id" : "DOCK:D2_2",
+          "type" : "DOCK",
+          "resourceId" : "D2_2",
+          "features" : {
+            "name" : "Simulated dock 2",
+            "openFromSec" : 0.0,
+            "openUntilSec" : 14400.0,
+            "serviceSec" : 165.5,
+            "status" : "AVAILABLE",
+            "warehouseId" : "W2"
+          },
+          "provenance" : "SIMULATED"
+        }, {
+          "id" : "DRIVER:DR1",
+          "type" : "DRIVER",
+          "resourceId" : "DR1",
+          "features" : {
+            "available" : true,
+            "dutySec" : 662.4999999999999,
+            "name" : "Simulated driver 1",
+            "shiftEndSec" : 14400.0,
+            "shiftStartSec" : 0.0,
+            "status" : "IDLE"
+          },
+          "provenance" : "SIMULATED"
+        }, {
+          "id" : "DRIVER:DR2",
+          "type" : "DRIVER",
+          "resourceId" : "DR2",
+          "features" : {
+            "available" : true,
+            "dutySec" : 755.4999999999999,
+            "name" : "Simulated driver 2",
+            "shiftEndSec" : 14400.0,
+            "shiftStartSec" : 0.0,
+            "status" : "IDLE"
+          },
+          "provenance" : "SIMULATED"
+        }, {
+          "id" : "DRIVER:DR3",
+          "type" : "DRIVER",
+          "resourceId" : "DR3",
+          "features" : {
+            "available" : true,
+            "dutySec" : 735.5,
+            "name" : "Simulated driver 3",
+            "shiftEndSec" : 14400.0,
+            "shiftStartSec" : 0.0,
+            "status" : "IDLE"
+          },
+          "provenance" : "SIMULATED"
+        }, {
+          "id" : "DRIVER:DR4",
+          "type" : "DRIVER",
+          "resourceId" : "DR4",
+          "features" : {
+            "available" : true,
+            "dutySec" : 757.6,
+            "name" : "Simulated driver 4",
+            "shiftEndSec" : 14400.0,
+            "shiftStartSec" : 0.0,
+            "status" : "IDLE"
+          },
+          "provenance" : "SIMULATED"
+        }, {
+          "id" : "DRIVER:DR5",
+          "type" : "DRIVER",
+          "resourceId" : "DR5",
+          "features" : {
+            "available" : true,
+            "dutySec" : 802.0999999999999,
+            "name" : "Simulated driver 5",
+            "shiftEndSec" : 14400.0,
+            "shiftStartSec" : 0.0,
+            "status" : "IDLE"
+          },
+          "provenance" : "SIMULATED"
+        }, {
+          "id" : "DRIVER:DR6",
+          "type" : "DRIVER",
+          "resourceId" : "DR6",
+          "features" : {
+            "available" : true,
+            "dutySec" : 789.1999999999999,
+            "name" : "Simulated driver 6",
+            "shiftEndSec" : 14400.0,
+            "shiftStartSec" : 0.0,
+            "status" : "IDLE"
+          },
+          "provenance" : "SIMULATED"
+        }, {
+          "id" : "DRIVER:DR7",
+          "type" : "DRIVER",
+          "resourceId" : "DR7",
+          "features" : {
+            "available" : true,
+            "dutySec" : 737.3,
+            "name" : "Simulated driver 7",
+            "shiftEndSec" : 14400.0,
+            "shiftStartSec" : 0.0,
+            "status" : "IDLE"
+          },
+          "provenance" : "SIMULATED"
+        }, {
+          "id" : "TRUCK:T1",
+          "type" : "TRUCK",
+          "resourceId" : "T1",
+          "features" : {
+            "arrivalSec" : 1076.8,
+            "capacityKg" : 1000.0,
+            "deadlineSec" : 888.1,
+            "departureSec" : -0.0,
+            "directTravelRisk" : 0.12579999999999997,
+            "etaKnown" : true,
+            "etaSec" : 1076.8,
+            "loadKg" : 318.0,
+            "name" : "Simulated freight 1",
+            "remainingDistanceM" : 0.0,
+            "status" : "ARRIVED"
+          },
+          "provenance" : "SIMULATED"
+        }, {
+          "id" : "TRUCK:T2",
+          "type" : "TRUCK",
+          "resourceId" : "T2",
+          "features" : {
+            "arrivalSec" : 1169.8,
+            "capacityKg" : 1000.0,
+            "deadlineSec" : 981.0,
+            "departureSec" : -0.0,
+            "directTravelRisk" : 0.12586666666666665,
+            "etaKnown" : true,
+            "etaSec" : 1169.8,
+            "loadKg" : 499.0,
+            "name" : "Simulated freight 2",
+            "remainingDistanceM" : 0.0,
+            "status" : "ARRIVED"
+          },
+          "provenance" : "SIMULATED"
+        }, {
+          "id" : "TRUCK:T3",
+          "type" : "TRUCK",
+          "resourceId" : "T3",
+          "features" : {
+            "arrivalSec" : 810.5,
+            "capacityKg" : 1000.0,
+            "deadlineSec" : 983.7,
+            "departureSec" : 75.0,
+            "directTravelRisk" : 0.0,
+            "etaKnown" : true,
+            "etaSec" : 810.5,
+            "loadKg" : 408.0,
+            "name" : "Simulated freight 3",
+            "remainingDistanceM" : 0.0,
+            "status" : "ARRIVED"
+          },
+          "provenance" : "SIMULATED"
+        }, {
+          "id" : "TRUCK:T4",
+          "type" : "TRUCK",
+          "resourceId" : "T4",
+          "features" : {
+            "arrivalSec" : 1171.9,
+            "capacityKg" : 1000.0,
+            "deadlineSec" : 1046.1,
+            "departureSec" : 62.9,
+            "directTravelRisk" : 0.0838666666666668,
+            "etaKnown" : true,
+            "etaSec" : 1171.9,
+            "loadKg" : 416.0,
+            "name" : "Simulated freight 4",
+            "remainingDistanceM" : 0.0,
+            "status" : "ARRIVED"
+          },
+          "provenance" : "SIMULATED"
+        }, {
+          "id" : "TRUCK:T5",
+          "type" : "TRUCK",
+          "resourceId" : "T5",
+          "features" : {
+            "arrivalSec" : 944.4,
+            "capacityKg" : 1000.0,
+            "deadlineSec" : 1058.6,
+            "departureSec" : 142.3,
+            "directTravelRisk" : 0.0,
+            "etaKnown" : true,
+            "etaSec" : 944.4,
+            "loadKg" : 328.0,
+            "name" : "Simulated freight 5",
+            "remainingDistanceM" : 0.0,
+            "status" : "ARRIVED"
+          },
+          "provenance" : "SIMULATED"
+        }, {
+          "id" : "TRUCK:T6",
+          "type" : "TRUCK",
+          "resourceId" : "T6",
+          "features" : {
+            "arrivalSec" : 1203.5,
+            "capacityKg" : 1000.0,
+            "deadlineSec" : 1152.3,
+            "departureSec" : 137.5,
+            "directTravelRisk" : 0.03413333333333337,
+            "etaKnown" : true,
+            "etaSec" : 1203.5,
+            "loadKg" : 322.0,
+            "name" : "Simulated freight 6",
+            "remainingDistanceM" : 0.0,
+            "status" : "ARRIVED"
+          },
+          "provenance" : "SIMULATED"
+        }, {
+          "id" : "TRUCK:T7",
+          "type" : "TRUCK",
+          "resourceId" : "T7",
+          "features" : {
+            "arrivalSec" : 944.4,
+            "capacityKg" : 1000.0,
+            "deadlineSec" : 1149.2,
+            "departureSec" : 207.1,
+            "directTravelRisk" : 0.0,
+            "etaKnown" : true,
+            "etaSec" : 944.4,
+            "loadKg" : 348.0,
+            "name" : "Simulated freight 7",
+            "remainingDistanceM" : 0.0,
+            "status" : "ARRIVED"
+          },
+          "provenance" : "SIMULATED"
+        }, {
+          "id" : "WAREHOUSE:W1",
+          "type" : "WAREHOUSE",
+          "resourceId" : "W1",
+          "features" : {
+            "dockCapacity" : 2,
+            "latitude" : 13.0789961,
+            "longitude" : 80.2749303,
+            "name" : "Simulated benchmark warehouse 1",
+            "roadNodeId" : 2241833897
+          },
+          "provenance" : "SIMULATED"
+        }, {
+          "id" : "WAREHOUSE:W2",
+          "type" : "WAREHOUSE",
+          "resourceId" : "W2",
+          "features" : {
+            "dockCapacity" : 2,
+            "latitude" : 13.0489726,
+            "longitude" : 80.2761514,
+            "name" : "Simulated benchmark warehouse 2",
+            "roadNodeId" : 262666325
+          },
+          "provenance" : "SIMULATED"
+        } ],
+        "edges" : [ {
+          "id" : "DELIVERY:L1->WAREHOUSE:W1|DELIVERY_TO_WAREHOUSE|L1",
+          "source" : "DELIVERY:L1",
+          "target" : "WAREHOUSE:W1",
+          "type" : "DELIVERY_TO_WAREHOUSE",
+          "validFromSec" : 0.0,
+          "validUntilSec" : 1275.5,
+          "weight" : 0.7,
+          "features" : {
+            "meaning" : "delivery lateness affects its configured destination warehouse",
+            "weightSource" : "DOCUMENTED_RULE_BASELINE"
+          },
+          "provenance" : "SIMULATED"
+        }, {
+          "id" : "DELIVERY:L2->WAREHOUSE:W2|DELIVERY_TO_WAREHOUSE|L2",
+          "source" : "DELIVERY:L2",
+          "target" : "WAREHOUSE:W2",
+          "type" : "DELIVERY_TO_WAREHOUSE",
+          "validFromSec" : 0.0,
+          "validUntilSec" : 1335.3,
+          "weight" : 0.7,
+          "features" : {
+            "meaning" : "delivery lateness affects its configured destination warehouse",
+            "weightSource" : "DOCUMENTED_RULE_BASELINE"
+          },
+          "provenance" : "SIMULATED"
+        }, {
+          "id" : "DELIVERY:L3->WAREHOUSE:W1|DELIVERY_TO_WAREHOUSE|L3",
+          "source" : "DELIVERY:L3",
+          "target" : "WAREHOUSE:W1",
+          "type" : "DELIVERY_TO_WAREHOUSE",
+          "validFromSec" : 0.0,
+          "validUntilSec" : 976.0,
+          "weight" : 0.7,
+          "features" : {
+            "meaning" : "delivery lateness affects its configured destination warehouse",
+            "weightSource" : "DOCUMENTED_RULE_BASELINE"
+          },
+          "provenance" : "SIMULATED"
+        }, {
+          "id" : "DELIVERY:L4->WAREHOUSE:W2|DELIVERY_TO_WAREHOUSE|L4",
+          "source" : "DELIVERY:L4",
+          "target" : "WAREHOUSE:W2",
+          "type" : "DELIVERY_TO_WAREHOUSE",
+          "validFromSec" : 0.0,
+          "validUntilSec" : 1337.5,
+          "weight" : 0.7,
+          "features" : {
+            "meaning" : "delivery lateness affects its configured destination warehouse",
+            "weightSource" : "DOCUMENTED_RULE_BASELINE"
+          },
+          "provenance" : "SIMULATED"
+        }, {
+          "id" : "DELIVERY:L5->WAREHOUSE:W1|DELIVERY_TO_WAREHOUSE|L5",
+          "source" : "DELIVERY:L5",
+          "target" : "WAREHOUSE:W1",
+          "type" : "DELIVERY_TO_WAREHOUSE",
+          "validFromSec" : 0.0,
+          "validUntilSec" : 1110.0,
+          "weight" : 0.7,
+          "features" : {
+            "meaning" : "delivery lateness affects its configured destination warehouse",
+            "weightSource" : "DOCUMENTED_RULE_BASELINE"
+          },
+          "provenance" : "SIMULATED"
+        }, {
+          "id" : "DELIVERY:L6->WAREHOUSE:W2|DELIVERY_TO_WAREHOUSE|L6",
+          "source" : "DELIVERY:L6",
+          "target" : "WAREHOUSE:W2",
+          "type" : "DELIVERY_TO_WAREHOUSE",
+          "validFromSec" : 0.0,
+          "validUntilSec" : 1500.8,
+          "weight" : 0.7,
+          "features" : {
+            "meaning" : "delivery lateness affects its configured destination warehouse",
+            "weightSource" : "DOCUMENTED_RULE_BASELINE"
+          },
+          "provenance" : "SIMULATED"
+        }, {
+          "id" : "DELIVERY:L7->WAREHOUSE:W1|DELIVERY_TO_WAREHOUSE|L7",
+          "source" : "DELIVERY:L7",
+          "target" : "WAREHOUSE:W1",
+          "type" : "DELIVERY_TO_WAREHOUSE",
+          "validFromSec" : 0.0,
+          "validUntilSec" : 1141.5,
+          "weight" : 0.7,
+          "features" : {
+            "meaning" : "delivery lateness affects its configured destination warehouse",
+            "weightSource" : "DOCUMENTED_RULE_BASELINE"
+          },
+          "provenance" : "SIMULATED"
+        }, {
+          "id" : "DOCK:D1_1->WAREHOUSE:W1|DOCK_AT_WAREHOUSE|D1_1",
+          "source" : "DOCK:D1_1",
+          "target" : "WAREHOUSE:W1",
+          "type" : "DOCK_AT_WAREHOUSE",
+          "validFromSec" : 0.0,
+          "validUntilSec" : 14400.0,
+          "weight" : 0.75,
+          "features" : {
+            "meaning" : "dock service exposure contributes to its configured warehouse",
+            "weightSource" : "DOCUMENTED_RULE_BASELINE"
+          },
+          "provenance" : "SIMULATED"
+        }, {
+          "id" : "DOCK:D1_2->WAREHOUSE:W1|DOCK_AT_WAREHOUSE|D1_2",
+          "source" : "DOCK:D1_2",
+          "target" : "WAREHOUSE:W1",
+          "type" : "DOCK_AT_WAREHOUSE",
+          "validFromSec" : 0.0,
+          "validUntilSec" : 14400.0,
+          "weight" : 0.75,
+          "features" : {
+            "meaning" : "dock service exposure contributes to its configured warehouse",
+            "weightSource" : "DOCUMENTED_RULE_BASELINE"
+          },
+          "provenance" : "SIMULATED"
+        }, {
+          "id" : "DOCK:D2_1->WAREHOUSE:W2|DOCK_AT_WAREHOUSE|D2_1",
+          "source" : "DOCK:D2_1",
+          "target" : "WAREHOUSE:W2",
+          "type" : "DOCK_AT_WAREHOUSE",
+          "validFromSec" : 0.0,
+          "validUntilSec" : 14400.0,
+          "weight" : 0.75,
+          "features" : {
+            "meaning" : "dock service exposure contributes to its configured warehouse",
+            "weightSource" : "DOCUMENTED_RULE_BASELINE"
+          },
+          "provenance" : "SIMULATED"
+        }, {
+          "id" : "DOCK:D2_2->WAREHOUSE:W2|DOCK_AT_WAREHOUSE|D2_2",
+          "source" : "DOCK:D2_2",
+          "target" : "WAREHOUSE:W2",
+          "type" : "DOCK_AT_WAREHOUSE",
+          "validFromSec" : 0.0,
+          "validUntilSec" : 14400.0,
+          "weight" : 0.75,
+          "features" : {
+            "meaning" : "dock service exposure contributes to its configured warehouse",
+            "weightSource" : "DOCUMENTED_RULE_BASELINE"
+          },
+          "provenance" : "SIMULATED"
+        }, {
+          "id" : "TRUCK:T1->DELIVERY:L1|CARRIES_DELIVERY|T1",
+          "source" : "TRUCK:T1",
+          "target" : "DELIVERY:L1",
+          "type" : "CARRIES_DELIVERY",
+          "validFromSec" : 0.0,
+          "validUntilSec" : 1275.5,
+          "weight" : 0.95,
+          "features" : {
+            "assignmentStatus" : "COMPLETED",
+            "meaning" : "delay of truck can affect its assigned resource",
+            "predictedDockEndSec" : 1275.5,
+            "predictedDockStartSec" : 1110.0,
+            "reservationEndSec" : 828.1,
+            "reservationStartSec" : 662.6,
+            "weightSource" : "DOCUMENTED_RULE_BASELINE"
+          },
+          "provenance" : "SIMULATED"
+        }, {
+          "id" : "TRUCK:T1->DOCK:D1_1|RESERVED_DOCK|T1",
+          "source" : "TRUCK:T1",
+          "target" : "DOCK:D1_1",
+          "type" : "RESERVED_DOCK",
+          "validFromSec" : 0.0,
+          "validUntilSec" : 1275.5,
+          "weight" : 0.9,
+          "features" : {
+            "assignmentStatus" : "COMPLETED",
+            "meaning" : "delay of truck can affect its assigned resource",
+            "predictedDockEndSec" : 1275.5,
+            "predictedDockStartSec" : 1110.0,
+            "reservationEndSec" : 828.1,
+            "reservationStartSec" : 662.6,
+            "weightSource" : "DOCUMENTED_RULE_BASELINE"
+          },
+          "provenance" : "SIMULATED"
+        }, {
+          "id" : "TRUCK:T1->DRIVER:DR1|ASSIGNED_DRIVER|T1",
+          "source" : "TRUCK:T1",
+          "target" : "DRIVER:DR1",
+          "type" : "ASSIGNED_DRIVER",
+          "validFromSec" : 0.0,
+          "validUntilSec" : 1076.8,
+          "weight" : 0.8,
+          "features" : {
+            "assignmentStatus" : "COMPLETED",
+            "meaning" : "delay of truck can affect its assigned resource",
+            "predictedDockEndSec" : 1275.5,
+            "predictedDockStartSec" : 1110.0,
+            "reservationEndSec" : 828.1,
+            "reservationStartSec" : 662.6,
+            "weightSource" : "DOCUMENTED_RULE_BASELINE"
+          },
+          "provenance" : "SIMULATED"
+        }, {
+          "id" : "TRUCK:T2->DELIVERY:L2|CARRIES_DELIVERY|T2",
+          "source" : "TRUCK:T2",
+          "target" : "DELIVERY:L2",
+          "type" : "CARRIES_DELIVERY",
+          "validFromSec" : 0.0,
+          "validUntilSec" : 1335.3,
+          "weight" : 0.95,
+          "features" : {
+            "assignmentStatus" : "COMPLETED",
+            "meaning" : "delay of truck can affect its assigned resource",
+            "predictedDockEndSec" : 1335.3,
+            "predictedDockStartSec" : 1169.8,
+            "reservationEndSec" : 921.0,
+            "reservationStartSec" : 755.5,
+            "weightSource" : "DOCUMENTED_RULE_BASELINE"
+          },
+          "provenance" : "SIMULATED"
+        }, {
+          "id" : "TRUCK:T2->DOCK:D2_1|RESERVED_DOCK|T2",
+          "source" : "TRUCK:T2",
+          "target" : "DOCK:D2_1",
+          "type" : "RESERVED_DOCK",
+          "validFromSec" : 0.0,
+          "validUntilSec" : 1335.3,
+          "weight" : 0.9,
+          "features" : {
+            "assignmentStatus" : "COMPLETED",
+            "meaning" : "delay of truck can affect its assigned resource",
+            "predictedDockEndSec" : 1335.3,
+            "predictedDockStartSec" : 1169.8,
+            "reservationEndSec" : 921.0,
+            "reservationStartSec" : 755.5,
+            "weightSource" : "DOCUMENTED_RULE_BASELINE"
+          },
+          "provenance" : "SIMULATED"
+        }, {
+          "id" : "TRUCK:T2->DRIVER:DR2|ASSIGNED_DRIVER|T2",
+          "source" : "TRUCK:T2",
+          "target" : "DRIVER:DR2",
+          "type" : "ASSIGNED_DRIVER",
+          "validFromSec" : 0.0,
+          "validUntilSec" : 1169.8,
+          "weight" : 0.8,
+          "features" : {
+            "assignmentStatus" : "COMPLETED",
+            "meaning" : "delay of truck can affect its assigned resource",
+            "predictedDockEndSec" : 1335.3,
+            "predictedDockStartSec" : 1169.8,
+            "reservationEndSec" : 921.0,
+            "reservationStartSec" : 755.5,
+            "weightSource" : "DOCUMENTED_RULE_BASELINE"
+          },
+          "provenance" : "SIMULATED"
+        }, {
+          "id" : "TRUCK:T3->DELIVERY:L3|CARRIES_DELIVERY|T3",
+          "source" : "TRUCK:T3",
+          "target" : "DELIVERY:L3",
+          "type" : "CARRIES_DELIVERY",
+          "validFromSec" : 75.0,
+          "validUntilSec" : 976.0,
+          "weight" : 0.95,
+          "features" : {
+            "assignmentStatus" : "COMPLETED",
+            "meaning" : "delay of truck can affect its assigned resource",
+            "predictedDockEndSec" : 976.0,
+            "predictedDockStartSec" : 810.5,
+            "reservationEndSec" : 923.7,
+            "reservationStartSec" : 758.2,
+            "weightSource" : "DOCUMENTED_RULE_BASELINE"
+          },
+          "provenance" : "SIMULATED"
+        }, {
+          "id" : "TRUCK:T3->DOCK:D1_2|RESERVED_DOCK|T3",
+          "source" : "TRUCK:T3",
+          "target" : "DOCK:D1_2",
+          "type" : "RESERVED_DOCK",
+          "validFromSec" : 75.0,
+          "validUntilSec" : 976.0,
+          "weight" : 0.9,
+          "features" : {
+            "assignmentStatus" : "COMPLETED",
+            "meaning" : "delay of truck can affect its assigned resource",
+            "predictedDockEndSec" : 976.0,
+            "predictedDockStartSec" : 810.5,
+            "reservationEndSec" : 923.7,
+            "reservationStartSec" : 758.2,
+            "weightSource" : "DOCUMENTED_RULE_BASELINE"
+          },
+          "provenance" : "SIMULATED"
+        }, {
+          "id" : "TRUCK:T3->DRIVER:DR3|ASSIGNED_DRIVER|T3",
+          "source" : "TRUCK:T3",
+          "target" : "DRIVER:DR3",
+          "type" : "ASSIGNED_DRIVER",
+          "validFromSec" : 75.0,
+          "validUntilSec" : 810.5,
+          "weight" : 0.8,
+          "features" : {
+            "assignmentStatus" : "COMPLETED",
+            "meaning" : "delay of truck can affect its assigned resource",
+            "predictedDockEndSec" : 976.0,
+            "predictedDockStartSec" : 810.5,
+            "reservationEndSec" : 923.7,
+            "reservationStartSec" : 758.2,
+            "weightSource" : "DOCUMENTED_RULE_BASELINE"
+          },
+          "provenance" : "SIMULATED"
+        }, {
+          "id" : "TRUCK:T4->DELIVERY:L4|CARRIES_DELIVERY|T4",
+          "source" : "TRUCK:T4",
+          "target" : "DELIVERY:L4",
+          "type" : "CARRIES_DELIVERY",
+          "validFromSec" : 62.9,
+          "validUntilSec" : 1337.5,
+          "weight" : 0.95,
+          "features" : {
+            "assignmentStatus" : "COMPLETED",
+            "meaning" : "delay of truck can affect its assigned resource",
+            "predictedDockEndSec" : 1337.5,
+            "predictedDockStartSec" : 1172.0,
+            "reservationEndSec" : 986.1,
+            "reservationStartSec" : 820.6,
+            "weightSource" : "DOCUMENTED_RULE_BASELINE"
+          },
+          "provenance" : "SIMULATED"
+        }, {
+          "id" : "TRUCK:T4->DOCK:D2_2|RESERVED_DOCK|T4",
+          "source" : "TRUCK:T4",
+          "target" : "DOCK:D2_2",
+          "type" : "RESERVED_DOCK",
+          "validFromSec" : 62.9,
+          "validUntilSec" : 1337.5,
+          "weight" : 0.9,
+          "features" : {
+            "assignmentStatus" : "COMPLETED",
+            "meaning" : "delay of truck can affect its assigned resource",
+            "predictedDockEndSec" : 1337.5,
+            "predictedDockStartSec" : 1172.0,
+            "reservationEndSec" : 986.1,
+            "reservationStartSec" : 820.6,
+            "weightSource" : "DOCUMENTED_RULE_BASELINE"
+          },
+          "provenance" : "SIMULATED"
+        }, {
+          "id" : "TRUCK:T4->DRIVER:DR4|ASSIGNED_DRIVER|T4",
+          "source" : "TRUCK:T4",
+          "target" : "DRIVER:DR4",
+          "type" : "ASSIGNED_DRIVER",
+          "validFromSec" : 62.9,
+          "validUntilSec" : 1171.9,
+          "weight" : 0.8,
+          "features" : {
+            "assignmentStatus" : "COMPLETED",
+            "meaning" : "delay of truck can affect its assigned resource",
+            "predictedDockEndSec" : 1337.5,
+            "predictedDockStartSec" : 1172.0,
+            "reservationEndSec" : 986.1,
+            "reservationStartSec" : 820.6,
+            "weightSource" : "DOCUMENTED_RULE_BASELINE"
+          },
+          "provenance" : "SIMULATED"
+        }, {
+          "id" : "TRUCK:T5->DELIVERY:L5|CARRIES_DELIVERY|T5",
+          "source" : "TRUCK:T5",
+          "target" : "DELIVERY:L5",
+          "type" : "CARRIES_DELIVERY",
+          "validFromSec" : 142.3,
+          "validUntilSec" : 1110.0,
+          "weight" : 0.95,
+          "features" : {
+            "assignmentStatus" : "COMPLETED",
+            "meaning" : "delay of truck can affect its assigned resource",
+            "predictedDockEndSec" : 1110.0,
+            "predictedDockStartSec" : 944.5,
+            "reservationEndSec" : 998.6,
+            "reservationStartSec" : 833.1,
+            "weightSource" : "DOCUMENTED_RULE_BASELINE"
+          },
+          "provenance" : "SIMULATED"
+        }, {
+          "id" : "TRUCK:T5->DOCK:D1_1|RESERVED_DOCK|T5",
+          "source" : "TRUCK:T5",
+          "target" : "DOCK:D1_1",
+          "type" : "RESERVED_DOCK",
+          "validFromSec" : 142.3,
+          "validUntilSec" : 1110.0,
+          "weight" : 0.9,
+          "features" : {
+            "assignmentStatus" : "COMPLETED",
+            "meaning" : "delay of truck can affect its assigned resource",
+            "predictedDockEndSec" : 1110.0,
+            "predictedDockStartSec" : 944.5,
+            "reservationEndSec" : 998.6,
+            "reservationStartSec" : 833.1,
+            "weightSource" : "DOCUMENTED_RULE_BASELINE"
+          },
+          "provenance" : "SIMULATED"
+        }, {
+          "id" : "TRUCK:T5->DRIVER:DR5|ASSIGNED_DRIVER|T5",
+          "source" : "TRUCK:T5",
+          "target" : "DRIVER:DR5",
+          "type" : "ASSIGNED_DRIVER",
+          "validFromSec" : 142.3,
+          "validUntilSec" : 944.4,
+          "weight" : 0.8,
+          "features" : {
+            "assignmentStatus" : "COMPLETED",
+            "meaning" : "delay of truck can affect its assigned resource",
+            "predictedDockEndSec" : 1110.0,
+            "predictedDockStartSec" : 944.5,
+            "reservationEndSec" : 998.6,
+            "reservationStartSec" : 833.1,
+            "weightSource" : "DOCUMENTED_RULE_BASELINE"
+          },
+          "provenance" : "SIMULATED"
+        }, {
+          "id" : "TRUCK:T6->DELIVERY:L6|CARRIES_DELIVERY|T6",
+          "source" : "TRUCK:T6",
+          "target" : "DELIVERY:L6",
+          "type" : "CARRIES_DELIVERY",
+          "validFromSec" : 137.5,
+          "validUntilSec" : 1500.8,
+          "weight" : 0.95,
+          "features" : {
+            "assignmentStatus" : "COMPLETED",
+            "meaning" : "delay of truck can affect its assigned resource",
+            "predictedDockEndSec" : 1500.8,
+            "predictedDockStartSec" : 1335.3,
+            "reservationEndSec" : 1092.3,
+            "reservationStartSec" : 926.8,
+            "weightSource" : "DOCUMENTED_RULE_BASELINE"
+          },
+          "provenance" : "SIMULATED"
+        }, {
+          "id" : "TRUCK:T6->DOCK:D2_1|RESERVED_DOCK|T6",
+          "source" : "TRUCK:T6",
+          "target" : "DOCK:D2_1",
+          "type" : "RESERVED_DOCK",
+          "validFromSec" : 137.5,
+          "validUntilSec" : 1500.8,
+          "weight" : 0.9,
+          "features" : {
+            "assignmentStatus" : "COMPLETED",
+            "meaning" : "delay of truck can affect its assigned resource",
+            "predictedDockEndSec" : 1500.8,
+            "predictedDockStartSec" : 1335.3,
+            "reservationEndSec" : 1092.3,
+            "reservationStartSec" : 926.8,
+            "weightSource" : "DOCUMENTED_RULE_BASELINE"
+          },
+          "provenance" : "SIMULATED"
+        }, {
+          "id" : "TRUCK:T6->DRIVER:DR6|ASSIGNED_DRIVER|T6",
+          "source" : "TRUCK:T6",
+          "target" : "DRIVER:DR6",
+          "type" : "ASSIGNED_DRIVER",
+          "validFromSec" : 137.5,
+          "validUntilSec" : 1203.5,
+          "weight" : 0.8,
+          "features" : {
+            "assignmentStatus" : "COMPLETED",
+            "meaning" : "delay of truck can affect its assigned resource",
+            "predictedDockEndSec" : 1500.8,
+            "predictedDockStartSec" : 1335.3,
+            "reservationEndSec" : 1092.3,
+            "reservationStartSec" : 926.8,
+            "weightSource" : "DOCUMENTED_RULE_BASELINE"
+          },
+          "provenance" : "SIMULATED"
+        }, {
+          "id" : "TRUCK:T7->DELIVERY:L7|CARRIES_DELIVERY|T7",
+          "source" : "TRUCK:T7",
+          "target" : "DELIVERY:L7",
+          "type" : "CARRIES_DELIVERY",
+          "validFromSec" : 207.1,
+          "validUntilSec" : 1141.5,
+          "weight" : 0.95,
+          "features" : {
+            "assignmentStatus" : "COMPLETED",
+            "meaning" : "delay of truck can affect its assigned resource",
+            "predictedDockEndSec" : 1141.5,
+            "predictedDockStartSec" : 976.0,
+            "reservationEndSec" : 1089.2,
+            "reservationStartSec" : 923.7,
+            "weightSource" : "DOCUMENTED_RULE_BASELINE"
+          },
+          "provenance" : "SIMULATED"
+        }, {
+          "id" : "TRUCK:T7->DOCK:D1_2|RESERVED_DOCK|T7",
+          "source" : "TRUCK:T7",
+          "target" : "DOCK:D1_2",
+          "type" : "RESERVED_DOCK",
+          "validFromSec" : 207.1,
+          "validUntilSec" : 1141.5,
+          "weight" : 0.9,
+          "features" : {
+            "assignmentStatus" : "COMPLETED",
+            "meaning" : "delay of truck can affect its assigned resource",
+            "predictedDockEndSec" : 1141.5,
+            "predictedDockStartSec" : 976.0,
+            "reservationEndSec" : 1089.2,
+            "reservationStartSec" : 923.7,
+            "weightSource" : "DOCUMENTED_RULE_BASELINE"
+          },
+          "provenance" : "SIMULATED"
+        }, {
+          "id" : "TRUCK:T7->DRIVER:DR7|ASSIGNED_DRIVER|T7",
+          "source" : "TRUCK:T7",
+          "target" : "DRIVER:DR7",
+          "type" : "ASSIGNED_DRIVER",
+          "validFromSec" : 207.1,
+          "validUntilSec" : 944.4,
+          "weight" : 0.8,
+          "features" : {
+            "assignmentStatus" : "COMPLETED",
+            "meaning" : "delay of truck can affect its assigned resource",
+            "predictedDockEndSec" : 1141.5,
+            "predictedDockStartSec" : 976.0,
+            "reservationEndSec" : 1089.2,
+            "reservationStartSec" : 923.7,
+            "weightSource" : "DOCUMENTED_RULE_BASELINE"
+          },
+          "provenance" : "SIMULATED"
+        } ],
+        "provenance" : "SIMULATED"
+      },
+      "afterCascade" : {
+        "provider" : "RULE_BASED_GRAPH_BASELINE",
+        "threshold" : 0.35,
+        "iterations" : 0,
+        "nodeRisks" : [ {
+          "nodeId" : "DELIVERY:L1",
+          "score" : 0.0,
+          "direct" : false,
+          "causeIds" : [ ]
+        }, {
+          "nodeId" : "DELIVERY:L2",
+          "score" : 0.0,
+          "direct" : false,
+          "causeIds" : [ ]
+        }, {
+          "nodeId" : "DELIVERY:L3",
+          "score" : 0.0,
+          "direct" : false,
+          "causeIds" : [ ]
+        }, {
+          "nodeId" : "DELIVERY:L4",
+          "score" : 0.0,
+          "direct" : false,
+          "causeIds" : [ ]
+        }, {
+          "nodeId" : "DELIVERY:L5",
+          "score" : 0.0,
+          "direct" : false,
+          "causeIds" : [ ]
+        }, {
+          "nodeId" : "DELIVERY:L6",
+          "score" : 0.0,
+          "direct" : false,
+          "causeIds" : [ ]
+        }, {
+          "nodeId" : "DELIVERY:L7",
+          "score" : 0.0,
+          "direct" : false,
+          "causeIds" : [ ]
+        }, {
+          "nodeId" : "DOCK:D1_1",
+          "score" : 0.0,
+          "direct" : false,
+          "causeIds" : [ ]
+        }, {
+          "nodeId" : "DOCK:D1_2",
+          "score" : 0.0,
+          "direct" : false,
+          "causeIds" : [ ]
+        }, {
+          "nodeId" : "DOCK:D2_1",
+          "score" : 0.0,
+          "direct" : false,
+          "causeIds" : [ ]
+        }, {
+          "nodeId" : "DOCK:D2_2",
+          "score" : 0.0,
+          "direct" : false,
+          "causeIds" : [ ]
+        }, {
+          "nodeId" : "DRIVER:DR1",
+          "score" : 0.0,
+          "direct" : false,
+          "causeIds" : [ ]
+        }, {
+          "nodeId" : "DRIVER:DR2",
+          "score" : 0.0,
+          "direct" : false,
+          "causeIds" : [ ]
+        }, {
+          "nodeId" : "DRIVER:DR3",
+          "score" : 0.0,
+          "direct" : false,
+          "causeIds" : [ ]
+        }, {
+          "nodeId" : "DRIVER:DR4",
+          "score" : 0.0,
+          "direct" : false,
+          "causeIds" : [ ]
+        }, {
+          "nodeId" : "DRIVER:DR5",
+          "score" : 0.0,
+          "direct" : false,
+          "causeIds" : [ ]
+        }, {
+          "nodeId" : "DRIVER:DR6",
+          "score" : 0.0,
+          "direct" : false,
+          "causeIds" : [ ]
+        }, {
+          "nodeId" : "DRIVER:DR7",
+          "score" : 0.0,
+          "direct" : false,
+          "causeIds" : [ ]
+        }, {
+          "nodeId" : "TRUCK:T1",
+          "score" : 0.0,
+          "direct" : false,
+          "causeIds" : [ ]
+        }, {
+          "nodeId" : "TRUCK:T2",
+          "score" : 0.0,
+          "direct" : false,
+          "causeIds" : [ ]
+        }, {
+          "nodeId" : "TRUCK:T3",
+          "score" : 0.0,
+          "direct" : false,
+          "causeIds" : [ ]
+        }, {
+          "nodeId" : "TRUCK:T4",
+          "score" : 0.0,
+          "direct" : false,
+          "causeIds" : [ ]
+        }, {
+          "nodeId" : "TRUCK:T5",
+          "score" : 0.0,
+          "direct" : false,
+          "causeIds" : [ ]
+        }, {
+          "nodeId" : "TRUCK:T6",
+          "score" : 0.0,
+          "direct" : false,
+          "causeIds" : [ ]
+        }, {
+          "nodeId" : "TRUCK:T7",
+          "score" : 0.0,
+          "direct" : false,
+          "causeIds" : [ ]
+        }, {
+          "nodeId" : "WAREHOUSE:W1",
+          "score" : 0.0,
+          "direct" : false,
+          "causeIds" : [ ]
+        }, {
+          "nodeId" : "WAREHOUSE:W2",
+          "score" : 0.0,
+          "direct" : false,
+          "causeIds" : [ ]
+        } ],
+        "affectedNodeIds" : [ ],
+        "affectedEdgeIds" : [ ],
+        "provenance" : "SIMULATED_PREDICTION"
+      },
+      "beforeGraphPhase" : "FIRST_OBSERVED_DISRUPTION",
+      "afterGraphPhase" : "FINAL_STATE",
+      "initialFingerprint" : "657ba58423c40959d0d63247230271c0266c89ecfd7a5709a0260fd687813938",
+      "finalFingerprint" : "a28e35e763bc788b661f254cbbb9898b969739b4bb9df6f3aa9e3bef8bb79703",
+      "comparisonMode" : "EQUAL_ACTIONS",
+      "complete" : true,
+      "censored" : false,
+      "decisionLimit" : 6,
+      "decisionLimitReached" : true,
+      "constraintRejections" : 0,
+      "constraintAudit" : [ ],
+      "constraintAuditCadenceSec" : 10,
+      "inferenceRequests" : 14,
+      "failedInferenceRequests" : 0,
+      "fallbackDecisions" : 0,
+      "inferenceServiceMs" : 62.89409994496964,
+      "failureReasons" : { },
+      "simulationRolloutCount" : 0,
+      "mlDecisionDetails" : [ {
+        "fallback" : false,
+        "candidateCount" : 2,
+        "clockSec" : 0.0,
+        "requestedModel" : "xgb-v1",
+        "rolloutCount" : 0,
+        "truckId" : "T1",
+        "candidatePredictions" : [ {
+          "calibration" : {
+            "remainingArrivalSec" : {
+              "radiusSec" : 82.48419189453125,
+              "nominalCoverage" : 0.9,
+              "n" : 1564,
+              "status" : "SIMULATION_CALIBRATION_RESIDUAL_INTERVAL",
+              "limitation" : "Repeated snapshots are correlated; this is descriptive simulated-domain uncertainty, not guaranteed field coverage"
+            },
+            "deliveryLate" : {
+              "status" : "PLATT_CALIBRATED_ON_SEPARATE_SIMULATED_SCENARIOS",
+              "coefficient" : 1.29865410254932,
+              "intercept" : 0.47341666083314365,
+              "n" : 1728,
+              "domain" : "SIMULATED_PARAMETERIZED_CHENNAI_OPERATIONS"
+            },
+            "futureImpact" : {
+              "status" : "PLATT_CALIBRATED_ON_SEPARATE_SIMULATED_SCENARIOS",
+              "coefficient" : 1.2393694844119643,
+              "intercept" : 0.2409360100971814,
+              "n" : 1824,
+              "domain" : "SIMULATED_PARAMETERIZED_CHENNAI_OPERATIONS"
+            }
+          },
+          "latencyMs" : 2.602599997771904,
+          "modelVersion" : "milestone4-v1",
+          "predictions" : [ {
+            "truckId" : "T1",
+            "remainingArrivalSec" : 1105.66748046875,
+            "etaLowerSec" : 1023.1832885742188,
+            "etaUpperSec" : 1188.1516723632812,
+            "slaProbability" : 0.9988289762636605,
+            "futureImpactProbability" : 0.9406701822358299
+          }, {
+            "truckId" : "T2",
+            "remainingArrivalSec" : 1155.14599609375,
+            "etaLowerSec" : 1072.6618041992188,
+            "etaUpperSec" : 1237.6301879882812,
+            "slaProbability" : 0.9980285958541182,
+            "futureImpactProbability" : 0.9712219881759454
+          }, {
+            "truckId" : "T3",
+            "remainingArrivalSec" : 940.4739990234375,
+            "etaLowerSec" : 857.9898071289062,
+            "etaUpperSec" : 1022.9581909179688,
+            "slaProbability" : 0.9165835563197439,
+            "futureImpactProbability" : 1.6041622995603623E-4
+          }, {
+            "truckId" : "T4",
+            "remainingArrivalSec" : 1144.1114501953125,
+            "etaLowerSec" : 1061.6272583007812,
+            "etaUpperSec" : 1226.5956420898438,
+            "slaProbability" : 0.9984306703984017,
+            "futureImpactProbability" : 0.9989409976815382
+          }, {
+            "truckId" : "T5",
+            "remainingArrivalSec" : 1011.7891235351562,
+            "etaLowerSec" : 929.304931640625,
+            "etaUpperSec" : 1094.2733154296875,
+            "slaProbability" : 0.9272688025871152,
+            "futureImpactProbability" : 1.472029998658333E-4
+          }, {
+            "truckId" : "T6",
+            "remainingArrivalSec" : 1167.060302734375,
+            "etaLowerSec" : 1084.5761108398438,
+            "etaUpperSec" : 1249.5444946289062,
+            "slaProbability" : 0.9971164991172022,
+            "futureImpactProbability" : 0.9976713022565901
+          }, {
+            "truckId" : "T7",
+            "remainingArrivalSec" : 1025.042236328125,
+            "etaLowerSec" : 942.5580444335938,
+            "etaUpperSec" : 1107.5264282226562,
+            "slaProbability" : 0.9111279195389822,
+            "futureImpactProbability" : 1.472029998658333E-4
+          } ],
+          "actionId" : "47b8ce39-f1f8-3162-8e64-a6a20a6fb23b"
+        }, {
+          "calibration" : {
+            "remainingArrivalSec" : {
+              "radiusSec" : 82.48419189453125,
+              "nominalCoverage" : 0.9,
+              "n" : 1564,
+              "status" : "SIMULATION_CALIBRATION_RESIDUAL_INTERVAL",
+              "limitation" : "Repeated snapshots are correlated; this is descriptive simulated-domain uncertainty, not guaranteed field coverage"
+            },
+            "deliveryLate" : {
+              "status" : "PLATT_CALIBRATED_ON_SEPARATE_SIMULATED_SCENARIOS",
+              "coefficient" : 1.29865410254932,
+              "intercept" : 0.47341666083314365,
+              "n" : 1728,
+              "domain" : "SIMULATED_PARAMETERIZED_CHENNAI_OPERATIONS"
+            },
+            "futureImpact" : {
+              "status" : "PLATT_CALIBRATED_ON_SEPARATE_SIMULATED_SCENARIOS",
+              "coefficient" : 1.2393694844119643,
+              "intercept" : 0.2409360100971814,
+              "n" : 1824,
+              "domain" : "SIMULATED_PARAMETERIZED_CHENNAI_OPERATIONS"
+            }
+          },
+          "latencyMs" : 2.5627999857533723,
+          "modelVersion" : "milestone4-v1",
+          "predictions" : [ {
+            "truckId" : "T1",
+            "remainingArrivalSec" : 1105.66748046875,
+            "etaLowerSec" : 1023.1832885742188,
+            "etaUpperSec" : 1188.1516723632812,
+            "slaProbability" : 0.9988289762636605,
+            "futureImpactProbability" : 0.9406701822358299
+          }, {
+            "truckId" : "T2",
+            "remainingArrivalSec" : 1155.14599609375,
+            "etaLowerSec" : 1072.6618041992188,
+            "etaUpperSec" : 1237.6301879882812,
+            "slaProbability" : 0.9980285958541182,
+            "futureImpactProbability" : 0.9712219881759454
+          }, {
+            "truckId" : "T3",
+            "remainingArrivalSec" : 940.4739990234375,
+            "etaLowerSec" : 857.9898071289062,
+            "etaUpperSec" : 1022.9581909179688,
+            "slaProbability" : 0.9165835563197439,
+            "futureImpactProbability" : 1.6041622995603623E-4
+          }, {
+            "truckId" : "T4",
+            "remainingArrivalSec" : 1144.1114501953125,
+            "etaLowerSec" : 1061.6272583007812,
+            "etaUpperSec" : 1226.5956420898438,
+            "slaProbability" : 0.9984306703984017,
+            "futureImpactProbability" : 0.9989409976815382
+          }, {
+            "truckId" : "T5",
+            "remainingArrivalSec" : 1011.7891235351562,
+            "etaLowerSec" : 929.304931640625,
+            "etaUpperSec" : 1094.2733154296875,
+            "slaProbability" : 0.9272688025871152,
+            "futureImpactProbability" : 1.472029998658333E-4
+          }, {
+            "truckId" : "T6",
+            "remainingArrivalSec" : 1167.060302734375,
+            "etaLowerSec" : 1084.5761108398438,
+            "etaUpperSec" : 1249.5444946289062,
+            "slaProbability" : 0.9971164991172022,
+            "futureImpactProbability" : 0.9976713022565901
+          }, {
+            "truckId" : "T7",
+            "remainingArrivalSec" : 1025.042236328125,
+            "etaLowerSec" : 942.5580444335938,
+            "etaUpperSec" : 1107.5264282226562,
+            "slaProbability" : 0.9111279195389822,
+            "futureImpactProbability" : 1.472029998658333E-4
+          } ],
+          "actionId" : "eace9d3a-a313-39c6-b7b5-81ec31a7cfe4"
+        } ]
+      }, {
+        "fallback" : false,
+        "candidateCount" : 2,
+        "clockSec" : 0.0,
+        "requestedModel" : "xgb-v1",
+        "rolloutCount" : 0,
+        "truckId" : "T2",
+        "candidatePredictions" : [ {
+          "calibration" : {
+            "remainingArrivalSec" : {
+              "radiusSec" : 82.48419189453125,
+              "nominalCoverage" : 0.9,
+              "n" : 1564,
+              "status" : "SIMULATION_CALIBRATION_RESIDUAL_INTERVAL",
+              "limitation" : "Repeated snapshots are correlated; this is descriptive simulated-domain uncertainty, not guaranteed field coverage"
+            },
+            "deliveryLate" : {
+              "status" : "PLATT_CALIBRATED_ON_SEPARATE_SIMULATED_SCENARIOS",
+              "coefficient" : 1.29865410254932,
+              "intercept" : 0.47341666083314365,
+              "n" : 1728,
+              "domain" : "SIMULATED_PARAMETERIZED_CHENNAI_OPERATIONS"
+            },
+            "futureImpact" : {
+              "status" : "PLATT_CALIBRATED_ON_SEPARATE_SIMULATED_SCENARIOS",
+              "coefficient" : 1.2393694844119643,
+              "intercept" : 0.2409360100971814,
+              "n" : 1824,
+              "domain" : "SIMULATED_PARAMETERIZED_CHENNAI_OPERATIONS"
+            }
+          },
+          "latencyMs" : 2.974300005007535,
+          "modelVersion" : "milestone4-v1",
+          "predictions" : [ {
+            "truckId" : "T1",
+            "remainingArrivalSec" : 1105.66748046875,
+            "etaLowerSec" : 1023.1832885742188,
+            "etaUpperSec" : 1188.1516723632812,
+            "slaProbability" : 0.9988289762636605,
+            "futureImpactProbability" : 0.9406701822358299
+          }, {
+            "truckId" : "T2",
+            "remainingArrivalSec" : 1155.14599609375,
+            "etaLowerSec" : 1072.6618041992188,
+            "etaUpperSec" : 1237.6301879882812,
+            "slaProbability" : 0.9980285958541182,
+            "futureImpactProbability" : 0.9712219881759454
+          }, {
+            "truckId" : "T3",
+            "remainingArrivalSec" : 940.4739990234375,
+            "etaLowerSec" : 857.9898071289062,
+            "etaUpperSec" : 1022.9581909179688,
+            "slaProbability" : 0.9165835563197439,
+            "futureImpactProbability" : 1.6041622995603623E-4
+          }, {
+            "truckId" : "T4",
+            "remainingArrivalSec" : 1144.1114501953125,
+            "etaLowerSec" : 1061.6272583007812,
+            "etaUpperSec" : 1226.5956420898438,
+            "slaProbability" : 0.9984306703984017,
+            "futureImpactProbability" : 0.9989409976815382
+          }, {
+            "truckId" : "T5",
+            "remainingArrivalSec" : 1011.7891235351562,
+            "etaLowerSec" : 929.304931640625,
+            "etaUpperSec" : 1094.2733154296875,
+            "slaProbability" : 0.9272688025871152,
+            "futureImpactProbability" : 1.472029998658333E-4
+          }, {
+            "truckId" : "T6",
+            "remainingArrivalSec" : 1167.060302734375,
+            "etaLowerSec" : 1084.5761108398438,
+            "etaUpperSec" : 1249.5444946289062,
+            "slaProbability" : 0.9971164991172022,
+            "futureImpactProbability" : 0.9976713022565901
+          }, {
+            "truckId" : "T7",
+            "remainingArrivalSec" : 1025.042236328125,
+            "etaLowerSec" : 942.5580444335938,
+            "etaUpperSec" : 1107.5264282226562,
+            "slaProbability" : 0.9111279195389822,
+            "futureImpactProbability" : 1.472029998658333E-4
+          } ],
+          "actionId" : "704ff048-ac5c-3aae-8b29-4ec2981cf5ec"
+        }, {
+          "calibration" : {
+            "remainingArrivalSec" : {
+              "radiusSec" : 82.48419189453125,
+              "nominalCoverage" : 0.9,
+              "n" : 1564,
+              "status" : "SIMULATION_CALIBRATION_RESIDUAL_INTERVAL",
+              "limitation" : "Repeated snapshots are correlated; this is descriptive simulated-domain uncertainty, not guaranteed field coverage"
+            },
+            "deliveryLate" : {
+              "status" : "PLATT_CALIBRATED_ON_SEPARATE_SIMULATED_SCENARIOS",
+              "coefficient" : 1.29865410254932,
+              "intercept" : 0.47341666083314365,
+              "n" : 1728,
+              "domain" : "SIMULATED_PARAMETERIZED_CHENNAI_OPERATIONS"
+            },
+            "futureImpact" : {
+              "status" : "PLATT_CALIBRATED_ON_SEPARATE_SIMULATED_SCENARIOS",
+              "coefficient" : 1.2393694844119643,
+              "intercept" : 0.2409360100971814,
+              "n" : 1824,
+              "domain" : "SIMULATED_PARAMETERIZED_CHENNAI_OPERATIONS"
+            }
+          },
+          "latencyMs" : 2.80320001184009,
+          "modelVersion" : "milestone4-v1",
+          "predictions" : [ {
+            "truckId" : "T1",
+            "remainingArrivalSec" : 1105.66748046875,
+            "etaLowerSec" : 1023.1832885742188,
+            "etaUpperSec" : 1188.1516723632812,
+            "slaProbability" : 0.9988289762636605,
+            "futureImpactProbability" : 0.9406701822358299
+          }, {
+            "truckId" : "T2",
+            "remainingArrivalSec" : 1155.14599609375,
+            "etaLowerSec" : 1072.6618041992188,
+            "etaUpperSec" : 1237.6301879882812,
+            "slaProbability" : 0.9980285958541182,
+            "futureImpactProbability" : 0.9712219881759454
+          }, {
+            "truckId" : "T3",
+            "remainingArrivalSec" : 940.4739990234375,
+            "etaLowerSec" : 857.9898071289062,
+            "etaUpperSec" : 1022.9581909179688,
+            "slaProbability" : 0.9165835563197439,
+            "futureImpactProbability" : 1.6041622995603623E-4
+          }, {
+            "truckId" : "T4",
+            "remainingArrivalSec" : 1144.1114501953125,
+            "etaLowerSec" : 1061.6272583007812,
+            "etaUpperSec" : 1226.5956420898438,
+            "slaProbability" : 0.9984306703984017,
+            "futureImpactProbability" : 0.9989409976815382
+          }, {
+            "truckId" : "T5",
+            "remainingArrivalSec" : 1011.7891235351562,
+            "etaLowerSec" : 929.304931640625,
+            "etaUpperSec" : 1094.2733154296875,
+            "slaProbability" : 0.9272688025871152,
+            "futureImpactProbability" : 1.472029998658333E-4
+          }, {
+            "truckId" : "T6",
+            "remainingArrivalSec" : 1167.060302734375,
+            "etaLowerSec" : 1084.5761108398438,
+            "etaUpperSec" : 1249.5444946289062,
+            "slaProbability" : 0.9971164991172022,
+            "futureImpactProbability" : 0.9976713022565901
+          }, {
+            "truckId" : "T7",
+            "remainingArrivalSec" : 1025.042236328125,
+            "etaLowerSec" : 942.5580444335938,
+            "etaUpperSec" : 1107.5264282226562,
+            "slaProbability" : 0.9111279195389822,
+            "futureImpactProbability" : 1.472029998658333E-4
+          } ],
+          "actionId" : "f9f559f8-5959-3ef1-a822-b75032dc8002"
+        } ]
+      }, {
+        "fallback" : false,
+        "candidateCount" : 2,
+        "clockSec" : 0.0,
+        "requestedModel" : "xgb-v1",
+        "rolloutCount" : 0,
+        "truckId" : "T4",
+        "candidatePredictions" : [ {
+          "calibration" : {
+            "remainingArrivalSec" : {
+              "radiusSec" : 82.48419189453125,
+              "nominalCoverage" : 0.9,
+              "n" : 1564,
+              "status" : "SIMULATION_CALIBRATION_RESIDUAL_INTERVAL",
+              "limitation" : "Repeated snapshots are correlated; this is descriptive simulated-domain uncertainty, not guaranteed field coverage"
+            },
+            "deliveryLate" : {
+              "status" : "PLATT_CALIBRATED_ON_SEPARATE_SIMULATED_SCENARIOS",
+              "coefficient" : 1.29865410254932,
+              "intercept" : 0.47341666083314365,
+              "n" : 1728,
+              "domain" : "SIMULATED_PARAMETERIZED_CHENNAI_OPERATIONS"
+            },
+            "futureImpact" : {
+              "status" : "PLATT_CALIBRATED_ON_SEPARATE_SIMULATED_SCENARIOS",
+              "coefficient" : 1.2393694844119643,
+              "intercept" : 0.2409360100971814,
+              "n" : 1824,
+              "domain" : "SIMULATED_PARAMETERIZED_CHENNAI_OPERATIONS"
+            }
+          },
+          "latencyMs" : 3.6257999890949577,
+          "modelVersion" : "milestone4-v1",
+          "predictions" : [ {
+            "truckId" : "T1",
+            "remainingArrivalSec" : 1105.66748046875,
+            "etaLowerSec" : 1023.1832885742188,
+            "etaUpperSec" : 1188.1516723632812,
+            "slaProbability" : 0.9988289762636605,
+            "futureImpactProbability" : 0.9406701822358299
+          }, {
+            "truckId" : "T2",
+            "remainingArrivalSec" : 1155.14599609375,
+            "etaLowerSec" : 1072.6618041992188,
+            "etaUpperSec" : 1237.6301879882812,
+            "slaProbability" : 0.9980285958541182,
+            "futureImpactProbability" : 0.9712219881759454
+          }, {
+            "truckId" : "T3",
+            "remainingArrivalSec" : 940.4739990234375,
+            "etaLowerSec" : 857.9898071289062,
+            "etaUpperSec" : 1022.9581909179688,
+            "slaProbability" : 0.9165835563197439,
+            "futureImpactProbability" : 1.6041622995603623E-4
+          }, {
+            "truckId" : "T4",
+            "remainingArrivalSec" : 1144.1114501953125,
+            "etaLowerSec" : 1061.6272583007812,
+            "etaUpperSec" : 1226.5956420898438,
+            "slaProbability" : 0.9984306703984017,
+            "futureImpactProbability" : 0.9989409976815382
+          }, {
+            "truckId" : "T5",
+            "remainingArrivalSec" : 1011.7891235351562,
+            "etaLowerSec" : 929.304931640625,
+            "etaUpperSec" : 1094.2733154296875,
+            "slaProbability" : 0.9272688025871152,
+            "futureImpactProbability" : 1.472029998658333E-4
+          }, {
+            "truckId" : "T6",
+            "remainingArrivalSec" : 1167.060302734375,
+            "etaLowerSec" : 1084.5761108398438,
+            "etaUpperSec" : 1249.5444946289062,
+            "slaProbability" : 0.9971164991172022,
+            "futureImpactProbability" : 0.9976713022565901
+          }, {
+            "truckId" : "T7",
+            "remainingArrivalSec" : 1025.042236328125,
+            "etaLowerSec" : 942.5580444335938,
+            "etaUpperSec" : 1107.5264282226562,
+            "slaProbability" : 0.9111279195389822,
+            "futureImpactProbability" : 1.472029998658333E-4
+          } ],
+          "actionId" : "f94ffaa4-136b-367e-bec2-db1829850e50"
+        }, {
+          "calibration" : {
+            "remainingArrivalSec" : {
+              "radiusSec" : 82.48419189453125,
+              "nominalCoverage" : 0.9,
+              "n" : 1564,
+              "status" : "SIMULATION_CALIBRATION_RESIDUAL_INTERVAL",
+              "limitation" : "Repeated snapshots are correlated; this is descriptive simulated-domain uncertainty, not guaranteed field coverage"
+            },
+            "deliveryLate" : {
+              "status" : "PLATT_CALIBRATED_ON_SEPARATE_SIMULATED_SCENARIOS",
+              "coefficient" : 1.29865410254932,
+              "intercept" : 0.47341666083314365,
+              "n" : 1728,
+              "domain" : "SIMULATED_PARAMETERIZED_CHENNAI_OPERATIONS"
+            },
+            "futureImpact" : {
+              "status" : "PLATT_CALIBRATED_ON_SEPARATE_SIMULATED_SCENARIOS",
+              "coefficient" : 1.2393694844119643,
+              "intercept" : 0.2409360100971814,
+              "n" : 1824,
+              "domain" : "SIMULATED_PARAMETERIZED_CHENNAI_OPERATIONS"
+            }
+          },
+          "latencyMs" : 2.7716000040527433,
+          "modelVersion" : "milestone4-v1",
+          "predictions" : [ {
+            "truckId" : "T1",
+            "remainingArrivalSec" : 1105.66748046875,
+            "etaLowerSec" : 1023.1832885742188,
+            "etaUpperSec" : 1188.1516723632812,
+            "slaProbability" : 0.9988289762636605,
+            "futureImpactProbability" : 0.9406701822358299
+          }, {
+            "truckId" : "T2",
+            "remainingArrivalSec" : 1155.14599609375,
+            "etaLowerSec" : 1072.6618041992188,
+            "etaUpperSec" : 1237.6301879882812,
+            "slaProbability" : 0.9980285958541182,
+            "futureImpactProbability" : 0.9712219881759454
+          }, {
+            "truckId" : "T3",
+            "remainingArrivalSec" : 940.4739990234375,
+            "etaLowerSec" : 857.9898071289062,
+            "etaUpperSec" : 1022.9581909179688,
+            "slaProbability" : 0.9165835563197439,
+            "futureImpactProbability" : 1.6041622995603623E-4
+          }, {
+            "truckId" : "T4",
+            "remainingArrivalSec" : 1144.1114501953125,
+            "etaLowerSec" : 1061.6272583007812,
+            "etaUpperSec" : 1226.5956420898438,
+            "slaProbability" : 0.9984306703984017,
+            "futureImpactProbability" : 0.9989409976815382
+          }, {
+            "truckId" : "T5",
+            "remainingArrivalSec" : 1011.7891235351562,
+            "etaLowerSec" : 929.304931640625,
+            "etaUpperSec" : 1094.2733154296875,
+            "slaProbability" : 0.9272688025871152,
+            "futureImpactProbability" : 1.472029998658333E-4
+          }, {
+            "truckId" : "T6",
+            "remainingArrivalSec" : 1167.060302734375,
+            "etaLowerSec" : 1084.5761108398438,
+            "etaUpperSec" : 1249.5444946289062,
+            "slaProbability" : 0.9971164991172022,
+            "futureImpactProbability" : 0.9976713022565901
+          }, {
+            "truckId" : "T7",
+            "remainingArrivalSec" : 1025.042236328125,
+            "etaLowerSec" : 942.5580444335938,
+            "etaUpperSec" : 1107.5264282226562,
+            "slaProbability" : 0.9111279195389822,
+            "futureImpactProbability" : 1.472029998658333E-4
+          } ],
+          "actionId" : "b9c0744b-7a46-3328-86e9-9e9e32e9f3a4"
+        } ]
+      }, {
+        "fallback" : false,
+        "candidateCount" : 2,
+        "clockSec" : 0.0,
+        "requestedModel" : "xgb-v1",
+        "rolloutCount" : 0,
+        "truckId" : "T6",
+        "candidatePredictions" : [ {
+          "calibration" : {
+            "remainingArrivalSec" : {
+              "radiusSec" : 82.48419189453125,
+              "nominalCoverage" : 0.9,
+              "n" : 1564,
+              "status" : "SIMULATION_CALIBRATION_RESIDUAL_INTERVAL",
+              "limitation" : "Repeated snapshots are correlated; this is descriptive simulated-domain uncertainty, not guaranteed field coverage"
+            },
+            "deliveryLate" : {
+              "status" : "PLATT_CALIBRATED_ON_SEPARATE_SIMULATED_SCENARIOS",
+              "coefficient" : 1.29865410254932,
+              "intercept" : 0.47341666083314365,
+              "n" : 1728,
+              "domain" : "SIMULATED_PARAMETERIZED_CHENNAI_OPERATIONS"
+            },
+            "futureImpact" : {
+              "status" : "PLATT_CALIBRATED_ON_SEPARATE_SIMULATED_SCENARIOS",
+              "coefficient" : 1.2393694844119643,
+              "intercept" : 0.2409360100971814,
+              "n" : 1824,
+              "domain" : "SIMULATED_PARAMETERIZED_CHENNAI_OPERATIONS"
+            }
+          },
+          "latencyMs" : 2.866299997549504,
+          "modelVersion" : "milestone4-v1",
+          "predictions" : [ {
+            "truckId" : "T1",
+            "remainingArrivalSec" : 1105.66748046875,
+            "etaLowerSec" : 1023.1832885742188,
+            "etaUpperSec" : 1188.1516723632812,
+            "slaProbability" : 0.9988289762636605,
+            "futureImpactProbability" : 0.9406701822358299
+          }, {
+            "truckId" : "T2",
+            "remainingArrivalSec" : 1155.14599609375,
+            "etaLowerSec" : 1072.6618041992188,
+            "etaUpperSec" : 1237.6301879882812,
+            "slaProbability" : 0.9980285958541182,
+            "futureImpactProbability" : 0.9712219881759454
+          }, {
+            "truckId" : "T3",
+            "remainingArrivalSec" : 940.4739990234375,
+            "etaLowerSec" : 857.9898071289062,
+            "etaUpperSec" : 1022.9581909179688,
+            "slaProbability" : 0.9165835563197439,
+            "futureImpactProbability" : 1.6041622995603623E-4
+          }, {
+            "truckId" : "T4",
+            "remainingArrivalSec" : 1144.1114501953125,
+            "etaLowerSec" : 1061.6272583007812,
+            "etaUpperSec" : 1226.5956420898438,
+            "slaProbability" : 0.9984306703984017,
+            "futureImpactProbability" : 0.9989409976815382
+          }, {
+            "truckId" : "T5",
+            "remainingArrivalSec" : 1011.7891235351562,
+            "etaLowerSec" : 929.304931640625,
+            "etaUpperSec" : 1094.2733154296875,
+            "slaProbability" : 0.9272688025871152,
+            "futureImpactProbability" : 1.472029998658333E-4
+          }, {
+            "truckId" : "T6",
+            "remainingArrivalSec" : 1167.060302734375,
+            "etaLowerSec" : 1084.5761108398438,
+            "etaUpperSec" : 1249.5444946289062,
+            "slaProbability" : 0.9971164991172022,
+            "futureImpactProbability" : 0.9976713022565901
+          }, {
+            "truckId" : "T7",
+            "remainingArrivalSec" : 1025.042236328125,
+            "etaLowerSec" : 942.5580444335938,
+            "etaUpperSec" : 1107.5264282226562,
+            "slaProbability" : 0.9111279195389822,
+            "futureImpactProbability" : 1.472029998658333E-4
+          } ],
+          "actionId" : "7a8b5111-ea63-3b7b-849a-703a5b7341d4"
+        }, {
+          "calibration" : {
+            "remainingArrivalSec" : {
+              "radiusSec" : 82.48419189453125,
+              "nominalCoverage" : 0.9,
+              "n" : 1564,
+              "status" : "SIMULATION_CALIBRATION_RESIDUAL_INTERVAL",
+              "limitation" : "Repeated snapshots are correlated; this is descriptive simulated-domain uncertainty, not guaranteed field coverage"
+            },
+            "deliveryLate" : {
+              "status" : "PLATT_CALIBRATED_ON_SEPARATE_SIMULATED_SCENARIOS",
+              "coefficient" : 1.29865410254932,
+              "intercept" : 0.47341666083314365,
+              "n" : 1728,
+              "domain" : "SIMULATED_PARAMETERIZED_CHENNAI_OPERATIONS"
+            },
+            "futureImpact" : {
+              "status" : "PLATT_CALIBRATED_ON_SEPARATE_SIMULATED_SCENARIOS",
+              "coefficient" : 1.2393694844119643,
+              "intercept" : 0.2409360100971814,
+              "n" : 1824,
+              "domain" : "SIMULATED_PARAMETERIZED_CHENNAI_OPERATIONS"
+            }
+          },
+          "latencyMs" : 3.725199989276007,
+          "modelVersion" : "milestone4-v1",
+          "predictions" : [ {
+            "truckId" : "T1",
+            "remainingArrivalSec" : 1105.66748046875,
+            "etaLowerSec" : 1023.1832885742188,
+            "etaUpperSec" : 1188.1516723632812,
+            "slaProbability" : 0.9988289762636605,
+            "futureImpactProbability" : 0.9406701822358299
+          }, {
+            "truckId" : "T2",
+            "remainingArrivalSec" : 1155.14599609375,
+            "etaLowerSec" : 1072.6618041992188,
+            "etaUpperSec" : 1237.6301879882812,
+            "slaProbability" : 0.9980285958541182,
+            "futureImpactProbability" : 0.9712219881759454
+          }, {
+            "truckId" : "T3",
+            "remainingArrivalSec" : 940.4739990234375,
+            "etaLowerSec" : 857.9898071289062,
+            "etaUpperSec" : 1022.9581909179688,
+            "slaProbability" : 0.9165835563197439,
+            "futureImpactProbability" : 1.6041622995603623E-4
+          }, {
+            "truckId" : "T4",
+            "remainingArrivalSec" : 1144.1114501953125,
+            "etaLowerSec" : 1061.6272583007812,
+            "etaUpperSec" : 1226.5956420898438,
+            "slaProbability" : 0.9984306703984017,
+            "futureImpactProbability" : 0.9989409976815382
+          }, {
+            "truckId" : "T5",
+            "remainingArrivalSec" : 1011.7891235351562,
+            "etaLowerSec" : 929.304931640625,
+            "etaUpperSec" : 1094.2733154296875,
+            "slaProbability" : 0.9272688025871152,
+            "futureImpactProbability" : 1.472029998658333E-4
+          }, {
+            "truckId" : "T6",
+            "remainingArrivalSec" : 1167.060302734375,
+            "etaLowerSec" : 1084.5761108398438,
+            "etaUpperSec" : 1249.5444946289062,
+            "slaProbability" : 0.9971164991172022,
+            "futureImpactProbability" : 0.9976713022565901
+          }, {
+            "truckId" : "T7",
+            "remainingArrivalSec" : 1025.042236328125,
+            "etaLowerSec" : 942.5580444335938,
+            "etaUpperSec" : 1107.5264282226562,
+            "slaProbability" : 0.9111279195389822,
+            "futureImpactProbability" : 1.472029998658333E-4
+          } ],
+          "actionId" : "4a4e3afd-a2bb-385d-8fed-2508692cf4cb"
+        } ]
+      }, {
+        "fallback" : false,
+        "candidateCount" : 2,
+        "clockSec" : 11.0,
+        "requestedModel" : "xgb-v1",
+        "rolloutCount" : 0,
+        "truckId" : "T1",
+        "candidatePredictions" : [ {
+          "calibration" : {
+            "remainingArrivalSec" : {
+              "radiusSec" : 82.48419189453125,
+              "nominalCoverage" : 0.9,
+              "n" : 1564,
+              "status" : "SIMULATION_CALIBRATION_RESIDUAL_INTERVAL",
+              "limitation" : "Repeated snapshots are correlated; this is descriptive simulated-domain uncertainty, not guaranteed field coverage"
+            },
+            "deliveryLate" : {
+              "status" : "PLATT_CALIBRATED_ON_SEPARATE_SIMULATED_SCENARIOS",
+              "coefficient" : 1.29865410254932,
+              "intercept" : 0.47341666083314365,
+              "n" : 1728,
+              "domain" : "SIMULATED_PARAMETERIZED_CHENNAI_OPERATIONS"
+            },
+            "futureImpact" : {
+              "status" : "PLATT_CALIBRATED_ON_SEPARATE_SIMULATED_SCENARIOS",
+              "coefficient" : 1.2393694844119643,
+              "intercept" : 0.2409360100971814,
+              "n" : 1824,
+              "domain" : "SIMULATED_PARAMETERIZED_CHENNAI_OPERATIONS"
+            }
+          },
+          "latencyMs" : 4.803099989658222,
+          "modelVersion" : "milestone4-v1",
+          "predictions" : [ {
+            "truckId" : "T1",
+            "remainingArrivalSec" : 1079.100830078125,
+            "etaLowerSec" : 996.6166381835938,
+            "etaUpperSec" : 1161.5850219726562,
+            "slaProbability" : 0.9989577756818241,
+            "futureImpactProbability" : 0.008048164213022999
+          }, {
+            "truckId" : "T2",
+            "remainingArrivalSec" : 1140.8040771484375,
+            "etaLowerSec" : 1058.3198852539062,
+            "etaUpperSec" : 1223.2882690429688,
+            "slaProbability" : 0.9980285958541182,
+            "futureImpactProbability" : 0.01074866601586958
+          }, {
+            "truckId" : "T3",
+            "remainingArrivalSec" : 956.2760620117188,
+            "etaLowerSec" : 873.7918701171875,
+            "etaUpperSec" : 1038.76025390625,
+            "slaProbability" : 0.9986186009425485,
+            "futureImpactProbability" : 1.0829837975920448E-4
+          }, {
+            "truckId" : "T4",
+            "remainingArrivalSec" : 1127.4454345703125,
+            "etaLowerSec" : 1044.9612426757812,
+            "etaUpperSec" : 1209.9296264648438,
+            "slaProbability" : 0.9984306703984017,
+            "futureImpactProbability" : 0.9901560534520022
+          }, {
+            "truckId" : "T5",
+            "remainingArrivalSec" : 978.4249877929688,
+            "etaLowerSec" : 895.9407958984375,
+            "etaUpperSec" : 1060.9091796875,
+            "slaProbability" : 0.9984672937354292,
+            "futureImpactProbability" : 1.1167875783981389E-4
+          }, {
+            "truckId" : "T6",
+            "remainingArrivalSec" : 1161.332275390625,
+            "etaLowerSec" : 1078.8480834960938,
+            "etaUpperSec" : 1243.8164672851562,
+            "slaProbability" : 0.9971164991172022,
+            "futureImpactProbability" : 0.9808106196845671
+          }, {
+            "truckId" : "T7",
+            "remainingArrivalSec" : 977.7234497070312,
+            "etaLowerSec" : 895.2392578125,
+            "etaUpperSec" : 1060.2076416015625,
+            "slaProbability" : 0.9978507880719414,
+            "futureImpactProbability" : 1.1711436439188647E-4
+          } ],
+          "actionId" : "47b8ce39-f1f8-3162-8e64-a6a20a6fb23b"
+        }, {
+          "calibration" : {
+            "remainingArrivalSec" : {
+              "radiusSec" : 82.48419189453125,
+              "nominalCoverage" : 0.9,
+              "n" : 1564,
+              "status" : "SIMULATION_CALIBRATION_RESIDUAL_INTERVAL",
+              "limitation" : "Repeated snapshots are correlated; this is descriptive simulated-domain uncertainty, not guaranteed field coverage"
+            },
+            "deliveryLate" : {
+              "status" : "PLATT_CALIBRATED_ON_SEPARATE_SIMULATED_SCENARIOS",
+              "coefficient" : 1.29865410254932,
+              "intercept" : 0.47341666083314365,
+              "n" : 1728,
+              "domain" : "SIMULATED_PARAMETERIZED_CHENNAI_OPERATIONS"
+            },
+            "futureImpact" : {
+              "status" : "PLATT_CALIBRATED_ON_SEPARATE_SIMULATED_SCENARIOS",
+              "coefficient" : 1.2393694844119643,
+              "intercept" : 0.2409360100971814,
+              "n" : 1824,
+              "domain" : "SIMULATED_PARAMETERIZED_CHENNAI_OPERATIONS"
+            }
+          },
+          "latencyMs" : 5.263300001388416,
+          "modelVersion" : "milestone4-v1",
+          "predictions" : [ {
+            "truckId" : "T1",
+            "remainingArrivalSec" : 1079.100830078125,
+            "etaLowerSec" : 996.6166381835938,
+            "etaUpperSec" : 1161.5850219726562,
+            "slaProbability" : 0.9989577756818241,
+            "futureImpactProbability" : 0.008048164213022999
+          }, {
+            "truckId" : "T2",
+            "remainingArrivalSec" : 1140.8040771484375,
+            "etaLowerSec" : 1058.3198852539062,
+            "etaUpperSec" : 1223.2882690429688,
+            "slaProbability" : 0.9980285958541182,
+            "futureImpactProbability" : 0.01074866601586958
+          }, {
+            "truckId" : "T3",
+            "remainingArrivalSec" : 956.2760620117188,
+            "etaLowerSec" : 873.7918701171875,
+            "etaUpperSec" : 1038.76025390625,
+            "slaProbability" : 0.9986186009425485,
+            "futureImpactProbability" : 1.0829837975920448E-4
+          }, {
+            "truckId" : "T4",
+            "remainingArrivalSec" : 1127.4454345703125,
+            "etaLowerSec" : 1044.9612426757812,
+            "etaUpperSec" : 1209.9296264648438,
+            "slaProbability" : 0.9984306703984017,
+            "futureImpactProbability" : 0.9901560534520022
+          }, {
+            "truckId" : "T5",
+            "remainingArrivalSec" : 978.4249877929688,
+            "etaLowerSec" : 895.9407958984375,
+            "etaUpperSec" : 1060.9091796875,
+            "slaProbability" : 0.9984672937354292,
+            "futureImpactProbability" : 1.1167875783981389E-4
+          }, {
+            "truckId" : "T6",
+            "remainingArrivalSec" : 1161.332275390625,
+            "etaLowerSec" : 1078.8480834960938,
+            "etaUpperSec" : 1243.8164672851562,
+            "slaProbability" : 0.9971164991172022,
+            "futureImpactProbability" : 0.9808106196845671
+          }, {
+            "truckId" : "T7",
+            "remainingArrivalSec" : 977.7234497070312,
+            "etaLowerSec" : 895.2392578125,
+            "etaUpperSec" : 1060.2076416015625,
+            "slaProbability" : 0.9978507880719414,
+            "futureImpactProbability" : 1.1711436439188647E-4
+          } ],
+          "actionId" : "eace9d3a-a313-39c6-b7b5-81ec31a7cfe4"
+        } ]
+      }, {
+        "fallback" : false,
+        "candidateCount" : 4,
+        "clockSec" : 11.0,
+        "requestedModel" : "xgb-v1",
+        "rolloutCount" : 0,
+        "truckId" : "T3",
+        "candidatePredictions" : [ {
+          "calibration" : {
+            "remainingArrivalSec" : {
+              "radiusSec" : 82.48419189453125,
+              "nominalCoverage" : 0.9,
+              "n" : 1564,
+              "status" : "SIMULATION_CALIBRATION_RESIDUAL_INTERVAL",
+              "limitation" : "Repeated snapshots are correlated; this is descriptive simulated-domain uncertainty, not guaranteed field coverage"
+            },
+            "deliveryLate" : {
+              "status" : "PLATT_CALIBRATED_ON_SEPARATE_SIMULATED_SCENARIOS",
+              "coefficient" : 1.29865410254932,
+              "intercept" : 0.47341666083314365,
+              "n" : 1728,
+              "domain" : "SIMULATED_PARAMETERIZED_CHENNAI_OPERATIONS"
+            },
+            "futureImpact" : {
+              "status" : "PLATT_CALIBRATED_ON_SEPARATE_SIMULATED_SCENARIOS",
+              "coefficient" : 1.2393694844119643,
+              "intercept" : 0.2409360100971814,
+              "n" : 1824,
+              "domain" : "SIMULATED_PARAMETERIZED_CHENNAI_OPERATIONS"
+            }
+          },
+          "latencyMs" : 8.135100011713803,
+          "modelVersion" : "milestone4-v1",
+          "predictions" : [ {
+            "truckId" : "T1",
+            "remainingArrivalSec" : 1079.100830078125,
+            "etaLowerSec" : 996.6166381835938,
+            "etaUpperSec" : 1161.5850219726562,
+            "slaProbability" : 0.9989577756818241,
+            "futureImpactProbability" : 0.008048164213022999
+          }, {
+            "truckId" : "T2",
+            "remainingArrivalSec" : 1140.8040771484375,
+            "etaLowerSec" : 1058.3198852539062,
+            "etaUpperSec" : 1223.2882690429688,
+            "slaProbability" : 0.9980285958541182,
+            "futureImpactProbability" : 0.01074866601586958
+          }, {
+            "truckId" : "T3",
+            "remainingArrivalSec" : 956.2760620117188,
+            "etaLowerSec" : 873.7918701171875,
+            "etaUpperSec" : 1038.76025390625,
+            "slaProbability" : 0.9986186009425485,
+            "futureImpactProbability" : 1.0829837975920448E-4
+          }, {
+            "truckId" : "T4",
+            "remainingArrivalSec" : 1127.4454345703125,
+            "etaLowerSec" : 1044.9612426757812,
+            "etaUpperSec" : 1209.9296264648438,
+            "slaProbability" : 0.9984306703984017,
+            "futureImpactProbability" : 0.9901560534520022
+          }, {
+            "truckId" : "T5",
+            "remainingArrivalSec" : 978.4249877929688,
+            "etaLowerSec" : 895.9407958984375,
+            "etaUpperSec" : 1060.9091796875,
+            "slaProbability" : 0.9984672937354292,
+            "futureImpactProbability" : 1.1167875783981389E-4
+          }, {
+            "truckId" : "T6",
+            "remainingArrivalSec" : 1161.332275390625,
+            "etaLowerSec" : 1078.8480834960938,
+            "etaUpperSec" : 1243.8164672851562,
+            "slaProbability" : 0.9971164991172022,
+            "futureImpactProbability" : 0.9808106196845671
+          }, {
+            "truckId" : "T7",
+            "remainingArrivalSec" : 977.7234497070312,
+            "etaLowerSec" : 895.2392578125,
+            "etaUpperSec" : 1060.2076416015625,
+            "slaProbability" : 0.9978507880719414,
+            "futureImpactProbability" : 1.1711436439188647E-4
+          } ],
+          "actionId" : "fa9d357d-1681-31d0-8b49-7189dfa7c5ed"
+        }, {
+          "calibration" : {
+            "remainingArrivalSec" : {
+              "radiusSec" : 82.48419189453125,
+              "nominalCoverage" : 0.9,
+              "n" : 1564,
+              "status" : "SIMULATION_CALIBRATION_RESIDUAL_INTERVAL",
+              "limitation" : "Repeated snapshots are correlated; this is descriptive simulated-domain uncertainty, not guaranteed field coverage"
+            },
+            "deliveryLate" : {
+              "status" : "PLATT_CALIBRATED_ON_SEPARATE_SIMULATED_SCENARIOS",
+              "coefficient" : 1.29865410254932,
+              "intercept" : 0.47341666083314365,
+              "n" : 1728,
+              "domain" : "SIMULATED_PARAMETERIZED_CHENNAI_OPERATIONS"
+            },
+            "futureImpact" : {
+              "status" : "PLATT_CALIBRATED_ON_SEPARATE_SIMULATED_SCENARIOS",
+              "coefficient" : 1.2393694844119643,
+              "intercept" : 0.2409360100971814,
+              "n" : 1824,
+              "domain" : "SIMULATED_PARAMETERIZED_CHENNAI_OPERATIONS"
+            }
+          },
+          "latencyMs" : 7.503200002247468,
+          "modelVersion" : "milestone4-v1",
+          "predictions" : [ {
+            "truckId" : "T1",
+            "remainingArrivalSec" : 1079.100830078125,
+            "etaLowerSec" : 996.6166381835938,
+            "etaUpperSec" : 1161.5850219726562,
+            "slaProbability" : 0.9989577756818241,
+            "futureImpactProbability" : 0.008048164213022999
+          }, {
+            "truckId" : "T2",
+            "remainingArrivalSec" : 1140.8040771484375,
+            "etaLowerSec" : 1058.3198852539062,
+            "etaUpperSec" : 1223.2882690429688,
+            "slaProbability" : 0.9980285958541182,
+            "futureImpactProbability" : 0.01074866601586958
+          }, {
+            "truckId" : "T3",
+            "remainingArrivalSec" : 956.2760620117188,
+            "etaLowerSec" : 873.7918701171875,
+            "etaUpperSec" : 1038.76025390625,
+            "slaProbability" : 0.9986186009425485,
+            "futureImpactProbability" : 1.0829837975920448E-4
+          }, {
+            "truckId" : "T4",
+            "remainingArrivalSec" : 1127.4454345703125,
+            "etaLowerSec" : 1044.9612426757812,
+            "etaUpperSec" : 1209.9296264648438,
+            "slaProbability" : 0.9984306703984017,
+            "futureImpactProbability" : 0.9901560534520022
+          }, {
+            "truckId" : "T5",
+            "remainingArrivalSec" : 978.4249877929688,
+            "etaLowerSec" : 895.9407958984375,
+            "etaUpperSec" : 1060.9091796875,
+            "slaProbability" : 0.9984672937354292,
+            "futureImpactProbability" : 1.1167875783981389E-4
+          }, {
+            "truckId" : "T6",
+            "remainingArrivalSec" : 1161.332275390625,
+            "etaLowerSec" : 1078.8480834960938,
+            "etaUpperSec" : 1243.8164672851562,
+            "slaProbability" : 0.9971164991172022,
+            "futureImpactProbability" : 0.9808106196845671
+          }, {
+            "truckId" : "T7",
+            "remainingArrivalSec" : 977.7234497070312,
+            "etaLowerSec" : 895.2392578125,
+            "etaUpperSec" : 1060.2076416015625,
+            "slaProbability" : 0.9978507880719414,
+            "futureImpactProbability" : 1.1711436439188647E-4
+          } ],
+          "actionId" : "d6d7ad18-e7d7-351e-818e-348a0bbe4e66"
+        }, {
+          "calibration" : {
+            "remainingArrivalSec" : {
+              "radiusSec" : 82.48419189453125,
+              "nominalCoverage" : 0.9,
+              "n" : 1564,
+              "status" : "SIMULATION_CALIBRATION_RESIDUAL_INTERVAL",
+              "limitation" : "Repeated snapshots are correlated; this is descriptive simulated-domain uncertainty, not guaranteed field coverage"
+            },
+            "deliveryLate" : {
+              "status" : "PLATT_CALIBRATED_ON_SEPARATE_SIMULATED_SCENARIOS",
+              "coefficient" : 1.29865410254932,
+              "intercept" : 0.47341666083314365,
+              "n" : 1728,
+              "domain" : "SIMULATED_PARAMETERIZED_CHENNAI_OPERATIONS"
+            },
+            "futureImpact" : {
+              "status" : "PLATT_CALIBRATED_ON_SEPARATE_SIMULATED_SCENARIOS",
+              "coefficient" : 1.2393694844119643,
+              "intercept" : 0.2409360100971814,
+              "n" : 1824,
+              "domain" : "SIMULATED_PARAMETERIZED_CHENNAI_OPERATIONS"
+            }
+          },
+          "latencyMs" : 6.490999978268519,
+          "modelVersion" : "milestone4-v1",
+          "predictions" : [ {
+            "truckId" : "T1",
+            "remainingArrivalSec" : 1079.100830078125,
+            "etaLowerSec" : 996.6166381835938,
+            "etaUpperSec" : 1161.5850219726562,
+            "slaProbability" : 0.9989577756818241,
+            "futureImpactProbability" : 0.008048164213022999
+          }, {
+            "truckId" : "T2",
+            "remainingArrivalSec" : 1140.8040771484375,
+            "etaLowerSec" : 1058.3198852539062,
+            "etaUpperSec" : 1223.2882690429688,
+            "slaProbability" : 0.9980285958541182,
+            "futureImpactProbability" : 0.01074866601586958
+          }, {
+            "truckId" : "T3",
+            "remainingArrivalSec" : 978.6939086914062,
+            "etaLowerSec" : 896.209716796875,
+            "etaUpperSec" : 1061.1781005859375,
+            "slaProbability" : 0.999628267650231,
+            "futureImpactProbability" : 1.1700770202671683E-4
+          }, {
+            "truckId" : "T4",
+            "remainingArrivalSec" : 1127.4454345703125,
+            "etaLowerSec" : 1044.9612426757812,
+            "etaUpperSec" : 1209.9296264648438,
+            "slaProbability" : 0.9984306703984017,
+            "futureImpactProbability" : 0.9901560534520022
+          }, {
+            "truckId" : "T5",
+            "remainingArrivalSec" : 978.4249877929688,
+            "etaLowerSec" : 895.9407958984375,
+            "etaUpperSec" : 1060.9091796875,
+            "slaProbability" : 0.9984672937354292,
+            "futureImpactProbability" : 1.1167875783981389E-4
+          }, {
+            "truckId" : "T6",
+            "remainingArrivalSec" : 1161.332275390625,
+            "etaLowerSec" : 1078.8480834960938,
+            "etaUpperSec" : 1243.8164672851562,
+            "slaProbability" : 0.9971164991172022,
+            "futureImpactProbability" : 0.9808106196845671
+          }, {
+            "truckId" : "T7",
+            "remainingArrivalSec" : 980.1287231445312,
+            "etaLowerSec" : 897.64453125,
+            "etaUpperSec" : 1062.6129150390625,
+            "slaProbability" : 0.5414086044552793,
+            "futureImpactProbability" : 9.723636132271117E-5
+          } ],
+          "actionId" : "8d537736-0735-34f8-b490-58c7920d97ad"
+        }, {
+          "calibration" : {
+            "remainingArrivalSec" : {
+              "radiusSec" : 82.48419189453125,
+              "nominalCoverage" : 0.9,
+              "n" : 1564,
+              "status" : "SIMULATION_CALIBRATION_RESIDUAL_INTERVAL",
+              "limitation" : "Repeated snapshots are correlated; this is descriptive simulated-domain uncertainty, not guaranteed field coverage"
+            },
+            "deliveryLate" : {
+              "status" : "PLATT_CALIBRATED_ON_SEPARATE_SIMULATED_SCENARIOS",
+              "coefficient" : 1.29865410254932,
+              "intercept" : 0.47341666083314365,
+              "n" : 1728,
+              "domain" : "SIMULATED_PARAMETERIZED_CHENNAI_OPERATIONS"
+            },
+            "futureImpact" : {
+              "status" : "PLATT_CALIBRATED_ON_SEPARATE_SIMULATED_SCENARIOS",
+              "coefficient" : 1.2393694844119643,
+              "intercept" : 0.2409360100971814,
+              "n" : 1824,
+              "domain" : "SIMULATED_PARAMETERIZED_CHENNAI_OPERATIONS"
+            }
+          },
+          "latencyMs" : 6.766599981347099,
+          "modelVersion" : "milestone4-v1",
+          "predictions" : [ {
+            "truckId" : "T1",
+            "remainingArrivalSec" : 1079.100830078125,
+            "etaLowerSec" : 996.6166381835938,
+            "etaUpperSec" : 1161.5850219726562,
+            "slaProbability" : 0.9989577756818241,
+            "futureImpactProbability" : 0.008048164213022999
+          }, {
+            "truckId" : "T2",
+            "remainingArrivalSec" : 1140.8040771484375,
+            "etaLowerSec" : 1058.3198852539062,
+            "etaUpperSec" : 1223.2882690429688,
+            "slaProbability" : 0.9980285958541182,
+            "futureImpactProbability" : 0.01074866601586958
+          }, {
+            "truckId" : "T3",
+            "remainingArrivalSec" : 941.65478515625,
+            "etaLowerSec" : 859.1705932617188,
+            "etaUpperSec" : 1024.1389770507812,
+            "slaProbability" : 0.569540514452281,
+            "futureImpactProbability" : 9.652277158479838E-5
+          }, {
+            "truckId" : "T4",
+            "remainingArrivalSec" : 1127.4454345703125,
+            "etaLowerSec" : 1044.9612426757812,
+            "etaUpperSec" : 1209.9296264648438,
+            "slaProbability" : 0.9984306703984017,
+            "futureImpactProbability" : 0.9901560534520022
+          }, {
+            "truckId" : "T5",
+            "remainingArrivalSec" : 978.4249877929688,
+            "etaLowerSec" : 895.9407958984375,
+            "etaUpperSec" : 1060.9091796875,
+            "slaProbability" : 0.9984672937354292,
+            "futureImpactProbability" : 1.1167875783981389E-4
+          }, {
+            "truckId" : "T6",
+            "remainingArrivalSec" : 1161.332275390625,
+            "etaLowerSec" : 1078.8480834960938,
+            "etaUpperSec" : 1243.8164672851562,
+            "slaProbability" : 0.9971164991172022,
+            "futureImpactProbability" : 0.9808106196845671
+          }, {
+            "truckId" : "T7",
+            "remainingArrivalSec" : 977.7234497070312,
+            "etaLowerSec" : 895.2392578125,
+            "etaUpperSec" : 1060.2076416015625,
+            "slaProbability" : 0.6361663752730948,
+            "futureImpactProbability" : 1.1711436439188647E-4
+          } ],
+          "actionId" : "70433c30-e6c8-31e8-bc35-427f7612fe54"
+        } ]
+      } ],
+      "modelId" : "xgb-v1",
+      "deliveredAtSec" : {
+        "L1" : 1275.5,
+        "L2" : 1335.3,
+        "L3" : 976.0,
+        "L4" : 1337.5,
+        "L5" : 1110.0,
+        "L6" : 1500.8,
+        "L7" : 1141.5
+      },
+      "realizedImpacts" : [ {
+        "id" : "DRIVER_UNAVAILABLE:DRIVER:DR1:T1",
+        "code" : "DRIVER_UNAVAILABLE",
+        "resourceIds" : [ "DRIVER:DR1" ],
+        "truckIds" : [ "T1" ],
+        "startSec" : 0.1,
+        "endSec" : 0.1,
+        "delaySec" : 0.0,
+        "predicted" : false,
+        "message" : "T1 held at a real graph node: DRIVER_UNAVAILABLE",
+        "provenance" : "SIMULATED_OUTCOME"
+      }, {
+        "id" : "DRIVER_UNAVAILABLE:DRIVER:DR2:T2",
+        "code" : "DRIVER_UNAVAILABLE",
+        "resourceIds" : [ "DRIVER:DR2" ],
+        "truckIds" : [ "T2" ],
+        "startSec" : 0.1,
+        "endSec" : 0.1,
+        "delaySec" : 0.0,
+        "predicted" : false,
+        "message" : "T2 held at a real graph node: DRIVER_UNAVAILABLE",
+        "provenance" : "SIMULATED_OUTCOME"
+      }, {
+        "id" : "DRIVER_UNAVAILABLE:DRIVER:DR4:T4",
+        "code" : "DRIVER_UNAVAILABLE",
+        "resourceIds" : [ "DRIVER:DR4" ],
+        "truckIds" : [ "T4" ],
+        "startSec" : 63.0,
+        "endSec" : 63.0,
+        "delaySec" : 0.0,
+        "predicted" : false,
+        "message" : "T4 held at a real graph node: DRIVER_UNAVAILABLE",
+        "provenance" : "SIMULATED_OUTCOME"
+      }, {
+        "id" : "DRIVER_UNAVAILABLE:DRIVER:DR6:T6",
+        "code" : "DRIVER_UNAVAILABLE",
+        "resourceIds" : [ "DRIVER:DR6" ],
+        "truckIds" : [ "T6" ],
+        "startSec" : 137.6,
+        "endSec" : 137.6,
+        "delaySec" : 0.0,
+        "predicted" : false,
+        "message" : "T6 held at a real graph node: DRIVER_UNAVAILABLE",
+        "provenance" : "SIMULATED_OUTCOME"
+      }, {
+        "id" : "DOCK_QUEUE:DOCK:D1_2,TRUCK:T3:T7",
+        "code" : "DOCK_QUEUE",
+        "resourceIds" : [ "DOCK:D1_2", "TRUCK:T3" ],
+        "truckIds" : [ "T7" ],
+        "startSec" : 944.5,
+        "endSec" : 944.5,
+        "delaySec" : 0.10000000000002274,
+        "predicted" : false,
+        "message" : "T7 is physically queued at D1_2 behind T3",
+        "provenance" : "SIMULATED_OUTCOME"
+      }, {
+        "id" : "DELIVERY_COMPLETED:DELIVERY:L3,WAREHOUSE:W1:T3",
+        "code" : "DELIVERY_COMPLETED",
+        "resourceIds" : [ "DELIVERY:L3", "WAREHOUSE:W1" ],
+        "truckIds" : [ "T3" ],
+        "startSec" : 976.0,
+        "endSec" : 976.0,
+        "delaySec" : 0.0,
+        "predicted" : false,
+        "message" : "L3 completed dock service at 976.0 s; realized deadline lateness 0 s.",
+        "provenance" : "SIMULATED_OUTCOME"
+      }, {
+        "id" : "DOCK_QUEUE:DOCK:D1_1,TRUCK:T5:T1",
+        "code" : "DOCK_QUEUE",
+        "resourceIds" : [ "DOCK:D1_1", "TRUCK:T5" ],
+        "truckIds" : [ "T1" ],
+        "startSec" : 1076.9,
+        "endSec" : 1076.9,
+        "delaySec" : 0.10000000000013642,
+        "predicted" : false,
+        "message" : "T1 is physically queued at D1_1 behind T5",
+        "provenance" : "SIMULATED_OUTCOME"
+      }, {
+        "id" : "DELIVERY_LATE:DELIVERY:L5,WAREHOUSE:W1:T5",
+        "code" : "DELIVERY_LATE",
+        "resourceIds" : [ "DELIVERY:L5", "WAREHOUSE:W1" ],
+        "truckIds" : [ "T5" ],
+        "startSec" : 1110.0,
+        "endSec" : 1110.0,
+        "delaySec" : 51.40000000000009,
+        "predicted" : false,
+        "message" : "L5 completed dock service at 1110.0 s; realized deadline lateness 51 s.",
+        "provenance" : "SIMULATED_OUTCOME"
+      }, {
+        "id" : "DELIVERY_COMPLETED:DELIVERY:L7,WAREHOUSE:W1:T7",
+        "code" : "DELIVERY_COMPLETED",
+        "resourceIds" : [ "DELIVERY:L7", "WAREHOUSE:W1" ],
+        "truckIds" : [ "T7" ],
+        "startSec" : 1141.5,
+        "endSec" : 1141.5,
+        "delaySec" : 0.0,
+        "predicted" : false,
+        "message" : "L7 completed dock service at 1141.5 s; realized deadline lateness 0 s.",
+        "provenance" : "SIMULATED_OUTCOME"
+      }, {
+        "id" : "DOCK_QUEUE:DOCK:D2_1,TRUCK:T2:T6",
+        "code" : "DOCK_QUEUE",
+        "resourceIds" : [ "DOCK:D2_1", "TRUCK:T2" ],
+        "truckIds" : [ "T6" ],
+        "startSec" : 1203.6,
+        "endSec" : 1203.6,
+        "delaySec" : 0.09999999999990905,
+        "predicted" : false,
+        "message" : "T6 is physically queued at D2_1 behind T2",
+        "provenance" : "SIMULATED_OUTCOME"
+      }, {
+        "id" : "DELIVERY_LATE:DELIVERY:L1,WAREHOUSE:W1:T1",
+        "code" : "DELIVERY_LATE",
+        "resourceIds" : [ "DELIVERY:L1", "WAREHOUSE:W1" ],
+        "truckIds" : [ "T1" ],
+        "startSec" : 1275.5,
+        "endSec" : 1275.5,
+        "delaySec" : 387.4,
+        "predicted" : false,
+        "message" : "L1 completed dock service at 1275.5 s; realized deadline lateness 387 s.",
+        "provenance" : "SIMULATED_OUTCOME"
+      }, {
+        "id" : "DELIVERY_LATE:DELIVERY:L2,WAREHOUSE:W2:T2",
+        "code" : "DELIVERY_LATE",
+        "resourceIds" : [ "DELIVERY:L2", "WAREHOUSE:W2" ],
+        "truckIds" : [ "T2" ],
+        "startSec" : 1335.3,
+        "endSec" : 1335.3,
+        "delaySec" : 354.29999999999995,
+        "predicted" : false,
+        "message" : "L2 completed dock service at 1335.3 s; realized deadline lateness 354 s.",
+        "provenance" : "SIMULATED_OUTCOME"
+      }, {
+        "id" : "DELIVERY_LATE:DELIVERY:L4,WAREHOUSE:W2:T4",
+        "code" : "DELIVERY_LATE",
+        "resourceIds" : [ "DELIVERY:L4", "WAREHOUSE:W2" ],
+        "truckIds" : [ "T4" ],
+        "startSec" : 1337.5,
+        "endSec" : 1337.5,
+        "delaySec" : 291.4000000000001,
+        "predicted" : false,
+        "message" : "L4 completed dock service at 1337.5 s; realized deadline lateness 291 s.",
+        "provenance" : "SIMULATED_OUTCOME"
+      }, {
+        "id" : "DELIVERY_LATE:DELIVERY:L6,WAREHOUSE:W2:T6",
+        "code" : "DELIVERY_LATE",
+        "resourceIds" : [ "DELIVERY:L6", "WAREHOUSE:W2" ],
+        "truckIds" : [ "T6" ],
+        "startSec" : 1500.8,
+        "endSec" : 1500.8,
+        "delaySec" : 348.5,
+        "predicted" : false,
+        "message" : "L6 completed dock service at 1500.8 s; realized deadline lateness 349 s.",
+        "provenance" : "SIMULATED_OUTCOME"
+      } ]
+    },
+    "provenance" : "SIMULATED_RESEARCH_EXPERIMENT"
+  },
+  "executionWallMs" : 3319.040619,
+  "javaHeapPoolPeakBytes" : 453143224,
+  "memoryScope" : "Sum of per-heap-pool peaks during this run; excludes Python service, GPU, native and container memory; not simultaneous RSS"
+}

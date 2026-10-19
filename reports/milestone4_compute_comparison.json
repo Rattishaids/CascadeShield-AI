@@ -1,0 +1,115 @@
+{
+  "schemaVersion": "cascadeshield.compute-comparison/1.0",
+  "provenance": "TIMED_ENGINEERING_WORK_ON_SIMULATED_TRAINING_DATA",
+  "sourceCorpusSha256": "b44b2e222a289a0934287342545bc8defd3c17bf6624ff7374e03163633b2109",
+  "packages": {
+    "numpy": "2.2.6",
+    "scikit-learn": "1.7.2",
+    "torch": "2.7.1+cu118",
+    "torch-geometric": "2.7.0",
+    "psutil": "7.2.2",
+    "xgboost": "3.1.3"
+  },
+  "pretrainingAudit": {
+    "path": "reports/milestone4_leakage_audit.json",
+    "sha256": "5a1873754b10878330f98c27937e89f4e77d633740c6d757a6a981f0227a3d70",
+    "protocolSha256": "46ec8bfae7a6790e8b24b7fe8c8b7cd4a3005e4dea8b76a61e0ecd8434676f66",
+    "generationManifestSha256": "d3ee5732684b296f47c1842fa7e6dee71b0f57b8cb820ba3e4bbf02c4b571432",
+    "graphSha256": "c943bac278192042b22342d8e1be898cc68512fb936e314633645bc3e0304e60",
+    "featureSchemaHash": "bfb419c7a4fde46112e53aa83a8131e2f1e33526d4d85dda51374de1a828c4d4",
+    "developmentCorpusSha256": {
+      "train": "b44b2e222a289a0934287342545bc8defd3c17bf6624ff7374e03163633b2109",
+      "validation": "83f8f9e977316b01c2b66dca45855ca2e06ff7f6995a2c124c2b4f1f48233274",
+      "calibration": "3d9a0ec03a512e3ca6d5b57adab45e920c6b53dc9a4e4a46f04127107e4d459a"
+    },
+    "reviewedSourceSha256": {
+      "simulator/backend/src/main/java/io/cascadeshield/sim/MlFeatureExtractor.java": "476d1b9d1052b9b78d9dc352e49c193de2d0fe20710bda31862bfb11503077d2",
+      "simulator/backend/src/main/java/io/cascadeshield/sim/MlCorpusCli.java": "c1cad3fa58f5fa120ef61d298a073888506c15fee050f3092c0d8bb6da2c60c5",
+      "simulator/backend/src/main/java/io/cascadeshield/sim/MlExperimentProtocol.java": "ec99da8a7c8eed0abeca5cee988fecbc7e82070708b544e4a140437e659d8aaa",
+      "ml/data.py": "80ae12394c57c147f1ef711855b7f4481b41b4aac8f309ab978be3b54ecc6a1d",
+      "ml/features.py": "94f3495cfeafa88f36c691560e4653f8c860bd70f19f9c51365f3bbaeaa40a65"
+    }
+  },
+  "cudaAvailable": true,
+  "gpuName": "NVIDIA GeForce RTX 4050 Laptop GPU",
+  "gpuTotalBytes": 6438780928,
+  "results": [
+    {
+      "algorithm": "GNN_STATIC",
+      "device": "cpu",
+      "actualParameterDevice": "cpu",
+      "actualInputTensorDevice": "cpu",
+      "scenarioCount": 3,
+      "framesPerScenario": 3,
+      "epochs": 2,
+      "trainingMs": 407.5975000159815,
+      "inferenceMsPerGraphHistory": 2.4526900000637397,
+      "peakCudaAllocatedBytes": null,
+      "peakCudaReservedBytes": null,
+      "processRssBytes": 695779328
+    },
+    {
+      "algorithm": "GNN_STATIC",
+      "device": "cuda",
+      "actualParameterDevice": "cuda:0",
+      "actualInputTensorDevice": "cuda:0",
+      "scenarioCount": 3,
+      "framesPerScenario": 3,
+      "epochs": 2,
+      "trainingMs": 912.7151999855414,
+      "inferenceMsPerGraphHistory": 10.726940000313334,
+      "peakCudaAllocatedBytes": 68745728,
+      "peakCudaReservedBytes": 69206016,
+      "processRssBytes": 1126924288
+    },
+    {
+      "algorithm": "GNN_TEMPORAL",
+      "device": "cpu",
+      "actualParameterDevice": "cpu",
+      "actualInputTensorDevice": "cpu",
+      "scenarioCount": 3,
+      "framesPerScenario": 3,
+      "epochs": 2,
+      "trainingMs": 262.8305999969598,
+      "inferenceMsPerGraphHistory": 5.858770001213998,
+      "peakCudaAllocatedBytes": null,
+      "peakCudaReservedBytes": null,
+      "processRssBytes": 1131401216
+    },
+    {
+      "algorithm": "GNN_TEMPORAL",
+      "device": "cuda",
+      "actualParameterDevice": "cuda:0",
+      "actualInputTensorDevice": "cuda:0",
+      "scenarioCount": 3,
+      "framesPerScenario": 3,
+      "epochs": 2,
+      "trainingMs": 723.7189000006765,
+      "inferenceMsPerGraphHistory": 28.233499999623746,
+      "peakCudaAllocatedBytes": 69356032,
+      "peakCudaReservedBytes": 71303168,
+      "processRssBytes": 1134559232
+    },
+    {
+      "algorithm": "XGBOOST_ETA",
+      "device": "cpu",
+      "trainingMs": 68.43699997989461,
+      "examples": 3055,
+      "cpuInferenceMsPer32Trucks": 0.3426599985687062,
+      "actualLearnerDevice": "cpu",
+      "updaters": "grow_quantile_histmaker",
+      "processRssBytes": 1142669312
+    },
+    {
+      "algorithm": "XGBOOST_ETA",
+      "device": "cuda",
+      "trainingMs": 296.5193999989424,
+      "examples": 3055,
+      "cpuInferenceMsPer32Trucks": 0.3413200000068173,
+      "actualLearnerDevice": "cuda:0",
+      "updaters": "grow_gpu_hist",
+      "processRssBytes": 1201115136
+    }
+  ],
+  "limitation": "Small fixed development workload; warm kernel timings, no research-effectiveness or dedicated hardware performance claim"
+}

@@ -1,0 +1,212 @@
+{
+  "schemaVersion": "cascadeshield.milestone-results/3.0",
+  "status": "COMPLETE",
+  "completedOnLocalDate": "2026-10-14",
+  "recordedAtUtc": "2026-10-14T04:49:49.272451+00:00",
+  "provenance": "SIMULATED_RESEARCH_EXPERIMENT",
+  "tests": {
+    "java": 124,
+    "frontend": 50,
+    "python": 33,
+    "isolated_api": 12,
+    "benchmark_browser": 8,
+    "restart": 5
+  },
+  "totalExecutedCurrentChecks": 232,
+  "allFinalChecksPassed": true,
+  "pairedScenarios": 20,
+  "seeds": 5,
+  "executedPolicyRows": 260,
+  "completedPersistentBatchJobs": 8,
+  "failedAttempts": [
+    {
+      "id": "6fa70409-a1e2-4152-a8fc-9f2da27c6191",
+      "completedRuns": 30,
+      "error": "Backend stopped before completion. Rerun the persisted request; no missing outcomes have been fabricated.",
+      "rawJson": "reports/benchmark_raw/6fa70409-a1e2-4152-a8fc-9f2da27c6191_failed.json",
+      "rawSha256": "64f02f62cba1c35056600517a9bff2644528d605345af94ca8a9dd83dc2a99a7"
+    }
+  ],
+  "constraintViolations": 0,
+  "unfinishedDeliveries": 0,
+  "censoredRecoveryRows": 0,
+  "decisionTraces": 822,
+  "executedHypotheticalAlternatives": 1508,
+  "decisionBudgetReachedByPolicyAndMode": {
+    "B4_NO_COUNTERFACTUAL / FULL": 13,
+    "B4 / EQUAL_ACTIONS": 15,
+    "B1 / FULL": 5,
+    "B2 / FULL": 5,
+    "B3 / FULL": 5,
+    "B4 / FULL": 9,
+    "B4_NO_TEMPORAL / FULL": 7,
+    "B4_NO_ADAPTIVE / FULL": 9,
+    "B1 / EQUAL_ACTIONS": 5,
+    "B2 / EQUAL_ACTIONS": 5,
+    "B3 / EQUAL_ACTIONS": 5
+  },
+  "selectedActionsByPolicy": {
+    "B1": {
+      "GLOBAL_REROUTE": 98,
+      "NONE": 32
+    },
+    "B2": {
+      "NONE": 108,
+      "LOCAL_REROUTE": 30
+    },
+    "B3": {
+      "GLOBAL_REROUTE": 98,
+      "CONTINUE": 16,
+      "NONE": 16
+    },
+    "B4": {
+      "GLOBAL_REROUTE": 67,
+      "ADJUST_DOCK_RESERVATION": 12,
+      "WAIT": 13,
+      "NONE": 81,
+      "LOCAL_REROUTE": 5
+    },
+    "B4_NO_TEMPORAL": {
+      "GLOBAL_REROUTE": 31,
+      "ADJUST_DOCK_RESERVATION": 11,
+      "WAIT": 10,
+      "LOCAL_REROUTE": 2,
+      "NONE": 22
+    },
+    "B4_NO_ADAPTIVE": {
+      "GLOBAL_REROUTE": 31,
+      "ADJUST_DOCK_RESERVATION": 12,
+      "WAIT": 10,
+      "LOCAL_REROUTE": 2,
+      "NONE": 23
+    },
+    "B4_NO_COUNTERFACTUAL": {
+      "GLOBAL_REROUTE": 49,
+      "ADJUST_DOCK_RESERVATION": 11,
+      "NONE": 32
+    }
+  },
+  "adverseTradeoffComparisons": 68,
+  "liveStatePreserved": true,
+  "liveClockSec": 1621.0,
+  "historicalTables": 18,
+  "historicalRows": 2414128,
+  "graphSha256": "c943bac278192042b22342d8e1be898cc68512fb936e314633645bc3e0304e60",
+  "protocolSha256": "989fba83cec961191289e605a201c426838b68188a6e74f51da90d0f43be5a01",
+  "artifacts": {
+    "BENCHMARK_RESULTS.json": {
+      "bytes": 815443,
+      "sha256": "2f6fa2d54ecaf3540d59d2dbc6909a6864e433e8a1ac0177db955bd9b9b63ec6"
+    },
+    "BENCHMARK_RESULTS.csv": {
+      "bytes": 93762,
+      "sha256": "e775ed01da89fdec6a5c145917042a18c75ab7c8c78ba59f9249c23ad0337171"
+    },
+    "benchmark_execution_journal.json": {
+      "bytes": 10294,
+      "sha256": "c1c796f46d9287a3752227409a6af04448d137cf271f7bd2291cfdcf8ff6d258"
+    },
+    "MILESTONE_3_RESULTS.md": {
+      "bytes": 14538,
+      "sha256": "9f91373e3f7a9b8d04946c99cf005bb05d1554d9a22b73e3d01de386b562ebaa"
+    },
+    "milestone3_java_tests.json": {
+      "bytes": 3037,
+      "sha256": "81fec52a38e5bdf4d0a144c956ae9bbed5b8dd6f7c5071546c78732c49b97352"
+    },
+    "milestone3_frontend_tests.json": {
+      "bytes": 79692,
+      "sha256": "4b3b3538040aebad3e947327292b6ec565f73cd8c5eddf4ef40af5a4755f4b21"
+    },
+    "milestone3_python_tests.json": {
+      "bytes": 468,
+      "sha256": "244a1e34ee36102c0a0c57343febf81a3da22919c3eb05479b5d18953c7dccd3"
+    },
+    "milestone3_integration_tests.json": {
+      "bytes": 5639,
+      "sha256": "cab56655959d94e22a7005efcc46f42d9f5f228cad6dfc4a9584e42125445128"
+    },
+    "milestone3_browser_tests.json": {
+      "bytes": 1638,
+      "sha256": "e21018f8e7719b1470e032fb7afcdfee83287ea63a49649feda40c43c91c8f8f"
+    },
+    "milestone3_restart_tests.json": {
+      "bytes": 2689,
+      "sha256": "f1d8b4c5eee5ad9ec22b716535a7822a8c08df754acd3453a83108d126f15246"
+    },
+    "milestone3_result_validation.json": {
+      "bytes": 28753,
+      "sha256": "e3d923379cd45af46835da4c3da220e3d247ecb9abe44313d90af6b1cedd07e5"
+    },
+    "milestone3_artifact_validation/validation_run.json": {
+      "bytes": 12495,
+      "sha256": "c5b1a925a6b4bdebb96b73adc6c52962294354b748e323d6dc37ea3722054114"
+    }
+  },
+  "implementationSha256": {
+    "config/benchmark_protocol.json": "989fba83cec961191289e605a201c426838b68188a6e74f51da90d0f43be5a01",
+    "scripts/benchmark_statistics.py": "351b9e021c512c2bd64b65744a93451ec885f700eb8eb821608a0e880220432a",
+    "scripts/report_milestone3.py": "cf2859aa24d783ddfd36b24ae7774038d574ceeed652da2bac401fc1fba6ff76",
+    "scripts/run_benchmarks.py": "7ad3ec832cc0b6f29eb4bce7927fdc8adf7cd68f00378e21d7912df584c56a34",
+    "scripts/test_benchmark_browser.py": "f850d0a648ef92fef8eda4156db1c40d164818fd3f6fef49f6638ef06b7f8a9d",
+    "scripts/test_benchmark_integration.py": "84f248824ea38564f2ddbaebef14718743f22cff3936bb932e4879ba0710499c",
+    "scripts/test_benchmark_restart.py": "49a50962a519966e3f33844b033db293bed2ea7661e190f1ad1928ec7e64409b",
+    "scripts/validate_benchmark_results.py": "6006aa041f4face9fa60c1bda73a679760174112654cf3a693830738c423e254",
+    "simulator/backend/Dockerfile": "49eea973720d708b316caae84bf2d764fb4ee93619e7f61304eb7e1592b79af6",
+    "simulator/backend/pom.xml": "20d07227e5096f01133eb41b4358f0e9c098edcc59a58a12a646cd3d2935985b",
+    "simulator/backend/src/main/java/io/cascadeshield/sim/AiArchitecture.java": "afb055adeb7a8fdfe01e8fb415f0ad96b87033e4cc8e061e78ae25219f73e3a0",
+    "simulator/backend/src/main/java/io/cascadeshield/sim/AiFallbackPipeline.java": "a9f39149cabdbdaefd7dc81432ebb9664cd358525aeb7aeba1fecd8b23f5c210",
+    "simulator/backend/src/main/java/io/cascadeshield/sim/AiModels.java": "c9bcbfa73eff9a7352cb277c296f5f56327a23ffde8caf9c0f9d72b4abe74591",
+    "simulator/backend/src/main/java/io/cascadeshield/sim/ApiException.java": "24c68273e4a336bf46acc7b3ef96c404502e30ffe640a7bf174988c2ee1a6de0",
+    "simulator/backend/src/main/java/io/cascadeshield/sim/BenchmarkController.java": "95fb7c7502f848de2779578ee3cfa163a5107e37221191ca2147c732a9e744bd",
+    "simulator/backend/src/main/java/io/cascadeshield/sim/BenchmarkModels.java": "2b94a674e83b28db516c7bb1f5b9cfaa8231d2f350f316c2e5d257c37f443621",
+    "simulator/backend/src/main/java/io/cascadeshield/sim/BenchmarkPolicyRunner.java": "a1087dad954a093d1a8360c920077deacd9650751d73e504c7c65dc5a2dea435",
+    "simulator/backend/src/main/java/io/cascadeshield/sim/BenchmarkRepository.java": "a364c177877993f2b70bfcfdd9825f7e369144f71cfde86a2d6df9fa19d93a99",
+    "simulator/backend/src/main/java/io/cascadeshield/sim/BenchmarkScenarioGenerator.java": "7ce6c7c3fc3963c5fc370a85efbc5a51e19a12304a062b38f560fafa268d1d3b",
+    "simulator/backend/src/main/java/io/cascadeshield/sim/BenchmarkService.java": "1855efd10fdc3978b734ea43863f05bb90ed9d3c5cebccf7c612046a40b4610f",
+    "simulator/backend/src/main/java/io/cascadeshield/sim/CounterfactualExperimentEngine.java": "a607d795b09941d15d43625865c2a33d05cc66b23117e653b652f237d673fccc",
+    "simulator/backend/src/main/java/io/cascadeshield/sim/ExperimentActions.java": "9dfc95cbfab5767b7ebd089604393743d7238c56a717f4e2e30664db97cc5dcd",
+    "simulator/backend/src/main/java/io/cascadeshield/sim/ExperimentMetrics.java": "fa495f84ace251b13e0181dc609612e8fae933bf1efa3ae4ae9d3c69bd37236e",
+    "simulator/backend/src/main/java/io/cascadeshield/sim/GraphRiskBaseline.java": "b759038c7b43e775eff795b2349893cb2154bf950eb41677fb115c717dd13ef4",
+    "simulator/backend/src/main/java/io/cascadeshield/sim/GraphSnapshotExporter.java": "67c61753d4d4cf891c623a3ee7d808c9472180587d0010c6ba536b082bede141",
+    "simulator/backend/src/main/java/io/cascadeshield/sim/Models.java": "b75024c8b93099921ce2b1ce0dabf7d3260f0e0dafba1855ff3f290590ab6a5e",
+    "simulator/backend/src/main/java/io/cascadeshield/sim/OperationalDependencyGraph.java": "38d0ec30b71163e691369daf0b19e169c9421e560b320fcdd881c3b1739292ac",
+    "simulator/backend/src/main/java/io/cascadeshield/sim/OperationalRuntime.java": "1026eb7d9e730e0325c5eeb120915edb2ab8bf68bc5bfdc2a68d036f35b652ec",
+    "simulator/backend/src/main/java/io/cascadeshield/sim/OperatorApprovalGuard.java": "d14d1f56ddb97652e8b6cf8df63e69f3e7e49365c3f49f26065aff24c901b2b0",
+    "simulator/backend/src/main/java/io/cascadeshield/sim/OpsModels.java": "1f17899840a951f14db04adbc0ad3c1b098ef06b09886b61d7a5d64dc7929216",
+    "simulator/backend/src/main/java/io/cascadeshield/sim/PredictionService.java": "60f54a63e3ca036843011e183c317095cb28dbdf551a0cdef23f41d6a1398ea2",
+    "simulator/backend/src/main/java/io/cascadeshield/sim/PreventionService.java": "da069d41b4c1d7f65c07a766331ac2c2982b33bdd9836c8239e23e3159942e30",
+    "simulator/backend/src/main/java/io/cascadeshield/sim/RoadGraph.java": "840d1db02bae92092663001d6f8d2824f480057248d5f84d5ef9ef832239ebf7",
+    "simulator/backend/src/main/java/io/cascadeshield/sim/RuleBasedPredictionService.java": "aaa13e5ac5437306555c3087d895c0a5084220914bcc7c7083141f2ba905e90c",
+    "simulator/backend/src/main/java/io/cascadeshield/sim/RuleBasedPreventionService.java": "134865d7180f6d1cdcf2dc1e99ce7509ecf5d7d3a65ccda90651df9803bf368e",
+    "simulator/backend/src/main/java/io/cascadeshield/sim/SimulationEngine.java": "b1412f24ccaa2cc2e7ef20e289a83852ef91450ca80023cdc40eb2ccd971150a",
+    "simulator/backend/src/main/java/io/cascadeshield/sim/SimulationRepository.java": "a7ba719da32cbb787ee5f5c272b681e053f330a3328a0c4a33d1a38d91956798",
+    "simulator/backend/src/main/java/io/cascadeshield/sim/SimulationService.java": "5d6c4e3a3db4f1f4cd017dc86f0f337e6fef77efc33ed56266ec8bebf315319a",
+    "simulator/backend/src/main/java/io/cascadeshield/sim/SimulatorApplication.java": "eed80cf9cd8f36ac9fe28aa64b5e96be46a3ba0617a18f77cd7c39232d872e5c",
+    "simulator/backend/src/main/java/io/cascadeshield/sim/SimulatorController.java": "79295d91a4d65711c513db20b1f010597025ce7ee6e1175fd8671fc47c0e9c21",
+    "simulator/backend/src/main/resources/db/migration/V3__benchmark_jobs.sql": "e7d411d9ed7837f30a972a03c3d1e9f07cff9c4ac95175d4d038656dd2623cdc",
+    "simulator/backend/src/test/java/io/cascadeshield/sim/AiArchitectureTest.java": "561755cfe6e936cbfc38f7b7998d753a36e8528cf77e7865b3c6908adf17a8dc",
+    "simulator/backend/src/test/java/io/cascadeshield/sim/BenchmarkChennaiScenarioTest.java": "d019e69950c020ba6ce102e4f3213a8196306a6141a2422f4a77fb757cbcf146",
+    "simulator/backend/src/test/java/io/cascadeshield/sim/BenchmarkPolicyRunnerTest.java": "ae2db593e94de29062896114599830fd6ee69dbe8fb1524cd8e3bd8552b74e74",
+    "simulator/backend/src/test/java/io/cascadeshield/sim/CounterfactualExperimentEngineTest.java": "7877a395bfec9b8f71bfd5e3c72f08689d70084524f5721f8af2ae37d8f16173",
+    "simulator/backend/src/test/java/io/cascadeshield/sim/GraphRiskBaselineTest.java": "9e3bca79825f574ec08cdcd6dcf50b621e8021d8c6717792a7e73e835e56c389",
+    "simulator/backend/src/test/java/io/cascadeshield/sim/OperationalDependencyGraphTest.java": "4230938954bb6edf8a3219a3c3ee03701e4d77e43b4a7119a3aed52934133bbd",
+    "simulator/backend/src/test/java/io/cascadeshield/sim/OperationalRuntimeTest.java": "4b88771ed6a62a3117fc0186cceb63a51b5e452d62c38b16c2cb669efa106315",
+    "simulator/backend/src/test/java/io/cascadeshield/sim/OperatorApprovalGuardTest.java": "041fb1ecce54f5f1c99bf2f56c7caeb7f5a0ce606c6f5a0f02657b51590704f2",
+    "simulator/backend/src/test/java/io/cascadeshield/sim/RoadGraphTest.java": "92e5de7d7194b75ac641fb3e02c96953ee955c4452977f7698e8e206fa977e5c",
+    "simulator/backend/src/test/java/io/cascadeshield/sim/SimulationApprovalTransactionTest.java": "cf07c6dfbbe13302ac02ed78f933eff12e5b837e63a45b01c5a313facd8a1402",
+    "simulator/backend/src/test/java/io/cascadeshield/sim/SimulationEngineRegressionTest.java": "8783cc911c1614433e43cfff40fc2520978d165f542b6dab5e627a473246a183",
+    "simulator/backend/src/test/java/io/cascadeshield/sim/SimulationEngineTest.java": "4a8ac80082e97d799369bd676e27e1550f5cee0df7d6d0b45c1e8e333e81c711",
+    "simulator/compose.yaml": "9e9e34c0635bd5ffb6cef0e83da1548499b64832ac4e09ed030f40fd8a83baea",
+    "simulator/frontend/package-lock.json": "ae18620e037ea0e24889573595a561e1cb78d49ec8165a8e1b4a1a3e6c3f5936",
+    "simulator/frontend/src/App.tsx": "7c2d312caaae131dcd4f6b8560a05eccf0893a7fe4f5cce52eeca6a828bc37fa",
+    "simulator/frontend/src/benchmark.css": "f36581e091c1ac10e66373952c687252b53fed953a0809f516144e7c4983cb60",
+    "simulator/frontend/src/benchmark.test.ts": "5866f7a3bc1cf7a326d18332b297c5832cf5d3469b3ac0d20f6b028a2a585c40",
+    "simulator/frontend/src/benchmark.ts": "a5688247b9266e2da7bf0767f72e877af29852a34ea25e0228a17021d1d75c88",
+    "simulator/frontend/src/BenchmarkLab.tsx": "5a3aeb1fa6a895cef0e84c2c801e4bf2c4b9668d805619ed4bbb431eec39aa78",
+    "tests/test_benchmark_statistics.py": "69a73540362b7159303a89c59f504cacc4d0184353b98ee4b0573b507c8617bb"
+  },
+  "trainedGnn": false,
+  "autonomousLlm": false,
+  "stopBoundary": "Milestone 3 complete; no ML development."
+}

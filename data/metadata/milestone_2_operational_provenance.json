@@ -1,0 +1,316 @@
+{
+  "schema_version": "cascadeshield.operational-provenance/1.0",
+  "recorded_at_utc": "2026-10-13T15:14:24.710792+00:00",
+  "milestone": 2,
+  "geography": {
+    "classification": "REAL_GEOGRAPHIC_DATA",
+    "network_id": "chennai-central-osm-v1",
+    "raw_source": "data/raw/chennai_osm/central_chennai.json",
+    "raw_sha256": "38ab5bdea18ca7859daea5a3801f1a5d138d320e29a841aa8d67f00c1c87e80d",
+    "graph_source": "data/processed/chennai_osm/road_graph.json",
+    "graph_sha256": "c943bac278192042b22342d8e1be898cc68512fb936e314633645bc3e0304e60",
+    "license": "ODbL-1.0",
+    "original_source_timestamp": "2026-10-09T05:33:21Z",
+    "region": "bounded central Chennai, India"
+  },
+  "operational_inputs": {
+    "classification": "SIMULATED",
+    "source": "Explicit manual/API operator configuration on real road nodes",
+    "observed_freight_records": false,
+    "historical_cohorts_joined_to_operations": false
+  },
+  "predictions": {
+    "classification": "SIMULATED_PREDICTION",
+    "provider": "RULE_BASED_FALLBACK / RULE_BASED_GRAPH_BASELINE",
+    "calibrated": false
+  },
+  "outcomes": {
+    "classification": "SIMULATED_OUTCOME",
+    "source": "Authoritative deterministic simulation engine",
+    "field_effectiveness_evidence": false
+  },
+  "training": {
+    "gnn_trained": false,
+    "deep_learning_trained": false,
+    "autonomous_llm": false,
+    "actual_pyg_serialization_executed": false
+  },
+  "research_imports": {
+    "research_tables": 18,
+    "rows": 2414128,
+    "preserved": true
+  },
+  "demonstration": {
+    "run_id": "a0dc2938-e839-4df7-ae63-415df61503bc",
+    "scenario_id": "0964c8fe-cc1a-4bac-ace3-50b55670c38f",
+    "seed": 0,
+    "clock_sec": 1000.0,
+    "initial_clock_iso": "2026-10-09T09:00:00+05:30"
+  },
+  "export_artifacts": [
+    {
+      "path": "reports/milestone_2_exports/dda07d32-e70c-442e-8061-04df155d3578/browser_demonstration_scenario.json",
+      "bytes": 4311,
+      "sha256": "09cfd184c4e7d8e5033e744a8aa9b0b4cd0dafd9c66bea0a784bfc1b4869f5e1",
+      "classification": "SIMULATED_ENGINEERING_EVIDENCE"
+    },
+    {
+      "path": "reports/milestone_2_exports/dda07d32-e70c-442e-8061-04df155d3578/browser_demonstration_snapshot.json",
+      "bytes": 23764,
+      "sha256": "8033a5238c125bb26686cb66ba40da31e80e3db0249f4ff764ce60463c442f19",
+      "classification": "SIMULATED_ENGINEERING_EVIDENCE"
+    },
+    {
+      "path": "reports/milestone_2_exports/dda07d32-e70c-442e-8061-04df155d3578/cascade_scenario.json",
+      "bytes": 4401,
+      "sha256": "6255ce415fa8ba7d9f3a0fe7af016bb1ba48e46eece6b56b8ae8d06d0583e8ff",
+      "classification": "SIMULATED_ENGINEERING_EVIDENCE"
+    },
+    {
+      "path": "reports/milestone_2_exports/dda07d32-e70c-442e-8061-04df155d3578/completed_snapshot.json",
+      "bytes": 23194,
+      "sha256": "0c43a893a0c569027443c9a07d0862a03c563fdcb95c9ef819ca31bf8382c17a",
+      "classification": "SIMULATED_ENGINEERING_EVIDENCE"
+    },
+    {
+      "path": "reports/milestone_2_exports/dda07d32-e70c-442e-8061-04df155d3578/completed_tensor_pack.json",
+      "bytes": 26500,
+      "sha256": "42dc15c0d5d3cff225167dc5f3d9142acb9919e684c1546ae91e4e9186f64717",
+      "classification": "SIMULATED_ENGINEERING_EVIDENCE"
+    },
+    {
+      "path": "reports/milestone_2_exports/dda07d32-e70c-442e-8061-04df155d3578/queue_snapshot.json",
+      "bytes": 23644,
+      "sha256": "1d8a418845a9982d0f8b29f529e63a41152c892a5bd5270dbb61b40e73655f79",
+      "classification": "SIMULATED_ENGINEERING_EVIDENCE"
+    },
+    {
+      "path": "reports/milestone_2_exports/dda07d32-e70c-442e-8061-04df155d3578/queue_tensor_pack.json",
+      "bytes": 27711,
+      "sha256": "349f5dc454d09f0efe0dd18d689b3ef11768c4813794ba514860d4d18e8beb76",
+      "classification": "SIMULATED_ENGINEERING_EVIDENCE"
+    }
+  ],
+  "source_files": [
+    {
+      "path": "docs/AGENTIC_WORKFLOW_DESIGN.md",
+      "sha256": "725714cbb1d30741827e6efc4b87c7c014db2209a0ef1f27bf0f7737320438f4"
+    },
+    {
+      "path": "docs/AI_ARCHITECTURE.md",
+      "sha256": "6bd12f6632e5ee0acfa13b89f82bcfe3461ddf547b41df6eb393dc4a4aa9a275"
+    },
+    {
+      "path": "docs/GNN_TRAINING_READINESS.md",
+      "sha256": "1dcc1bc7d16cd62953dbfdc1528cd9c81468085cddce463e6e68fb3c6dd413ce"
+    },
+    {
+      "path": "docs/OPERATIONAL_API.md",
+      "sha256": "04fd70421d7b5291d8f2be2532504165186146849304487610962cad611ed1e3"
+    },
+    {
+      "path": "docs/OPERATIONAL_GRAPH.md",
+      "sha256": "396d9c85fe9d21a8ec3276f5e408672c428d1e3b8aa460d294a189d8ce2be5ab"
+    },
+    {
+      "path": "scripts/convert_graph_snapshot.py",
+      "sha256": "fdccc2c37fcd337204001d1ee5f95a663636ac089c679dade01a3493fe7caebc"
+    },
+    {
+      "path": "scripts/test_operational_browser.py",
+      "sha256": "1d8cad47c4ebf337c7aa29b008e936a85daee8891ad39fad9e1c4f6c042bac37"
+    },
+    {
+      "path": "scripts/test_operational_integration.py",
+      "sha256": "8be8ae7a0b4b492f1a8a72a47389c2e01ea9dd0b550d69aa565806eef52750aa"
+    },
+    {
+      "path": "simulator/backend/pom.xml",
+      "sha256": "20d07227e5096f01133eb41b4358f0e9c098edcc59a58a12a646cd3d2935985b"
+    },
+    {
+      "path": "simulator/backend/src/main/java/io/cascadeshield/sim/AiArchitecture.java",
+      "sha256": "afb055adeb7a8fdfe01e8fb415f0ad96b87033e4cc8e061e78ae25219f73e3a0"
+    },
+    {
+      "path": "simulator/backend/src/main/java/io/cascadeshield/sim/AiFallbackPipeline.java",
+      "sha256": "a9f39149cabdbdaefd7dc81432ebb9664cd358525aeb7aeba1fecd8b23f5c210"
+    },
+    {
+      "path": "simulator/backend/src/main/java/io/cascadeshield/sim/AiModels.java",
+      "sha256": "c9bcbfa73eff9a7352cb277c296f5f56327a23ffde8caf9c0f9d72b4abe74591"
+    },
+    {
+      "path": "simulator/backend/src/main/java/io/cascadeshield/sim/ApiException.java",
+      "sha256": "24c68273e4a336bf46acc7b3ef96c404502e30ffe640a7bf174988c2ee1a6de0"
+    },
+    {
+      "path": "simulator/backend/src/main/java/io/cascadeshield/sim/GraphRiskBaseline.java",
+      "sha256": "b759038c7b43e775eff795b2349893cb2154bf950eb41677fb115c717dd13ef4"
+    },
+    {
+      "path": "simulator/backend/src/main/java/io/cascadeshield/sim/GraphSnapshotExporter.java",
+      "sha256": "67c61753d4d4cf891c623a3ee7d808c9472180587d0010c6ba536b082bede141"
+    },
+    {
+      "path": "simulator/backend/src/main/java/io/cascadeshield/sim/Models.java",
+      "sha256": "b75024c8b93099921ce2b1ce0dabf7d3260f0e0dafba1855ff3f290590ab6a5e"
+    },
+    {
+      "path": "simulator/backend/src/main/java/io/cascadeshield/sim/OperationalDependencyGraph.java",
+      "sha256": "38d0ec30b71163e691369daf0b19e169c9421e560b320fcdd881c3b1739292ac"
+    },
+    {
+      "path": "simulator/backend/src/main/java/io/cascadeshield/sim/OperationalRuntime.java",
+      "sha256": "1026eb7d9e730e0325c5eeb120915edb2ab8bf68bc5bfdc2a68d036f35b652ec"
+    },
+    {
+      "path": "simulator/backend/src/main/java/io/cascadeshield/sim/OperatorApprovalGuard.java",
+      "sha256": "d14d1f56ddb97652e8b6cf8df63e69f3e7e49365c3f49f26065aff24c901b2b0"
+    },
+    {
+      "path": "simulator/backend/src/main/java/io/cascadeshield/sim/OpsModels.java",
+      "sha256": "1f17899840a951f14db04adbc0ad3c1b098ef06b09886b61d7a5d64dc7929216"
+    },
+    {
+      "path": "simulator/backend/src/main/java/io/cascadeshield/sim/PredictionService.java",
+      "sha256": "60f54a63e3ca036843011e183c317095cb28dbdf551a0cdef23f41d6a1398ea2"
+    },
+    {
+      "path": "simulator/backend/src/main/java/io/cascadeshield/sim/PreventionService.java",
+      "sha256": "da069d41b4c1d7f65c07a766331ac2c2982b33bdd9836c8239e23e3159942e30"
+    },
+    {
+      "path": "simulator/backend/src/main/java/io/cascadeshield/sim/RoadGraph.java",
+      "sha256": "840d1db02bae92092663001d6f8d2824f480057248d5f84d5ef9ef832239ebf7"
+    },
+    {
+      "path": "simulator/backend/src/main/java/io/cascadeshield/sim/RuleBasedPredictionService.java",
+      "sha256": "aaa13e5ac5437306555c3087d895c0a5084220914bcc7c7083141f2ba905e90c"
+    },
+    {
+      "path": "simulator/backend/src/main/java/io/cascadeshield/sim/RuleBasedPreventionService.java",
+      "sha256": "134865d7180f6d1cdcf2dc1e99ce7509ecf5d7d3a65ccda90651df9803bf368e"
+    },
+    {
+      "path": "simulator/backend/src/main/java/io/cascadeshield/sim/SimulationEngine.java",
+      "sha256": "b1412f24ccaa2cc2e7ef20e289a83852ef91450ca80023cdc40eb2ccd971150a"
+    },
+    {
+      "path": "simulator/backend/src/main/java/io/cascadeshield/sim/SimulationRepository.java",
+      "sha256": "a7ba719da32cbb787ee5f5c272b681e053f330a3328a0c4a33d1a38d91956798"
+    },
+    {
+      "path": "simulator/backend/src/main/java/io/cascadeshield/sim/SimulationService.java",
+      "sha256": "5d6c4e3a3db4f1f4cd017dc86f0f337e6fef77efc33ed56266ec8bebf315319a"
+    },
+    {
+      "path": "simulator/backend/src/main/java/io/cascadeshield/sim/SimulatorApplication.java",
+      "sha256": "eed80cf9cd8f36ac9fe28aa64b5e96be46a3ba0617a18f77cd7c39232d872e5c"
+    },
+    {
+      "path": "simulator/backend/src/main/java/io/cascadeshield/sim/SimulatorController.java",
+      "sha256": "79295d91a4d65711c513db20b1f010597025ce7ee6e1175fd8671fc47c0e9c21"
+    },
+    {
+      "path": "simulator/backend/src/main/resources/db/migration/V1__simulator.sql",
+      "sha256": "5607a9107d53c133f7110fd30c4ad59dbb0873685262bed856d39f6887ec724f"
+    },
+    {
+      "path": "simulator/backend/src/main/resources/db/migration/V2__operational_ai_boundary.sql",
+      "sha256": "8f83072e988a4245ca24873f0d05b59bcc7a8709ec6ad00ff1c66c263b08e531"
+    },
+    {
+      "path": "simulator/frontend/src/api.test.ts",
+      "sha256": "655800423c101f8e352792437b09b2426890579d4faaf42d161ad623ddd828e6"
+    },
+    {
+      "path": "simulator/frontend/src/api.ts",
+      "sha256": "c18d9873fa60c7260e1ab76a64740e3f205e5846bce82000ea4836c3ce42d922"
+    },
+    {
+      "path": "simulator/frontend/src/App.tsx",
+      "sha256": "872b1988f3a4d285fd4b7d02ee2864d037bbd094416621bc3d50b0ccaea7670c"
+    },
+    {
+      "path": "simulator/frontend/src/DecisionPanel.tsx",
+      "sha256": "aeb9e9720944c5debca7bb815a3cafd867b64fff01337cf95108745468125e28"
+    },
+    {
+      "path": "simulator/frontend/src/demo.test.ts",
+      "sha256": "6a6e718459b1fe038daa0404bef193a2ac633b6049251a39300665bc08f084b0"
+    },
+    {
+      "path": "simulator/frontend/src/demo.ts",
+      "sha256": "9dddcc3d10d9a05bd7464f9dc4b7c9633727210335ead8d9a5e17c07be3500ee"
+    },
+    {
+      "path": "simulator/frontend/src/format.test.ts",
+      "sha256": "c06268903adba1f0e4f5c9f7966992e41daaea3ef944e3402c66b6f1ccc94352"
+    },
+    {
+      "path": "simulator/frontend/src/format.ts",
+      "sha256": "106bf66c0fa5e8254728da07ffdb07c53d6b273e9f314553599e93cca343ed15"
+    },
+    {
+      "path": "simulator/frontend/src/main.tsx",
+      "sha256": "9122353328a17193ab76cb17d5ddd73622063dfc9657ae04851e962e75f11b8f"
+    },
+    {
+      "path": "simulator/frontend/src/mapErrors.test.ts",
+      "sha256": "dd5c40266bf438f492a548e0308bbac85df1e30f96dffe6d3d995fb93347de2c"
+    },
+    {
+      "path": "simulator/frontend/src/mapErrors.ts",
+      "sha256": "f32f6495b3c0c5ccfe2f242565daff46ddd2f0fd154fa4f1b4b7dcdd30fdf418"
+    },
+    {
+      "path": "simulator/frontend/src/NetworkMap.tsx",
+      "sha256": "dd901da2bee024759c420483b3e2165596a66e97e7cb208100a039ca098da8fb"
+    },
+    {
+      "path": "simulator/frontend/src/OperationalPanel.tsx",
+      "sha256": "639477c57fa1c0d9dbbe43d9c688251113b183f99acc10f995bc68cd33759c7c"
+    },
+    {
+      "path": "simulator/frontend/src/operations.css",
+      "sha256": "1575bfdc06fc640f2e4c8b42ecce896c4c4cd84bf526a0810e55946e1ad9abad"
+    },
+    {
+      "path": "simulator/frontend/src/operations.test.ts",
+      "sha256": "7778e5683b04f7b3fd3cb132bebdcc6b3e9025845c0f5b3a64af46e895b13237"
+    },
+    {
+      "path": "simulator/frontend/src/operations.ts",
+      "sha256": "79694a6579d2088d7e428fd49c6099ac871ceff30ca4c20402190e1a4a5bc3e2"
+    },
+    {
+      "path": "simulator/frontend/src/operationsApi.test.ts",
+      "sha256": "603d2825898ba9dcda4a06e38f8ee4ce029d737e5beb047551d589b960a43c24"
+    },
+    {
+      "path": "simulator/frontend/src/ResourceManager.tsx",
+      "sha256": "4415f4b53b61e565af5b89701af327001e054db96e0070bb10d4bc312ba0098c"
+    },
+    {
+      "path": "simulator/frontend/src/roadSelection.test.ts",
+      "sha256": "97148dc55680dc1b8ec283e8a27b8f0803ed265795f9d64883bd64c90419fb3d"
+    },
+    {
+      "path": "simulator/frontend/src/roadSelection.ts",
+      "sha256": "164c1ea267dbb577f8ec671a3a4b6985456baf4daecc1fb0e172961b158661f7"
+    },
+    {
+      "path": "simulator/frontend/src/styles.css",
+      "sha256": "b3169c5de5f6acf36f7ba1bb816cb16b9b8ff2531ab27a43bb6c969945056d67"
+    },
+    {
+      "path": "simulator/frontend/src/TruckForm.tsx",
+      "sha256": "985964eabb6917c4f04209da8823c78c58329be231158fb5edceb06b01228089"
+    },
+    {
+      "path": "simulator/frontend/src/types.ts",
+      "sha256": "ccba42842c1b224701897590759db55b52101e10e451477ee54031959d8cf098"
+    }
+  ]
+}

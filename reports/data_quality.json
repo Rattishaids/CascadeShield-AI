@@ -1,0 +1,3575 @@
+{
+  "generated_at_utc": "2026-10-08T18:03:45.774009+00:00",
+  "validation_scope": "Every row of each CSV and CSV ZIP member listed in raw_profiles; whole-file SHA256; ZIP CRC checked during download; all listed OSM elements and hourly weather arrays.",
+  "raw_profiles": {
+    "dft_collision_2024": {
+      "rows": 100927,
+      "columns": [
+        "collision_index",
+        "collision_year",
+        "collision_ref_no",
+        "location_easting_osgr",
+        "location_northing_osgr",
+        "longitude",
+        "latitude",
+        "police_force",
+        "collision_severity",
+        "number_of_vehicles",
+        "number_of_casualties",
+        "date",
+        "day_of_week",
+        "time",
+        "local_authority_district",
+        "local_authority_ons_district",
+        "local_authority_highway",
+        "local_authority_highway_current",
+        "first_road_class",
+        "first_road_number",
+        "road_type",
+        "speed_limit",
+        "junction_detail_historic",
+        "junction_detail",
+        "junction_control",
+        "second_road_class",
+        "second_road_number",
+        "pedestrian_crossing_human_control_historic",
+        "pedestrian_crossing_physical_facilities_historic",
+        "pedestrian_crossing",
+        "light_conditions",
+        "weather_conditions",
+        "road_surface_conditions",
+        "special_conditions_at_site",
+        "carriageway_hazards_historic",
+        "carriageway_hazards",
+        "urban_or_rural_area",
+        "did_police_officer_attend_scene_of_accident",
+        "trunk_road_flag",
+        "lsoa_of_accident_location",
+        "enhanced_severity_collision",
+        "collision_injury_based",
+        "collision_adjusted_severity_serious",
+        "collision_adjusted_severity_slight"
+      ],
+      "key_columns": [
+        "collision_index"
+      ],
+      "duplicate_rows": 0,
+      "duplicate_keys": 0,
+      "missing_keys": 0,
+      "blank_counts": {
+        "collision_index": 0,
+        "collision_year": 0,
+        "collision_ref_no": 0,
+        "location_easting_osgr": 0,
+        "location_northing_osgr": 0,
+        "longitude": 0,
+        "latitude": 0,
+        "police_force": 0,
+        "collision_severity": 0,
+        "number_of_vehicles": 0,
+        "number_of_casualties": 0,
+        "date": 0,
+        "day_of_week": 0,
+        "time": 0,
+        "local_authority_district": 0,
+        "local_authority_ons_district": 0,
+        "local_authority_highway": 0,
+        "local_authority_highway_current": 0,
+        "first_road_class": 0,
+        "first_road_number": 0,
+        "road_type": 0,
+        "speed_limit": 0,
+        "junction_detail_historic": 0,
+        "junction_detail": 0,
+        "junction_control": 0,
+        "second_road_class": 0,
+        "second_road_number": 0,
+        "pedestrian_crossing_human_control_historic": 0,
+        "pedestrian_crossing_physical_facilities_historic": 0,
+        "pedestrian_crossing": 0,
+        "light_conditions": 0,
+        "weather_conditions": 0,
+        "road_surface_conditions": 0,
+        "special_conditions_at_site": 0,
+        "carriageway_hazards_historic": 0,
+        "carriageway_hazards": 0,
+        "urban_or_rural_area": 0,
+        "did_police_officer_attend_scene_of_accident": 0,
+        "trunk_road_flag": 0,
+        "lsoa_of_accident_location": 0,
+        "enhanced_severity_collision": 0,
+        "collision_injury_based": 0,
+        "collision_adjusted_severity_serious": 0,
+        "collision_adjusted_severity_slight": 0
+      },
+      "literal_null_like_counts": {},
+      "raw_code_counts_not_automatically_null": {
+        "local_authority_district=-1": 100927,
+        "junction_control=-1": 42581,
+        "second_road_number=-1": 24015,
+        "enhanced_severity_collision=-1": 41630,
+        "junction_detail_historic=-1": 59602,
+        "second_road_class=-1": 11167,
+        "pedestrian_crossing_human_control_historic=-1": 59298,
+        "pedestrian_crossing_physical_facilities_historic=-1": 59305,
+        "special_conditions_at_site=-1": 59299,
+        "carriageway_hazards_historic=-1": 59300,
+        "junction_detail=-1": 7005,
+        "junction_detail_historic=99": 1950,
+        "pedestrian_crossing=99": 3012,
+        "carriageway_hazards=99": 2662,
+        "pedestrian_crossing=-1": 1034,
+        "carriageway_hazards=-1": 421,
+        "road_surface_conditions=-1": 704,
+        "longitude=-3": 1,
+        "junction_detail=99": 2,
+        "speed_limit=-1": 3,
+        "light_conditions=-1": 6,
+        "trunk_road_flag=-1": 7080,
+        "lsoa_of_accident_location=-1": 4168,
+        "police_force=99": 4167,
+        "first_road_number=99": 3,
+        "first_road_number=999": 3,
+        "second_road_number=999": 1
+      },
+      "column_profiles": {
+        "collision_index": {
+          "numeric_values": 98202,
+          "non_numeric_values": 2725,
+          "numeric_min": 2024010486807.0,
+          "numeric_max": 2024991580347.0,
+          "examples": [
+            "202417H100324",
+            "202417M110024",
+            "2024480537342"
+          ]
+        },
+        "collision_year": {
+          "numeric_values": 100927,
+          "non_numeric_values": 0,
+          "numeric_min": 2024.0,
+          "numeric_max": 2024.0,
+          "examples": [
+            "2024"
+          ]
+        },
+        "collision_ref_no": {
+          "numeric_values": 98202,
+          "non_numeric_values": 2725,
+          "numeric_min": 10486807.0,
+          "numeric_max": 991580347.0,
+          "examples": [
+            "17H100324",
+            "17M110024",
+            "480537342"
+          ]
+        },
+        "location_easting_osgr": {
+          "numeric_values": 100927,
+          "non_numeric_values": 0,
+          "numeric_min": 75390.0,
+          "numeric_max": 655160.0,
+          "examples": [
+            "449865",
+            "450069",
+            "531643"
+          ]
+        },
+        "location_northing_osgr": {
+          "numeric_values": 100927,
+          "non_numeric_values": 0,
+          "numeric_min": 10211.0,
+          "numeric_max": 1162541.0,
+          "examples": [
+            "528767",
+            "519269",
+            "180546"
+          ]
+        },
+        "longitude": {
+          "numeric_values": 100927,
+          "non_numeric_values": 0,
+          "numeric_min": -7.38868,
+          "numeric_max": 1.75622,
+          "examples": [
+            "-1.22869",
+            "-1.22715",
+            "-0.10449"
+          ]
+        },
+        "latitude": {
+          "numeric_values": 100927,
+          "non_numeric_values": 0,
+          "numeric_min": 49.91221,
+          "numeric_max": 60.3448,
+          "examples": [
+            "54.65155",
+            "54.56618",
+            "51.50852"
+          ]
+        },
+        "police_force": {
+          "numeric_values": 100927,
+          "non_numeric_values": 0,
+          "numeric_min": 1.0,
+          "numeric_max": 99.0,
+          "examples": [
+            "17",
+            "48",
+            "1"
+          ]
+        },
+        "collision_severity": {
+          "numeric_values": 100927,
+          "non_numeric_values": 0,
+          "numeric_min": 1.0,
+          "numeric_max": 3.0,
+          "examples": [
+            "2",
+            "3",
+            "1"
+          ]
+        },
+        "number_of_vehicles": {
+          "numeric_values": 100927,
+          "non_numeric_values": 0,
+          "numeric_min": 1.0,
+          "numeric_max": 26.0,
+          "examples": [
+            "1",
+            "2",
+            "4"
+          ]
+        },
+        "number_of_casualties": {
+          "numeric_values": 100927,
+          "non_numeric_values": 0,
+          "numeric_min": 1.0,
+          "numeric_max": 21.0,
+          "examples": [
+            "5",
+            "1",
+            "2"
+          ]
+        },
+        "date": {
+          "numeric_values": 0,
+          "non_numeric_values": 100927,
+          "numeric_min": null,
+          "numeric_max": null,
+          "examples": [
+            "12/01/2024",
+            "01/07/2024",
+            "18/09/2024"
+          ]
+        },
+        "day_of_week": {
+          "numeric_values": 100927,
+          "non_numeric_values": 0,
+          "numeric_min": 1.0,
+          "numeric_max": 7.0,
+          "examples": [
+            "6",
+            "2",
+            "4"
+          ]
+        },
+        "time": {
+          "numeric_values": 0,
+          "non_numeric_values": 100927,
+          "numeric_min": null,
+          "numeric_max": null,
+          "examples": [
+            "19:30",
+            "22:15",
+            "17:00"
+          ]
+        },
+        "local_authority_district": {
+          "numeric_values": 100927,
+          "non_numeric_values": 0,
+          "numeric_min": -1.0,
+          "numeric_max": -1.0,
+          "examples": [
+            "-1"
+          ]
+        },
+        "local_authority_ons_district": {
+          "numeric_values": 0,
+          "non_numeric_values": 100927,
+          "numeric_min": null,
+          "numeric_max": null,
+          "examples": [
+            "E06000001",
+            "E06000002",
+            "E09000001"
+          ]
+        },
+        "local_authority_highway": {
+          "numeric_values": 0,
+          "non_numeric_values": 100927,
+          "numeric_min": null,
+          "numeric_max": null,
+          "examples": [
+            "E06000001",
+            "E06000002",
+            "E09000001"
+          ]
+        },
+        "local_authority_highway_current": {
+          "numeric_values": 0,
+          "non_numeric_values": 100927,
+          "numeric_min": null,
+          "numeric_max": null,
+          "examples": [
+            "E06000001",
+            "E06000002",
+            "E09000001"
+          ]
+        },
+        "first_road_class": {
+          "numeric_values": 100927,
+          "non_numeric_values": 0,
+          "numeric_min": 1.0,
+          "numeric_max": 6.0,
+          "examples": [
+            "3",
+            "6",
+            "4"
+          ]
+        },
+        "first_road_number": {
+          "numeric_values": 100927,
+          "non_numeric_values": 0,
+          "numeric_min": 0.0,
+          "numeric_max": 9999.0,
+          "examples": [
+            "689",
+            "0",
+            "201"
+          ]
+        },
+        "road_type": {
+          "numeric_values": 100927,
+          "non_numeric_values": 0,
+          "numeric_min": 1.0,
+          "numeric_max": 9.0,
+          "examples": [
+            "3",
+            "6",
+            "2"
+          ]
+        },
+        "speed_limit": {
+          "numeric_values": 100927,
+          "non_numeric_values": 0,
+          "numeric_min": -1.0,
+          "numeric_max": 70.0,
+          "examples": [
+            "50",
+            "30",
+            "20"
+          ]
+        },
+        "junction_detail_historic": {
+          "numeric_values": 100927,
+          "non_numeric_values": 0,
+          "numeric_min": -1.0,
+          "numeric_max": 99.0,
+          "examples": [
+            "0",
+            "-1",
+            "9"
+          ]
+        },
+        "junction_detail": {
+          "numeric_values": 100927,
+          "non_numeric_values": 0,
+          "numeric_min": -1.0,
+          "numeric_max": 99.0,
+          "examples": [
+            "0",
+            "19",
+            "13"
+          ]
+        },
+        "junction_control": {
+          "numeric_values": 100927,
+          "non_numeric_values": 0,
+          "numeric_min": -1.0,
+          "numeric_max": 9.0,
+          "examples": [
+            "-1",
+            "4",
+            "2"
+          ]
+        },
+        "second_road_class": {
+          "numeric_values": 100927,
+          "non_numeric_values": 0,
+          "numeric_min": -1.0,
+          "numeric_max": 6.0,
+          "examples": [
+            "0",
+            "-1",
+            "3"
+          ]
+        },
+        "second_road_number": {
+          "numeric_values": 100927,
+          "non_numeric_values": 0,
+          "numeric_min": -1.0,
+          "numeric_max": 9993.0,
+          "examples": [
+            "-1",
+            "201",
+            "0"
+          ]
+        },
+        "pedestrian_crossing_human_control_historic": {
+          "numeric_values": 100927,
+          "non_numeric_values": 0,
+          "numeric_min": -1.0,
+          "numeric_max": 9.0,
+          "examples": [
+            "0",
+            "-1",
+            "9"
+          ]
+        },
+        "pedestrian_crossing_physical_facilities_historic": {
+          "numeric_values": 100927,
+          "non_numeric_values": 0,
+          "numeric_min": -1.0,
+          "numeric_max": 9.0,
+          "examples": [
+            "0",
+            "-1",
+            "8"
+          ]
+        },
+        "pedestrian_crossing": {
+          "numeric_values": 100927,
+          "non_numeric_values": 0,
+          "numeric_min": -1.0,
+          "numeric_max": 99.0,
+          "examples": [
+            "0",
+            "17",
+            "15"
+          ]
+        },
+        "light_conditions": {
+          "numeric_values": 100927,
+          "non_numeric_values": 0,
+          "numeric_min": -1.0,
+          "numeric_max": 7.0,
+          "examples": [
+            "4",
+            "1",
+            "6"
+          ]
+        },
+        "weather_conditions": {
+          "numeric_values": 100927,
+          "non_numeric_values": 0,
+          "numeric_min": 1.0,
+          "numeric_max": 9.0,
+          "examples": [
+            "1",
+            "2",
+            "4"
+          ]
+        },
+        "road_surface_conditions": {
+          "numeric_values": 100927,
+          "non_numeric_values": 0,
+          "numeric_min": -1.0,
+          "numeric_max": 9.0,
+          "examples": [
+            "2",
+            "1",
+            "4"
+          ]
+        },
+        "special_conditions_at_site": {
+          "numeric_values": 100927,
+          "non_numeric_values": 0,
+          "numeric_min": -1.0,
+          "numeric_max": 9.0,
+          "examples": [
+            "0",
+            "-1",
+            "9"
+          ]
+        },
+        "carriageway_hazards_historic": {
+          "numeric_values": 100927,
+          "non_numeric_values": 0,
+          "numeric_min": -1.0,
+          "numeric_max": 9.0,
+          "examples": [
+            "0",
+            "-1",
+            "9"
+          ]
+        },
+        "carriageway_hazards": {
+          "numeric_values": 100927,
+          "non_numeric_values": 0,
+          "numeric_min": -1.0,
+          "numeric_max": 99.0,
+          "examples": [
+            "0",
+            "13",
+            "99"
+          ]
+        },
+        "urban_or_rural_area": {
+          "numeric_values": 100927,
+          "non_numeric_values": 0,
+          "numeric_min": 1.0,
+          "numeric_max": 3.0,
+          "examples": [
+            "2",
+            "1",
+            "3"
+          ]
+        },
+        "did_police_officer_attend_scene_of_accident": {
+          "numeric_values": 100927,
+          "non_numeric_values": 0,
+          "numeric_min": 1.0,
+          "numeric_max": 3.0,
+          "examples": [
+            "1",
+            "3",
+            "2"
+          ]
+        },
+        "trunk_road_flag": {
+          "numeric_values": 100927,
+          "non_numeric_values": 0,
+          "numeric_min": -1.0,
+          "numeric_max": 2.0,
+          "examples": [
+            "2",
+            "1",
+            "-1"
+          ]
+        },
+        "lsoa_of_accident_location": {
+          "numeric_values": 4168,
+          "non_numeric_values": 96759,
+          "numeric_min": -1.0,
+          "numeric_max": -1.0,
+          "examples": [
+            "E01011963",
+            "E01012026",
+            "E01003934"
+          ]
+        },
+        "enhanced_severity_collision": {
+          "numeric_values": 100927,
+          "non_numeric_values": 0,
+          "numeric_min": -1.0,
+          "numeric_max": 7.0,
+          "examples": [
+            "-1",
+            "3",
+            "7"
+          ]
+        },
+        "collision_injury_based": {
+          "numeric_values": 100927,
+          "non_numeric_values": 0,
+          "numeric_min": 0.0,
+          "numeric_max": 1.0,
+          "examples": [
+            "0",
+            "1"
+          ]
+        },
+        "collision_adjusted_severity_serious": {
+          "numeric_values": 100927,
+          "non_numeric_values": 0,
+          "numeric_min": 0.0,
+          "numeric_max": 1.0,
+          "examples": [
+            "1",
+            "0",
+            "0.11617"
+          ]
+        },
+        "collision_adjusted_severity_slight": {
+          "numeric_values": 100927,
+          "non_numeric_values": 0,
+          "numeric_min": 0.0,
+          "numeric_max": 1.0,
+          "examples": [
+            "0",
+            "1",
+            "0.88383"
+          ]
+        }
+      },
+      "observed_date_ranges": {
+        "date": {
+          "min": "2024-01-01T00:00:00",
+          "max": "2024-12-31T00:00:00"
+        }
+      },
+      "rule_violations": {},
+      "empty_header_names": 0
+    },
+    "dft_vehicle_2024": {
+      "rows": 183514,
+      "columns": [
+        "collision_index",
+        "collision_year",
+        "collision_ref_no",
+        "vehicle_reference",
+        "vehicle_type",
+        "towing_and_articulation",
+        "vehicle_manoeuvre_historic",
+        "vehicle_manoeuvre",
+        "vehicle_direction_from",
+        "vehicle_direction_to",
+        "vehicle_location_restricted_lane_historic",
+        "vehicle_location_restricted_lane",
+        "junction_location",
+        "skidding_and_overturning",
+        "hit_object_in_carriageway",
+        "vehicle_leaving_carriageway",
+        "hit_object_off_carriageway",
+        "first_point_of_impact",
+        "vehicle_left_hand_drive",
+        "journey_purpose_of_driver_historic",
+        "journey_purpose_of_driver",
+        "sex_of_driver",
+        "age_of_driver",
+        "age_band_of_driver",
+        "engine_capacity_cc",
+        "propulsion_code",
+        "age_of_vehicle",
+        "generic_make_model",
+        "driver_imd_decile",
+        "lsoa_of_driver",
+        "escooter_flag",
+        "driver_distance_banding"
+      ],
+      "key_columns": [
+        "collision_index",
+        "vehicle_reference"
+      ],
+      "duplicate_rows": 0,
+      "duplicate_keys": 0,
+      "missing_keys": 0,
+      "blank_counts": {
+        "collision_index": 0,
+        "collision_year": 0,
+        "collision_ref_no": 0,
+        "vehicle_reference": 0,
+        "vehicle_type": 0,
+        "towing_and_articulation": 0,
+        "vehicle_manoeuvre_historic": 0,
+        "vehicle_manoeuvre": 0,
+        "vehicle_direction_from": 0,
+        "vehicle_direction_to": 0,
+        "vehicle_location_restricted_lane_historic": 0,
+        "vehicle_location_restricted_lane": 0,
+        "junction_location": 0,
+        "skidding_and_overturning": 0,
+        "hit_object_in_carriageway": 0,
+        "vehicle_leaving_carriageway": 0,
+        "hit_object_off_carriageway": 0,
+        "first_point_of_impact": 0,
+        "vehicle_left_hand_drive": 0,
+        "journey_purpose_of_driver_historic": 0,
+        "journey_purpose_of_driver": 0,
+        "sex_of_driver": 0,
+        "age_of_driver": 0,
+        "age_band_of_driver": 0,
+        "engine_capacity_cc": 0,
+        "propulsion_code": 0,
+        "age_of_vehicle": 0,
+        "generic_make_model": 0,
+        "driver_imd_decile": 0,
+        "lsoa_of_driver": 0,
+        "escooter_flag": 0,
+        "driver_distance_banding": 0
+      },
+      "literal_null_like_counts": {},
+      "raw_code_counts_not_automatically_null": {
+        "vehicle_manoeuvre_historic=99": 13936,
+        "vehicle_manoeuvre=99": 14210,
+        "vehicle_location_restricted_lane_historic=99": 14357,
+        "vehicle_location_restricted_lane=99": 14740,
+        "hit_object_in_carriageway=99": 15044,
+        "hit_object_off_carriageway=99": 14645,
+        "engine_capacity_cc=-1": 54397,
+        "age_of_driver=-1": 28622,
+        "age_band_of_driver=-1": 28622,
+        "vehicle_manoeuvre_historic=-1": 110561,
+        "vehicle_location_restricted_lane_historic=-1": 108255,
+        "journey_purpose_of_driver_historic=-1": 109726,
+        "driver_imd_decile=-1": 40516,
+        "lsoa_of_driver=-1": 46131,
+        "driver_distance_banding=-1": 40516,
+        "vehicle_manoeuvre=-1": 5582,
+        "vehicle_direction_from=-1": 5497,
+        "vehicle_direction_to=-1": 5535,
+        "vehicle_location_restricted_lane=-1": 3224,
+        "skidding_and_overturning=-1": 3148,
+        "hit_object_in_carriageway=-1": 3129,
+        "vehicle_leaving_carriageway=-1": 3152,
+        "first_point_of_impact=-1": 3399,
+        "journey_purpose_of_driver=-1": 1639,
+        "sex_of_driver=-1": 3536,
+        "towing_and_articulation=-1": 2376,
+        "propulsion_code=-1": 50464,
+        "age_of_vehicle=-1": 50442,
+        "junction_location=-1": 1334,
+        "hit_object_off_carriageway=-1": 447,
+        "engine_capacity_cc=999": 5781,
+        "vehicle_left_hand_drive=-1": 53,
+        "age_of_driver=99": 1,
+        "generic_make_model=-1": 49193,
+        "vehicle_type=99": 276,
+        "vehicle_type=-1": 6
+      },
+      "column_profiles": {
+        "collision_index": {
+          "numeric_values": 178544,
+          "non_numeric_values": 4970,
+          "numeric_min": 2024010486807.0,
+          "numeric_max": 2024991580347.0,
+          "examples": [
+            "2024010507996",
+            "2024010510446",
+            "2024461423515"
+          ]
+        },
+        "collision_year": {
+          "numeric_values": 183514,
+          "non_numeric_values": 0,
+          "numeric_min": 2024.0,
+          "numeric_max": 2024.0,
+          "examples": [
+            "2024"
+          ]
+        },
+        "collision_ref_no": {
+          "numeric_values": 178544,
+          "non_numeric_values": 4970,
+          "numeric_min": 10486807.0,
+          "numeric_max": 991580347.0,
+          "examples": [
+            "010507996",
+            "010510446",
+            "461423515"
+          ]
+        },
+        "vehicle_reference": {
+          "numeric_values": 183514,
+          "non_numeric_values": 0,
+          "numeric_min": 1.0,
+          "numeric_max": 964.0,
+          "examples": [
+            "1",
+            "2",
+            "3"
+          ]
+        },
+        "vehicle_type": {
+          "numeric_values": 183514,
+          "non_numeric_values": 0,
+          "numeric_min": -1.0,
+          "numeric_max": 99.0,
+          "examples": [
+            "9",
+            "11",
+            "10"
+          ]
+        },
+        "towing_and_articulation": {
+          "numeric_values": 183514,
+          "non_numeric_values": 0,
+          "numeric_min": -1.0,
+          "numeric_max": 9.0,
+          "examples": [
+            "9",
+            "0",
+            "-1"
+          ]
+        },
+        "vehicle_manoeuvre_historic": {
+          "numeric_values": 183514,
+          "non_numeric_values": 0,
+          "numeric_min": -1.0,
+          "numeric_max": 99.0,
+          "examples": [
+            "99",
+            "18",
+            "-1"
+          ]
+        },
+        "vehicle_manoeuvre": {
+          "numeric_values": 183514,
+          "non_numeric_values": 0,
+          "numeric_min": -1.0,
+          "numeric_max": 99.0,
+          "examples": [
+            "99",
+            "19",
+            "7"
+          ]
+        },
+        "vehicle_direction_from": {
+          "numeric_values": 183514,
+          "non_numeric_values": 0,
+          "numeric_min": -1.0,
+          "numeric_max": 9.0,
+          "examples": [
+            "9",
+            "1",
+            "5"
+          ]
+        },
+        "vehicle_direction_to": {
+          "numeric_values": 183514,
+          "non_numeric_values": 0,
+          "numeric_min": -1.0,
+          "numeric_max": 9.0,
+          "examples": [
+            "9",
+            "5",
+            "7"
+          ]
+        },
+        "vehicle_location_restricted_lane_historic": {
+          "numeric_values": 183514,
+          "non_numeric_values": 0,
+          "numeric_min": -1.0,
+          "numeric_max": 99.0,
+          "examples": [
+            "99",
+            "0",
+            "-1"
+          ]
+        },
+        "vehicle_location_restricted_lane": {
+          "numeric_values": 183514,
+          "non_numeric_values": 0,
+          "numeric_min": -1.0,
+          "numeric_max": 99.0,
+          "examples": [
+            "99",
+            "0",
+            "9"
+          ]
+        },
+        "junction_location": {
+          "numeric_values": 183514,
+          "non_numeric_values": 0,
+          "numeric_min": -1.0,
+          "numeric_max": 9.0,
+          "examples": [
+            "9",
+            "1",
+            "6"
+          ]
+        },
+        "skidding_and_overturning": {
+          "numeric_values": 183514,
+          "non_numeric_values": 0,
+          "numeric_min": -1.0,
+          "numeric_max": 9.0,
+          "examples": [
+            "9",
+            "0",
+            "-1"
+          ]
+        },
+        "hit_object_in_carriageway": {
+          "numeric_values": 183514,
+          "non_numeric_values": 0,
+          "numeric_min": -1.0,
+          "numeric_max": 99.0,
+          "examples": [
+            "99",
+            "0",
+            "11"
+          ]
+        },
+        "vehicle_leaving_carriageway": {
+          "numeric_values": 183514,
+          "non_numeric_values": 0,
+          "numeric_min": -1.0,
+          "numeric_max": 9.0,
+          "examples": [
+            "9",
+            "0",
+            "-1"
+          ]
+        },
+        "hit_object_off_carriageway": {
+          "numeric_values": 183514,
+          "non_numeric_values": 0,
+          "numeric_min": -1.0,
+          "numeric_max": 99.0,
+          "examples": [
+            "99",
+            "0",
+            "6"
+          ]
+        },
+        "first_point_of_impact": {
+          "numeric_values": 183514,
+          "non_numeric_values": 0,
+          "numeric_min": -1.0,
+          "numeric_max": 9.0,
+          "examples": [
+            "9",
+            "3",
+            "1"
+          ]
+        },
+        "vehicle_left_hand_drive": {
+          "numeric_values": 183514,
+          "non_numeric_values": 0,
+          "numeric_min": -1.0,
+          "numeric_max": 9.0,
+          "examples": [
+            "9",
+            "1",
+            "2"
+          ]
+        },
+        "journey_purpose_of_driver_historic": {
+          "numeric_values": 183514,
+          "non_numeric_values": 0,
+          "numeric_min": -1.0,
+          "numeric_max": 6.0,
+          "examples": [
+            "6",
+            "-1",
+            "2"
+          ]
+        },
+        "journey_purpose_of_driver": {
+          "numeric_values": 183514,
+          "non_numeric_values": 0,
+          "numeric_min": -1.0,
+          "numeric_max": 9.0,
+          "examples": [
+            "6",
+            "1",
+            "9"
+          ]
+        },
+        "sex_of_driver": {
+          "numeric_values": 183514,
+          "non_numeric_values": 0,
+          "numeric_min": -1.0,
+          "numeric_max": 3.0,
+          "examples": [
+            "2",
+            "3",
+            "1"
+          ]
+        },
+        "age_of_driver": {
+          "numeric_values": 183514,
+          "non_numeric_values": 0,
+          "numeric_min": -1.0,
+          "numeric_max": 99.0,
+          "examples": [
+            "44",
+            "-1",
+            "36"
+          ]
+        },
+        "age_band_of_driver": {
+          "numeric_values": 183514,
+          "non_numeric_values": 0,
+          "numeric_min": -1.0,
+          "numeric_max": 11.0,
+          "examples": [
+            "7",
+            "-1",
+            "8"
+          ]
+        },
+        "engine_capacity_cc": {
+          "numeric_values": 183514,
+          "non_numeric_values": 0,
+          "numeric_min": -1.0,
+          "numeric_max": 48000.0,
+          "examples": [
+            "-1",
+            "1499",
+            "1998"
+          ]
+        },
+        "propulsion_code": {
+          "numeric_values": 183514,
+          "non_numeric_values": 0,
+          "numeric_min": -1.0,
+          "numeric_max": 12.0,
+          "examples": [
+            "3",
+            "2",
+            "1"
+          ]
+        },
+        "age_of_vehicle": {
+          "numeric_values": 183514,
+          "non_numeric_values": 0,
+          "numeric_min": -1.0,
+          "numeric_max": 87.0,
+          "examples": [
+            "1",
+            "0",
+            "2"
+          ]
+        },
+        "generic_make_model": {
+          "numeric_values": 49193,
+          "non_numeric_values": 134321,
+          "numeric_min": -1.0,
+          "numeric_max": -1.0,
+          "examples": [
+            "BMW I4",
+            "BYD ENVIRO",
+            "MAKE AND MODEL REDACTED"
+          ]
+        },
+        "driver_imd_decile": {
+          "numeric_values": 183514,
+          "non_numeric_values": 0,
+          "numeric_min": -1.0,
+          "numeric_max": 10.0,
+          "examples": [
+            "8",
+            "3",
+            "7"
+          ]
+        },
+        "lsoa_of_driver": {
+          "numeric_values": 46131,
+          "non_numeric_values": 137383,
+          "numeric_min": -1.0,
+          "numeric_max": -1.0,
+          "examples": [
+            "E01000540",
+            "E01000011",
+            "E01024515"
+          ]
+        },
+        "escooter_flag": {
+          "numeric_values": 183514,
+          "non_numeric_values": 0,
+          "numeric_min": 0.0,
+          "numeric_max": 1.0,
+          "examples": [
+            "0",
+            "1"
+          ]
+        },
+        "driver_distance_banding": {
+          "numeric_values": 183514,
+          "non_numeric_values": 0,
+          "numeric_min": -1.0,
+          "numeric_max": 5.0,
+          "examples": [
+            "2",
+            "1",
+            "3"
+          ]
+        }
+      },
+      "observed_date_ranges": {},
+      "rule_violations": {},
+      "empty_header_names": 0
+    },
+    "dft_casualty_2024": {
+      "rows": 128272,
+      "columns": [
+        "collision_index",
+        "collision_year",
+        "collision_ref_no",
+        "vehicle_reference",
+        "casualty_reference",
+        "casualty_class",
+        "sex_of_casualty",
+        "age_of_casualty",
+        "age_band_of_casualty",
+        "casualty_severity",
+        "pedestrian_location",
+        "pedestrian_movement",
+        "car_passenger",
+        "bus_or_coach_passenger",
+        "pedestrian_road_maintenance_worker",
+        "casualty_type",
+        "casualty_imd_decile",
+        "lsoa_of_casualty",
+        "enhanced_casualty_severity",
+        "casualty_injury_based",
+        "casualty_adjusted_severity_serious",
+        "casualty_adjusted_severity_slight",
+        "casualty_distance_banding",
+        "escooter_flag"
+      ],
+      "key_columns": [
+        "collision_index",
+        "casualty_reference"
+      ],
+      "duplicate_rows": 0,
+      "duplicate_keys": 0,
+      "missing_keys": 0,
+      "blank_counts": {
+        "collision_index": 0,
+        "collision_year": 0,
+        "collision_ref_no": 0,
+        "vehicle_reference": 0,
+        "casualty_reference": 0,
+        "casualty_class": 0,
+        "sex_of_casualty": 0,
+        "age_of_casualty": 0,
+        "age_band_of_casualty": 0,
+        "casualty_severity": 0,
+        "pedestrian_location": 0,
+        "pedestrian_movement": 0,
+        "car_passenger": 0,
+        "bus_or_coach_passenger": 0,
+        "pedestrian_road_maintenance_worker": 0,
+        "casualty_type": 0,
+        "casualty_imd_decile": 0,
+        "lsoa_of_casualty": 0,
+        "enhanced_casualty_severity": 0,
+        "casualty_injury_based": 0,
+        "casualty_adjusted_severity_serious": 0,
+        "casualty_adjusted_severity_slight": 0,
+        "casualty_distance_banding": 0,
+        "escooter_flag": 0
+      },
+      "literal_null_like_counts": {},
+      "raw_code_counts_not_automatically_null": {
+        "age_of_casualty=-1": 2552,
+        "age_band_of_casualty=-1": 2552,
+        "enhanced_casualty_severity=-1": 26789,
+        "pedestrian_road_maintenance_worker=-1": 11233,
+        "casualty_imd_decile=-1": 17275,
+        "lsoa_of_casualty=-1": 21646,
+        "casualty_distance_banding=-1": 17275,
+        "sex_of_casualty=-1": 1412,
+        "car_passenger=-1": 190,
+        "bus_or_coach_passenger=-1": 51,
+        "casualty_type=99": 15,
+        "pedestrian_location=-1": 6,
+        "pedestrian_movement=-1": 7,
+        "age_of_casualty=99": 5,
+        "casualty_reference=99": 1,
+        "casualty_type=-1": 1
+      },
+      "column_profiles": {
+        "collision_index": {
+          "numeric_values": 124636,
+          "non_numeric_values": 3636,
+          "numeric_min": 2024010486807.0,
+          "numeric_max": 2024991580347.0,
+          "examples": [
+            "2024010487437",
+            "2024010490315",
+            "2024010491403"
+          ]
+        },
+        "collision_year": {
+          "numeric_values": 128272,
+          "non_numeric_values": 0,
+          "numeric_min": 2024.0,
+          "numeric_max": 2024.0,
+          "examples": [
+            "2024"
+          ]
+        },
+        "collision_ref_no": {
+          "numeric_values": 124636,
+          "non_numeric_values": 3636,
+          "numeric_min": 10486807.0,
+          "numeric_max": 991580347.0,
+          "examples": [
+            "010487437",
+            "010490315",
+            "010491403"
+          ]
+        },
+        "vehicle_reference": {
+          "numeric_values": 128272,
+          "non_numeric_values": 0,
+          "numeric_min": 1.0,
+          "numeric_max": 964.0,
+          "examples": [
+            "1",
+            "3",
+            "2"
+          ]
+        },
+        "casualty_reference": {
+          "numeric_values": 128272,
+          "non_numeric_values": 0,
+          "numeric_min": 1.0,
+          "numeric_max": 202.0,
+          "examples": [
+            "1",
+            "2",
+            "4"
+          ]
+        },
+        "casualty_class": {
+          "numeric_values": 128272,
+          "non_numeric_values": 0,
+          "numeric_min": 1.0,
+          "numeric_max": 3.0,
+          "examples": [
+            "3",
+            "1",
+            "2"
+          ]
+        },
+        "sex_of_casualty": {
+          "numeric_values": 128272,
+          "non_numeric_values": 0,
+          "numeric_min": -1.0,
+          "numeric_max": 9.0,
+          "examples": [
+            "1",
+            "2",
+            "9"
+          ]
+        },
+        "age_of_casualty": {
+          "numeric_values": 128272,
+          "non_numeric_values": 0,
+          "numeric_min": -1.0,
+          "numeric_max": 99.0,
+          "examples": [
+            "21",
+            "24",
+            "65"
+          ]
+        },
+        "age_band_of_casualty": {
+          "numeric_values": 128272,
+          "non_numeric_values": 0,
+          "numeric_min": -1.0,
+          "numeric_max": 11.0,
+          "examples": [
+            "5",
+            "9",
+            "8"
+          ]
+        },
+        "casualty_severity": {
+          "numeric_values": 128272,
+          "non_numeric_values": 0,
+          "numeric_min": 1.0,
+          "numeric_max": 3.0,
+          "examples": [
+            "3",
+            "2",
+            "1"
+          ]
+        },
+        "pedestrian_location": {
+          "numeric_values": 128272,
+          "non_numeric_values": 0,
+          "numeric_min": -1.0,
+          "numeric_max": 10.0,
+          "examples": [
+            "1",
+            "5",
+            "6"
+          ]
+        },
+        "pedestrian_movement": {
+          "numeric_values": 128272,
+          "non_numeric_values": 0,
+          "numeric_min": -1.0,
+          "numeric_max": 9.0,
+          "examples": [
+            "3",
+            "2",
+            "1"
+          ]
+        },
+        "car_passenger": {
+          "numeric_values": 128272,
+          "non_numeric_values": 0,
+          "numeric_min": -1.0,
+          "numeric_max": 9.0,
+          "examples": [
+            "0",
+            "-1",
+            "2"
+          ]
+        },
+        "bus_or_coach_passenger": {
+          "numeric_values": 128272,
+          "non_numeric_values": 0,
+          "numeric_min": -1.0,
+          "numeric_max": 9.0,
+          "examples": [
+            "0",
+            "4",
+            "1"
+          ]
+        },
+        "pedestrian_road_maintenance_worker": {
+          "numeric_values": 128272,
+          "non_numeric_values": 0,
+          "numeric_min": -1.0,
+          "numeric_max": 2.0,
+          "examples": [
+            "0",
+            "-1",
+            "2"
+          ]
+        },
+        "casualty_type": {
+          "numeric_values": 128272,
+          "non_numeric_values": 0,
+          "numeric_min": -1.0,
+          "numeric_max": 99.0,
+          "examples": [
+            "0",
+            "1",
+            "2"
+          ]
+        },
+        "casualty_imd_decile": {
+          "numeric_values": 128272,
+          "non_numeric_values": 0,
+          "numeric_min": -1.0,
+          "numeric_max": 10.0,
+          "examples": [
+            "2",
+            "7",
+            "9"
+          ]
+        },
+        "lsoa_of_casualty": {
+          "numeric_values": 21646,
+          "non_numeric_values": 106626,
+          "numeric_min": -1.0,
+          "numeric_max": -1.0,
+          "examples": [
+            "E01015720",
+            "E01004176",
+            "E01002430"
+          ]
+        },
+        "enhanced_casualty_severity": {
+          "numeric_values": 128272,
+          "non_numeric_values": 0,
+          "numeric_min": -1.0,
+          "numeric_max": 7.0,
+          "examples": [
+            "3",
+            "6",
+            "7"
+          ]
+        },
+        "casualty_injury_based": {
+          "numeric_values": 128272,
+          "non_numeric_values": 0,
+          "numeric_min": 0.0,
+          "numeric_max": 1.0,
+          "examples": [
+            "1",
+            "0"
+          ]
+        },
+        "casualty_adjusted_severity_serious": {
+          "numeric_values": 128272,
+          "non_numeric_values": 0,
+          "numeric_min": 0.0,
+          "numeric_max": 1.0,
+          "examples": [
+            "0",
+            "1",
+            "0.15378"
+          ]
+        },
+        "casualty_adjusted_severity_slight": {
+          "numeric_values": 128272,
+          "non_numeric_values": 0,
+          "numeric_min": 0.0,
+          "numeric_max": 1.0,
+          "examples": [
+            "1",
+            "0",
+            "0.84622"
+          ]
+        },
+        "casualty_distance_banding": {
+          "numeric_values": 128272,
+          "non_numeric_values": 0,
+          "numeric_min": -1.0,
+          "numeric_max": 5.0,
+          "examples": [
+            "4",
+            "1",
+            "2"
+          ]
+        },
+        "escooter_flag": {
+          "numeric_values": 128272,
+          "non_numeric_values": 0,
+          "numeric_min": 0.0,
+          "numeric_max": 1.0,
+          "examples": [
+            "0",
+            "1"
+          ]
+        }
+      },
+      "observed_date_ranges": {},
+      "rule_violations": {},
+      "empty_header_names": 0
+    },
+    "cambridge_sites": {
+      "rows": 47683,
+      "columns": [
+        "category",
+        "latitude",
+        "longitude",
+        "sqm",
+        "bays"
+      ],
+      "key_columns": [],
+      "duplicate_rows": 100,
+      "duplicate_keys": 0,
+      "missing_keys": 0,
+      "blank_counts": {
+        "category": 0,
+        "latitude": 0,
+        "longitude": 0,
+        "sqm": 0,
+        "bays": 0
+      },
+      "literal_null_like_counts": {},
+      "raw_code_counts_not_automatically_null": {},
+      "column_profiles": {
+        "category": {
+          "numeric_values": 0,
+          "non_numeric_values": 47683,
+          "numeric_min": null,
+          "numeric_max": null,
+          "examples": [
+            "factory",
+            "retail",
+            "warehouse"
+          ]
+        },
+        "latitude": {
+          "numeric_values": 47682,
+          "non_numeric_values": 1,
+          "numeric_min": 50.0931537,
+          "numeric_max": 55.78874,
+          "examples": [
+            "55.76645",
+            "55.7642875",
+            "55.7612664"
+          ]
+        },
+        "longitude": {
+          "numeric_values": 47683,
+          "non_numeric_values": 0,
+          "numeric_min": -5.683419,
+          "numeric_max": 1.760443,
+          "examples": [
+            "-2.01924",
+            "-2.0228637",
+            "-2.0234642"
+          ]
+        },
+        "sqm": {
+          "numeric_values": 47683,
+          "non_numeric_values": 0,
+          "numeric_min": 1000.0,
+          "numeric_max": 310773.26,
+          "examples": [
+            "13132.7",
+            "7347.7",
+            "13886.69"
+          ]
+        },
+        "bays": {
+          "numeric_values": 47683,
+          "non_numeric_values": 0,
+          "numeric_min": 0.0,
+          "numeric_max": 120.0,
+          "examples": [
+            "3",
+            "2",
+            "0"
+          ]
+        }
+      },
+      "observed_date_ranges": {},
+      "rule_violations": {
+        "missing_or_invalid_coordinates": 1
+      },
+      "empty_header_names": 0,
+      "category_counts": {
+        "factory": 13551,
+        "retail": 6441,
+        "warehouse": 27691
+      },
+      "publisher_expected_rows": 47683,
+      "matches_publisher_row_count": true
+    },
+    "olist:olist_customers_dataset.csv": {
+      "rows": 99441,
+      "columns": [
+        "customer_id",
+        "customer_unique_id",
+        "customer_zip_code_prefix",
+        "customer_city",
+        "customer_state"
+      ],
+      "key_columns": [
+        "customer_id"
+      ],
+      "duplicate_rows": 0,
+      "duplicate_keys": 0,
+      "missing_keys": 0,
+      "blank_counts": {
+        "customer_id": 0,
+        "customer_unique_id": 0,
+        "customer_zip_code_prefix": 0,
+        "customer_city": 0,
+        "customer_state": 0
+      },
+      "literal_null_like_counts": {},
+      "raw_code_counts_not_automatically_null": {},
+      "column_profiles": {
+        "customer_id": {
+          "numeric_values": 0,
+          "non_numeric_values": 99441,
+          "numeric_min": null,
+          "numeric_max": null,
+          "examples": [
+            "06b8999e2fba1a1fbc88172c00ba8bc7",
+            "18955e83d337fd6b2def6b18a428ac77",
+            "4e7b3e00288586ebd08712fdd0374a03"
+          ]
+        },
+        "customer_unique_id": {
+          "numeric_values": 0,
+          "non_numeric_values": 99441,
+          "numeric_min": null,
+          "numeric_max": null,
+          "examples": [
+            "861eff4711a542e4b93843c6dd7febb0",
+            "290c77bc529b7ac935b93aa66c333dc3",
+            "060e732b5b29e8181a18229c7b0b2b5e"
+          ]
+        },
+        "customer_zip_code_prefix": {
+          "numeric_values": 99441,
+          "non_numeric_values": 0,
+          "numeric_min": 1003.0,
+          "numeric_max": 99990.0,
+          "examples": [
+            "14409",
+            "09790",
+            "01151"
+          ]
+        },
+        "customer_city": {
+          "numeric_values": 0,
+          "non_numeric_values": 99441,
+          "numeric_min": null,
+          "numeric_max": null,
+          "examples": [
+            "franca",
+            "sao bernardo do campo",
+            "sao paulo"
+          ]
+        },
+        "customer_state": {
+          "numeric_values": 0,
+          "non_numeric_values": 99441,
+          "numeric_min": null,
+          "numeric_max": null,
+          "examples": [
+            "SP",
+            "SC",
+            "MG"
+          ]
+        }
+      },
+      "observed_date_ranges": {},
+      "rule_violations": {},
+      "empty_header_names": 0,
+      "zip_member": "olist_customers_dataset.csv"
+    },
+    "olist:olist_products_dataset.csv": {
+      "rows": 32951,
+      "columns": [
+        "product_id",
+        "product_category_name",
+        "product_name_lenght",
+        "product_description_lenght",
+        "product_photos_qty",
+        "product_weight_g",
+        "product_length_cm",
+        "product_height_cm",
+        "product_width_cm"
+      ],
+      "key_columns": [
+        "product_id"
+      ],
+      "duplicate_rows": 0,
+      "duplicate_keys": 0,
+      "missing_keys": 0,
+      "blank_counts": {
+        "product_id": 0,
+        "product_category_name": 610,
+        "product_name_lenght": 610,
+        "product_description_lenght": 610,
+        "product_photos_qty": 610,
+        "product_weight_g": 2,
+        "product_length_cm": 2,
+        "product_height_cm": 2,
+        "product_width_cm": 2
+      },
+      "literal_null_like_counts": {},
+      "raw_code_counts_not_automatically_null": {
+        "product_weight_g=99": 2,
+        "product_description_lenght=999": 12,
+        "product_length_cm=99": 16,
+        "product_description_lenght=99": 12,
+        "product_height_cm=99": 1
+      },
+      "column_profiles": {
+        "product_id": {
+          "numeric_values": 0,
+          "non_numeric_values": 32951,
+          "numeric_min": null,
+          "numeric_max": null,
+          "examples": [
+            "1e9e8ef04dbcff4541ed26657ea517e5",
+            "3aa071139cb16b67ca9e5dea641aaa2f",
+            "96bd76ec8810374ed1b65e291975717f"
+          ]
+        },
+        "product_category_name": {
+          "numeric_values": 0,
+          "non_numeric_values": 32341,
+          "numeric_min": null,
+          "numeric_max": null,
+          "examples": [
+            "perfumaria",
+            "artes",
+            "esporte_lazer"
+          ]
+        },
+        "product_name_lenght": {
+          "numeric_values": 32341,
+          "non_numeric_values": 0,
+          "numeric_min": 5.0,
+          "numeric_max": 76.0,
+          "examples": [
+            "40",
+            "44",
+            "46"
+          ]
+        },
+        "product_description_lenght": {
+          "numeric_values": 32341,
+          "non_numeric_values": 0,
+          "numeric_min": 4.0,
+          "numeric_max": 3992.0,
+          "examples": [
+            "287",
+            "276",
+            "250"
+          ]
+        },
+        "product_photos_qty": {
+          "numeric_values": 32341,
+          "non_numeric_values": 0,
+          "numeric_min": 1.0,
+          "numeric_max": 20.0,
+          "examples": [
+            "1",
+            "4",
+            "2"
+          ]
+        },
+        "product_weight_g": {
+          "numeric_values": 32949,
+          "non_numeric_values": 0,
+          "numeric_min": 0.0,
+          "numeric_max": 40425.0,
+          "examples": [
+            "225",
+            "1000",
+            "154"
+          ]
+        },
+        "product_length_cm": {
+          "numeric_values": 32949,
+          "non_numeric_values": 0,
+          "numeric_min": 7.0,
+          "numeric_max": 105.0,
+          "examples": [
+            "16",
+            "30",
+            "18"
+          ]
+        },
+        "product_height_cm": {
+          "numeric_values": 32949,
+          "non_numeric_values": 0,
+          "numeric_min": 2.0,
+          "numeric_max": 105.0,
+          "examples": [
+            "10",
+            "18",
+            "9"
+          ]
+        },
+        "product_width_cm": {
+          "numeric_values": 32949,
+          "non_numeric_values": 0,
+          "numeric_min": 6.0,
+          "numeric_max": 118.0,
+          "examples": [
+            "14",
+            "20",
+            "15"
+          ]
+        }
+      },
+      "observed_date_ranges": {},
+      "rule_violations": {},
+      "empty_header_names": 0,
+      "zip_member": "olist_products_dataset.csv"
+    },
+    "olist:olist_sellers_dataset.csv": {
+      "rows": 3095,
+      "columns": [
+        "seller_id",
+        "seller_zip_code_prefix",
+        "seller_city",
+        "seller_state"
+      ],
+      "key_columns": [
+        "seller_id"
+      ],
+      "duplicate_rows": 0,
+      "duplicate_keys": 0,
+      "missing_keys": 0,
+      "blank_counts": {
+        "seller_id": 0,
+        "seller_zip_code_prefix": 0,
+        "seller_city": 0,
+        "seller_state": 0
+      },
+      "literal_null_like_counts": {},
+      "raw_code_counts_not_automatically_null": {},
+      "column_profiles": {
+        "seller_id": {
+          "numeric_values": 0,
+          "non_numeric_values": 3095,
+          "numeric_min": null,
+          "numeric_max": null,
+          "examples": [
+            "3442f8959a84dea7ee197c632cb2df15",
+            "d1b65fc7debc3361ea86b5f14c68d2e2",
+            "ce3ad9de960102d0677a81f5d0bb7b2d"
+          ]
+        },
+        "seller_zip_code_prefix": {
+          "numeric_values": 3095,
+          "non_numeric_values": 0,
+          "numeric_min": 1001.0,
+          "numeric_max": 99730.0,
+          "examples": [
+            "13023",
+            "13844",
+            "20031"
+          ]
+        },
+        "seller_city": {
+          "numeric_values": 1,
+          "non_numeric_values": 3094,
+          "numeric_min": 4482255.0,
+          "numeric_max": 4482255.0,
+          "examples": [
+            "campinas",
+            "mogi guacu",
+            "rio de janeiro"
+          ]
+        },
+        "seller_state": {
+          "numeric_values": 0,
+          "non_numeric_values": 3095,
+          "numeric_min": null,
+          "numeric_max": null,
+          "examples": [
+            "SP",
+            "RJ",
+            "PE"
+          ]
+        }
+      },
+      "observed_date_ranges": {},
+      "rule_violations": {},
+      "empty_header_names": 0,
+      "zip_member": "olist_sellers_dataset.csv"
+    },
+    "olist:olist_orders_dataset.csv": {
+      "rows": 99441,
+      "columns": [
+        "order_id",
+        "customer_id",
+        "order_status",
+        "order_purchase_timestamp",
+        "order_approved_at",
+        "order_delivered_carrier_date",
+        "order_delivered_customer_date",
+        "order_estimated_delivery_date"
+      ],
+      "key_columns": [
+        "order_id"
+      ],
+      "duplicate_rows": 0,
+      "duplicate_keys": 0,
+      "missing_keys": 0,
+      "blank_counts": {
+        "order_id": 0,
+        "customer_id": 0,
+        "order_status": 0,
+        "order_purchase_timestamp": 0,
+        "order_approved_at": 160,
+        "order_delivered_carrier_date": 1783,
+        "order_delivered_customer_date": 2965,
+        "order_estimated_delivery_date": 0
+      },
+      "literal_null_like_counts": {},
+      "raw_code_counts_not_automatically_null": {},
+      "column_profiles": {
+        "order_id": {
+          "numeric_values": 0,
+          "non_numeric_values": 99441,
+          "numeric_min": null,
+          "numeric_max": null,
+          "examples": [
+            "e481f51cbdc54678b7cc49136f2d6af7",
+            "53cdb2fc8bc7dce0b6741e2150273451",
+            "47770eb9100c2d0c44946d9cf07ec65d"
+          ]
+        },
+        "customer_id": {
+          "numeric_values": 0,
+          "non_numeric_values": 99441,
+          "numeric_min": null,
+          "numeric_max": null,
+          "examples": [
+            "9ef432eb6251297304e76186b10a928d",
+            "b0830fb4747a6c6d20dea0b8c802d7ef",
+            "41ce2a54c0b03bf3443c3d931a367089"
+          ]
+        },
+        "order_status": {
+          "numeric_values": 0,
+          "non_numeric_values": 99441,
+          "numeric_min": null,
+          "numeric_max": null,
+          "examples": [
+            "delivered",
+            "invoiced",
+            "shipped"
+          ]
+        },
+        "order_purchase_timestamp": {
+          "numeric_values": 0,
+          "non_numeric_values": 99441,
+          "numeric_min": null,
+          "numeric_max": null,
+          "examples": [
+            "2017-10-02 10:56:33",
+            "2018-07-24 20:41:37",
+            "2018-08-08 08:38:49"
+          ]
+        },
+        "order_approved_at": {
+          "numeric_values": 0,
+          "non_numeric_values": 99281,
+          "numeric_min": null,
+          "numeric_max": null,
+          "examples": [
+            "2017-10-02 11:07:15",
+            "2018-07-26 03:24:27",
+            "2018-08-08 08:55:23"
+          ]
+        },
+        "order_delivered_carrier_date": {
+          "numeric_values": 0,
+          "non_numeric_values": 97658,
+          "numeric_min": null,
+          "numeric_max": null,
+          "examples": [
+            "2017-10-04 19:55:00",
+            "2018-07-26 14:31:00",
+            "2018-08-08 13:50:00"
+          ]
+        },
+        "order_delivered_customer_date": {
+          "numeric_values": 0,
+          "non_numeric_values": 96476,
+          "numeric_min": null,
+          "numeric_max": null,
+          "examples": [
+            "2017-10-10 21:25:13",
+            "2018-08-07 15:27:45",
+            "2018-08-17 18:06:29"
+          ]
+        },
+        "order_estimated_delivery_date": {
+          "numeric_values": 0,
+          "non_numeric_values": 99441,
+          "numeric_min": null,
+          "numeric_max": null,
+          "examples": [
+            "2017-10-18 00:00:00",
+            "2018-08-13 00:00:00",
+            "2018-09-04 00:00:00"
+          ]
+        }
+      },
+      "observed_date_ranges": {
+        "order_purchase_timestamp": {
+          "min": "2016-09-04T21:15:19",
+          "max": "2018-10-17T17:30:18"
+        },
+        "order_delivered_carrier_date": {
+          "min": "2016-10-08T10:34:01",
+          "max": "2018-09-11T19:48:28"
+        },
+        "order_delivered_customer_date": {
+          "min": "2016-10-11T13:46:32",
+          "max": "2018-10-17T13:22:46"
+        },
+        "order_estimated_delivery_date": {
+          "min": "2016-09-30T00:00:00",
+          "max": "2018-11-12T00:00:00"
+        }
+      },
+      "rule_violations": {},
+      "empty_header_names": 0,
+      "zip_member": "olist_orders_dataset.csv"
+    },
+    "olist:olist_geolocation_dataset.csv": {
+      "rows": 1000163,
+      "columns": [
+        "geolocation_zip_code_prefix",
+        "geolocation_lat",
+        "geolocation_lng",
+        "geolocation_city",
+        "geolocation_state"
+      ],
+      "key_columns": [],
+      "duplicate_rows": 261831,
+      "duplicate_keys": 0,
+      "missing_keys": 0,
+      "blank_counts": {
+        "geolocation_zip_code_prefix": 0,
+        "geolocation_lat": 0,
+        "geolocation_lng": 0,
+        "geolocation_city": 0,
+        "geolocation_state": 0
+      },
+      "literal_null_like_counts": {},
+      "raw_code_counts_not_automatically_null": {},
+      "column_profiles": {
+        "geolocation_zip_code_prefix": {
+          "numeric_values": 1000163,
+          "non_numeric_values": 0,
+          "numeric_min": 1001.0,
+          "numeric_max": 99990.0,
+          "examples": [
+            "01037",
+            "01046",
+            "01041"
+          ]
+        },
+        "geolocation_lat": {
+          "numeric_values": 1000163,
+          "non_numeric_values": 0,
+          "numeric_min": -36.6053744107061,
+          "numeric_max": 45.06593318269697,
+          "examples": [
+            "-23.54562128115268",
+            "-23.546081127035535",
+            "-23.54612896641469"
+          ]
+        },
+        "geolocation_lng": {
+          "numeric_values": 1000163,
+          "non_numeric_values": 0,
+          "numeric_min": -101.46676644931476,
+          "numeric_max": 121.10539381057764,
+          "examples": [
+            "-46.63929204800168",
+            "-46.64482029837157",
+            "-46.64295148361138"
+          ]
+        },
+        "geolocation_city": {
+          "numeric_values": 0,
+          "non_numeric_values": 1000163,
+          "numeric_min": null,
+          "numeric_max": null,
+          "examples": [
+            "sao paulo",
+            "são paulo",
+            "sao bernardo do campo"
+          ]
+        },
+        "geolocation_state": {
+          "numeric_values": 0,
+          "non_numeric_values": 1000163,
+          "numeric_min": null,
+          "numeric_max": null,
+          "examples": [
+            "SP",
+            "RN",
+            "AC"
+          ]
+        }
+      },
+      "observed_date_ranges": {},
+      "rule_violations": {
+        "outside_generous_Brazil_bounds": 31
+      },
+      "empty_header_names": 0,
+      "zip_member": "olist_geolocation_dataset.csv"
+    },
+    "olist:olist_order_items_dataset.csv": {
+      "rows": 112650,
+      "columns": [
+        "order_id",
+        "order_item_id",
+        "product_id",
+        "seller_id",
+        "shipping_limit_date",
+        "price",
+        "freight_value"
+      ],
+      "key_columns": [
+        "order_id",
+        "order_item_id"
+      ],
+      "duplicate_rows": 0,
+      "duplicate_keys": 0,
+      "missing_keys": 0,
+      "blank_counts": {
+        "order_id": 0,
+        "order_item_id": 0,
+        "product_id": 0,
+        "seller_id": 0,
+        "shipping_limit_date": 0,
+        "price": 0,
+        "freight_value": 0
+      },
+      "literal_null_like_counts": {},
+      "raw_code_counts_not_automatically_null": {},
+      "column_profiles": {
+        "order_id": {
+          "numeric_values": 0,
+          "non_numeric_values": 112650,
+          "numeric_min": null,
+          "numeric_max": null,
+          "examples": [
+            "00010242fe8c5a6d1ba2dd792cb16214",
+            "00018f77f2f0320c557190d7a144bdd3",
+            "000229ec398224ef6ca0657da4fc703e"
+          ]
+        },
+        "order_item_id": {
+          "numeric_values": 112650,
+          "non_numeric_values": 0,
+          "numeric_min": 1.0,
+          "numeric_max": 21.0,
+          "examples": [
+            "1",
+            "2",
+            "3"
+          ]
+        },
+        "product_id": {
+          "numeric_values": 0,
+          "non_numeric_values": 112650,
+          "numeric_min": null,
+          "numeric_max": null,
+          "examples": [
+            "4244733e06e7ecb4970a6e2683c13e61",
+            "e5f2d52b802189ee658865ca93d83a8f",
+            "c777355d18b72b67abbeef9df44fd0fd"
+          ]
+        },
+        "seller_id": {
+          "numeric_values": 0,
+          "non_numeric_values": 112650,
+          "numeric_min": null,
+          "numeric_max": null,
+          "examples": [
+            "48436dade18ac8b2bce089ec2a041202",
+            "dd7ddc04e1b6c2c614352b383efe2d36",
+            "5b51032eddd242adc84c38acab88f23d"
+          ]
+        },
+        "shipping_limit_date": {
+          "numeric_values": 0,
+          "non_numeric_values": 112650,
+          "numeric_min": null,
+          "numeric_max": null,
+          "examples": [
+            "2017-09-19 09:45:35",
+            "2017-05-03 11:05:13",
+            "2018-01-18 14:48:30"
+          ]
+        },
+        "price": {
+          "numeric_values": 112650,
+          "non_numeric_values": 0,
+          "numeric_min": 0.85,
+          "numeric_max": 6735.0,
+          "examples": [
+            "58.90",
+            "239.90",
+            "199.00"
+          ]
+        },
+        "freight_value": {
+          "numeric_values": 112650,
+          "non_numeric_values": 0,
+          "numeric_min": 0.0,
+          "numeric_max": 409.68,
+          "examples": [
+            "13.29",
+            "19.93",
+            "17.87"
+          ]
+        }
+      },
+      "observed_date_ranges": {
+        "shipping_limit_date": {
+          "min": "2016-09-19T00:15:34",
+          "max": "2020-04-09T22:35:08"
+        }
+      },
+      "rule_violations": {},
+      "empty_header_names": 0,
+      "zip_member": "olist_order_items_dataset.csv"
+    },
+    "olist:olist_order_payments_dataset.csv": {
+      "rows": 103886,
+      "columns": [
+        "order_id",
+        "payment_sequential",
+        "payment_type",
+        "payment_installments",
+        "payment_value"
+      ],
+      "key_columns": [
+        "order_id",
+        "payment_sequential"
+      ],
+      "duplicate_rows": 0,
+      "duplicate_keys": 0,
+      "missing_keys": 0,
+      "blank_counts": {
+        "order_id": 0,
+        "payment_sequential": 0,
+        "payment_type": 0,
+        "payment_installments": 0,
+        "payment_value": 0
+      },
+      "literal_null_like_counts": {},
+      "raw_code_counts_not_automatically_null": {},
+      "column_profiles": {
+        "order_id": {
+          "numeric_values": 0,
+          "non_numeric_values": 103886,
+          "numeric_min": null,
+          "numeric_max": null,
+          "examples": [
+            "b81ef226f3fe1789b1e8b2acac839d17",
+            "a9810da82917af2d9aefd1278f1dcfa0",
+            "25e8ea4e93396b6fa0d3dd708e76c1bd"
+          ]
+        },
+        "payment_sequential": {
+          "numeric_values": 103886,
+          "non_numeric_values": 0,
+          "numeric_min": 1.0,
+          "numeric_max": 29.0,
+          "examples": [
+            "1",
+            "2",
+            "4"
+          ]
+        },
+        "payment_type": {
+          "numeric_values": 0,
+          "non_numeric_values": 103886,
+          "numeric_min": null,
+          "numeric_max": null,
+          "examples": [
+            "credit_card",
+            "boleto",
+            "voucher"
+          ]
+        },
+        "payment_installments": {
+          "numeric_values": 103886,
+          "non_numeric_values": 0,
+          "numeric_min": 0.0,
+          "numeric_max": 24.0,
+          "examples": [
+            "8",
+            "1",
+            "2"
+          ]
+        },
+        "payment_value": {
+          "numeric_values": 103886,
+          "non_numeric_values": 0,
+          "numeric_min": 0.0,
+          "numeric_max": 13664.08,
+          "examples": [
+            "99.33",
+            "24.39",
+            "65.71"
+          ]
+        }
+      },
+      "observed_date_ranges": {},
+      "rule_violations": {},
+      "empty_header_names": 0,
+      "zip_member": "olist_order_payments_dataset.csv"
+    },
+    "olist:olist_order_reviews_dataset.csv": {
+      "rows": 99224,
+      "columns": [
+        "review_id",
+        "order_id",
+        "review_score",
+        "review_comment_title",
+        "review_comment_message",
+        "review_creation_date",
+        "review_answer_timestamp"
+      ],
+      "key_columns": [],
+      "duplicate_rows": 0,
+      "duplicate_keys": 0,
+      "missing_keys": 0,
+      "blank_counts": {
+        "review_id": 0,
+        "order_id": 0,
+        "review_score": 0,
+        "review_comment_title": 87658,
+        "review_comment_message": 58274,
+        "review_creation_date": 0,
+        "review_answer_timestamp": 0
+      },
+      "literal_null_like_counts": {
+        "review_comment_message": 1
+      },
+      "raw_code_counts_not_automatically_null": {
+        "review_comment_title=99": 1
+      },
+      "column_profiles": {
+        "review_id": {
+          "numeric_values": 0,
+          "non_numeric_values": 99224,
+          "numeric_min": null,
+          "numeric_max": null,
+          "examples": [
+            "7bc2406110b926393aa56f80a40eba40",
+            "80e641a11e56f04c1ad469d5645fdfde",
+            "228ce5500dc1d8e020d8d1322874b6f0"
+          ]
+        },
+        "order_id": {
+          "numeric_values": 0,
+          "non_numeric_values": 99224,
+          "numeric_min": null,
+          "numeric_max": null,
+          "examples": [
+            "73fc7af87114b39712e6da79b0a377eb",
+            "a548910a1c6147796b98fdf73dbeba33",
+            "f9e4b658b201a9f2ecdecbb34bed034b"
+          ]
+        },
+        "review_score": {
+          "numeric_values": 99224,
+          "non_numeric_values": 0,
+          "numeric_min": 1.0,
+          "numeric_max": 5.0,
+          "examples": [
+            "4",
+            "5",
+            "1"
+          ]
+        },
+        "review_comment_title": {
+          "numeric_values": 316,
+          "non_numeric_values": 11250,
+          "numeric_min": 0.0,
+          "numeric_max": 10000000000000.0,
+          "examples": [
+            "recomendo",
+            "Super recomendo",
+            "Não chegou meu produto "
+          ]
+        },
+        "review_comment_message": {
+          "numeric_values": 29,
+          "non_numeric_values": 40921,
+          "numeric_min": 0.0,
+          "numeric_max": 10.0,
+          "examples": [
+            "Recebi bem antes do prazo estipulado.",
+            "Parabéns lojas lannister adorei comprar pela Internet seguro e prático Parabéns a todos feliz Páscoa",
+            "aparelho eficiente. no site a marca do aparelho esta impresso como 3desinfector e ao chegar esta com"
+          ]
+        },
+        "review_creation_date": {
+          "numeric_values": 0,
+          "non_numeric_values": 99224,
+          "numeric_min": null,
+          "numeric_max": null,
+          "examples": [
+            "2018-01-18 00:00:00",
+            "2018-03-10 00:00:00",
+            "2018-02-17 00:00:00"
+          ]
+        },
+        "review_answer_timestamp": {
+          "numeric_values": 0,
+          "non_numeric_values": 99224,
+          "numeric_min": null,
+          "numeric_max": null,
+          "examples": [
+            "2018-01-18 21:46:59",
+            "2018-03-11 03:05:13",
+            "2018-02-18 14:36:24"
+          ]
+        }
+      },
+      "observed_date_ranges": {
+        "review_creation_date": {
+          "min": "2016-10-02T00:00:00",
+          "max": "2018-08-31T00:00:00"
+        },
+        "review_answer_timestamp": {
+          "min": "2016-10-07T18:32:28",
+          "max": "2018-10-29T12:27:35"
+        }
+      },
+      "rule_violations": {},
+      "empty_header_names": 0,
+      "zip_member": "olist_order_reviews_dataset.csv"
+    },
+    "olist:product_category_name_translation.csv": {
+      "rows": 71,
+      "columns": [
+        "product_category_name",
+        "product_category_name_english"
+      ],
+      "key_columns": [
+        "product_category_name"
+      ],
+      "duplicate_rows": 0,
+      "duplicate_keys": 0,
+      "missing_keys": 0,
+      "blank_counts": {
+        "product_category_name": 0,
+        "product_category_name_english": 0
+      },
+      "literal_null_like_counts": {},
+      "raw_code_counts_not_automatically_null": {},
+      "column_profiles": {
+        "product_category_name": {
+          "numeric_values": 0,
+          "non_numeric_values": 71,
+          "numeric_min": null,
+          "numeric_max": null,
+          "examples": [
+            "beleza_saude",
+            "informatica_acessorios",
+            "automotivo"
+          ]
+        },
+        "product_category_name_english": {
+          "numeric_values": 0,
+          "non_numeric_values": 71,
+          "numeric_min": null,
+          "numeric_max": null,
+          "examples": [
+            "health_beauty",
+            "computers_accessories",
+            "auto"
+          ]
+        }
+      },
+      "observed_date_ranges": {},
+      "rule_violations": {},
+      "empty_header_names": 0,
+      "zip_member": "product_category_name_translation.csv"
+    },
+    "porto:train.csv": {
+      "rows": 1710670,
+      "columns": [
+        "TRIP_ID",
+        "CALL_TYPE",
+        "ORIGIN_CALL",
+        "ORIGIN_STAND",
+        "TAXI_ID",
+        "TIMESTAMP",
+        "DAY_TYPE",
+        "MISSING_DATA",
+        "POLYLINE"
+      ],
+      "key_columns": [
+        "TRIP_ID"
+      ],
+      "duplicate_rows": 3,
+      "duplicate_keys": 81,
+      "missing_keys": 0,
+      "blank_counts": {
+        "TRIP_ID": 0,
+        "CALL_TYPE": 0,
+        "ORIGIN_CALL": 1345900,
+        "ORIGIN_STAND": 904091,
+        "TAXI_ID": 0,
+        "TIMESTAMP": 0,
+        "DAY_TYPE": 0,
+        "MISSING_DATA": 0,
+        "POLYLINE": 0
+      },
+      "literal_null_like_counts": {},
+      "raw_code_counts_not_automatically_null": {},
+      "column_profiles": {
+        "TRIP_ID": {
+          "numeric_values": 1710670,
+          "non_numeric_values": 0,
+          "numeric_min": 1.3726368536200003e+18,
+          "numeric_max": 1.4041727966200008e+18,
+          "examples": [
+            "1372636858620000589",
+            "1372637303620000596",
+            "1372636951620000320"
+          ]
+        },
+        "CALL_TYPE": {
+          "numeric_values": 0,
+          "non_numeric_values": 1710670,
+          "numeric_min": null,
+          "numeric_max": null,
+          "examples": [
+            "C",
+            "B",
+            "A"
+          ]
+        },
+        "ORIGIN_CALL": {
+          "numeric_values": 364770,
+          "non_numeric_values": 0,
+          "numeric_min": 2001.0,
+          "numeric_max": 63884.0,
+          "examples": [
+            "31508",
+            "33180",
+            "39233"
+          ]
+        },
+        "ORIGIN_STAND": {
+          "numeric_values": 806579,
+          "non_numeric_values": 0,
+          "numeric_min": 1.0,
+          "numeric_max": 63.0,
+          "examples": [
+            "7",
+            "13",
+            "28"
+          ]
+        },
+        "TAXI_ID": {
+          "numeric_values": 1710670,
+          "non_numeric_values": 0,
+          "numeric_min": 20000001.0,
+          "numeric_max": 20000981.0,
+          "examples": [
+            "20000589",
+            "20000596",
+            "20000320"
+          ]
+        },
+        "TIMESTAMP": {
+          "numeric_values": 1710670,
+          "non_numeric_values": 0,
+          "numeric_min": 1372636853.0,
+          "numeric_max": 1404172796.0,
+          "examples": [
+            "1372636858",
+            "1372637303",
+            "1372636951"
+          ]
+        },
+        "DAY_TYPE": {
+          "numeric_values": 0,
+          "non_numeric_values": 1710670,
+          "numeric_min": null,
+          "numeric_max": null,
+          "examples": [
+            "A"
+          ]
+        },
+        "MISSING_DATA": {
+          "numeric_values": 0,
+          "non_numeric_values": 1710670,
+          "numeric_min": null,
+          "numeric_max": null,
+          "examples": [
+            "False",
+            "True"
+          ]
+        },
+        "POLYLINE": {
+          "numeric_values": 0,
+          "non_numeric_values": 1710670,
+          "numeric_min": null,
+          "numeric_max": null,
+          "examples": [
+            "[[-8.618643,41.141412],[-8.618499,41.141376],[-8.620326,41.14251],[-8.622153,41.143815],[-8.623953,4",
+            "[[-8.639847,41.159826],[-8.640351,41.159871],[-8.642196,41.160114],[-8.644455,41.160492],[-8.646921,",
+            "[[-8.612964,41.140359],[-8.613378,41.14035],[-8.614215,41.140278],[-8.614773,41.140368],[-8.615907,4"
+          ]
+        }
+      },
+      "observed_date_ranges": {
+        "TIMESTAMP_UTC": {
+          "min": "2013-07-01T00:00:53+00:00",
+          "max": "2014-06-30T23:59:56+00:00"
+        }
+      },
+      "rule_violations": {
+        "empty_polyline": 5901,
+        "source_missing_data_flag_true": 10
+      },
+      "empty_header_names": 0,
+      "zip_member": "train.csv",
+      "reuse_gate": "Quarantined: license Unknown; no processed research derivative created."
+    },
+    "nyc_Medallion_Sample_100k": {
+      "rows": 100000,
+      "columns": [
+        "medallion",
+        "hack_license",
+        "medallion_index",
+        "driver_index"
+      ],
+      "key_columns": [],
+      "duplicate_rows": 0,
+      "duplicate_keys": 0,
+      "missing_keys": 0,
+      "blank_counts": {
+        "medallion": 0,
+        "hack_license": 0,
+        "medallion_index": 0,
+        "driver_index": 0
+      },
+      "literal_null_like_counts": {},
+      "raw_code_counts_not_automatically_null": {
+        "driver_index=99": 11,
+        "medallion_index=999": 3,
+        "driver_index=999": 11,
+        "medallion_index=99": 1
+      },
+      "column_profiles": {
+        "medallion": {
+          "numeric_values": 0,
+          "non_numeric_values": 100000,
+          "numeric_min": null,
+          "numeric_max": null,
+          "examples": [
+            "D3253DC7551B47B34C10C39FA40FC538",
+            "877AAB787A0BCD95781E7DA0770CCB1D",
+            "E7895290D325C76879B42DD851F55E94"
+          ]
+        },
+        "hack_license": {
+          "numeric_values": 0,
+          "non_numeric_values": 100000,
+          "numeric_min": null,
+          "numeric_max": null,
+          "examples": [
+            "213029F52128CE3A410C4BC182A28BC7",
+            "332826D6A148586C069E54939023FA93",
+            "9EA84FBE846909C0C7E851645CAC73C5"
+          ]
+        },
+        "medallion_index": {
+          "numeric_values": 100000,
+          "non_numeric_values": 0,
+          "numeric_min": 1.0,
+          "numeric_max": 13552.0,
+          "examples": [
+            "11206",
+            "7179",
+            "12267"
+          ]
+        },
+        "driver_index": {
+          "numeric_values": 100000,
+          "non_numeric_values": 0,
+          "numeric_min": 1.0,
+          "numeric_max": 42599.0,
+          "examples": [
+            "5710",
+            "33439",
+            "217"
+          ]
+        }
+      },
+      "observed_date_ranges": {},
+      "rule_violations": {},
+      "empty_header_names": 0,
+      "reuse_gate": "Quarantined: no explicit dataset license identified; no processed research derivative created."
+    },
+    "nyc_Medallion_Sample_5k": {
+      "rows": 5000,
+      "columns": [
+        "medallion",
+        "hack_license",
+        "medallion_index",
+        "driver_index"
+      ],
+      "key_columns": [],
+      "duplicate_rows": 0,
+      "duplicate_keys": 0,
+      "missing_keys": 0,
+      "blank_counts": {
+        "medallion": 0,
+        "hack_license": 0,
+        "medallion_index": 0,
+        "driver_index": 0
+      },
+      "literal_null_like_counts": {},
+      "raw_code_counts_not_automatically_null": {
+        "driver_index=999": 1,
+        "driver_index=99": 1
+      },
+      "column_profiles": {
+        "medallion": {
+          "numeric_values": 0,
+          "non_numeric_values": 5000,
+          "numeric_min": null,
+          "numeric_max": null,
+          "examples": [
+            "EE5A9D77A3A50F1102FFBD93A2FB21C3",
+            "B222E2CE87963880CCBE410780F4146E",
+            "F5728B9525B241FA3B3FDAFA7B1D1018"
+          ]
+        },
+        "hack_license": {
+          "numeric_values": 0,
+          "non_numeric_values": 5000,
+          "numeric_min": null,
+          "numeric_max": null,
+          "examples": [
+            "DE9C380EC853E28C503B90A4D7EDBB43",
+            "FB3592952F1E18EA48490BC330AEC2F2",
+            "7AD5AF00004190598635B2C09562F34A"
+          ]
+        },
+        "medallion_index": {
+          "numeric_values": 5000,
+          "non_numeric_values": 0,
+          "numeric_min": 1.0,
+          "numeric_max": 13551.0,
+          "examples": [
+            "12640",
+            "9452",
+            "12992"
+          ]
+        },
+        "driver_index": {
+          "numeric_values": 5000,
+          "non_numeric_values": 0,
+          "numeric_min": 3.0,
+          "numeric_max": 42438.0,
+          "examples": [
+            "5280",
+            "4712",
+            "1737"
+          ]
+        }
+      },
+      "observed_date_ranges": {},
+      "rule_violations": {},
+      "empty_header_names": 0,
+      "reuse_gate": "Quarantined: no explicit dataset license identified; no processed research derivative created."
+    },
+    "nyc_medallion_mapping_key": {
+      "rows": 578956,
+      "columns": [
+        "medallion",
+        "hack_license",
+        "medallion_index",
+        "driver_index",
+        "company_owned"
+      ],
+      "key_columns": [],
+      "duplicate_rows": 0,
+      "duplicate_keys": 0,
+      "missing_keys": 0,
+      "blank_counts": {
+        "medallion": 0,
+        "hack_license": 0,
+        "medallion_index": 0,
+        "driver_index": 0,
+        "company_owned": 0
+      },
+      "literal_null_like_counts": {},
+      "raw_code_counts_not_automatically_null": {
+        "driver_index=99": 78,
+        "driver_index=999": 61,
+        "medallion_index=99": 4,
+        "medallion_index=999": 16
+      },
+      "column_profiles": {
+        "medallion": {
+          "numeric_values": 0,
+          "non_numeric_values": 578956,
+          "numeric_min": null,
+          "numeric_max": null,
+          "examples": [
+            "00005007A9F30E289E760362F69E4EAD",
+            "000318C2E3E6381580E5C99910A60668",
+            "000351EDC735C079246435340A54C7C1"
+          ]
+        },
+        "hack_license": {
+          "numeric_values": 0,
+          "non_numeric_values": 578956,
+          "numeric_min": null,
+          "numeric_max": null,
+          "examples": [
+            "01DBFCD9A81EF99261D19B22FFA86BC1",
+            "01F8EC79407805992EC25F43A913679B",
+            "02015F5B7D18846209A4DEDF896F6D9C"
+          ]
+        },
+        "medallion_index": {
+          "numeric_values": 578956,
+          "non_numeric_values": 0,
+          "numeric_min": 1.0,
+          "numeric_max": 13553.0,
+          "examples": [
+            "1",
+            "2",
+            "3"
+          ]
+        },
+        "driver_index": {
+          "numeric_values": 578956,
+          "non_numeric_values": 0,
+          "numeric_min": 1.0,
+          "numeric_max": 42607.0,
+          "examples": [
+            "109",
+            "101",
+            "75"
+          ]
+        },
+        "company_owned": {
+          "numeric_values": 578956,
+          "non_numeric_values": 0,
+          "numeric_min": 0.0,
+          "numeric_max": 1.0,
+          "examples": [
+            "1",
+            "0"
+          ]
+        }
+      },
+      "observed_date_ranges": {},
+      "rule_violations": {},
+      "empty_header_names": 0,
+      "reuse_gate": "Quarantined: no explicit dataset license identified; no processed research derivative created."
+    },
+    "osm_birmingham_2024": {
+      "rows": 157946,
+      "columns": [
+        "changeset",
+        "id",
+        "lat",
+        "lon",
+        "nodes",
+        "tags",
+        "timestamp",
+        "type",
+        "uid",
+        "user",
+        "version"
+      ],
+      "node_columns": [
+        "changeset",
+        "id",
+        "lat",
+        "lon",
+        "tags",
+        "timestamp",
+        "type",
+        "uid",
+        "user",
+        "version"
+      ],
+      "way_columns": [
+        "changeset",
+        "id",
+        "nodes",
+        "tags",
+        "timestamp",
+        "type",
+        "uid",
+        "user",
+        "version"
+      ],
+      "nodes": 128744,
+      "ways": 29202,
+      "segments": 136639,
+      "duplicate_element_ids": 0,
+      "rule_violations": {},
+      "response_osm3s": {
+        "timestamp_osm_base": "2026-10-08T17:48:36Z",
+        "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+      },
+      "requested_snapshot_utc": "2024-01-01T00:00:00Z",
+      "note": "Response timestamp_osm_base describes server database freshness, not the requested historical snapshot. Element timestamps are last-edit times."
+    },
+    "weather_birmingham_2024": {
+      "rows": 8784,
+      "columns": [
+        "latitude",
+        "longitude",
+        "generationtime_ms",
+        "utc_offset_seconds",
+        "timezone",
+        "timezone_abbreviation",
+        "elevation",
+        "hourly_units",
+        "hourly"
+      ],
+      "hourly_columns": [
+        "time",
+        "temperature_2m",
+        "relative_humidity_2m",
+        "precipitation",
+        "rain",
+        "snowfall",
+        "wind_speed_10m",
+        "weather_code"
+      ],
+      "hourly_units": {
+        "time": "iso8601",
+        "temperature_2m": "°C",
+        "relative_humidity_2m": "%",
+        "precipitation": "mm",
+        "rain": "mm",
+        "snowfall": "cm",
+        "wind_speed_10m": "m/s",
+        "weather_code": "wmo code"
+      },
+      "blank_counts": {
+        "time": 0,
+        "temperature_2m": 0,
+        "relative_humidity_2m": 0,
+        "precipitation": 0,
+        "rain": 0,
+        "snowfall": 0,
+        "wind_speed_10m": 0,
+        "weather_code": 0
+      },
+      "rule_violations": {},
+      "expected_hours": 8784,
+      "matches_expected_hours": true,
+      "observed_date_ranges": {
+        "time_utc": {
+          "min": "2024-01-01T00:00",
+          "max": "2024-12-31T23:00"
+        }
+      },
+      "requested_coordinates": {
+        "latitude": 52.4862,
+        "longitude": -1.8904
+      },
+      "returned_grid_coordinates": {
+        "latitude": 52.5,
+        "longitude": -2.0
+      },
+      "model": "era5",
+      "time_basis": "UTC; reanalysis, not as-issued forecasts"
+    }
+  },
+  "relationship_checks": {
+    "dft": {
+      "collision_rows_with_vehicle_count_mismatch": 0,
+      "collision_rows_with_casualty_count_mismatch": 0,
+      "note": "Counts checked across acquired annual tables. Timestamp-to-UTC conversion needs explicit handling of DST ambiguity; no weather join was performed."
+    },
+    "olist_orphan_references": {}
+  },
+  "policy": "No imputation, synthetic rows, source overwrites or cross-country/time operational joins. Coded unknown values retained. Quarantined sources only profiled.",
+  "processed_outputs": [
+    {
+      "path": "data/processed/gb_2024/collision.csv",
+      "source_asset": "dft_collision_2024",
+      "source_sha256": "32a78f4662e309160f37b1ea2b82017e85e07b62a022d680da7140e88706a17c",
+      "rows": 100927,
+      "columns": [
+        "collision_index",
+        "collision_year",
+        "collision_ref_no",
+        "location_easting_osgr",
+        "location_northing_osgr",
+        "longitude",
+        "latitude",
+        "police_force",
+        "collision_severity",
+        "number_of_vehicles",
+        "number_of_casualties",
+        "date",
+        "day_of_week",
+        "time",
+        "local_authority_district",
+        "local_authority_ons_district",
+        "local_authority_highway",
+        "local_authority_highway_current",
+        "first_road_class",
+        "first_road_number",
+        "road_type",
+        "speed_limit",
+        "junction_detail_historic",
+        "junction_detail",
+        "junction_control",
+        "second_road_class",
+        "second_road_number",
+        "pedestrian_crossing_human_control_historic",
+        "pedestrian_crossing_physical_facilities_historic",
+        "pedestrian_crossing",
+        "light_conditions",
+        "weather_conditions",
+        "road_surface_conditions",
+        "special_conditions_at_site",
+        "carriageway_hazards_historic",
+        "carriageway_hazards",
+        "urban_or_rural_area",
+        "did_police_officer_attend_scene_of_accident",
+        "trunk_road_flag",
+        "lsoa_of_accident_location",
+        "enhanced_severity_collision",
+        "collision_injury_based",
+        "collision_adjusted_severity_serious",
+        "collision_adjusted_severity_slight",
+        "source_record_number",
+        "collision_datetime_local"
+      ],
+      "sha256": "972888fa2c57f4fe8ea4c02d979fd9e2501089182a9e98a1ac3f40cd3f8c81bb",
+      "bytes": 21923386,
+      "transformation": "All source rows and codes retained. Added one-based CSV data-row number; collision timestamp parsed as Europe/London local wall time without inventing a UTC offset. No imputation or deduplication.",
+      "column_origins": {
+        "collision_index": "source",
+        "collision_year": "source",
+        "collision_ref_no": "source",
+        "location_easting_osgr": "source",
+        "location_northing_osgr": "source",
+        "longitude": "source",
+        "latitude": "source",
+        "police_force": "source",
+        "collision_severity": "source",
+        "number_of_vehicles": "source",
+        "number_of_casualties": "source",
+        "date": "source",
+        "day_of_week": "source",
+        "time": "source",
+        "local_authority_district": "source",
+        "local_authority_ons_district": "source",
+        "local_authority_highway": "source",
+        "local_authority_highway_current": "source",
+        "first_road_class": "source",
+        "first_road_number": "source",
+        "road_type": "source",
+        "speed_limit": "source",
+        "junction_detail_historic": "source",
+        "junction_detail": "source",
+        "junction_control": "source",
+        "second_road_class": "source",
+        "second_road_number": "source",
+        "pedestrian_crossing_human_control_historic": "source",
+        "pedestrian_crossing_physical_facilities_historic": "source",
+        "pedestrian_crossing": "source",
+        "light_conditions": "source",
+        "weather_conditions": "source",
+        "road_surface_conditions": "source",
+        "special_conditions_at_site": "source",
+        "carriageway_hazards_historic": "source",
+        "carriageway_hazards": "source",
+        "urban_or_rural_area": "source",
+        "did_police_officer_attend_scene_of_accident": "source",
+        "trunk_road_flag": "source",
+        "lsoa_of_accident_location": "source",
+        "enhanced_severity_collision": "source",
+        "collision_injury_based": "source",
+        "collision_adjusted_severity_serious": "source",
+        "collision_adjusted_severity_slight": "source",
+        "source_record_number": "derived",
+        "collision_datetime_local": "derived"
+      }
+    },
+    {
+      "path": "data/processed/gb_2024/vehicle.csv",
+      "source_asset": "dft_vehicle_2024",
+      "source_sha256": "1a60f65f07a44454bc03c63b35d6741f41c9dfbb05a26753406aef8bff4ae6cd",
+      "rows": 183514,
+      "columns": [
+        "collision_index",
+        "collision_year",
+        "collision_ref_no",
+        "vehicle_reference",
+        "vehicle_type",
+        "towing_and_articulation",
+        "vehicle_manoeuvre_historic",
+        "vehicle_manoeuvre",
+        "vehicle_direction_from",
+        "vehicle_direction_to",
+        "vehicle_location_restricted_lane_historic",
+        "vehicle_location_restricted_lane",
+        "junction_location",
+        "skidding_and_overturning",
+        "hit_object_in_carriageway",
+        "vehicle_leaving_carriageway",
+        "hit_object_off_carriageway",
+        "first_point_of_impact",
+        "vehicle_left_hand_drive",
+        "journey_purpose_of_driver_historic",
+        "journey_purpose_of_driver",
+        "sex_of_driver",
+        "age_of_driver",
+        "age_band_of_driver",
+        "engine_capacity_cc",
+        "propulsion_code",
+        "age_of_vehicle",
+        "generic_make_model",
+        "driver_imd_decile",
+        "lsoa_of_driver",
+        "escooter_flag",
+        "driver_distance_banding",
+        "source_record_number"
+      ],
+      "sha256": "88ef8cff359c2647f49270412b44b2cd22b15fe215b764df38de589c1b0c1b38",
+      "bytes": 21653940,
+      "transformation": "All source rows and codes retained. Added one-based CSV data-row number; collision timestamp parsed as Europe/London local wall time without inventing a UTC offset. No imputation or deduplication.",
+      "column_origins": {
+        "collision_index": "source",
+        "collision_year": "source",
+        "collision_ref_no": "source",
+        "vehicle_reference": "source",
+        "vehicle_type": "source",
+        "towing_and_articulation": "source",
+        "vehicle_manoeuvre_historic": "source",
+        "vehicle_manoeuvre": "source",
+        "vehicle_direction_from": "source",
+        "vehicle_direction_to": "source",
+        "vehicle_location_restricted_lane_historic": "source",
+        "vehicle_location_restricted_lane": "source",
+        "junction_location": "source",
+        "skidding_and_overturning": "source",
+        "hit_object_in_carriageway": "source",
+        "vehicle_leaving_carriageway": "source",
+        "hit_object_off_carriageway": "source",
+        "first_point_of_impact": "source",
+        "vehicle_left_hand_drive": "source",
+        "journey_purpose_of_driver_historic": "source",
+        "journey_purpose_of_driver": "source",
+        "sex_of_driver": "source",
+        "age_of_driver": "source",
+        "age_band_of_driver": "source",
+        "engine_capacity_cc": "source",
+        "propulsion_code": "source",
+        "age_of_vehicle": "source",
+        "generic_make_model": "source",
+        "driver_imd_decile": "source",
+        "lsoa_of_driver": "source",
+        "escooter_flag": "source",
+        "driver_distance_banding": "source",
+        "source_record_number": "derived"
+      }
+    },
+    {
+      "path": "data/processed/gb_2024/casualty.csv",
+      "source_asset": "dft_casualty_2024",
+      "source_sha256": "838aad605a6ac638973f09248ef3a730dbd1de30ac8fc79dfd536e7d4a47b0f8",
+      "rows": 128272,
+      "columns": [
+        "collision_index",
+        "collision_year",
+        "collision_ref_no",
+        "vehicle_reference",
+        "casualty_reference",
+        "casualty_class",
+        "sex_of_casualty",
+        "age_of_casualty",
+        "age_band_of_casualty",
+        "casualty_severity",
+        "pedestrian_location",
+        "pedestrian_movement",
+        "car_passenger",
+        "bus_or_coach_passenger",
+        "pedestrian_road_maintenance_worker",
+        "casualty_type",
+        "casualty_imd_decile",
+        "lsoa_of_casualty",
+        "enhanced_casualty_severity",
+        "casualty_injury_based",
+        "casualty_adjusted_severity_serious",
+        "casualty_adjusted_severity_slight",
+        "casualty_distance_banding",
+        "escooter_flag",
+        "source_record_number"
+      ],
+      "sha256": "b1be34d7ba949af06bda877b8f77f6a8dc0beb823a42e9c91e4d8a40074ee9a9",
+      "bytes": 11354194,
+      "transformation": "All source rows and codes retained. Added one-based CSV data-row number; collision timestamp parsed as Europe/London local wall time without inventing a UTC offset. No imputation or deduplication.",
+      "column_origins": {
+        "collision_index": "source",
+        "collision_year": "source",
+        "collision_ref_no": "source",
+        "vehicle_reference": "source",
+        "casualty_reference": "source",
+        "casualty_class": "source",
+        "sex_of_casualty": "source",
+        "age_of_casualty": "source",
+        "age_band_of_casualty": "source",
+        "casualty_severity": "source",
+        "pedestrian_location": "source",
+        "pedestrian_movement": "source",
+        "car_passenger": "source",
+        "bus_or_coach_passenger": "source",
+        "pedestrian_road_maintenance_worker": "source",
+        "casualty_type": "source",
+        "casualty_imd_decile": "source",
+        "lsoa_of_casualty": "source",
+        "enhanced_casualty_severity": "source",
+        "casualty_injury_based": "source",
+        "casualty_adjusted_severity_serious": "source",
+        "casualty_adjusted_severity_slight": "source",
+        "casualty_distance_banding": "source",
+        "escooter_flag": "source",
+        "source_record_number": "derived"
+      }
+    },
+    {
+      "path": "data/processed/england_wales_static/logistics_sites.csv",
+      "source_asset": "cambridge_sites",
+      "source_sha256": "db67429d3e1b019c2d1f8d044851dd9c473f8404bbe673b9219e7ffe5037a28c",
+      "rows": 47683,
+      "columns": [
+        "source_record_number",
+        "category",
+        "latitude",
+        "longitude",
+        "sqm",
+        "bays"
+      ],
+      "sha256": "d1d3851d3249788286659fe30392b8d694f3d6e3450c6534b6c8f149609ad623",
+      "bytes": 2178740,
+      "transformation": "All rows retained. Added one-based source record number, not a real facility identifier. bays is the source authors' modelled estimate; no observed capacity or facility observation date is asserted.",
+      "column_origins": {
+        "source_record_number": "derived",
+        "category": "source",
+        "latitude": "source",
+        "longitude": "source",
+        "sqm": "source",
+        "bays": "source"
+      }
+    },
+    {
+      "path": "data/processed/brazil_olist/olist_customers_dataset.csv",
+      "source_asset": "olist_archive",
+      "source_sha256": "967e41e04fc306fe604e2a693f488995a8b41e5047418f8a5c8e4abd6deca784",
+      "rows": 99441,
+      "columns": [
+        "customer_id",
+        "customer_unique_id",
+        "customer_zip_code_prefix",
+        "customer_city",
+        "customer_state"
+      ],
+      "sha256": "c35df38fc2e81bb648484d14e6681322a256c1b208bce86e1110a22ffb3c39ca",
+      "bytes": 8685707,
+      "transformation": "All source rows and columns copied from ZIP member olist_customers_dataset.csv; UTF-8 CSV serialization only; no imputation, aggregation or deduplication. Timezones are not declared by these rows.",
+      "column_origins": {
+        "customer_id": "source",
+        "customer_unique_id": "source",
+        "customer_zip_code_prefix": "source",
+        "customer_city": "source",
+        "customer_state": "source"
+      }
+    },
+    {
+      "path": "data/processed/brazil_olist/olist_products_dataset.csv",
+      "source_asset": "olist_archive",
+      "source_sha256": "967e41e04fc306fe604e2a693f488995a8b41e5047418f8a5c8e4abd6deca784",
+      "rows": 32951,
+      "columns": [
+        "product_id",
+        "product_category_name",
+        "product_name_lenght",
+        "product_description_lenght",
+        "product_photos_qty",
+        "product_weight_g",
+        "product_length_cm",
+        "product_height_cm",
+        "product_width_cm"
+      ],
+      "sha256": "26813b247f1bf7be7b27318f2f63ea9db701e174511d5e81b4ff9a37e7378011",
+      "bytes": 2371244,
+      "transformation": "All source rows and columns copied from ZIP member olist_products_dataset.csv; UTF-8 CSV serialization only; no imputation, aggregation or deduplication. Timezones are not declared by these rows.",
+      "column_origins": {
+        "product_id": "source",
+        "product_category_name": "source",
+        "product_name_lenght": "source",
+        "product_description_lenght": "source",
+        "product_photos_qty": "source",
+        "product_weight_g": "source",
+        "product_length_cm": "source",
+        "product_height_cm": "source",
+        "product_width_cm": "source"
+      }
+    },
+    {
+      "path": "data/processed/brazil_olist/olist_sellers_dataset.csv",
+      "source_asset": "olist_archive",
+      "source_sha256": "967e41e04fc306fe604e2a693f488995a8b41e5047418f8a5c8e4abd6deca784",
+      "rows": 3095,
+      "columns": [
+        "seller_id",
+        "seller_zip_code_prefix",
+        "seller_city",
+        "seller_state"
+      ],
+      "sha256": "b0315bfa664dc63864b4a878ff7fed22b33282ecf125125db8bfdf29d909a2e6",
+      "bytes": 167713,
+      "transformation": "All source rows and columns copied from ZIP member olist_sellers_dataset.csv; UTF-8 CSV serialization only; no imputation, aggregation or deduplication. Timezones are not declared by these rows.",
+      "column_origins": {
+        "seller_id": "source",
+        "seller_zip_code_prefix": "source",
+        "seller_city": "source",
+        "seller_state": "source"
+      }
+    },
+    {
+      "path": "data/processed/brazil_olist/olist_orders_dataset.csv",
+      "source_asset": "olist_archive",
+      "source_sha256": "967e41e04fc306fe604e2a693f488995a8b41e5047418f8a5c8e4abd6deca784",
+      "rows": 99441,
+      "columns": [
+        "order_id",
+        "customer_id",
+        "order_status",
+        "order_purchase_timestamp",
+        "order_approved_at",
+        "order_delivered_carrier_date",
+        "order_delivered_customer_date",
+        "order_estimated_delivery_date"
+      ],
+      "sha256": "0f2283fe7aa4e3337e204f4cb976e6f9f6f75cdad52ad35a5fd382d1a78d4a12",
+      "bytes": 17506326,
+      "transformation": "All source rows and columns copied from ZIP member olist_orders_dataset.csv; UTF-8 CSV serialization only; no imputation, aggregation or deduplication. Timezones are not declared by these rows.",
+      "column_origins": {
+        "order_id": "source",
+        "customer_id": "source",
+        "order_status": "source",
+        "order_purchase_timestamp": "source",
+        "order_approved_at": "source",
+        "order_delivered_carrier_date": "source",
+        "order_delivered_customer_date": "source",
+        "order_estimated_delivery_date": "source"
+      }
+    },
+    {
+      "path": "data/processed/brazil_olist/delivery_outcomes.csv",
+      "source_asset": "olist_archive",
+      "source_sha256": "967e41e04fc306fe604e2a693f488995a8b41e5047418f8a5c8e4abd6deca784",
+      "rows": 99441,
+      "columns": [
+        "order_id",
+        "order_status",
+        "delivered_date_local",
+        "estimated_delivery_date_local",
+        "delivery_delay_days",
+        "late_by_calendar_date"
+      ],
+      "sha256": "180f4f0efe199063c5d5cf7714930e6f85eaa6a3a585a5fcd03c2ed996e3ead7",
+      "bytes": 8839838,
+      "transformation": "One row per original order. Actual delivery minus estimated delivery by calendar date, in days, only for status delivered with both dates present. Same-day delivery is not flagged late. Missing outcomes remain blank. These are outcomes, never prediction-time features.",
+      "column_origins": {
+        "order_id": "source",
+        "order_status": "source",
+        "delivered_date_local": "source rename",
+        "estimated_delivery_date_local": "source rename",
+        "delivery_delay_days": "derived",
+        "late_by_calendar_date": "derived"
+      }
+    },
+    {
+      "path": "data/processed/brazil_olist/olist_geolocation_dataset.csv",
+      "source_asset": "olist_archive",
+      "source_sha256": "967e41e04fc306fe604e2a693f488995a8b41e5047418f8a5c8e4abd6deca784",
+      "rows": 1000163,
+      "columns": [
+        "geolocation_zip_code_prefix",
+        "geolocation_lat",
+        "geolocation_lng",
+        "geolocation_city",
+        "geolocation_state"
+      ],
+      "sha256": "9bf9f5fe782b29c4da70acd1231190399aec1445b3e97930534ef5c22433c0c3",
+      "bytes": 60273705,
+      "transformation": "All source rows and columns copied from ZIP member olist_geolocation_dataset.csv; UTF-8 CSV serialization only; no imputation, aggregation or deduplication. Timezones are not declared by these rows.",
+      "column_origins": {
+        "geolocation_zip_code_prefix": "source",
+        "geolocation_lat": "source",
+        "geolocation_lng": "source",
+        "geolocation_city": "source",
+        "geolocation_state": "source"
+      }
+    },
+    {
+      "path": "data/processed/brazil_olist/olist_order_items_dataset.csv",
+      "source_asset": "olist_archive",
+      "source_sha256": "967e41e04fc306fe604e2a693f488995a8b41e5047418f8a5c8e4abd6deca784",
+      "rows": 112650,
+      "columns": [
+        "order_id",
+        "order_item_id",
+        "product_id",
+        "seller_id",
+        "shipping_limit_date",
+        "price",
+        "freight_value"
+      ],
+      "sha256": "1f591b94022572b3f3a84b299c025f37859bf95443068cc4d1672d6f00de98ef",
+      "bytes": 15120244,
+      "transformation": "All source rows and columns copied from ZIP member olist_order_items_dataset.csv; UTF-8 CSV serialization only; no imputation, aggregation or deduplication. Timezones are not declared by these rows.",
+      "column_origins": {
+        "order_id": "source",
+        "order_item_id": "source",
+        "product_id": "source",
+        "seller_id": "source",
+        "shipping_limit_date": "source",
+        "price": "source",
+        "freight_value": "source"
+      }
+    },
+    {
+      "path": "data/processed/brazil_olist/olist_order_payments_dataset.csv",
+      "source_asset": "olist_archive",
+      "source_sha256": "967e41e04fc306fe604e2a693f488995a8b41e5047418f8a5c8e4abd6deca784",
+      "rows": 103886,
+      "columns": [
+        "order_id",
+        "payment_sequential",
+        "payment_type",
+        "payment_installments",
+        "payment_value"
+      ],
+      "sha256": "a584a673fb387a02775f6b388f9e77a6c63525533d6666ccdbcae0159d5fb726",
+      "bytes": 5751667,
+      "transformation": "All source rows and columns copied from ZIP member olist_order_payments_dataset.csv; UTF-8 CSV serialization only; no imputation, aggregation or deduplication. Timezones are not declared by these rows.",
+      "column_origins": {
+        "order_id": "source",
+        "payment_sequential": "source",
+        "payment_type": "source",
+        "payment_installments": "source",
+        "payment_value": "source"
+      }
+    },
+    {
+      "path": "data/processed/brazil_olist/olist_order_reviews_dataset.csv",
+      "source_asset": "olist_archive",
+      "source_sha256": "967e41e04fc306fe604e2a693f488995a8b41e5047418f8a5c8e4abd6deca784",
+      "rows": 99224,
+      "columns": [
+        "review_id",
+        "order_id",
+        "review_score",
+        "review_comment_title",
+        "review_comment_message",
+        "review_creation_date",
+        "review_answer_timestamp"
+      ],
+      "sha256": "0ee43d4cc9c2b3fc2f33490b331b4c51a752afbaf4eb2f584496fed5fe3e1791",
+      "bytes": 14054760,
+      "transformation": "All source rows and columns copied from ZIP member olist_order_reviews_dataset.csv; UTF-8 CSV serialization only; no imputation, aggregation or deduplication. Timezones are not declared by these rows.",
+      "column_origins": {
+        "review_id": "source",
+        "order_id": "source",
+        "review_score": "source",
+        "review_comment_title": "source",
+        "review_comment_message": "source",
+        "review_creation_date": "source",
+        "review_answer_timestamp": "source"
+      }
+    },
+    {
+      "path": "data/processed/brazil_olist/product_category_name_translation.csv",
+      "source_asset": "olist_archive",
+      "source_sha256": "967e41e04fc306fe604e2a693f488995a8b41e5047418f8a5c8e4abd6deca784",
+      "rows": 71,
+      "columns": [
+        "product_category_name",
+        "product_category_name_english"
+      ],
+      "sha256": "ab914315d33815e0bc240d3aab0d3e004f4d85abdc0773c8016106b20d4ffb65",
+      "bytes": 2612,
+      "transformation": "All source rows and columns copied from ZIP member product_category_name_translation.csv; UTF-8 CSV serialization only; no imputation, aggregation or deduplication. Timezones are not declared by these rows.",
+      "column_origins": {
+        "product_category_name": "source",
+        "product_category_name_english": "source"
+      }
+    },
+    {
+      "path": "data/processed/birmingham_2024/osm_nodes.csv",
+      "source_asset": "osm_birmingham_2024",
+      "source_sha256": "d055612e77a38dbaeb65a81a4c7731c5151dedcced46beea33c016367c1f76a1",
+      "rows": 128744,
+      "columns": [
+        "osm_node_id",
+        "latitude",
+        "longitude",
+        "osm_version",
+        "osm_timestamp"
+      ],
+      "sha256": "4185e40654cfd508932cff5d045e5c5528d9c136e2f5064765ef56897fee72fd",
+      "bytes": 7223889,
+      "transformation": "Historical OSM geometry and exact source tags. Segments split ways at consecutive real OSM nodes. No travel times, missing speed limits, freight permissions, reverse edges or turn restrictions were fabricated.",
+      "column_origins": {
+        "osm_node_id": "source id renamed",
+        "latitude": "source lat renamed",
+        "longitude": "source lon renamed",
+        "osm_version": "source version renamed",
+        "osm_timestamp": "source timestamp renamed"
+      }
+    },
+    {
+      "path": "data/processed/birmingham_2024/osm_ways.csv",
+      "source_asset": "osm_birmingham_2024",
+      "source_sha256": "d055612e77a38dbaeb65a81a4c7731c5151dedcced46beea33c016367c1f76a1",
+      "rows": 29202,
+      "columns": [
+        "osm_way_id",
+        "node_ids_json",
+        "tags_json",
+        "osm_version",
+        "osm_timestamp"
+      ],
+      "sha256": "dc75f72981b3822f04764cc43854610d493fdda7f5c4d0e7f588f3f96ee7a9fb",
+      "bytes": 6900770,
+      "transformation": "Historical OSM geometry and exact source tags. Segments split ways at consecutive real OSM nodes. No travel times, missing speed limits, freight permissions, reverse edges or turn restrictions were fabricated.",
+      "column_origins": {
+        "osm_way_id": "source id renamed",
+        "node_ids_json": "source nodes array serialized",
+        "tags_json": "source tags object serialized",
+        "osm_version": "source version renamed",
+        "osm_timestamp": "source timestamp renamed"
+      }
+    },
+    {
+      "path": "data/processed/birmingham_2024/osm_segments.csv",
+      "source_asset": "osm_birmingham_2024",
+      "source_sha256": "d055612e77a38dbaeb65a81a4c7731c5151dedcced46beea33c016367c1f76a1",
+      "rows": 136639,
+      "columns": [
+        "osm_way_id",
+        "segment_index",
+        "from_node_id",
+        "to_node_id",
+        "from_latitude",
+        "from_longitude",
+        "to_latitude",
+        "to_longitude",
+        "tags_json"
+      ],
+      "sha256": "d5c9eb2619e3bd8328781ee6dc7ccf589787f4f2de79da4a1ee4a43123e80055",
+      "bytes": 30499961,
+      "transformation": "Historical OSM geometry and exact source tags. Segments split ways at consecutive real OSM nodes. No travel times, missing speed limits, freight permissions, reverse edges or turn restrictions were fabricated.",
+      "column_origins": {
+        "osm_way_id": "source way id renamed",
+        "segment_index": "derived zero-based consecutive-node pair index",
+        "from_node_id": "source way nodes[i]",
+        "to_node_id": "source way nodes[i+1]",
+        "from_latitude": "source node lat by node id",
+        "from_longitude": "source node lon by node id",
+        "to_latitude": "source node lat by node id",
+        "to_longitude": "source node lon by node id",
+        "tags_json": "source way tags object serialized"
+      }
+    },
+    {
+      "path": "data/processed/birmingham_2024/weather_hourly.csv",
+      "source_asset": "weather_birmingham_2024",
+      "source_sha256": "7423378362835e3c5d622b2fccaee6d382c27d1b8dbb3fa774e66c672ec41813",
+      "rows": 8784,
+      "columns": [
+        "time_utc",
+        "grid_latitude",
+        "grid_longitude",
+        "temperature_2m",
+        "relative_humidity_2m",
+        "precipitation",
+        "rain",
+        "snowfall",
+        "wind_speed_10m",
+        "weather_code"
+      ],
+      "sha256": "5829e7dec379b4fba9f57bdebc0acf33ed164ea6ab69082e7b915ecd7eef640d",
+      "bytes": 559803,
+      "transformation": "Hourly arrays flattened without imputation. UTC offset comes from checked API metadata. Coordinates are the actual returned model grid cell; requested point retained in provenance. Units retained in quality report.",
+      "column_origins": {
+        "time_utc": "source hourly.time with verified UTC offset added",
+        "grid_latitude": "source response latitude renamed",
+        "grid_longitude": "source response longitude renamed",
+        "temperature_2m": "source hourly.temperature_2m",
+        "relative_humidity_2m": "source hourly.relative_humidity_2m",
+        "precipitation": "source hourly.precipitation",
+        "rain": "source hourly.rain",
+        "snowfall": "source hourly.snowfall",
+        "wind_speed_10m": "source hourly.wind_speed_10m",
+        "weather_code": "source hourly.weather_code"
+      }
+    }
+  ]
+}

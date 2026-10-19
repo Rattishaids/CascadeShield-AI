@@ -1,0 +1,1 @@
+[out:json][timeout:150][date:"2024-01-01T00:00:00Z"];way["highway"~"^(motorway|trunk|primary|secondary|tertiary|unclassified|residential|service|living_street|motorway_link|trunk_link|primary_link|secondary_link|tertiary_link)$"](52.42,-1.99,52.55,-1.78);(._;>;);out meta;

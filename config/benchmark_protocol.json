@@ -1,0 +1,40 @@
+{
+  "schemaVersion": "cascadeshield.executed-benchmark-protocol/1.0",
+  "provenance": "SIMULATED_RESEARCH_EXPERIMENT",
+  "seeds": [11, 22, 33, 44, 55],
+  "futureMlPartition": {
+    "developmentSeeds": [11, 22, 33],
+    "reservedAssessmentSeeds": [44, 55],
+    "rule": "Keep every profile, policy, counterfactual and adjacent snapshot of a seed in the same future split. No model is trained or selected in this milestone."
+  },
+  "policyIds": ["B0", "B1", "B2", "B3", "B4"],
+  "comparisons": ["FULL", "EQUAL_ACTIONS"],
+  "fullComparisonAblations": ["FULL", "NO_TEMPORAL", "NO_ADAPTIVE", "NO_COUNTERFACTUAL"],
+  "commonParameters": {
+    "decisionIntervalSec": 30,
+    "rolloutHorizonSec": 1800,
+    "maxDecisions": 6,
+    "incidentStartSec": 10,
+    "simultaneousIncidents": true
+  },
+  "cases": [
+    {
+      "profile": "closure-contention",
+      "parameters": {"truckCount": 4, "warehouseCount": 1, "docksPerWarehouse": 2, "serviceSec": 180, "deadlineSlackSec": 30, "departureGapSec": 90, "driverUnavailableFraction": 0, "closureCount": 1, "rainSlowdownCount": 0, "severity": 1, "incidentDurationSec": 240, "horizonSec": 2400, "contention": 1}
+    },
+    {
+      "profile": "rain-multiple",
+      "parameters": {"truckCount": 6, "warehouseCount": 2, "docksPerWarehouse": 2, "serviceSec": 150, "deadlineSlackSec": 60, "departureGapSec": 60, "driverUnavailableFraction": 0, "closureCount": 2, "rainSlowdownCount": 2, "severity": 0.75, "incidentDurationSec": 300, "horizonSec": 3000, "contention": 1}
+    },
+    {
+      "profile": "driver-availability",
+      "parameters": {"truckCount": 4, "warehouseCount": 1, "docksPerWarehouse": 2, "serviceSec": 180, "deadlineSlackSec": 60, "departureGapSec": 90, "driverUnavailableFraction": 0.5, "driverRestoreSec": 300, "closureCount": 1, "rainSlowdownCount": 0, "severity": 0.8, "incidentDurationSec": 240, "horizonSec": 2700, "contention": 1}
+    },
+    {
+      "profile": "low-contention",
+      "parameters": {"truckCount": 2, "warehouseCount": 2, "docksPerWarehouse": 1, "serviceSec": 60, "deadlineSlackSec": 300, "departureGapSec": 90, "driverUnavailableFraction": 0, "closureCount": 1, "rainSlowdownCount": 0, "severity": 0.3, "incidentDurationSec": 120, "horizonSec": 2400, "contention": 0}
+    }
+  ],
+  "analysis": {"bootstrapSamples": 2000, "bootstrapSeed": 3013, "unit": "paired profile/seed scenario", "cluster": "seed", "directions": "negative enhanced-minus-reference means lower metric", "multiplicityAdjusted": false},
+  "stopBoundary": "No GNN training, autonomous LLM, observed freight fabrication or field-effectiveness claim."
+}

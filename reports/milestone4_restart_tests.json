@@ -1,0 +1,82 @@
+{
+  "started_at_utc": "2026-10-18T06:52:36.935110+00:00",
+  "api_base_url": "http://127.0.0.1:8080/api",
+  "data_classes": [
+    "REAL_GEOGRAPHIC_DATA",
+    "SIMULATED_RESEARCH_EXPERIMENT",
+    "ENGINEERING_TEST_EVIDENCE"
+  ],
+  "trained_ml_used": false,
+  "checks": [
+    {
+      "name": "idle_backend_live_and_research_snapshot_prepared",
+      "passed": true,
+      "details": {
+        "completed_job": "17fac423-bea7-46a0-9027-8ee76eaa78e4",
+        "policy_runs": 25,
+        "persisted_jobs": 12,
+        "live_status": "COMPLETED",
+        "live_clock_sec": 854.9,
+        "research_tables": 18,
+        "research_rows": 2414128
+      },
+      "duration_sec": 2.0516
+    },
+    {
+      "name": "actual_backend_container_restart_and_health_recovery",
+      "passed": true,
+      "details": {
+        "container_id": "0e89b10b7c695d5279bf14f39e988f071521940810988f9777d5c37ea822f214",
+        "started_before_utc": "2026-10-18T06:47:12.250320714Z",
+        "started_after_utc": "2026-10-18T06:52:41.422759801Z",
+        "health": "UP"
+      },
+      "duration_sec": 11.6259
+    },
+    {
+      "name": "completed_benchmark_results_and_all_job_rows_exactly_preserved",
+      "passed": true,
+      "details": {
+        "job_id": "17fac423-bea7-46a0-9027-8ee76eaa78e4",
+        "policy_runs": 25,
+        "exact_result_sha256": "795db31cc3618714dedd19bb01dd8fa05265ceeb48c18108f32872b870019287",
+        "all_persisted_jobs_preserved": 12
+      },
+      "duration_sec": 0.7167
+    },
+    {
+      "name": "live_state_checkpoint_scenarios_audit_and_stationary_clock_exactly_preserved",
+      "passed": true,
+      "details": {
+        "run_id": "fbbc97c5-89df-4431-9be6-962af41ec101",
+        "status": "COMPLETED",
+        "clock_sec": 854.9,
+        "trucks": 13,
+        "saved_scenarios": 14,
+        "audit_events": 37,
+        "exact_api_and_database_checkpoint_preserved": true
+      },
+      "duration_sec": 0.7447
+    },
+    {
+      "name": "historical_research_counts_and_import_provenance_preserved",
+      "passed": true,
+      "details": {
+        "research_tables": 18,
+        "rows": 2414128,
+        "preserved": true
+      },
+      "duration_sec": 0.6893
+    }
+  ],
+  "http_mutations": false,
+  "actual_backend_restart": true,
+  "job_id": "17fac423-bea7-46a0-9027-8ee76eaa78e4",
+  "benchmark_result_sha256": "795db31cc3618714dedd19bb01dd8fa05265ceeb48c18108f32872b870019287",
+  "live_run_id": "fbbc97c5-89df-4431-9be6-962af41ec101",
+  "live_status": "COMPLETED",
+  "live_clock_sec": 854.9,
+  "passed": true,
+  "completed_at_utc": "2026-10-18T06:52:52.763649+00:00",
+  "passed_checks": 5
+}

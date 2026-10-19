@@ -1,0 +1,274 @@
+{
+  "checkedAtUtc": "2026-10-18T06:49:26.062035+00:00",
+  "provenance": "ENGINEERING_TEST_EVIDENCE",
+  "checks": [
+    {
+      "name": "cpu_model_service_health",
+      "passed": true,
+      "elapsedSec": 0.018225500010885298,
+      "evidence": {
+        "status": "UP",
+        "modelsLoaded": 4,
+        "modelVersion": "milestone4-v1",
+        "featureSchemaVersion": "cascadeshield.ml-features/1.0",
+        "selectionManifestSha256": "a225deef5bfe31676129cefa595ef8fb39511486b06e9d0a1d31de40733a3a39",
+        "featureSchemaHash": "bfb419c7a4fde46112e53aa83a8131e2f1e33526d4d85dda51374de1a828c4d4",
+        "networkId": "chennai-central-osm-v1",
+        "graphSha256": "c943bac278192042b22342d8e1be898cc68512fb936e314633645bc3e0304e60",
+        "inferenceDevice": "cpu",
+        "models": [
+          {
+            "id": "xgb-v1",
+            "calibration": {
+              "remainingArrivalSec": {
+                "radiusSec": 82.48419189453125,
+                "nominalCoverage": 0.9,
+                "n": 1564,
+                "status": "SIMULATION_CALIBRATION_RESIDUAL_INTERVAL",
+                "limitation": "Repeated snapshots are correlated; this is descriptive simulated-domain uncertainty, not guaranteed field coverage"
+              },
+              "deliveryLate": {
+                "status": "PLATT_CALIBRATED_ON_SEPARATE_SIMULATED_SCENARIOS",
+                "coefficient": 1.29865410254932,
+                "intercept": 0.47341666083314365,
+                "n": 1728,
+                "domain": "SIMULATED_PARAMETERIZED_CHENNAI_OPERATIONS"
+              },
+              "futureImpact": {
+                "status": "PLATT_CALIBRATED_ON_SEPARATE_SIMULATED_SCENARIOS",
+                "coefficient": 1.2393694844119643,
+                "intercept": 0.2409360100971814,
+                "n": 1824,
+                "domain": "SIMULATED_PARAMETERIZED_CHENNAI_OPERATIONS"
+              }
+            },
+            "temporal": false
+          },
+          {
+            "id": "xgb-no-graph-v1",
+            "calibration": {
+              "remainingArrivalSec": {
+                "radiusSec": 84.1507568359375,
+                "nominalCoverage": 0.9,
+                "n": 1564,
+                "status": "SIMULATION_CALIBRATION_RESIDUAL_INTERVAL",
+                "limitation": "Repeated snapshots are correlated; this is descriptive simulated-domain uncertainty, not guaranteed field coverage"
+              },
+              "deliveryLate": {
+                "status": "PLATT_CALIBRATED_ON_SEPARATE_SIMULATED_SCENARIOS",
+                "coefficient": 0.9931736803450846,
+                "intercept": 0.5681491627944639,
+                "n": 1728,
+                "domain": "SIMULATED_PARAMETERIZED_CHENNAI_OPERATIONS"
+              },
+              "futureImpact": {
+                "status": "PLATT_CALIBRATED_ON_SEPARATE_SIMULATED_SCENARIOS",
+                "coefficient": 1.2470731006742937,
+                "intercept": 0.3376135824332379,
+                "n": 1824,
+                "domain": "SIMULATED_PARAMETERIZED_CHENNAI_OPERATIONS"
+              }
+            },
+            "temporal": false
+          },
+          {
+            "id": "gnn-static-v1",
+            "calibration": {
+              "remainingArrivalSec": {
+                "radiusSec": 189.11982421874995,
+                "nominalCoverage": 0.9,
+                "n": 1564,
+                "status": "SIMULATION_CALIBRATION_RESIDUAL_INTERVAL",
+                "limitation": "Repeated snapshots are correlated; this is descriptive simulated-domain uncertainty, not guaranteed field coverage"
+              },
+              "deliveryLate": {
+                "status": "PLATT_CALIBRATED_ON_SEPARATE_SIMULATED_SCENARIOS",
+                "coefficient": 2.008665582117242,
+                "intercept": 0.19173018167513572,
+                "n": 1728,
+                "domain": "SIMULATED_PARAMETERIZED_CHENNAI_OPERATIONS"
+              },
+              "futureImpact": {
+                "status": "PLATT_CALIBRATED_ON_SEPARATE_SIMULATED_SCENARIOS",
+                "coefficient": 1.3498692023637735,
+                "intercept": 0.2105174116563183,
+                "n": 1824,
+                "domain": "SIMULATED_PARAMETERIZED_CHENNAI_OPERATIONS"
+              }
+            },
+            "temporal": false
+          },
+          {
+            "id": "gnn-temporal-v1",
+            "calibration": {
+              "remainingArrivalSec": {
+                "radiusSec": 137.34451904296873,
+                "nominalCoverage": 0.9,
+                "n": 1564,
+                "status": "SIMULATION_CALIBRATION_RESIDUAL_INTERVAL",
+                "limitation": "Repeated snapshots are correlated; this is descriptive simulated-domain uncertainty, not guaranteed field coverage"
+              },
+              "deliveryLate": {
+                "status": "PLATT_CALIBRATED_ON_SEPARATE_SIMULATED_SCENARIOS",
+                "coefficient": 1.1459623301244524,
+                "intercept": 0.6115946921829548,
+                "n": 1728,
+                "domain": "SIMULATED_PARAMETERIZED_CHENNAI_OPERATIONS"
+              },
+              "futureImpact": {
+                "status": "PLATT_CALIBRATED_ON_SEPARATE_SIMULATED_SCENARIOS",
+                "coefficient": 1.640687998061339,
+                "intercept": 0.5330661896729565,
+                "n": 1824,
+                "domain": "SIMULATED_PARAMETERIZED_CHENNAI_OPERATIONS"
+              }
+            },
+            "temporal": true
+          }
+        ],
+        "provenance": "TRAINED_ON_SIMULATED_LOGISTICS_ONLY",
+        "trainedOnObservedFreight": false
+      }
+    },
+    {
+      "name": "xgb-v1_eligible_development_frame_http_roundtrip",
+      "passed": true,
+      "elapsedSec": 0.018746000016108155,
+      "evidence": {
+        "modelId": "xgb-v1",
+        "latencyMs": 2.7487999759614468,
+        "trucks": 4
+      }
+    },
+    {
+      "name": "xgb-v1_java_validated_live_snapshot",
+      "passed": true,
+      "elapsedSec": 0.05629070001305081,
+      "evidence": {
+        "modelId": "xgb-v1",
+        "endToEndLatencyMs": 48.281567,
+        "warnings": [
+          "Predictions and uncertainty were trained/calibrated on simulated operations; no observed freight validation.",
+          "Fleet size 13 is outside fitted training fleet sizes [4, 8]; this is a domain-shift prediction.",
+          "No delivery resources are assigned; SLA outputs are unavailable and this resource graph differs from the supervised operational scenarios."
+        ]
+      }
+    },
+    {
+      "name": "xgb-no-graph-v1_eligible_development_frame_http_roundtrip",
+      "passed": true,
+      "elapsedSec": 0.015812199999345466,
+      "evidence": {
+        "modelId": "xgb-no-graph-v1",
+        "latencyMs": 3.1550999847240746,
+        "trucks": 4
+      }
+    },
+    {
+      "name": "xgb-no-graph-v1_java_validated_live_snapshot",
+      "passed": true,
+      "elapsedSec": 0.04105190001428127,
+      "evidence": {
+        "modelId": "xgb-no-graph-v1",
+        "endToEndLatencyMs": 34.927627,
+        "warnings": [
+          "Predictions and uncertainty were trained/calibrated on simulated operations; no observed freight validation.",
+          "Fleet size 13 is outside fitted training fleet sizes [4, 8]; this is a domain-shift prediction.",
+          "No delivery resources are assigned; SLA outputs are unavailable and this resource graph differs from the supervised operational scenarios."
+        ]
+      }
+    },
+    {
+      "name": "gnn-static-v1_eligible_development_frame_http_roundtrip",
+      "passed": true,
+      "elapsedSec": 0.013594899995950982,
+      "evidence": {
+        "modelId": "gnn-static-v1",
+        "latencyMs": 8.959900005720556,
+        "trucks": 4
+      }
+    },
+    {
+      "name": "gnn-static-v1_java_validated_live_snapshot",
+      "passed": true,
+      "elapsedSec": 0.04835940001066774,
+      "evidence": {
+        "modelId": "gnn-static-v1",
+        "endToEndLatencyMs": 41.584021,
+        "warnings": [
+          "Predictions and uncertainty were trained/calibrated on simulated operations; no observed freight validation.",
+          "Fleet size 13 is outside fitted training fleet sizes [4, 8]; this is a domain-shift prediction.",
+          "No delivery resources are assigned; SLA outputs are unavailable and this resource graph differs from the supervised operational scenarios."
+        ]
+      }
+    },
+    {
+      "name": "gnn-temporal-v1_eligible_development_frame_http_roundtrip",
+      "passed": true,
+      "elapsedSec": 0.012874000007286668,
+      "evidence": {
+        "modelId": "gnn-temporal-v1",
+        "latencyMs": 7.884299993747845,
+        "trucks": 4
+      }
+    },
+    {
+      "name": "gnn-temporal-v1_java_validated_live_snapshot",
+      "passed": true,
+      "elapsedSec": 0.054704399983165786,
+      "evidence": {
+        "modelId": "gnn-temporal-v1",
+        "endToEndLatencyMs": 45.789801,
+        "warnings": [
+          "Predictions and uncertainty were trained/calibrated on simulated operations; no observed freight validation.",
+          "Fleet size 13 is outside fitted training fleet sizes [4, 8]; this is a domain-shift prediction.",
+          "No delivery resources are assigned; SLA outputs are unavailable and this resource graph differs from the supervised operational scenarios.",
+          "No preceding graph is available; the temporal model uses one current graph with zero recurrent history."
+        ]
+      }
+    },
+    {
+      "name": "incompatible_feature_hash_rejected",
+      "passed": true,
+      "elapsedSec": 0.0036669000110123307,
+      "evidence": {
+        "error": "Incompatible feature schema or feature order",
+        "fallbackRequired": true
+      }
+    },
+    {
+      "name": "future_target_in_frame_rejected",
+      "passed": true,
+      "elapsedSec": 0.012842299998737872,
+      "evidence": {
+        "error": "Outcome/private schedule is forbidden in prediction input: labels",
+        "fallbackRequired": true
+      }
+    },
+    {
+      "name": "future_history_rejected",
+      "passed": true,
+      "elapsedSec": 0.009662299999035895,
+      "evidence": {
+        "error": "Graph clock differs from prediction cutoff",
+        "fallbackRequired": true
+      }
+    },
+    {
+      "name": "unsupported_java_model_rejected",
+      "passed": true,
+      "elapsedSec": 0.010700500017264858,
+      "evidence": {
+        "error": "Unsupported ML model ID"
+      }
+    }
+  ],
+  "liveMutations": false,
+  "mode": "TRAINED_INFERENCE",
+  "passed": true,
+  "liveStatePreserved": true,
+  "liveRunId": "fbbc97c5-89df-4431-9be6-962af41ec101",
+  "liveClockSec": 854.9,
+  "trucks": 13,
+  "passedChecks": 13
+}

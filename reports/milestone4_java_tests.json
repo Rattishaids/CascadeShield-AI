@@ -1,0 +1,139 @@
+﻿{
+    "checkedAtUtc":  "2026-10-18T06:43:14.4118870Z",
+    "provenance":  "ENGINEERING_TEST_EVIDENCE",
+    "networkGraph":  "data/processed/chennai_osm/road_graph.json",
+    "suites":  [
+                   {
+                       "name":  "io.cascadeshield.sim.AiArchitectureTest",
+                       "tests":  11,
+                       "failures":  0,
+                       "errors":  0,
+                       "skipped":  0,
+                       "timeSec":  3.905
+                   },
+                   {
+                       "name":  "io.cascadeshield.sim.BenchmarkChennaiScenarioTest",
+                       "tests":  1,
+                       "failures":  0,
+                       "errors":  0,
+                       "skipped":  0,
+                       "timeSec":  5.207
+                   },
+                   {
+                       "name":  "io.cascadeshield.sim.BenchmarkPolicyRunnerTest",
+                       "tests":  11,
+                       "failures":  0,
+                       "errors":  0,
+                       "skipped":  0,
+                       "timeSec":  1.814
+                   },
+                   {
+                       "name":  "io.cascadeshield.sim.CounterfactualExperimentEngineTest",
+                       "tests":  27,
+                       "failures":  0,
+                       "errors":  0,
+                       "skipped":  0,
+                       "timeSec":  0.36
+                   },
+                   {
+                       "name":  "io.cascadeshield.sim.GraphRiskBaselineTest",
+                       "tests":  10,
+                       "failures":  0,
+                       "errors":  0,
+                       "skipped":  0,
+                       "timeSec":  0.021
+                   },
+                   {
+                       "name":  "io.cascadeshield.sim.MlCorpusTest",
+                       "tests":  13,
+                       "failures":  0,
+                       "errors":  0,
+                       "skipped":  0,
+                       "timeSec":  0.354
+                   },
+                   {
+                       "name":  "io.cascadeshield.sim.MlInferenceClientTest",
+                       "tests":  9,
+                       "failures":  0,
+                       "errors":  0,
+                       "skipped":  0,
+                       "timeSec":  0.608
+                   },
+                   {
+                       "name":  "io.cascadeshield.sim.MlOperatorAdvisorTest",
+                       "tests":  5,
+                       "failures":  0,
+                       "errors":  0,
+                       "skipped":  0,
+                       "timeSec":  0.673
+                   },
+                   {
+                       "name":  "io.cascadeshield.sim.MlPolicyRunnerTest",
+                       "tests":  4,
+                       "failures":  0,
+                       "errors":  0,
+                       "skipped":  0,
+                       "timeSec":  0.285
+                   },
+                   {
+                       "name":  "io.cascadeshield.sim.OperationalDependencyGraphTest",
+                       "tests":  12,
+                       "failures":  0,
+                       "errors":  0,
+                       "skipped":  0,
+                       "timeSec":  0.029
+                   },
+                   {
+                       "name":  "io.cascadeshield.sim.OperationalRuntimeTest",
+                       "tests":  21,
+                       "failures":  0,
+                       "errors":  0,
+                       "skipped":  0,
+                       "timeSec":  1.002
+                   },
+                   {
+                       "name":  "io.cascadeshield.sim.OperatorApprovalGuardTest",
+                       "tests":  4,
+                       "failures":  0,
+                       "errors":  0,
+                       "skipped":  0,
+                       "timeSec":  0.07
+                   },
+                   {
+                       "name":  "io.cascadeshield.sim.RoadGraphTest",
+                       "tests":  9,
+                       "failures":  0,
+                       "errors":  0,
+                       "skipped":  0,
+                       "timeSec":  1.518
+                   },
+                   {
+                       "name":  "io.cascadeshield.sim.SimulationApprovalTransactionTest",
+                       "tests":  3,
+                       "failures":  0,
+                       "errors":  0,
+                       "skipped":  0,
+                       "timeSec":  5.549
+                   },
+                   {
+                       "name":  "io.cascadeshield.sim.SimulationEngineRegressionTest",
+                       "tests":  5,
+                       "failures":  0,
+                       "errors":  0,
+                       "skipped":  0,
+                       "timeSec":  0.073
+                   },
+                   {
+                       "name":  "io.cascadeshield.sim.SimulationEngineTest",
+                       "tests":  10,
+                       "failures":  0,
+                       "errors":  0,
+                       "skipped":  0,
+                       "timeSec":  0.056
+                   }
+               ],
+    "tests":  155,
+    "failures":  0,
+    "errors":  0,
+    "skipped":  0
+}

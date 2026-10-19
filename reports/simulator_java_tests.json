@@ -1,0 +1,32 @@
+{
+  "data_class": "UNIT_AND_REAL_GRAPH_TEST_EVIDENCE",
+  "real_graph_included": true,
+  "suites": [
+    {
+      "name": "io.cascadeshield.sim.RoadGraphTest",
+      "tests": "9",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "2.874"
+    },
+    {
+      "name": "io.cascadeshield.sim.SimulationEngineRegressionTest",
+      "tests": "5",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "0.759"
+    },
+    {
+      "name": "io.cascadeshield.sim.SimulationEngineTest",
+      "tests": "10",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "0.085"
+    }
+  ],
+  "tests": 24,
+  "passed": true
+}

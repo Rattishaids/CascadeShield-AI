@@ -1,0 +1,25 @@
+{
+  "network_id": "chennai-central-osm-v1",
+  "name": "Central Chennai real OSM roads — simulated freight demonstration",
+  "bbox_south_west_north_east": [13.04, 80.24, 13.095, 80.29],
+  "overpass_endpoint": "https://overpass-api.de/api/interpreter",
+  "overpass_timeout_seconds": 180,
+  "raw_path": "data/raw/chennai_osm/central_chennai.json",
+  "graph_path": "data/processed/chennai_osm/road_graph.json",
+  "geojson_path": "data/processed/chennai_osm/roads.geojson",
+  "speed_fallback_kph": {
+    "motorway": 60, "motorway_link": 30,
+    "trunk": 50, "trunk_link": 30,
+    "primary": 40, "primary_link": 25,
+    "secondary": 35, "secondary_link": 25,
+    "tertiary": 30, "tertiary_link": 20,
+    "unclassified": 25, "residential": 20,
+    "service": 15, "living_street": 10
+  },
+  "speed_fallback_provenance": "SIMULATION_ASSUMPTION: scenario baseline speeds, not observed speeds or asserted legal limits",
+  "scope": "Real geographic demonstration only. Trucks, cargo, disruptions, speed impacts and decisions are SIMULATED. This is not a validated freight or legal routing dataset. No joins to overseas historical operational cohorts.",
+  "license": "ODbL-1.0",
+  "license_url": "https://opendatacommons.org/licenses/odbl/1-0/",
+  "attribution": "© OpenStreetMap contributors",
+  "attribution_url": "https://www.openstreetmap.org/copyright"
+}

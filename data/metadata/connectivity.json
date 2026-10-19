@@ -1,0 +1,51 @@
+{
+  "checked_at_utc": "2026-10-08T17:50:10.216154+00:00",
+  "internet_available": true,
+  "probes": [
+    {
+      "source_id": "dft",
+      "url": "https://www.gov.uk/government/statistical-data-sets/road-safety-open-data",
+      "success": true
+    },
+    {
+      "source_id": "porto",
+      "url": "https://www.kaggle.com/datasets/crailtap/taxi-trajectory",
+      "success": true
+    },
+    {
+      "source_id": "nyc",
+      "url": "https://github.com/walterwzhang/NYC-Taxi-2013-Data",
+      "success": true
+    },
+    {
+      "source_id": "cambridge",
+      "url": "https://www.repository.cam.ac.uk/items/3d0eb1ad-d077-4e4e-84cb-79af35f0b163",
+      "success": true
+    },
+    {
+      "source_id": "olist",
+      "url": "https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce",
+      "success": true
+    },
+    {
+      "source_id": "overpass",
+      "url": "https://overpass-turbo.eu/",
+      "success": true
+    },
+    {
+      "source_id": "osm",
+      "url": "https://www.openstreetmap.org/",
+      "success": true
+    },
+    {
+      "source_id": "traccar",
+      "url": "https://www.traccar.org/",
+      "success": true
+    },
+    {
+      "source_id": "weather",
+      "url": "https://open-meteo.com/",
+      "success": true
+    }
+  ]
+}

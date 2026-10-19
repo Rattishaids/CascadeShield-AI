@@ -1,0 +1,98 @@
+{
+  "schemaVersion": "cascadeshield.milestone4-target-definitions/1.0",
+  "definitionLocalDate": "2026-10-16",
+  "inputCutoffRule": "Features from exact as-of authoritative state; private future schedules, future realized events, future completion/dock outcomes and counterfactual results excluded. Rule-derived predictors explicitly identified.",
+  "provenance": {
+    "geography": "REAL_GEOGRAPHIC_DATA",
+    "operations": "SIMULATED_INPUT",
+    "outcomes": "SIMULATED_OUTCOME",
+    "outcomeSource": "AUTHORITATIVE_SIMULATION_ENGINE",
+    "fieldFreightValidation": false
+  },
+  "split": {
+    "unit": "Scenario, seed and incident sequence; all adjacent snapshots, nodes, policies and counterfactuals remain grouped.",
+    "exposedHistoricalSeeds": [
+      11,
+      22,
+      33,
+      44,
+      55
+    ],
+    "plannedGroupCounts": {
+      "train": 64,
+      "validation": 24,
+      "calibration": 24,
+      "finalAssessment": 40
+    },
+    "finalSetRule": "Fresh seeds and frozen previously unseen/larger families; never used for model selection.",
+    "countsStatus": "DECLARED_PLAN_NOT_GENERATED_COUNTS"
+  },
+  "targets": {
+    "remainingArrivalSec": {
+      "entity": "TRUCK",
+      "dtype": "float64",
+      "unit": "seconds",
+      "definition": "future authoritative road arrivalSec minus cutoff clockSec",
+      "eligible": "Active truck not yet road-arrived, actual arrival observed before generation horizon",
+      "censorFlag": "arrivalCensored",
+      "censoredValue": null,
+      "excludes": "Subsequent dock queue/service; prediction/conditionalETA is not truth",
+      "alreadyRealized": "INELIGIBLE"
+    },
+    "deliveryLate": {
+      "entity": "TRUCK",
+      "dtype": "binary",
+      "definition": "Any actually assigned carried delivery has authoritative deliveredAtSec greater than its deadlineSec (existing numerical tolerance)",
+      "eligible": "Undelivered prospective assignment and complete final carried-delivery outcomes",
+      "censorFlag": "deliveryCensored",
+      "censoredValue": null,
+      "unfinishedBenchmarkPenaltyIsSupervisedLabel": false,
+      "alreadyRealized": "INELIGIBLE"
+    },
+    "futureImpact": {
+      "entityTypes": [
+        "TRUCK",
+        "DRIVER",
+        "DOCK",
+        "WAREHOUSE",
+        "DELIVERY"
+      ],
+      "dtype": "binary",
+      "horizonSec": 300,
+      "interval": "cutoffSec < adverseImpact.startSec <= min(cutoffSec + 300, generationHorizonSec)",
+      "adverseCodes": [
+        "DOCK_QUEUE",
+        "DOCK_CLOSED",
+        "DELIVERY_LATE",
+        "DRIVER_BUSY",
+        "DRIVER_UNAVAILABLE",
+        "SHIFT_EXHAUSTED"
+      ],
+      "mapping": "Use actual resourceIds and TRUCK:truckIds recorded by each impact; no inferred resource links.",
+      "eligible": "Full future window coverage or absorbing all-work-completed terminal state; unfinished right-censored windows masked.",
+      "notTarget": [
+        "Existing onset at or before cutoff",
+        "DELIVERY_COMPLETED",
+        "Rule graph risk scores",
+        "MODEL_ROLLOUT_FORECAST"
+      ],
+      "causalClaim": false,
+      "interpretation": "New recorded operational adverse event association, including configured contention/deadline effects; not proven incident-caused propagation."
+    }
+  },
+  "separateObservedBrazilLabel": {
+    "path": "data/processed/brazil_olist/delivery_outcomes.csv",
+    "target": "late_by_calendar_date",
+    "definition": "For eligible status-delivered rows with actual+estimated dates, date(actual)>date(estimated).",
+    "eligibleRows": 96470,
+    "positiveRows": 6534,
+    "negativeRows": 89936,
+    "ineligibleRows": 2971,
+    "usedForChennaiTraining": false
+  },
+  "references": [
+    "reports/MILESTONE_4_DATA_AUDIT.md",
+    "reports/MILESTONE_4_LABEL_DEFINITIONS.md",
+    "data/metadata/milestone_4_data_audit.json"
+  ]
+}

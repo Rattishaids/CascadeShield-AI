@@ -1,0 +1,78 @@
+{
+  "schemaVersion": "cascadeshield.milestone4-finalization/1.0",
+  "startedAtUtc": "2026-10-18T20:21:29.081959+00:00",
+  "status": "COMPLETED",
+  "pid": 31884,
+  "steps": [
+    {
+      "label": "independent_complete_policy_summary",
+      "command": [
+        "C:\\Users\\NIKHISHA SREE\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+        "scripts/summarize_milestone4_policies.py"
+      ],
+      "startedAtUtc": "2026-10-18T20:21:29.699050+00:00",
+      "status": "COMPLETED",
+      "returnCode": 0,
+      "elapsedSec": 1.6378607999940868,
+      "endedAtUtc": "2026-10-18T20:21:31.337522+00:00"
+    },
+    {
+      "label": "ml_and_audit_unit_checks",
+      "command": [
+        "D:\\CascadeShield-AI\\.venv-ml\\Scripts\\python.exe",
+        "scripts/check_milestone4_ml_tests.py"
+      ],
+      "startedAtUtc": "2026-10-18T20:21:31.338532+00:00",
+      "status": "COMPLETED",
+      "returnCode": 0,
+      "elapsedSec": 13.402265499986243,
+      "endedAtUtc": "2026-10-18T20:21:44.741561+00:00"
+    },
+    {
+      "label": "research_figures",
+      "command": [
+        "C:\\Users\\NIKHISHA SREE\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+        "scripts/plot_milestone4_results.py"
+      ],
+      "startedAtUtc": "2026-10-18T20:21:44.743609+00:00",
+      "status": "COMPLETED",
+      "returnCode": 0,
+      "elapsedSec": 3.6595173999958206,
+      "endedAtUtc": "2026-10-18T20:21:48.402894+00:00"
+    },
+    {
+      "label": "assemble_final_report",
+      "command": [
+        "C:\\Users\\NIKHISHA SREE\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+        "scripts/report_milestone4.py"
+      ],
+      "startedAtUtc": "2026-10-18T20:21:48.402894+00:00",
+      "status": "COMPLETED",
+      "returnCode": 0,
+      "elapsedSec": 0.14410710000083782,
+      "endedAtUtc": "2026-10-18T20:21:48.549941+00:00"
+    },
+    {
+      "label": "cross_artifact_completion_validation",
+      "command": [
+        "C:\\Users\\NIKHISHA SREE\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+        "scripts/validate_milestone4_completion.py"
+      ],
+      "startedAtUtc": "2026-10-18T20:21:48.549941+00:00",
+      "status": "COMPLETED",
+      "returnCode": 0,
+      "elapsedSec": 0.38490180001826957,
+      "endedAtUtc": "2026-10-18T20:21:48.936142+00:00"
+    }
+  ],
+  "helperSha256": "48e586187d0412cad5fa211f878024d469e82c609f0f96b01239f5a97e02f7ac",
+  "provenance": "ACTUAL_ENGINEERING_EXECUTION_NOT_MODEL_FITTING",
+  "progress": {
+    "completedPolicyRows": 440,
+    "requiredPolicyRows": 440,
+    "failedInferenceRequests": 10,
+    "fallbackDecisions": 9,
+    "hardConstraintViolations": 0
+  },
+  "endedAtUtc": "2026-10-18T20:21:49.071955+00:00"
+}
