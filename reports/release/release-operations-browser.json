@@ -1,0 +1,66 @@
+{
+  "started_at_utc": "2026-10-19T03:34:33.874151+00:00",
+  "data_class": "BROWSER_ENGINEERING_TEST_EVIDENCE",
+  "checks": [
+    {
+      "name": "two trucks manually routed on actual Chennai map",
+      "passed": true,
+      "baseline_sec": 662.6
+    },
+    {
+      "name": "warehouse dock drivers deliveries and assignments created through UI",
+      "passed": true,
+      "simulated_resources": 6,
+      "directed_dependencies": 9
+    },
+    {
+      "name": "existing truck and warehouse markers support route endpoint selection",
+      "passed": true
+    },
+    {
+      "name": "computed indirect graph risk and predicted consequence timeline rendered",
+      "passed": true,
+      "closure_physical_id": "1055336210:2"
+    },
+    {
+      "name": "driver availability toggle constrains backend movement and unknown ETA",
+      "passed": true,
+      "held_clock_sec": 220
+    },
+    {
+      "name": "actual dock queue and realized consequence timeline rendered",
+      "passed": true,
+      "clock_sec": 1000.0,
+      "queue_sec_so_far": 117.5
+    },
+    {
+      "name": "realized delivery lateness KPIs and versioned snapshot download",
+      "passed": true,
+      "operational_kpis": {
+        "deliveries": 2,
+        "delivered": 2,
+        "lateDeliveries": 1,
+        "queuedTrucks": 0,
+        "unloadingTrucks": 0,
+        "constrainedDrivers": 0,
+        "deliveryDelaySec": 60.0
+      },
+      "outcome_labels": 12
+    },
+    {
+      "name": "saved operational resources and recorded availability changes replay exactly",
+      "passed": true,
+      "scenario_id": "04263fa5-6f0b-497f-ab96-3b223a46cc4a"
+    },
+    {
+      "name": "operational dashboard has no console or page errors",
+      "passed": true
+    }
+  ],
+  "console_errors": [],
+  "page_errors": [],
+  "trained_model": false,
+  "demonstration_scenario_id": "04263fa5-6f0b-497f-ab96-3b223a46cc4a",
+  "passed": true,
+  "finished_at_utc": "2026-10-19T03:35:17.094243+00:00"
+}

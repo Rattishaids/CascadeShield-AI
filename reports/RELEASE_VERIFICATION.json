@@ -1,0 +1,249 @@
+{
+  "schemaVersion": "cascadeshield.release-verification/1.0",
+  "checkedAtUtc": "2026-10-20T04:41:15.446801+00:00",
+  "status": "VERIFIED_ISOLATED_WINDOWS_ZIP_BASIC_AND_CPU_ML",
+  "source": "STAGED_TREE_ZIP_WITH_NO_GIT_OR_IGNORED_RUNTIME_DEPENDENCIES",
+  "testedHost": "Windows PowerShell 5.1.26100.9444; Docker Linux engine29.7.2; Compose5.4.0",
+  "candidateStagedTree": "e4b844e956349b4913731e29f050ffaa73062cbb",
+  "candidateZipBytes": 4041680,
+  "isolatedProject": "cascadeshield-ziptest",
+  "freshVolume": "cascadeshield-ziptest_demo_database",
+  "ports": {
+    "frontend": 5174,
+    "backend": 8081,
+    "database": 55434,
+    "ml": 8091
+  },
+  "hostIsAnotherPhysicalComputer": false,
+  "cachedPublicDownloadsMayBeReused": true,
+  "originalWorkspaceUsedAsRuntimeDependency": false,
+  "developmentWorkspacePreserved": {
+    "recordedHistoricalFiles": 86,
+    "unchanged": 86,
+    "historicalTables": 18,
+    "historicalRows": 2414128,
+    "savedRunTrucks": 13,
+    "savedRunClockSec": 854.9
+  },
+  "results": [
+    {
+      "path": "reports/release/final-execution-journal.json",
+      "sha256": "1fe2b0d11baa4c86c68d0a382c302f4cfc5c2a80b9b5d3889a0f9c80809d894e",
+      "passed": true
+    },
+    {
+      "path": "reports/release/final-frontend-build.json",
+      "sha256": "6a024676c4e0336d1ec2932c9865911cbb686c32e6595ce62e28bc44ae3b8935",
+      "passed": true
+    },
+    {
+      "path": "reports/release/final-models-absent-api.json",
+      "sha256": "f050f647357bdea8a366449a1f5da8b978412d9eec5f5c544daf3b84fc4a5dcd",
+      "passed": true
+    },
+    {
+      "path": "reports/release/final-models-absent-browser.json",
+      "sha256": "95b2a76b37e2ccb8c2c27c67deb2f8c32501ab4976cfe3827e7cc84416395ae7",
+      "passed": true
+    },
+    {
+      "path": "reports/release/final-models-absent-summary.json",
+      "sha256": "99826eabbe92b939a247ecd9ce32422edfbcdaa5aa36b9d1bce9b86c71632b4b",
+      "passed": true
+    },
+    {
+      "path": "reports/release/final-runtime-integrity.json",
+      "sha256": "3e6ea110c010fe093fb12d6d937a63e912cd626eff250bc45172cfdf5e1e7ad1",
+      "passed": true
+    },
+    {
+      "path": "reports/release/initial-final-runtime-integrity.json",
+      "sha256": "2bf2c36d5efba890bcf6dac4fc9ff0e52354cd9f0df9d31e7ef606933121e6a4",
+      "passed": true
+    },
+    {
+      "path": "reports/release/release-benchmark-browser.json",
+      "sha256": "cd8731109d120d861010d9a38eeafe35fc761eaad784d6bbf1f313007a3f02d6",
+      "passed": true
+    },
+    {
+      "path": "reports/release/release-benchmark-integration.json",
+      "sha256": "cd823fa476162615182ddcdb495ff82c7e33a44e2a988d94f3adedd458a76e8b",
+      "passed": true
+    },
+    {
+      "path": "reports/release/release-java-tests.json",
+      "sha256": "4efbb758481d184e8ee71cdf7bf9a16917ed28cce7ef7523f34b037e31189abf",
+      "passed": true
+    },
+    {
+      "path": "reports/release/release-ml-api.json",
+      "sha256": "079630624fc648418c16e5c5e3e3784e0704252f67e92222df838cccd4685475",
+      "passed": true
+    },
+    {
+      "path": "reports/release/release-ml-outage.json",
+      "sha256": "e7c8690d4f7d55c58dbd37b32ab45fdef612dd2e4250d6c436f6954e752067fc",
+      "passed": true
+    },
+    {
+      "path": "reports/release/release-ml-recovery.json",
+      "sha256": "b0d4270aa045a7bdedae04555884ff004c74253ffaf905a7385fce8c12a66617",
+      "passed": true
+    },
+    {
+      "path": "reports/release/release-ml-unit-tests.json",
+      "sha256": "87525acf5a8ce27372cf0b03d789fa84d0d76e6380502f302efc54227c8e7ef3",
+      "passed": true
+    },
+    {
+      "path": "reports/release/release-offline-browser.json",
+      "sha256": "910d3cf7db89f6c1086206c5ebdb6f599646a43431bfe06c9f762462d9b0e1b0",
+      "passed": true
+    },
+    {
+      "path": "reports/release/release-operations-browser.json",
+      "sha256": "ac9c8d734d01f4580b8f74784b212683a14c799fb3df30708bed5873c3d893ae",
+      "passed": true
+    },
+    {
+      "path": "reports/release/release-operations-integration.json",
+      "sha256": "b46836fecf1c060071138f6c780282d5c299f030bcee1d93951984bd00deb2c0",
+      "passed": true
+    },
+    {
+      "path": "reports/release/release-python-applicable-tests.json",
+      "sha256": "851787e9c5c30a9b721ffd6bcf5f3bb328a454e6ebf41d1eb2b34acf010586f0",
+      "passed": true
+    },
+    {
+      "path": "reports/release/release-seeded-demo.json",
+      "sha256": "55a00f7d1961348b6b43d0109d8700d02aded9954b6e81c9a975f9a10197e326",
+      "passed": true
+    },
+    {
+      "path": "reports/release/release-simulator-browser.json",
+      "sha256": "611bdbe871dbefa02cb3f3e898a1f735609bf5061e9e734610c0b1f1b83c6a4b",
+      "passed": true
+    },
+    {
+      "path": "reports/release/release-simulator-integration.json",
+      "sha256": "83d961d463911e6e28a718ab29305a07dcce404a35554c0b18376b6adbff48ed",
+      "passed": true
+    },
+    {
+      "path": "reports/release/release-trained-browser-after-map-fix.json",
+      "sha256": "d467ca199496bf07b2b38f7a31b6450971626a18de49de7ec8c61e8f0ed383f2",
+      "passed": true
+    },
+    {
+      "path": "reports/release/security-benchmark-integration.json",
+      "sha256": "6c4e928fc8ecc6b8a15d5c37d9d2682f04a51b58e172f1020f1f97c075305b27",
+      "passed": true
+    },
+    {
+      "path": "reports/release/security-execution-journal.json",
+      "sha256": "bd0f158660baea5f7bd49f083f5acedfef754b63e7b3d200b304efbd3a9f1518",
+      "passed": true
+    },
+    {
+      "path": "reports/release/security-operations-integration.json",
+      "sha256": "930280dd59234e0de9bf1e3b7c2f1c1dd42d6979dbf6a0fb1877bad351d1dfb6",
+      "passed": true
+    },
+    {
+      "path": "reports/release/security-private-dsn-guards.json",
+      "sha256": "3f8ab4fc81506e31ef3f9687ab7968dfd1a11346aa10ac5643beed9fe31d8569",
+      "passed": true
+    },
+    {
+      "path": "reports/release/security-simulator-integration.json",
+      "sha256": "3f1bb238b944a3a886f6325e2746dd52c780b20b4b708d2d206e533c20e69259",
+      "passed": true
+    },
+    {
+      "path": "reports/release/security-verification-summary.json",
+      "sha256": "0b64f0b4f29ad12255e0ec60231ac3c77208dad1e41119efc63a0147f87fadcd",
+      "passed": true
+    }
+  ],
+  "initialFailures": [
+    {
+      "name": "release-python-tests",
+      "passed": false,
+      "originalEvidenceSha256": "46e5650cbac2a2325c9bf47c4382cc66dbcf071f543a25edccb25c49313647ef",
+      "explanation": "Initial full research-artifact selection attempted excluded historical datasets. Release runner now explicitly reports seven original-source tests unavailable and executes 26 applicable contracts without inventing data."
+    },
+    {
+      "name": "release-trained-browser",
+      "passed": false,
+      "originalEvidenceSha256": "561db5e93b6214fc6112db2526ce2b8a860ca1aa82e6bea6e7efc2c7f720fb83",
+      "explanation": "Roads rendered but the render-throttled readiness flag missed the terminal render when raster tiles were blocked. Fixed with a trailing actual-source/rendered-feature inspection and verified by the same blocked-tile test."
+    }
+  ],
+  "notAvailable": {
+    "originalSourceArtifactTests": 7,
+    "originalVersionOneSavedScenarioChecks": 1
+  },
+  "installationNotes": [
+    "Initial slow Windows PyPI transfer was stopped; official PyPI Windows wheels were fetched through a clean Python download container and installed into the fresh test virtual environment. A missing Windows tzdata wheel was added; no TLS bypass or private dependency source was used.",
+    "The host Maven TLS restriction required the documented official-only host relay. Public images/dependency caches may be reused; no source-tree node_modules, virtualenv, old compiled output, research dataset or prior populated application database was supplied.",
+    "Additional release test harnesses and later fixes were tested in the first export and their exact reviewed bytes were included in the final isolated extraction.",
+    "The optional Maven relay originally retained caller pipe handles. A detached, closed-handle launcher was added and its return-to-caller verified; final setup/build used the same portable source.",
+    "The optional-model absence test initially captured normal Docker stderr progress with PowerShell Stop semantics. Its private harness was corrected to check actual native exit codes and always restore the isolated model directory; the basic-mode check then passed. This did not change application code or delete model files.",
+    "On 2026-10-20, five CLI/database-helper files were changed to remove old credential defaults and use portable private configuration. Their canonical staged bytes passed the real database helper/basic startup, 41 API checks and four missing-private-DSN guards in the existing disposable final extraction. Earlier Java/frontend/ML/browser evidence was preserved and was not represented as rerun that day.",
+    "The current 220 runnable-file hashes match the isolated extraction. 215 files retain their earlier verified bytes; the five later changes have separate follow-up evidence. Both runtime hash maps and all earlier failure hashes are preserved."
+  ],
+  "limitations": [
+    "No second physical machine or Linux/macOS host installation was tested.",
+    "Historical source-byte and full-corpus research reruns require excluded or newly acquired inputs; no final test data was retuned.",
+    "The source code and model weights do not have a selected project-wide reuse license; geographic data has explicit ODbL terms."
+  ],
+  "finalIsolatedProject": "cascadeshield-finalzip",
+  "finalFreshVolume": "cascadeshield-finalzip_demo_database",
+  "finalPorts": {
+    "frontend": 5175,
+    "backend": 8082,
+    "database": 55435,
+    "ml": 8092
+  },
+  "stoppedCleanly": true,
+  "volumesPreserved": true,
+  "optionalModelsAbsentBasicModePassed": true,
+  "stagedRuntimeFilesVerified": 220,
+  "publicationVerification": "Normal Git push and remote archive verification are performed after this evidence commit; their receipt is reported separately to avoid a self-referential commit hash.",
+  "finalExecutionJournal": "reports/release/final-execution-journal.json",
+  "securityFollowUp": {
+    "executionDateUtc": "2026-10-20",
+    "journal": "reports/release/security-execution-journal.json",
+    "summary": "reports/release/security-verification-summary.json",
+    "passedIntegrationChecks": 41,
+    "failedIntegrationChecks": 0,
+    "notAvailableOriginalVersionOneScenarioChecks": 1,
+    "privateDsnGuardsPassed": 4,
+    "databaseHelperActualVersions": {
+      "postgresql": "17.5",
+      "postgis": "3.5.2"
+    },
+    "changedRuntimeFiles": [
+      "scripts/setup_database.ps1",
+      "scripts/test_benchmark_integration.py",
+      "scripts/test_benchmark_restart.py",
+      "scripts/test_operational_integration.py",
+      "scripts/test_simulator_integration.py"
+    ],
+    "unchangedEarlierTestedRuntimeFiles": 215,
+    "earlierUnitBrowserAndMlChecksReexecutedOnFollowUpDate": false,
+    "sourceAndModelBundleIntegrity": {
+      "passed": true,
+      "checkedFiles": 34,
+      "selectionManifestSha256": "a225deef5bfe31676129cefa595ef8fb39511486b06e9d0a1d31de40733a3a39",
+      "provenance": "TRAINED_ON_SIMULATED_LOGISTICS_ONLY"
+    },
+    "latestIntegrationEvidence": {
+      "simulator": "reports/release/security-simulator-integration.json",
+      "operations": "reports/release/security-operations-integration.json",
+      "benchmark": "reports/release/security-benchmark-integration.json"
+    }
+  }
+}

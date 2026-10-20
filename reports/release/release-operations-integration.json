@@ -1,0 +1,230 @@
+{
+  "started_at_utc": "2026-10-19T03:33:34.755314+00:00",
+  "api_base_url": "http://127.0.0.1:8082/api",
+  "data_classes": [
+    "REAL_GEOGRAPHIC_DATA",
+    "SIMULATED_OPERATIONS",
+    "TEST_RESULTS"
+  ],
+  "trained_ml_used": false,
+  "checks": [
+    {
+      "name": "isolated_zip_database_and_api_safety_guard",
+      "passed": true,
+      "details": {
+        "research_import_table_absent": true,
+        "api_matches_database": true,
+        "reset_explicitly_authorized": true
+      },
+      "duration_sec": 0.063
+    },
+    {
+      "name": "real_road_manual_resource_configuration",
+      "passed": true,
+      "details": {
+        "road_baseline_sec": 662.6,
+        "road_physical_id": "1055336210:2",
+        "resources": 6,
+        "assignments": 2,
+        "network": "chennai-central-osm-v1"
+      },
+      "duration_sec": 1.109
+    },
+    {
+      "name": "resource_assignment_validation_preserves_state",
+      "passed": true,
+      "details": {
+        "rejected": [
+          "dock capacity",
+          "missing priority",
+          "referenced driver removal",
+          "short reservation"
+        ],
+        "unchanged_state": true
+      },
+      "duration_sec": 0.125
+    },
+    {
+      "name": "road_delay_forecasts_indirect_dock_delivery_cascade",
+      "passed": true,
+      "details": {
+        "direct_trucks": [
+          "OPS-A"
+        ],
+        "affected_node_ids": [
+          "DELIVERY:OPS-LA",
+          "DELIVERY:OPS-LB",
+          "DOCK:OPS-D",
+          "DRIVER:OPS-DRA",
+          "DRIVER:OPS-DRB",
+          "TRUCK:OPS-A",
+          "TRUCK:OPS-B",
+          "WAREHOUSE:OPS-W"
+        ],
+        "threshold": 0.15,
+        "predicted_impacts": [
+          {
+            "id": "DELIVERY_DEADLINE:DELIVERY:OPS-LB:OPS-B",
+            "code": "DELIVERY_DEADLINE",
+            "resourceIds": [
+              "DELIVERY:OPS-LB"
+            ],
+            "truckIds": [
+              "OPS-B"
+            ],
+            "startSec": 1292.6,
+            "endSec": 1352.6,
+            "delaySec": 60.0,
+            "predicted": true,
+            "message": "OPS-LB projected dock completion misses its deadline by 60 s.",
+            "provenance": "SIMULATED_PREDICTION"
+          },
+          {
+            "id": "DOCK_OVERLAP:DOCK:OPS-D,TRUCK:OPS-A:OPS-B",
+            "code": "DOCK_OVERLAP",
+            "resourceIds": [
+              "DOCK:OPS-D",
+              "TRUCK:OPS-A"
+            ],
+            "truckIds": [
+              "OPS-B"
+            ],
+            "startSec": 962.6,
+            "endSec": 1052.6,
+            "delaySec": 89.99999999999989,
+            "predicted": true,
+            "message": "OPS-A occupies OPS-D beyond OPS-B ready time; projected additional dock wait 90 s.",
+            "provenance": "SIMULATED_PREDICTION"
+          }
+        ],
+        "calibrated": false
+      },
+      "duration_sec": 0.156
+    },
+    {
+      "name": "typed_ai_tools_approval_and_stale_execution_guards",
+      "passed": true,
+      "details": {
+        "proposal_id": "6d36b592-e5be-4c6f-a5fa-6b2eace662d7",
+        "executed_once": true,
+        "unapproved_rejected": true,
+        "stale_rejected": true,
+        "forged_provenance_rejected": true,
+        "read_tools_do_not_mutate": true
+      },
+      "duration_sec": 1.11
+    },
+    {
+      "name": "driver_availability_and_unknown_arrival_contract",
+      "passed": true,
+      "details": {
+        "runtime_availability_recorded": true,
+        "unknown_eta_masked": true,
+        "configuration_locked_after_start": true
+      },
+      "duration_sec": 0.14
+    },
+    {
+      "name": "actual_restart_preserves_operational_state_and_approvals",
+      "passed": true,
+      "details": {
+        "actual_container_restart": true,
+        "clock_sec": 0.1,
+        "truck_count": 2,
+        "scenarios": 2,
+        "approvals": 2,
+        "benchmark_jobs": 0,
+        "events": 31,
+        "state_checkpoint_scenarios_approvals_jobs_and_clock_preserved": true
+      },
+      "duration_sec": 7.594
+    },
+    {
+      "name": "actual_queue_incident_history_and_versioned_snapshot",
+      "passed": true,
+      "details": {
+        "clock_sec": 1000,
+        "a_actual_dock_start_sec": 752.6,
+        "a_scheduled_dock_end_sec": 1052.6,
+        "b_actual_queue_sec_so_far": 137.5,
+        "incident_cause_retained": true,
+        "snapshot_id": "48819001-74d1-4fbd-b2c2-f947672e0884",
+        "future_labels_excluded": true
+      },
+      "duration_sec": 0.313
+    },
+    {
+      "name": "realized_lateness_database_projection_and_exact_replay",
+      "passed": true,
+      "details": {
+        "scenario_id": "1cdbb666-e2f0-4e9c-b1e4-3b5f04fe65b8",
+        "actual_clock_sec": 1352.6,
+        "deliveries": [
+          {
+            "id": "OPS-LA",
+            "name": "Simulated delivery A",
+            "warehouseId": "OPS-W",
+            "priority": "NORMAL",
+            "status": "DELIVERED",
+            "provenance": "SIMULATED",
+            "loadKg": 200.0,
+            "deadlineSec": 1262.6,
+            "deliveredAtSec": 1052.6,
+            "lateSec": 0.0,
+            "truckId": "OPS-A"
+          },
+          {
+            "id": "OPS-LB",
+            "name": "Simulated delivery B",
+            "warehouseId": "OPS-W",
+            "priority": "HIGH",
+            "status": "DELIVERED",
+            "provenance": "SIMULATED",
+            "loadKg": 200.0,
+            "deadlineSec": 1292.6,
+            "deliveredAtSec": 1352.6,
+            "lateSec": 60.0,
+            "truckId": "OPS-B"
+          }
+        ],
+        "operational_kpis": {
+          "deliveries": 2,
+          "delivered": 2,
+          "lateDeliveries": 1,
+          "queuedTrucks": 0,
+          "unloadingTrucks": 0,
+          "constrainedDrivers": 0,
+          "deliveryDelaySec": 60.0
+        },
+        "exact_operational_replay": true
+      },
+      "duration_sec": 0.468
+    },
+    {
+      "name": "original_version_one_scenario_remains_replayable",
+      "status": "NOT_AVAILABLE",
+      "passed": null,
+      "reason": "A fresh ZIP database has no original Milestone 1 version-1 saved scenario; no legacy record was fabricated."
+    },
+    {
+      "name": "historical_research_imports_preserved",
+      "passed": true,
+      "details": {
+        "research_tables": 0,
+        "rows": 0,
+        "research_import_table_absent": true,
+        "preserved": true
+      },
+      "duration_sec": 0.0
+    }
+  ],
+  "schemaVersion": "cascadeshield.release-integration/1.0",
+  "suite": "operations",
+  "provenance": "ENGINEERING_TEST_EVIDENCE",
+  "export_directory": ".runtime/release-integration/operations/reports/milestone_2_exports/777e47a4-91b1-492c-bcfe-8e7701a6de41",
+  "passed": true,
+  "completed_at_utc": "2026-10-19T03:33:45.999540+00:00",
+  "passed_checks": 10,
+  "failed_checks": 0,
+  "not_available_checks": 1
+}

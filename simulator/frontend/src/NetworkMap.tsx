@@ -26,6 +26,7 @@ export default function NetworkMap(props:Props) {
   useEffect(()=>{
     if(!host.current) return;
     sourceCache.current.clear();
+    let inspectionTimer:ReturnType<typeof setTimeout>|undefined;
     let instance:Map;
     try {
       instance=new Map({container:host.current,center:props.network.center,zoom:13.1,minZoom:9,maxZoom:19,attributionControl:false,
@@ -59,20 +60,27 @@ export default function NetworkMap(props:Props) {
       instance.fitBounds([[props.network.bbox[1],props.network.bbox[0]],[props.network.bbox[3],props.network.bbox[2]]],{padding:46,duration:0});
       // A Map load event proves only raster/style initialization. Confirm the actual worker-backed
       // vector layers contain rendered real geometries before enabling selection/readiness checks.
-      let lastInspection=0;
       function inspectVectors(){
         if(instance.getLayer('road-hit') && instance.isSourceLoaded('roads')){
           const count=instance.queryRenderedFeatures(undefined,{layers:['road-hit']}).length;setRoadCount(count);
-          if(count>0 && !vectorReadyRef.current){vectorReadyRef.current=true;setVectorReady(true);}
+          if(count>0 && !vectorReadyRef.current){vectorReadyRef.current=true;setVectorReady(true);setMapWarning(warning=>warning.startsWith('OpenStreetMap basemap tiles unavailable.')?mapErrorMessage('','osm',true).message:warning);}
         }
         if(instance.getLayer('fleet-routes') && instance.isSourceLoaded('routes'))setRouteCount(instance.queryRenderedFeatures(undefined,{layers:['fleet-routes']}).length);
       }
-      instance.on('render',()=>{if(performance.now()-lastInspection<250)return;lastInspection=performance.now();inspectVectors();});
+      // Retain a trailing inspection: a static map can finish its last vector
+      // render inside the throttle interval, while unavailable raster tiles
+      // prevent the global idle event. Confirm actual rendered roads anyway.
+      function scheduleInspection(){
+        if(inspectionTimer!==undefined)return;
+        inspectionTimer=setTimeout(()=>{inspectionTimer=undefined;inspectVectors();},250);
+      }
+      instance.on('render',scheduleInspection);
+      instance.on('sourcedata',event=>{if(event.sourceId==='roads' || event.sourceId==='routes')scheduleInspection();});
       instance.on('idle',inspectVectors);
       setLoaded(true);
     });
     const observer=new ResizeObserver(()=>instance.resize());observer.observe(host.current);
-    return ()=>{observer.disconnect();markers.current.forEach(marker=>marker.remove());markers.current.clear();resourceMarkers.current.forEach(marker=>marker.remove());resourceMarkers.current.clear();instance.remove();map.current=null;setLoaded(false);vectorReadyRef.current=false;setVectorReady(false);};
+    return ()=>{if(inspectionTimer!==undefined)clearTimeout(inspectionTimer);observer.disconnect();markers.current.forEach(marker=>marker.remove());markers.current.clear();resourceMarkers.current.forEach(marker=>marker.remove());resourceMarkers.current.clear();instance.remove();map.current=null;setLoaded(false);vectorReadyRef.current=false;setVectorReady(false);};
   },[props.network.networkId]);
 
   useEffect(()=>{

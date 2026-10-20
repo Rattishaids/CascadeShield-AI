@@ -1,0 +1,38 @@
+{
+  "provenance": "RELEASE_DEMO_ENGINEERING_TEST_NOT_RESEARCH_OUTCOME",
+  "passed": true,
+  "initial": {
+    "clockSec": 0.0,
+    "trucks": 2,
+    "deliveries": 2,
+    "status": "DRAFT"
+  },
+  "closurePhysicalId": "1055336210:2",
+  "closureDurationSec": 90,
+  "queuedObservation": {
+    "clockSec": 1000.0,
+    "assignments": [
+      {
+        "truckId": "DEMO-A",
+        "status": "UNLOADING",
+        "queueSec": 0.10000000000002274
+      },
+      {
+        "truckId": "DEMO-B",
+        "status": "QUEUED",
+        "queueSec": 137.5
+      }
+    ]
+  },
+  "completionClockSec": 1352.6,
+  "operationalKpis": {
+    "deliveries": 2,
+    "delivered": 2,
+    "lateDeliveries": 1,
+    "queuedTrucks": 0,
+    "unloadingTrucks": 0,
+    "constrainedDrivers": 0,
+    "deliveryDelaySec": 60.0
+  },
+  "forecastPresent": true
+}

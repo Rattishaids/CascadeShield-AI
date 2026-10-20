@@ -1,0 +1,36 @@
+{
+  "schemaVersion": "cascadeshield.release-historical-tests/1.0",
+  "provenance": "Summary extracted from existing recorded test reports, not a new release test execution.",
+  "reports": [
+    {
+      "originalReport": "reports/simulator_frontend_tests.json",
+      "originalSha256": "5cd390cbe7f69aaaf41e84ec281cb6ae8cb72a78a2bd869b319139816b6b1b4e",
+      "omissionReason": "Original full reporter contains private machine paths; retained unchanged outside this release.",
+      "numTotalTests": 21,
+      "numPassedTests": 21,
+      "numFailedTests": 0,
+      "numPendingTests": 0,
+      "success": true
+    },
+    {
+      "originalReport": "reports/milestone3_frontend_tests.json",
+      "originalSha256": "4b3b3538040aebad3e947327292b6ec565f73cd8c5eddf4ef40af5a4755f4b21",
+      "omissionReason": "Original full reporter contains private machine paths; retained unchanged outside this release.",
+      "numTotalTests": 50,
+      "numPassedTests": 50,
+      "numFailedTests": 0,
+      "numPendingTests": 0,
+      "success": true
+    },
+    {
+      "originalReport": "reports/milestone4_frontend_tests.json",
+      "originalSha256": "1baea4781c35a8501c8b2104218476b9cc125616c2d6497a67fc7131ade28802",
+      "omissionReason": "Original full reporter contains private machine paths; retained unchanged outside this release.",
+      "numTotalTests": 59,
+      "numPassedTests": 59,
+      "numFailedTests": 0,
+      "numPendingTests": 0,
+      "success": true
+    }
+  ]
+}

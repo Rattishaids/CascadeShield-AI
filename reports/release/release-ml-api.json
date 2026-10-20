@@ -1,0 +1,52 @@
+{
+  "checkedAtUtc": "2026-10-19T03:35:50.071958+00:00",
+  "provenance": "READ_ONLY_RELEASE_ML_INTEGRATION",
+  "mode": "models",
+  "checks": [
+    {
+      "name": "cpu_service_exact_frozen_manifest_and_four_model_registry",
+      "passed": true,
+      "selectionManifestSha256": "a225deef5bfe31676129cefa595ef8fb39511486b06e9d0a1d31de40733a3a39"
+    },
+    {
+      "name": "gnn-static-v1_java_to_cpu_prediction",
+      "passed": true,
+      "trucks": 2,
+      "endToEndLatencyMs": 123.903203
+    },
+    {
+      "name": "gnn-temporal-v1_java_to_cpu_prediction",
+      "passed": true,
+      "trucks": 2,
+      "endToEndLatencyMs": 26.862687
+    },
+    {
+      "name": "xgb-no-graph-v1_java_to_cpu_prediction",
+      "passed": true,
+      "trucks": 2,
+      "endToEndLatencyMs": 22.656209
+    },
+    {
+      "name": "xgb-v1_java_to_cpu_prediction",
+      "passed": true,
+      "trucks": 2,
+      "endToEndLatencyMs": 18.064813
+    },
+    {
+      "name": "invalid_inference_schema_is_rejected",
+      "passed": true
+    },
+    {
+      "name": "unsupported_provider_rejected",
+      "passed": true
+    },
+    {
+      "name": "complete_stationary_state_preserved",
+      "passed": true,
+      "runId": "36a79015-5b48-416f-9fbd-9ecb2344db96",
+      "clockSec": 1000.0
+    }
+  ],
+  "passed": true,
+  "passedChecks": 8
+}

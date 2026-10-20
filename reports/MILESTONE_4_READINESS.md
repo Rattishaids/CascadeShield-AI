@@ -30,7 +30,7 @@ Feature snapshots are taken before later outcomes, exclude future completions/re
 
 - Windows 11; 12 logical processors; 16,357,158,912 bytes physical RAM. Disk C had 12,335,968,256 bytes free at inspection, so dependency/corpus size must stay bounded.
 - Existing `.venv` is Anaconda Python 3.14.7. NumPy, pandas, SciPy, scikit-learn, XGBoost, Torch, PyG, FastAPI and Uvicorn are absent. Existing psycopg and Playwright are available.
-- A separate installed Python 3.11 exists at `C:/Users/NIKHISHA SREE/AppData/Local/Programs/Python/Python311/python.exe`. Use a new `.venv-ml`, leaving acquisition/browser dependencies intact.
+- A separate installed Python 3.11 exists at `<private Python 3.11 installation>`. Use a new `.venv-ml`, leaving acquisition/browser dependencies intact.
 - NVIDIA reports an RTX 4050 Laptop GPU, 6141 MiB VRAM, driver 610.74. Torch/CUDA execution has not been verified. GPU capability is not claimed or required: install CPU-only Torch from its official CPU index, with no CUDA packages and no pip download cache.
 - Java/Maven are absent on the Windows PATH; existing Docker Maven Java 21 tooling and official Maven Central relay are reusable.
 - Docker/API/database were stopped at initial inspection. The existing non-destructive startup script is restoring the same volumes; live connectivity is pending and will be recorded after actual checks. No database replacement or raw-data deletion is planned.
@@ -53,3 +53,5 @@ The learned stage will establish only simulator-domain predictive/decision evide
 ## Authorized GPU addendum
 
 After the initial CPU plan, the user explicitly authorized GPU training and compatible isolated CUDA packages. Actual CUDA execution is now verified with installed host Python 3.11 Torch 2.7.1+cu118: RTX 4050, 6,438,780,928 bytes VRAM, and a finite GPU matrix multiplication. A separate XGBoost probe confirmed `cuda:0` and `grow_gpu_hist`. `.venv-ml-gpu` reuses that host Torch installation read-only and installs its other dependencies locally; no system driver/CUDA installation is changed. `.venv-ml` remains the separate CPU inference/test environment. Small GPU mini-batches, fixed seeds, bounded tuning, early stopping, saved checkpoints, memory/timing records and CPU fallback are required. These probes demonstrate hardware compatibility only, not trained-model quality or useful operational gains.
+
+> Release export note: personal and machine-specific installation paths were redacted. Historical numerical results are unchanged. Use the root README for the supported ZIP startup workflow.

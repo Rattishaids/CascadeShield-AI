@@ -1,0 +1,62 @@
+{
+  "schemaVersion": "cascadeshield.release-private-dsn-guards/1.0",
+  "provenance": "ACTUAL_ISOLATED_CLI_EXECUTION_WITH_DATABASE_URL_ABSENT",
+  "startedAtUtc": "2026-10-20T04:39:39.627984+00:00",
+  "checks": [
+    {
+      "name": "scripts/test_simulator_integration.py",
+      "passed": true,
+      "command": [
+        "<isolated-extraction>/.venv-release-test/Scripts/python.exe",
+        "scripts/test_simulator_integration.py"
+      ],
+      "exitCode": 1,
+      "expectedExitCode": 1,
+      "elapsedSec": 3.539,
+      "testedSourceSha256": "7396e6f2579c3e79113fe4f7cffab2b2fd99e08c2c457691813652391bfaa482",
+      "diagnostic": "Set DATABASE_URL privately for the historical harness, or use test_release_integration.py with an isolated --env-file."
+    },
+    {
+      "name": "scripts/test_operational_integration.py",
+      "passed": true,
+      "command": [
+        "<isolated-extraction>/.venv-release-test/Scripts/python.exe",
+        "scripts/test_operational_integration.py"
+      ],
+      "exitCode": 1,
+      "expectedExitCode": 1,
+      "elapsedSec": 0.562,
+      "testedSourceSha256": "68e3c104ad20f7120e1c3f946f3237976d8402c30d2406243fda301106729d07",
+      "diagnostic": "Set DATABASE_URL privately for the historical harness, or use test_release_integration.py with an isolated --env-file."
+    },
+    {
+      "name": "scripts/test_benchmark_integration.py",
+      "passed": true,
+      "command": [
+        "<isolated-extraction>/.venv-release-test/Scripts/python.exe",
+        "scripts/test_benchmark_integration.py"
+      ],
+      "exitCode": 2,
+      "expectedExitCode": 2,
+      "elapsedSec": 0.601,
+      "testedSourceSha256": "18aa6c886709950fd965bac2c42e20c3af1fd5bc61be2106e5850787bb8b8eb7",
+      "diagnostic": "usage: test_benchmark_integration.py [-h] [--base-url BASE_URL] [--dsn DSN]\n                                     [--graph GRAPH] [--report REPORT]\n                                     [--job-timeout-sec JOB_TIMEOUT_SEC]\ntest_benchmark_integration.py: error: Set DATABASE_URL privately or use test_release_integration.py with an isolated --env-file."
+    },
+    {
+      "name": "scripts/test_benchmark_restart.py",
+      "passed": true,
+      "command": [
+        "<isolated-extraction>/.venv-release-test/Scripts/python.exe",
+        "scripts/test_benchmark_restart.py"
+      ],
+      "exitCode": 2,
+      "expectedExitCode": 2,
+      "elapsedSec": 0.539,
+      "testedSourceSha256": "becc841ae77fafdc52e3a7215549a3f3fc521da6833c0750a873190e6da354e5",
+      "diagnostic": "usage: test_benchmark_restart.py [-h] [--base-url BASE_URL] [--dsn DSN]\n                                 [--job-id JOB_ID] [--report REPORT]\ntest_benchmark_restart.py: error: Set DATABASE_URL privately or pass --dsn for the intended research database. For an isolated release database, use scripts/test_release_integration.py instead."
+    }
+  ],
+  "passed": true,
+  "passedChecks": 4,
+  "completedAtUtc": "2026-10-20T04:39:44.870759+00:00"
+}

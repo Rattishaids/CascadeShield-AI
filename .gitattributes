@@ -1,0 +1,24 @@
+# Portable line endings for ordinary source and documentation.
+* text=auto eol=lf
+* whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+*.ps1 text eol=lf
+*.sh text eol=lf
+*.png binary
+*.jpg binary
+*.pdf binary
+*.pt binary
+
+# Frozen study artifacts are SHA-256-bound. Preserve their exact original bytes
+# through Git add, checkout and GitHub Download ZIP on every operating system.
+/data/processed/chennai_osm/*.json -text
+/data/processed/chennai_osm/*.geojson -text
+/models/milestone4/v1/** -text
+/config/milestone4_protocol*.json -text
+/ml/*.py -text
+/scripts/train_milestone4.py -text
+/scripts/run_milestone4_experiments.py -text
+/scripts/run_milestone4_java.sh -text
+/simulator/backend/src/main/java/io/cascadeshield/sim/Ml*.java -text
+/reports/*.json -text
+/reports/release/*.json -text
+/reports/*.csv -text

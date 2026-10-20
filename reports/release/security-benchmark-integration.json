@@ -1,0 +1,221 @@
+{
+  "started_at_utc": "2026-10-20T04:38:03.736489+00:00",
+  "api_base_url": "http://127.0.0.1:8082/api",
+  "data_classes": [
+    "REAL_GEOGRAPHIC_DATA",
+    "SIMULATED_RESEARCH_EXPERIMENT",
+    "ENGINEERING_TEST_EVIDENCE"
+  ],
+  "trained_ml_used": false,
+  "checks": [
+    {
+      "name": "isolated_zip_database_and_api_safety_guard",
+      "passed": true,
+      "details": {
+        "research_import_table_absent": true,
+        "api_matches_database": true,
+        "reset_explicitly_authorized": true
+      },
+      "duration_sec": 0.062
+    },
+    {
+      "name": "catalog_and_immutable_geographic_provenance",
+      "passed": true,
+      "details": {
+        "network_id": "chennai-central-osm-v1",
+        "graph_sha256": "c943bac278192042b22342d8e1be898cc68512fb936e314633645bc3e0304e60",
+        "policies": 5,
+        "equal_action_set": [
+          "NONE",
+          "CONTINUE",
+          "WAIT",
+          "LOCAL_REROUTE",
+          "GLOBAL_REROUTE"
+        ],
+        "live_status": "COMPLETED"
+      },
+      "duration_sec": 0.063
+    },
+    {
+      "name": "malformed_inputs_return_http400_without_live_mutation",
+      "passed": true,
+      "details": {
+        "http_400_cases": [
+          "missing parameters",
+          "unknown policy",
+          "null policy",
+          "blank policy",
+          "null ablation",
+          "blank ablation",
+          "duplicate policy",
+          "unknown ablation",
+          "unknown comparison",
+          "duplicate seeds",
+          "fractional seed",
+          "excess trucks",
+          "short horizon",
+          "unknown profile",
+          "unknown parameter"
+        ],
+        "unknown_job_http_404": true,
+        "live_unchanged": true
+      },
+      "duration_sec": 0.297
+    },
+    {
+      "name": "bounded_seeded_job_executes_both_policies",
+      "passed": true,
+      "details": {
+        "id": "b56efa44-45a4-44e3-96cc-38b47c7ebf67",
+        "status": "COMPLETED",
+        "completed_policy_runs": 2
+      },
+      "duration_sec": 3.921
+    },
+    {
+      "name": "paired_equal_action_inputs_and_hidden_schedule_boundary",
+      "passed": true,
+      "details": {
+        "scenario_id": "closure-contention-s73-d8e2f2c68388",
+        "input_fingerprint": "d8e2f2c683882835576ce196056905d3dd7f0de55f27b37ed05b24726d3565f1",
+        "seed": 73,
+        "policies": [
+          "B0",
+          "B4"
+        ]
+      },
+      "duration_sec": 0.0
+    },
+    {
+      "name": "realized_delivery_metrics_match_actual_completion_records",
+      "passed": true,
+      "details": {
+        "measured_outcomes": [
+          {
+            "policy": "B0",
+            "completed": 2,
+            "sla_violations": 2,
+            "actual_lateness_sec": 380.8000000000002
+          },
+          {
+            "policy": "B4",
+            "completed": 2,
+            "sla_violations": 2,
+            "actual_lateness_sec": 417.1999999999998
+          }
+        ]
+      },
+      "duration_sec": 0.0
+    },
+    {
+      "name": "executed_hypothetical_predictions_separate_from_actual_outcomes",
+      "passed": true,
+      "details": {
+        "executed_hypothetical_alternatives": 8,
+        "decision_count": 2,
+        "forecast_provenance": "MODEL_ROLLOUT_FORECAST",
+        "actual_provenance": "SIMULATED_RESEARCH_EXPERIMENT"
+      },
+      "duration_sec": 0.0
+    },
+    {
+      "name": "physical_constraint_audits_separate_from_rejected_candidates",
+      "passed": true,
+      "details": {
+        "policy_runs_audited": 2,
+        "measured_violations": 0,
+        "rejections_separate": true,
+        "observation_cadence_sec": 10
+      },
+      "duration_sec": 0.0
+    },
+    {
+      "name": "actual_postgresql_job_persistence_and_history",
+      "passed": true,
+      "details": {
+        "postgresql_job_persisted": "b56efa44-45a4-44e3-96cc-38b47c7ebf67",
+        "jsonb_matches_http": true,
+        "history_contains_completed_job": true
+      },
+      "duration_sec": 0.032
+    },
+    {
+      "name": "csv_json_exports_match_persisted_outcomes",
+      "passed": true,
+      "details": {
+        "json_runs": 2,
+        "csv_rows": 2,
+        "sha256": {
+          "json": "9b0789724849fb3fd5eb87090de7f9700904fbecfca5a66cd75e2c869e1766d1",
+          "csv": "f1253820d60a6cb7dd1f14d981e351e284c4b3baed0c28ad76b24183a0c5cb6a"
+        }
+      },
+      "duration_sec": 0.062
+    },
+    {
+      "name": "repeated_seeded_execution_is_deterministic_except_wallclock",
+      "passed": true,
+      "details": {
+        "first_job": "b56efa44-45a4-44e3-96cc-38b47c7ebf67",
+        "repeat_job": "aa41ccf8-e5d9-4ac9-85eb-52be0c15db58",
+        "identical_physical_outcomes": true,
+        "wallclock_fields_excluded": [
+          "computationMs",
+          "computationNanos",
+          "decisionComputationMs"
+        ]
+      },
+      "duration_sec": 3.266
+    },
+    {
+      "name": "live_and_persisted_scenario_exactly_preserved",
+      "passed": true,
+      "details": {
+        "live_state_exactly_preserved": true,
+        "persisted_live_checkpoint_preserved": true,
+        "mutation_endpoint": "/benchmarks/runs"
+      },
+      "duration_sec": 0.047
+    },
+    {
+      "name": "historical_research_tables_counts_and_checksums_preserved",
+      "passed": true,
+      "details": {
+        "research_tables": 0,
+        "rows": 0,
+        "research_import_table_absent": true,
+        "preserved": true
+      },
+      "duration_sec": 0.0
+    },
+    {
+      "name": "actual_release_backend_restart_preserves_state_and_results",
+      "passed": true,
+      "details": {
+        "actual_container_restart": true,
+        "clock_sec": 1352.6,
+        "truck_count": 2,
+        "scenarios": 9,
+        "approvals": 0,
+        "benchmark_jobs": 5,
+        "events": 25,
+        "state_checkpoint_scenarios_approvals_jobs_and_clock_preserved": true
+      },
+      "duration_sec": 10.656
+    }
+  ],
+  "autonomous_llm_used": false,
+  "schemaVersion": "cascadeshield.release-integration/1.0",
+  "suite": "benchmark",
+  "provenance": "ENGINEERING_TEST_EVIDENCE",
+  "job_ids": [
+    "b56efa44-45a4-44e3-96cc-38b47c7ebf67",
+    "aa41ccf8-e5d9-4ac9-85eb-52be0c15db58"
+  ],
+  "export_directory": ".runtime/release-integration/benchmark/reports/milestone3_integration_exports/b56efa44-45a4-44e3-96cc-38b47c7ebf67",
+  "passed": true,
+  "completed_at_utc": "2026-10-20T04:38:22.515725+00:00",
+  "passed_checks": 14,
+  "failed_checks": 0,
+  "not_available_checks": 0
+}

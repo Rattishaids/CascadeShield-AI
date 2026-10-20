@@ -1,0 +1,177 @@
+{
+  "schemaVersion": "cascadeshield.release-security-verification/1.0",
+  "project": "cascadeshield-finalzip",
+  "status": "COMPLETED",
+  "startedAtUtc": "2026-10-20T04:37:11.412711+00:00",
+  "steps": [
+    {
+      "name": "database-helper",
+      "command": [
+        "powershell",
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "scripts/setup_database.ps1",
+        "-EnvFile",
+        ".env.finaltest"
+      ],
+      "startedAtUtc": "2026-10-20T04:37:11.413110+00:00",
+      "status": "PASSED",
+      "returnCode": 0,
+      "elapsedSec": 9.504,
+      "log": "security-20261020T043711Z-database-helper.log"
+    },
+    {
+      "name": "basic-start",
+      "command": [
+        "powershell",
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "scripts/start_simulator.ps1",
+        "-EnvFile",
+        ".env.finaltest",
+        "-NoDemo"
+      ],
+      "startedAtUtc": "2026-10-20T04:37:20.918302+00:00",
+      "status": "PASSED",
+      "returnCode": 0,
+      "elapsedSec": 11.18,
+      "log": "security-20261020T043711Z-basic-start.log"
+    },
+    {
+      "name": "simulator-api",
+      "command": [
+        "<isolated-extraction>\\.venv-release-test\\Scripts\\python.exe",
+        "scripts/test_release_integration.py",
+        "--suite",
+        "simulator",
+        "--env-file",
+        ".env.finaltest",
+        "--report",
+        ".runtime/security-20261020T043711Z-simulator-integration.json",
+        "--allow-reset"
+      ],
+      "startedAtUtc": "2026-10-20T04:37:32.099264+00:00",
+      "status": "PASSED",
+      "returnCode": 0,
+      "elapsedSec": 16.734,
+      "log": "security-20261020T043711Z-simulator-api.log"
+    },
+    {
+      "name": "operations-api",
+      "command": [
+        "<isolated-extraction>\\.venv-release-test\\Scripts\\python.exe",
+        "scripts/test_release_integration.py",
+        "--suite",
+        "operations",
+        "--env-file",
+        ".env.finaltest",
+        "--report",
+        ".runtime/security-20261020T043711Z-operations-integration.json",
+        "--allow-reset"
+      ],
+      "startedAtUtc": "2026-10-20T04:37:48.847086+00:00",
+      "status": "PASSED",
+      "returnCode": 0,
+      "elapsedSec": 14.197,
+      "log": "security-20261020T043711Z-operations-api.log"
+    },
+    {
+      "name": "benchmark-api",
+      "command": [
+        "<isolated-extraction>\\.venv-release-test\\Scripts\\python.exe",
+        "scripts/test_release_integration.py",
+        "--suite",
+        "benchmark",
+        "--env-file",
+        ".env.finaltest",
+        "--report",
+        ".runtime/security-20261020T043711Z-benchmark-integration.json",
+        "--allow-reset"
+      ],
+      "startedAtUtc": "2026-10-20T04:38:03.067337+00:00",
+      "status": "PASSED",
+      "returnCode": 0,
+      "elapsedSec": 19.514,
+      "log": "security-20261020T043711Z-benchmark-api.log"
+    },
+    {
+      "name": "clean-stack-stop",
+      "command": [
+        "powershell",
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "scripts/stop_simulator.ps1",
+        "-EnvFile",
+        ".env.finaltest"
+      ],
+      "startedAtUtc": "2026-10-20T04:38:22.598421+00:00",
+      "status": "PASSED",
+      "returnCode": 0,
+      "elapsedSec": 2.708,
+      "log": "security-20261020T043711Z-clean-stack-stop.log"
+    }
+  ],
+  "canonicalExport": {
+    "files": [
+      {
+        "path": "scripts/setup_database.ps1",
+        "bytes": 1142,
+        "sha256": "4edc1bdeb0c2fa7b3bcb9048ab241c21f59d5f82e8a9c00c37821a42c50422de"
+      },
+      {
+        "path": "scripts/test_simulator_integration.py",
+        "bytes": 32162,
+        "sha256": "7396e6f2579c3e79113fe4f7cffab2b2fd99e08c2c457691813652391bfaa482"
+      },
+      {
+        "path": "scripts/test_operational_integration.py",
+        "bytes": 20398,
+        "sha256": "68e3c104ad20f7120e1c3f946f3237976d8402c30d2406243fda301106729d07"
+      },
+      {
+        "path": "scripts/test_benchmark_integration.py",
+        "bytes": 19139,
+        "sha256": "18aa6c886709950fd965bac2c42e20c3af1fd5bc61be2106e5850787bb8b8eb7"
+      },
+      {
+        "path": "scripts/test_benchmark_restart.py",
+        "bytes": 10436,
+        "sha256": "becc841ae77fafdc52e3a7215549a3f3fc521da6833c0750a873190e6da354e5"
+      },
+      {
+        "path": "reports/SIMULATOR_DATABASE_SETUP.md",
+        "bytes": 7205,
+        "sha256": "65d90957b4e3a86eab2da2fcd5091116ca977dfcf702e354ab8cbea05a7ccc04"
+      }
+    ],
+    "scope": "Exact staged Git blobs copied before the security follow-up; all six still match tested bytes."
+  },
+  "integrationResults": {
+    "simulator": {
+      "passed": 17,
+      "failed": 0,
+      "notAvailable": 0,
+      "report": ".runtime/security-20261020T043711Z-simulator-integration.json"
+    },
+    "operations": {
+      "passed": 10,
+      "failed": 0,
+      "notAvailable": 1,
+      "report": ".runtime/security-20261020T043711Z-operations-integration.json"
+    },
+    "benchmark": {
+      "passed": 14,
+      "failed": 0,
+      "notAvailable": 0,
+      "report": ".runtime/security-20261020T043711Z-benchmark-integration.json"
+    }
+  },
+  "stoppedCleanly": true,
+  "endedAtUtc": "2026-10-20T04:38:25.368647+00:00"
+}

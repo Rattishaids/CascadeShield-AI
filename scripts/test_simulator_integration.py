@@ -477,7 +477,9 @@ def main() -> None:
     parser.add_argument("--test-restart", action="store_true", help="Also restart only the Docker backend and verify actual paused-state persistence")
     parser.add_argument("--restart-only", action="store_true", help="Run the restart persistence check against an already tested local fleet, recording a separate report if --report is supplied")
     args = parser.parse_args()
-    dsn = os.environ.get("DATABASE_URL", "postgresql://cascadeshield:cascadeshield@127.0.0.1:55432/cascadeshield")
+    dsn = os.environ.get("DATABASE_URL")
+    if not dsn:
+        raise SystemExit("Set DATABASE_URL privately for the historical harness, or use test_release_integration.py with an isolated --env-file.")
     harness = Harness(args.base_url, dsn, args.graph)
     try:
         if not args.restart_only:

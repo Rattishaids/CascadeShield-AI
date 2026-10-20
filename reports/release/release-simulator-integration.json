@@ -1,0 +1,212 @@
+{
+  "started_at_utc": "2026-10-19T03:33:20.545138+00:00",
+  "api_base_url": "http://127.0.0.1:8082/api",
+  "data_classes": [
+    "REAL_GEOGRAPHIC_DATA",
+    "SIMULATED_OPERATIONS",
+    "TEST_RESULTS"
+  ],
+  "trained_ml_used": false,
+  "checks": [
+    {
+      "name": "isolated_zip_database_and_api_safety_guard",
+      "passed": true,
+      "details": {
+        "research_import_table_absent": true,
+        "api_matches_database": true,
+        "reset_explicitly_authorized": true
+      },
+      "duration_sec": 0.093
+    },
+    {
+      "name": "real_osm_network_and_postgis",
+      "passed": true,
+      "details": {
+        "network_id": "chennai-central-osm-v1",
+        "directed_edges": 23907,
+        "map_roads": 14147,
+        "invalid_geometry_or_srid": 0
+      },
+      "duration_sec": 0.469
+    },
+    {
+      "name": "capacity_input_validation",
+      "passed": true,
+      "details": {
+        "capacity_violation_status": 400
+      },
+      "duration_sec": 0.063
+    },
+    {
+      "name": "three_manual_trucks_connected_real_routes",
+      "passed": true,
+      "details": {
+        "trucks": [
+          "TEST-T01",
+          "TEST-T02",
+          "TEST-T03"
+        ],
+        "route_lengths_m": [
+          6291.399894999997,
+          6561.022653000002,
+          5057.785538000002
+        ]
+      },
+      "duration_sec": 0.297
+    },
+    {
+      "name": "pause_freezes_time_and_positions",
+      "passed": true,
+      "details": {
+        "frozen_clock_sec": 0.5
+      },
+      "duration_sec": 1.203
+    },
+    {
+      "name": "speed_changes_real_backend_clock_rate",
+      "passed": true,
+      "details": {
+        "observed_clock_seconds_per_wall_second": [
+          0.8830022075064549,
+          7.85634118967786
+        ],
+        "ratio": 8.897306397300744
+      },
+      "duration_sec": 1.875
+    },
+    {
+      "name": "backend_motion_on_connected_postgis_geometry",
+      "passed": true,
+      "details": {
+        "clock_sec": 5.0,
+        "positions_checked_with_postgis": 3
+      },
+      "duration_sec": 0.234
+    },
+    {
+      "name": "slowdown_severity_increases_eta",
+      "passed": true,
+      "details": {
+        "base_eta_sec": 662.5466702700005,
+        "severity_0_2_eta_sec": 664.0863824887956,
+        "severity_0_85_eta_sec": 682.1190481143249
+      },
+      "duration_sec": 0.485
+    },
+    {
+      "name": "physical_closure_blocks_both_directions_and_identifies_truck",
+      "passed": true,
+      "details": {
+        "incident_id": "I003",
+        "physical_id": "567205827:4",
+        "directions_tested": 2,
+        "affected_truck": "TEST-T01"
+      },
+      "duration_sec": 0.125
+    },
+    {
+      "name": "rule_based_risk_bounds_and_feasible_explanations",
+      "passed": true,
+      "details": {
+        "recommendations": 1,
+        "risk_source": "RULE_BASED"
+      },
+      "duration_sec": 0.031
+    },
+    {
+      "name": "manual_wait_updates_backend_motion",
+      "passed": true,
+      "details": {
+        "truck": "TEST-T02",
+        "wait_until_sec": 905.0,
+        "occupied_edge_completed_m": 92.27471511111112,
+        "stationary_for_step_sec": 5
+      },
+      "duration_sec": 0.391
+    },
+    {
+      "name": "manual_reroute_changes_route_without_teleport",
+      "passed": true,
+      "details": {
+        "truck": "TEST-T01",
+        "reroutes": 1,
+        "position_preserved": true
+      },
+      "duration_sec": 0.093
+    },
+    {
+      "name": "realized_kpis_timeline_and_postgresql_checkpoint",
+      "passed": true,
+      "details": {
+        "realized_simulated_kpis": {
+          "totalTrucks": 3,
+          "arrived": 3,
+          "lateDeliveries": 3,
+          "totalDelaySec": 896.2179756028567,
+          "distanceTravelledM": 17998.035105000832,
+          "reroutes": 1,
+          "waitingTrucks": 0,
+          "activeIncidents": 0,
+          "completedTrips": 3
+        },
+        "clock_sec": 1621.0,
+        "postgres_checkpoint_matches": true
+      },
+      "duration_sec": 0.11
+    },
+    {
+      "name": "scenario_save_list_export_and_persistence",
+      "passed": true,
+      "details": {
+        "scenario_id": "3ebae6e5-8ed5-436f-8364-73c00120f28a",
+        "export_available": true,
+        "evidence_class": "SIMULATED_OPERATIONS"
+      },
+      "duration_sec": 0.093
+    },
+    {
+      "name": "saved_command_sequence_replay_is_reproducible",
+      "passed": true,
+      "details": {
+        "scenario_id": "3ebae6e5-8ed5-436f-8364-73c00120f28a",
+        "replayed_clock_sec": 1621.0,
+        "exact_vehicle_incident_and_kpi_snapshot_match": true
+      },
+      "duration_sec": 0.266
+    },
+    {
+      "name": "historical_research_imports_preserved",
+      "passed": true,
+      "details": {
+        "research_tables": 0,
+        "rows": 0,
+        "research_import_table_absent": true,
+        "preserved": true
+      },
+      "duration_sec": 0.0
+    },
+    {
+      "name": "actual_release_backend_restart_preserves_state_and_results",
+      "passed": true,
+      "details": {
+        "actual_container_restart": true,
+        "clock_sec": 1621.0,
+        "truck_count": 3,
+        "scenarios": 2,
+        "approvals": 0,
+        "benchmark_jobs": 0,
+        "events": 20,
+        "state_checkpoint_scenarios_approvals_jobs_and_clock_preserved": true
+      },
+      "duration_sec": 7.563
+    }
+  ],
+  "schemaVersion": "cascadeshield.release-integration/1.0",
+  "suite": "simulator",
+  "provenance": "ENGINEERING_TEST_EVIDENCE",
+  "passed": true,
+  "completed_at_utc": "2026-10-19T03:33:34.278518+00:00",
+  "passed_checks": 17,
+  "failed_checks": 0,
+  "not_available_checks": 0
+}

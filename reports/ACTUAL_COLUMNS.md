@@ -32,7 +32,7 @@ Actual rows/elements: 47,683
 
 **columns:** `category`, `latitude`, `longitude`, `sqm`, `bays`
 
-**key_columns:** 
+**key_columns:**
 
 ## olist:olist_customers_dataset.csv
 
@@ -72,7 +72,7 @@ Actual rows/elements: 1,000,163
 
 **columns:** `geolocation_zip_code_prefix`, `geolocation_lat`, `geolocation_lng`, `geolocation_city`, `geolocation_state`
 
-**key_columns:** 
+**key_columns:**
 
 ## olist:olist_order_items_dataset.csv
 
@@ -96,7 +96,7 @@ Actual rows/elements: 99,224
 
 **columns:** `review_id`, `order_id`, `review_score`, `review_comment_title`, `review_comment_message`, `review_creation_date`, `review_answer_timestamp`
 
-**key_columns:** 
+**key_columns:**
 
 ## olist:product_category_name_translation.csv
 
@@ -120,7 +120,7 @@ Actual rows/elements: 100,000
 
 **columns:** `medallion`, `hack_license`, `medallion_index`, `driver_index`
 
-**key_columns:** 
+**key_columns:**
 
 ## nyc_Medallion_Sample_5k
 
@@ -128,7 +128,7 @@ Actual rows/elements: 5,000
 
 **columns:** `medallion`, `hack_license`, `medallion_index`, `driver_index`
 
-**key_columns:** 
+**key_columns:**
 
 ## nyc_medallion_mapping_key
 
@@ -136,7 +136,7 @@ Actual rows/elements: 578,956
 
 **columns:** `medallion`, `hack_license`, `medallion_index`, `driver_index`, `company_owned`
 
-**key_columns:** 
+**key_columns:**
 
 ## osm_birmingham_2024
 

@@ -86,4 +86,3 @@ The final score is `2 * unfinishedDeliveries + weightedNormalizedObjectives`. Th
 The focused `CounterfactualExperimentEngineTest` suite exercises isolation, deterministic copied outcomes, hidden replay/incident/driver-restoration exclusion, ETA recomputation, distinct local/global routes, occupied-edge continuity, disconnected routes, turn restrictions, driver windows, cargo constraints, reservations, active service protection, soft deadlines, censoring, normalization, explicit provenance and actual metric aggregation. Artificial unit-test topology is tagged `TEST_FIXTURE_ONLY` and is never used as acquired research geography.
 
 No GNN training, autonomous LLM, observed freight fabrication or historical cohort join occurs in this engine.
-

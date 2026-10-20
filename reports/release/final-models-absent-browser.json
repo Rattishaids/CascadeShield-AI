@@ -1,0 +1,656 @@
+{
+  "checkedAtUtc": "2026-10-19T03:39:06.398770+00:00",
+  "provenance": "RELEASE_BROWSER_ENGINEERING_TEST_EVIDENCE",
+  "uiUrl": "http://127.0.0.1:5175",
+  "apiUrl": "http://127.0.0.1:8082/api",
+  "expectedMl": "off",
+  "checks": [
+    {
+      "name": "direct_backend_and_production_frontend_api_proxy_are_healthy",
+      "passed": true
+    },
+    {
+      "name": "worker_backed_local_vector_roads_render_with_osm_raster_network_blocked",
+      "passed": true,
+      "renderedRoadFeatures": 11871,
+      "blockedRasterRequests": 39,
+      "workerUrls": [
+        "http://127.0.0.1:5175/assets/maplibre-gl-worker-CUx-2NaE.js"
+      ]
+    },
+    {
+      "name": "openstreetmap_attribution_is_preserved_with_unavailable_raster_tiles",
+      "passed": true
+    },
+    {
+      "name": "default_rule_prediction_is_read_only_and_explicitly_labeled",
+      "passed": true
+    },
+    {
+      "name": "learned_request_reports_actual_provider_or_complete_deterministic_fallback",
+      "passed": true,
+      "fallbackUsed": true,
+      "actualModel": "rule-v1",
+      "source": "RULE_BASED"
+    },
+    {
+      "name": "stationary_live_state_preserved_without_control_or_approval_requests",
+      "passed": true,
+      "runId": "36a79015-5b48-416f-9fbd-9ecb2344db96",
+      "clockSec": 1000.0,
+      "truckCount": 2
+    },
+    {
+      "name": "no_unexpected_console_page_api_or_state_changing_activity",
+      "passed": true
+    }
+  ],
+  "blockedRasterRequests": [
+    "https://tile.openstreetmap.org/14/11844/7592.png",
+    "https://tile.openstreetmap.org/14/11845/7592.png",
+    "https://tile.openstreetmap.org/14/11844/7591.png",
+    "https://tile.openstreetmap.org/14/11845/7591.png",
+    "https://tile.openstreetmap.org/14/11844/7593.png",
+    "https://tile.openstreetmap.org/14/11843/7592.png",
+    "https://tile.openstreetmap.org/14/11845/7593.png",
+    "https://tile.openstreetmap.org/14/11843/7591.png",
+    "https://tile.openstreetmap.org/14/11846/7592.png",
+    "https://tile.openstreetmap.org/14/11844/7590.png",
+    "https://tile.openstreetmap.org/14/11846/7591.png",
+    "https://tile.openstreetmap.org/14/11845/7590.png",
+    "https://tile.openstreetmap.org/14/11843/7593.png",
+    "https://tile.openstreetmap.org/14/11846/7593.png",
+    "https://tile.openstreetmap.org/14/11843/7590.png",
+    "https://tile.openstreetmap.org/14/11846/7590.png",
+    "https://tile.openstreetmap.org/14/11842/7592.png",
+    "https://tile.openstreetmap.org/14/11842/7591.png",
+    "https://tile.openstreetmap.org/14/11847/7592.png",
+    "https://tile.openstreetmap.org/14/11847/7591.png",
+    "https://tile.openstreetmap.org/14/11842/7593.png",
+    "https://tile.openstreetmap.org/14/11842/7590.png",
+    "https://tile.openstreetmap.org/14/11847/7593.png",
+    "https://tile.openstreetmap.org/14/11847/7590.png",
+    "https://tile.openstreetmap.org/13/5922/3796.png",
+    "https://tile.openstreetmap.org/13/5922/3795.png",
+    "https://tile.openstreetmap.org/13/5921/3796.png",
+    "https://tile.openstreetmap.org/13/5921/3795.png",
+    "https://tile.openstreetmap.org/13/5923/3796.png",
+    "https://tile.openstreetmap.org/13/5923/3795.png",
+    "https://tile.openstreetmap.org/12/2961/1898.png",
+    "https://tile.openstreetmap.org/12/2961/1897.png",
+    "https://tile.openstreetmap.org/12/2960/1898.png",
+    "https://tile.openstreetmap.org/12/2960/1897.png",
+    "https://tile.openstreetmap.org/11/1480/949.png",
+    "https://tile.openstreetmap.org/11/1480/948.png",
+    "https://tile.openstreetmap.org/10/740/474.png",
+    "https://tile.openstreetmap.org/9/370/237.png",
+    "https://tile.openstreetmap.org/8/185/118.png",
+    "https://tile.openstreetmap.org/7/92/59.png",
+    "https://tile.openstreetmap.org/14/11846/7592.png",
+    "https://tile.openstreetmap.org/14/11846/7591.png",
+    "https://tile.openstreetmap.org/14/11846/7593.png",
+    "https://tile.openstreetmap.org/14/11846/7590.png",
+    "https://tile.openstreetmap.org/14/11842/7592.png",
+    "https://tile.openstreetmap.org/14/11842/7591.png",
+    "https://tile.openstreetmap.org/14/11847/7592.png",
+    "https://tile.openstreetmap.org/14/11847/7591.png",
+    "https://tile.openstreetmap.org/14/11842/7593.png",
+    "https://tile.openstreetmap.org/14/11842/7590.png",
+    "https://tile.openstreetmap.org/14/11847/7593.png",
+    "https://tile.openstreetmap.org/14/11847/7590.png",
+    "https://tile.openstreetmap.org/6/46/29.png"
+  ],
+  "expectedTileConsoleErrors": [
+    {
+      "text": "Failed to load resource: net::ERR_INTERNET_DISCONNECTED",
+      "location": {
+        "url": "https://tile.openstreetmap.org/14/11844/7592.png",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    },
+    {
+      "text": "Failed to load resource: net::ERR_INTERNET_DISCONNECTED",
+      "location": {
+        "url": "https://tile.openstreetmap.org/14/11845/7592.png",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    },
+    {
+      "text": "Failed to load resource: net::ERR_INTERNET_DISCONNECTED",
+      "location": {
+        "url": "https://tile.openstreetmap.org/14/11844/7591.png",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    },
+    {
+      "text": "Failed to load resource: net::ERR_INTERNET_DISCONNECTED",
+      "location": {
+        "url": "https://tile.openstreetmap.org/14/11845/7591.png",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    },
+    {
+      "text": "Failed to load resource: net::ERR_INTERNET_DISCONNECTED",
+      "location": {
+        "url": "https://tile.openstreetmap.org/14/11844/7593.png",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    },
+    {
+      "text": "Failed to load resource: net::ERR_INTERNET_DISCONNECTED",
+      "location": {
+        "url": "https://tile.openstreetmap.org/14/11843/7592.png",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    },
+    {
+      "text": "Failed to load resource: net::ERR_INTERNET_DISCONNECTED",
+      "location": {
+        "url": "https://tile.openstreetmap.org/14/11845/7593.png",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    },
+    {
+      "text": "Failed to load resource: net::ERR_INTERNET_DISCONNECTED",
+      "location": {
+        "url": "https://tile.openstreetmap.org/14/11843/7591.png",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    },
+    {
+      "text": "Failed to load resource: net::ERR_INTERNET_DISCONNECTED",
+      "location": {
+        "url": "https://tile.openstreetmap.org/14/11846/7592.png",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    },
+    {
+      "text": "Failed to load resource: net::ERR_INTERNET_DISCONNECTED",
+      "location": {
+        "url": "https://tile.openstreetmap.org/14/11844/7590.png",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    },
+    {
+      "text": "Failed to load resource: net::ERR_INTERNET_DISCONNECTED",
+      "location": {
+        "url": "https://tile.openstreetmap.org/14/11846/7591.png",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    },
+    {
+      "text": "Failed to load resource: net::ERR_INTERNET_DISCONNECTED",
+      "location": {
+        "url": "https://tile.openstreetmap.org/14/11845/7590.png",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    },
+    {
+      "text": "Failed to load resource: net::ERR_INTERNET_DISCONNECTED",
+      "location": {
+        "url": "https://tile.openstreetmap.org/14/11843/7593.png",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    },
+    {
+      "text": "Failed to load resource: net::ERR_INTERNET_DISCONNECTED",
+      "location": {
+        "url": "https://tile.openstreetmap.org/14/11846/7593.png",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    },
+    {
+      "text": "Failed to load resource: net::ERR_INTERNET_DISCONNECTED",
+      "location": {
+        "url": "https://tile.openstreetmap.org/14/11843/7590.png",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    },
+    {
+      "text": "Failed to load resource: net::ERR_INTERNET_DISCONNECTED",
+      "location": {
+        "url": "https://tile.openstreetmap.org/14/11846/7590.png",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    },
+    {
+      "text": "Failed to load resource: net::ERR_INTERNET_DISCONNECTED",
+      "location": {
+        "url": "https://tile.openstreetmap.org/14/11842/7592.png",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    },
+    {
+      "text": "Failed to load resource: net::ERR_INTERNET_DISCONNECTED",
+      "location": {
+        "url": "https://tile.openstreetmap.org/14/11842/7591.png",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    },
+    {
+      "text": "Failed to load resource: net::ERR_INTERNET_DISCONNECTED",
+      "location": {
+        "url": "https://tile.openstreetmap.org/14/11847/7592.png",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    },
+    {
+      "text": "Failed to load resource: net::ERR_INTERNET_DISCONNECTED",
+      "location": {
+        "url": "https://tile.openstreetmap.org/14/11847/7591.png",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    },
+    {
+      "text": "Failed to load resource: net::ERR_INTERNET_DISCONNECTED",
+      "location": {
+        "url": "https://tile.openstreetmap.org/14/11842/7593.png",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    },
+    {
+      "text": "Failed to load resource: net::ERR_INTERNET_DISCONNECTED",
+      "location": {
+        "url": "https://tile.openstreetmap.org/14/11842/7590.png",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    },
+    {
+      "text": "Failed to load resource: net::ERR_INTERNET_DISCONNECTED",
+      "location": {
+        "url": "https://tile.openstreetmap.org/14/11847/7593.png",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    },
+    {
+      "text": "Failed to load resource: net::ERR_INTERNET_DISCONNECTED",
+      "location": {
+        "url": "https://tile.openstreetmap.org/14/11847/7590.png",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    },
+    {
+      "text": "Failed to load resource: net::ERR_INTERNET_DISCONNECTED",
+      "location": {
+        "url": "https://tile.openstreetmap.org/13/5922/3796.png",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    },
+    {
+      "text": "Failed to load resource: net::ERR_INTERNET_DISCONNECTED",
+      "location": {
+        "url": "https://tile.openstreetmap.org/13/5922/3795.png",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    },
+    {
+      "text": "Failed to load resource: net::ERR_INTERNET_DISCONNECTED",
+      "location": {
+        "url": "https://tile.openstreetmap.org/13/5921/3796.png",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    },
+    {
+      "text": "Failed to load resource: net::ERR_INTERNET_DISCONNECTED",
+      "location": {
+        "url": "https://tile.openstreetmap.org/13/5921/3795.png",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    },
+    {
+      "text": "Failed to load resource: net::ERR_INTERNET_DISCONNECTED",
+      "location": {
+        "url": "https://tile.openstreetmap.org/13/5923/3796.png",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    },
+    {
+      "text": "Failed to load resource: net::ERR_INTERNET_DISCONNECTED",
+      "location": {
+        "url": "https://tile.openstreetmap.org/13/5923/3795.png",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    },
+    {
+      "text": "Failed to load resource: net::ERR_INTERNET_DISCONNECTED",
+      "location": {
+        "url": "https://tile.openstreetmap.org/12/2961/1898.png",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    },
+    {
+      "text": "Failed to load resource: net::ERR_INTERNET_DISCONNECTED",
+      "location": {
+        "url": "https://tile.openstreetmap.org/12/2961/1897.png",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    },
+    {
+      "text": "Failed to load resource: net::ERR_INTERNET_DISCONNECTED",
+      "location": {
+        "url": "https://tile.openstreetmap.org/12/2960/1898.png",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    },
+    {
+      "text": "Failed to load resource: net::ERR_INTERNET_DISCONNECTED",
+      "location": {
+        "url": "https://tile.openstreetmap.org/12/2960/1897.png",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    },
+    {
+      "text": "Failed to load resource: net::ERR_INTERNET_DISCONNECTED",
+      "location": {
+        "url": "https://tile.openstreetmap.org/11/1480/949.png",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    },
+    {
+      "text": "Failed to load resource: net::ERR_INTERNET_DISCONNECTED",
+      "location": {
+        "url": "https://tile.openstreetmap.org/11/1480/948.png",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    },
+    {
+      "text": "Failed to load resource: net::ERR_INTERNET_DISCONNECTED",
+      "location": {
+        "url": "https://tile.openstreetmap.org/10/740/474.png",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    },
+    {
+      "text": "Failed to load resource: net::ERR_INTERNET_DISCONNECTED",
+      "location": {
+        "url": "https://tile.openstreetmap.org/9/370/237.png",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    },
+    {
+      "text": "Failed to load resource: net::ERR_INTERNET_DISCONNECTED",
+      "location": {
+        "url": "https://tile.openstreetmap.org/8/185/118.png",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    },
+    {
+      "text": "Failed to load resource: net::ERR_INTERNET_DISCONNECTED",
+      "location": {
+        "url": "https://tile.openstreetmap.org/7/92/59.png",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    },
+    {
+      "text": "Failed to load resource: net::ERR_INTERNET_DISCONNECTED",
+      "location": {
+        "url": "https://tile.openstreetmap.org/14/11846/7592.png",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    },
+    {
+      "text": "Failed to load resource: net::ERR_INTERNET_DISCONNECTED",
+      "location": {
+        "url": "https://tile.openstreetmap.org/14/11846/7591.png",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    },
+    {
+      "text": "Failed to load resource: net::ERR_INTERNET_DISCONNECTED",
+      "location": {
+        "url": "https://tile.openstreetmap.org/14/11846/7593.png",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    },
+    {
+      "text": "Failed to load resource: net::ERR_INTERNET_DISCONNECTED",
+      "location": {
+        "url": "https://tile.openstreetmap.org/14/11846/7590.png",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    },
+    {
+      "text": "Failed to load resource: net::ERR_INTERNET_DISCONNECTED",
+      "location": {
+        "url": "https://tile.openstreetmap.org/14/11842/7592.png",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    },
+    {
+      "text": "Failed to load resource: net::ERR_INTERNET_DISCONNECTED",
+      "location": {
+        "url": "https://tile.openstreetmap.org/14/11842/7591.png",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    },
+    {
+      "text": "Failed to load resource: net::ERR_INTERNET_DISCONNECTED",
+      "location": {
+        "url": "https://tile.openstreetmap.org/14/11847/7592.png",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    },
+    {
+      "text": "Failed to load resource: net::ERR_INTERNET_DISCONNECTED",
+      "location": {
+        "url": "https://tile.openstreetmap.org/14/11847/7591.png",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    },
+    {
+      "text": "Failed to load resource: net::ERR_INTERNET_DISCONNECTED",
+      "location": {
+        "url": "https://tile.openstreetmap.org/14/11842/7593.png",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    },
+    {
+      "text": "Failed to load resource: net::ERR_INTERNET_DISCONNECTED",
+      "location": {
+        "url": "https://tile.openstreetmap.org/14/11842/7590.png",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    },
+    {
+      "text": "Failed to load resource: net::ERR_INTERNET_DISCONNECTED",
+      "location": {
+        "url": "https://tile.openstreetmap.org/14/11847/7593.png",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    },
+    {
+      "text": "Failed to load resource: net::ERR_INTERNET_DISCONNECTED",
+      "location": {
+        "url": "https://tile.openstreetmap.org/14/11847/7590.png",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    },
+    {
+      "text": "Failed to load resource: net::ERR_INTERNET_DISCONNECTED",
+      "location": {
+        "url": "https://tile.openstreetmap.org/6/46/29.png",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    }
+  ],
+  "unexpectedConsoleErrors": [],
+  "pageErrors": [],
+  "unexpectedRequestFailures": [],
+  "apiErrors": [],
+  "stateChangingRequests": [],
+  "inferenceRequests": [
+    {
+      "url": "http://127.0.0.1:5175/api/ml/predict",
+      "method": "POST"
+    },
+    {
+      "url": "http://127.0.0.1:5175/api/ml/predict",
+      "method": "POST"
+    }
+  ],
+  "workers": [
+    "http://127.0.0.1:5175/assets/maplibre-gl-worker-CUx-2NaE.js"
+  ],
+  "passed": true,
+  "screenshot": ".runtime\\screenshots\\final-models-absent-browser-offline-map.png",
+  "passedChecks": 7
+}

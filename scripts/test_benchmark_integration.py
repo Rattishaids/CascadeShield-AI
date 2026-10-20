@@ -244,11 +244,13 @@ class BenchmarkHarness(Harness):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--base-url", default="http://127.0.0.1:8080/api")
-    parser.add_argument("--dsn", default=os.environ.get("DATABASE_URL", "postgresql://cascadeshield:cascadeshield@127.0.0.1:55432/cascadeshield"))
+    parser.add_argument("--dsn", default=os.environ.get("DATABASE_URL"))
     parser.add_argument("--graph", type=Path, default=ROOT / "data/processed/chennai_osm/road_graph.json")
     parser.add_argument("--report", type=Path, default=ROOT / "reports/milestone3_integration_tests.json")
     parser.add_argument("--job-timeout-sec", type=float, default=600)
     args = parser.parse_args()
+    if not args.dsn:
+        parser.error("Set DATABASE_URL privately or use test_release_integration.py with an isolated --env-file.")
     harness = BenchmarkHarness(args.base_url, args.dsn, args.graph, args.job_timeout_sec)
     try:
         harness.run()
@@ -266,4 +268,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-

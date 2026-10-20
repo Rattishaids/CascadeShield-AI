@@ -1,4 +1,0 @@
-{
-  "omittedPolicyIds" : [ ],
-  "reason" : "Only actually trained and validated IDs in the pre-assessment selection manifest are eligible"
-}

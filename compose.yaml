@@ -1,0 +1,78 @@
+name: ${COMPOSE_PROJECT_NAME:-cascadeshield-demo}
+services:
+  database:
+    image: postgis/postgis:17-3.5@sha256:01a6a70e41e6c4467c8f55f6063555ed72db2d6662cd0d571040d42eadaeb6f6
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-cascadeshield_demo}
+      POSTGRES_USER: ${POSTGRES_USER:-cascadeshield_demo}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Run scripts/setup.ps1 to generate a local password}
+      POSTGRES_INITDB_ARGS: --auth-host=scram-sha-256
+    ports:
+      - "127.0.0.1:${POSTGRES_PORT:-55433}:5432"
+    volumes:
+      - demo_database:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $$POSTGRES_USER -d $$POSTGRES_DB"]
+      interval: 3s
+      timeout: 5s
+      retries: 40
+      start_period: 10s
+    stop_grace_period: 60s
+    restart: unless-stopped
+  backend:
+    build:
+      context: .
+      dockerfile: simulator/backend/Dockerfile
+      args:
+        MAVEN_MIRROR_URL: ${MAVEN_MIRROR_URL:-}
+    environment:
+      SIMULATOR_JDBC_URL: jdbc:postgresql://database:5432/${POSTGRES_DB:-cascadeshield_demo}
+      SIMULATOR_DB_USER: ${POSTGRES_USER:-cascadeshield_demo}
+      SIMULATOR_DB_PASSWORD: ${POSTGRES_PASSWORD:?Run scripts/setup.ps1 first}
+      SIMULATOR_GRAPH_PATH: /app/network/road_graph.json
+      SIMULATOR_GEOJSON_PATH: /app/network/roads.geojson
+      JAVA_TOOL_OPTIONS: -Xms128m -Xmx1536m
+    # Explicitly use the container's own loopback by default: optional ML is off.
+    command: ["--simulator.ml-url=${SIMULATOR_ML_URL:-http://127.0.0.1:8090}"]
+    ports:
+      - "127.0.0.1:${BACKEND_PORT:-8080}:8080"
+    volumes:
+      - ./data/processed/chennai_osm:/app/network:ro
+    depends_on:
+      database:
+        condition: service_healthy
+    stop_grace_period: 30s
+    restart: unless-stopped
+  frontend:
+    build: ./simulator/frontend
+    ports:
+      - "127.0.0.1:${FRONTEND_PORT:-5173}:80"
+    depends_on:
+      backend:
+        condition: service_started
+    healthcheck:
+      test: ["CMD", "wget", "--quiet", "--tries=1", "--spider", "http://127.0.0.1/"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+    restart: unless-stopped
+  ml:
+    profiles: [ml]
+    build:
+      context: .
+      dockerfile: ml/Dockerfile
+    environment:
+      CUDA_VISIBLE_DEVICES: ""
+      OMP_NUM_THREADS: "2"
+    ports:
+      - "127.0.0.1:${ML_PORT:-8090}:8090"
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8090/health', timeout=3)"]
+      interval: 5s
+      timeout: 4s
+      retries: 40
+      start_period: 30s
+    restart: unless-stopped
+volumes:
+  # Compose prefixes this with COMPOSE_PROJECT_NAME; the research volume is separate.
+  demo_database:

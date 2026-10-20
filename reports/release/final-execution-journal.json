@@ -1,0 +1,285 @@
+{
+  "status": "COMPLETED",
+  "startedAtUtc": "2026-10-19T03:33:18.718293+00:00",
+  "project": "cascadeshield-finalzip",
+  "steps": [
+    {
+      "name": "python-contracts",
+      "command": [
+        "<isolated-extraction>\\.venv-release-test\\Scripts\\python.exe",
+        "scripts/run_release_python_tests.py",
+        "--report",
+        ".runtime/final-python-tests.json"
+      ],
+      "status": "PASSED",
+      "startedAtUtc": "2026-10-19T03:33:18.718293+00:00",
+      "returnCode": 0,
+      "elapsedSec": 1.0310000000008586
+    },
+    {
+      "name": "simulator-api",
+      "command": [
+        "<isolated-extraction>\\.venv-release-test\\Scripts\\python.exe",
+        "scripts/test_release_integration.py",
+        "--suite",
+        "simulator",
+        "--env-file",
+        ".env.finaltest",
+        "--report",
+        ".runtime/final-simulator-integration.json",
+        "--allow-reset"
+      ],
+      "status": "PASSED",
+      "startedAtUtc": "2026-10-19T03:33:19.754926+00:00",
+      "returnCode": 0,
+      "elapsedSec": 14.57799999999952
+    },
+    {
+      "name": "operations-api",
+      "command": [
+        "<isolated-extraction>\\.venv-release-test\\Scripts\\python.exe",
+        "scripts/test_release_integration.py",
+        "--suite",
+        "operations",
+        "--env-file",
+        ".env.finaltest",
+        "--report",
+        ".runtime/final-operations-integration.json",
+        "--allow-reset"
+      ],
+      "status": "PASSED",
+      "startedAtUtc": "2026-10-19T03:33:34.334292+00:00",
+      "returnCode": 0,
+      "elapsedSec": 11.718999999999141
+    },
+    {
+      "name": "benchmark-api",
+      "command": [
+        "<isolated-extraction>\\.venv-release-test\\Scripts\\python.exe",
+        "scripts/test_release_integration.py",
+        "--suite",
+        "benchmark",
+        "--env-file",
+        ".env.finaltest",
+        "--report",
+        ".runtime/final-benchmark-integration.json",
+        "--allow-reset"
+      ],
+      "status": "PASSED",
+      "startedAtUtc": "2026-10-19T03:33:46.049674+00:00",
+      "returnCode": 0,
+      "elapsedSec": 13.76600000000144
+    },
+    {
+      "name": "simulator-browser",
+      "command": [
+        "<isolated-extraction>\\.venv-release-test\\Scripts\\python.exe",
+        "scripts/test_simulator_browser.py",
+        "--ui",
+        "http://127.0.0.1:5175",
+        "--api",
+        "http://127.0.0.1:8082/api",
+        "--report",
+        ".runtime/final-simulator-browser.json",
+        "--screenshot-prefix",
+        "release-final"
+      ],
+      "status": "PASSED",
+      "startedAtUtc": "2026-10-19T03:33:59.822871+00:00",
+      "returnCode": 0,
+      "elapsedSec": 33.71899999999914
+    },
+    {
+      "name": "operations-browser",
+      "command": [
+        "<isolated-extraction>\\.venv-release-test\\Scripts\\python.exe",
+        "scripts/test_operational_browser.py",
+        "--ui",
+        "http://127.0.0.1:5175",
+        "--api",
+        "http://127.0.0.1:8082/api",
+        "--report",
+        ".runtime/final-operations-browser.json"
+      ],
+      "status": "PASSED",
+      "startedAtUtc": "2026-10-19T03:34:33.527118+00:00",
+      "returnCode": 0,
+      "elapsedSec": 43.625
+    },
+    {
+      "name": "benchmark-browser",
+      "command": [
+        "<isolated-extraction>\\.venv-release-test\\Scripts\\python.exe",
+        "scripts/test_benchmark_browser.py",
+        "--ui",
+        "http://127.0.0.1:5175",
+        "--api",
+        "http://127.0.0.1:8082/api",
+        "--report",
+        ".runtime/final-benchmark-browser.json"
+      ],
+      "status": "PASSED",
+      "startedAtUtc": "2026-10-19T03:35:17.154150+00:00",
+      "returnCode": 0,
+      "elapsedSec": 6.389999999999418
+    },
+    {
+      "name": "optional-cpu-build",
+      "command": [
+        "powershell",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "scripts/setup.ps1",
+        "-EnvFile",
+        ".env.finaltest",
+        "-WithML",
+        "-UseMavenRelay"
+      ],
+      "status": "PASSED",
+      "startedAtUtc": "2026-10-19T03:35:23.549362+00:00",
+      "returnCode": 0,
+      "elapsedSec": 9.42200000000048
+    },
+    {
+      "name": "optional-cpu-start",
+      "command": [
+        "powershell",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "scripts/start_ml.ps1",
+        "-EnvFile",
+        ".env.finaltest"
+      ],
+      "status": "PASSED",
+      "startedAtUtc": "2026-10-19T03:35:32.983121+00:00",
+      "returnCode": 0,
+      "elapsedSec": 16.875
+    },
+    {
+      "name": "four-model-api",
+      "command": [
+        "<isolated-extraction>\\.venv-release-test\\Scripts\\python.exe",
+        "scripts/test_release_ml.py",
+        "--api",
+        "http://127.0.0.1:8082/api",
+        "--service",
+        "http://127.0.0.1:8092",
+        "--report",
+        ".runtime/final-ml-api.json"
+      ],
+      "status": "PASSED",
+      "startedAtUtc": "2026-10-19T03:35:49.856935+00:00",
+      "returnCode": 0,
+      "elapsedSec": 0.5930000000007567
+    },
+    {
+      "name": "four-model-browser",
+      "command": [
+        "<isolated-extraction>\\.venv-release-test\\Scripts\\python.exe",
+        "scripts/test_release_browser.py",
+        "--ui",
+        "http://127.0.0.1:5175",
+        "--api",
+        "http://127.0.0.1:8082/api",
+        "--ml-url",
+        "http://127.0.0.1:8092",
+        "--expect-ml",
+        "on",
+        "--report",
+        ".runtime/final-ml-browser.json"
+      ],
+      "status": "PASSED",
+      "startedAtUtc": "2026-10-19T03:35:50.453054+00:00",
+      "returnCode": 0,
+      "elapsedSec": 5.610000000000582
+    },
+    {
+      "name": "actual-inference-stop",
+      "command": [
+        "powershell",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "scripts/stop_ml.ps1",
+        "-EnvFile",
+        ".env.finaltest"
+      ],
+      "status": "PASSED",
+      "startedAtUtc": "2026-10-19T03:35:56.074987+00:00",
+      "returnCode": 0,
+      "elapsedSec": 6.5
+    },
+    {
+      "name": "actual-outage-fallback",
+      "command": [
+        "<isolated-extraction>\\.venv-release-test\\Scripts\\python.exe",
+        "scripts/test_release_ml.py",
+        "--api",
+        "http://127.0.0.1:8082/api",
+        "--service",
+        "http://127.0.0.1:8092",
+        "--mode",
+        "fallback",
+        "--report",
+        ".runtime/final-ml-outage.json"
+      ],
+      "status": "PASSED",
+      "startedAtUtc": "2026-10-19T03:36:02.580734+00:00",
+      "returnCode": 0,
+      "elapsedSec": 1.2970000000004802
+    },
+    {
+      "name": "actual-inference-restart",
+      "command": [
+        "powershell",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "scripts/start_ml.ps1",
+        "-EnvFile",
+        ".env.finaltest"
+      ],
+      "status": "PASSED",
+      "startedAtUtc": "2026-10-19T03:36:03.882099+00:00",
+      "returnCode": 0,
+      "elapsedSec": 10.234000000000378
+    },
+    {
+      "name": "actual-inference-recovery",
+      "command": [
+        "<isolated-extraction>\\.venv-release-test\\Scripts\\python.exe",
+        "scripts/test_release_ml.py",
+        "--api",
+        "http://127.0.0.1:8082/api",
+        "--service",
+        "http://127.0.0.1:8092",
+        "--report",
+        ".runtime/final-ml-recovery.json"
+      ],
+      "status": "PASSED",
+      "startedAtUtc": "2026-10-19T03:36:14.122479+00:00",
+      "returnCode": 0,
+      "elapsedSec": 0.5
+    },
+    {
+      "name": "clean-stack-stop",
+      "command": [
+        "powershell",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "scripts/stop_simulator.ps1",
+        "-EnvFile",
+        ".env.finaltest"
+      ],
+      "status": "PASSED",
+      "startedAtUtc": "2026-10-19T03:36:14.630070+00:00",
+      "returnCode": 0,
+      "elapsedSec": 6.531999999999243
+    }
+  ],
+  "stoppedCleanly": true,
+  "endedAtUtc": "2026-10-19T03:36:21.259967+00:00"
+}

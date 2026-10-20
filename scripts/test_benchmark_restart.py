@@ -128,10 +128,12 @@ class RestartHarness(Harness):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--base-url", default="http://127.0.0.1:8080/api")
-    parser.add_argument("--dsn", default=os.environ.get("DATABASE_URL", "postgresql://cascadeshield:cascadeshield@127.0.0.1:55432/cascadeshield"))
+    parser.add_argument("--dsn", default=os.environ.get("DATABASE_URL"))
     parser.add_argument("--job-id", help="Completed job to verify; defaults to most recently completed")
     parser.add_argument("--report", type=Path, default=ROOT / "reports/milestone3_restart_tests.json")
     args = parser.parse_args()
+    if not args.dsn:
+        parser.error("Set DATABASE_URL privately or pass --dsn for the intended research database. For an isolated release database, use scripts/test_release_integration.py instead.")
     harness = RestartHarness(args.base_url, args.dsn, ROOT / "data/processed/chennai_osm/road_graph.json", args.job_id)
     try:
         harness.run()

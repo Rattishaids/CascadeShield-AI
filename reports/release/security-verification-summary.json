@@ -1,0 +1,43 @@
+{
+  "journal": "<isolated-extraction>\\.runtime\\security-verification-execution-20261020T043711Z.json",
+  "status": "COMPLETED",
+  "stoppedCleanly": true,
+  "integrationResults": {
+    "simulator": {
+      "passed": 17,
+      "failed": 0,
+      "notAvailable": 0,
+      "report": ".runtime/security-20261020T043711Z-simulator-integration.json"
+    },
+    "operations": {
+      "passed": 10,
+      "failed": 0,
+      "notAvailable": 1,
+      "report": ".runtime/security-20261020T043711Z-operations-integration.json"
+    },
+    "benchmark": {
+      "passed": 14,
+      "failed": 0,
+      "notAvailable": 0,
+      "report": ".runtime/security-20261020T043711Z-benchmark-integration.json"
+    }
+  },
+  "evidence": [
+    {
+      "path": "<isolated-extraction>\\.runtime\\security-20261020T043711Z-simulator-integration.json",
+      "bytes": 5798,
+      "sha256": "3f1bb238b944a3a886f6325e2746dd52c780b20b4b708d2d206e533c20e69259"
+    },
+    {
+      "path": "<isolated-extraction>\\.runtime\\security-20261020T043711Z-operations-integration.json",
+      "bytes": 7027,
+      "sha256": "930280dd59234e0de9bf1e3b7c2f1c1dd42d6979dbf6a0fb1877bad351d1dfb6"
+    },
+    {
+      "path": "<isolated-extraction>\\.runtime\\security-20261020T043711Z-benchmark-integration.json",
+      "bytes": 6636,
+      "sha256": "6c4e928fc8ecc6b8a15d5c37d9d2682f04a51b58e172f1020f1f97c075305b27"
+    }
+  ],
+  "exactStagedFilesVerified": 6
+}

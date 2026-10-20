@@ -1,0 +1,11 @@
+{
+  "provenance": "FINAL_CLEAN_EXPORT_CONTAINER_FRONTEND_BUILD",
+  "passed": true,
+  "tests": 59,
+  "failures": 0,
+  "productionBuild": true,
+  "typescriptCheck": true,
+  "mapWorkerEmitted": true,
+  "sourceLogSha256": "02fc7d9433b21299ed1de54e95847bfa6e7a4b3ee10988e9e474ef893d89130d",
+  "scope": "Final source built by npm ci, npm test, TypeScript and Vite in the Node22 container; compiled output is not committed."
+}

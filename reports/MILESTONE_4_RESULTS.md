@@ -100,7 +100,7 @@ On the final continuation, Docker and local services had stopped. Restart restor
 
 ## Reproduction, status and remaining limits
 
-Use [the reproducibility guide](../docs/MILESTONE_4_REPRODUCE.md) for exact commands and environments; [the changed-file inventory](MILESTONE_4_CHANGED_FILES.md) lists reviewed source/artifact changes. The canonical project is `D:\CascadeShield-AI`. Launch from that root: `powershell -ExecutionPolicy Bypass -File scripts/start_simulator.ps1 -WithML`; add `-UseMavenRelay` after Java changes. The current frozen assessment must not be reused as a new independent test after tuning.
+Use [the reproducibility guide](../docs/MILESTONE_4_REPRODUCE.md) for exact commands and environments; [the changed-file inventory](MILESTONE_4_CHANGED_FILES.md) lists reviewed source/artifact changes. The canonical project is `<research-workspace>`. Launch from that root: `powershell -ExecutionPolicy Bypass -File scripts/start_simulator.ps1 -WithML`; add `-UseMavenRelay` after Java changes. The current frozen assessment must not be reused as a new independent test after tuning.
 
 Implemented and executed: source/label audit, leakage gates, XGBoost and static/temporal GNN fitting, calibration/reload, CPU inference/fallback, guarded UI integration, frozen prediction assessment and complete paired policy assessment. Field freight validation is blocked by missing linked operator data. OR-Tools and a combined model were not attempted. Milestone 5, RL, autonomous LLM agents and blockchain remain later work.
 
@@ -120,3 +120,5 @@ Implemented and executed: source/label audit, leakage gates, XGBoost and static/
 - No combined model, RL, autonomous LLM policy, blockchain or Milestone 5 was developed.
 
 Machine-readable evidence: [results](MILESTONE_4_RESULTS.json), [prediction metrics](MILESTONE_4_PREDICTION_METRICS.json), [policy benchmark](MILESTONE_4_POLICY_BENCHMARK.json), [independent result audit](milestone4_independent_results_audit.json), [model selection](milestone4_model_selection.json), [raw executions](milestone4_execution_log/). These are simulation-domain research results; field effectiveness and general superiority are not established.
+
+> Release export note: personal and machine-specific installation paths were redacted. Historical numerical results are unchanged. Use the root README for the supported ZIP startup workflow.

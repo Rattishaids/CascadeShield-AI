@@ -1,0 +1,47 @@
+{
+  "started_at_utc": "2026-10-19T03:34:00.235105+00:00",
+  "data_class": "BROWSER_TEST_EVIDENCE",
+  "checks": [
+    {
+      "name": "real map and three provenance labels rendered",
+      "passed": true,
+      "network_id": "chennai-central-osm-v1"
+    },
+    {
+      "name": "three trucks manually created using map picks and valid route previews",
+      "passed": true
+    },
+    {
+      "name": "backend-driven movement and pause freeze",
+      "passed": true,
+      "clock_sec": 1.4
+    },
+    {
+      "name": "road click injects a closure and manual reroute preserves position",
+      "passed": true,
+      "physical_id": "567205827:4",
+      "affected_trucks": [
+        "T01"
+      ]
+    },
+    {
+      "name": "scenario save, JSON export and scheduled intervention replay via browser",
+      "passed": true,
+      "scenario": "Browser verified 20261019T033420Z"
+    },
+    {
+      "name": "20 connected simulated trucks move with 10x controls",
+      "passed": true,
+      "assignment_creation_sec": 2.969,
+      "simulation_advance_sec": 20.0
+    },
+    {
+      "name": "dashboard renders without uncaught JavaScript errors",
+      "passed": true
+    }
+  ],
+  "console_errors": [],
+  "page_errors": [],
+  "passed": true,
+  "finished_at_utc": "2026-10-19T03:34:33.465988+00:00"
+}

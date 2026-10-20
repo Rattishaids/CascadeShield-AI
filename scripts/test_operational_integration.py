@@ -239,7 +239,10 @@ def main():
     parser.add_argument("--base-url", default="http://127.0.0.1:8080/api")
     parser.add_argument("--report", type=Path, default=ROOT / "reports/milestone_2_integration_tests.json")
     args = parser.parse_args()
-    harness = OperationalHarness(args.base_url, os.environ.get("DATABASE_URL", "postgresql://cascadeshield:cascadeshield@127.0.0.1:55432/cascadeshield"), ROOT / "data/processed/chennai_osm/road_graph.json")
+    dsn = os.environ.get("DATABASE_URL")
+    if not dsn:
+        raise SystemExit("Set DATABASE_URL privately for the historical harness, or use test_release_integration.py with an isolated --env-file.")
+    harness = OperationalHarness(args.base_url, dsn, ROOT / "data/processed/chennai_osm/road_graph.json")
     try:
         harness.run()
         harness.report["passed"] = True

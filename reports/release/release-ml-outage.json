@@ -1,0 +1,23 @@
+{
+  "checkedAtUtc": "2026-10-19T03:36:02.781899+00:00",
+  "provenance": "READ_ONLY_RELEASE_ML_INTEGRATION",
+  "mode": "fallback",
+  "checks": [
+    {
+      "name": "unavailable_service_returns_labelled_rule_fallback_with_null_trained_probabilities",
+      "passed": true
+    },
+    {
+      "name": "unsupported_provider_rejected",
+      "passed": true
+    },
+    {
+      "name": "complete_stationary_state_preserved",
+      "passed": true,
+      "runId": "36a79015-5b48-416f-9fbd-9ecb2344db96",
+      "clockSec": 1000.0
+    }
+  ],
+  "passed": true,
+  "passedChecks": 3
+}

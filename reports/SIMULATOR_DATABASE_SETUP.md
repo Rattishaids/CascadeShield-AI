@@ -1,47 +1,49 @@
-# Simulator database setup
+# Portable simulator database setup
 
-The first simulator milestone uses a local Docker PostgreSQL/PostGIS database. Existing research datasets stay in their original region/year schemas; Chennai simulated operations use the separate `cascadeshield_sim` schema managed by the simulator's Flyway migrations. No ML model is trained by these commands.
+The release uses the root `compose.yaml` and an isolated PostgreSQL/PostGIS volume. Simulator tables live in `cascadeshield_sim`; backend startup applies Flyway migrations and loads the included Chennai network. The original research database and its historical imports are separate and are not required for the release application.
 
-## Start and verify
+## Start the database
 
-From the repository root in PowerShell:
+Start Docker Desktop with Linux containers, then run from the extracted repository root in PowerShell:
 
 ```powershell
 powershell -NoProfile -ExecutionPolicy Bypass -File scripts/setup_database.ps1
 ```
 
-This starts Docker Desktop hidden if its Linux engine is unavailable, starts the persistent PostGIS service, installs `requirements-db.txt` in `.venv`, invokes the existing checksum-verified loader, and runs real database validation. Repeating it verifies existing imports without replacing records. `-SkipDependencyInstall` skips pip; `-SkipImport` verifies the existing imports without invoking the loader. A missing import still fails verification.
-
-For Docker already running, the equivalent infrastructure command is:
+When `.env` is absent, the helper calls portable setup with `-SkipBuild`, generates a random local password, and validates the included graph. It starts only the database, waits for its health check, and queries the actual PostgreSQL/PostGIS versions. It preserves an existing configuration, database volume and records. No host Python environment, dependency installation or historical import is performed. Start the UI and backend separately:
 
 ```powershell
-docker compose -f infrastructure/compose.yaml up -d --wait database
-$env:DATABASE_URL = 'postgresql://cascadeshield:cascadeshield@127.0.0.1:55432/cascadeshield'
-& .\.venv\Scripts\python.exe scripts/load_postgis.py --execute
-& .\.venv\Scripts\python.exe scripts/verify_database.py
+powershell -NoProfile -ExecutionPolicy Bypass -File scripts/start_simulator.ps1
 ```
 
-The included credentials are local demonstration defaults. The host port binds only `127.0.0.1`. Optional local changes belong in `infrastructure/.env` copied from `.env.example`; PostgreSQL initialization credentials apply only when its named volume is empty. If `DATABASE_URL` is already set, the setup script uses it for loader and validation, so it must refer to the intended database.
-
-## Backend connection
-
-| Location | JDBC URL | User | Local demo password |
-| --- | --- | --- | --- |
-| Backend running on host | `jdbc:postgresql://127.0.0.1:55432/cascadeshield` | `cascadeshield` | `cascadeshield` |
-| Backend on `cascadeshield_default` Docker network | `jdbc:postgresql://database:5432/cascadeshield` | `cascadeshield` | `cascadeshield` |
-
-Compose project: `cascadeshield`; service: `database`; container: `cascadeshield-database-1`; persistent volume: `cascadeshield_database_data`. A separate Compose application can declare `cascadeshield_default` as an external network.
-
-## Stop and resume
+For an existing alternate configuration, use the same file for both helpers:
 
 ```powershell
-docker compose -f infrastructure/compose.yaml stop database
-docker compose -f infrastructure/compose.yaml start database
+powershell -NoProfile -ExecutionPolicy Bypass -File scripts/setup_database.ps1 -EnvFile .env.demo
+powershell -NoProfile -ExecutionPolicy Bypass -File scripts/start_simulator.ps1 -EnvFile .env.demo
 ```
 
-These commands preserve database records. `restart: unless-stopped` restarts the database when Docker restarts unless it was explicitly stopped. No service is installed outside Docker and no global database configuration is changed.
+Use `scripts/setup.ps1` first with the desired project name and ports when generating a new alternate configuration. Settings are read literally from the selected private env file. Conflicting shell environment values are rejected so Compose and the helper address the same instance. Keep this file private and preserve it with its database volume; initialization credentials apply only when that volume is empty. The root README documents configuration and startup in detail.
 
-## Evidence
+## Backend connection and persistence
+
+Compose supplies the backend JDBC URL `jdbc:postgresql://database:5432/<POSTGRES_DB>` and its private credentials from the selected env file. Host database clients use `127.0.0.1` and that file's `POSTGRES_PORT`; the generated default port is `55433`. Read the actual database/user settings from the private file. No password is published or printed by the helper.
+
+The default Compose project is `cascadeshield-demo`; its persistent volume is `cascadeshield-demo_demo_database`. An alternate project receives a separately prefixed volume. Host ports bind to `127.0.0.1`. The original research project and its volume are not referenced by the portable Compose application.
+
+Stop and resume without deleting the selected project's records:
+
+```powershell
+docker compose --env-file .env -f compose.yaml stop database
+docker compose --env-file .env -f compose.yaml start database
+```
+
+Use `scripts/stop_simulator.ps1` to stop the whole app. Avoid `down -v` when retaining data. `restart: unless-stopped` resumes services after Docker restarts unless they were explicitly stopped.
+
+## Historical Milestone 1 import evidence
+
+The following evidence describes the original research workspace, not imports performed by the portable helper. Historical raw/processed cohorts, the research database and some detailed execution files remain outside the release ZIP. These statements preserve the original executed results; they are not instructions to recreate those imports from an incomplete curated package.
+
 
 The Docker engine was unavailable during the original acquisition run; that earlier historical report, `reports/database_execution.json`, is retained unchanged. In the simulator setup session Docker Desktop was started successfully and an actual database was used. New verification results are saved in `reports/simulator_database_execution.json` after the loader commits.
 
@@ -53,22 +55,18 @@ The tested Docker image is pinned to `postgis/postgis:17-3.5@sha256:01a6a70e41e6
 
 Database roles, migrations, and real network loading are implementation infrastructure. Importing historical GB/Brazil/Birmingham/England and Wales cohorts does not make them observations of Chennai logistics. The demo routes use real Chennai geographic data and its vehicle operations and incidents are explicitly simulated.
 
-## Simulator integration verification
+## Release integration verification
 
-After the backend is running at `http://127.0.0.1:8080`, run:
+Run integration checks only against a disposable release installation. They reset simulated state, create test records and, for selected suites, restart its backend. Do not run them during an operator demonstration or point them at the preserved research database.
 
-```powershell
-& .\.venv\Scripts\python.exe scripts/test_simulator_integration.py
-```
-
-This exercises actual HTTP commands and reads PostgreSQL to verify routing, motion, incident effects, manual decisions, checkpoint persistence, realized KPIs, and saved-scenario replay. It resets the local simulated fleet and creates three test trucks; historical research imports are checked before and after and remain untouched. It leaves a saved integration scenario and the completed replayed test fleet. Its test evidence is written to `reports/simulator_integration_tests.json`. That file is created only by an actual run and reports failures explicitly.
-
-The actual first API run passed **15 checks**, including exact replay of the saved vehicle/incident/KPI snapshot and preservation of all 18 research imports. An additional real backend-container restart passed: **paused clock 17.3 seconds**, three mid-route vehicles, one active incident, one saved scenario, and five audit events survived. The recovered paused clock stayed frozen. This independent restart evidence is in `reports/simulator_restart_tests.json`.
-
-To include the restart check with the full integration run, use `--test-restart`. To rerun only restart persistence against an existing tested fleet and keep the full integration report separate:
+After starting that isolated app and installing the optional `requirements-release-test.txt` dependencies in an isolated Python environment:
 
 ```powershell
-& .\.venv\Scripts\python.exe scripts/test_simulator_integration.py --restart-only --report reports/simulator_restart_tests.json
+python scripts/test_release_integration.py --suite simulator --env-file .env --report .runtime/simulator-integration.json --allow-reset
+python scripts/test_release_integration.py --suite operations --env-file .env --report .runtime/operations-integration.json --allow-reset
+python scripts/test_release_integration.py --suite benchmark --env-file .env --report .runtime/benchmark-integration.json --allow-reset
 ```
 
-The restart check resets the simulated fleet to its initial assignments, steps to a paused checkpoint, injects a simulated slowdown, and restarts only the backend container. It leaves the recovered fleet paused for inspection; the database container and historical records remain running and intact.
+The adapter reads credentials privately from the selected env file, verifies that the API and database identify the same checkpoint, and refuses targets containing the historical research import metadata. It tests actual HTTP commands, PostGIS, persistence/replay and backend restart without inventing legacy scenarios. Current executed results and their scope are in [RELEASE_VERIFICATION.md](RELEASE_VERIFICATION.md).
+
+The original Milestone 1 integration run passed **15 checks**. A separate actual backend restart preserved **17.3 simulated seconds**, three mid-route vehicles, one incident, a saved scenario and five audit events. Those historical results describe their original test run. The underlying research-oriented test scripts now require an explicit private `DATABASE_URL` or their documented `--dsn` setting; use the release adapter above for fresh portable databases.

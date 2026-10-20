@@ -1,6 +1,6 @@
 # Reproduce and operate Milestone 4
 
-The canonical workspace is `D:\CascadeShield-AI`. This study trains on **simulated logistics operations and outcomes on real Chennai OSM geography**. The 18 historical research tables remain separate. They do not supply linked Chennai freight, incident causation or real dock/driver outcomes. ODbL attribution and the original road graph are preserved. See the [source audit](../reports/MILESTONE_4_DATA_AUDIT.md), [target definitions](../reports/MILESTONE_4_LABEL_DEFINITIONS.md), [training pipeline](ML_TRAINING_PIPELINE.md), [graph architecture](GNN_ARCHITECTURE.md) and [assessment protocol](MILESTONE_4_BENCHMARK_PROTOCOL.md).
+The canonical workspace is `<research-workspace>`. This study trains on **simulated logistics operations and outcomes on real Chennai OSM geography**. The 18 historical research tables remain separate. They do not supply linked Chennai freight, incident causation or real dock/driver outcomes. ODbL attribution and the original road graph are preserved. See the [source audit](../reports/MILESTONE_4_DATA_AUDIT.md), [target definitions](../reports/MILESTONE_4_LABEL_DEFINITIONS.md), [training pipeline](ML_TRAINING_PIPELINE.md), [graph architecture](GNN_ARCHITECTURE.md) and [assessment protocol](MILESTONE_4_BENCHMARK_PROTOCOL.md).
 
 The frozen bundle is [models/milestone4/v1/manifest.json](../models/milestone4/v1/manifest.json). Its SHA-256 is `a225deef5bfe31676129cefa595ef8fb39511486b06e9d0a1d31de40733a3a39`. It records four validated providers, development selection/calibration, actual devices, CPU reload checks, source hashes and serialized model checksums. Final outcomes have now been generated for this study. Re-evaluating these fixed artifacts is reproduction; refitting after inspecting those outcomes would require a new versioned study with a newly declared independent assessment. The existing model directory is immutable and fitting into it is refused.
 
@@ -9,7 +9,7 @@ The frozen bundle is [models/milestone4/v1/manifest.json](../models/milestone4/v
 Run from Windows PowerShell:
 
 ```powershell
-Set-Location D:\CascadeShield-AI
+# Run from the extracted project root.
 powershell -ExecutionPolicy Bypass -File scripts/start_simulator.ps1 -WithML
 # Rebuild after Java changes on this host, using the official-only Maven relay:
 powershell -ExecutionPolicy Bypass -File scripts/start_simulator.ps1 -UseMavenRelay -WithML
@@ -39,7 +39,7 @@ The actual setup uses an RTX 4050 Laptop GPU, 6,438,780,928 bytes VRAM, driver 6
 On a fresh environment, use the installed Python 3.11 executable (resolve it with `py -0p`) and create only missing environments:
 
 ```powershell
-Set-Location D:\CascadeShield-AI
+# Run from the extracted project root.
 $env:TEMP = Join-Path (Get-Location) '.runtime\tmp'
 $env:TMP = $env:TEMP
 New-Item -ItemType Directory -Force -Path $env:TEMP | Out-Null
@@ -134,3 +134,5 @@ The separate four-case development diagnostic is `scripts/run_frozen_milestone4_
 Prediction metrics, eligible denominators, calibration, censoring and failure cases are in [MILESTONE_4_PREDICTION_METRICS.json](../reports/MILESTONE_4_PREDICTION_METRICS.json), its CSV and per-row CSV. The trained model is an associational predictor on untreated simulation trajectories. Candidate action states may shift that distribution, and actual isolated execution is required to assess decisions. No causal action effect, observed logistics prevention benefit, GNN superiority, GPU speedup, commercial navigation certification or result from an unfinished batch is implied.
 
 Source licenses, permission quarantine and missing field requirements remain in the historical inventory. The new generated operational corpus is not a substitute for unavailable real Chennai freight and must keep its simulated provenance when exported. Do not publish private future operational records or credentials if later collected. No cloud GPU cost, system-driver replacement, autonomous LLM, reinforcement learning, blockchain or Milestone 5 work is part of this milestone.
+
+> Release export note: personal and machine-specific installation paths were redacted. Historical numerical results are unchanged. Use the root README for the supported ZIP startup workflow.
